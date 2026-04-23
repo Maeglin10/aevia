@@ -1,0 +1,19 @@
+/* Aevia Design System — Shared Tokens */
+:root {
+  --aevia-bg:          #09090b;
+  --aevia-surface:     #18181b;
+  --aevia-surface-2:   #27272a;
+  --aevia-border:      #3f3f46;
+  --aevia-border-dim:  #27272a;
+  --aevia-text:        #fafafa;
+  --aevia-text-muted:  #a1a1aa;
+  --aevia-text-dim:    #71717a;
+  --aevia-accent:      #7c3aed;
+  --aevia-accent-hover:#6d28d9;
+  --aevia-accent-light:#8b5cf6;
+  --aevia-gold:        #c9a96e;
+  --aevia-radius-sm:   6px;
+  --aevia-radius:      12px;
+  --aevia-radius-lg:   24px;
+  --aevia-radius-full: 9999px;
+}

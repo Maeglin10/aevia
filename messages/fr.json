@@ -1,0 +1,103 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "contact": "Contact",
+    "ecosystem": "Écosystème"
+  },
+  "hero": {
+    "badge": "Écosystème Aevia — Outils digitaux pour entreprises",
+    "title1": "Tout ce dont votre",
+    "title2": "business a besoin",
+    "title3": "en ligne",
+    "description": "Site web, sécurité, gestion client — trois outils pensés pour les TPE et PME qui veulent une présence digitale sérieuse sans s'y perdre.",
+    "cta_primary": "Démarrer un projet",
+    "cta_secondary": "Découvrir les services"
+  },
+  "stats": {
+    "delivery_value": "7 jours",
+    "delivery_label": "Délai livraison site",
+    "audit_value": "60s",
+    "audit_label": "Audit sécurité",
+    "channels_value": "3",
+    "channels_label": "Canaux unifiés inbox",
+    "ai_value": "24/7",
+    "ai_label": "IA qui répond"
+  },
+  "products": {
+    "section_title": "Trois outils, une seule marque",
+    "section_sub": "Chaque produit Aevia répond à un besoin précis. Indépendants ou combinés, ils couvrent votre présence digitale de A à Z.",
+    "available": "Disponible",
+    "coming_soon": "Bientôt",
+    "notify": "Me prévenir au lancement",
+    "launch_tagline": "Votre site web en 7 jours",
+    "launch_desc": "Choisissez parmi 3 templates professionnels — landing page, e-commerce ou vitrine. On personnalise, on déploie. Ou utilisez le builder IA pour générer votre contenu en 60 secondes.",
+    "launch_cta": "Voir les templates",
+    "launch_cta2": "Builder IA",
+    "launch_f1": "Site vitrine professionnel",
+    "launch_f2": "Boutique e-commerce",
+    "launch_f3": "Landing page conversion",
+    "launch_f4": "Builder IA — 21 templates",
+    "security_tagline": "Audit sécurité en 60 secondes",
+    "security_desc": "Votre site est-il vulnérable ? Obtenez un rapport PDF scoré avec toutes les failles de sécurité et recommandations actionnables. Aucune installation requise.",
+    "security_cta": "Auditer mon site",
+    "security_f1": "Score sécurité 0–100",
+    "security_f2": "Rapport PDF détaillé",
+    "security_f3": "Recommandations IA",
+    "security_f4": "Performance & SEO inclus",
+    "inbox_tagline": "Tous vos clients, une seule interface",
+    "inbox_desc": "WhatsApp, Instagram, email — centralisés. L'IA répond à votre place, qualifie vos leads et vous alerte sur les prospects chauds. CRM complet pour TPE/PME.",
+    "inbox_cta": "Rejoindre la liste d'attente",
+    "inbox_f1": "WhatsApp + Instagram + Email",
+    "inbox_f2": "Réponses IA automatiques",
+    "inbox_f3": "Scoring des leads",
+    "inbox_f4": "Dashboard analytics"
+  },
+  "templates_section": {
+    "badge": "AeviaLaunch — Sites web",
+    "title": "3 types de sites, livrés clé en main",
+    "desc": "Je customise le template de votre choix avec votre contenu, vos couleurs, votre identité — et je le déploie en 7 jours.",
+    "cta1": "Voir les démos live",
+    "cta2": "Démarrer mon projet",
+    "demo": "Voir la démo",
+    "custom_q": "Vous avez une idée différente ?",
+    "custom_link": "Builder IA — 21 templates",
+    "landing_desc": "Conversion & acquisition",
+    "ecom_desc": "Boutique en ligne",
+    "vitrine_desc": "Présence professionnelle"
+  },
+  "why": {
+    "title": "Pourquoi Aevia ?",
+    "fast_title": "Rapide",
+    "fast_desc": "Site livré en 7 jours, audit en 60 secondes. Pas de réunions interminables, pas d'agence qui traîne.",
+    "reliable_title": "Fiable",
+    "reliable_desc": "Stack production-ready — Next.js, NestJS, PostgreSQL. Les mêmes technos que les startups qui lèvent des millions.",
+    "simple_title": "Simple",
+    "simple_desc": "Vous n'avez pas besoin de comprendre la technique. Vous décrivez, on construit. Résultat garanti."
+  },
+  "cta": {
+    "title": "Prêt à digitaliser votre business ?",
+    "desc": "Un site web, un audit sécurité, ou une démo de l'Inbox — on en parle en 30 minutes.",
+    "contact": "Prendre contact",
+    "audit": "Auditer mon site gratuitement"
+  },
+  "footer": {
+    "tagline": "Outils digitaux pour entreprises",
+    "templates": "Templates",
+    "security": "Security",
+    "contact": "Contact",
+    "copyright": "© 2026 Aevia · Tous droits réservés · Valentin Milliand",
+    "privacy": "Politique de confidentialité",
+    "terms": "CGU",
+    "cookies": "Cookies"
+  },
+  "skills": { "title": "Stack technique" },
+  "cookie_banner": {
+    "aria_label": "Bandeau de consentement aux cookies",
+    "text": "Nous utilisons des cookies pour améliorer votre expérience et mesurer l'audience. Vous pouvez accepter ou refuser les cookies non essentiels.",
+    "learn_more": "En savoir plus",
+    "accept": "Tout accepter",
+    "reject": "Refuser"
+  }
+}
