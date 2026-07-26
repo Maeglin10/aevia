@@ -57,7 +57,7 @@ export default function MentionsPage() {
         </p>
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-5 text-sm space-y-1.5">
           <p className="text-white font-semibold">Vercel Inc.</p>
-          <p className="text-zinc-400">340 S Lemon Ave #4133, Walnut, CA 91789, USA</p>
+          <p className="text-zinc-400">440 N Barranca Avenue #4133, Covina, CA 91723, USA</p>
           <p>
             <a
               href="https://vercel.com"
