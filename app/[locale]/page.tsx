@@ -77,7 +77,7 @@ export default function Home() {
     <div className="min-h-screen" id="main-content">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative pt-48 pb-32 px-6 overflow-hidden">
+      <section className="relative pt-24 sm:pt-32 lg:pt-40 pb-20 sm:pb-28 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           {/* Crimson wash across top — the signature red sky effect */}
           <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-red-900/45 via-red-900/20 to-transparent" />
@@ -86,15 +86,15 @@ export default function Home() {
         </div>
         <div className="mx-auto max-w-5xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-6xl sm:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-8">
-              {h("title1")}{" "}
+            <h1 className="text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-5 sm:mb-6">
+              {h("title1")}
+              <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-400 to-red-500">
                 {h("title2")}
               </span>
-              <br />{h("title3")}
             </h1>
 
-            <p className="text-zinc-300 text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
+            <p className="text-zinc-300 text-[0.9375rem] sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-7 sm:mb-9">
               {h("description")}
             </p>
 

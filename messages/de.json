@@ -7,11 +7,9 @@
     "ecosystem": "Ökosystem"
   },
   "hero": {
-    "badge": "Website · KI-Kundenservice · Sicherheit — alles in einem",
-    "title1": "Eine Website. Eine KI, die antwortet.",
-    "title2": "Sicherheit, die nie schläft.",
-    "title3": "Damit du keinen Kunden mehr verlierst.",
-    "description": "Aevia erstellt deine Website, beantwortet Kundenanfragen rund um die Uhr per Telefon, WhatsApp und E-Mail und überwacht deine Online-Sicherheit. Eine KI, drei Probleme gelöst.",
+    "title1": "Ihr gesamtes Unternehmen.",
+    "title2": "Eine einzige Plattform.",
+    "description": "Alles, was Sie für das Wachstum Ihres Unternehmens brauchen, an einem Ort vereint: Website, CRM, KI, Automatisierungen, Telefonie, Zahlungen und vieles mehr. Wir übernehmen die technische Komplexität, damit Sie sich auf das konzentrieren können, was wirklich Wert schafft: Ihr Kerngeschäft.",
     "cta_primary": "Projekt starten",
     "cta_secondary": "Dienste entdecken"
   },

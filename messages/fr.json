@@ -7,11 +7,9 @@
     "ecosystem": "Écosystème"
   },
   "hero": {
-    "badge": "Site · Service client IA · Sécurité — tout-en-un",
-    "title1": "Un site. Une IA qui répond.",
-    "title2": "Une sécurité qui veille.",
-    "title3": "Pour ne plus jamais perdre un client.",
-    "description": "Aevia crée votre site web, répond à vos clients 24h/24 sur téléphone, WhatsApp et email, et surveille votre sécurité en ligne. Une seule plateforme, trois problèmes réglés.",
+    "title1": "Toute votre entreprise.",
+    "title2": "Une seule plateforme.",
+    "description": "Tout ce dont vous avez besoin pour développer votre activité est réuni dans un seul espace : site web, CRM, IA, automatisations, téléphonie, paiements et bien plus encore. Nous gérons la complexité technique pour que vous puissiez vous concentrer sur ce qui crée réellement de la valeur : votre métier.",
     "cta_primary": "Démarrer un projet",
     "cta_secondary": "Découvrir les services"
   },

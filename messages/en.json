@@ -7,11 +7,9 @@
     "ecosystem": "Ecosystem"
   },
   "hero": {
-    "badge": "Website · AI customer service · Security — all-in-one",
-    "title1": "A website. An AI that answers.",
-    "title2": "Security that never sleeps.",
-    "title3": "So you never lose a customer again.",
-    "description": "Aevia builds your website, answers your customers 24/7 on phone, WhatsApp and email, and watches over your online security. One AI, three problems solved.",
+    "title1": "Your entire business.",
+    "title2": "One platform.",
+    "description": "Everything you need to grow your business, brought together in one place: website, CRM, AI, automation, telephony, payments and a great deal more. We take care of the technical complexity so you can focus on what actually creates value — the work you do best.",
     "cta_primary": "Start a project",
     "cta_secondary": "Discover our services"
   },
