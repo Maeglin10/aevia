@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useTransition, useRef, useEffect } from "react";
-import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Globe, LogIn } from "lucide-react";
+import { Menu, X, Shield, MessageSquare, ChevronDown, ExternalLink, Globe, LogIn } from "lucide-react";
 import { AeviaLogo } from "@/components/AeviaLogo";
 
 const navLinks = [
@@ -60,12 +60,11 @@ const products: Array<{
   name: string;
   href: string;
   descKey: keyof NavTrans;
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   status: "live" | "soon";
 }> = [
-  { name: "AeviaLaunch",   href: "https://launch.aevia.services",    descKey: "descLaunch",    icon: Sparkles,      status: "live" },
-  { name: "AeviaSecurity", href: "https://security.aevia.services",  descKey: "descSecurity",  icon: Shield,        status: "live" },
-  { name: "AeviaInbox",    href: "https://inbox.aevia.services",     descKey: "descInbox",     icon: MessageSquare, status: "live" },
+  { name: "AeviaLaunch",   href: "https://launch.aevia.services",    descKey: "descLaunch",    status: "live" },
+  { name: "AeviaSecurity", href: "https://security.aevia.services",  descKey: "descSecurity",  status: "live" },
+  { name: "AeviaInbox",    href: "https://inbox.aevia.services",     descKey: "descInbox",     status: "live" },
 ];
 
 const LOCALES = [
@@ -191,7 +190,6 @@ export function Nav() {
               <div className="absolute left-0 top-full pt-2 w-80" onClick={() => setDropdownOpen(false)}>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden p-2 flex flex-col gap-1">
                   {products.map((p) => {
-                    const Icon = p.icon;
                     const isLive = p.status === "live";
                     return (
                       <a
@@ -199,10 +197,9 @@ export function Nav() {
                         href={p.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`flex gap-3 items-start p-2.5 rounded-lg transition-colors group ${isLive ? "hover:bg-zinc-800/60 cursor-pointer" : "opacity-60 cursor-not-allowed pointer-events-none"}`}
+                        className={`block p-2.5 rounded-lg transition-colors group ${isLive ? "hover:bg-zinc-800/60 cursor-pointer" : "opacity-60 cursor-not-allowed pointer-events-none"}`}
                       >
-                        <Icon className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
-                        <div className="flex-1 min-w-0">
+                        <div className="min-w-0">
                           <div className="flex items-center gap-2 mb-0.5">
                             <span className="font-semibold text-white text-sm group-hover:text-red-300 transition-colors">
                               {p.name}

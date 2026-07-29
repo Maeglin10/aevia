@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, ExternalLink, Sparkles, Shield, MessageSquare, Globe, ShoppingBag, Zap, CheckCircle2, Layout, Code2 } from "lucide-react";
+import { ArrowRight, ExternalLink, Layout } from "lucide-react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { LinkedinIcon } from "@/components/LinkedinIcon";
@@ -23,16 +23,10 @@ export default function Home() {
       description: p("launch_desc"),
       href: "https://launch.aevia.services",
       status: "live" as const,
-      icon: <Sparkles className="w-6 h-6" />,
       accentFrom: "from-red-500",
       accentTo: "to-red-700",
       glow: "group-hover:shadow-red-500/25",
-      features: [
-        { icon: <Globe className="w-4 h-4" />, label: p("launch_f1") },
-        { icon: <ShoppingBag className="w-4 h-4" />, label: p("launch_f2") },
-        { icon: <Layout className="w-4 h-4" />, label: p("launch_f3") },
-        { icon: <Zap className="w-4 h-4" />, label: p("launch_f4") },
-      ],
+      features: [p("launch_f1"), p("launch_f2"), p("launch_f3"), p("launch_f4")],
       cta: p("launch_cta"),
       ctaSecondary: null,
       ctaSecondaryHref: null,
@@ -43,16 +37,10 @@ export default function Home() {
       description: p("security_desc"),
       href: "https://security.aevia.services",
       status: "live" as const,
-      icon: <Shield className="w-6 h-6" />,
       accentFrom: "from-emerald-500",
       accentTo: "to-teal-500",
       glow: "group-hover:shadow-emerald-500/25",
-      features: [
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("security_f1") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("security_f2") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("security_f3") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("security_f4") },
-      ],
+      features: [p("security_f1"), p("security_f2"), p("security_f3"), p("security_f4")],
       cta: p("security_cta"),
       ctaSecondary: null,
       ctaSecondaryHref: null,
@@ -63,16 +51,10 @@ export default function Home() {
       description: p("inbox_desc"),
       href: "https://inbox.aevia.services",
       status: "live" as const,
-      icon: <MessageSquare className="w-6 h-6" />,
       accentFrom: "from-cyan-500",
       accentTo: "to-blue-500",
       glow: "group-hover:shadow-cyan-500/25",
-      features: [
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("inbox_f1") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("inbox_f2") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("inbox_f3") },
-        { icon: <CheckCircle2 className="w-4 h-4" />, label: p("inbox_f4") },
-      ],
+      features: [p("inbox_f1"), p("inbox_f2"), p("inbox_f3"), p("inbox_f4")],
       cta: p("inbox_cta"),
       ctaSecondary: null,
       ctaSecondaryHref: null,
@@ -86,9 +68,9 @@ export default function Home() {
   ];
 
   const whyItems = [
-    { icon: <Zap className="w-5 h-5" />, title: w("fast_title"), desc: w("fast_desc"), color: "from-amber-500/20 to-orange-500/10", textColor: "text-amber-400" },
-    { icon: <Code2 className="w-5 h-5" />, title: w("reliable_title"), desc: w("reliable_desc"), color: "from-red-500/20 to-red-700/10", textColor: "text-red-400" },
-    { icon: <CheckCircle2 className="w-5 h-5" />, title: w("simple_title"), desc: w("simple_desc"), color: "from-emerald-500/20 to-teal-500/10", textColor: "text-emerald-400" },
+    { title: w("fast_title"), desc: w("fast_desc"), color: "from-amber-500/20 to-orange-500/10" },
+    { title: w("reliable_title"), desc: w("reliable_desc"), color: "from-red-500/20 to-red-700/10" },
+    { title: w("simple_title"), desc: w("simple_desc"), color: "from-emerald-500/20 to-teal-500/10" },
   ];
 
   return (
@@ -196,11 +178,6 @@ export default function Home() {
                     ${isLive ? `hover:border-zinc-600 hover:-translate-y-1.5 hover:shadow-2xl ${product.glow}` : "opacity-80"}`}
                 >
                   <div className={`absolute inset-0 opacity-0 ${isLive ? "group-hover:opacity-100" : ""} transition-opacity duration-300 bg-gradient-to-br ${product.accentFrom}/5 ${product.accentTo}/5 pointer-events-none`} />
-                  <div className="flex items-start justify-between mb-6 relative z-10">
-                    <div className={`p-3 rounded-xl bg-gradient-to-br ${product.accentFrom}/20 ${product.accentTo}/10 border border-white/5 text-white`}>
-                      {product.icon}
-                    </div>
-                    </div>
                   <div className="mb-4 relative z-10">
                     <h3 className="text-white font-bold text-xl mb-1">{product.name}</h3>
                     <p className={`text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r ${product.accentFrom} ${product.accentTo}`}>
@@ -212,11 +189,8 @@ export default function Home() {
                   </p>
                   <ul className="space-y-2 mb-7 relative z-10">
                     {product.features.map((feat) => (
-                      <li key={feat.label} className="flex items-center gap-2.5 text-zinc-300 text-sm">
-                        <span className={`text-transparent bg-clip-text bg-gradient-to-r ${product.accentFrom} ${product.accentTo} shrink-0`}>
-                          {feat.icon}
-                        </span>
-                        {feat.label}
+                      <li key={feat} className="text-zinc-300 text-sm leading-snug">
+                        {feat}
                       </li>
                     ))}
                   </ul>
@@ -324,7 +298,6 @@ export default function Home() {
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 className={`p-6 rounded-2xl border border-zinc-800 bg-gradient-to-br ${item.color}`}
               >
-                <div className={`${item.textColor} mb-4`}>{item.icon}</div>
                 <h3 className="text-white font-bold text-lg mb-2">{item.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
               </motion.div>
