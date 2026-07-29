@@ -32,7 +32,11 @@ function HeroBackdrop() {
   const shot = HERO_SHOTS[i];
 
   return (
-    <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
+    // The header is fixed, 57px tall and only 80% opaque, so a backdrop starting
+    // at y=0 put the top of the photograph *behind* the navigation. Start it at
+    // the header's bottom edge instead: the strip behind the header stays the
+    // page's own ink, and the photograph begins on a clean line.
+    <div aria-hidden className="absolute inset-x-0 bottom-0 top-[57px] -z-10 overflow-hidden">
       <AnimatePresence mode="sync">
         <motion.div
           key={shot.src}
