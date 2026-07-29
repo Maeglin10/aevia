@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
               "script-src 'self' 'unsafe-inline' https://inbox.aevia.services",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
-              "img-src 'self' data: blob: https://images.unsplash.com https://picsum.photos",
+              "img-src 'self' data: blob: https://images.unsplash.com https://images.pexels.com https://picsum.photos",
               "connect-src 'self' https://skybot-inbox-production.up.railway.app",
               "frame-ancestors 'none'",
               "base-uri 'self'",

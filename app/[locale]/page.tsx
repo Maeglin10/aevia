@@ -2,10 +2,64 @@
 
 import Link from "next/link";
 import { ArrowRight, ExternalLink, Layout } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useEffect, useState } from "react";
 import { LinkedinIcon } from "@/components/LinkedinIcon";
 import { GithubIcon } from "@/components/GithubIcon";
+
+/* The hero backdrop: a slow rotation of photographs behind the existing
+   composition. Nothing about the headline or the CTAs moves — the imagery is
+   what changes, the way the template heroes do it: a cross-fade with a very
+   slow scale drift underneath, on a 7s beat. */
+const HERO_SHOTS = [
+  { src: "https://images.pexels.com/photos/8190827/pexels-photo-8190827.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Réunion en entreprise" },
+  { src: "https://images.pexels.com/photos/7792748/pexels-photo-7792748.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Équipe au travail" },
+  { src: "https://images.pexels.com/photos/8112160/pexels-photo-8112160.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Rendez-vous professionnel" },
+  { src: "https://images.pexels.com/photos/36713414/pexels-photo-36713414.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Dirigeante au travail" },
+];
+
+function HeroBackdrop() {
+  const [i, setI] = useState(0);
+  const reduce = useReducedMotion();
+
+  useEffect(() => {
+    if (reduce) return;
+    const t = setTimeout(() => setI((n) => (n + 1) % HERO_SHOTS.length), 7000);
+    return () => clearTimeout(t);
+  }, [i, reduce]);
+
+  const shot = HERO_SHOTS[i];
+
+  return (
+    <div aria-hidden className="absolute inset-0 -z-10 overflow-hidden">
+      <AnimatePresence mode="sync">
+        <motion.div
+          key={shot.src}
+          initial={{ opacity: 0, scale: 1.12 }}
+          animate={{ opacity: 1, scale: reduce ? 1.02 : [1.08, 1.01] }}
+          exit={{ opacity: 0 }}
+          transition={{
+            opacity: { duration: 1.4, ease: [0.65, 0, 0.35, 1] },
+            scale: { duration: reduce ? 0 : 15, ease: "linear" },
+          }}
+          className="absolute inset-0"
+        >
+          <img src={shot.src} alt="" className="w-full h-full object-cover" />
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Scrims first, so the headline never has to fight the photograph,
+          then the existing crimson signature on top of them. */}
+      <div className="absolute inset-0 bg-[#09090b]/45" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#09090b]/35 via-[#09090b]/45 to-[#09090b]" />
+      <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-red-900/35 via-red-900/12 to-transparent" />
+      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/18 blur-[180px]" />
+      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/14 blur-[140px]" />
+    </div>
+  );
+}
+
 
 export default function Home() {
   const h = useTranslations("hero");
@@ -78,12 +132,7 @@ export default function Home() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative pt-24 sm:pt-32 lg:pt-40 pb-20 sm:pb-28 px-6 overflow-hidden">
-        <div className="absolute inset-0 -z-10">
-          {/* Crimson wash across top — the signature red sky effect */}
-          <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-red-900/45 via-red-900/20 to-transparent" />
-          <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/25 blur-[180px]" />
-          <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/20 blur-[140px]" />
-        </div>
+        <HeroBackdrop />
         <div className="mx-auto max-w-5xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-5 sm:mb-6">
