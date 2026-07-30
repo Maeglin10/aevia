@@ -40,8 +40,12 @@ function HeroBackdrop() {
       <AnimatePresence mode="sync">
         <motion.div
           key={shot.src}
-          initial={{ opacity: 0, scale: 1.12 }}
-          animate={{ opacity: 1, scale: reduce ? 1.02 : [1.08, 1.01] }}
+          // The drift used to start at 1.12 and sit at 1.08, i.e. the photo was
+          // permanently zoomed 8% past `cover` — on top of the crop `cover`
+          // already applies, that is what cut the tops of people's heads off.
+          // Settle at 1.0 so the visible frame is exactly what `cover` gives.
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: reduce ? 1 : [1.04, 1] }}
           exit={{ opacity: 0 }}
           transition={{
             opacity: { duration: 1.4, ease: [0.65, 0, 0.35, 1] },
@@ -49,7 +53,11 @@ function HeroBackdrop() {
           }}
           className="absolute inset-0"
         >
-          <img src={shot.src} alt="" className="w-full h-full object-cover" />
+          {/* Anchor the crop near the top. These are photographs of people, and
+              `cover` on a container wider than the source (16:9-ish vs 3:2)
+              trims top and bottom equally when centred — which lands squarely
+              on faces. Biasing to 25% spends the whole trim on the floor. */}
+          <img src={shot.src} alt="" className="w-full h-full object-cover object-[50%_25%]" />
         </motion.div>
       </AnimatePresence>
 
@@ -135,9 +143,16 @@ export default function Home() {
     <div className="min-h-screen" id="main-content">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative pt-24 sm:pt-32 lg:pt-40 pb-20 sm:pb-28 px-6 overflow-hidden">
+      {/* Desktop gets a full-viewport hero. The height used to come from the
+          padding alone, so the section stopped at whatever the copy needed
+          (~840px) and the next section showed through on any tall screen.
+          `svh` rather than `vh` so collapsing mobile browser chrome cannot make
+          it jump; 57px is the fixed header the hero sits under. Mobile keeps
+          the padding-driven height — a full-screen hero on a phone pushes every
+          proof point below the fold. */}
+      <section className="relative px-6 overflow-hidden pt-24 pb-20 sm:pt-32 sm:pb-28 lg:pt-[57px] lg:pb-0 lg:min-h-screen lg:min-h-[100svh] lg:flex lg:items-center">
         <HeroBackdrop />
-        <div className="mx-auto max-w-5xl text-center">
+        <div className="mx-auto max-w-5xl text-center w-full">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-5 sm:mb-6">
               {h("title1")}
