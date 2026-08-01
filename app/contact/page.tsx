@@ -229,7 +229,7 @@ export default function ContactPage() {
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
                   <MapPin className="w-4 h-4" />
                 </div>
-                <span className="text-zinc-300">Paris, France</span>
+                <span className="text-zinc-300">Lyon, France</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm">
