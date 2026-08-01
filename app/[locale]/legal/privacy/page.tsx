@@ -54,9 +54,9 @@ export default function PrivacyPage() {
           <li className="flex gap-3">
             <span className="text-red-400 font-bold shrink-0">Aevia Inbox</span>
             <span className="text-zinc-400">
-              (inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations WhatsApp,
-              Instagram, Messenger et email pour les entreprises. Abonnement mensuel (59 €, 159 €
-              ou 499 €/mois).
+              (inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations webchat,
+              email et voix (WhatsApp et Instagram à venir) pour les entreprises. Abonnement
+              mensuel (99 $, 199 $, 399 $ ou 999 $/mois).
             </span>
           </li>
           <li className="flex gap-3">
