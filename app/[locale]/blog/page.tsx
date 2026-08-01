@@ -172,7 +172,7 @@ export default function BlogPage() {
                 Site web, sécurité, gestion client — on peut en parler en 30 minutes.
               </p>
               <Link
-                href={`/${locale}/contact`}
+                href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
               >
                 Prendre contact
