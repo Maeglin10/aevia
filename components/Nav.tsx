@@ -17,7 +17,7 @@ const NAV_T = {
     login: "Se connecter", loginSub: "Accéder à votre espace",
     descLaunch: "Site web en 7 jours — 3 templates pro",
     descSecurity: "Audit sécurité & performance en 60s",
-    descInbox: "CRM multi-canal — WhatsApp, Instagram, Email",
+    descInbox: "CRM multi-canal — téléphone, email, chat web",
   },
   en: {
     products: "Products", soon: "Coming soon", cta: "Contact",
@@ -25,7 +25,7 @@ const NAV_T = {
     login: "Sign in", loginSub: "Access your account",
     descLaunch: "Website in 7 days — 3 pro templates",
     descSecurity: "Security & performance audit in 60s",
-    descInbox: "Multi-channel CRM — WhatsApp, Instagram, Email",
+    descInbox: "Multi-channel CRM — phone, email, web chat",
   },
   es: {
     products: "Productos", soon: "Próximamente", cta: "Contacto",
@@ -33,7 +33,7 @@ const NAV_T = {
     login: "Iniciar sesión", loginSub: "Accede a tu cuenta",
     descLaunch: "Sitio web en 7 días — 3 plantillas pro",
     descSecurity: "Auditoría de seguridad y rendimiento en 60s",
-    descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
+    descInbox: "CRM multicanal — teléfono, email, chat web",
   },
   de: {
     products: "Produkte", soon: "Bald", cta: "Kontakt",
@@ -41,7 +41,7 @@ const NAV_T = {
     login: "Anmelden", loginSub: "Zugang zu Ihrem Konto",
     descLaunch: "Website in 7 Tagen — 3 Pro-Vorlagen",
     descSecurity: "Sicherheits- & Performance-Audit in 60s",
-    descInbox: "Multichannel-CRM — WhatsApp, Instagram, E-Mail",
+    descInbox: "Multichannel-CRM — Telefon, E-Mail, Web-Chat",
   },
   pt: {
     products: "Produtos", soon: "Em breve", cta: "Contacto",
@@ -49,7 +49,7 @@ const NAV_T = {
     login: "Entrar", loginSub: "Acesse sua conta",
     descLaunch: "Site em 7 dias — 3 templates pro",
     descSecurity: "Auditoria de segurança e performance em 60s",
-    descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
+    descInbox: "CRM multicanal — telefone, email, chat no site",
   },
 } as const;
 

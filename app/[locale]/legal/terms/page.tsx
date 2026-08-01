@@ -38,8 +38,8 @@ export default function TermsPage() {
           </p>
           <p>
             <span className="text-zinc-400">Site principal :</span>{" "}
-            <a href="https://aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              aevia.io
+            <a href="https://aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              aevia.services
             </a>
           </p>
         </div>
@@ -62,7 +62,7 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-white mb-3 mt-4">2.1 Aevia Inbox — CRM multi-canal</h3>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Aevia Inbox (app.aevia.io) est une plateforme SaaS de gestion de la relation client
+          Aevia Inbox (inbox.aevia.services) est une plateforme SaaS de gestion de la relation client
           permettant aux entreprises de centraliser et gérer leurs conversations provenant de
           WhatsApp, Instagram Messaging, Facebook Messenger et email dans une interface unique.
           Le service inclut :
@@ -82,7 +82,7 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-white mb-3 mt-6">2.2 AeviaLaunch — Création de site web assistée par IA</h3>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          AeviaLaunch (launch.aevia.io) est un service de création de sites web professionnel
+          AeviaLaunch (launch.aevia.services) est un service de création de sites web professionnel
           alliant génération de contenu par intelligence artificielle (Claude AI) et
           développement artisanal. Le service comprend :
         </p>
@@ -102,7 +102,7 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-white mb-3 mt-6">2.3 AeviaSecurity — Audit de sécurité automatisé</h3>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          AeviaSecurity (security.aevia.io) est une plateforme d'analyse automatisée de la
+          AeviaSecurity (security.aevia.services) est une plateforme d'analyse automatisée de la
           sécurité des sites web. Le service effectue des audits portant sur :
         </p>
         <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1 mb-3 ml-2">
@@ -578,8 +578,8 @@ export default function TermsPage() {
           Après résiliation, les données du compte sont conservées pendant 6 mois pour
           permettre une éventuelle réactivation, puis définitivement supprimées. Le Client peut
           demander la suppression immédiate en contactant{" "}
-          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-            privacy@aevia.io
+          <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+            privacy@aevia.services
           </a>.
         </p>
 
@@ -684,13 +684,13 @@ export default function TermsPage() {
           <p className="text-zinc-400">
             <span className="text-zinc-300">Politique de confidentialité :</span>{" "}
             <a href="/fr/legal/privacy" className="text-red-400 hover:text-red-300 transition-colors">
-              aevia.io/legal/privacy
+              aevia.services/legal/privacy
             </a>
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Politique de cookies :</span>{" "}
             <a href="/fr/legal/cookies" className="text-red-400 hover:text-red-300 transition-colors">
-              aevia.io/legal/cookies
+              aevia.services/legal/cookies
             </a>
           </p>
         </div>

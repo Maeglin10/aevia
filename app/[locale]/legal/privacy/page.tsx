@@ -34,8 +34,8 @@ export default function PrivacyPage() {
           </p>
           <p>
             <span className="text-zinc-400">Contact DPO / Vie privée :</span>{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>
           </p>
         </div>
@@ -54,15 +54,15 @@ export default function PrivacyPage() {
           <li className="flex gap-3">
             <span className="text-red-400 font-bold shrink-0">Aevia Inbox</span>
             <span className="text-zinc-400">
-              (app.aevia.io) — CRM multi-canal B2B. Centralise les conversations WhatsApp,
-              Instagram, Messenger et email pour les entreprises. Abonnement mensuel (59 €, 159 €
-              ou 499 €/mois).
+              (inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations webchat,
+              email et voix (WhatsApp et Instagram à venir) pour les entreprises. Abonnement
+              mensuel (99 $, 199 $, 399 $ ou 999 $/mois).
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-red-300 font-bold shrink-0">AeviaLaunch</span>
             <span className="text-zinc-400">
-              (launch.aevia.io) — Générateur de sites web assisté par IA. Crée des sites web
+              (launch.aevia.services) — Générateur de sites web assisté par IA. Crée des sites web
               professionnels à partir de données de formulaire. Paiement unique (599 €, 899 € ou
               1 499 €) + maintenance optionnelle 59 €/mois.
             </span>
@@ -70,7 +70,7 @@ export default function PrivacyPage() {
           <li className="flex gap-3">
             <span className="text-emerald-400 font-bold shrink-0">AeviaSecurity</span>
             <span className="text-zinc-400">
-              (security.aevia.io) — Plateforme d'audit de sécurité automatisé. Analyse SSL, DNS,
+              (security.aevia.services) — Plateforme d'audit de sécurité automatisé. Analyse SSL, DNS,
               performances et failles de sécurité de sites web. Offre gratuite + abonnements 29 €
               ou 89 €/mois.
             </span>
@@ -114,8 +114,8 @@ export default function PrivacyPage() {
           qualité de <strong className="text-zinc-300">sous-traitant</strong> au sens du RGPD. Le client
           abonné demeure responsable du traitement vis-à-vis de ses propres clients finaux. Un
           accord de traitement des données (DPA) est disponible sur demande à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-            privacy@aevia.io
+          <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+            privacy@aevia.services
           </a>.
         </p>
 
@@ -456,8 +456,8 @@ export default function PrivacyPage() {
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour obtenir une copie des garanties mises en place ou plus d'informations sur ces
           transferts, vous pouvez nous contacter à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-            privacy@aevia.io
+          <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+            privacy@aevia.services
           </a>.
         </p>
       </section>
@@ -508,8 +508,8 @@ export default function PrivacyPage() {
           <p className="text-zinc-300 font-semibold mb-2">Comment exercer vos droits</p>
           <p className="text-zinc-400 leading-relaxed mb-3">
             Envoyez votre demande par email à{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>{" "}
             en précisant votre nom, l'adresse email associée à votre compte et la nature de
             votre demande. Nous répondrons dans un délai d'<strong className="text-white">un mois</strong> à
@@ -551,8 +551,8 @@ export default function PrivacyPage() {
         </p>
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour obtenir un DPA, contactez-nous à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-            privacy@aevia.io
+          <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+            privacy@aevia.services
           </a>{" "}
           avec l'objet &laquo; Demande DPA &raquo;.
         </p>
@@ -622,8 +622,8 @@ export default function PrivacyPage() {
           <p className="text-zinc-300 font-semibold mb-2">Pour toute question relative à cette politique :</p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email :</span>{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>
           </p>
           <p className="text-zinc-400">
