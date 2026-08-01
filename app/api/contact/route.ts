@@ -84,6 +84,9 @@ export async function POST(req: NextRequest) {
       await resend.emails.send({
         from: "Aevia Contact <onboarding@resend.dev>",
         to: "v.milliand@gmail.com",
+        // Reply goes straight to the prospect instead of the transactional
+        // sender — one click to answer a lead. `email` is already validated above.
+        replyTo: String(email),
         subject: subject ? `[Aevia] ${safeSubject}` : `[Aevia] Message de ${safeName}`,
         html: `
           <p><strong>From:</strong> ${safeName} &lt;${safeEmail}&gt;</p>
