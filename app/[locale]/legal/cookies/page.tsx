@@ -48,25 +48,25 @@ export default function CookiesPage() {
           <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
             <span className="text-red-400 font-bold shrink-0 text-xs">INBOX</span>
             <span className="text-zinc-400">
-              <strong className="text-zinc-300">app.aevia.io</strong> — Plateforme CRM multi-canal
+              <strong className="text-zinc-300">inbox.aevia.services</strong> — Plateforme CRM multi-canal
             </span>
           </div>
           <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
             <span className="text-red-300 font-bold shrink-0 text-xs">LAUNCH</span>
             <span className="text-zinc-400">
-              <strong className="text-zinc-300">launch.aevia.io</strong> — Générateur de sites web IA
+              <strong className="text-zinc-300">launch.aevia.services</strong> — Générateur de sites web IA
             </span>
           </div>
           <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
             <span className="text-emerald-400 font-bold shrink-0 text-xs">SECURITY</span>
             <span className="text-zinc-400">
-              <strong className="text-zinc-300">security.aevia.io</strong> — Plateforme d'audit de sécurité
+              <strong className="text-zinc-300">security.aevia.services</strong> — Plateforme d'audit de sécurité
             </span>
           </div>
           <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
             <span className="text-cyan-400 font-bold shrink-0 text-xs">SITE</span>
             <span className="text-zinc-400">
-              <strong className="text-zinc-300">aevia.io</strong> — Site institutionnel Aevia
+              <strong className="text-zinc-300">aevia.services</strong> — Site institutionnel Aevia
             </span>
           </div>
         </div>
@@ -509,8 +509,8 @@ export default function CookiesPage() {
             Aevia s'engage à auditer régulièrement les cookies déposés sur ses services
             (au minimum annuellement) et à mettre à jour la présente politique en conséquence.
             En cas de détection d'un cookie non référencé, vous pouvez nous le signaler à{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>.
           </p>
         </div>
@@ -528,8 +528,8 @@ export default function CookiesPage() {
         <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">
           <li>
             Contactez-nous à{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>
           </li>
           <li>Consultez notre Politique de Confidentialité pour vos droits RGPD complets</li>
@@ -573,8 +573,8 @@ export default function CookiesPage() {
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email :</span>{" "}
-            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.io
+            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
+              privacy@aevia.services
             </a>
           </p>
           <p className="text-zinc-400">
