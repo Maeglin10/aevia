@@ -61,13 +61,16 @@ function HeroBackdrop() {
         </motion.div>
       </AnimatePresence>
 
-      {/* Scrims first, so the headline never has to fight the photograph,
-          then the existing crimson signature on top of them. */}
+      {/* Neutral scrims only, so the headline stays readable without repainting
+          the photograph. A red wash used to cover the top 75% at /35 opacity and
+          it tinted everything — skin, walls, the whole office read maroon rather
+          than like a room someone actually works in. The crimson signature stays
+          as ambient light in the corners, at roughly half its former strength:
+          enough to feel like the brand, not enough to colour the subject. */}
       <div className="absolute inset-0 bg-[#09090b]/45" />
       <div className="absolute inset-0 bg-gradient-to-b from-[#09090b]/35 via-[#09090b]/45 to-[#09090b]" />
-      <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-red-900/35 via-red-900/12 to-transparent" />
-      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/18 blur-[180px]" />
-      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/14 blur-[140px]" />
+      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/9 blur-[180px]" />
+      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/7 blur-[140px]" />
     </div>
   );
 }

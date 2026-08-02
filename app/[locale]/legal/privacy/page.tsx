@@ -145,7 +145,7 @@ export default function PrivacyPage() {
           <li>Adresse IP (pseudonymisée)</li>
           <li>Pages visitées, durée de session</li>
           <li>Logs techniques (erreurs, performances)</li>
-          <li>Statistiques d'usage agrégées via Plausible Analytics</li>
+          <li>Statistiques d'usage agrégées via Google Analytics 4, uniquement si vous acceptez les cookies de mesure</li>
         </ul>
 
         <h3 className="text-base font-semibold text-white mb-2 mt-5">3.7 Connexion via Google (Google Sign-In)</h3>
@@ -420,21 +420,23 @@ export default function PrivacyPage() {
 
           <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
             <div className="flex items-start justify-between mb-2">
-              <p className="font-semibold text-white">Plausible Analytics</p>
+              <p className="font-semibold text-white">Google Analytics 4 — Google Ireland Ltd</p>
               <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Statistiques</span>
             </div>
             <p className="text-zinc-400 leading-relaxed">
-              Mesure d'audience respectueuse de la vie privée. Plausible ne dépose pas de
-              cookies, ne collecte pas d'adresses IP complètes et ne suit pas les utilisateurs
-              d'un site à l'autre. Les données sont hébergées en Europe (UE).
+              Mesure d'audience. Le tag n'est chargé qu'après votre acceptation explicite du
+              bandeau : si vous refusez, aucun cookie de mesure n'est déposé et rien n'est transmis
+              à Google. Si vous acceptez, les cookies _ga et _ga_* sont posés pour 13 mois et les
+              données peuvent être traitées hors de l'Union européenne par Google LLC, sur la base
+              du Data Privacy Framework. L'anonymisation d'IP est activée.
             </p>
             <a
-              href="https://plausible.io/privacy"
+              href="https://policies.google.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
-              Politique de confidentialité Plausible &rarr;
+              Politique de confidentialité Google &rarr;
             </a>
           </div>
 
@@ -566,8 +568,9 @@ export default function PrivacyPage() {
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
           Nos sites utilisent un nombre limité de cookies. Les cookies strictement nécessaires
           au fonctionnement du service (authentification, session) ne nécessitent pas votre
-          consentement. Pour les cookies analytiques, nous utilisons Plausible Analytics qui
-          fonctionne sans cookies et sans collecte de données personnelles identifiables.
+          consentement. Les cookies de mesure d'audience (Google Analytics 4) ne bénéficient
+          d'aucune exemption : ils ne sont déposés qu'après votre acceptation explicite, et refuser
+          n'enlève rien au service.
         </p>
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour en savoir plus, consultez notre{" "}

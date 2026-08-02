@@ -157,43 +157,42 @@ export default function CookiesPage() {
               3.2 Cookies analytiques et de mesure d'audience
             </h3>
             <span className="text-xs text-sky-400 bg-sky-500/10 ring-1 ring-sky-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Sans consentement (Plausible)
+              Consentement requis
             </span>
           </div>
           <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-            Aevia utilise <strong className="text-zinc-300">Plausible Analytics</strong> pour
-            mesurer l'audience de ses services. Plausible est un outil d'analyse
-            respectueux de la vie privée qui :
+            Aevia utilise <strong className="text-zinc-300">Google Analytics 4</strong>
+            (Google Ireland Ltd) pour mesurer l'audience de ses services. Ces cookies ne sont
+            déposés qu'après votre acceptation explicite du bandeau :
           </p>
           <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">
-            <li>Ne dépose <strong className="text-zinc-300">aucun cookie</strong> sur votre terminal</li>
-            <li>Ne collecte pas d'adresse IP complète (troncature avant stockage)</li>
-            <li>Ne suit pas les utilisateurs d'un site à l'autre</li>
-            <li>Ne crée pas de profil individuel ni de compte utilisateur</li>
-            <li>Fonctionne avec des données <strong className="text-zinc-300">100% anonymisées et agrégées</strong></li>
-            <li>Héberge les données au sein de l'<strong className="text-zinc-300">Union européenne</strong> (Allemagne)</li>
-            <li>Est conforme au RGPD sans nécessiter de bandeau de consentement selon la CNIL</li>
+            <li>Cookies déposés : <strong className="text-zinc-300">_ga</strong> et <strong className="text-zinc-300">_ga_*</strong>, durée 13 mois</li>
+            <li>Anonymisation d'IP activée</li>
+            <li>Responsable : Google Ireland Ltd ; traitement possible hors UE par Google LLC, sur la base du Data Privacy Framework</li>
+            <li><strong className="text-zinc-300">Si vous refusez, le tag n'est pas chargé du tout</strong> — aucun cookie, aucune donnée transmise à Google</li>
+            <li>Refuser n'enlève rien au service</li>
+            <li>Vous pouvez revenir sur votre choix en effaçant les données du site dans votre navigateur</li>
           </ul>
           <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 text-sm mb-3">
-            <p className="text-zinc-300 font-semibold mb-2">Données collectées par Plausible :</p>
+            <p className="text-zinc-300 font-semibold mb-2">Données collectées par Google Analytics 4 :</p>
             <ul className="list-disc list-inside text-zinc-400 space-y-1 ml-2 text-xs">
               <li>URL de la page visitée</li>
               <li>Page de provenance (referrer — domaine uniquement)</li>
               <li>Type de navigateur et système d'exploitation (agrégé)</li>
-              <li>Pays de provenance (à partir de l'IP, non stockée)</li>
+              <li>Pays de provenance (IP anonymisée)</li>
               <li>Type d'appareil (desktop, mobile, tablette)</li>
             </ul>
             <p className="text-zinc-500 text-xs mt-3">
-              Aucune donnée permettant d'identifier personnellement un visiteur n'est collectée ni stockée.
+              Un identifiant de mesure est associé à votre navigateur via les cookies ci-dessus tant que vous avez accepté.
             </p>
           </div>
           <a
-            href="https://plausible.io/data-policy"
+            href="https://policies.google.com/technologies/partner-sites"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-red-400 hover:text-red-300 transition-colors inline-block"
           >
-            Politique de données Plausible Analytics &rarr;
+            Comment Google utilise les données de ses partenaires &rarr;
           </a>
         </div>
 
@@ -352,10 +351,10 @@ export default function CookiesPage() {
               Cookies exemptés de consentement (Article 82 de la loi Informatique et Libertés)
             </p>
             <p className="text-zinc-400 leading-relaxed">
-              Conformément aux lignes directrices de la CNIL du 17 septembre 2020, les cookies
-              strictement nécessaires au fonctionnement du service et les outils de mesure
-              d'audience utilisant des données anonymisées (comme Plausible Analytics dans notre
-              configuration) sont exemptés de consentement préalable.
+              Conformément aux lignes directrices de la CNIL du 17 septembre 2020, seuls les
+              cookies strictement nécessaires au fonctionnement du service sont exemptés de
+              consentement préalable. Google Analytics 4 ne bénéficie pas de cette exemption :
+              il n'est chargé qu'après votre acceptation explicite.
             </p>
           </div>
           <div className="bg-zinc-900/40 border border-amber-800/40 rounded-xl p-5">
@@ -462,15 +461,22 @@ export default function CookiesPage() {
           </div>
         </div>
 
-        <h3 className="text-base font-semibold text-white mb-2 mt-6">6.4 Opt-out Plausible Analytics</h3>
+        <h3 className="text-base font-semibold text-white mb-2 mt-6">6.4 Refuser Google Analytics 4</h3>
         <p className="text-sm leading-relaxed text-zinc-400">
-          Plausible Analytics n'utilisant pas de cookies et travaillant uniquement avec
-          des données anonymisées, il n'existe pas de mécanisme d'opt-out individuel au
-          sens traditionnel. Cependant, si votre navigateur envoie le signal{" "}
-          <strong className="text-zinc-300">Do Not Track (DNT)</strong>, Plausible le
-          respecte automatiquement en excluant votre visite des statistiques. Les utilisateurs
-          munis d'un bloqueur de publicité (uBlock Origin, AdGuard, etc.) ne sont généralement
-          pas comptabilisés.
+          Le moyen le plus simple est de cliquer <strong className="text-zinc-300">Tout refuser</strong>{" "}
+          sur le bandeau : le tag n'est alors jamais chargé, aucun cookie n'est déposé et rien
+          n'est transmis à Google. Pour revenir sur un consentement déjà donné, effacez les
+          données de ce site dans votre navigateur — le bandeau réapparaîtra. Google propose
+          également un{" "}
+          <a
+            href="https://tools.google.com/dlpage/gaoptout"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-red-400 hover:text-red-300 transition-colors"
+          >
+            module de désactivation
+          </a>{" "}
+          valable sur tous les sites utilisant Google Analytics.
         </p>
       </section>
 
