@@ -1,3 +1,5 @@
+import { BLOG_POSTS_2026 } from "./blog-posts-2026";
+
 export interface BlogFaqItem {
   q: string;
   a: string;
@@ -26,7 +28,12 @@ export interface BlogPost {
   i18n?: Record<string, BlogPostTranslation>;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+/**
+ * Posts published before August 2026. New ones live in blog-posts-2026.ts and
+ * are merged into BLOG_POSTS below — this array had passed 5 000 lines and only
+ * ever grows at the end, so every edit to it was a needless merge hazard.
+ */
+const LEGACY_POSTS: BlogPost[] = [
   {
     slug: "choisir-template-site-web",
     title: "Comment choisir le bon modèle de site web pour votre activité",
@@ -5099,6 +5106,9 @@ Deja de dejar que tus clientes se vayan al competidor de al lado por falta de re
     },
   },
 ];
+
+/** Newest first, so the blog index and llms.txt lead with recent work. */
+export const BLOG_POSTS: BlogPost[] = [...BLOG_POSTS_2026, ...LEGACY_POSTS];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);

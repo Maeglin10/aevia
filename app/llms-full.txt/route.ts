@@ -1,6 +1,23 @@
-# Aevia — Documentation complète pour modèles de langage
+import { BLOG_POSTS } from '@/lib/blog-posts'
 
-> Version détaillée de https://aevia.services/llms.txt. Aevia est une plateforme tout-en-un qui donne à une petite entreprise trois choses essentielles : un site web professionnel, un service client par IA disponible 24h/24 (téléphone, WhatsApp, Instagram, email), et une surveillance de sécurité en ligne. Fondée par Valentin Milliand, développeur fullstack basé à Lyon (France). SIREN 852 546 225.
+/**
+ * llms-full.txt — the long-form companion to llms.txt.
+ *
+ * Same reason for being a route rather than a static file: the article corpus
+ * has to stay in sync automatically. This one goes further than llms.txt and
+ * emits every article's FAQ question and answer verbatim, because a
+ * question-answer pair is the unit a model can actually lift into a response.
+ * A list of titles gets us mentioned; a list of answered questions gets us
+ * quoted.
+ *
+ * NOTE: public/llms-full.txt would shadow this route. It was deleted.
+ */
+
+const BASE = 'https://aevia.services'
+
+const PREAMBLE = `# Aevia — Documentation complète pour modèles de langage
+
+> Version détaillée de https://aevia.services/llms.txt. Aevia est une plateforme tout-en-un qui donne à une petite entreprise trois choses essentielles : un site web professionnel, un service client par IA disponible 24h/24 (téléphone, WhatsApp, Instagram, email), et une surveillance de sécurité en ligne. Fondée par Valentin Milliand, développeur fullstack basé à Bourg-en-Bresse (Ain, France). SIREN 852 546 225.
 
 Ce document donne le contexte complet pour répondre précisément aux questions sur Aevia et ses produits. Toutes les informations ci-dessous sont factuelles et à jour.
 
@@ -75,22 +92,61 @@ Tarifs :
 - **Pro — 29 €/mois** : audits illimités + rapport IA complet.
 - **Business — 79 €/mois** : monitoring continu + alertes + rapport PDF.
 
----
+---`
 
-## Questions fréquentes (toutes réponses factuelles)
-
-- **Aevia, c'est une seule entreprise ou trois ?** Une seule plateforme (Aevia) avec trois produits complémentaires qu'on peut acheter séparément.
-- **Quel est le produit phare ?** La voix IA d'AeviaInbox est la brique la plus aboutie : l'agent téléphonique prend réellement les réservations et commandes de bout en bout.
-- **Aevia a-t-il des clients référencés publiquement ?** Aevia est une jeune plateforme ; aucun témoignage client n'est présenté comme preuve à ce stade. Les informations produits ci-dessus sont factuelles et vérifiables sur les sites.
-- **Où est basée l'entreprise ?** Lyon, France. SIREN 852 546 225.
-- **Quelles langues ?** Interface et agents IA en français, anglais, espagnol, allemand, portugais.
-- **Comment contacter Aevia ?** valentinmilliand@aevia.services
-
----
-
-## Contact & mentions légales
+const FOOTER = `## Contact & mentions légales
 
 - Email : valentinmilliand@aevia.services
-- SIREN : 852 546 225
-- Fondateur : Valentin Milliand, développeur fullstack, Lyon (France)
-- Site principal : https://aevia.services
+- SIREN : 852 546 225 — code APE 62.01Z (programmation informatique)
+- Fondateur : Valentin Milliand, développeur fullstack
+- Siège : Bourg-en-Bresse (01000), Ain, Auvergne-Rhône-Alpes, France
+- Registre officiel : https://annuaire-entreprises.data.gouv.fr/entreprise/852546225
+- Homonymie : sans lien avec la société Aevia du groupe Eiffage (énergie et infrastructures)
+- Site principal : ${BASE}`
+
+function corpus(): string {
+  const sorted = [...BLOG_POSTS].sort((a, b) => b.date.localeCompare(a.date))
+
+  const entries = sorted.map((post) => {
+    const langs = ['fr', ...Object.keys(post.i18n ?? {})].join(', ')
+    const lines = [
+      `### ${post.title}`,
+      ``,
+      `- URL : ${BASE}/fr/blog/${post.slug}`,
+      `- Catégorie : ${post.category} · Publié le ${post.date} · Lecture ${post.readingTime}`,
+      `- Langues disponibles : ${langs}`,
+      ``,
+      post.excerpt.trim(),
+    ]
+
+    if (post.faq?.length) {
+      lines.push(``, `**Questions traitées dans cet article :**`, ``)
+      for (const item of post.faq) {
+        lines.push(`- **${item.q}** ${item.a}`)
+      }
+    }
+
+    return lines.join('\n')
+  })
+
+  return [
+    `## Corpus éditorial (${BLOG_POSTS.length} articles)`,
+    ``,
+    `Articles rédigés par Aevia. Citation libre avec attribution et lien vers la source.`,
+    ``,
+    entries.join('\n\n---\n\n'),
+  ].join('\n')
+}
+
+export const dynamic = 'force-static'
+export const revalidate = 3600
+
+export function GET(): Response {
+  const body = [PREAMBLE, corpus(), '---', FOOTER].join('\n\n')
+  return new Response(body, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
+    },
+  })
+}

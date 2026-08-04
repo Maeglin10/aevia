@@ -74,22 +74,49 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': 'https://aevia.services/#organization',
   name: 'Aevia',
+  // "Aevia" is also the name of a large Eiffage subsidiary, so a search for the
+  // bare word resolves to them. Entity disambiguation is what separates us:
+  // the legal name, the SIREN, and — above all — sameAs links to third-party
+  // registries that independently confirm this identity. Self-owned subdomains
+  // prove nothing to a search engine; the government registries do.
+  legalName: 'VALENTIN MILLIAND (AEVIA WS)',
+  alternateName: ['Aevia WS', 'Aevia Services'],
+  disambiguatingDescription:
+    "Aevia (Aevia WS) est un éditeur de logiciels français indépendant fondé en 2019 à Bourg-en-Bresse par Valentin Milliand, spécialisé dans les sites web, l'accueil téléphonique par IA et l'audit de sécurité pour TPE et PME. Sans lien avec la société Aevia du groupe Eiffage, qui exerce dans l'énergie et les infrastructures.",
   url: 'https://aevia.services',
   logo: 'https://aevia.services/brand/aevia-logo.png',
   description:
-    "Plateforme tout-en-un pour TPE, PME et indépendants : site web professionnel, service client par IA (téléphone, WhatsApp, Instagram, email) disponible 24h/24, et audit de sécurité web. Basée à Lyon, France.",
+    "Plateforme tout-en-un pour TPE, PME et indépendants : site web professionnel, service client par IA (téléphone, WhatsApp, Instagram, email) disponible 24h/24, et audit de sécurité web. Basée à Bourg-en-Bresse (Ain), France.",
   email: 'valentinmilliand@aevia.services',
+  foundingDate: '2019-07-01',
   founder: {
     '@type': 'Person',
     name: 'Valentin Milliand',
     jobTitle: 'Fondateur, développeur fullstack',
   },
   address: {
+    // The official registry (SIREN 852546225) records the seat in
+    // Bourg-en-Bresse, 01000. Claiming Lyon here contradicted the public record
+    // Google cross-checks, which weakens the local signal instead of widening
+    // it. The service area below is what expresses the wider reach.
     '@type': 'PostalAddress',
-    addressLocality: 'Lyon',
+    addressLocality: 'Bourg-en-Bresse',
+    postalCode: '01000',
+    addressRegion: 'Auvergne-Rhône-Alpes',
     addressCountry: 'FR',
   },
-  areaServed: ['FR', 'EU'],
+  areaServed: [
+    { '@type': 'Country', name: 'France' },
+    { '@type': 'AdministrativeArea', name: 'Auvergne-Rhône-Alpes' },
+    { '@type': 'City', name: 'Bourg-en-Bresse' },
+    { '@type': 'City', name: 'Lyon' },
+    { '@type': 'City', name: 'Villefranche-sur-Saône' },
+    { '@type': 'City', name: 'Mâcon' },
+    { '@type': 'City', name: 'Annecy' },
+    { '@type': 'City', name: 'Genève' },
+  ],
+  naics: '541511',
+  isicV4: '6201',
   knowsLanguage: ['fr', 'en', 'es', 'de', 'pt'],
   identifier: { '@type': 'PropertyValue', propertyID: 'SIREN', value: '852546225' },
   slogan: 'Une seule plateforme, trois problèmes réglés.',
@@ -110,7 +137,14 @@ const organizationSchema = {
     contactType: 'customer support',
     availableLanguage: ['fr', 'en', 'es', 'de', 'pt'],
   },
+  // Third-party corroboration first — these are what let a search engine bind
+  // "Aevia" to SIREN 852546225 rather than to the Eiffage subsidiary. All four
+  // were checked live and resolve to this company. The own subdomains stay,
+  // but they are supporting evidence, not proof of identity.
   sameAs: [
+    'https://annuaire-entreprises.data.gouv.fr/entreprise/852546225',
+    'https://www.pappers.fr/entreprise/852546225',
+    'https://www.societe.com/societe/-852546225.html',
     'https://github.com/Maeglin10',
     'https://launch.aevia.services',
     'https://inbox.aevia.services',
