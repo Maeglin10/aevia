@@ -1307,4 +1307,459 @@ La API existe para eso: los mensajes salientes hacia quien no te ha escrito reci
       },
     },
   },
+  {
+    slug: "agent-vocal-ia-garage-automobile",
+    title: "Garage automobile : arrêter de perdre des clients pendant qu'on est sous une voiture",
+    excerpt:
+      "Un garagiste ne peut pas décrocher les mains dans le cambouis. Chaque appel manqué est une révision qui part chez le concurrent d'en face. Comment un agent vocal prend les rendez-vous pendant que l'atelier tourne, et ce qu'il ne faut pas lui confier.",
+    date: "2026-08-04",
+    readingTime: "6 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Un garage manque 30 à 50 % de ses appels** aux heures d'atelier : personne n'est au bureau, et on ne décroche pas sous un pont
+- **L'appel manqué ne rappelle pas** — il appelle le garage suivant, parce qu'une panne ne s'ajourne pas
+- **Un agent vocal prend le rendez-vous**, le motif et le véhicule, et l'inscrit dans l'agenda sans interrompre le travail en cours
+- **Ce qu'il ne faut PAS lui confier** : le diagnostic et le chiffrage. Un devis annoncé au téléphone puis démenti à l'atelier détruit la confiance
+
+---
+
+## Le problème est mécanique, pas commercial
+
+Un garage de deux à cinq personnes a une contrainte que peu de métiers connaissent : les mains occupées et sales pendant l'essentiel de la journée. Le téléphone sonne au moment précis où l'on ne peut pas répondre.
+
+Résultat, la plupart des garages fonctionnent sur un mode dégradé assumé : on rappelle « quand on a une minute », c'est-à-dire à 19h, quand le client est lui-même en train de faire autre chose. Entre-temps, il a appelé deux autres garages et pris rendez-vous chez le premier qui a décroché.
+
+Ce n'est pas un défaut de service. C'est une contrainte physique. Et c'est précisément le type de problème qu'un système résout mieux qu'un effort supplémentaire.
+
+---
+
+## Ce qu'un agent vocal fait bien dans ce métier
+
+**Prendre le rendez-vous avec les bonnes informations.** Un rendez-vous garage utile contient quatre choses : le nom, le véhicule (marque, modèle, immatriculation), le motif, et une disponibilité. L'agent les demande dans l'ordre, les vérifie, et pose le créneau.
+
+**Trier l'urgent du planifiable.** « Ma voiture ne démarre plus » et « il me faut une vidange le mois prochain » n'appellent pas la même réponse. Un agent bien configuré propose le premier créneau disponible dans un cas, et une plage large dans l'autre.
+
+**Répondre aux questions qui reviennent trente fois par semaine.** Faites-vous le contrôle technique ? Prêtez-vous un véhicule ? Prenez-vous ma marque ? Ouvrez-vous le samedi ? Ces questions ne demandent aucune compétence mécanique, seulement une réponse immédiate.
+
+**Absorber la nuit et le week-end.** Une panne survient rarement en semaine à 10h. L'appel du dimanche soir est celui qui décide où la voiture ira le lundi.
+
+---
+
+## Ce qu'il ne faut surtout pas automatiser
+
+**Le diagnostic.** Un client qui décrit un bruit ne décrit jamais le bon bruit. Aucun système, humain ou non, ne diagnostique par téléphone — et un agent qui hasarde une cause vous engage.
+
+**Le chiffrage.** C'est l'erreur qui coûte le plus cher. Si l'agent annonce « comptez environ 250 € » et que la facture sort à 480 €, vous perdez le client et vous récoltez un avis à une étoile. La règle à écrire dans la configuration : **ne jamais annoncer de prix sans devis**, orienter vers un passage à l'atelier.
+
+**Les litiges.** Un client qui rappelle mécontent d'une réparation doit tomber sur un humain. Immédiatement.
+
+---
+
+## Ce que ça change sur une semaine type
+
+Un garage qui reçoit 15 appels par jour dont la moitié restent sans réponse récupère, avec un taux de conversion prudent, plusieurs rendez-vous par semaine qui partaient ailleurs. Sur un panier moyen d'entretien courant, l'arithmétique se fait vite.
+
+Le bénéfice moins visible mais plus durable : **l'atelier n'est plus interrompu**. Un mécanicien qui pose son outil pour décrocher perd bien plus que la durée de l'appel — il perd le fil de ce qu'il faisait.
+
+---
+
+## Comment le mettre en place sans casser l'existant
+
+La configuration recommandée est le **renvoi conditionnel** : le garage garde son numéro, et les appels basculent vers l'agent seulement si personne ne décroche après cinq sonneries ou si la ligne est occupée. Rien ne change pour les clients, rien ne change pour l'équipe, et l'agent ne prend que ce qui serait tombé dans le vide.
+
+Prévois une demi-journée pour rassembler les questions fréquentes et les vraies règles de l'atelier — c'est là que se joue la qualité, pas dans la technique.`,
+    faq: [
+      {
+        q: "L'agent peut-il donner un prix de réparation au téléphone ?",
+        a: "Il ne devrait pas, et c'est une règle à inscrire explicitement dans sa configuration. Un montant annoncé sans diagnostic sera démenti par la facture, ce qui coûte le client et l'avis. L'agent oriente vers un devis après passage à l'atelier.",
+      },
+      {
+        q: "Comment l'agent sait-il quels créneaux sont libres ?",
+        a: "Il lit l'agenda connecté en temps réel et ne propose que des créneaux réellement disponibles, puis y inscrit le rendez-vous avec le véhicule et le motif.",
+      },
+      {
+        q: "Que se passe-t-il si le client a une panne urgente ?",
+        a: "L'urgence se configure : l'agent peut proposer le premier créneau du jour, transférer immédiatement vers le portable du patron, ou donner la marche à suivre pour un dépannage selon ce que vous décidez.",
+      },
+      {
+        q: "Faut-il changer de numéro de téléphone ?",
+        a: "Non. La configuration recommandée est un renvoi conditionnel depuis le numéro actuel : l'agent ne prend que les appels qui ne sont pas décrochés.",
+      },
+    ],
+    i18n: {
+      en: {
+        title: "Auto repair shops: stop losing customers while you are under a car",
+        excerpt:
+          "A mechanic cannot answer the phone with greasy hands. Every missed call is a service booked at the garage across the road. How a voice agent takes appointments while the workshop keeps running — and what you must never let it handle.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **A garage misses 30–50% of its calls** during workshop hours: nobody is at the desk, and you do not answer from under a lift
+- **A missed call does not call back** — it calls the next garage, because a breakdown does not wait
+- **A voice agent books the appointment**, the reason and the vehicle, straight into the calendar without interrupting the job in hand
+- **What it must NOT do**: diagnose and quote. A price given on the phone and contradicted at the workshop destroys trust
+
+---
+
+## The problem is physical, not commercial
+
+A two-to-five person garage has a constraint few trades share: hands busy and dirty for most of the day. The phone rings precisely when you cannot answer.
+
+So most garages run a knowingly degraded service: call back "when there's a minute", meaning 7pm, when the customer is busy too. By then they have called two other garages and booked with whoever picked up.
+
+That is not poor service. It is a physical constraint — exactly the kind of problem a system solves better than more effort.
+
+---
+
+## What a voice agent does well here
+
+**Books with the right information.** A useful garage appointment holds four things: name, vehicle, reason, availability. The agent asks in order and places the slot.
+
+**Separates urgent from schedulable.** "My car won't start" and "I need a service next month" deserve different answers.
+
+**Answers the questions asked thirty times a week.** Do you do MOTs? Do you lend a car? Do you take my make? Open Saturdays?
+
+**Covers nights and weekends.** Breakdowns rarely happen at 10am on a Tuesday. The Sunday-evening call decides where the car goes on Monday.
+
+---
+
+## What you must not automate
+
+**Diagnosis.** A customer describing a noise never describes the right noise.
+
+**Quoting.** The costliest mistake. "Around €250" against a €480 invoice loses the customer and earns a one-star review. Write the rule into the configuration: **never quote without an inspection**.
+
+**Disputes.** An unhappy customer must reach a human immediately.
+
+---
+
+## Setting it up without breaking anything
+
+Use **conditional forwarding**: the garage keeps its number, and calls only reach the agent after five rings or when the line is busy. Nothing changes for customers or staff, and the agent only takes what would have gone unanswered.`,
+        faq: [
+          {
+            q: "Can the agent quote a repair over the phone?",
+            a: "It should not, and that rule belongs explicitly in its configuration. A figure given without inspection will be contradicted by the invoice. The agent directs to a quote after the car is seen.",
+          },
+          {
+            q: "How does the agent know which slots are free?",
+            a: "It reads the connected calendar in real time, offers only genuinely available slots, and writes the booking in with the vehicle and the reason.",
+          },
+          {
+            q: "What if the customer has an urgent breakdown?",
+            a: "Urgency is configurable: first slot of the day, immediate transfer to the owner's mobile, or breakdown instructions — whichever you decide.",
+          },
+          {
+            q: "Do I need to change my phone number?",
+            a: "No. Conditional forwarding from your current number means the agent only takes unanswered calls.",
+          },
+        ],
+      },
+      es: {
+        title: "Taller mecánico: dejar de perder clientes mientras estás bajo un coche",
+        excerpt:
+          "Un mecánico no puede descolgar con las manos llenas de grasa. Cada llamada perdida es una revisión que se va al taller de enfrente. Cómo un agente de voz coge las citas mientras el taller sigue trabajando.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Un taller pierde entre el 30 y el 50 % de sus llamadas** en horario de trabajo
+- **La llamada perdida no vuelve a llamar** — llama al siguiente taller, porque una avería no espera
+- **Un agente de voz coge la cita**, el motivo y el vehículo, sin interrumpir el trabajo
+- **Lo que NO hay que delegarle**: el diagnóstico y el presupuesto
+
+---
+
+## El problema es físico, no comercial
+
+Un taller de dos a cinco personas tiene una limitación que pocos oficios comparten: las manos ocupadas y sucias casi todo el día. El teléfono suena justo cuando no se puede responder.
+
+El cliente, mientras tanto, ha llamado a otros dos talleres y ha reservado con el primero que descolgó.
+
+---
+
+## Lo que el agente hace bien
+
+**Coger la cita con los datos correctos**: nombre, vehículo, motivo y disponibilidad.
+
+**Separar lo urgente de lo planificable.**
+
+**Responder las preguntas de siempre**: ¿hacéis la ITV? ¿dejáis coche de sustitución? ¿abrís los sábados?
+
+**Cubrir noches y fines de semana.** Una avería rara vez ocurre un martes a las 10h.
+
+---
+
+## Lo que no hay que automatizar
+
+**El diagnóstico.** Quien describe un ruido nunca describe el ruido correcto.
+
+**El presupuesto.** Es el error más caro: «unos 250 €» frente a una factura de 480 € pierde al cliente y gana una reseña de una estrella.
+
+**Las reclamaciones.** Deben llegar a una persona de inmediato.
+
+---
+
+## Cómo implantarlo sin romper nada
+
+Desvío condicional: el taller conserva su número y las llamadas solo llegan al agente tras cinco tonos o si la línea está ocupada.`,
+        faq: [
+          {
+            q: "¿Puede el agente dar un precio de reparación por teléfono?",
+            a: "No debería, y esa regla debe escribirse en su configuración. Una cifra dada sin revisión será desmentida por la factura.",
+          },
+          {
+            q: "¿Cómo sabe el agente qué huecos hay libres?",
+            a: "Lee la agenda conectada en tiempo real y solo ofrece huecos realmente disponibles.",
+          },
+          {
+            q: "¿Y si el cliente tiene una avería urgente?",
+            a: "La urgencia se configura: primer hueco del día, transferencia al móvil del responsable, o instrucciones de asistencia.",
+          },
+          {
+            q: "¿Hay que cambiar de número?",
+            a: "No. Con desvío condicional el agente solo atiende las llamadas no contestadas.",
+          },
+        ],
+      },
+    },
+  },
+
+  {
+    slug: "prise-rendez-vous-ia-cabinet-dentaire",
+    title: "Cabinet dentaire : la prise de rendez-vous par IA, et la ligne à ne pas franchir",
+    excerpt:
+      "Un secrétariat dentaire passe ses journées sur trois demandes qui se répètent. Les automatiser libère du temps réel — à condition de savoir exactement ce qu'une IA n'a pas le droit de faire dans un cabinet de santé.",
+    date: "2026-08-04",
+    readingTime: "7 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Trois motifs représentent l'essentiel des appels** : prendre, déplacer ou annuler un rendez-vous
+- **L'automatisation de ces trois-là** rend au secrétariat le temps qu'il passe au téléphone au lieu d'accueillir les patients présents
+- **Une IA ne donne jamais de conseil médical** — ni tri de symptômes, ni « est-ce grave ». C'est une limite juridique, pas seulement prudentielle
+- **Les données de santé sont sensibles au sens du RGPD** : hébergement, minimisation et information des patients ne sont pas optionnels
+
+---
+
+## Ce que fait vraiment un secrétariat dentaire
+
+Regardez une journée de standard dans un cabinet : la grande majorité des appels tiennent en trois phrases. « Je voudrais un rendez-vous. » « Je dois décaler celui de jeudi. » « Je ne pourrai pas venir. »
+
+Ces appels ne demandent aucune compétence clinique. Ils demandent une agenda à jour et deux minutes. Mais ils arrivent en rafale à 9h et à 14h, exactement quand des patients se présentent à l'accueil — et c'est la personne devant vous qui attend pendant que vous répondez au téléphone.
+
+---
+
+## Ce qui s'automatise proprement
+
+**La prise de rendez-vous.** L'agent demande le motif dans une liste que vous définissez (contrôle, détartrage, urgence, suite de traitement), propose les créneaux correspondant à la durée réelle de l'acte, et inscrit le patient.
+
+**Le déplacement et l'annulation.** C'est le gisement le plus rentable et le plus sous-estimé. Une annulation non traitée devient un fauteuil vide ; une annulation captée à temps peut être reproposée.
+
+**Le rappel de rendez-vous.** Le taux de rendez-vous non honorés baisse nettement avec un rappel la veille — et personne n'aime passer ces appels.
+
+**Les questions administratives.** Prenez-vous la carte Vitale ? Êtes-vous conventionné ? Où se garer ? Faites-vous l'implantologie ? Ces réponses sont fixes et n'ont aucune raison de mobiliser un humain.
+
+---
+
+## La ligne à ne pas franchir
+
+C'est la partie qu'il faut lire deux fois.
+
+**Aucun conseil médical, jamais.** Un agent ne doit pas répondre à « j'ai mal, est-ce que je peux attendre ? », ni proposer d'antalgique, ni estimer une gravité. La configuration doit prévoir une phrase de sortie explicite et un transfert.
+
+**Aucun tri de symptômes.** Décider qu'un patient est urgent ou non sur la foi d'une description téléphonique est un acte médical. L'agent peut proposer un créneau « urgence » si le patient le demande, pas décider qu'il en relève.
+
+**Aucun échange de données médicales.** L'agent enregistre un motif dans votre nomenclature, pas un historique clinique.
+
+**Un humain accessible en permanence.** Une douleur dentaire aiguë ne se met pas en attente. Le transfert doit être immédiat et testé.
+
+---
+
+## RGPD : ce que ça implique concrètement
+
+Un rendez-vous dentaire, même sans détail clinique, révèle un état de santé. Le RGPD le range dans les **données sensibles**, ce qui impose plus qu'un formulaire de consentement :
+
+- **Minimisation** — ne collecter que le nom, le contact, le motif et le créneau. Pas de « décrivez votre problème ».
+- **Information des patients** — dire clairement qu'un système automatisé traite la prise de rendez-vous et comment joindre un humain.
+- **Hébergement** — les données de santé en France relèvent d'exigences d'hébergement spécifiques ; à vérifier avec votre prestataire selon ce qui est réellement stocké.
+- **Durée de conservation** — définie, écrite, appliquée.
+- **Sous-traitance** — un contrat de sous-traitance en bonne et due forme avec le prestataire.
+
+Ce n'est pas un obstacle : c'est un cadre. Un cabinet qui l'applique gagne aussi en sérénité vis-à-vis de ses patients.
+
+---
+
+## Ce que ça change au quotidien
+
+Le bénéfice n'est pas « remplacer le secrétariat ». C'est **lui rendre son métier** : accueillir, préparer, gérer les tiers payants, s'occuper du patient qui est là. Le téléphone cesse d'être une interruption permanente et devient un flux traité en arrière-plan.
+
+Et le cabinet cesse de perdre les demandes du soir et du week-end, qui aujourd'hui tombent sur un répondeur que peu de patients écoutent jusqu'au bout.
+
+---
+
+## Mise en place réaliste
+
+Comptez une demi-journée pour définir la nomenclature des motifs et les durées associées, les règles d'urgence, et la liste des situations qui déclenchent un transfert humain. C'est ce travail-là — pas la technique — qui détermine si le système sera un soulagement ou une source d'incidents.`,
+    faq: [
+      {
+        q: "Une IA a-t-elle le droit de prendre des rendez-vous médicaux ?",
+        a: "Oui, la prise de rendez-vous est un acte administratif, pas un acte médical. En revanche l'agent ne doit ni évaluer des symptômes, ni conseiller un traitement, ni décider d'une urgence : ces actes relèvent du professionnel de santé.",
+      },
+      {
+        q: "Les données des patients sont-elles protégées ?",
+        a: "Un rendez-vous chez un praticien révèle un état de santé et relève donc des données sensibles au sens du RGPD. Cela impose la minimisation des données collectées, l'information des patients, une durée de conservation définie, un contrat de sous-traitance, et une vigilance sur les exigences d'hébergement selon ce qui est stocké.",
+      },
+      {
+        q: "Que se passe-t-il si un patient a une urgence douloureuse ?",
+        a: "Le transfert vers un humain doit être immédiat et configuré à l'avance. L'agent ne doit jamais évaluer lui-même le degré d'urgence à partir de la description du patient.",
+      },
+      {
+        q: "L'agent peut-il gérer les annulations et les rappels ?",
+        a: "Oui, et c'est souvent le gain le plus rentable : une annulation captée à temps permet de reproposer le créneau, et un rappel la veille réduit nettement les rendez-vous non honorés.",
+      },
+    ],
+    i18n: {
+      en: {
+        title: "Dental practices: AI appointment booking, and the line not to cross",
+        excerpt:
+          "A dental receptionist spends the day on three repeating requests. Automating those three returns real time to the practice — provided you know exactly what an AI is not allowed to do in a healthcare setting.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **Three reasons account for most calls**: book, move, or cancel an appointment
+- **Automating those three** gives the front desk back the time it spends on the phone instead of with the patient standing there
+- **An AI never gives medical advice** — no symptom triage, no "is this serious". That is a legal limit, not merely a cautious one
+- **Health data is sensitive under GDPR**: minimisation, patient information and hosting requirements are not optional
+
+---
+
+## What a dental front desk actually does
+
+Watch a day on the phones: the vast majority of calls fit in three sentences. "I'd like an appointment." "I need to move Thursday." "I can't make it."
+
+None require clinical skill. They require an up-to-date diary and two minutes. But they arrive in bursts at 9am and 2pm — exactly when patients are standing at the desk, waiting while you answer the phone.
+
+---
+
+## What automates cleanly
+
+**Booking.** The agent asks the reason from a list you define, offers slots matching the real duration of the procedure, and books the patient in.
+
+**Moving and cancelling.** The most underrated gain. An unhandled cancellation is an empty chair; one captured in time can be re-offered.
+
+**Reminders.** No-show rates drop markedly with a reminder the day before — and nobody enjoys making those calls.
+
+**Administrative questions.** Do you take this insurance? Where do I park? Do you do implants?
+
+---
+
+## The line not to cross
+
+**No medical advice, ever.** The agent must not answer "it hurts, can it wait?", suggest painkillers, or estimate severity.
+
+**No symptom triage.** Deciding a patient is urgent from a phone description is a clinical act. The agent may offer an "urgent" slot on request; it may not decide the patient needs one.
+
+**No clinical data.** It records a reason from your list, not a history.
+
+**A human always reachable.** Acute dental pain does not go on hold. The transfer must be immediate and tested.
+
+---
+
+## GDPR in practice
+
+A dental appointment, even without clinical detail, reveals a health status — sensitive data under GDPR. That means minimisation, clear patient information that an automated system handles booking, a defined retention period, a proper processor agreement, and attention to hosting requirements depending on what is actually stored.
+
+---
+
+## What changes day to day
+
+The benefit is not replacing the receptionist. It is **giving them their job back**: welcoming, preparing, handling the patient who is present. And the practice stops losing evening and weekend requests that currently reach a voicemail few patients finish listening to.`,
+        faq: [
+          {
+            q: "Is an AI allowed to book medical appointments?",
+            a: "Yes — booking is administrative, not clinical. The agent must not assess symptoms, advise treatment, or decide urgency; those belong to the practitioner.",
+          },
+          {
+            q: "Is patient data protected?",
+            a: "An appointment with a practitioner reveals a health status and is therefore sensitive data under GDPR. That requires minimisation, patient information, a defined retention period, a processor agreement, and care over hosting requirements.",
+          },
+          {
+            q: "What happens if a patient is in acute pain?",
+            a: "Transfer to a human must be immediate and configured in advance. The agent must never assess the degree of urgency itself.",
+          },
+          {
+            q: "Can the agent handle cancellations and reminders?",
+            a: "Yes, and it is often the most profitable gain: a cancellation captured in time frees a slot to re-offer, and a day-before reminder markedly reduces no-shows.",
+          },
+        ],
+      },
+      es: {
+        title: "Clínica dental: la cita por IA y la línea que no hay que cruzar",
+        excerpt:
+          "Una recepción dental pasa el día con tres peticiones que se repiten. Automatizarlas devuelve tiempo real a la clínica, siempre que sepas qué no puede hacer una IA en un entorno sanitario.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Tres motivos concentran la mayoría de llamadas**: pedir, cambiar o anular una cita
+- **Automatizar esos tres** devuelve a recepción el tiempo que pasa al teléfono en lugar de atender al paciente presente
+- **Una IA nunca da consejo médico** — ni triaje de síntomas, ni «¿es grave?». Es un límite legal
+- **Los datos de salud son sensibles según el RGPD**
+
+---
+
+## Lo que hace realmente una recepción dental
+
+La gran mayoría de las llamadas caben en tres frases. No requieren competencia clínica, solo una agenda al día y dos minutos. Pero llegan en oleadas a las 9h y a las 14h, justo cuando hay pacientes esperando en el mostrador.
+
+---
+
+## Lo que se automatiza bien
+
+**Pedir cita**, con el motivo elegido de una lista que tú defines y huecos acordes a la duración real del acto.
+
+**Cambiar y anular.** Es el mayor beneficio y el más subestimado: una anulación no gestionada es un sillón vacío.
+
+**Los recordatorios**, que reducen mucho las citas no acudidas.
+
+**Las preguntas administrativas.**
+
+---
+
+## La línea que no hay que cruzar
+
+**Ningún consejo médico, nunca.**
+
+**Ningún triaje de síntomas.** Decidir que un paciente es urgente a partir de una descripción telefónica es un acto clínico.
+
+**Ningún dato clínico.**
+
+**Un humano siempre accesible.** Un dolor dental agudo no se pone en espera.
+
+---
+
+## RGPD en la práctica
+
+Una cita con un profesional sanitario revela un estado de salud: dato sensible. Exige minimización, información al paciente, plazo de conservación definido, contrato de encargado de tratamiento y atención a los requisitos de alojamiento.`,
+        faq: [
+          {
+            q: "¿Puede una IA gestionar citas médicas?",
+            a: "Sí: pedir cita es un acto administrativo, no clínico. El agente no debe evaluar síntomas, aconsejar tratamiento ni decidir urgencias.",
+          },
+          {
+            q: "¿Están protegidos los datos de los pacientes?",
+            a: "Una cita revela un estado de salud, por lo que son datos sensibles según el RGPD: minimización, información, plazo de conservación y contrato de encargado.",
+          },
+          {
+            q: "¿Y si un paciente tiene un dolor urgente?",
+            a: "La transferencia a una persona debe ser inmediata y estar configurada de antemano.",
+          },
+          {
+            q: "¿Puede el agente gestionar anulaciones y recordatorios?",
+            a: "Sí, y suele ser lo más rentable: una anulación captada a tiempo libera el hueco para reofrecerlo.",
+          },
+        ],
+      },
+    },
+  },
 ];

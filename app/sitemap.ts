@@ -5,11 +5,32 @@ import { BLOG_POSTS, localesForPost } from '@/lib/blog-posts'
 
 const BASE = 'https://aevia.services'
 
+/**
+ * `lastmod` has to mean something or it means nothing.
+ *
+ * Every non-article URL used to report `new Date()`, so each deploy told Google
+ * the homepage, every comparison page and the blog index had all changed that
+ * day — even when the deploy only touched a stylesheet. A sitemap that claims
+ * everything changed every day trains a crawler to stop reading the field, and
+ * we lose the one lever we have for saying "this page is genuinely new".
+ *
+ * Dates now come from content. The newest article stands in for pages whose
+ * content has no date of its own: publishing is what actually changes the site,
+ * and it moves the date exactly when something real happened.
+ */
+function newestContentDate(): Date {
+  const newest = BLOG_POSTS.reduce(
+    (latest, post) => (post.date > latest ? post.date : latest),
+    '1970-01-01'
+  )
+  return new Date(newest)
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+  const contentDate = newestContentDate()
   const localeHomes: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
     url: `${BASE}/${locale}`,
-    lastModified: now,
+    lastModified: contentDate,
     changeFrequency: 'weekly',
     priority: locale === routing.defaultLocale ? 1 : 0.8,
     alternates: {
@@ -24,7 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const availableLocales = Object.keys(entry.copy) as Array<keyof typeof entry.copy>
     return availableLocales.map((locale) => ({
       url: `${BASE}/${locale}/vs/${entry.slug}`,
-      lastModified: now,
+      // Comparison copy lives in vs-content.ts and changes rarely; tie it to the
+      // content date rather than the build clock.
+      lastModified: contentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.75,
       alternates: {
@@ -38,7 +61,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog index per locale
   const blogIndex: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
     url: `${BASE}/${locale}/blog`,
-    lastModified: now,
+    // The index genuinely changes when a post ships — that is exactly contentDate.
+    lastModified: contentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
@@ -66,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...vsPages,
     {
       url: `${BASE}/contact`,
-      lastModified: now,
+      lastModified: contentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
