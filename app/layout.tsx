@@ -206,10 +206,16 @@ const productsSchema = {
       description:
         "Service client par IA 24h/24 : agent vocal sur ligne téléphonique dédiée (réservations, commandes) et messagerie unifiée WhatsApp, Instagram, Facebook, email. Modes messages seuls, voix seule ou les deux.",
       offers: [
-        { '@type': 'Offer', name: 'Growth', price: '99', priceCurrency: 'USD' },
-        { '@type': 'Offer', name: 'Studio', price: '199', priceCurrency: 'USD' },
-        { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'USD' },
-        { '@type': 'Offer', name: 'Enterprise', price: '999', priceCurrency: 'USD' },
+        // Names, amounts and currency come from /api/v1/billing/plans/public —
+        // what Stripe actually charges. They previously read "Growth"/"Studio"
+        // in USD, tiers that no longer exist under names nobody would recognise
+        // from the pricing page. A price in structured data is quoted back by
+        // search engines and assistants, so a stale one is a promise we cannot
+        // honour.
+        { '@type': 'Offer', name: 'Essentiel', price: '99', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Pro', price: '199', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Enterprise', price: '999', priceCurrency: 'EUR' },
       ],
     },
     {
