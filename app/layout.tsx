@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
@@ -105,16 +107,32 @@ const organizationSchema = {
     addressRegion: 'Auvergne-Rhône-Alpes',
     addressCountry: 'FR',
   },
+  // The seat is Bourg-en-Bresse, but nothing about the product is geographic:
+  // sites, voice agents and messaging are delivered remotely and the agents
+  // answer in five languages. Declaring only France would have capped us at the
+  // French market for no reason. Worldwide first, then the countries we have
+  // actual telephony and language coverage for, then the local cluster — the
+  // order is what a reader (human or model) sees as the primary claim.
   areaServed: [
+    { '@type': 'Place', name: 'Worldwide' },
     { '@type': 'Country', name: 'France' },
+    { '@type': 'Country', name: 'Belgique' },
+    { '@type': 'Country', name: 'Suisse' },
+    { '@type': 'Country', name: 'Luxembourg' },
+    { '@type': 'Country', name: 'Canada' },
+    { '@type': 'Country', name: 'España' },
+    { '@type': 'Country', name: 'Portugal' },
+    { '@type': 'Country', name: 'Deutschland' },
+    { '@type': 'Country', name: 'México' },
+    { '@type': 'Country', name: 'Colombia' },
+    { '@type': 'Country', name: 'Costa Rica' },
     { '@type': 'AdministrativeArea', name: 'Auvergne-Rhône-Alpes' },
     { '@type': 'City', name: 'Bourg-en-Bresse' },
     { '@type': 'City', name: 'Lyon' },
-    { '@type': 'City', name: 'Villefranche-sur-Saône' },
-    { '@type': 'City', name: 'Mâcon' },
-    { '@type': 'City', name: 'Annecy' },
+    { '@type': 'City', name: 'Marseille' },
     { '@type': 'City', name: 'Genève' },
   ],
+  availableLanguage: ['fr', 'en', 'es', 'de', 'pt'],
   naics: '541511',
   isicV4: '6201',
   knowsLanguage: ['fr', 'en', 'es', 'de', 'pt'],
@@ -214,14 +232,30 @@ const productsSchema = {
   ],
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // This was hardcoded to "fr", so every localized page told search engines and
+  // screen readers it was French — including /en, which serves English. A wrong
+  // lang attribute is one of the few international-SEO mistakes that can get a
+  // whole locale ignored, and it applied to all five.
+  //
+  // The root layout sits above [locale] so it cannot read the route param, but
+  // next-intl's middleware resolves the locale into the request, and getLocale()
+  // reads it back. Routes outside [locale] (/contact, /sitemap.xml) have no
+  // locale resolved, hence the fallback.
+  let lang: string = routing.defaultLocale;
+  try {
+    lang = await getLocale();
+  } catch {
+    // Not a localized route — keep the default.
+  }
+
   return (
     <html
-      lang="fr"
+      lang={lang}
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>

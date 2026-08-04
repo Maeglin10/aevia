@@ -815,4 +815,496 @@ Así escriben los clientes reales: nadie pregunta una cosa cada vez.
       },
     },
   },
+  {
+    slug: "service-client-multilingue-ia-international",
+    title: "Vendre à l'international sans embaucher : le service client multilingue par IA",
+    excerpt:
+      "Répondre en cinq langues demandait cinq salariés, ou un prestataire hors de prix. Ce verrou a sauté. Voici ce que change un service client multilingue automatisé pour une petite structure qui vend au-delà de ses frontières, et les pièges qui restent.",
+    date: "2026-08-01",
+    readingTime: "7 min",
+    category: "CRM & Support",
+    content: `## À retenir en 30 secondes
+
+- **La barrière de la langue n'est plus un coût fixe** : un agent IA répond dans la langue du client sans effectif supplémentaire par marché
+- **Le vrai frein n'est pas la traduction, c'est le fuseau horaire** — un client à Bogotá écrit quand votre bureau dort
+- **Traduire n'est pas localiser** : les devises, les formats de date et les usages commerciaux changent d'un pays à l'autre
+- **Commencez par une langue et un pays**, mesurez, puis dupliquez — l'ouverture simultanée de cinq marchés dilue tout
+
+---
+
+## Le calcul qui bloquait l'international
+
+Jusqu'à récemment, servir un marché étranger imposait un choix binaire : embaucher quelqu'un qui parle la langue, ou renoncer. Pour une entreprise de trois personnes, cela signifiait qu'un marché de 40 millions d'habitants restait fermé parce qu'il manquait un salarié à 35 000 € par an.
+
+Ce calcul a changé. Un agent conversationnel répond en français, anglais, espagnol, allemand ou portugais avec la même qualité, sans que le coût dépende du nombre de langues. La langue est devenue un paramètre, pas un poste de dépense.
+
+---
+
+## Ce que ça débloque concrètement
+
+**Vous pouvez tester un marché sans vous engager.** Ouvrir l'Espagne demandait un recrutement ; cela demande maintenant une page traduite et un agent configuré. Si le marché ne répond pas, vous avez perdu quelques jours, pas une année de salaire.
+
+**Vous couvrez les fuseaux horaires sans travail de nuit.** C'est le point le plus sous-estimé. Un prospect canadien qui écrit à 21h heure de Montréal vous joint à 3h du matin. Sans réponse automatique, il a déjà écrit à trois concurrents avant votre réveil.
+
+**Vous ne perdez plus les demandes dans une langue que vous ne lisez pas.** Beaucoup de petites structures ont un dossier d'e-mails qu'elles n'ont jamais traités parce qu'ils étaient en allemand.
+
+---
+
+## Les quatre pièges qui restent
+
+### 1. Traduire ne suffit pas
+
+Un texte traduit mot à mot sonne étranger. Les usages commerciaux diffèrent : le tutoiement est normal en Espagne dans un contexte où le français exigerait du vous ; l'allemand attend plus de précision factuelle et moins d'emphase ; l'anglais britannique et américain n'ont pas les mêmes conventions de politesse.
+
+### 2. Les devises et les formats
+
+Afficher « 399 € » à un client colombien lui demande un calcul mental et une conversion qu'il ne fera pas. Les formats de date (12/06 signifie juin au Royaume-Uni et décembre aux États-Unis) provoquent de vraies erreurs de réservation.
+
+### 3. Le paiement
+
+Chaque marché a ses habitudes : carte en France, virement instantané en Allemagne, portefeuilles mobiles en Amérique latine. Proposer uniquement la carte ferme une partie du marché sans que vous le voyiez.
+
+### 4. Les obligations locales
+
+Mentions légales, conditions de vente, droit de rétractation et fiscalité changent d'un pays à l'autre. Un service client automatisé ne vous dispense pas de conditions générales adaptées au marché visé.
+
+---
+
+## La méthode qui marche : un marché à la fois
+
+1. **Choisissez le marché où vous avez déjà des signaux** — des visites, une demande spontanée, un client existant qui a parlé de vous.
+2. **Traduisez d'abord ce qui convertit** : la page produit, la page tarifs, la FAQ. Le blog vient après.
+3. **Configurez l'agent dans cette langue** et vérifiez ses réponses sur vos vingt questions les plus fréquentes.
+4. **Mesurez pendant six semaines** : demandes reçues, taux de réponse, demandes converties.
+5. **Ne dupliquez que si les chiffres suivent.**
+
+---
+
+## Ce que ça donne pour une TPE
+
+Une entreprise basée en France peut aujourd'hui servir un client espagnol, canadien ou colombien avec le même outillage que son voisin de palier. Le site est livré multilingue, l'agent répond dans la langue du visiteur sur WhatsApp, Instagram, e-mail ou au téléphone, et les demandes arrivent dans une seule boîte quel que soit le canal ou la langue.
+
+C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : cinq langues natives, aucun surcoût par langue, et le même contexte client d'un canal à l'autre. Le siège est en France ; les clients servis ne le sont pas nécessairement.`,
+    faq: [
+      {
+        q: "Un agent IA peut-il vraiment répondre correctement dans plusieurs langues ?",
+        a: "Oui pour les échanges de service client courants : questions sur les horaires, les prix, la disponibilité, prise de rendez-vous. La qualité est comparable d'une langue à l'autre. Pour la négociation commerciale ou les sujets sensibles, un relais humain reste préférable.",
+      },
+      {
+        q: "Faut-il un site traduit pour servir un marché étranger ?",
+        a: "Au minimum les pages qui convertissent : produit, tarifs, contact et FAQ. Un agent multilingue sur un site entièrement en français crée une incohérence qui réduit la confiance.",
+      },
+      {
+        q: "Combien coûte l'ajout d'une langue ?",
+        a: "Sur une solution multilingue native, rien de plus par langue — le coût suit le volume de messages, pas le nombre de langues. Ce qui coûte, c'est la traduction du site et l'adaptation des conditions de vente au marché visé.",
+      },
+      {
+        q: "Peut-on servir un fuseau horaire éloigné sans travailler la nuit ?",
+        a: "C'est précisément l'intérêt : l'agent répond immédiatement quelle que soit l'heure, prend le rendez-vous ou la commande, et vous traitez le reste pendant vos heures ouvrées.",
+      },
+    ],
+    i18n: {
+      en: {
+        title: "Selling internationally without hiring: multilingual AI customer service",
+        excerpt:
+          "Answering in five languages used to mean five employees, or an agency you could not afford. That constraint is gone. Here is what automated multilingual support changes for a small company selling across borders — and the traps that remain.",
+        category: "CRM & Support",
+        content: `## Key takeaways in 30 seconds
+
+- **Language is no longer a fixed cost**: an AI agent replies in the customer's language with no extra headcount per market
+- **The real obstacle is not translation, it is the time zone** — a customer in Bogotá writes while your office sleeps
+- **Translating is not localising**: currencies, date formats and commercial conventions differ by country
+- **Start with one language and one country**, measure, then repeat — opening five markets at once dilutes everything
+
+---
+
+## The calculation that used to block expansion
+
+Until recently, serving a foreign market forced a binary choice: hire someone who speaks the language, or give up. For a three-person company that meant a market of 40 million people stayed closed for want of one salary.
+
+That calculation changed. A conversational agent answers in French, English, Spanish, German or Portuguese at equal quality, and the cost does not scale with the number of languages. Language became a setting, not a budget line.
+
+---
+
+## What it actually unlocks
+
+**You can test a market without committing.** Opening Spain used to require a hire. Now it requires a translated page and a configured agent. If the market does not respond, you lost a few days rather than a year of salary.
+
+**You cover time zones without night shifts.** The most underrated point. A Canadian prospect writing at 9pm Montreal time reaches you at 3am. Without an automatic reply they have written to three competitors before you wake.
+
+**You stop losing enquiries in languages you cannot read.** Many small companies have a folder of emails they never handled because they were in German.
+
+---
+
+## The four traps that remain
+
+### 1. Translation is not enough
+Word-for-word text reads foreign. Commercial conventions differ: German expects factual precision over emphasis; British and American English do not share politeness conventions.
+
+### 2. Currencies and formats
+Showing "€399" to a Colombian customer demands a mental conversion they will not perform. Date formats cause genuine booking errors — 12/06 is June in the UK and December in the US.
+
+### 3. Payment
+Every market has habits: cards in France, instant transfer in Germany, mobile wallets across Latin America. Offering cards only closes part of the market invisibly.
+
+### 4. Local obligations
+Legal notices, terms of sale, withdrawal rights and tax differ by country. Automated support does not exempt you from terms adapted to the market.
+
+---
+
+## The method that works: one market at a time
+
+1. **Pick the market where you already have signals** — visits, an unsolicited enquiry, an existing customer who referred you.
+2. **Translate what converts first**: product page, pricing, FAQ. The blog comes later.
+3. **Configure the agent in that language** and check its answers against your twenty most common questions.
+4. **Measure for six weeks**: enquiries received, response rate, conversions.
+5. **Only duplicate if the numbers follow.**`,
+        faq: [
+          {
+            q: "Can an AI agent really answer well in several languages?",
+            a: "Yes for common support exchanges: hours, prices, availability, booking. Quality is comparable across languages. For commercial negotiation or sensitive topics a human handover is still preferable.",
+          },
+          {
+            q: "Do I need a translated website to serve a foreign market?",
+            a: "At minimum the pages that convert: product, pricing, contact and FAQ. A multilingual agent on an all-French site creates an inconsistency that costs trust.",
+          },
+          {
+            q: "What does adding a language cost?",
+            a: "On a natively multilingual solution, nothing extra per language — cost follows message volume, not language count. What costs is translating the site and adapting your terms to the market.",
+          },
+          {
+            q: "Can I serve a distant time zone without working nights?",
+            a: "That is precisely the point: the agent replies immediately whatever the hour, takes the booking or order, and you handle the rest during your own working hours.",
+          },
+        ],
+      },
+      es: {
+        title: "Vender en el extranjero sin contratar: atención al cliente multilingüe con IA",
+        excerpt:
+          "Responder en cinco idiomas exigía cinco empleados o una agencia inasumible. Ese candado ha saltado. Esto es lo que cambia una atención multilingüe automatizada para una empresa pequeña que vende fuera de sus fronteras.",
+        category: "CRM y Soporte",
+        content: `## Lo esencial en 30 segundos
+
+- **El idioma ya no es un coste fijo**: un agente de IA responde en la lengua del cliente sin plantilla adicional por mercado
+- **El freno real no es la traducción, es el huso horario** — un cliente en Bogotá escribe cuando tu oficina duerme
+- **Traducir no es localizar**: divisas, formatos de fecha y usos comerciales cambian por país
+- **Empieza por un idioma y un país**, mide y luego replica
+
+---
+
+## El cálculo que bloqueaba la internacionalización
+
+Hasta hace poco, atender un mercado extranjero imponía una elección binaria: contratar a alguien que hablara el idioma, o renunciar. Para una empresa de tres personas, un mercado de 40 millones de habitantes quedaba cerrado por falta de un sueldo.
+
+Ese cálculo ha cambiado. El idioma es ahora un parámetro, no una partida de gasto.
+
+---
+
+## Qué desbloquea en la práctica
+
+**Puedes probar un mercado sin comprometerte.** Abrir España exigía una contratación; ahora exige una página traducida y un agente configurado.
+
+**Cubres husos horarios sin trabajar de noche.** Un cliente canadiense que escribe a las 21h de Montreal te llega a las 3 de la madrugada. Sin respuesta automática, ya ha escrito a tres competidores.
+
+**Dejas de perder consultas en idiomas que no lees.**
+
+---
+
+## Las cuatro trampas que quedan
+
+### 1. Traducir no basta
+Un texto traducido palabra por palabra suena extranjero. Los usos comerciales difieren.
+
+### 2. Divisas y formatos
+Mostrar «399 €» a un cliente colombiano exige una conversión mental que no hará. Los formatos de fecha provocan errores reales de reserva.
+
+### 3. El pago
+Cada mercado tiene sus hábitos: tarjeta en Francia, transferencia inmediata en Alemania, monederos móviles en Latinoamérica.
+
+### 4. Las obligaciones locales
+Avisos legales, condiciones de venta, derecho de desistimiento y fiscalidad cambian por país.
+
+---
+
+## El método que funciona: un mercado cada vez
+
+1. Elige el mercado donde ya tengas señales.
+2. Traduce primero lo que convierte: producto, precios, FAQ.
+3. Configura el agente en ese idioma y revisa sus respuestas.
+4. Mide durante seis semanas.
+5. Replica solo si los números acompañan.`,
+        faq: [
+          {
+            q: "¿Puede un agente de IA responder bien en varios idiomas?",
+            a: "Sí para los intercambios habituales de atención: horarios, precios, disponibilidad, reservas. La calidad es comparable entre idiomas. Para negociación comercial conviene el relevo humano.",
+          },
+          {
+            q: "¿Hace falta una web traducida para atender un mercado extranjero?",
+            a: "Como mínimo las páginas que convierten: producto, precios, contacto y FAQ. Un agente multilingüe sobre una web solo en francés genera una incoherencia que resta confianza.",
+          },
+          {
+            q: "¿Cuánto cuesta añadir un idioma?",
+            a: "En una solución multilingüe nativa, nada más por idioma: el coste sigue al volumen de mensajes. Lo que cuesta es traducir la web y adaptar las condiciones al mercado.",
+          },
+          {
+            q: "¿Se puede atender un huso horario lejano sin trabajar de noche?",
+            a: "Es justamente el objetivo: el agente responde de inmediato a cualquier hora y tú tratas el resto en tu horario.",
+          },
+        ],
+      },
+    },
+  },
+
+  {
+    slug: "whatsapp-business-api-ou-application-difference",
+    title: "WhatsApp Business : application gratuite ou API, laquelle vous faut-il ?",
+    excerpt:
+      "Deux produits portent le même nom et ne font pas le même métier. L'un est une application sur un téléphone, l'autre une infrastructure sans écran. Choisir le mauvais coûte soit de l'argent inutile, soit un blocage de compte au pire moment.",
+    date: "2026-08-01",
+    readingTime: "6 min",
+    category: "CRM & Support",
+    content: `## À retenir en 30 secondes
+
+- **L'application WhatsApp Business est gratuite**, tourne sur un téléphone, et convient jusqu'à environ 5 conversations par jour
+- **L'API WhatsApp Business n'a pas d'interface** : c'est une connexion technique branchée sur un outil, faite pour le volume et le travail à plusieurs
+- **Un numéro ne peut pas être sur les deux à la fois** — le passage à l'API est un aller sans retour simple
+- **Envoyer des messages non sollicités depuis l'application est le meilleur moyen de faire bloquer son numéro**
+
+---
+
+## Deux produits, un seul nom
+
+WhatsApp propose deux choses très différentes sous la même marque.
+
+**L'application WhatsApp Business** s'installe comme WhatsApp classique. Elle ajoute un profil d'entreprise, un catalogue simple, des réponses rapides et des étiquettes. Elle est gratuite et fonctionne sur un téléphone, avec une extension possible sur ordinateur.
+
+**L'API WhatsApp Business** n'a aucune interface. C'est un canal technique que vous connectez à un logiciel : une boîte de réception partagée, un CRM, un agent IA. Vous ne « voyez » pas l'API, vous voyez l'outil qui l'utilise.
+
+---
+
+## Comparatif
+
+| Critère | Application | API |
+|---|---|---|
+| Prix | Gratuit | Facturé à la conversation, via un fournisseur |
+| Interface | Oui, sur téléphone | Aucune, passe par un outil |
+| Utilisateurs simultanés | 1 téléphone (+ 4 appareils liés) | Illimité |
+| Automatisation | Réponses rapides basiques | Complète, agent IA possible |
+| Historique partagé | Non | Oui |
+| Messages en masse | Fortement limité, risque de blocage | Autorisé via modèles validés |
+| Statistiques | Minimales | Complètes |
+
+---
+
+## Le seuil de bascule
+
+Il y a trois signaux qui indiquent que l'application ne suffit plus :
+
+1. **Plusieurs personnes doivent répondre.** L'application est liée à un téléphone. Dès que deux salariés doivent traiter les mêmes conversations, vous vous retrouvez à faire tourner un appareil, ce qui est intenable.
+2. **Vous perdez le fil.** Sans historique partagé ni attribution, une demande sur deux se traite deux fois ou pas du tout.
+3. **Vous voulez répondre automatiquement.** Les réponses rapides de l'application ne comprennent pas la demande : elles collent un texte que vous avez écrit.
+
+---
+
+## Le piège qui coûte le plus cher
+
+Beaucoup d'entreprises utilisent l'application pour envoyer des promotions à une liste de clients. WhatsApp le détecte, et le numéro est restreint puis bloqué. Vous perdez non seulement le canal, mais l'historique de vos conversations clients.
+
+L'API existe précisément pour ça : les messages sortants vers un client qui ne vous a pas écrit récemment passent par des **modèles validés à l'avance** par Meta. C'est plus contraignant, mais c'est ce qui protège le numéro.
+
+---
+
+## Ce qu'il faut savoir avant de basculer
+
+**Le numéro ne peut pas être sur les deux.** Migrer un numéro vers l'API le retire de l'application. Prévoyez la bascule à un moment calme, et prévenez l'équipe.
+
+**Vous ne discutez pas directement avec Meta.** Vous passez par un fournisseur qui gère la connexion et la facturation. Le choix de ce fournisseur détermine ce que vous pourrez faire ensuite.
+
+**La vérification d'entreprise prend du temps.** Meta demande de vérifier l'existence légale de l'entreprise. Comptez plusieurs jours à quelques semaines, et faites-le avant d'en avoir besoin.
+
+---
+
+## Comment choisir en une question
+
+**Combien de personnes doivent voir les mêmes conversations ?**
+
+Une seule, avec moins de cinq échanges par jour : l'application gratuite est le bon choix, et payer pour l'API serait du gaspillage.
+
+Deux ou plus, ou plus de dix conversations par jour, ou l'envie d'automatiser : il vous faut l'API et un outil pour l'exploiter.
+
+C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : la connexion API est gérée, WhatsApp arrive dans la même boîte qu'Instagram et l'e-mail, et le même agent IA peut répondre sur les trois.`,
+    faq: [
+      {
+        q: "L'API WhatsApp Business est-elle payante ?",
+        a: "Oui. Meta facture à la conversation, avec un tarif qui varie selon le pays et le type de message. Il faut y ajouter le prix de l'outil qui exploite l'API. L'application WhatsApp Business, elle, reste gratuite.",
+      },
+      {
+        q: "Peut-on garder son numéro actuel en passant à l'API ?",
+        a: "Oui dans la plupart des cas, mais le numéro quitte alors l'application WhatsApp Business et ne peut plus y être utilisé. La bascule se prépare : historique local sauvegardé, équipe prévenue.",
+      },
+      {
+        q: "Pourquoi mon numéro WhatsApp a-t-il été bloqué ?",
+        a: "Le plus souvent parce que des messages ont été envoyés en masse à des personnes qui n'avaient pas écrit en premier, ou parce que des destinataires ont signalé les messages. L'API avec modèles validés existe pour éviter ce scénario.",
+      },
+      {
+        q: "Faut-il un développeur pour utiliser l'API WhatsApp ?",
+        a: "Non si vous passez par une solution qui l'intègre déjà. Le développement n'est nécessaire que pour une intégration sur mesure avec un logiciel interne.",
+      },
+    ],
+    i18n: {
+      en: {
+        title: "WhatsApp Business: free app or API — which one do you need?",
+        excerpt:
+          "Two products share one name and do different jobs. One is an app on a phone, the other is infrastructure with no screen. Picking wrong costs you either money you did not need to spend, or a blocked number at the worst moment.",
+        category: "CRM & Support",
+        content: `## Key takeaways in 30 seconds
+
+- **The WhatsApp Business app is free**, runs on a phone, and works up to roughly 5 conversations a day
+- **The WhatsApp Business API has no interface**: it is a technical connection plugged into a tool, built for volume and teamwork
+- **A number cannot be on both** — moving to the API is not simply reversible
+- **Sending unsolicited messages from the app is the fastest way to get your number blocked**
+
+---
+
+## Two products, one name
+
+**The WhatsApp Business app** installs like regular WhatsApp and adds a business profile, a simple catalogue, quick replies and labels. Free, phone-based.
+
+**The WhatsApp Business API** has no interface at all. It is a channel you connect to software: a shared inbox, a CRM, an AI agent. You never "see" the API, you see the tool using it.
+
+---
+
+## Comparison
+
+| Criterion | App | API |
+|---|---|---|
+| Price | Free | Billed per conversation, via a provider |
+| Interface | Yes, on phone | None, through a tool |
+| Simultaneous users | 1 phone (+4 linked devices) | Unlimited |
+| Automation | Basic quick replies | Full, AI agent possible |
+| Shared history | No | Yes |
+| Bulk messages | Heavily limited, block risk | Allowed via approved templates |
+
+---
+
+## The switching threshold
+
+1. **More than one person must reply.** The app is tied to a phone. Two employees sharing conversations means passing a device around.
+2. **You lose track.** Without shared history or assignment, every other enquiry gets handled twice or not at all.
+3. **You want automatic replies.** The app's quick replies do not understand the request; they paste text you wrote.
+
+---
+
+## The trap that costs most
+
+Many businesses use the app to send promotions to a customer list. WhatsApp detects it, restricts the number, then blocks it — and you lose the conversation history along with the channel.
+
+The API exists for this: outbound messages to someone who has not written recently go through **templates approved in advance** by Meta. More constraining, but it protects the number.
+
+---
+
+## Before you switch
+
+**A number cannot be on both.** Migrating removes it from the app. Plan the switch for a quiet period.
+
+**You do not deal with Meta directly.** You go through a provider who handles connection and billing. That choice determines what you can do afterwards.
+
+**Business verification takes time.** Meta verifies your company's legal existence — several days to a few weeks. Do it before you need it.`,
+        faq: [
+          {
+            q: "Is the WhatsApp Business API paid?",
+            a: "Yes. Meta bills per conversation, at rates varying by country and message type, plus the cost of the tool using the API. The WhatsApp Business app itself stays free.",
+          },
+          {
+            q: "Can I keep my current number when moving to the API?",
+            a: "Usually yes, but the number then leaves the WhatsApp Business app and cannot be used there. Prepare the switch: back up local history, brief the team.",
+          },
+          {
+            q: "Why was my WhatsApp number blocked?",
+            a: "Most often because messages were sent in bulk to people who had not written first, or recipients reported them. The API with approved templates exists to avoid that.",
+          },
+          {
+            q: "Do I need a developer to use the WhatsApp API?",
+            a: "Not if you use a solution that already integrates it. Development is only needed for a custom integration with in-house software.",
+          },
+        ],
+      },
+      es: {
+        title: "WhatsApp Business: ¿aplicación gratuita o API? Cuál necesitas",
+        excerpt:
+          "Dos productos comparten nombre y no hacen el mismo trabajo. Uno es una app en un móvil, el otro es infraestructura sin pantalla. Elegir mal cuesta dinero innecesario o el bloqueo del número en el peor momento.",
+        category: "CRM y Soporte",
+        content: `## Lo esencial en 30 segundos
+
+- **La app WhatsApp Business es gratuita**, funciona en un móvil y sirve hasta unas 5 conversaciones al día
+- **La API de WhatsApp Business no tiene interfaz**: es una conexión técnica conectada a una herramienta, pensada para volumen y trabajo en equipo
+- **Un número no puede estar en ambas a la vez**
+- **Enviar mensajes no solicitados desde la app es la forma más rápida de que bloqueen tu número**
+
+---
+
+## Dos productos, un solo nombre
+
+**La app WhatsApp Business** se instala como WhatsApp normal y añade perfil de empresa, catálogo simple, respuestas rápidas y etiquetas.
+
+**La API de WhatsApp Business** no tiene interfaz. Es un canal que conectas a un software: bandeja compartida, CRM, agente de IA.
+
+---
+
+## Comparativa
+
+| Criterio | App | API |
+|---|---|---|
+| Precio | Gratis | Por conversación, vía proveedor |
+| Usuarios simultáneos | 1 móvil (+4 dispositivos) | Ilimitados |
+| Automatización | Respuestas rápidas básicas | Completa, agente IA |
+| Historial compartido | No | Sí |
+| Envíos masivos | Muy limitados, riesgo de bloqueo | Permitidos con plantillas aprobadas |
+
+---
+
+## El umbral de cambio
+
+1. **Más de una persona debe responder.**
+2. **Pierdes el hilo**: sin historial compartido, una de cada dos consultas se atiende dos veces o ninguna.
+3. **Quieres responder automáticamente.**
+
+---
+
+## La trampa más cara
+
+Muchas empresas usan la app para enviar promociones a una lista. WhatsApp lo detecta, restringe el número y lo bloquea. Pierdes el canal y el historial.
+
+La API existe para eso: los mensajes salientes hacia quien no te ha escrito recientemente pasan por **plantillas aprobadas** por Meta.
+
+---
+
+## Antes de migrar
+
+**Un número no puede estar en ambas.** Migrar lo saca de la app.
+
+**No tratas directamente con Meta**: pasas por un proveedor.
+
+**La verificación de empresa lleva tiempo**: de varios días a semanas.`,
+        faq: [
+          {
+            q: "¿La API de WhatsApp Business es de pago?",
+            a: "Sí. Meta factura por conversación, con tarifas según el país y el tipo de mensaje, más el coste de la herramienta que usa la API. La app sigue siendo gratuita.",
+          },
+          {
+            q: "¿Puedo conservar mi número al pasar a la API?",
+            a: "Normalmente sí, pero el número deja la app WhatsApp Business y ya no puede usarse allí.",
+          },
+          {
+            q: "¿Por qué han bloqueado mi número de WhatsApp?",
+            a: "Casi siempre por enviar mensajes masivos a personas que no habían escrito primero, o porque los destinatarios los denunciaron.",
+          },
+          {
+            q: "¿Hace falta un programador para usar la API de WhatsApp?",
+            a: "No si usas una solución que ya la integra. Solo para integraciones a medida con software interno.",
+          },
+        ],
+      },
+    },
+  },
 ];

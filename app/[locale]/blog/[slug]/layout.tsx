@@ -12,15 +12,28 @@ export async function generateMetadata({
   const rawPost = getBlogPost(slug);
   if (!rawPost) return { title: "Article introuvable" };
   const post = localizePost(rawPost, locale);
+  const translated = localesForPost(rawPost);
   const url = `${BASE}/${locale}/blog/${slug}`;
   const languages = {
-    ...Object.fromEntries(localesForPost(rawPost).map((l) => [l, `${BASE}/${l}/blog/${slug}`])),
+    ...Object.fromEntries(translated.map((l) => [l, `${BASE}/${l}/blog/${slug}`])),
     "x-default": `${BASE}/fr/blog/${slug}`,
   };
+
+  // Posts are translated into a subset of the five locales. On the others
+  // localizePost falls back to French, so /de/blog/x served French prose under
+  // a German URL that pointed its canonical at itself — inviting Google to
+  // index the same article several times as different-language duplicates.
+  // Point those at the French original instead: signals consolidate on one URL
+  // and nothing competes with itself. Once a translation exists the locale
+  // enters `translated` and gets its own canonical automatically.
+  const hasOwnTranslation = translated.includes(locale);
+  const canonical = hasOwnTranslation ? url : `${BASE}/fr/blog/${slug}`;
+
   return {
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: url, languages },
+    alternates: { canonical, languages },
+    robots: hasOwnTranslation ? undefined : { index: false, follow: true },
     openGraph: {
       type: "article",
       title: post.title,
