@@ -228,11 +228,19 @@ const productsSchema = {
       url: 'https://security.aevia.services',
       description:
         "Audit de sécurité web instantané : score sur 100 en sécurité, performances (Core Web Vitals) et SEO, avec rapport rédigé par IA. Scan gratuit sans compte.",
+      // Productized "fixed-price fix" model (validated 2026-07-25: lead magnet +
+      // forfait service, NOT a SaaS subscription). Amounts mirror the canonical
+      // pricing page (skysecurity servicesCatalog.ts). The old Solo/Pro/Business
+      // 9/29/79 monthly tiers advertised a subscription we no longer sell — a
+      // stale price in structured data is a promise search engines quote back.
       offers: [
         { '@type': 'Offer', name: 'Scan gratuit', price: '0', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Solo', price: '9', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Pro', price: '29', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Business', price: '79', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Correctif SSL/TLS', price: '149', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'En-têtes HTTP', price: '199', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'SPF/DKIM/DMARC (DNS)', price: '349', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'CSP', price: '499', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Core Web Vitals', price: '790', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Durcissement complet', price: '1490', priceCurrency: 'EUR' },
       ],
     },
   ],
