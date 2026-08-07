@@ -1,5 +1,7 @@
 # AUDIT & POLISH — Aevia Hub (aevia)
 
+> **Rôle : VITRINE de la suite Aevia, PAS un produit vendu. Auditer comme un site marketing (contenu/perf/SEO), pas comme une app.**
+
 > Prompt d'audit profond pour Fable 5. Lance-le depuis `~/aevia`. **Dépôt PUBLIC** — aucune fuite de secret, README impeccable, contenu exact. Ne déploie rien sans go.
 
 ## Contexte produit
