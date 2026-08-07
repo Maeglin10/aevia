@@ -186,7 +186,7 @@ const productsSchema = {
       provider: { '@id': 'https://aevia.services/#organization' },
       url: 'https://launch.aevia.services',
       description:
-        "Création de sites web professionnels livrés en 2h à 7 jours selon le plan, optimisés SEO et mobile-first, hébergement inclus. Plus de 100 thèmes par secteur.",
+        "Création de sites web professionnels livrés en 2h à 7 jours selon le plan, optimisés SEO et mobile-first. Plus de 100 thèmes par secteur. Hébergement et maintenance 20€/mois après une période offerte.",
       areaServed: ['FR', 'EU'],
       offers: [
         { '@type': 'Offer', name: 'Landing', price: '399', priceCurrency: 'EUR' },
