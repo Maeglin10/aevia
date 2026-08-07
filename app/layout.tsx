@@ -205,17 +205,17 @@ const productsSchema = {
       url: 'https://inbox.aevia.services',
       description:
         "Service client par IA 24h/24 : agent vocal sur ligne téléphonique dédiée (réservations, commandes) et messagerie unifiée WhatsApp, Instagram, Facebook, email. Modes messages seuls, voix seule ou les deux.",
+      // Canonical Inbox pricing = the interactive 5-tier grid (Starter→Scale)
+      // shown everywhere: marketing /pricing AND in-app Settings→Abonnement.
+      // COMBO-mode amounts (messages + voice); a one-time 100€ setup applies at
+      // signup. A price in structured data is quoted back by search engines and
+      // assistants, so it must match what the checkout actually charges.
       offers: [
-        // Names, amounts and currency come from /api/v1/billing/plans/public —
-        // what Stripe actually charges. They previously read "Growth"/"Studio"
-        // in USD, tiers that no longer exist under names nobody would recognise
-        // from the pricing page. A price in structured data is quoted back by
-        // search engines and assistants, so a stale one is a promise we cannot
-        // honour.
-        { '@type': 'Offer', name: 'Essentiel', price: '99', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Starter', price: '49', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Growth', price: '99', priceCurrency: 'EUR' },
         { '@type': 'Offer', name: 'Pro', price: '199', priceCurrency: 'EUR' },
         { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Enterprise', price: '999', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Scale', price: '999', priceCurrency: 'EUR' },
       ],
     },
     {

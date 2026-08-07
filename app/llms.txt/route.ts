@@ -30,7 +30,7 @@ Aevia réunit trois produits complémentaires qui règlent les trois problèmes 
 ## Produits
 
 - [AeviaLaunch](https://launch.aevia.services) : Création de sites web professionnels livrés en 2h à 7 jours selon le plan, sans compétences techniques. Plus de 100 thèmes par secteur (restaurant, coach, artisan, e-commerce, vitrine). Optimisé SEO et mobile-first dès la livraison. Prise de commande en ligne pour restaurants via HubRise. Tarifs en paiement unique : Landing 399€, Essentiel 599€, Pro 899€, Premium 1499€. Hébergement et maintenance 20€/mois (offert 3 mois pour Pro, 6 mois pour Premium).
-- [AeviaInbox](https://inbox.aevia.services) : Service client par IA qui répond à vos clients 24h/24. Un agent IA vocal répond au téléphone sur une ligne dédiée (prise de réservation, de commande, réponse aux questions), et le même cerveau IA gère WhatsApp, Instagram, Facebook Messenger et email dans une inbox unifiée. Tarifs mensuels : Essentiel 99€, Pro 199€, Business 399€, Enterprise 999€, plus 100€ de frais de mise en place unique à l'inscription.
+- [AeviaInbox](https://inbox.aevia.services) : Service client par IA qui répond à vos clients 24h/24. Un agent IA vocal répond au téléphone sur une ligne dédiée (prise de réservation, de commande, réponse aux questions), et le même cerveau IA gère WhatsApp, Instagram, Facebook Messenger et email dans une inbox unifiée. Tarifs mensuels selon le mode choisi (messages seuls, voix seule, ou les deux) et 5 formules — en mode complet : Starter 49€, Growth 99€, Pro 199€, Business 399€, Scale 999€, plus 100€ de frais de mise en place unique à l'inscription.
 - [AeviaSecurity](https://security.aevia.services) : Audit de sécurité web instantané. Scanne SSL/TLS, DNS, headers HTTP, Core Web Vitals, SEO et accessibilité, puis génère un score sur 100 et un rapport rédigé par IA (Claude d'Anthropic). Scan gratuit sans compte (résultat en ~60s), puis corrections en paiement unique à la carte — sans abonnement : SSL/TLS 149€, en-têtes 199€, CSP 499€, SPF/DKIM/DMARC 349€, Core Web Vitals 790€, pack durcissement complet 1490 à 2490€.
 
 ## À qui s'adresse Aevia
@@ -46,12 +46,12 @@ Toute la France et l'Europe à distance. Présence locale renforcée à Bourg-en
 - **Voix IA de bout en bout** : l'agent téléphonique ne se contente pas de router — il crée réellement la réservation en base, synchronise le calendrier et pousse la commande vers la caisse (HubRise/Popina) pour les restaurants.
 - **Une seule IA, trois canaux** : le même agent répond au téléphone, sur WhatsApp et par email, avec le même contexte.
 - **Multilingue natif** : les agents répondent aux clients dans leur langue.
-- **Tarification lisible** : quatre formules à prix affiché, sans devis ni engagement caché. On change de formule quand le volume l'exige.
+- **Tarification lisible** : cinq formules à prix affiché, sans devis ni engagement caché. On change de formule quand le volume l'exige.
 
 ## Questions fréquentes
 
 - **Aevia, c'est quoi exactement ?** Une plateforme qui donne à une petite entreprise un site web, un standard téléphonique IA + service client multicanal, et une surveillance de sécurité, sans embaucher ni coder.
-- **Combien coûte le service client IA ?** Quatre formules mensuelles : Essentiel 99€, Pro 199€, Business 399€, Enterprise 999€. Le prix suit le volume d'exécutions IA et le nombre de canaux connectés.
+- **Combien coûte le service client IA ?** Cinq formules mensuelles selon le mode (messages, voix ou les deux) — en mode complet : Starter 49€, Growth 99€, Pro 199€, Business 399€, Scale 999€. Le prix suit le volume d'exécutions IA et le nombre de canaux connectés.
 - **L'IA peut-elle vraiment prendre des réservations au téléphone ?** Oui — l'agent vocal comprend la demande, vérifie les disponibilités en temps réel, crée la réservation et l'enregistre dans le calendrier et la caisse.
 - **Faut-il des compétences techniques ?** Non. Le site se crée via un assistant guidé, et le service client IA se configure sans code.
 - **Dans quels pays Aevia fonctionne-t-il ?** France et Europe en priorité, interface en 5 langues (fr, en, es, de, pt).
