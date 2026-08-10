@@ -88,6 +88,25 @@ export function CookieBanner() {
     try {
       if (!localStorage.getItem(CONSENT_KEY)) setVisible(true);
     } catch {}
+
+    // RGPD art. 7-3 — le retrait du consentement doit être aussi simple que
+    // de le donner. Un lien « Gérer les cookies » (footer) émet cet événement
+    // pour rouvrir la bannière ; on pré-remplit les préférences avec le choix
+    // déjà enregistré, pour que l'utilisateur puisse le modifier ou le retirer.
+    function reopen() {
+      try {
+        const raw = localStorage.getItem(CONSENT_KEY);
+        if (raw) {
+          const prev = JSON.parse(raw);
+          setAnalytics(prev?.analytics === true);
+          setMarketing(prev?.marketing === true);
+        }
+      } catch {}
+      setMode('banner');
+      setVisible(true);
+    }
+    window.addEventListener('aevia-consent-reopen', reopen);
+    return () => window.removeEventListener('aevia-consent-reopen', reopen);
   }, []);
 
   const save = (prefs: { analytics: boolean; marketing: boolean }) => {

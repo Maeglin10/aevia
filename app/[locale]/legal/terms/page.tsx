@@ -167,22 +167,37 @@ export default function TermsPage() {
                 <tbody className="text-zinc-400">
                   <tr className="border-b border-zinc-800/60">
                     <td className="py-2 pr-4">Starter</td>
-                    <td className="py-2 pr-4">59 €/mois</td>
+                    <td className="py-2 pr-4">49 €/mois</td>
                     <td className="py-2">1 canal, 1 utilisateur</td>
                   </tr>
                   <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">Growth</td>
+                    <td className="py-2 pr-4">99 €/mois</td>
+                    <td className="py-2">Multi-canal, 3 utilisateurs, support prioritaire</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
                     <td className="py-2 pr-4">Pro</td>
-                    <td className="py-2 pr-4">159 €/mois</td>
-                    <td className="py-2">3 canaux, 5 utilisateurs, IA activée</td>
+                    <td className="py-2 pr-4">199 €/mois</td>
+                    <td className="py-2">IA activée, 5 utilisateurs</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">Business</td>
+                    <td className="py-2 pr-4">399 €/mois</td>
+                    <td className="py-2">Volumes élevés, utilisateurs étendus</td>
                   </tr>
                   <tr>
-                    <td className="py-2 pr-4">Business</td>
-                    <td className="py-2 pr-4">499 €/mois</td>
+                    <td className="py-2 pr-4">Scale</td>
+                    <td className="py-2 pr-4">999 €/mois</td>
                     <td className="py-2">Canaux illimités, utilisateurs illimités, SLA</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <p className="text-xs text-zinc-500 mt-2">
+              Tarifs indicatifs pour le mode « messages ». Frais d&apos;installation unique de 100 € HT.
+              Le tarif final dépend du mode choisi (messages, voix ou combiné) ; la grille interactive
+              détaillée figure sur la page tarifs.
+            </p>
           </div>
 
           <div>
@@ -214,7 +229,7 @@ export default function TermsPage() {
                   </tr>
                   <tr>
                     <td className="py-2 pr-4">Maintenance</td>
-                    <td className="py-2 pr-4">59 €/mois</td>
+                    <td className="py-2 pr-4">20 €/mois</td>
                     <td className="py-2">Mises à jour, sauvegardes, support prioritaire</td>
                   </tr>
                 </tbody>
@@ -223,31 +238,55 @@ export default function TermsPage() {
           </div>
 
           <div>
-            <p className="text-white font-semibold mb-2">AeviaSecurity — Abonnement mensuel</p>
+            <p className="text-white font-semibold mb-2">AeviaSecurity — Scan gratuit et forfaits correctifs à la carte</p>
+            <p className="text-sm text-zinc-400 mb-2">
+              L&apos;audit de sécurité en ligne est <strong className="text-zinc-300">gratuit et sans inscription</strong>.
+              Les prestations correctives sont facturées à l&apos;acte, au forfait (paiement unique), selon le périmètre :
+            </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="border-b border-zinc-700">
-                    <th className="text-left py-2 pr-4 text-zinc-300 font-medium">Plan</th>
-                    <th className="text-left py-2 pr-4 text-zinc-300 font-medium">Tarif mensuel HT</th>
-                    <th className="text-left py-2 text-zinc-300 font-medium">Audits inclus</th>
+                    <th className="text-left py-2 pr-4 text-zinc-300 font-medium">Prestation</th>
+                    <th className="text-left py-2 pr-4 text-zinc-300 font-medium">Tarif HT (forfait unique)</th>
+                    <th className="text-left py-2 text-zinc-300 font-medium">Objet</th>
                   </tr>
                 </thead>
                 <tbody className="text-zinc-400">
                   <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">Scan de sécurité</td>
                     <td className="py-2 pr-4">Gratuit</td>
-                    <td className="py-2 pr-4">0 €</td>
-                    <td className="py-2">3 audits/mois, rapport basique</td>
+                    <td className="py-2">Audit DNS, SSL et en-têtes en ligne, sans compte</td>
                   </tr>
                   <tr className="border-b border-zinc-800/60">
-                    <td className="py-2 pr-4">Starter</td>
-                    <td className="py-2 pr-4">29 €/mois</td>
-                    <td className="py-2">20 audits/mois, rapport PDF, monitoring</td>
+                    <td className="py-2 pr-4">Correctif SSL/TLS</td>
+                    <td className="py-2 pr-4">149 €</td>
+                    <td className="py-2">Mise en conformité SSL/TLS</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">En-têtes HTTP</td>
+                    <td className="py-2 pr-4">199 €</td>
+                    <td className="py-2">Durcissement des en-têtes de sécurité</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">SPF/DKIM/DMARC (DNS)</td>
+                    <td className="py-2 pr-4">349 €</td>
+                    <td className="py-2">Authentification e-mail et durcissement DNS</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">CSP</td>
+                    <td className="py-2 pr-4">499 €</td>
+                    <td className="py-2">Content-Security-Policy sur mesure</td>
+                  </tr>
+                  <tr className="border-b border-zinc-800/60">
+                    <td className="py-2 pr-4">Core Web Vitals</td>
+                    <td className="py-2 pr-4">790 €</td>
+                    <td className="py-2">Optimisation des performances</td>
                   </tr>
                   <tr>
-                    <td className="py-2 pr-4">Pro</td>
-                    <td className="py-2 pr-4">89 €/mois</td>
-                    <td className="py-2">Audits illimités, alertes, API, multi-domaines</td>
+                    <td className="py-2 pr-4">Durcissement complet</td>
+                    <td className="py-2 pr-4">1 490 – 2 490 €</td>
+                    <td className="py-2">Pack de durcissement complet selon périmètre</td>
                   </tr>
                 </tbody>
               </table>
@@ -264,11 +303,11 @@ export default function TermsPage() {
         </p>
         <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1 mb-4 ml-2">
           <li>
-            <strong className="text-zinc-300">Abonnements (Inbox, Security, maintenance Launch) :</strong>{" "}
+            <strong className="text-zinc-300">Abonnements (Inbox, maintenance Launch) :</strong>{" "}
             facturation mensuelle automatique à la date anniversaire de souscription
           </li>
           <li>
-            <strong className="text-zinc-300">Paiements uniques (AeviaLaunch) :</strong>{" "}
+            <strong className="text-zinc-300">Paiements uniques (AeviaLaunch, forfaits correctifs AeviaSecurity) :</strong>{" "}
             paiement intégral requis avant le démarrage de la prestation
           </li>
           <li>
@@ -322,7 +361,7 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-white mb-2 mt-6">5.2 Politique de remboursement pour les abonnements</h3>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Pour les abonnements Aevia Inbox et AeviaSecurity :
+          Pour l&apos;abonnement Aevia Inbox :
         </p>
         <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-3">
           <li>
@@ -339,9 +378,9 @@ export default function TermsPage() {
           </li>
         </ul>
 
-        <h3 className="text-base font-semibold text-white mb-2 mt-6">5.3 Politique de remboursement pour AeviaLaunch</h3>
+        <h3 className="text-base font-semibold text-white mb-2 mt-6">5.3 Politique de remboursement pour AeviaLaunch et les forfaits AeviaSecurity</h3>
         <p className="text-sm leading-relaxed text-zinc-400 mb-2">
-          La prestation AeviaLaunch étant une prestation de services à la demande :
+          Les prestations AeviaLaunch et les forfaits correctifs AeviaSecurity étant des prestations de services à la demande :
         </p>
         <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2">
           <li>
@@ -360,7 +399,7 @@ export default function TermsPage() {
             (non-respect des spécifications validées par les deux parties)
           </li>
           <li>
-            Le forfait de maintenance mensuel (59 €/mois) peut être résilié à tout moment
+            Le forfait de maintenance mensuel (20 €/mois) peut être résilié à tout moment
             avec effet à la fin du mois en cours
           </li>
         </ul>

@@ -430,6 +430,13 @@ export default function Home() {
               <Link href="/legal/terms" className="hover:text-zinc-400 transition-colors">{f("terms")}</Link>
               <Link href="/legal/cookies" className="hover:text-zinc-400 transition-colors">{f("cookies")}</Link>
               <Link href="/legal/mentions" className="hover:text-zinc-400 transition-colors">{f("mentions")}</Link>
+              <button
+                type="button"
+                onClick={() => window.dispatchEvent(new Event("aevia-consent-reopen"))}
+                className="hover:text-zinc-400 transition-colors cursor-pointer"
+              >
+                {f("manageCookies")}
+              </button>
             </div>
           </div>
         </div>
