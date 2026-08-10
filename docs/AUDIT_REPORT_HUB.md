@@ -32,3 +32,27 @@ Site **Next.js i18n** (locale routing, `messages/`, middleware) avec `robots.ts`
 1. Passe d'exactitude contenu/prix (manuel) — priorité vitrine.
 2. Vérif liens/CTA vers produits en prod.
 3. Lighthouse + complétude i18n.
+
+---
+
+## MàJ 2026-08-07 — MESURÉ (navigateur live sur aevia.services/fr), plus de placeholder
+
+**Performance (trace Chrome, réseau non throttlé) :**
+- **LCP 1,96 s** → **bon** (<2,5 s). Décomposition : TTFB 124 ms (bon) + render delay 1 836 ms (JS/render — principale marge, mais gain render-blocking estimé ~0).
+- **CLS 0,00** → **parfait** (aucun décalage de mise en page).
+- Pas de données CrUX (trafic faible — normal).
+
+**Accessibilité (audit DOM) : propre.**
+- `<html lang="fr">` ✓ · 2 images toutes avec `alt` ✓ · 7 boutons tous labellisés ✓ · un seul `<h1>` ✓ · `viewport` ✓ · 0 input non labellisé.
+- Le seul lien « sans texte » est le logo (`<a><img alt="Aevia"></a>`) → accessible via l'alt. Aucun vrai défaut a11y.
+
+**i18n :** 100 % complet (fr/en/es/de/pt, 99 clés, 0 manquante).
+
+**SEO :** `robots.ts` + `sitemap.ts` + hreflang en place ; JSON-LD produits corrigés ce jour (Security à la carte, Inbox grille interactive 5 tiers).
+
+### Score Hub RÉEL (mesuré) : **~8/10**
+Bonne vitrine : perf bonne, a11y propre, i18n complet, SEO en place. Le « ~5,5 » d'avant était un placeholder trop pessimiste.
+
+**Restes (mineurs, décision/optionnels) :**
+- **Contenu** : le title/meta disent « SaaS pour entrepreneurs ». Or Inbox = service IA, Launch = paiement unique + maintenance, Security = à la carte — « SaaS » est un raccourci marketing imprécis. À trancher (garder pour le SEO ou reformuler « outils pour entrepreneurs »).
+- Perf : réduire le render delay (differ/alléger le JS) — gain marginal, non prioritaire.
