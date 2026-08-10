@@ -56,7 +56,7 @@ export default function PrivacyPage() {
             <span className="text-zinc-400">
               (inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations webchat,
               email et voix (WhatsApp et Instagram à venir) pour les entreprises. Abonnement
-              mensuel (99 $, 199 $, 399 $ ou 999 $/mois).
+              mensuel (49, 99, 199, 399 ou 999 €/mois HT selon le palier ; devise adaptée à la région).
             </span>
           </li>
           <li className="flex gap-3">
@@ -64,15 +64,15 @@ export default function PrivacyPage() {
             <span className="text-zinc-400">
               (launch.aevia.services) — Générateur de sites web assisté par IA. Crée des sites web
               professionnels à partir de données de formulaire. Paiement unique (599 €, 899 € ou
-              1 499 €) + maintenance optionnelle 59 €/mois.
+              1 499 €) + maintenance optionnelle 20 €/mois.
             </span>
           </li>
           <li className="flex gap-3">
             <span className="text-emerald-400 font-bold shrink-0">AeviaSecurity</span>
             <span className="text-zinc-400">
               (security.aevia.services) — Plateforme d'audit de sécurité automatisé. Analyse SSL, DNS,
-              performances et failles de sécurité de sites web. Offre gratuite + abonnements 29 €
-              ou 89 €/mois.
+              performances et failles de sécurité de sites web. Scan gratuit + prestations correctives
+              à la carte (forfait unique, de 149 € à 2 490 € HT selon le périmètre).
             </span>
           </li>
         </ul>
