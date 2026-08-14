@@ -5,8 +5,6 @@ import { ArrowRight, ExternalLink, Layout } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
-import { LinkedinIcon } from "@/components/LinkedinIcon";
-import { GithubIcon } from "@/components/GithubIcon";
 
 /* The hero backdrop: a slow rotation of photographs behind the existing
    composition. Nothing about the headline or the CTAs moves — the imagery is
@@ -83,7 +81,6 @@ export default function Home() {
   const ts = useTranslations("templates_section");
   const w = useTranslations("why");
   const c = useTranslations("cta");
-  const f = useTranslations("footer");
 
   const products = [
     {
@@ -402,45 +399,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Footer ───────────────────────────────────────────────────────── */}
-      <footer className="border-t border-zinc-800 px-6 py-10">
-        <div className="mx-auto max-w-5xl space-y-6">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
-            <div className="flex items-center gap-2">
-              <span className="font-semibold text-white">Aevia</span>
-              <span>· {f("tagline")}</span>
-            </div>
-            <div className="flex items-center gap-6">
-              <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("templates")}</a>
-              <a href="https://security.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("security")}</a>
-              <Link href="/docs" className="hover:text-zinc-300 transition-colors">{f("docs")}</Link>
-              <Link href="/contact" className="hover:text-zinc-300 transition-colors">{f("contact")}</Link>
-              <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <LinkedinIcon className="w-4 h-4 hover:text-zinc-300 transition-colors" />
-              </a>
-              <a href="https://github.com/Maeglin10" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <GithubIcon className="w-4 h-4 hover:text-zinc-300 transition-colors" />
-              </a>
-            </div>
-          </div>
-          <div className="border-t border-zinc-800/60 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-600">
-            <span>{f("copyright")}</span>
-            <div className="flex items-center gap-4">
-              <Link href="/legal/privacy" className="hover:text-zinc-400 transition-colors">{f("privacy")}</Link>
-              <Link href="/legal/terms" className="hover:text-zinc-400 transition-colors">{f("terms")}</Link>
-              <Link href="/legal/cookies" className="hover:text-zinc-400 transition-colors">{f("cookies")}</Link>
-              <Link href="/legal/mentions" className="hover:text-zinc-400 transition-colors">{f("mentions")}</Link>
-              <button
-                type="button"
-                onClick={() => window.dispatchEvent(new Event("aevia-consent-reopen"))}
-                className="hover:text-zinc-400 transition-colors cursor-pointer"
-              >
-                {f("manageCookies")}
-              </button>
-            </div>
-          </div>
-        </div>
-      </footer>
+      {/* Footer moved to the locale layout (components/SiteFooter) so its legal
+          links are permanent on every page (LCEN), not just the homepage. */}
     </div>
   );
 }

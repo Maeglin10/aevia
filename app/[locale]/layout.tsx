@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { CookieBanner } from '@/components/CookieBanner';
 import { ConsentAwareAnalytics } from '@/components/ConsentAwareAnalytics';
+import { SiteFooter } from '@/components/SiteFooter';
 const BASE = 'https://aevia.services';
 
 const LOCALES = routing.locales as readonly string[];
@@ -72,6 +73,7 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <ConsentAwareAnalytics />
       {children}
+      <SiteFooter />
       <CookieBanner />
       {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       <script

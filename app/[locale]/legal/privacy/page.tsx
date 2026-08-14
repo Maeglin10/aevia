@@ -305,12 +305,14 @@ export default function PrivacyPage() {
           <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
             <div className="flex items-start justify-between mb-2">
               <p className="font-semibold text-white">Anthropic, PBC</p>
-              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">IA — AeviaLaunch</span>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">IA — Launch &amp; Inbox</span>
             </div>
             <p className="text-zinc-400 leading-relaxed mb-2">
               Traitement des données du formulaire de création pour la génération de contenu
-              web via l'API Claude. Les données soumises à l'API Anthropic ne sont pas utilisées
-              pour entraîner les modèles (conformément à notre accord API commercial).
+              web via l'API Claude (Aevia Launch). Dans Aevia Inbox, l'API Claude analyse
+              également certains messages entrants (filtrage de sécurité et assistance aux
+              réponses). Les données soumises à l'API Anthropic ne sont pas utilisées pour
+              entraîner les modèles (conformément à notre accord API commercial).
             </p>
             <p className="text-zinc-500 text-xs">
               Transfert international : États-Unis — Anthropic est soumis aux CCT et
@@ -328,24 +330,96 @@ export default function PrivacyPage() {
 
           <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
             <div className="flex items-start justify-between mb-2">
-              <p className="font-semibold text-white">Render Services, Inc.</p>
-              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Hébergement</span>
+              <p className="font-semibold text-white">Railway Corp.</p>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Hébergement back-end</span>
             </div>
             <p className="text-zinc-400 leading-relaxed mb-2">
-              Hébergement de l'ensemble des serveurs back-end (API NestJS), bases de données
-              PostgreSQL et services de traitement. Les données sont hébergées dans des
-              datacenters situés en Oregon, USA.
+              Hébergement des serveurs back-end (API NestJS) et exécution des traitements
+              applicatifs. L'infrastructure de calcul est située aux États-Unis.
             </p>
             <p className="text-zinc-500 text-xs">
-              Transfert international : États-Unis — Render opère sous les CCT européennes.
+              Transfert international : États-Unis — encadré par les Clauses Contractuelles
+              Types (CCT) de la Commission européenne.
             </p>
             <a
-              href="https://render.com/privacy"
+              href="https://railway.app/legal/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
-              Politique de confidentialité Render &rarr;
+              Politique de confidentialité Railway &rarr;
+            </a>
+          </div>
+
+          <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
+            <div className="flex items-start justify-between mb-2">
+              <p className="font-semibold text-white">Neon, Inc.</p>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Base de données</span>
+            </div>
+            <p className="text-zinc-400 leading-relaxed mb-2">
+              Base de données PostgreSQL gérée où sont stockées les données applicatives
+              (comptes, conversations, contacts, historique des messages). Les données sont
+              hébergées dans l'Union européenne (région de Francfort, Allemagne).
+            </p>
+            <p className="text-zinc-500 text-xs">
+              Localisation : Union européenne — aucun transfert hors UE pour la base de
+              données principale.
+            </p>
+            <a
+              href="https://neon.tech/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
+            >
+              Politique de confidentialité Neon &rarr;
+            </a>
+          </div>
+
+          <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
+            <div className="flex items-start justify-between mb-2">
+              <p className="font-semibold text-white">Upstash, Inc.</p>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Cache / file d'attente</span>
+            </div>
+            <p className="text-zinc-400 leading-relaxed mb-2">
+              Cache et file d'attente de messages éphémère (Redis) accélérant le traitement
+              des conversations. Les données n'y sont conservées que de façon transitoire, le
+              temps du traitement.
+            </p>
+            <p className="text-zinc-500 text-xs">
+              Transfert international : hors Union européenne — encadré par les Clauses
+              Contractuelles Types (CCT).
+            </p>
+            <a
+              href="https://upstash.com/trust/privacy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
+            >
+              Politique de confidentialité Upstash &rarr;
+            </a>
+          </div>
+
+          <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
+            <div className="flex items-start justify-between mb-2">
+              <p className="font-semibold text-white">Groq, Inc.</p>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">IA — Aevia Inbox</span>
+            </div>
+            <p className="text-zinc-400 leading-relaxed mb-2">
+              Inférence de modèles de langage pour les réponses automatiques des agents
+              d'Aevia Inbox (traitement du texte des messages reçus). Les données envoyées à
+              l'API Groq ne sont pas utilisées pour entraîner des modèles.
+            </p>
+            <p className="text-zinc-500 text-xs">
+              Transfert international : États-Unis — encadré par les Clauses Contractuelles
+              Types (CCT).
+            </p>
+            <a
+              href="https://groq.com/privacy-policy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
+            >
+              Politique de confidentialité Groq &rarr;
             </a>
           </div>
 
@@ -449,11 +523,13 @@ export default function PrivacyPage() {
           7. Transferts de données hors Union européenne
         </h2>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Certains de nos sous-traitants (Stripe, Anthropic, Render, Vercel, Meta) sont
-          établis aux États-Unis. Ces transferts sont encadrés par des{" "}
+          Certains de nos sous-traitants (Stripe, Anthropic, Groq, Railway, Upstash, Vercel,
+          Meta) sont établis aux États-Unis. Ces transferts sont encadrés par des{" "}
           <strong className="text-zinc-300">Clauses Contractuelles Types (CCT)</strong> adoptées
           par la Commission européenne conformément à l'article 46 du RGPD, garantissant un
           niveau de protection équivalent à celui offert au sein de l'Espace économique européen.
+          Notre base de données principale (Neon) est en revanche hébergée dans l'Union
+          européenne (Francfort), sans transfert hors UE.
         </p>
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour obtenir une copie des garanties mises en place ou plus d'informations sur ces
