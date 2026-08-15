@@ -1,616 +1,233 @@
+import { useLocale } from "next-intl";
+import { COOKIES_CONTENT, type CookieRow } from "./content";
+
+const H2 = "text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800";
+const H3 = "text-base font-semibold text-white";
+const P = "text-sm leading-relaxed text-zinc-400 mb-3";
+const EXT = "text-red-400 hover:text-red-300 transition-colors";
+
+const SERVICE_COLORS = ["text-red-400", "text-red-300", "text-emerald-400", "text-cyan-400"];
+
+const BROWSERS = [
+  { name: "Google Chrome", url: "https://support.google.com/chrome/answer/95647" },
+  { name: "Mozilla Firefox", url: "https://support.mozilla.org/fr/kb/activer-desactiver-cookies" },
+  { name: "Safari (Apple)", url: "https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" },
+  { name: "Microsoft Edge", url: "https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" },
+  { name: "Opera", url: "https://help.opera.com/en/latest/web-preferences/#cookies" },
+];
+
+function Badge({ tone, children }: { tone: "green" | "sky" | "amber"; children: string }) {
+  const cls =
+    tone === "green"
+      ? "text-emerald-400 bg-emerald-500/10 ring-emerald-500/20"
+      : tone === "sky"
+      ? "text-sky-400 bg-sky-500/10 ring-sky-500/20"
+      : "text-amber-400 bg-amber-500/10 ring-amber-500/20";
+  return <span className={`text-xs ${cls} ring-1 px-2 py-0.5 rounded-full shrink-0`}>{children}</span>;
+}
+
+function CookieTable({ col2, rows, cols }: { col2: string; rows: CookieRow[]; cols: { name: string; purpose: string; duration: string } }) {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full text-xs border-collapse">
+        <thead>
+          <tr className="border-b border-zinc-700">
+            <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">{cols.name}</th>
+            <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">{col2}</th>
+            <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">{cols.purpose}</th>
+            <th className="text-left py-2.5 text-zinc-300 font-semibold">{cols.duration}</th>
+          </tr>
+        </thead>
+        <tbody className="text-zinc-400">
+          {rows.map((r, i) => (
+            <tr key={r.name} className={i < rows.length - 1 ? "border-b border-zinc-800/60" : ""}>
+              <td className="py-2.5 pr-4 font-mono">{r.name}</td>
+              <td className="py-2.5 pr-4">{r.service}</td>
+              <td className="py-2.5 pr-4">{r.purpose}</td>
+              <td className="py-2.5">{r.duration}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function CookiesPage() {
+  const locale = useLocale();
+  const c = COOKIES_CONTENT[locale] ?? COOKIES_CONTENT.fr;
+  const cols = { name: c.s3.colName, purpose: c.s3.colPurpose, duration: c.s3.colDuration };
+
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">Dernière mise à jour : 19 avril 2026</p>
-      <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">
-        Politique de Cookies
-      </h1>
-      <p className="text-zinc-400 text-sm mb-10 leading-relaxed">
-        La présente Politique de Cookies explique comment Aevia utilise les cookies et traceurs
-        sur l'ensemble de ses services numériques, conformément à la directive ePrivacy
-        (2002/58/CE révisée), au Règlement Général sur la Protection des Données (RGPD) et
-        aux recommandations de la Commission Nationale de l'Informatique et des Libertés
-        (CNIL).
-      </p>
+      <p className="text-xs text-zinc-500 mb-2">{c.lastUpdated}</p>
+      <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">{c.title}</h1>
+      <p className="text-zinc-400 text-sm mb-10 leading-relaxed">{c.intro}</p>
 
-      {/* ── 1. Qu'est-ce qu'un cookie ? ──────────────────────────────────────── */}
+      {/* 1 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          1. Qu'est-ce qu'un cookie ?
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Un cookie est un petit fichier texte déposé sur votre terminal (ordinateur, smartphone,
-          tablette) lors de la visite d'un site web. Il permet au site de mémoriser des
-          informations sur votre visite et de personnaliser votre expérience.
-        </p>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Les cookies peuvent être de session (supprimés à la fermeture du navigateur) ou
-          persistants (conservés sur votre terminal pour une durée déterminée). Ils peuvent
-          être déposés directement par le site visité (cookies propriétaires) ou par des
-          services tiers intégrés (cookies tiers).
-        </p>
-        <p className="text-sm leading-relaxed text-zinc-400">
-          Au sens large, le terme &laquo; cookie &raquo; dans la présente politique désigne
-          également les autres technologies de traçage similaires : balises web (web beacons),
-          pixels de suivi, stockage local (localStorage) et empreinte navigateur (fingerprinting).
-        </p>
+        <h2 className={H2}>{c.s1.heading}</h2>
+        <p className={P}>{c.s1.p1}</p>
+        <p className={P}>{c.s1.p2}</p>
+        <p className="text-sm leading-relaxed text-zinc-400">{c.s1.p3}</p>
       </section>
 
-      {/* ── 2. Produits concernés ────────────────────────────────────────────── */}
+      {/* 2 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          2. Services concernés
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-          La présente politique s'applique à tous les services en ligne édités par Aevia :
-        </p>
+        <h2 className={H2}>{c.s2.heading}</h2>
+        <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s2.lead}</p>
         <div className="space-y-3 text-sm">
-          <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
-            <span className="text-red-400 font-bold shrink-0 text-xs">INBOX</span>
-            <span className="text-zinc-400">
-              <strong className="text-zinc-300">inbox.aevia.services</strong> — Plateforme CRM multi-canal
-            </span>
-          </div>
-          <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
-            <span className="text-red-300 font-bold shrink-0 text-xs">LAUNCH</span>
-            <span className="text-zinc-400">
-              <strong className="text-zinc-300">launch.aevia.services</strong> — Générateur de sites web IA
-            </span>
-          </div>
-          <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
-            <span className="text-emerald-400 font-bold shrink-0 text-xs">SECURITY</span>
-            <span className="text-zinc-400">
-              <strong className="text-zinc-300">security.aevia.services</strong> — Plateforme d'audit de sécurité
-            </span>
-          </div>
-          <div className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
-            <span className="text-cyan-400 font-bold shrink-0 text-xs">SITE</span>
-            <span className="text-zinc-400">
-              <strong className="text-zinc-300">aevia.services</strong> — Site institutionnel Aevia
-            </span>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. Catégories de cookies ─────────────────────────────────────────── */}
-      <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          3. Catégories de cookies utilisés
-        </h2>
-
-        {/* 3.1 Cookies strictement nécessaires */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <h3 className="text-base font-semibold text-white">
-              3.1 Cookies strictement nécessaires
-            </h3>
-            <span className="text-xs text-emerald-400 bg-emerald-500/10 ring-1 ring-emerald-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Aucun consentement requis
-            </span>
-          </div>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-            Ces cookies sont indispensables au fonctionnement de nos services. Ils ne
-            peuvent pas être désactivés sans compromettre l'accès aux fonctionnalités
-            essentielles. Conformément à la réglementation CNIL et ePrivacy, leur dépôt
-            ne nécessite pas votre consentement.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
-              <thead>
-                <tr className="border-b border-zinc-700">
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Nom du cookie</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Service</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Finalité</th>
-                  <th className="text-left py-2.5 text-zinc-300 font-semibold">Durée</th>
-                </tr>
-              </thead>
-              <tbody className="text-zinc-400">
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">accessToken</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">
-                    Authentification — stocke le jeton JWT de session de l'utilisateur connecté
-                  </td>
-                  <td className="py-2.5">Session (fermeture navigateur)</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">__Secure-session</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">
-                    Maintien de la session serveur (HttpOnly, Secure, SameSite=Strict)
-                  </td>
-                  <td className="py-2.5">Session</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">csrf-token</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">
-                    Protection contre les attaques CSRF (Cross-Site Request Forgery)
-                  </td>
-                  <td className="py-2.5">Session</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">locale</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">
-                    Mémorisation de la langue sélectionnée par l'utilisateur
-                  </td>
-                  <td className="py-2.5">1 an</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 pr-4 font-mono">cookie-consent</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">
-                    Mémorisation des préférences de consentement aux cookies
-                  </td>
-                  <td className="py-2.5">13 mois</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {/* 3.2 Cookies analytiques */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <h3 className="text-base font-semibold text-white">
-              3.2 Cookies analytiques et de mesure d'audience
-            </h3>
-            <span className="text-xs text-sky-400 bg-sky-500/10 ring-1 ring-sky-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Consentement requis
-            </span>
-          </div>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-            Aevia utilise <strong className="text-zinc-300">Google Analytics 4</strong>
-            (Google Ireland Ltd) pour mesurer l'audience de ses services. Ces cookies ne sont
-            déposés qu'après votre acceptation explicite du bandeau :
-          </p>
-          <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">
-            <li>Cookies déposés : <strong className="text-zinc-300">_ga</strong> et <strong className="text-zinc-300">_ga_*</strong>, durée 13 mois</li>
-            <li>Anonymisation d'IP activée</li>
-            <li>Responsable : Google Ireland Ltd ; traitement possible hors UE par Google LLC, sur la base du Data Privacy Framework</li>
-            <li><strong className="text-zinc-300">Si vous refusez, le tag n'est pas chargé du tout</strong> — aucun cookie, aucune donnée transmise à Google</li>
-            <li>Refuser n'enlève rien au service</li>
-            <li>Vous pouvez revenir sur votre choix en effaçant les données du site dans votre navigateur</li>
-          </ul>
-          <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 text-sm mb-3">
-            <p className="text-zinc-300 font-semibold mb-2">Données collectées par Google Analytics 4 :</p>
-            <ul className="list-disc list-inside text-zinc-400 space-y-1 ml-2 text-xs">
-              <li>URL de la page visitée</li>
-              <li>Page de provenance (referrer — domaine uniquement)</li>
-              <li>Type de navigateur et système d'exploitation (agrégé)</li>
-              <li>Pays de provenance (IP anonymisée)</li>
-              <li>Type d'appareil (desktop, mobile, tablette)</li>
-            </ul>
-            <p className="text-zinc-500 text-xs mt-3">
-              Un identifiant de mesure est associé à votre navigateur via les cookies ci-dessus tant que vous avez accepté.
-            </p>
-          </div>
-          <a
-            href="https://policies.google.com/technologies/partner-sites"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-red-400 hover:text-red-300 transition-colors inline-block"
-          >
-            Comment Google utilise les données de ses partenaires &rarr;
-          </a>
-        </div>
-
-        {/* 3.3 Cookies de paiement */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <h3 className="text-base font-semibold text-white">
-              3.3 Cookies tiers — Stripe (Paiements)
-            </h3>
-            <span className="text-xs text-amber-400 bg-amber-500/10 ring-1 ring-amber-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Consentement requis
-            </span>
-          </div>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-            Lors du processus de paiement, Stripe dépose des cookies nécessaires au
-            traitement sécurisé des transactions et à la prévention de la fraude.
-            Ces cookies sont uniquement actifs lors de l'utilisation des fonctionnalités
-            de paiement.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
-              <thead>
-                <tr className="border-b border-zinc-700">
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Nom</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Éditeur</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Finalité</th>
-                  <th className="text-left py-2.5 text-zinc-300 font-semibold">Durée</th>
-                </tr>
-              </thead>
-              <tbody className="text-zinc-400">
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">__stripe_mid</td>
-                  <td className="py-2.5 pr-4">Stripe, Inc.</td>
-                  <td className="py-2.5 pr-4">Identifiant de navigateur pour la détection de fraude</td>
-                  <td className="py-2.5">1 an</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">__stripe_sid</td>
-                  <td className="py-2.5 pr-4">Stripe, Inc.</td>
-                  <td className="py-2.5 pr-4">Identifiant de session pour la sécurité des transactions</td>
-                  <td className="py-2.5">30 minutes</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 pr-4 font-mono">m</td>
-                  <td className="py-2.5 pr-4">Stripe, Inc.</td>
-                  <td className="py-2.5 pr-4">Prévention de la fraude (empreinte navigateur)</td>
-                  <td className="py-2.5">2 ans</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <a
-            href="https://stripe.com/fr/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-red-400 hover:text-red-300 transition-colors mt-3 inline-block"
-          >
-            Politique de confidentialité Stripe &rarr;
-          </a>
-        </div>
-
-        {/* 3.4 Cookies Meta */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <h3 className="text-base font-semibold text-white">
-              3.4 Cookies tiers — Meta / APIs de messagerie (Aevia Inbox uniquement)
-            </h3>
-            <span className="text-xs text-amber-400 bg-amber-500/10 ring-1 ring-amber-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Consentement requis
-            </span>
-          </div>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-            Dans le cadre d'Aevia Inbox, l'intégration des canaux WhatsApp, Instagram et
-            Facebook Messenger nécessite une connexion aux APIs Meta. Cette connexion peut
-            impliquer le dépôt de cookies Meta lors de l'authentification OAuth ou de
-            l'utilisation des interfaces Meta Business.
-          </p>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-            Aevia n'utilise pas le Pixel Meta pour des fins de remarketing ou de publicité
-            ciblée. Les interactions avec les APIs Meta sont limitées à la transmission des
-            messages dans le cadre de l'utilisation opérationnelle d'Aevia Inbox.
-          </p>
-          <a
-            href="https://www.facebook.com/policy/cookies/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-red-400 hover:text-red-300 transition-colors inline-block"
-          >
-            Politique de cookies Meta &rarr;
-          </a>
-        </div>
-
-        {/* 3.5 LocalStorage */}
-        <div className="mb-6">
-          <div className="flex items-center gap-3 mb-3">
-            <h3 className="text-base font-semibold text-white">
-              3.5 Stockage local (localStorage / sessionStorage)
-            </h3>
-            <span className="text-xs text-emerald-400 bg-emerald-500/10 ring-1 ring-emerald-500/20 px-2 py-0.5 rounded-full shrink-0">
-              Fonctionnel — nécessaire
-            </span>
-          </div>
-          <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-            Nos applications utilisent le stockage local du navigateur (distinct des cookies)
-            pour améliorer les performances et l'expérience utilisateur :
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full text-xs border-collapse">
-              <thead>
-                <tr className="border-b border-zinc-700">
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Clé</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Service</th>
-                  <th className="text-left py-2.5 pr-4 text-zinc-300 font-semibold">Finalité</th>
-                  <th className="text-left py-2.5 text-zinc-300 font-semibold">Durée</th>
-                </tr>
-              </thead>
-              <tbody className="text-zinc-400">
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">aevia-theme</td>
-                  <td className="py-2.5 pr-4">Tous</td>
-                  <td className="py-2.5 pr-4">Préférence de thème (clair/sombre)</td>
-                  <td className="py-2.5">Persistant</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">aevia-inbox-draft</td>
-                  <td className="py-2.5 pr-4">Inbox</td>
-                  <td className="py-2.5 pr-4">Sauvegarde automatique des brouillons de messages</td>
-                  <td className="py-2.5">Session</td>
-                </tr>
-                <tr className="border-b border-zinc-800/60">
-                  <td className="py-2.5 pr-4 font-mono">aevia-sidebar-state</td>
-                  <td className="py-2.5 pr-4">Inbox</td>
-                  <td className="py-2.5 pr-4">État du panneau latéral (ouvert/fermé)</td>
-                  <td className="py-2.5">Persistant</td>
-                </tr>
-                <tr>
-                  <td className="py-2.5 pr-4 font-mono">aevia-audit-history</td>
-                  <td className="py-2.5 pr-4">Security</td>
-                  <td className="py-2.5 pr-4">Historique local des URLs auditées récemment</td>
-                  <td className="py-2.5">30 jours</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 4. Base légale ───────────────────────────────────────────────────── */}
-      <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          4. Base légale et consentement
-        </h2>
-        <div className="space-y-4 text-sm">
-          <div className="bg-zinc-900/40 border border-emerald-800/40 rounded-xl p-5">
-            <p className="font-semibold text-emerald-400 mb-2">
-              Cookies exemptés de consentement (Article 82 de la loi Informatique et Libertés)
-            </p>
-            <p className="text-zinc-400 leading-relaxed">
-              Conformément aux lignes directrices de la CNIL du 17 septembre 2020, seuls les
-              cookies strictement nécessaires au fonctionnement du service sont exemptés de
-              consentement préalable. Google Analytics 4 ne bénéficie pas de cette exemption :
-              il n'est chargé qu'après votre acceptation explicite.
-            </p>
-          </div>
-          <div className="bg-zinc-900/40 border border-amber-800/40 rounded-xl p-5">
-            <p className="font-semibold text-amber-400 mb-2">
-              Cookies soumis à consentement (RGPD Art. 6.1.a)
-            </p>
-            <p className="text-zinc-400 leading-relaxed">
-              Les cookies tiers (Stripe hors transaction, Meta) nécessitent votre consentement
-              préalable, libre, éclairé et spécifique. Ce consentement est recueilli via notre
-              bandeau d'information cookies lors de votre première visite. Vous pouvez
-              retirer votre consentement à tout moment.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 5. Durée de conservation ─────────────────────────────────────────── */}
-      <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          5. Durée de conservation des cookies
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Conformément à la recommandation de la CNIL, aucun cookie déposé par Aevia n'a
-          une durée de vie supérieure à <strong className="text-zinc-300">13 mois</strong>.
-          Passé ce délai, votre consentement est à nouveau sollicité.
-        </p>
-        <p className="text-sm leading-relaxed text-zinc-400">
-          Les cookies de session (sans durée explicite) sont automatiquement supprimés
-          à la fermeture de votre navigateur. Les durées de conservation spécifiques à
-          chaque cookie sont détaillées dans les tableaux de la section 3.
-        </p>
-      </section>
-
-      {/* ── 6. Gestion des cookies ───────────────────────────────────────────── */}
-      <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          6. Comment gérer vos préférences de cookies
-        </h2>
-
-        <h3 className="text-base font-semibold text-white mb-2 mt-4">6.1 Via notre gestionnaire de consentement</h3>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-          Vous pouvez à tout moment modifier vos préférences en matière de cookies en
-          cliquant sur le lien &laquo; Gérer mes cookies &raquo; disponible dans le pied de
-          page de chacun de nos services. Vos préférences sont mémorisées pendant 13 mois.
-        </p>
-
-        <h3 className="text-base font-semibold text-white mb-2 mt-5">6.2 Via les paramètres de votre navigateur</h3>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Vous pouvez configurer votre navigateur pour accepter, refuser ou supprimer les
-          cookies à tout moment. Notez que la désactivation des cookies nécessaires au
-          fonctionnement peut altérer votre accès aux services Aevia (notamment
-          l'authentification).
-        </p>
-        <div className="space-y-2 text-sm">
-          {[
-            { name: "Google Chrome", url: "https://support.google.com/chrome/answer/95647" },
-            { name: "Mozilla Firefox", url: "https://support.mozilla.org/fr/kb/activer-desactiver-cookies" },
-            { name: "Safari (Apple)", url: "https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" },
-            { name: "Microsoft Edge", url: "https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" },
-            { name: "Opera", url: "https://help.opera.com/en/latest/web-preferences/#cookies" },
-          ].map((browser) => (
-            <div key={browser.name} className="flex items-center gap-3 py-2 border-b border-zinc-800/60 last:border-0">
-              <span className="text-zinc-300 text-sm w-40 shrink-0">{browser.name}</span>
-              <a
-                href={browser.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-red-400 hover:text-red-300 transition-colors text-xs"
-              >
-                Guide officiel &rarr;
-              </a>
+          {c.s2.services.map((s, i) => (
+            <div key={s.tag} className="flex items-center gap-3 bg-zinc-900/40 border border-zinc-800 rounded-xl p-4">
+              <span className={`${SERVICE_COLORS[i] ?? "text-red-400"} font-bold shrink-0 text-xs`}>{s.tag}</span>
+              <span className="text-zinc-400"><strong className="text-zinc-300">{s.name}</strong> — {s.desc}</span>
             </div>
           ))}
         </div>
+      </section>
 
-        <h3 className="text-base font-semibold text-white mb-2 mt-6">6.3 Opposition au suivi publicitaire</h3>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Aevia n'utilise pas de cookies publicitaires ou de remarketing à ce jour.
-          Si vous souhaitez vous opposer au suivi comportemental par des tiers en général,
-          vous pouvez utiliser les outils suivants :
-        </p>
+      {/* 3 */}
+      <section className="mb-10">
+        <h2 className={H2}>{c.s3.heading}</h2>
+
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3"><h3 className={H3}>{c.s3.h31}</h3><Badge tone="green">{c.s3.badgeNoConsent}</Badge></div>
+          <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s3.p31}</p>
+          <CookieTable col2={c.s3.colService} rows={c.s3.rows31} cols={cols} />
+        </div>
+
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3"><h3 className={H3}>{c.s3.h32}</h3><Badge tone="sky">{c.s3.badgeConsent}</Badge></div>
+          <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s3.p32}</p>
+          <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">{c.s3.items32.map((i) => <li key={i}>{i}</li>)}</ul>
+          <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 text-sm mb-3">
+            <p className="text-zinc-300 font-semibold mb-2">{c.s3.dataTitle}</p>
+            <ul className="list-disc list-inside text-zinc-400 space-y-1 ml-2 text-xs">{c.s3.dataItems.map((i) => <li key={i}>{i}</li>)}</ul>
+            <p className="text-zinc-500 text-xs mt-3">{c.s3.dataNote}</p>
+          </div>
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className={`text-xs ${EXT} inline-block`}>{c.s3.link32} &rarr;</a>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3"><h3 className={H3}>{c.s3.h33}</h3><Badge tone="amber">{c.s3.badgeConsent}</Badge></div>
+          <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s3.p33}</p>
+          <CookieTable col2={c.s3.colPublisher} rows={c.s3.rows33} cols={cols} />
+          <a href="https://stripe.com/fr/privacy" target="_blank" rel="noopener noreferrer" className={`text-xs ${EXT} mt-3 inline-block`}>{c.s3.link33} &rarr;</a>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3"><h3 className={H3}>{c.s3.h34}</h3><Badge tone="amber">{c.s3.badgeConsent}</Badge></div>
+          <p className={P}>{c.s3.p34a}</p>
+          <p className={P}>{c.s3.p34b}</p>
+          <a href="https://www.facebook.com/policy/cookies/" target="_blank" rel="noopener noreferrer" className={`text-xs ${EXT} inline-block`}>{c.s3.link34} &rarr;</a>
+        </div>
+
+        <div className="mb-6">
+          <div className="flex items-center gap-3 mb-3"><h3 className={H3}>{c.s3.h35}</h3><Badge tone="green">{c.s3.badgeFunctional}</Badge></div>
+          <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s3.p35}</p>
+          <CookieTable col2={c.s3.colKey} rows={c.s3.rows35} cols={cols} />
+        </div>
+      </section>
+
+      {/* 4 */}
+      <section className="mb-10">
+        <h2 className={H2}>{c.s4.heading}</h2>
+        <div className="space-y-4 text-sm">
+          <div className="bg-zinc-900/40 border border-emerald-800/40 rounded-xl p-5">
+            <p className="font-semibold text-emerald-400 mb-2">{c.s4.exemptTitle}</p>
+            <p className="text-zinc-400 leading-relaxed">{c.s4.exempt}</p>
+          </div>
+          <div className="bg-zinc-900/40 border border-amber-800/40 rounded-xl p-5">
+            <p className="font-semibold text-amber-400 mb-2">{c.s4.consentTitle}</p>
+            <p className="text-zinc-400 leading-relaxed">{c.s4.consent}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* 5 */}
+      <section className="mb-10">
+        <h2 className={H2}>{c.s5.heading}</h2>
+        <p className={P}>{c.s5.p1a}<strong className="text-zinc-300">{c.s5.p1strong}</strong>{c.s5.p1b}</p>
+        <p className="text-sm leading-relaxed text-zinc-400">{c.s5.p2}</p>
+      </section>
+
+      {/* 6 */}
+      <section className="mb-10">
+        <h2 className={H2}>{c.s6.heading}</h2>
+        <h3 className={`${H3} mb-2 mt-4`}>{c.s6.h61}</h3>
+        <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s6.p61}</p>
+        <h3 className={`${H3} mb-2 mt-5`}>{c.s6.h62}</h3>
+        <p className={P}>{c.s6.p62}</p>
         <div className="space-y-2 text-sm">
-          <div className="flex items-center gap-3">
-            <span className="text-zinc-400 w-56 shrink-0">Your Online Choices (UE)</span>
-            <a
-              href="https://www.youronlinechoices.eu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-400 hover:text-red-300 transition-colors text-xs"
-            >
-              youronlinechoices.eu &rarr;
-            </a>
-          </div>
-          <div className="flex items-center gap-3">
-            <span className="text-zinc-400 w-56 shrink-0">NAI Opt-Out (USA)</span>
-            <a
-              href="https://optout.networkadvertising.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-400 hover:text-red-300 transition-colors text-xs"
-            >
-              networkadvertising.org &rarr;
-            </a>
-          </div>
+          {BROWSERS.map((b) => (
+            <div key={b.name} className="flex items-center gap-3 py-2 border-b border-zinc-800/60 last:border-0">
+              <span className="text-zinc-300 text-sm w-40 shrink-0">{b.name}</span>
+              <a href={b.url} target="_blank" rel="noopener noreferrer" className={`${EXT} text-xs`}>{c.s6.browserGuide} &rarr;</a>
+            </div>
+          ))}
         </div>
-
-        <h3 className="text-base font-semibold text-white mb-2 mt-6">6.4 Refuser Google Analytics 4</h3>
+        <h3 className={`${H3} mb-2 mt-6`}>{c.s6.h63}</h3>
+        <p className={P}>{c.s6.p63}</p>
+        <div className="space-y-2 text-sm">
+          <div className="flex items-center gap-3"><span className="text-zinc-400 w-56 shrink-0">Your Online Choices (UE)</span><a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener noreferrer" className={`${EXT} text-xs`}>youronlinechoices.eu &rarr;</a></div>
+          <div className="flex items-center gap-3"><span className="text-zinc-400 w-56 shrink-0">NAI Opt-Out (USA)</span><a href="https://optout.networkadvertising.org" target="_blank" rel="noopener noreferrer" className={`${EXT} text-xs`}>networkadvertising.org &rarr;</a></div>
+        </div>
+        <h3 className={`${H3} mb-2 mt-6`}>{c.s6.h64}</h3>
         <p className="text-sm leading-relaxed text-zinc-400">
-          Le moyen le plus simple est de cliquer <strong className="text-zinc-300">Tout refuser</strong>{" "}
-          sur le bandeau : le tag n'est alors jamais chargé, aucun cookie n'est déposé et rien
-          n'est transmis à Google. Pour revenir sur un consentement déjà donné, effacez les
-          données de ce site dans votre navigateur — le bandeau réapparaîtra. Google propose
-          également un{" "}
-          <a
-            href="https://tools.google.com/dlpage/gaoptout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-red-400 hover:text-red-300 transition-colors"
-          >
-            module de désactivation
-          </a>{" "}
-          valable sur tous les sites utilisant Google Analytics.
+          {c.s6.p64a}
+          <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className={EXT}>{c.s6.p64optout}</a>
+          {c.s6.p64b}
         </p>
       </section>
 
-      {/* ── 7. Conformité CNIL ───────────────────────────────────────────────── */}
+      {/* 7 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          7. Conformité CNIL et ePrivacy
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-4">
-          La présente politique de cookies a été rédigée en conformité avec :
-        </p>
-        <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">
-          <li>
-            Les <strong className="text-zinc-300">Lignes directrices de la CNIL</strong> du
-            17 septembre 2020 sur les cookies et autres traceurs
-          </li>
-          <li>
-            La <strong className="text-zinc-300">Recommandation CNIL</strong> du 17 septembre 2020
-            relative aux modalités de recueil du consentement
-          </li>
-          <li>
-            L&apos;article <strong className="text-zinc-300">82 de la loi Informatique et Libertés</strong>{" "}
-            (modifiée par l'ordonnance 2018-1125 transposant le RGPD)
-          </li>
-          <li>
-            La <strong className="text-zinc-300">Directive ePrivacy 2002/58/CE</strong> (révisée
-            par la Directive 2009/136/CE)
-          </li>
-          <li>
-            Le <strong className="text-zinc-300">RGPD — Règlement (UE) 2016/679</strong>
-          </li>
-        </ul>
+        <h2 className={H2}>{c.s7.heading}</h2>
+        <p className="text-sm leading-relaxed text-zinc-400 mb-4">{c.s7.lead}</p>
+        <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">{c.s7.items.map((i) => <li key={i}>{i}</li>)}</ul>
         <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-5 text-sm">
-          <p className="text-zinc-300 font-semibold mb-2">Audit de conformité cookies</p>
+          <p className="text-zinc-300 font-semibold mb-2">{c.s7.auditTitle}</p>
           <p className="text-zinc-400 leading-relaxed">
-            Aevia s'engage à auditer régulièrement les cookies déposés sur ses services
-            (au minimum annuellement) et à mettre à jour la présente politique en conséquence.
-            En cas de détection d'un cookie non référencé, vous pouvez nous le signaler à{" "}
-            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.services
-            </a>.
+            {c.s7.auditA}
+            <a href="mailto:privacy@aevia.services" className={EXT}>privacy@aevia.services</a>
+            {c.s7.auditB}
           </p>
         </div>
       </section>
 
-      {/* ── 8. Droits et réclamations ────────────────────────────────────────── */}
+      {/* 8 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          8. Vos droits et voies de recours
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400 mb-3">
-          Vous disposez d'un droit d'accès, de rectification et de suppression concernant
-          les données collectées via les cookies. Pour exercer ces droits :
-        </p>
-        <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">
-          <li>
-            Contactez-nous à{" "}
-            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.services
-            </a>
-          </li>
-          <li>Consultez notre Politique de Confidentialité pour vos droits RGPD complets</li>
-          <li>
-            En cas de désaccord, saisissez la{" "}
-            <strong className="text-zinc-300">CNIL</strong> :{" "}
-            <a
-              href="https://www.cnil.fr/fr/vous-souhaitez-contacter-la-cnil"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-red-400 hover:text-red-300 transition-colors"
-            >
-              cnil.fr &rarr;
-            </a>
-          </li>
-        </ul>
+        <h2 className={H2}>{c.s8.heading}</h2>
+        <p className={P}>{c.s8.lead}</p>
+        <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1.5 ml-2 mb-4">{c.s8.items.map((i) => <li key={i}>{i}</li>)}</ul>
       </section>
 
-      {/* ── 9. Modifications ─────────────────────────────────────────────────── */}
+      {/* 9 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          9. Modifications de la politique de cookies
-        </h2>
-        <p className="text-sm leading-relaxed text-zinc-400">
-          La présente politique peut être modifiée à tout moment pour refléter l'ajout de
-          nouveaux cookies, des changements réglementaires ou des mises à jour de nos
-          pratiques. En cas de modification substantielle affectant les cookies soumis à
-          consentement, votre accord sera à nouveau sollicité. La date de dernière mise à
-          jour est indiquée en tête de ce document.
-        </p>
+        <h2 className={H2}>{c.s9.heading}</h2>
+        <p className="text-sm leading-relaxed text-zinc-400">{c.s9.text}</p>
       </section>
 
-      {/* ── 10. Contact ──────────────────────────────────────────────────────── */}
+      {/* 10 */}
       <section className="mb-10">
-        <h2 className="text-xl font-bold text-white mb-4 pb-2 border-b border-zinc-800">
-          10. Contact
-        </h2>
+        <h2 className={H2}>{c.s10.heading}</h2>
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-5 text-sm space-y-2">
-          <p className="text-zinc-300 font-semibold mb-2">
-            Pour toute question concernant les cookies Aevia :
-          </p>
-          <p className="text-zinc-400">
-            <span className="text-zinc-300">Email :</span>{" "}
-            <a href="mailto:privacy@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
-              privacy@aevia.services
-            </a>
-          </p>
-          <p className="text-zinc-400">
-            <span className="text-zinc-300">Responsable :</span> Aevia WS — Valentin Milliand,
-            SIREN 852 546 225 (RCS Bourg-en-Bresse), France
-          </p>
+          <p className="text-zinc-300 font-semibold mb-2">{c.s10.title}</p>
+          <p className="text-zinc-400"><span className="text-zinc-300">{c.s10.emailLabel} :</span> <a href="mailto:privacy@aevia.services" className={EXT}>privacy@aevia.services</a></p>
+          <p className="text-zinc-400"><span className="text-zinc-300">{c.s10.controllerLabel} :</span> {c.s10.controllerValue}</p>
           <div className="pt-2 border-t border-zinc-800 mt-2 space-y-1">
-            <p className="text-zinc-500 text-xs">Documents liés :</p>
-            <a href="/fr/legal/privacy" className="text-red-400 hover:text-red-300 transition-colors text-xs block">
-              Politique de Confidentialité &rarr;
-            </a>
-            <a href="/fr/legal/terms" className="text-red-400 hover:text-red-300 transition-colors text-xs block">
-              Conditions Générales d'Utilisation et de Vente &rarr;
-            </a>
-            <a href="/fr/legal/mentions" className="text-red-400 hover:text-red-300 transition-colors text-xs block">
-              Mentions légales &rarr;
-            </a>
+            <p className="text-zinc-500 text-xs">{c.s10.relatedLabel}</p>
+            <a href={`/${locale}/legal/privacy`} className={`${EXT} text-xs block`}>{c.s10.privacyLink} &rarr;</a>
+            <a href={`/${locale}/legal/terms`} className={`${EXT} text-xs block`}>{c.s10.termsLink} &rarr;</a>
+            <a href={`/${locale}/legal/mentions`} className={`${EXT} text-xs block`}>{c.s10.mentionsLink} &rarr;</a>
           </div>
         </div>
       </section>
 
       {/* Disclaimer */}
       <div className="mt-12 pt-6 border-t border-zinc-800/60">
-        <p className="text-xs text-zinc-600 leading-relaxed italic">
-          Ce document est publié à titre informatif et constitue la politique de cookies
-          effective d'Aevia. Cette politique a été rédigée en conformité avec les exigences
-          de la CNIL et du RGPD à la date indiquée en en-tête. Pour tout conseil juridique
-          spécifique à votre situation, consultez un avocat qualifié en droit du numérique.
-        </p>
+        <p className="text-xs text-zinc-600 leading-relaxed italic">{c.disclaimer}</p>
       </div>
     </main>
-  )
+  );
 }
