@@ -74,7 +74,7 @@ Tarification modulable — le client choisit son mode, le prix par palier est id
 - **Mode Voix seule** : ligne téléphonique IA dédiée.
 - **Mode Messages + Voix** : les deux.
 
-Paliers mensuels : **Starter 49 $**, **Growth 99 $**, **Pro 199 $**, **Business 399 $**, **Scale 999 $**.
+Paliers mensuels : **Starter 79 $**, **Growth 99 $**, **Pro 199 $**, **Business 399 $**, **Scale 999 $**.
 
 Cas d'usage les plus forts : restaurants et food-trucks (réservation + commande par téléphone et WhatsApp), cabinets dentaires et cliniques (prise de rendez-vous), garages et artisans (devis, rappels), hôtels et locations. Particulièrement utile aux commerces qui reçoivent beaucoup d'appels et perdent des clients quand personne ne décroche.
 

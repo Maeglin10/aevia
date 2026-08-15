@@ -211,7 +211,7 @@ const productsSchema = {
       // signup. A price in structured data is quoted back by search engines and
       // assistants, so it must match what the checkout actually charges.
       offers: [
-        { '@type': 'Offer', name: 'Starter', price: '49', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Starter', price: '79', priceCurrency: 'EUR' },
         { '@type': 'Offer', name: 'Growth', price: '99', priceCurrency: 'EUR' },
         { '@type': 'Offer', name: 'Pro', price: '199', priceCurrency: 'EUR' },
         { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'EUR' },

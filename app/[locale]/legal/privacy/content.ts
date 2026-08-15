@@ -80,7 +80,7 @@ const fr: PrivacyContent = {
     heading: '2. Produits concernés par cette politique',
     lead: "La présente politique s'applique à l'ensemble des produits et services commercialisés sous la marque Aevia :",
     products: [
-      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations webchat, email et voix (WhatsApp et Instagram à venir) pour les entreprises. Abonnement mensuel (49, 99, 199, 399 ou 999 €/mois HT selon le palier ; devise adaptée à la région).' },
+      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multi-canal B2B. Centralise les conversations webchat, email et voix (WhatsApp et Instagram à venir) pour les entreprises. Abonnement mensuel (79, 99, 199, 399 ou 999 €/mois HT selon le palier ; devise adaptée à la région).' },
       { name: 'AeviaLaunch', desc: "(launch.aevia.services) — Générateur de sites web assisté par IA. Crée des sites web professionnels à partir de données de formulaire. Paiement unique (599 €, 899 € ou 1 499 €) + maintenance optionnelle 20 €/mois." },
       { name: 'AeviaSecurity', desc: "(security.aevia.services) — Plateforme d'audit de sécurité automatisé. Analyse SSL, DNS, performances et failles de sécurité de sites web. Scan gratuit + prestations correctives à la carte (forfait unique, de 149 € à 2 490 € HT selon le périmètre)." },
     ],
@@ -234,7 +234,7 @@ const en: PrivacyContent = {
     heading: '2. Products covered by this policy',
     lead: 'This policy applies to all products and services marketed under the Aevia brand:',
     products: [
-      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — Multi-channel B2B CRM. Centralises webchat, email and voice conversations (WhatsApp and Instagram coming soon) for businesses. Monthly subscription (€49, 99, 199, 399 or 999/month excl. VAT depending on the tier; currency adapted to the region).' },
+      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — Multi-channel B2B CRM. Centralises webchat, email and voice conversations (WhatsApp and Instagram coming soon) for businesses. Monthly subscription (€79, 99, 199, 399 or 999/month excl. VAT depending on the tier; currency adapted to the region).' },
       { name: 'AeviaLaunch', desc: '(launch.aevia.services) — AI-assisted website generator. Creates professional websites from form data. One-off payment (€599, €899 or €1,499) + optional maintenance €20/month.' },
       { name: 'AeviaSecurity', desc: '(security.aevia.services) — Automated security-audit platform. Analyses the SSL, DNS, performance and security flaws of websites. Free scan + à-la-carte remediation services (one-off package, from €149 to €2,490 excl. VAT depending on scope).' },
     ],
@@ -388,7 +388,7 @@ const es: PrivacyContent = {
     heading: '2. Productos cubiertos por esta política',
     lead: 'Esta política se aplica a todos los productos y servicios comercializados bajo la marca Aevia:',
     products: [
-      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multicanal B2B. Centraliza las conversaciones de webchat, correo y voz (WhatsApp e Instagram próximamente) para empresas. Suscripción mensual (49, 99, 199, 399 o 999 €/mes sin IVA según el nivel; moneda adaptada a la región).' },
+      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multicanal B2B. Centraliza las conversaciones de webchat, correo y voz (WhatsApp e Instagram próximamente) para empresas. Suscripción mensual (79, 99, 199, 399 o 999 €/mes sin IVA según el nivel; moneda adaptada a la región).' },
       { name: 'AeviaLaunch', desc: '(launch.aevia.services) — Generador de sitios web asistido por IA. Crea sitios web profesionales a partir de datos de un formulario. Pago único (599 €, 899 € o 1499 €) + mantenimiento opcional 20 €/mes.' },
       { name: 'AeviaSecurity', desc: '(security.aevia.services) — Plataforma de auditoría de seguridad automatizada. Analiza SSL, DNS, rendimiento y fallos de seguridad de sitios web. Escaneo gratuito + servicios correctivos a la carta (paquete único, de 149 € a 2490 € sin IVA según el alcance).' },
     ],
@@ -542,7 +542,7 @@ const de: PrivacyContent = {
     heading: '2. Von dieser Richtlinie erfasste Produkte',
     lead: 'Diese Richtlinie gilt für alle unter der Marke Aevia vermarkteten Produkte und Dienstleistungen:',
     products: [
-      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — Multichannel-B2B-CRM. Bündelt Webchat-, E-Mail- und Sprachkonversationen (WhatsApp und Instagram in Kürze) für Unternehmen. Monatliches Abonnement (49, 99, 199, 399 oder 999 €/Monat zzgl. MwSt. je nach Stufe; Währung an die Region angepasst).' },
+      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — Multichannel-B2B-CRM. Bündelt Webchat-, E-Mail- und Sprachkonversationen (WhatsApp und Instagram in Kürze) für Unternehmen. Monatliches Abonnement (79, 99, 199, 399 oder 999 €/Monat zzgl. MwSt. je nach Stufe; Währung an die Region angepasst).' },
       { name: 'AeviaLaunch', desc: '(launch.aevia.services) — KI-gestützter Website-Generator. Erstellt professionelle Websites aus Formulardaten. Einmalzahlung (599 €, 899 € oder 1.499 €) + optionale Wartung 20 €/Monat.' },
       { name: 'AeviaSecurity', desc: '(security.aevia.services) — Plattform für automatisierte Sicherheitsaudits. Analysiert SSL, DNS, Leistung und Sicherheitslücken von Websites. Kostenloser Scan + Behebungsleistungen à la carte (Einmalpaket, von 149 € bis 2.490 € zzgl. MwSt. je nach Umfang).' },
     ],
@@ -696,7 +696,7 @@ const pt: PrivacyContent = {
     heading: '2. Produtos abrangidos por esta política',
     lead: 'Esta política aplica-se a todos os produtos e serviços comercializados sob a marca Aevia:',
     products: [
-      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multicanal B2B. Centraliza as conversas de webchat, e-mail e voz (WhatsApp e Instagram em breve) para empresas. Assinatura mensal (49, 99, 199, 399 ou 999 €/mês sem IVA consoante o nível; moeda adaptada à região).' },
+      { name: 'Aevia Inbox', desc: '(inbox.aevia.services) — CRM multicanal B2B. Centraliza as conversas de webchat, e-mail e voz (WhatsApp e Instagram em breve) para empresas. Assinatura mensal (79, 99, 199, 399 ou 999 €/mês sem IVA consoante o nível; moeda adaptada à região).' },
       { name: 'AeviaLaunch', desc: '(launch.aevia.services) — Gerador de sites assistido por IA. Cria sites profissionais a partir dos dados de um formulário. Pagamento único (599 €, 899 € ou 1499 €) + manutenção opcional 20 €/mês.' },
       { name: 'AeviaSecurity', desc: '(security.aevia.services) — Plataforma de auditoria de segurança automatizada. Analisa SSL, DNS, desempenho e falhas de segurança de sites. Verificação gratuita + serviços corretivos à la carte (pacote único, de 149 € a 2490 € sem IVA consoante o âmbito).' },
     ],

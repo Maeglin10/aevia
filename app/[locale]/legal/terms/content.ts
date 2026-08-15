@@ -123,7 +123,7 @@ const fr: TermsContent = {
     inboxTitle: 'Aevia Inbox — Abonnement mensuel',
     inboxCols: { a: 'Plan', b: 'Tarif mensuel HT', c: 'Caractéristiques principales' },
     inboxRows: [
-      { a: 'Starter', b: '49 €/mois', c: '1 canal, 1 utilisateur' },
+      { a: 'Starter', b: '79 €/mois', c: '1 canal, 1 utilisateur' },
       { a: 'Growth', b: '99 €/mois', c: 'Multi-canal, 3 utilisateurs, support prioritaire' },
       { a: 'Pro', b: '199 €/mois', c: 'IA activée, 5 utilisateurs' },
       { a: 'Business', b: '399 €/mois', c: 'Volumes élevés, utilisateurs étendus' },
@@ -302,7 +302,7 @@ const en: TermsContent = {
     inboxTitle: 'Aevia Inbox — monthly subscription',
     inboxCols: { a: 'Plan', b: 'Monthly price excl. VAT', c: 'Main features' },
     inboxRows: [
-      { a: 'Starter', b: '€49/month', c: '1 channel, 1 user' },
+      { a: 'Starter', b: '€79/month', c: '1 channel, 1 user' },
       { a: 'Growth', b: '€99/month', c: 'Multi-channel, 3 users, priority support' },
       { a: 'Pro', b: '€199/month', c: 'AI enabled, 5 users' },
       { a: 'Business', b: '€399/month', c: 'High volumes, extended users' },
@@ -481,7 +481,7 @@ const es: TermsContent = {
     inboxTitle: 'Aevia Inbox — Suscripción mensual',
     inboxCols: { a: 'Plan', b: 'Precio mensual sin IVA', c: 'Características principales' },
     inboxRows: [
-      { a: 'Starter', b: '49 €/mes', c: '1 canal, 1 usuario' },
+      { a: 'Starter', b: '79 €/mes', c: '1 canal, 1 usuario' },
       { a: 'Growth', b: '99 €/mes', c: 'Multicanal, 3 usuarios, soporte prioritario' },
       { a: 'Pro', b: '199 €/mes', c: 'IA activada, 5 usuarios' },
       { a: 'Business', b: '399 €/mes', c: 'Volúmenes elevados, usuarios ampliados' },
@@ -660,7 +660,7 @@ const de: TermsContent = {
     inboxTitle: 'Aevia Inbox — Monatsabonnement',
     inboxCols: { a: 'Tarif', b: 'Monatspreis zzgl. MwSt.', c: 'Hauptmerkmale' },
     inboxRows: [
-      { a: 'Starter', b: '49 €/Monat', c: '1 Kanal, 1 Benutzer' },
+      { a: 'Starter', b: '79 €/Monat', c: '1 Kanal, 1 Benutzer' },
       { a: 'Growth', b: '99 €/Monat', c: 'Multichannel, 3 Benutzer, Priority-Support' },
       { a: 'Pro', b: '199 €/Monat', c: 'KI aktiviert, 5 Benutzer' },
       { a: 'Business', b: '399 €/Monat', c: 'Hohe Volumen, erweiterte Benutzer' },
@@ -839,7 +839,7 @@ const pt: TermsContent = {
     inboxTitle: 'Aevia Inbox — Assinatura mensal',
     inboxCols: { a: 'Plano', b: 'Preço mensal sem IVA', c: 'Características principais' },
     inboxRows: [
-      { a: 'Starter', b: '49 €/mês', c: '1 canal, 1 utilizador' },
+      { a: 'Starter', b: '79 €/mês', c: '1 canal, 1 utilizador' },
       { a: 'Growth', b: '99 €/mês', c: 'Multicanal, 3 utilizadores, suporte prioritário' },
       { a: 'Pro', b: '199 €/mês', c: 'IA ativada, 5 utilizadores' },
       { a: 'Business', b: '399 €/mês', c: 'Volumes elevados, utilizadores alargados' },
