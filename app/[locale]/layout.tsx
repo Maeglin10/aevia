@@ -34,7 +34,16 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
   return {
     metadataBase: new URL(BASE),
-    title: { absolute: title },
+    /*
+      `absolute` supprime le gabarit hérité de la racine — et pas seulement pour
+      cette page : pour toutes celles qui vivent dessous. Mesuré en production :
+      « Mentions légales », « Politique de confidentialité »… sans aucune
+      mention de la marque. Or le mot « Aevia » désigne au moins sept entités
+      (dont une filiale d'Eiffage) : chaque titre est une occasion de rattacher
+      la page à la bonne. On garde le titre exact de l'accueil en `default`, et
+      on rend le gabarit aux pages filles.
+    */
+    title: { default: title, template: '%s | Aevia' },
     description,
     keywords: ['Aevia', 'SaaS France', 'outils entrepreneur', 'site web 7 jours', 'inbox unifiée', 'audit sécurité', 'AeviaLaunch', 'AeviaSecurity', 'AeviaInbox'],
     authors: [{ name: 'Valentin Milliand', url: BASE }],
