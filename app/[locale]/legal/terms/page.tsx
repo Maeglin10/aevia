@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Conditions générales",
+  title: "Conditions générales | Aevia",
   description:
     "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
   alternates: { canonical: "https://aevia.services/legal/terms" },
   openGraph: {
-    title: "Conditions générales",
+    title: "Conditions générales | Aevia",
     description:
       "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
     url: "https://aevia.services/legal/terms",

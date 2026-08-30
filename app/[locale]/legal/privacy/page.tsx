@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Politique de confidentialité",
+  title: "Politique de confidentialité | Aevia",
   description:
     "Quelles données Aevia collecte, pourquoi, combien de temps elles sont conservées et comment exercer vos droits RGPD.",
   alternates: { canonical: "https://aevia.services/legal/privacy" },
   openGraph: {
-    title: "Politique de confidentialité",
+    title: "Politique de confidentialité | Aevia",
     description:
       "Quelles données Aevia collecte, pourquoi, combien de temps elles sont conservées et comment exercer vos droits RGPD.",
     url: "https://aevia.services/legal/privacy",

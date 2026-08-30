@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Documentation Aevia Launch — génération de site en 2 h",
+  title: "Documentation Aevia Launch — génération de site en 2 h | Aevia",
   description:
     "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
   alternates: { canonical: "https://aevia.services/docs/launch" },
   openGraph: {
-    title: "Documentation Aevia Launch — génération de site en 2 h",
+    title: "Documentation Aevia Launch — génération de site en 2 h | Aevia",
     description:
       "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
     url: "https://aevia.services/docs/launch",

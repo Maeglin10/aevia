@@ -35,15 +35,15 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     metadataBase: new URL(BASE),
     /*
-      `absolute` supprime le gabarit hérité de la racine — et pas seulement pour
-      cette page : pour toutes celles qui vivent dessous. Mesuré en production :
-      « Mentions légales », « Politique de confidentialité »… sans aucune
-      mention de la marque. Or le mot « Aevia » désigne au moins sept entités
-      (dont une filiale d'Eiffage) : chaque titre est une occasion de rattacher
-      la page à la bonne. On garde le titre exact de l'accueil en `default`, et
-      on rend le gabarit aux pages filles.
+      `absolute` : le titre de l'accueil est déjà complet, et le gabarit de la
+      racine (`%s | Aevia`) lui ajouterait un second « | Aevia ». Vérifié en
+      production. Les pages filles portent donc la marque dans leur propre
+      titre, écrite en toutes lettres — voir app/[locale]/legal/* et docs/*.
+      C'est plus verbeux qu'un gabarit, mais sur un nom que sept entités se
+      disputent (dont une filiale d'Eiffage), un titre qui ne dit pas « Aevia »
+      est une occasion perdue de rattacher la page à la bonne.
     */
-    title: { default: title, template: '%s | Aevia' },
+    title: { absolute: title },
     description,
     keywords: ['Aevia', 'SaaS France', 'outils entrepreneur', 'site web 7 jours', 'inbox unifiée', 'audit sécurité', 'AeviaLaunch', 'AeviaSecurity', 'AeviaInbox'],
     authors: [{ name: 'Valentin Milliand', url: BASE }],

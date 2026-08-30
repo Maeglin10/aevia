@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Mentions légales",
+  title: "Mentions légales | Aevia",
   description:
     "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
   alternates: { canonical: "https://aevia.services/legal/mentions" },
   openGraph: {
-    title: "Mentions légales",
+    title: "Mentions légales | Aevia",
     description:
       "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
     url: "https://aevia.services/legal/mentions",

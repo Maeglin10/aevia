@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Documentation Aevia Security — audit de domaine, remédiation",
+  title: "Documentation Aevia Security — audit de domaine, remédiation | Aevia",
   description:
     "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
   alternates: { canonical: "https://aevia.services/docs/security" },
   openGraph: {
-    title: "Documentation Aevia Security — audit de domaine, remédiation",
+    title: "Documentation Aevia Security — audit de domaine, remédiation | Aevia",
     description:
       "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
     url: "https://aevia.services/docs/security",

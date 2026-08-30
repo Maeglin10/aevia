@@ -4,12 +4,12 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 export const metadata: Metadata = {
-  title: "Documentation Aevia Inbox — agents IA, canaux, voix",
+  title: "Documentation Aevia Inbox — agents IA, canaux, voix | Aevia",
   description:
     "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
   alternates: { canonical: "https://aevia.services/docs/inbox" },
   openGraph: {
-    title: "Documentation Aevia Inbox — agents IA, canaux, voix",
+    title: "Documentation Aevia Inbox — agents IA, canaux, voix | Aevia",
     description:
       "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
     url: "https://aevia.services/docs/inbox",
