@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Documentation Aevia Inbox — agents IA, canaux, voix",
+  description:
+    "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
+  alternates: { canonical: "https://aevia.services/docs/inbox" },
+  openGraph: {
+    title: "Documentation Aevia Inbox — agents IA, canaux, voix",
+    description:
+      "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
+    url: "https://aevia.services/docs/inbox",
+    images: ["/og.png"],
+  },
+};
+
 export default function DocsInboxPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">

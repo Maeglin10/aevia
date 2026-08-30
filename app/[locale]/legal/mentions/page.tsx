@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Mentions légales",
+  description:
+    "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+  alternates: { canonical: "https://aevia.services/legal/mentions" },
+  openGraph: {
+    title: "Mentions légales",
+    description:
+      "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+    url: "https://aevia.services/legal/mentions",
+    images: ["/og.png"],
+  },
+};
+
 import { useTranslations } from "next-intl";
 
 export default function MentionsPage() {

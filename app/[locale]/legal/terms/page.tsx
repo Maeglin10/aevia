@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Conditions générales",
+  description:
+    "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
+  alternates: { canonical: "https://aevia.services/legal/terms" },
+  openGraph: {
+    title: "Conditions générales",
+    description:
+      "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
+    url: "https://aevia.services/legal/terms",
+    images: ["/og.png"],
+  },
+};
+
 import { useLocale } from "next-intl";
 import { TERMS_CONTENT, type Row3 } from "./content";
 

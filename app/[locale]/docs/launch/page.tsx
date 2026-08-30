@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Documentation Aevia Launch — génération de site en 2 h",
+  description:
+    "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
+  alternates: { canonical: "https://aevia.services/docs/launch" },
+  openGraph: {
+    title: "Documentation Aevia Launch — génération de site en 2 h",
+    description:
+      "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
+    url: "https://aevia.services/docs/launch",
+    images: ["/og.png"],
+  },
+};
+
 export default function DocsLaunchPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">

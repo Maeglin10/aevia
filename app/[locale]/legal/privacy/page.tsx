@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Politique de confidentialité",
+  description:
+    "Quelles données Aevia collecte, pourquoi, combien de temps elles sont conservées et comment exercer vos droits RGPD.",
+  alternates: { canonical: "https://aevia.services/legal/privacy" },
+  openGraph: {
+    title: "Politique de confidentialité",
+    description:
+      "Quelles données Aevia collecte, pourquoi, combien de temps elles sont conservées et comment exercer vos droits RGPD.",
+    url: "https://aevia.services/legal/privacy",
+    images: ["/og.png"],
+  },
+};
+
 import { useLocale } from "next-intl";
 import { PRIVACY_CONTENT } from "./content";
 

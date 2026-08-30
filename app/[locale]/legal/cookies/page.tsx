@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Politique de cookies",
+  description:
+    "Les cookies déposés par Aevia, leur finalité, leur durée, et comment retirer votre consentement à tout moment.",
+  alternates: { canonical: "https://aevia.services/legal/cookies" },
+  openGraph: {
+    title: "Politique de cookies",
+    description:
+      "Les cookies déposés par Aevia, leur finalité, leur durée, et comment retirer votre consentement à tout moment.",
+    url: "https://aevia.services/legal/cookies",
+    images: ["/og.png"],
+  },
+};
+
 import { useLocale } from "next-intl";
 import { COOKIES_CONTENT, type CookieRow } from "./content";
 

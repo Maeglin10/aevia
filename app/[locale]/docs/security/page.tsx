@@ -1,3 +1,22 @@
+import type { Metadata } from "next";
+
+// Titre et description propres à cette page : sans ce bloc elle héritait
+// du titre du layout racine, et sept pages du Hub partageaient le même
+// <title> — un doublon que Google traite comme une seule page.
+export const metadata: Metadata = {
+  title: "Documentation Aevia Security — audit de domaine, remédiation",
+  description:
+    "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
+  alternates: { canonical: "https://aevia.services/docs/security" },
+  openGraph: {
+    title: "Documentation Aevia Security — audit de domaine, remédiation",
+    description:
+      "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
+    url: "https://aevia.services/docs/security",
+    images: ["/og.png"],
+  },
+};
+
 export default function DocsSecurityPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">
