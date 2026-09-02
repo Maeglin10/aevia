@@ -160,6 +160,12 @@ const organizationSchema = {
   // were checked live and resolve to this company. The own subdomains stay,
   // but they are supporting evidence, not proof of identity.
   sameAs: [
+    // La fiche d'établissement Google, validée. C'est la corroboration la plus
+    // forte de la liste : Google y a attaché l'identifiant d'entité
+    // /g/11zfhkfyr8, distinct de celui de la filiale d'Eiffage. Le site désigne
+    // la fiche, la fiche désigne le site — la boucle est ce qui fait tenir
+    // l'identité.
+    'https://share.google/olhxyISOJZjAame0Q',
     'https://annuaire-entreprises.data.gouv.fr/entreprise/852546225',
     'https://www.pappers.fr/entreprise/852546225',
     'https://www.societe.com/societe/-852546225.html',
