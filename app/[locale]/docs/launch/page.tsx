@@ -120,6 +120,20 @@ export default function DocsLaunchPage() {
           de la formule.
         </p>
       </section>
+      {/* Voir la note du même bloc dans docs/security. */}
+      <section className="mb-4 pt-6 border-t border-zinc-800">
+        <h2 className="text-xl font-bold text-white mb-4">Les modèles</h2>
+        <p className="text-sm leading-relaxed mb-4">
+          Le catalogue est parcourable métier par métier : chaque fiche donne le format,
+          le nombre de sections, la gamme et une démonstration en ligne.
+        </p>
+        <ul className="text-sm space-y-2">
+          <li><a href="https://launch.aevia.services/themes/modeles" className="text-red-400 hover:text-red-300">Tous les modèles, classés par métier</a></li>
+          <li><a href="https://launch.aevia.services/themes" className="text-red-400 hover:text-red-300">La galerie filtrable</a></li>
+          <li><a href="https://launch.aevia.services/showcase" className="text-red-400 hover:text-red-300">Réalisations</a></li>
+          <li><a href="https://launch.aevia.services/pricing" className="text-zinc-400 hover:text-zinc-300">Tarifs →</a></li>
+        </ul>
+      </section>
     </main>
   );
 }

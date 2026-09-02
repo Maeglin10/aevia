@@ -95,6 +95,28 @@ export default function DocsSecurityPage() {
           fonctionnalités avancées de reporting.
         </p>
       </section>
+      {/*
+        Liens thématiques vers le contenu du produit. Mesuré le 02/09 : le Hub
+        concentre 36 des 38 impressions de la suite, mais ne pointait que vers
+        les accueils — jamais vers les pages publiées cette semaine. Un lien
+        depuis une page qui traite du même sujet vaut plus qu'un lien de pied de
+        page.
+      */}
+      <section className="mb-4 pt-6 border-t border-zinc-800">
+        <h2 className="text-xl font-bold text-white mb-4">Les guides</h2>
+        <p className="text-sm leading-relaxed mb-4">
+          Chaque contrôle du scan est documenté : ce qu&apos;il protège, comment vérifier
+          le vôtre en une commande, et l&apos;enregistrement exact à publier.
+        </p>
+        <ul className="text-sm space-y-2">
+          <li><a href="https://security.aevia.services/guides/spf" className="text-red-400 hover:text-red-300">SPF — qui a le droit d&apos;envoyer en votre nom</a></li>
+          <li><a href="https://security.aevia.services/guides/dmarc" className="text-red-400 hover:text-red-300">DMARC — passer de p=none à une politique qui protège</a></li>
+          <li><a href="https://security.aevia.services/guides/dkim" className="text-red-400 hover:text-red-300">DKIM — signer ses e-mails</a></li>
+          <li><a href="https://security.aevia.services/guides/mta-sts" className="text-red-400 hover:text-red-300">MTA-STS — chiffrer le courrier entrant</a></li>
+          <li><a href="https://security.aevia.services/guides/en-tetes-http" className="text-red-400 hover:text-red-300">En-têtes HTTP — six lignes qui ferment la plupart des portes</a></li>
+          <li><a href="https://security.aevia.services/guides" className="text-zinc-400 hover:text-zinc-300">Tous les guides →</a></li>
+        </ul>
+      </section>
     </main>
   );
 }

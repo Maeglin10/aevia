@@ -34,6 +34,48 @@ export function SiteFooter() {
             </a>
           </div>
         </div>
+        {/*
+          Les moyeux de contenu des trois produits.
+
+          Mesuré dans Search Console le 02/09 : sur 38 impressions en 90 jours,
+          36 vont à aevia.services. C'est le domaine que Google connaît. Or il
+          ne pointait que vers les accueils des produits — jamais vers les 356
+          pages publiées cette semaine, qui n'avaient donc aucun lien entrant
+          depuis le seul endroit qui compte.
+
+          Ces trois liens sont sur chaque page du Hub. Ils servent d'abord à la
+          découverte, ensuite à faire circuler l'autorité vers des pages neuves
+          qui n'en ont aucune.
+        */}
+        <div className="border-t border-zinc-800/60 pt-4">
+          <p className="text-xs text-zinc-600 mb-2">{f("resourcesLabel")}</p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-zinc-500">
+            <a
+              href="https://launch.aevia.services/themes/modeles"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-zinc-300 transition-colors"
+            >
+              {f("resourcesTemplates")}
+            </a>
+            <a
+              href="https://security.aevia.services/guides"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-zinc-300 transition-colors"
+            >
+              {f("resourcesGuides")}
+            </a>
+            <a
+              href="https://inbox.aevia.services/fr/solutions"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-zinc-300 transition-colors"
+            >
+              {f("resourcesSolutions")}
+            </a>
+          </div>
+        </div>
         <div className="border-t border-zinc-800/60 pt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-600">
           <span>{f("copyright")}</span>
           <div className="flex items-center gap-4">

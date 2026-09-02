@@ -91,7 +91,11 @@
     "terms": "CGU",
     "cookies": "Cookies",
     "mentions": "Mentions légales",
-    "manageCookies": "Gérer les cookies"
+    "manageCookies": "Gérer les cookies",
+    "resourcesLabel": "Ressources",
+    "resourcesTemplates": "Modèles de sites par métier",
+    "resourcesGuides": "Guides sécurité e-mail et DNS",
+    "resourcesSolutions": "Solutions par canal"
   },
   "skills": {
     "title": "Stack technique"

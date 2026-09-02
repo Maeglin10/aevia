@@ -91,7 +91,11 @@
     "terms": "Terms",
     "cookies": "Cookies",
     "mentions": "Legal Notice",
-    "manageCookies": "Manage cookies"
+    "manageCookies": "Manage cookies",
+    "resourcesLabel": "Resources",
+    "resourcesTemplates": "Website templates by trade",
+    "resourcesGuides": "Email and DNS security guides",
+    "resourcesSolutions": "Solutions by channel"
   },
   "skills": {
     "title": "Tech stack"

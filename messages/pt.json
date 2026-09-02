@@ -91,7 +91,11 @@
     "terms": "Termos",
     "cookies": "Cookies",
     "mentions": "Aviso legal",
-    "manageCookies": "Gerir cookies"
+    "manageCookies": "Gerir cookies",
+    "resourcesLabel": "Recursos",
+    "resourcesTemplates": "Modelos de sites por profissão",
+    "resourcesGuides": "Guias de segurança de e-mail e DNS",
+    "resourcesSolutions": "Soluções por canal"
   },
   "skills": {
     "title": "Stack técnico"

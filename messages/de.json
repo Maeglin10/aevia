@@ -91,7 +91,11 @@
     "terms": "AGB",
     "cookies": "Cookies",
     "mentions": "Impressum",
-    "manageCookies": "Cookies verwalten"
+    "manageCookies": "Cookies verwalten",
+    "resourcesLabel": "Ressourcen",
+    "resourcesTemplates": "Website-Vorlagen nach Branche",
+    "resourcesGuides": "Sicherheitsleitfäden E-Mail und DNS",
+    "resourcesSolutions": "Lösungen nach Kanal"
   },
   "skills": {
     "title": "Technischer Stack"

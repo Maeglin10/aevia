@@ -148,6 +148,20 @@ export default function DocsInboxPage() {
           peuvent être en cours de déploiement progressif selon les comptes.
         </p>
       </section>
+      {/* Voir la note du même bloc dans docs/security. */}
+      <section className="mb-4 pt-6 border-t border-zinc-800">
+        <h2 className="text-xl font-bold text-white mb-4">Les cas d&apos;usage</h2>
+        <p className="text-sm leading-relaxed mb-4">
+          Ce que fait l&apos;Inbox, canal par canal et métier par métier.
+        </p>
+        <ul className="text-sm space-y-2">
+          <li><a href="https://inbox.aevia.services/fr/solutions/standard-telephonique-ia" className="text-red-400 hover:text-red-300">Standard téléphonique IA — répondre à chaque appel</a></li>
+          <li><a href="https://inbox.aevia.services/fr/solutions/whatsapp-business" className="text-red-400 hover:text-red-300">WhatsApp Business — répondre sans y passer la journée</a></li>
+          <li><a href="https://inbox.aevia.services/fr/solutions/reservation-restaurant" className="text-red-400 hover:text-red-300">Réservations de restaurant, sans standardiste</a></li>
+          <li><a href="https://inbox.aevia.services/fr/solutions/boite-mail-partagee" className="text-red-400 hover:text-red-300">Boîte mail partagée, sans doublon</a></li>
+          <li><a href="https://inbox.aevia.services/fr/solutions" className="text-zinc-400 hover:text-zinc-300">Tous les cas d&apos;usage →</a></li>
+        </ul>
+      </section>
     </main>
   );
 }
