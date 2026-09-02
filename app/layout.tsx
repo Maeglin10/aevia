@@ -175,6 +175,52 @@ const organizationSchema = {
   ],
 }
 
+/*
+  L'activité de zone desservie, distincte de l'organisation.
+
+  `Organization` dit qui est l'entreprise ; il ne dit pas qu'elle intervient
+  quelque part, à quel numéro on la joint, ni dans quelles langues. C'est
+  pourtant ce que Google rapproche quand il décide si une fiche d'établissement
+  et un site parlent de la même chose.
+
+  Aucune `address` ici, volontairement : il n'y a pas de local que le public
+  visite. Ce nœud ne revendique pas une adresse, il revendique une zone
+  d'intervention — c'est la forme que schema.org et Google prévoient pour une
+  activité qui se déplace ou travaille à distance. La ville du registre reste
+  déclarée dans `Organization`, où elle décrit le siège social et non un magasin.
+
+  Les valeurs doivent rester identiques à celles de la fiche Google : un numéro
+  ou une ville qui diffère et le rapprochement ne se fait pas.
+*/
+const zoneDesservieSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': 'https://aevia.services/#activite',
+  name: 'Aevia',
+  parentOrganization: { '@id': 'https://aevia.services/#organization' },
+  url: 'https://aevia.services',
+  image: 'https://aevia.services/brand/aevia-logo.png',
+  telephone: '+33743751980',
+  email: 'valentinmilliand@aevia.services',
+  priceRange: '€€',
+  areaServed: [
+    { '@type': 'City', name: 'Bourg-en-Bresse' },
+    { '@type': 'City', name: 'Lyon' },
+    { '@type': 'City', name: 'Villefranche-sur-Saône' },
+    { '@type': 'City', name: 'Mâcon' },
+    { '@type': 'AdministrativeArea', name: 'Ain' },
+    { '@type': 'AdministrativeArea', name: 'Rhône' },
+    { '@type': 'Country', name: 'France' },
+  ],
+  availableLanguage: ['fr', 'en', 'es', 'de', 'pt'],
+  knowsAbout: [
+    'Création de site web professionnel',
+    'Standard téléphonique par intelligence artificielle',
+    'Inbox unifiée WhatsApp Instagram Messenger email',
+    'Audit de sécurité de domaine',
+  ],
+};
+
 const productsSchema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -280,6 +326,10 @@ export default async function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productsSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(zoneDesservieSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#09090b] text-white">
