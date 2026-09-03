@@ -95,6 +95,25 @@ function renderContent(content: string) {
   return elements;
 }
 
+/*
+  L'habillage de l'article, traduit.
+
+  Le titre et le corps sont bien traduits par `localizePost`, mais deux
+  chaînes étaient écrites en dur en français : une page anglaise affichait
+  « Retour au blog » et « 6 min de lecture » autour d'un texte anglais. Pour un
+  lecteur c'est bâclé ; pour un moteur, c'est un signal de page à moitié
+  traduite sur une URL qui se déclare `en`.
+
+  Mêmes libellés que la table `UI` de la page d'index du blog.
+*/
+const HABILLAGE: Record<string, { retour: string; lecture: string }> = {
+  fr: { retour: "Retour au blog", lecture: "de lecture" },
+  en: { retour: "Back to the blog", lecture: "read" },
+  es: { retour: "Volver al blog", lecture: "de lectura" },
+  de: { retour: "Zurück zum Blog", lecture: "Lesezeit" },
+  pt: { retour: "Voltar ao blog", lecture: "de leitura" },
+};
+
 export default function ArticlePage({
   params,
 }: {
@@ -126,7 +145,7 @@ export default function ArticlePage({
             className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-300 transition-colors mb-8 group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
-            Retour au blog
+            {(HABILLAGE[locale] ?? HABILLAGE.fr).retour}
           </Link>
 
           {/* Meta */}
@@ -141,7 +160,7 @@ export default function ArticlePage({
             </span>
             <span className="flex items-center gap-1.5 text-xs text-zinc-500">
               <Clock size={11} />
-              {post.readingTime} de lecture
+              {post.readingTime} {(HABILLAGE[locale] ?? HABILLAGE.fr).lecture}
             </span>
           </div>
 

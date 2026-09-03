@@ -407,6 +407,12 @@ export default function Home() {
 
         Six liens directs, choisis sur l'intention commerciale — prix, métier,
         ville. Ils ramènent les articles à un seul saut.
+
+        Couleurs : zinc-400 et non zinc-500/600. Mesuré par Lighthouse sur cette
+        page, `text-zinc-600` sur ce fond donne 2,48:1 et `text-zinc-500` 3,96:1,
+        quand la norme en demande 4,5. Le réflexe zinc-500 est partout dans ce
+        dépôt — 33 éléments en échec sur cette seule page — mais ce n'est pas une
+        raison d'en ajouter.
       */}
       <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl">
@@ -423,9 +429,9 @@ export default function Home() {
                 href={`/${langue}/blog/${post.slug}`}
                 className="block rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition-colors"
               >
-                <p className="text-xs uppercase tracking-wider text-zinc-600 mb-2">{post.category}</p>
+                <p className="text-xs uppercase tracking-wider text-zinc-400 mb-2">{post.category}</p>
                 <h3 className="text-sm font-semibold text-white leading-snug mb-2">{post.title}</h3>
-                <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
+                <p className="text-xs text-zinc-400 leading-relaxed line-clamp-3">{post.excerpt}</p>
               </Link>
             ))}
           </div>
