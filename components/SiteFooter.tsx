@@ -24,6 +24,7 @@ export function SiteFooter() {
           <div className="flex items-center gap-6">
             <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("templates")}</a>
             <a href="https://security.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("security")}</a>
+            <Link href="/blog" className="hover:text-zinc-300 transition-colors">{f("blog")}</Link>
             <Link href="/docs" className="hover:text-zinc-300 transition-colors">{f("docs")}</Link>
             <Link href="/contact" className="hover:text-zinc-300 transition-colors">{f("contact")}</Link>
             <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

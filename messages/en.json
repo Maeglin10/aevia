@@ -95,7 +95,8 @@
     "resourcesLabel": "Resources",
     "resourcesTemplates": "Website templates by trade",
     "resourcesGuides": "Email and DNS security guides",
-    "resourcesSolutions": "Solutions by channel"
+    "resourcesSolutions": "Solutions by channel",
+    "blog": "Blog"
   },
   "skills": {
     "title": "Tech stack"
@@ -124,5 +125,9 @@
     "address_value": "Registered office address provided on request at valentinmilliand@aevia.services",
     "hosting_heading": "Hosting",
     "hosting_intro": "This website is hosted by:"
+  },
+  "blog_section": {
+    "title": "What we write",
+    "all": "All articles"
   }
 }

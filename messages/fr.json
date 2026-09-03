@@ -95,7 +95,8 @@
     "resourcesLabel": "Ressources",
     "resourcesTemplates": "Modèles de sites par métier",
     "resourcesGuides": "Guides sécurité e-mail et DNS",
-    "resourcesSolutions": "Solutions par canal"
+    "resourcesSolutions": "Solutions par canal",
+    "blog": "Blog"
   },
   "skills": {
     "title": "Stack technique"
@@ -124,5 +125,9 @@
     "address_value": "Adresse du siège social communiquée sur demande à valentinmilliand@aevia.services",
     "hosting_heading": "Hébergement",
     "hosting_intro": "Le site est hébergé par :"
+  },
+  "blog_section": {
+    "title": "Ce qu'on écrit",
+    "all": "Tous les articles"
   }
 }

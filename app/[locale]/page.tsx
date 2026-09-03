@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { BLOG_POSTS } from "@/lib/blog-posts";
 import { ArrowRight, ExternalLink, Layout } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 
 /* The hero backdrop: a slow rotation of photographs behind the existing
@@ -74,6 +75,22 @@ function HeroBackdrop() {
 }
 
 
+/*
+  Choisis sur l'intention commerciale, pas sur la date : prix, métier, ville.
+  Ce sont les requêtes où une réponse fait venir quelqu'un qui achète.
+*/
+const SLUGS_EN_AVANT = [
+  "creer-site-internet-bourg-en-bresse-ia",
+  "combien-coute-agent-telephonique-ia",
+  "standard-telephonique-ia-restaurant",
+  "combien-coute-site-internet-professionnel-2026",
+  "prise-rendez-vous-ia-cabinet-dentaire",
+  "audit-securite-site-web",
+];
+const ARTICLES_EN_AVANT = SLUGS_EN_AVANT
+  .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
+  .filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
+
 export default function Home() {
   const h = useTranslations("hero");
   const st = useTranslations("stats");
@@ -81,6 +98,8 @@ export default function Home() {
   const ts = useTranslations("templates_section");
   const w = useTranslations("why");
   const c = useTranslations("cta");
+  const b = useTranslations("blog_section");
+  const langue = useLocale();
 
   const products = [
     {
@@ -375,6 +394,44 @@ export default function Home() {
       </section>
 
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
+      {/*
+        Des liens directs vers les articles, depuis la seule page que Google
+        visite.
+
+        Mesuré le 02/09 avec l'outil d'inspection : `/fr` est la seule URL du
+        Hub réellement indexée — et son dernier passage remonte au 21 juillet.
+        Les 29 articles, eux, n'ont **jamais** été explorés. Le chemin existait
+        pourtant : accueil → /blog → 27 liens. Mais un lien unique vers un index,
+        et des articles à deux sauts de la seule page connue, c'est trop peu
+        pour attirer un robot qui ne repasse pas.
+
+        Six liens directs, choisis sur l'intention commerciale — prix, métier,
+        ville. Ils ramènent les articles à un seul saut.
+      */}
+      <section className="px-6 py-16">
+        <div className="mx-auto max-w-5xl">
+          <div className="flex items-baseline justify-between mb-8">
+            <h2 className="text-2xl font-bold text-white">{b("title")}</h2>
+            <Link href={`/${langue}/blog`} className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
+              {b("all")} →
+            </Link>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {ARTICLES_EN_AVANT.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/${langue}/blog/${post.slug}`}
+                className="block rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition-colors"
+              >
+                <p className="text-xs uppercase tracking-wider text-zinc-600 mb-2">{post.category}</p>
+                <h3 className="text-sm font-semibold text-white leading-snug mb-2">{post.title}</h3>
+                <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-16 pb-24">
         <div className="mx-auto max-w-5xl">
           <motion.div
