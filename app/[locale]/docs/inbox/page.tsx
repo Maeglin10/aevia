@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Documentation Aevia Inbox — agents IA, canaux, voix | Aevia",
-  description:
-    "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
-  alternates: { canonical: "https://aevia.services/docs/inbox" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/docs/inbox` — une URL qui répond 307 vers
+    `/fr/docs/inbox`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/docs/inbox`;
+  return {
     title: "Documentation Aevia Inbox — agents IA, canaux, voix | Aevia",
     description:
       "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
-    url: "https://aevia.services/docs/inbox",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/docs/inbox`])),
+    },
+    openGraph: {
+      title: "Documentation Aevia Inbox — agents IA, canaux, voix | Aevia",
+      description:
+        "Comment Aevia Inbox centralise WhatsApp, Instagram, email et appels dans une seule boîte, et y répond avec des agents IA spécialisés. Architecture, canaux, limites.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 export default function DocsInboxPage() {
   return (

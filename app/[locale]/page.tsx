@@ -159,7 +159,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen" id="main-content">
+    <div className="min-h-screen">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       {/* Desktop gets a full-viewport hero. The height used to come from the
@@ -221,7 +221,7 @@ export default function Home() {
             ].map(({ value, label }) => (
               <div key={label} className="text-center p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/30">
                 <div className="text-2xl font-bold text-white mb-1">{value}</div>
-                <div className="text-xs text-zinc-500 font-medium">{label}</div>
+                <div className="text-xs text-zinc-400 font-medium">{label}</div>
               </div>
             ))}
           </motion.div>

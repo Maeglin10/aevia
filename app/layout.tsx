@@ -341,7 +341,18 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col bg-[#09090b] text-white">
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-red-600 focus:text-white focus:rounded-lg focus:font-semibold">Skip to main content</a>
         <Nav />
-        {children}
+        {/*
+          La cible du lien d'évitement.
+
+          Le lien ci-dessus pointe vers #main-content depuis toujours, mais cet
+          identifiant n'existait que sur l'accueil et la page contact : sur les
+          docs, les pages légales, le blog et les comparatifs, le premier arrêt
+          d'un utilisateur au clavier ne menait nulle part. Lighthouse le dit
+          sans détour — « No skip link target ». Posé ici, il vaut pour toutes
+          les pages, et les deux déclarations locales ont été retirées pour ne
+          pas dupliquer l'identifiant.
+        */}
+        <div id="main-content">{children}</div>
         {/* webchat widget moved to [locale]/layout.tsx for i18n locale injection */}
       </body>
     </html>

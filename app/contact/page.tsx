@@ -69,7 +69,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 pb-32 px-6" id="main-content">
+    <div className="min-h-screen pt-24 pb-32 px-6">
       {/* Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/8 blur-[120px]" />

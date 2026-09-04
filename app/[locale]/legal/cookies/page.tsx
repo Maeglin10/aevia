@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Politique de cookies | Aevia",
-  description:
-    "Les cookies déposés par Aevia, leur finalité, leur durée, et comment retirer votre consentement à tout moment.",
-  alternates: { canonical: "https://aevia.services/legal/cookies" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/legal/cookies` — une URL qui répond 307 vers
+    `/fr/legal/cookies`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/legal/cookies`;
+  return {
     title: "Politique de cookies | Aevia",
     description:
       "Les cookies déposés par Aevia, leur finalité, leur durée, et comment retirer votre consentement à tout moment.",
-    url: "https://aevia.services/legal/cookies",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/cookies`])),
+    },
+    openGraph: {
+      title: "Politique de cookies | Aevia",
+      description:
+        "Les cookies déposés par Aevia, leur finalité, leur durée, et comment retirer votre consentement à tout moment.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 import { useLocale } from "next-intl";
 import { COOKIES_CONTENT, type CookieRow } from "./content";

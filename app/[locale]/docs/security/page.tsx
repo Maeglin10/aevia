@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Documentation Aevia Security — audit de domaine, remédiation | Aevia",
-  description:
-    "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
-  alternates: { canonical: "https://aevia.services/docs/security" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/docs/security` — une URL qui répond 307 vers
+    `/fr/docs/security`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/docs/security`;
+  return {
     title: "Documentation Aevia Security — audit de domaine, remédiation | Aevia",
     description:
       "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
-    url: "https://aevia.services/docs/security",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/docs/security`])),
+    },
+    openGraph: {
+      title: "Documentation Aevia Security — audit de domaine, remédiation | Aevia",
+      description:
+        "Ce que scanne Aevia Security (SPF, DMARC, MTA-STS, DNSSEC, en-têtes HTTP, CVE) et comment la remédiation guidée corrige les failles trouvées.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 export default function DocsSecurityPage() {
   return (

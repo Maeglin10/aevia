@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Conditions générales | Aevia",
-  description:
-    "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
-  alternates: { canonical: "https://aevia.services/legal/terms" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/legal/terms` — une URL qui répond 307 vers
+    `/fr/legal/terms`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/legal/terms`;
+  return {
     title: "Conditions générales | Aevia",
     description:
       "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
-    url: "https://aevia.services/legal/terms",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/terms`])),
+    },
+    openGraph: {
+      title: "Conditions générales | Aevia",
+      description:
+        "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 import { useLocale } from "next-intl";
 import { TERMS_CONTENT, type Row3 } from "./content";

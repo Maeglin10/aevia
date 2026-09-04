@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Documentation Aevia Launch — génération de site en 2 h | Aevia",
-  description:
-    "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
-  alternates: { canonical: "https://aevia.services/docs/launch" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/docs/launch` — une URL qui répond 307 vers
+    `/fr/docs/launch`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/docs/launch`;
+  return {
     title: "Documentation Aevia Launch — génération de site en 2 h | Aevia",
     description:
       "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
-    url: "https://aevia.services/docs/launch",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/docs/launch`])),
+    },
+    openGraph: {
+      title: "Documentation Aevia Launch — génération de site en 2 h | Aevia",
+      description:
+        "Comment Aevia Launch construit un site professionnel à partir d'un formulaire : thèmes, contenu généré, domaine, Search Console et Analytics branchés.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 export default function DocsLaunchPage() {
   return (

@@ -3,19 +3,41 @@ import type { Metadata } from "next";
 // Titre et description propres à cette page : sans ce bloc elle héritait
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
-export const metadata: Metadata = {
-  title: "Mentions légales | Aevia",
-  description:
-    "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
-  alternates: { canonical: "https://aevia.services/legal/mentions" },
-  openGraph: {
+const BASE = "https://aevia.services";
+const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    La canonique doit porter la langue.
+
+    Écrite sans elle, elle désignait `/legal/mentions` — une URL qui répond 307 vers
+    `/fr/legal/mentions`. Une canonique qui pointe vers une redirection n'en est pas
+    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
+    page déployée.
+  */
+  const url = `${BASE}/${locale}/legal/mentions`;
+  return {
     title: "Mentions légales | Aevia",
     description:
       "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
-    url: "https://aevia.services/legal/mentions",
-    images: ["/og.png"],
-  },
-};
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/mentions`])),
+    },
+    openGraph: {
+      title: "Mentions légales | Aevia",
+      description:
+        "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+      url,
+      images: ["/og.png"],
+    },
+  };
+}
 
 import { useTranslations } from "next-intl";
 
