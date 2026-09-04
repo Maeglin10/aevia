@@ -18,10 +18,29 @@ const BASE = 'https://aevia.services'
  * content has no date of its own: publishing is what actually changes the site,
  * and it moves the date exactly when something real happened.
  */
+/*
+  Les changements de structure comptent aussi.
+
+  La règle ci-dessus fait dériver `lastmod` de la date du dernier article, ce
+  qui est juste pour un site de contenu — et volontairement immunisé contre le
+  « tout a changé aujourd'hui » que produit `new Date()`.
+
+  Il lui manquait une entrée : une page peut changer pour de bon sans qu'aucun
+  article ne paraisse. Les 1er et 3 septembre, l'accueil a reçu une section
+  d'articles en avant, le pied de page trois nouveaux liens, et sept pages ont
+  vu leur canonique corrigée — pendant que le plan de site continuait
+  d'annoncer à Google que rien n'avait bougé depuis le 4 août.
+
+  Cette date se met à jour **à la main**, et c'est le but : elle ne doit avancer
+  que lorsqu'un changement mérite qu'un robot revienne. La bouger à chaque
+  déploiement nous ramènerait au défaut que le commentaire ci-dessus décrit.
+*/
+const DERNIERE_REFONTE = '2026-09-03'
+
 function newestContentDate(): Date {
   const newest = BLOG_POSTS.reduce(
     (latest, post) => (post.date > latest ? post.date : latest),
-    '1970-01-01'
+    DERNIERE_REFONTE
   )
   return new Date(newest)
 }
