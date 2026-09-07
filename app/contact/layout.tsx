@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact — Aevia",
     description: "Un site web, un audit sécurité, ou une démo Inbox — discutons-en.",
-    url: "https://aevia.vercel.app/contact",
+    url: "https://aevia.services/contact",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
-  alternates: { canonical: "https://aevia.vercel.app/contact" },
+  alternates: { canonical: "https://aevia.services/contact" },
 };
 
 export default function ContactLayout({

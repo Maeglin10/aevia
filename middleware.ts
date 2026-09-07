@@ -20,5 +20,9 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|_vercel|.*\\..*).*)']
+  /* /api exclu : le matcher attrapait /api/contact et next-intl le
+     redirigeait vers /fr/api/contact — une page HTML 200. Le formulaire de
+     contact affichait « envoyé » pendant que le handler n'était jamais
+     exécuté : chaque lead du site partait au néant. */
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

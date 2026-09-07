@@ -96,14 +96,12 @@ export async function POST(req: NextRequest) {
         `,
       });
     } else {
-      // Fallback: log to console (never log raw user input to avoid log injection)
-      console.log("[Contact Form]", {
-        nameLength: String(name).length,
-        email: String(email).substring(0, 80),
-        hasSubject: !!subject,
-        messageLength: String(message).length,
-        timestamp: new Date().toISOString(),
-      });
+      /* Pas de clé d'envoi : dire « envoyé » serait un mensonge — le
+         visiteur croirait son message parti alors qu'il n'existe plus
+         nulle part. On échoue franchement, le formulaire affiche l'erreur
+         et propose l'email direct. */
+      console.error("[Contact Form] RESEND_API_KEY absente — lead NON transmis");
+      return NextResponse.json({ error: "Envoi indisponible" }, { status: 503 });
     }
 
     return NextResponse.json({ success: true });
