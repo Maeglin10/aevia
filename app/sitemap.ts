@@ -35,7 +35,7 @@ const BASE = 'https://aevia.services'
   que lorsqu'un changement mérite qu'un robot revienne. La bouger à chaque
   déploiement nous ramènerait au défaut que le commentaire ci-dessus décrit.
 */
-const DERNIERE_REFONTE = '2026-09-03'
+const DERNIERE_REFONTE = '2026-09-07'
 
 function newestContentDate(): Date {
   const newest = BLOG_POSTS.reduce(
@@ -102,11 +102,66 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   })
 
+  /*
+    Documentation et pages juridiques — absentes du plan de site jusqu'au 07/09.
+
+    Elles répondaient 200, elles étaient liées depuis le pied de page, et
+    pourtant Search Console répondait « Google ne reconnaît pas cette URL » pour
+    `/fr/docs/security` : `sitemaps: 0`. Un lien en pied de page ne suffit pas à
+    faire explorer une page, et rien ici ne signalait leur absence — le plan de
+    site était valide, simplement incomplet.
+
+    En français uniquement : le contenu de ces pages est écrit en dur en
+    français, les autres langues servent le même texte et sont désormais
+    `noindex` avec la version française pour canonique.
+  */
+  const docsPages: MetadataRoute.Sitemap = ['', '/inbox', '/launch', '/security'].map(
+    (suffixe) => ({
+      url: `${BASE}/fr/docs${suffixe}`,
+      lastModified: contentDate,
+      changeFrequency: 'monthly' as const,
+      priority: suffixe === '' ? 0.8 : 0.75,
+    })
+  )
+
+  /*
+    Les mentions légales portent le SIREN, la raison sociale et l'adresse de
+    l'éditeur. C'est la page qui corrobore, pour Google, qu'Aevia est une
+    entreprise réellement immatriculée — ce qui compte directement pour la
+    requête « Aevia », où une homonymie nous relègue derrière un grand groupe.
+    Priorité plus haute que les trois autres pages juridiques pour cette raison.
+
+    `mentions` est traduite (elle passe par next-intl) : ses cinq langues restent
+    indexables et gardent leurs alternates. Les trois autres sont en français en
+    dur, donc française uniquement.
+  */
+  const legalPages: MetadataRoute.Sitemap = [
+    ...routing.locales.map((locale) => ({
+      url: `${BASE}/${locale}/legal/mentions`,
+      lastModified: contentDate,
+      changeFrequency: 'yearly' as const,
+      priority: 0.6,
+      alternates: {
+        languages: Object.fromEntries(
+          routing.locales.map((l) => [l, `${BASE}/${l}/legal/mentions`])
+        ),
+      },
+    })),
+    ...['privacy', 'terms', 'cookies'].map((page) => ({
+      url: `${BASE}/fr/legal/${page}`,
+      lastModified: contentDate,
+      changeFrequency: 'yearly' as const,
+      priority: 0.4,
+    })),
+  ]
+
   return [
     ...localeHomes,
     ...blogIndex,
     ...blogPosts,
     ...vsPages,
+    ...docsPages,
+    ...legalPages,
     {
       url: `${BASE}/contact`,
       lastModified: contentDate,

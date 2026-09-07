@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 // du titre du layout racine, et sept pages du Hub partageaient le même
 // <title> — un doublon que Google traite comme une seule page.
 const BASE = "https://aevia.services";
-const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
 
 export async function generateMetadata({
   params,
@@ -13,27 +12,33 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   /*
-    La canonique doit porter la langue.
+    Contenu en français en dur, servi dans les cinq langues.
 
-    Écrite sans elle, elle désignait `/legal/terms` — une URL qui répond 307 vers
-    `/fr/legal/terms`. Une canonique qui pointe vers une redirection n'en est pas
-    une : Lighthouse la refuse (SEO 92) et Google doit deviner. Mesuré sur la
-    page déployée.
+    Première correction : la canonique ne portait pas la langue et désignait
+    `/legal/terms`, une URL qui répond 307 — Lighthouse la refusait (SEO 92).
+    On lui a donc ajouté la langue.
+
+    Ça réglait la redirection mais créait pire : cinq canoniques distinctes et
+    des alternates hreflang annonçant cinq traductions qui n'existent pas. Les
+    cinq URL renvoient le même texte français, et Google se retrouvait à
+    arbitrer lui-même entre cinq quasi-doublons.
+
+    La version française est donc la canonique unique, et les autres langues
+    sortent de l'index — même choix que sur les pages /solutions de l'Inbox.
+    `follow: true` : les liens de la page restent suivis.
   */
-  const url = `${BASE}/${locale}/legal/terms`;
+  const canonique = `${BASE}/fr/legal/terms`;
   return {
     title: "Conditions générales | Aevia",
     description:
       "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
-    alternates: {
-      canonical: url,
-      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/terms`])),
-    },
+    alternates: { canonical: canonique },
+    ...(locale === "fr" ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
       title: "Conditions générales | Aevia",
       description:
         "Conditions générales d'utilisation et de vente des produits Aevia : abonnements, livraison, résiliation, responsabilité.",
-      url,
+      url: canonique,
       images: ["/og.png"],
     },
   };

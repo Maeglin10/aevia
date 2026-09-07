@@ -1,15 +1,55 @@
-"use client";
-
+import type { Metadata } from "next";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { MessageSquare, Sparkles, Shield, ArrowRight } from "lucide-react";
 
-const LOCALES = ["fr", "en", "es", "de", "pt"];
+const BASE = "https://aevia.services";
 
-export default function DocsOverviewPage() {
-  const pathname = usePathname();
-  const segments = pathname.split("/");
-  const locale = LOCALES.includes(segments[1]) ? segments[1] : "fr";
+/*
+  Cette page était marquée `"use client"` pour une seule raison : lire la langue
+  dans `usePathname()`. Or la langue est déjà dans les paramètres de route, et
+  un composant client ne peut pas exporter `generateMetadata` — l'index de la
+  documentation partait donc en ligne SANS titre ni description propres,
+  héritant de ceux du layout. C'est le doublon de <title> corrigé ailleurs sur
+  le Hub, resté ici parce que la directive client masquait le problème.
+*/
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  /*
+    Contenu en français en dur, dans les cinq langues servies.
+
+    Déclarer des alternates hreflang vers cinq langues ferait promettre à Google
+    cinq traductions qui n'existent pas : les cinq URL renvoient le même texte
+    français. On désigne donc la version française comme canonique unique, et on
+    retire les autres de l'index — le même choix que sur les pages /solutions de
+    l'Inbox. `follow: true` : les liens sortants restent suivis.
+  */
+  const canonique = `${BASE}/fr/docs`;
+  return {
+    title: "Documentation Aevia — les trois produits de la suite | Aevia",
+    description:
+      "Ce qu'est Aevia : AeviaInbox pour les messages et les appels, AeviaLaunch pour le site web, AeviaSecurity pour l'audit. Trois produits indépendants pour TPE et PME.",
+    alternates: { canonical: canonique },
+    ...(locale === "fr" ? {} : { robots: { index: false, follow: true } }),
+    openGraph: {
+      title: "Documentation Aevia — les trois produits de la suite | Aevia",
+      description:
+        "Ce qu'est Aevia : AeviaInbox pour les messages et les appels, AeviaLaunch pour le site web, AeviaSecurity pour l'audit.",
+      url: canonique,
+      images: ["/og.png"],
+    },
+  };
+}
+
+export default async function DocsOverviewPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   const base = `/${locale}/docs`;
 
   return (
