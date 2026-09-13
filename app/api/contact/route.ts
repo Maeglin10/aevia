@@ -33,8 +33,8 @@ export async function POST(req: NextRequest) {
   try {
     // Rate limiting — prevent contact form spam and email flooding
     const ip =
-      req.headers.get("x-forwarded-for")?.split(",")[0].trim() ??
       req.headers.get("x-real-ip") ??
+      req.headers.get("x-forwarded-for")?.split(",").pop()?.trim() ??
       "unknown";
     if (isRateLimited(ip)) {
       return NextResponse.json(
