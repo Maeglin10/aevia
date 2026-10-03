@@ -3,14 +3,84 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowRight, Clock, Tag, BookOpen } from "lucide-react";
-import { BLOG_POSTS, formatDate, localizePost } from "@/lib/blog-posts";
+import { BLOG_POSTS, formatDate, localizePost, localesForPost } from "@/lib/blog-posts";
 
-const UI: Record<string, { reading: string; featured: string; read: string }> = {
-  fr: { reading: "de lecture", featured: "Article à la une", read: "Lire l'article" },
-  en: { reading: "read", featured: "Featured", read: "Read article" },
-  es: { reading: "de lectura", featured: "Destacado", read: "Leer artículo" },
-  de: { reading: "Lesezeit", featured: "Empfohlen", read: "Artikel lesen" },
-  pt: { reading: "de leitura", featured: "Em destaque", read: "Ler artigo" },
+/*
+  Le titre et le chapeau de cette page étaient en français EN DUR.
+
+  Les articles, eux, étaient bien traduits — d'où un /es/blog qui affichait des
+  titres espagnols sous un « Conseils & ressources » français. Un prospect
+  hispanophone lit d'abord le haut de la page, et conclut que rien n'est
+  traduit. Signalé depuis la Colombie le 02/10.
+
+  `avertissementNonTraduit` sert pour l'allemand et le portugais, où AUCUN
+  article n'existe : filtrer donnerait un blog vide, ce qui est pire qu'un blog
+  français annoncé comme tel.
+*/
+const UI: Record<
+  string,
+  {
+    reading: string;
+    featured: string;
+    read: string;
+    titreA: string;
+    titreB: string;
+    chapeau: string;
+    avertissementNonTraduit: string;
+  }
+> = {
+  fr: {
+    reading: "de lecture",
+    featured: "Article à la une",
+    read: "Lire l'article",
+    titreA: "Conseils &",
+    titreB: "ressources",
+    chapeau:
+      "Web, sécurité, CRM — des articles pratiques pour aider votre business à grandir sur internet.",
+    avertissementNonTraduit: "",
+  },
+  en: {
+    reading: "read",
+    featured: "Featured",
+    read: "Read article",
+    titreA: "Advice &",
+    titreB: "resources",
+    chapeau:
+      "Web, security, CRM — practical articles to help your business grow online.",
+    avertissementNonTraduit: "",
+  },
+  es: {
+    reading: "de lectura",
+    featured: "Destacado",
+    read: "Leer artículo",
+    titreA: "Consejos y",
+    titreB: "recursos",
+    chapeau:
+      "Web, seguridad, CRM — artículos prácticos para hacer crecer tu negocio en internet.",
+    avertissementNonTraduit: "",
+  },
+  de: {
+    reading: "Lesezeit",
+    featured: "Empfohlen",
+    read: "Artikel lesen",
+    titreA: "Tipps &",
+    titreB: "Ressourcen",
+    chapeau:
+      "Web, Sicherheit, CRM — praktische Artikel, damit Ihr Geschäft online wächst.",
+    avertissementNonTraduit:
+      "Unser Blog ist noch nicht auf Deutsch verfügbar. Die Artikel erscheinen hier auf Französisch.",
+  },
+  pt: {
+    reading: "de leitura",
+    featured: "Em destaque",
+    read: "Ler artigo",
+    titreA: "Conselhos e",
+    titreB: "recursos",
+    chapeau:
+      "Web, segurança, CRM — artigos práticos para fazer o seu negócio crescer na internet.",
+    avertissementNonTraduit:
+      "O nosso blogue ainda não está traduzido para português. Os artigos aparecem aqui em francês.",
+  },
 };
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
@@ -32,7 +102,19 @@ function getCategoryStyle(category: string) {
 export default function BlogPage() {
   const pathname = usePathname();
   const locale = pathname.split("/")[1] ?? "fr";
-  const posts = BLOG_POSTS.map((p) => localizePost(p, locale));
+  /*
+    Trois articles sur vingt n'ont pas de version espagnole — ce sont les
+    articles de référencement local (Bourg-en-Bresse, Lyon, Marseille), et les
+    traduire n'aurait pas de sens. Mais ils apparaissaient dans la liste
+    espagnole avec un titre français, et menaient à de la prose française.
+
+    On les retire donc de la liste QUAND la langue a des traductions. Pour
+    l'allemand et le portugais, où il n'y en a aucune, on garde tout et on
+    l'annonce : un blog vide serait un pire accueil qu'un blog français assumé.
+  */
+  const traduits = BLOG_POSTS.filter((p) => localesForPost(p).includes(locale));
+  const base = traduits.length > 0 ? traduits : BLOG_POSTS;
+  const posts = base.map((p) => localizePost(p, locale));
   const ui = UI[locale] ?? UI.fr;
 
   return (
@@ -51,14 +133,17 @@ export default function BlogPage() {
             </div>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-4">
-            Conseils &{" "}
+            {ui.titreA}{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">
-              ressources
+              {ui.titreB}
             </span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-xl leading-relaxed">
-            Web, sécurité, CRM — des articles pratiques pour aider votre business à grandir sur internet.
-          </p>
+          <p className="text-zinc-400 text-lg max-w-xl leading-relaxed">{ui.chapeau}</p>
+          {ui.avertissementNonTraduit && (
+            <p className="mt-5 inline-block rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-2.5 text-sm text-amber-200">
+              {ui.avertissementNonTraduit}
+            </p>
+          )}
         </div>
       </section>
 

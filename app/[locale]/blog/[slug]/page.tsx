@@ -4,7 +4,13 @@ import { use } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowLeft, Clock, Tag, Calendar, ArrowRight } from "lucide-react";
-import { BLOG_POSTS, getBlogPost, formatDate, localizePost } from "@/lib/blog-posts";
+import {
+  BLOG_POSTS,
+  getBlogPost,
+  formatDate,
+  localizePost,
+  localesForPost,
+} from "@/lib/blog-posts";
 import { notFound } from "next/navigation";
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
@@ -106,12 +112,35 @@ function renderContent(content: string) {
 
   Mêmes libellés que la table `UI` de la page d'index du blog.
 */
-const HABILLAGE: Record<string, { retour: string; lecture: string }> = {
-  fr: { retour: "Retour au blog", lecture: "de lecture" },
-  en: { retour: "Back to the blog", lecture: "read" },
-  es: { retour: "Volver al blog", lecture: "de lectura" },
-  de: { retour: "Zurück zum Blog", lecture: "Lesezeit" },
-  pt: { retour: "Voltar ao blog", lecture: "de leitura" },
+const HABILLAGE: Record<
+  string,
+  { retour: string; lecture: string; pasTraduit: string; versionFr: string }
+> = {
+  fr: { retour: "Retour au blog", lecture: "de lecture", pasTraduit: "", versionFr: "" },
+  en: {
+    retour: "Back to the blog",
+    lecture: "read",
+    pasTraduit: "This article is not translated yet — it is shown here in French.",
+    versionFr: "Read the French original",
+  },
+  es: {
+    retour: "Volver al blog",
+    lecture: "de lectura",
+    pasTraduit: "Este artículo aún no está traducido — aquí se muestra en francés.",
+    versionFr: "Leer el original en francés",
+  },
+  de: {
+    retour: "Zurück zum Blog",
+    lecture: "Lesezeit",
+    pasTraduit: "Dieser Artikel ist noch nicht übersetzt — er erscheint hier auf Französisch.",
+    versionFr: "Das französische Original lesen",
+  },
+  pt: {
+    retour: "Voltar ao blog",
+    lecture: "de leitura",
+    pasTraduit: "Este artigo ainda não está traduzido — aparece aqui em francês.",
+    versionFr: "Ler o original em francês",
+  },
 };
 
 export default function ArticlePage({
@@ -127,6 +156,17 @@ export default function ArticlePage({
   if (!rawPost) notFound();
 
   const post = localizePost(rawPost, locale);
+  /*
+    `localizePost` retombe en SILENCE sur le français quand la traduction
+    manque. Côté référencement c'est déjà traité — le layout met `noindex` et
+    une canonique vers l'original. Côté lecteur, non : un visiteur
+    hispanophone arrivait sur de la prose française sans un mot d'explication.
+    Signalé depuis la Colombie le 02/10.
+
+    On le dit, et on offre le lien vers l'original. Dès qu'une traduction
+    existe, l'avertissement disparaît tout seul.
+  */
+  const estTraduit = localesForPost(rawPost).includes(locale);
   const style = getCategoryStyle(post.category);
   const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug)
     .slice(0, 2)
@@ -147,6 +187,15 @@ export default function ArticlePage({
             <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
             {(HABILLAGE[locale] ?? HABILLAGE.fr).retour}
           </Link>
+
+          {!estTraduit && (HABILLAGE[locale] ?? HABILLAGE.fr).pasTraduit && (
+            <div className="mb-8 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-200">
+              {(HABILLAGE[locale] ?? HABILLAGE.fr).pasTraduit}{" "}
+              <Link href={`/fr/blog/${post.slug}`} className="underline hover:text-amber-100">
+                {(HABILLAGE[locale] ?? HABILLAGE.fr).versionFr}
+              </Link>
+            </div>
+          )}
 
           {/* Meta */}
           <div className="flex flex-wrap items-center gap-3 mb-6">

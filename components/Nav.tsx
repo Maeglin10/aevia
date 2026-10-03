@@ -166,8 +166,26 @@ export function Nav() {
     return `/${locale}${path}`;
   }
 
+  /*
+    `transform-gpu will-change-transform` sur la barre : une barre FIXE avec un
+    `backdrop-blur` et sans couche propre se repose au mauvais endroit sur
+    Safari iOS. Le compositeur repeint le flou en retard pendant l'inertie du
+    défilement, et la barre apparaît un instant au milieu de la page avant de se
+    recaler — signalé le 02/10 sur un retour brusque en haut, et intermittent
+    par nature puisque ça dépend du geste.
+
+    La promouvoir lui donne sa propre couche GPU, que le compositeur suit au lieu
+    de la recalculer. Une transformation SUR l'élément ne change pas son propre
+    positionnement fixe : seuls les ANCÊTRES créent un bloc de référence, et j'ai
+    vérifié qu'il n'y en a aucun ici.
+
+    ⚠️ Atténuation, pas certitude : non reproduit sous Chromium, qui n'a pas de
+    barre d'adresse rétractable — `100vh` y vaut exactement la hauteur visible,
+    mesuré. Si le symptôme persiste, le pas suivant est de retirer le
+    `backdrop-blur` sur mobile.
+  */
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-zinc-800/60 bg-[#09090b]/80 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 transform-gpu will-change-transform border-b border-zinc-800/60 bg-[#09090b]/80 backdrop-blur-md">
       <div className="mx-auto max-w-5xl px-6 h-14 flex items-center justify-between">
 
         <Link href={`/${locale}`} className="hover:opacity-80 transition-opacity">
