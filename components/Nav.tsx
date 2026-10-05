@@ -167,25 +167,34 @@ export function Nav() {
   }
 
   /*
-    `transform-gpu will-change-transform` sur la barre : une barre FIXE avec un
-    `backdrop-blur` et sans couche propre se repose au mauvais endroit sur
-    Safari iOS. Le compositeur repeint le flou en retard pendant l'inertie du
-    défilement, et la barre apparaît un instant au milieu de la page avant de se
-    recaler — signalé le 02/10 sur un retour brusque en haut, et intermittent
-    par nature puisque ça dépend du geste.
+    Pas de `backdrop-blur` sur téléphone. C'est lui qui déplaçait la barre.
 
-    La promouvoir lui donne sa propre couche GPU, que le compositeur suit au lieu
-    de la recalculer. Une transformation SUR l'élément ne change pas son propre
-    positionnement fixe : seuls les ANCÊTRES créent un bloc de référence, et j'ai
-    vérifié qu'il n'y en a aucun ici.
+    Historique, parce qu'il compte : le 02/10 j'avais ajouté
+    `transform-gpu will-change-transform` pour donner à la barre sa propre couche
+    GPU, en notant que c'était une atténuation et que le pas suivant serait de
+    retirer le flou sur mobile. Le symptôme a été signalé une seconde fois le
+    05/10 — « elle se met un petit peu au milieu quand je remonte d'un coup » —
+    donc l'atténuation n'a pas suffi, et on passe à la cause.
 
-    ⚠️ Atténuation, pas certitude : non reproduit sous Chromium, qui n'a pas de
-    barre d'adresse rétractable — `100vh` y vaut exactement la hauteur visible,
-    mesuré. Si le symptôme persiste, le pas suivant est de retirer le
-    `backdrop-blur` sur mobile.
+    Le mécanisme : une barre FIXE translucide avec un flou doit être recomposée à
+    chaque image pendant l'inertie du défilement, puisque ce qu'elle floute change
+    en permanence. Safari iOS repeint cette couche en retard et la barre
+    s'affiche un instant là où elle était, c'est-à-dire au milieu de la page. Le
+    même retard de composition fait mal mesurer la zone défilable, d'où le rebond
+    dans le vide sous le pied de page — un seul défaut, deux symptômes.
+
+    Sur mobile la barre devient donc OPAQUE : plus rien à flouter, donc plus rien
+    à recomposer. Rien n'est perdu visuellement, un bandeau opaque étant déjà
+    lisible. Le flou revient à partir de `sm`, là où le défilement n'a pas
+    d'inertie à rattraper.
+
+    ⚠️ Non reproductible sous Chromium, qui n'a ni barre d'adresse rétractable ni
+    le même compositeur — mesuré le 05/10, hauteur du document identique au pixel
+    avant, pendant et après le défilement, et aucun élément dépassant le pied de
+    page. Ce correctif se juge sur un vrai iPhone, pas ici.
   */
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 transform-gpu will-change-transform border-b border-zinc-800/60 bg-[#09090b]/80 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 transform-gpu will-change-transform border-b border-zinc-800/60 bg-[#09090b] sm:bg-[#09090b]/80 sm:backdrop-blur-md">
       <div className="mx-auto max-w-5xl px-6 h-14 flex items-center justify-between">
 
         <Link href={`/${locale}`} className="hover:opacity-80 transition-opacity">

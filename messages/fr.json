@@ -92,11 +92,11 @@
     "cookies": "Cookies",
     "mentions": "Mentions légales",
     "manageCookies": "Gérer les cookies",
-    "resourcesLabel": "Ressources",
-    "resourcesTemplates": "Modèles de sites par métier",
-    "resourcesGuides": "Guides sécurité e-mail et DNS",
-    "resourcesSolutions": "Solutions par canal",
-    "blog": "Blog"
+    "blog": "Blog",
+    "templateShort": "Template",
+    "securityDns": "Sécurité et DNS",
+    "inboxSupport": "Support client IA",
+    "cookiesPolicy": "Politique de cookies"
   },
   "skills": {
     "title": "Stack technique"

@@ -92,11 +92,11 @@
     "cookies": "Cookies",
     "mentions": "Legal Notice",
     "manageCookies": "Manage cookies",
-    "resourcesLabel": "Resources",
-    "resourcesTemplates": "Website templates by trade",
-    "resourcesGuides": "Email and DNS security guides",
-    "resourcesSolutions": "Solutions by channel",
-    "blog": "Blog"
+    "blog": "Blog",
+    "templateShort": "Templates",
+    "securityDns": "Security and DNS",
+    "inboxSupport": "AI customer support",
+    "cookiesPolicy": "Cookie policy"
   },
   "skills": {
     "title": "Tech stack"

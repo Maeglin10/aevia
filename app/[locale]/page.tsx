@@ -265,11 +265,28 @@ export default function Home() {
                     ${isLive ? `hover:border-zinc-600 hover:-translate-y-1.5 hover:shadow-2xl ${product.glow}` : "opacity-80"}`}
                 >
                   <div className={`absolute inset-0 opacity-0 ${isLive ? "group-hover:opacity-100" : ""} transition-opacity duration-300 bg-gradient-to-br ${product.accentFrom}/5 ${product.accentTo}/5 pointer-events-none`} />
+                  {/*
+                    Le PROBLÈME en titre, le nom du produit en étiquette.
+
+                    C'était l'inverse : « AeviaLaunch » en gras taille XL, et la
+                    phrase qui dit ce que ça règle en petit en dessous. Retour
+                    d'un visiteur le 05/10 — « dans les trois cases tu devrais
+                    mettre le problème réglé plutôt que Aevia Launch, le client
+                    comprend pas ». Il a raison : la section s'intitule « Trois
+                    problèmes réglés » et les trois cases annonçaient trois noms
+                    de marque que personne ne connaît encore.
+
+                    Le nom reste, au-dessus et en petit : il sert à rattacher la
+                    case à un produit quand on revient, pas à convaincre la
+                    première fois.
+                  */}
                   <div className="mb-4 relative z-10">
-                    <h3 className="text-white font-bold text-xl mb-1">{product.name}</h3>
-                    <p className={`text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r ${product.accentFrom} ${product.accentTo}`}>
-                      {product.tagline}
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">
+                      {product.name}
                     </p>
+                    <h3 className="text-white font-bold text-xl leading-snug text-balance">
+                      {product.tagline}
+                    </h3>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-1 relative z-10">
                     {product.description}
