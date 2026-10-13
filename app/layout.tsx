@@ -152,7 +152,7 @@ const organizationSchema = {
   isicV4: '6201',
   knowsLanguage: ['fr', 'en', 'es', 'de', 'pt'],
   identifier: { '@type': 'PropertyValue', propertyID: 'SIREN', value: '852546225' },
-  slogan: 'Une seule plateforme, trois problèmes réglés.',
+  slogan: 'Trouvez des clients en ligne, et ne les ratez plus.',
   knowsAbout: [
     'Standard téléphonique IA',
     'Agent vocal IA',

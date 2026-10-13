@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/blog-posts";
-import { ArrowRight, ExternalLink, Layout } from "lucide-react";
+import { ArrowRight, ExternalLink } from "lucide-react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
@@ -93,17 +93,16 @@ const ARTICLES_EN_AVANT = SLUGS_EN_AVANT
 
 export default function Home() {
   const h = useTranslations("hero");
-  const st = useTranslations("stats");
   const p = useTranslations("products");
-  const ts = useTranslations("templates_section");
-  const w = useTranslations("why");
+  const hw = useTranslations("how");
   const c = useTranslations("cta");
   const b = useTranslations("blog_section");
   const langue = useLocale();
 
   const products = [
     {
-      name: "AeviaLaunch",
+      name: p("launch_name"),
+      brand: "AeviaLaunch",
       tagline: p("launch_tagline"),
       description: p("launch_desc"),
       href: "https://launch.aevia.services",
@@ -117,21 +116,8 @@ export default function Home() {
       ctaSecondaryHref: null,
     },
     {
-      name: "AeviaSecurity",
-      tagline: p("security_tagline"),
-      description: p("security_desc"),
-      href: "https://security.aevia.services",
-      status: "live" as const,
-      accentFrom: "from-emerald-500",
-      accentTo: "to-teal-500",
-      glow: "group-hover:shadow-emerald-500/25",
-      features: [p("security_f1"), p("security_f2"), p("security_f3"), p("security_f4")],
-      cta: p("security_cta"),
-      ctaSecondary: null,
-      ctaSecondaryHref: null,
-    },
-    {
-      name: "AeviaInbox",
+      name: p("inbox_name"),
+      brand: "AeviaInbox",
       tagline: p("inbox_tagline"),
       description: p("inbox_desc"),
       href: "https://inbox.aevia.services",
@@ -144,18 +130,27 @@ export default function Home() {
       ctaSecondary: null,
       ctaSecondaryHref: null,
     },
+    {
+      name: p("security_name"),
+      brand: "AeviaSecurity",
+      tagline: p("security_tagline"),
+      description: p("security_desc"),
+      href: "https://security.aevia.services",
+      status: "live" as const,
+      accentFrom: "from-emerald-500",
+      accentTo: "to-teal-500",
+      glow: "group-hover:shadow-emerald-500/25",
+      features: [p("security_f1"), p("security_f2"), p("security_f3"), p("security_f4")],
+      cta: p("security_cta"),
+      ctaSecondary: null,
+      ctaSecondaryHref: null,
+    },
   ];
 
-  const templates = [
-    { label: "Landing Page", href: "https://launch.aevia.services/templates/impact-05", color: "from-red-500/20 to-red-700/10", dot: "bg-red-400", desc: ts("landing_desc") },
-    { label: "E-Commerce", href: "https://launch.aevia.services/templates/impact-47", color: "from-amber-500/20 to-orange-500/10", dot: "bg-amber-400", desc: ts("ecom_desc") },
-    { label: "Site Vitrine", href: "https://launch.aevia.services/templates/impact-33", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
-  ];
-
-  const whyItems = [
-    { title: w("fast_title"), desc: w("fast_desc"), color: "from-amber-500/20 to-orange-500/10" },
-    { title: w("reliable_title"), desc: w("reliable_desc"), color: "from-red-500/20 to-red-700/10" },
-    { title: w("simple_title"), desc: w("simple_desc"), color: "from-emerald-500/20 to-teal-500/10" },
+  const steps = [
+    { n: "1", title: hw("step1_title"), desc: hw("step1_desc") },
+    { n: "2", title: hw("step2_title"), desc: hw("step2_desc") },
+    { n: "3", title: hw("step3_title"), desc: hw("step3_desc") },
   ];
 
   return (
@@ -186,44 +181,23 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="/contact"
+              {/* Un premier pas évident : voir les trois services. Le contact
+                  reste là, mais en second — on ne demande pas à quelqu'un de
+                  « démarrer un projet » avant qu'il sache ce qu'on fait. */}
+              <a
+                href="#produits"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
               >
                 {h("cta_primary")}
                 <ArrowRight className="w-4 h-4" />
-              </Link>
-              <a
-                href="#produits"
+              </a>
+              <Link
+                href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors"
               >
                 {h("cta_secondary")}
-              </a>
+              </Link>
             </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="px-6 py-16">
-        <div className="mx-auto max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
-          >
-            {[
-              { value: st("delivery_value"), label: st("delivery_label") },
-              { value: st("audit_value"), label: st("audit_label") },
-              { value: st("channels_value"), label: st("channels_label") },
-              { value: st("ai_value"), label: st("ai_label") },
-            ].map(({ value, label }) => (
-              <div key={label} className="text-center p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/30">
-                <div className="text-2xl font-bold text-white mb-1">{value}</div>
-                <div className="text-xs text-zinc-400 font-medium">{label}</div>
-              </div>
-            ))}
           </motion.div>
         </div>
       </section>
@@ -256,7 +230,7 @@ export default function Home() {
               const isLive = product.status === "live";
               return (
                 <motion.div
-                  key={product.name}
+                  key={product.brand}
                   initial={{ opacity: 0, y: 32 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-60px" }}
@@ -266,27 +240,27 @@ export default function Home() {
                 >
                   <div className={`absolute inset-0 opacity-0 ${isLive ? "group-hover:opacity-100" : ""} transition-opacity duration-300 bg-gradient-to-br ${product.accentFrom}/5 ${product.accentTo}/5 pointer-events-none`} />
                   {/*
-                    Le PROBLÈME en titre, le nom du produit en étiquette.
+                    Ce que c'est, en gros ; la marque, en petit ; le problème
+                    réglé, juste dessous.
 
-                    C'était l'inverse : « AeviaLaunch » en gras taille XL, et la
-                    phrase qui dit ce que ça règle en petit en dessous. Retour
-                    d'un visiteur le 05/10 — « dans les trois cases tu devrais
-                    mettre le problème réglé plutôt que Aevia Launch, le client
-                    comprend pas ». Il a raison : la section s'intitule « Trois
-                    problèmes réglés » et les trois cases annonçaient trois noms
-                    de marque que personne ne connaît encore.
-
-                    Le nom reste, au-dessus et en petit : il sert à rattacher la
-                    case à un produit quand on revient, pas à convaincre la
-                    première fois.
+                    Le 05/10 un visiteur demandait le problème en titre plutôt
+                    que « AeviaLaunch ». Le 13/10 le retour s'est généralisé —
+                    « beaucoup ne comprennent pas » — et la décision a été prise
+                    avec Valentin : un nom qui DIT ce que c'est (« Site web »,
+                    « Accueil client IA », « Audit sécurité »), la marque en
+                    étiquette pour qui revient, et la situation du visiteur
+                    comme première phrase lue.
                   */}
                   <div className="mb-4 relative z-10">
-                    <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-500 mb-1.5">
+                    <h3 className="text-white font-bold text-2xl leading-tight">
                       {product.name}
-                    </p>
-                    <h3 className="text-white font-bold text-xl leading-snug text-balance">
-                      {product.tagline}
                     </h3>
+                    <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400 mt-1 mb-3">
+                      {product.brand}
+                    </p>
+                    <p className="text-zinc-100 font-semibold text-base leading-snug text-balance">
+                      {product.tagline}
+                    </p>
                   </div>
                   <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-1 relative z-10">
                     {product.description}
@@ -323,62 +297,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Templates aperçu ─────────────────────────────────────────────── */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-5xl">
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              <div className="p-8 sm:p-10 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 ring-1 ring-red-500/20 text-red-300 text-xs font-medium mb-5 w-fit">
-                  <Layout className="w-3 h-3" />
-                  {ts("badge")}
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-3">
-                  {ts("title")}
-                </h2>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-                  {ts("desc")}
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-red-600 to-red-800 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
-                    {ts("cta1")} <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
-                    {ts("cta2")}
-                  </Link>
-                </div>
-              </div>
-              <div className="p-6 flex flex-col gap-3 bg-zinc-950/40 border-l border-zinc-800">
-                {templates.map((t) => (
-                  <a key={t.label} href={t.href} target="_blank" rel="noopener noreferrer"
-                    className={`group flex items-center justify-between p-4 rounded-xl border border-zinc-800 bg-gradient-to-r ${t.color} hover:border-zinc-600 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <span className={`w-2 h-2 rounded-full ${t.dot} shrink-0`} />
-                      <div>
-                        <p className="text-white text-sm font-semibold">{t.label}</p>
-                        <p className="text-zinc-500 text-xs">{t.desc}</p>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1 text-zinc-500 group-hover:text-zinc-300 transition-colors text-xs">
-                      {ts("demo")} <ExternalLink className="w-3 h-3" />
-                    </div>
-                  </a>
-                ))}
-                <div className="mt-1 p-4 rounded-xl border border-dashed border-zinc-700 text-center">
-                  <p className="text-zinc-500 text-xs mb-1.5">{ts("custom_q")}</p>
-                  <a href="https://launch.aevia.services/themes" target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-red-400 hover:text-red-300 transition-colors">
-                    {ts("custom_link")} <ArrowRight className="w-3 h-3" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Pourquoi Aevia ────────────────────────────────────────────────── */}
+      {/* ── Comment ça se passe ─────────────────────────────────────────── */}
+      {/* Remplace trois blocs retirés le 13/10 : le bandeau de chiffres sans
+          contexte (« 3 », « 60s »), le second bloc sur les sites, et « Pourquoi
+          Aevia », qui défendait la pile technique (Next.js, PostgreSQL) devant
+          des patrons de PME. Après « qu'est-ce que vous faites », la question
+          suivante d'un visiteur est « et concrètement, ça se passe comment ». */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <motion.div
@@ -389,24 +313,28 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">
-              {w("title")}
+              {hw("title")}
             </h2>
+            <p className="text-zinc-400 max-w-xl mx-auto">{hw("sub")}</p>
           </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {whyItems.map((item, i) => (
-              <motion.div
-                key={item.title}
+          <ol className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {steps.map((step, i) => (
+              <motion.li
+                key={step.n}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
-                className={`p-6 rounded-2xl border border-zinc-800 bg-gradient-to-br ${item.color}`}
+                className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40"
               >
-                <h3 className="text-white font-bold text-lg mb-2">{item.title}</h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">{item.desc}</p>
-              </motion.div>
+                <span aria-hidden className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-600/15 text-red-300 text-sm font-bold mb-4">
+                  {step.n}
+                </span>
+                <h3 className="text-white font-bold text-lg mb-2">{step.title}</h3>
+                <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
+              </motion.li>
             ))}
-          </div>
+          </ol>
         </div>
       </section>
 
