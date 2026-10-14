@@ -39,7 +39,7 @@ Site principal : https://aevia.services — Interface en français, anglais, esp
 
 URL : https://launch.aevia.services
 
-Service de création de sites web livrés en 2h à 7 jours selon le plan, sans compétences techniques. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
+Service de création de sites web livrés sous 48 heures, sans compétences techniques. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
 
 Caractéristiques :
 - Hébergement inclus.
