@@ -135,8 +135,8 @@ export default async function DocsOverviewPage({
                 <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">Live</span>
               </div>
               <p className="text-sm text-zinc-500">
-                Génération de site web par IA à partir d&apos;un template sectoriel, livré de 2 heures
-                à 7 jours selon la formule choisie.
+                Génération de site web par IA à partir d&apos;un template sectoriel, livré
+                sous 48 heures.
               </p>
             </div>
             <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all shrink-0 mt-1" />

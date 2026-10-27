@@ -18,11 +18,11 @@ const HUB_TITLES: Record<string, string> = {
 };
 
 const HUB_DESCS: Record<string, string> = {
-  fr: 'Aevia conçoit des outils SaaS pour entrepreneurs : sites web en 7 jours, inbox unifiée multi-canal, audits de sécurité instantanés. Pensés pour TPE et PME.',
-  en: 'Aevia builds SaaS tools for entrepreneurs: websites in 7 days, unified multi-channel inbox, instant security audits. Built for SMBs.',
-  es: 'Aevia crea herramientas SaaS para emprendedores: sitios web en 7 días, bandeja de entrada multicanal, auditorías de seguridad instantáneas.',
-  de: 'Aevia entwickelt SaaS-Tools für Unternehmer: Websites in 7 Tagen, einheitlicher Multi-Kanal-Posteingang, sofortige Sicherheitsaudits.',
-  pt: 'Aevia cria ferramentas SaaS para empreendedores: sites em 7 dias, caixa de entrada multicanal, auditorias de segurança instantâneas.',
+  fr: 'Aevia conçoit des outils SaaS pour entrepreneurs : sites web en ligne sous 48 heures, inbox unifiée multi-canal, audits de sécurité instantanés. Pensés pour TPE et PME.',
+  en: 'Aevia builds SaaS tools for entrepreneurs: websites online within 48 hours, unified multi-channel inbox, instant security audits. Built for SMBs.',
+  es: 'Aevia crea herramientas SaaS para emprendedores: sitios web en línea en menos de 48 horas, bandeja de entrada multicanal, auditorías de seguridad instantáneas.',
+  de: 'Aevia entwickelt SaaS-Tools für Unternehmer: Websites in 48 Stunden online, einheitlicher Multi-Kanal-Posteingang, sofortige Sicherheitsaudits.',
+  pt: 'Aevia cria ferramentas SaaS para empreendedores: sites no ar em até 48 horas, caixa de entrada multicanal, auditorias de segurança instantâneas.',
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     */
     title: { absolute: title },
     description,
-    keywords: ['Aevia', 'SaaS France', 'outils entrepreneur', 'site web 7 jours', 'inbox unifiée', 'audit sécurité', 'AeviaLaunch', 'AeviaSecurity', 'AeviaInbox'],
+    keywords: ['Aevia', 'SaaS France', 'outils entrepreneur', 'site web 48 heures', 'inbox unifiée', 'audit sécurité', 'AeviaLaunch', 'AeviaSecurity', 'AeviaInbox'],
     authors: [{ name: 'Valentin Milliand', url: BASE }],
     creator: 'Aevia',
     openGraph: {
