@@ -168,6 +168,26 @@ export default function Home() {
         <HeroBackdrop />
         <div className="mx-auto max-w-5xl text-center w-full">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+            {/*
+              Le credo, avant tout le reste.
+
+              Ce que vend Aevia n'est pas un outil : c'est le temps que le
+              client ne passe PAS dessus. Quatre mots le disent mieux qu'un
+              paragraphe de bénéfices, et c'est la première chose qu'on lit.
+
+              Le libellé en petit, la phrase en grand — le même ordre que sur
+              Launch, pour que les deux sites disent la même chose de la même
+              façon.
+            */}
+            <div className="mb-6 sm:mb-8">
+              <span className="block text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.32em] text-zinc-500 mb-2">
+                {h("credoLabel")}
+              </span>
+              <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white/90">
+                {h("credo")}
+              </p>
+            </div>
+
             <h1 className="text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-5 sm:mb-6">
               {h("title1")}
               <br />

@@ -7,6 +7,8 @@
     "ecosystem": "Écosystème"
   },
   "hero": {
+    "credoLabel": "Notre travail",
+    "credo": "Concentrez-vous sur l'essentiel.",
     "title1": "Trouvez des clients en ligne.",
     "title2": "Et ne les ratez plus.",
     "description": "Aevia aide les PME et les indépendants, en France et en Amérique latine, avec trois services simples : un site web qui vous fait connaître, un accueil client par IA qui répond jour et nuit, et un audit de sécurité de votre site. Prenez celui dont vous avez besoin, ou les trois.",

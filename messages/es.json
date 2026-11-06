@@ -7,6 +7,8 @@
     "ecosystem": "Ecosistema"
   },
   "hero": {
+    "credoLabel": "Nuestro trabajo",
+    "credo": "Concéntrese en lo esencial.",
     "title1": "Consigue clientes en internet.",
     "title2": "Y no vuelvas a perder ninguno.",
     "description": "Aevia ayuda a pymes y profesionales independientes, en Francia y América Latina, con tres servicios sencillos: un sitio web que te da a conocer, una atención al cliente con IA que responde día y noche, y una auditoría de seguridad de tu sitio. Elige el que necesitas, o los tres.",

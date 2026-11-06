@@ -7,6 +7,8 @@
     "ecosystem": "Ecosystem"
   },
   "hero": {
+    "credoLabel": "Our work",
+    "credo": "Focus on what matters.",
     "title1": "Find customers online.",
     "title2": "And never miss one again.",
     "description": "Aevia helps small businesses and independents, in France and Latin America, with three simple services: a website that gets you found, an AI customer desk that answers day and night, and a security check of your website. Take the one you need, or all three.",
