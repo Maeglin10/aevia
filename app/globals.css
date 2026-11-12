@@ -9,14 +9,68 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  /*
+   * Typographie : la marque prescrit Helvetica Now Display (texte) et
+   * Montaser Arabic (titres), sous licence restreinte. Le hub les remplaçait
+   * par Geist sur 100 % du texte, la police par défaut de Next.js et de mille
+   * gabarits. Hanken Grotesk est le néo-grotesque le plus proche d'Helvetica
+   * Now ; Space Grotesk est la police de titres déjà adoptée par Aevia
+   * Security : le hub et le produit parlent avec la même voix.
+   */
+  --font-sans: var(--font-hanken), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-space-grotesk), var(--font-hanken), sans-serif;
   --font-mono: var(--font-geist-mono);
+
+  /*
+   * Couleur d'Aevia Inbox, reprise du produit (--primary : hsl(310 48% 42%)).
+   * `inbox` porte du texte blanc à 6,1:1 ; `inbox-dark` sert au survol ;
+   * `inbox-light` est la version texte sur fond sombre (7,4:1).
+   */
+  --color-inbox: #9e398d;
+  --color-inbox-dark: #86307a;
+  --color-inbox-light: #d77fc9;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    color-scheme: dark;
+    accent-color: #dc2626;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+  p, li, dd {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgb(220 38 38 / 0.4);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid #f87171;
+    outline-offset: 2px;
+  }
+}
+
+/* Entrée du héros : un glissement court sur un contenu DÉJÀ visible. */
+@keyframes rise-in {
+  from { transform: translateY(10px); }
+  to { transform: none; }
+}
+.rise-in {
+  animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rise-in { animation: none; }
 }
 
 /* Custom scrollbar */

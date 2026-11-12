@@ -62,7 +62,7 @@ export function HomeFaq() {
           {items.map((item) => (
             <div key={item.q} className="py-5">
               <h3 className="text-white font-semibold text-base leading-snug">{item.q}</h3>
-              <p className="mt-2 text-zinc-400 text-sm leading-relaxed">{item.a}</p>
+              <p className="mt-2 text-zinc-400 text-sm leading-relaxed max-w-[62ch]">{item.a}</p>
             </div>
           ))}
         </div>

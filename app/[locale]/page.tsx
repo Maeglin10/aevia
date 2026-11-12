@@ -2,80 +2,31 @@
 
 import Link from "next/link";
 import { BLOG_POSTS } from "@/lib/blog-posts";
-import { ArrowRight, ExternalLink } from "lucide-react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
-import { useEffect, useState } from "react";
 import { HomeFaq } from "@/components/HomeFaq";
 import { HomeProductsSchema } from "@/components/HomeProductsSchema";
 
-/* The hero backdrop: a slow rotation of photographs behind the existing
-   composition. Nothing about the headline or the CTAs moves — the imagery is
-   what changes, the way the template heroes do it: a cross-fade with a very
-   slow scale drift underneath, on a 7s beat. */
-const HERO_SHOTS = [
-  { src: "https://images.pexels.com/photos/8190827/pexels-photo-8190827.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Réunion en entreprise" },
-  { src: "https://images.pexels.com/photos/7792748/pexels-photo-7792748.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Équipe au travail" },
-  { src: "https://images.pexels.com/photos/8112160/pexels-photo-8112160.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Rendez-vous professionnel" },
-  { src: "https://images.pexels.com/photos/36713414/pexels-photo-36713414.jpeg?auto=compress&cs=tinysrgb&w=2400", alt: "Dirigeante au travail" },
-];
+/*
+  Le fond du héros : PLUS de photographie.
 
+  Il faisait défiler quatre photos de banque d'images (réunions de bureau,
+  « équipe au travail ») : pas des commerçants, pas nos clients, pas nos
+  produits — le signe le plus « gabarit » de la page, et une promesse
+  visuelle que rien ne tenait. Une fausse photo de client n'est pas une
+  option. Ce qui reste est honnête : l'encre de la page, la lumière rouge de
+  la marque dans les angles. La représentation des produits, c'est l'index
+  typographique sous les boutons.
+*/
 function HeroBackdrop() {
-  const [i, setI] = useState(0);
-  const reduce = useReducedMotion();
-
-  useEffect(() => {
-    if (reduce) return;
-    const t = setTimeout(() => setI((n) => (n + 1) % HERO_SHOTS.length), 7000);
-    return () => clearTimeout(t);
-  }, [i, reduce]);
-
-  const shot = HERO_SHOTS[i];
-
   return (
-    // The header is fixed, 57px tall and only 80% opaque, so a backdrop starting
-    // at y=0 put the top of the photograph *behind* the navigation. Start it at
-    // the header's bottom edge instead: the strip behind the header stays the
-    // page's own ink, and the photograph begins on a clean line.
     <div aria-hidden className="absolute inset-x-0 bottom-0 top-[57px] -z-10 overflow-hidden">
-      <AnimatePresence mode="sync">
-        <motion.div
-          key={shot.src}
-          // The drift used to start at 1.12 and sit at 1.08, i.e. the photo was
-          // permanently zoomed 8% past `cover` — on top of the crop `cover`
-          // already applies, that is what cut the tops of people's heads off.
-          // Settle at 1.0 so the visible frame is exactly what `cover` gives.
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: reduce ? 1 : [1.04, 1] }}
-          exit={{ opacity: 0 }}
-          transition={{
-            opacity: { duration: 1.4, ease: [0.65, 0, 0.35, 1] },
-            scale: { duration: reduce ? 0 : 15, ease: "linear" },
-          }}
-          className="absolute inset-0"
-        >
-          {/* Anchor the crop near the top. These are photographs of people, and
-              `cover` on a container wider than the source (16:9-ish vs 3:2)
-              trims top and bottom equally when centred — which lands squarely
-              on faces. Biasing to 25% spends the whole trim on the floor. */}
-          <img src={shot.src} alt="" className="w-full h-full object-cover object-[50%_25%]" />
-        </motion.div>
-      </AnimatePresence>
-
-      {/* Neutral scrims only, so the headline stays readable without repainting
-          the photograph. A red wash used to cover the top 75% at /35 opacity and
-          it tinted everything — skin, walls, the whole office read maroon rather
-          than like a room someone actually works in. The crimson signature stays
-          as ambient light in the corners, at roughly half its former strength:
-          enough to feel like the brand, not enough to colour the subject. */}
-      <div className="absolute inset-0 bg-[#09090b]/45" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#09090b]/35 via-[#09090b]/45 to-[#09090b]" />
-      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/9 blur-[180px]" />
-      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/7 blur-[140px]" />
+      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/10 blur-[180px]" />
+      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/8 blur-[140px]" />
+      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#09090b]" />
     </div>
   );
 }
-
 
 /*
   Choisis sur l'intention commerciale, pas sur la date : prix, métier, ville.
@@ -101,51 +52,62 @@ export default function Home() {
   const b = useTranslations("blog_section");
   const langue = useLocale();
 
+  /*
+    Couleurs des boutons : chaque produit garde SA couleur, mais assez sombre
+    pour porter du texte blanc. Les dégradés cyan→bleu et vert→sarcelle
+    donnaient 2,4:1, le rouge 3,9:1 ; il faut 4,5:1. Les classes sont écrites
+    en entier : Tailwind ne voit pas une classe fabriquée par concaténation
+    (`${from}/5` ne produisait rien).
+
+    Inbox est en violet #9E398D, la couleur du produit lui-même (variable
+    --primary de l'interface Inbox) ; le hub l'habillait en cyan, et le
+    visiteur passait d'une couleur à l'autre en cliquant.
+  */
   const products = [
     {
+      id: "site-web",
       name: p("launch_name"),
-      brand: "AeviaLaunch",
+      brand: "Aevia Launch",
       tagline: p("launch_tagline"),
       description: p("launch_desc"),
       href: "https://launch.aevia.services",
       status: "live" as const,
-      accentFrom: "from-red-500",
-      accentTo: "to-red-700",
-      glow: "group-hover:shadow-red-500/25",
+      bouton: "bg-red-700 hover:bg-red-800",
+      filet: "bg-red-500",
+      lavis: "from-red-500/5 to-red-700/5",
       features: [p("launch_f1"), p("launch_f2"), p("launch_f3"), p("launch_f4")],
+      preuve: p("launch_f3"),
       cta: p("launch_cta"),
-      ctaSecondary: null,
-      ctaSecondaryHref: null,
     },
     {
+      id: "accueil-client-ia",
       name: p("inbox_name"),
-      brand: "AeviaInbox",
+      brand: "Aevia Inbox",
       tagline: p("inbox_tagline"),
       description: p("inbox_desc"),
       href: "https://inbox.aevia.services",
       status: "live" as const,
-      accentFrom: "from-cyan-500",
-      accentTo: "to-blue-500",
-      glow: "group-hover:shadow-cyan-500/25",
+      bouton: "bg-inbox hover:bg-inbox-dark",
+      filet: "bg-inbox",
+      lavis: "from-inbox/5 to-inbox/5",
       features: [p("inbox_f1"), p("inbox_f2"), p("inbox_f3"), p("inbox_f4")],
+      preuve: p("inbox_f2"),
       cta: p("inbox_cta"),
-      ctaSecondary: null,
-      ctaSecondaryHref: null,
     },
     {
+      id: "audit-securite",
       name: p("security_name"),
-      brand: "AeviaSecurity",
+      brand: "Aevia Security",
       tagline: p("security_tagline"),
       description: p("security_desc"),
       href: "https://security.aevia.services",
       status: "live" as const,
-      accentFrom: "from-emerald-500",
-      accentTo: "to-teal-500",
-      glow: "group-hover:shadow-emerald-500/25",
+      bouton: "bg-emerald-700 hover:bg-emerald-800",
+      filet: "bg-emerald-500",
+      lavis: "from-emerald-500/5 to-teal-500/5",
       features: [p("security_f1"), p("security_f2"), p("security_f3"), p("security_f4")],
+      preuve: p("security_f1"),
       cta: p("security_cta"),
-      ctaSecondary: null,
-      ctaSecondaryHref: null,
     },
   ];
 
@@ -169,7 +131,9 @@ export default function Home() {
       <section className="relative px-6 overflow-hidden pt-24 pb-20 sm:pt-32 sm:pb-28 lg:pt-[57px] lg:pb-0 lg:min-h-screen lg:min-h-[100svh] lg:flex lg:items-center">
         <HeroBackdrop />
         <div className="mx-auto max-w-5xl text-center w-full">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+          {/* Visible dès le HTML serveur : plus de fondu depuis opacity: 0
+              (texte caché pour un robot, rien à lire avant l'hydratation). */}
+          <div className="rise-in">
             {/*
               Le credo, avant tout le reste.
 
@@ -182,7 +146,7 @@ export default function Home() {
               façon.
             */}
             <div className="mb-6 sm:mb-8">
-              <span className="block text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.32em] text-zinc-500 mb-2">
+              <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-zinc-400 mb-2">
                 {h("credoLabel")}
               </span>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white/90">
@@ -190,15 +154,13 @@ export default function Home() {
               </p>
             </div>
 
-            <h1 className="text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.08] mb-5 sm:mb-6">
+            <h1 className="font-display text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-6 text-balance">
               {h("title1")}
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-400 to-red-500">
-                {h("title2")}
-              </span>
+              <span className="text-red-400">{h("title2")}</span>
             </h1>
 
-            <p className="text-zinc-300 text-[0.9375rem] sm:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-7 sm:mb-9">
+            <p className="text-zinc-300 text-base sm:text-lg lg:text-xl max-w-[60ch] mx-auto leading-relaxed mb-7 sm:mb-9 text-pretty">
               {h("description")}
             </p>
 
@@ -208,7 +170,7 @@ export default function Home() {
                   « démarrer un projet » avant qu'il sache ce qu'on fait. */}
               <a
                 href="#produits"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 text-white text-sm font-semibold transition-colors"
               >
                 {h("cta_primary")}
                 <ArrowRight className="w-4 h-4" />
@@ -220,7 +182,25 @@ export default function Home() {
                 {h("cta_secondary")}
               </Link>
             </div>
-          </motion.div>
+
+            {/*
+              L'index des trois produits — la représentation honnête qui
+              remplace les photos : leur nom, leur marque, une preuve tirée de
+              leur carte, et leur couleur. Chaque ligne mène à sa carte.
+            */}
+            <ul className="mt-14 sm:mt-20 grid grid-cols-1 sm:grid-cols-3 gap-px bg-zinc-800/80 border border-zinc-800/80 rounded-2xl overflow-hidden text-left">
+              {products.map((product) => (
+                <li key={product.id} className="bg-[#0c0c0f]">
+                  <a href={`#${product.id}`} className="group relative block h-full p-5 sm:p-6 hover:bg-zinc-900 transition-colors">
+                    <span aria-hidden className={`absolute left-0 top-0 h-0.5 w-full ${product.filet}`} />
+                    <span className="block font-display text-lg font-bold text-white">{product.name}</span>
+                    <span className="block text-xs font-semibold uppercase tracking-wider text-zinc-400 mt-0.5">{product.brand}</span>
+                    <span className="block text-sm text-zinc-300 mt-3 text-pretty">{product.preuve}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -232,35 +212,27 @@ export default function Home() {
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-red-600/6 blur-[120px]" />
         </div>
         <div className="mx-auto max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-14"
-          >
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
+          <div className="text-center mb-14">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight text-balance">
               {p("section_title")}
             </h2>
-            <p className="text-zinc-400 text-lg max-w-xl mx-auto">
+            <p className="text-zinc-400 text-lg max-w-xl mx-auto text-pretty">
               {p("section_sub")}
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {products.map((product, i) => {
+            {products.map((product) => {
               const isLive = product.status === "live";
               return (
-                <motion.div
-                  key={product.brand}
-                  initial={{ opacity: 0, y: 32 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.5, delay: i * 0.1, ease: [0.25, 0.46, 0.45, 0.94] }}
-                  className={`group relative flex flex-col h-full p-7 rounded-2xl border border-zinc-800 bg-zinc-900/50 backdrop-blur-sm overflow-hidden transition-all duration-300
-                    ${isLive ? `hover:border-zinc-600 hover:-translate-y-1.5 hover:shadow-2xl ${product.glow}` : "opacity-80"}`}
+                <div
+                  key={product.id}
+                  id={product.id}
+                  className={`group relative flex flex-col h-full p-7 rounded-2xl border border-zinc-800 bg-zinc-900/50 overflow-hidden scroll-mt-24 transition-[transform,border-color,box-shadow] duration-300
+                    ${isLive ? "hover:border-zinc-600 hover:-translate-y-1 hover:shadow-[0_18px_40px_-12px_rgb(0_0_0/0.6)]" : "opacity-80"}`}
                 >
-                  <div className={`absolute inset-0 opacity-0 ${isLive ? "group-hover:opacity-100" : ""} transition-opacity duration-300 bg-gradient-to-br ${product.accentFrom}/5 ${product.accentTo}/5 pointer-events-none`} />
+                  <span aria-hidden className={`absolute left-0 top-0 h-0.5 w-full ${product.filet}`} />
+                  <div className={`absolute inset-0 opacity-0 ${isLive ? "group-hover:opacity-100" : ""} transition-opacity duration-300 bg-gradient-to-br ${product.lavis} pointer-events-none`} />
                   {/*
                     Ce que c'est, en gros ; la marque, en petit ; le problème
                     réglé, juste dessous.
@@ -274,7 +246,7 @@ export default function Home() {
                     comme première phrase lue.
                   */}
                   <div className="mb-4 relative z-10">
-                    <h3 className="text-white font-bold text-2xl leading-tight">
+                    <h3 className="font-display text-white font-bold text-2xl leading-tight">
                       {product.name}
                     </h3>
                     <p className="text-[11px] font-semibold uppercase tracking-wider text-zinc-400 mt-1 mb-3">
@@ -297,14 +269,9 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2.5 relative z-10">
                     {isLive ? (
                       <>
-                        <a href={product.href} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${product.accentFrom} ${product.accentTo} text-white text-sm font-semibold hover:opacity-90 transition-opacity`}>
+                        <a href={product.href} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 px-4 py-2 rounded-full ${product.bouton} text-white text-sm font-semibold transition-colors`}>
                           {product.cta} <ArrowRight className="w-3.5 h-3.5" />
                         </a>
-                        {product.ctaSecondary && product.ctaSecondaryHref && (
-                          <a href={product.ctaSecondaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-700 text-zinc-300 text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors">
-                            <ExternalLink className="w-3.5 h-3.5" /> {product.ctaSecondary}
-                          </a>
-                        )}
                       </>
                     ) : (
                       <Link href="/contact" className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-zinc-700 text-zinc-400 text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors">
@@ -312,7 +279,7 @@ export default function Home() {
                       </Link>
                     )}
                   </div>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -327,34 +294,21 @@ export default function Home() {
           suivante d'un visiteur est « et concrètement, ça se passe comment ». */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight">
+          <div className="text-center mb-12">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white mb-3 tracking-tight text-balance">
               {hw("title")}
             </h2>
-            <p className="text-zinc-400 max-w-xl mx-auto">{hw("sub")}</p>
-          </motion.div>
+            <p className="text-zinc-400 max-w-xl mx-auto text-pretty">{hw("sub")}</p>
+          </div>
           <ol className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            {steps.map((step, i) => (
-              <motion.li
-                key={step.n}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40"
-              >
+            {steps.map((step) => (
+              <li key={step.n} className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
                 <span aria-hidden className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-red-600/15 text-red-300 text-sm font-bold mb-4">
                   {step.n}
                 </span>
                 <h3 className="text-white font-bold text-lg mb-2">{step.title}</h3>
                 <p className="text-zinc-400 text-sm leading-relaxed">{step.desc}</p>
-              </motion.li>
+              </li>
             ))}
           </ol>
         </div>
@@ -376,7 +330,7 @@ export default function Home() {
         ville. Ils ramènent les articles à un seul saut.
 
         Couleurs : zinc-400 et non zinc-500/600. Mesuré par Lighthouse sur cette
-        page, `text-zinc-600` sur ce fond donne 2,48:1 et `text-zinc-500` 3,96:1,
+        page, `text-zinc-400` sur ce fond donne 2,48:1 et `text-zinc-400` 3,96:1,
         quand la norme en demande 4,5. Le réflexe zinc-500 est partout dans ce
         dépôt — 33 éléments en échec sur cette seule page — mais ce n'est pas une
         raison d'en ajouter.
@@ -410,25 +364,20 @@ export default function Home() {
 
       <section className="px-6 py-16 pb-24">
         <div className="mx-auto max-w-5xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div>
             <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-900/50 p-10 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
               <div className="relative z-10">
                 <h2 className="text-2xl font-bold text-white mb-3">{c("title")}</h2>
                 <p className="text-zinc-400 max-w-md mx-auto mb-8">{c("desc")}</p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
-                  <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors">
+                  <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-700 text-white text-sm font-semibold transition-colors">
                     {c("contact")} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
