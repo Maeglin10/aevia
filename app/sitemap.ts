@@ -35,7 +35,9 @@ const BASE = 'https://aevia.services'
   que lorsqu'un changement mérite qu'un robot revienne. La bouger à chaque
   déploiement nous ramènerait au défaut que le commentaire ci-dessus décrit.
 */
-const DERNIERE_REFONTE = '2026-09-07'
+// 12/11 : FAQ et titres de l'accueil, canonique de l'index du blog,
+// liens du pied de page dans la langue — voir branche lot-2026-11-12-seo.
+const DERNIERE_REFONTE = '2026-11-12'
 
 function newestContentDate(): Date {
   const newest = BLOG_POSTS.reduce(
