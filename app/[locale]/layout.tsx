@@ -9,20 +9,32 @@ const BASE = 'https://aevia.services';
 
 const LOCALES = routing.locales as readonly string[];
 
+/*
+  Titre et description de l'accueil : ce que la page vend, avec les mots
+  qu'on tape.
+
+  « SaaS pour entrepreneurs ambitieux » ne nommait aucun des trois services
+  et aucune requête réelle ne contient ces mots ; la page, elle, parle de
+  site web, d'accueil client par IA et d'audit de sécurité. La description
+  annonçait « en ligne sous 48 heures » pour tous les sites — faux pour la
+  formule Premium (5 à 7 jours, CGV Launch art. 4) — et « inbox unifiée »,
+  un terme que l'accueil n'emploie plus. Les prix cités (399 €, audit
+  gratuit) sont affichés dans la FAQ de la page.
+*/
 const HUB_TITLES: Record<string, string> = {
-  fr: 'Aevia — SaaS pour entrepreneurs ambitieux',
-  en: 'Aevia — SaaS for ambitious entrepreneurs',
-  es: 'Aevia — SaaS para emprendedores ambiciosos',
-  de: 'Aevia — SaaS für ambitionierte Unternehmer',
-  pt: 'Aevia — SaaS para empreendedores ambiciosos',
+  fr: 'Aevia — Site web, accueil client IA et audit sécurité pour PME',
+  en: 'Aevia — Websites, AI customer service and security audits for SMBs',
+  es: 'Aevia — Web, atención al cliente con IA y auditoría de seguridad',
+  de: 'Aevia — Website, KI-Kundenservice und Sicherheitsaudit für KMU',
+  pt: 'Aevia — Site, atendimento com IA e auditoria de segurança para PME',
 };
 
 const HUB_DESCS: Record<string, string> = {
-  fr: 'Aevia conçoit des outils SaaS pour entrepreneurs : sites web en ligne sous 48 heures, inbox unifiée multi-canal, audits de sécurité instantanés. Pensés pour TPE et PME.',
-  en: 'Aevia builds SaaS tools for entrepreneurs: websites online within 48 hours, unified multi-channel inbox, instant security audits. Built for SMBs.',
-  es: 'Aevia crea herramientas SaaS para emprendedores: sitios web en línea en menos de 48 horas, bandeja de entrada multicanal, auditorías de seguridad instantáneas.',
-  de: 'Aevia entwickelt SaaS-Tools für Unternehmer: Websites in 48 Stunden online, einheitlicher Multi-Kanal-Posteingang, sofortige Sicherheitsaudits.',
-  pt: 'Aevia cria ferramentas SaaS para empreendedores: sites no ar em até 48 horas, caixa de entrada multicanal, auditorias de segurança instantâneas.',
+  fr: 'Aevia aide les TPE, PME et indépendants à trouver des clients en ligne et à ne plus les rater : site web professionnel dès 399 €, accueil client IA au téléphone et sur WhatsApp, audit de sécurité gratuit.',
+  en: 'Aevia helps small businesses and freelancers find customers online and never miss one: a professional website from €399, AI customer service on the phone and WhatsApp, and a free security audit.',
+  es: 'Aevia ayuda a pymes y autónomos a conseguir clientes en internet y a no perder ninguno: web profesional desde 399 €, atención al cliente con IA por teléfono y WhatsApp, y auditoría de seguridad gratuita.',
+  de: 'Aevia hilft kleinen Unternehmen und Selbstständigen, online Kunden zu finden und keinen mehr zu verpassen: Website ab 399 €, KI-Kundenservice am Telefon und auf WhatsApp, kostenloses Sicherheitsaudit.',
+  pt: 'A Aevia ajuda PME e independentes a encontrar clientes online e a não perder nenhum: site profissional a partir de 399 €, atendimento com IA por telefone e WhatsApp, e auditoria de segurança gratuita.',
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
