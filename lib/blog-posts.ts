@@ -5137,6 +5137,16 @@ export function localesForPost(post: BlogPost): string[] {
   return ["fr", ...Object.keys(post.i18n ?? {})];
 }
 
+/**
+ * Langues dont l'index du blog a du contenu propre : au moins un article
+ * traduit. Les autres (allemand, portugais aujourd'hui) listent les articles
+ * français et renvoient leur canonique vers `/fr/blog`. Partagé par le layout
+ * du blog et le plan de site, pour qu'ils ne divergent jamais.
+ */
+export function blogIndexLocales(): string[] {
+  return Array.from(new Set(BLOG_POSTS.flatMap((p) => localesForPost(p))));
+}
+
 const DATE_LOCALES: Record<string, string> = {
   fr: "fr-FR",
   en: "en-US",

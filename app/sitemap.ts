@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import { VS_PAGES } from '@/lib/vs-content'
-import { BLOG_POSTS, localesForPost } from '@/lib/blog-posts'
+import { BLOG_POSTS, blogIndexLocales, localesForPost } from '@/lib/blog-posts'
 
 const BASE = 'https://aevia.services'
 
@@ -77,13 +77,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   })
 
-  // Blog index per locale
-  const blogIndex: MetadataRoute.Sitemap = routing.locales.map((locale) => ({
+  // Blog index — seulement les langues qui ont des articles traduits. `/de/blog`
+  // et `/pt/blog` listent la prose française, sont `noindex` et canoniques sur
+  // `/fr/blog` (voir app/[locale]/blog/layout.tsx) : un plan de site qui les
+  // soumet demande à Google d'indexer une page qui lui dit de ne pas le faire.
+  const blogLocales = blogIndexLocales()
+  const blogIndex: MetadataRoute.Sitemap = blogLocales.map((locale) => ({
     url: `${BASE}/${locale}/blog`,
     // The index genuinely changes when a post ships — that is exactly contentDate.
     lastModified: contentDate,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
+    alternates: {
+      languages: Object.fromEntries(blogLocales.map((l) => [l, `${BASE}/${l}/blog`])),
+    },
   }))
 
   // Blog posts — one URL per available locale, with hreflang alternates
