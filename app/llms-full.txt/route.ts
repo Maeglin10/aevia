@@ -39,7 +39,7 @@ Site principal : https://aevia.services — Interface en français, anglais, esp
 
 URL : https://launch.aevia.services
 
-Service de création de sites web, sans compétences techniques. Délais de mise en ligne (CGV Launch, article 4) : 2 heures ouvrées pour Landing et Essentiel, 24 à 48 heures pour Pro, 5 à 7 jours pour Premium sur mesure, à compter du paiement et de la réception des informations complètes. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
+Service de création de sites web, sans compétences techniques. Délais de mise en ligne : sous 48 heures pour Landing, Essentiel et Pro, sous 5 à 7 jours pour Premium sur mesure, à compter du paiement et de la réception des informations complètes. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
 
 Caractéristiques :
 - Hébergement inclus.
@@ -53,7 +53,7 @@ Tarifs (paiement unique) :
 - **Pro — 899 €** : site avancé (blog, pages secteur, intégrations, analytics).
 - **Premium — 1499 €** : site sur-mesure, multi-pages, intégrations spécifiques.
 
-Hébergement et maintenance : 20 €/mois après la livraison (offerts 3 mois avec Pro, 6 mois avec Premium), résiliables à tout moment. Nom de domaine en sus si le client n'en a pas (environ 10 à 15 €/an).
+Hébergement et maintenance : 20 €/mois après la livraison (offerts 3 mois avec Pro, 6 mois avec Premium), résiliables à tout moment. Nom de domaine inclus avec Pro et Premium (jusqu'à 50 €/an, tant que la maintenance court) ; en option avec Landing et Essentiel, de 29 à 49 €/an.
 
 ---
 

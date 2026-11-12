@@ -108,9 +108,9 @@ Si vous recevez ne serait-ce qu'un client par mois grâce à votre site, avec un
 
 Depuis deux ans, une troisième voie existe entre le constructeur de site où vous faites tout vous-même et l'agence à plusieurs milliers d'euros : des plateformes qui génèrent un site professionnel à partir de vos informations métier, avec le référencement déjà structuré.
 
-L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en quelques heures plutôt qu'en six semaines de va-et-vient. Le compromis, c'est que vous partez d'un modèle sectoriel plutôt que d'une création graphique originale — ce qui, pour 90 % des commerces et prestataires, n'a aucune conséquence commerciale.
+L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en quelques jours plutôt qu'en six semaines de va-et-vient. Le compromis, c'est que vous partez d'un modèle sectoriel plutôt que d'une création graphique originale — ce qui, pour 90 % des commerces et prestataires, n'a aucune conséquence commerciale.
 
-[Aevia Launch](https://launch.aevia.services) fonctionne sur ce principe, avec des tarifs en paiement unique de 399 € à 1 499 € hébergement inclus.`,
+[Aevia Launch](https://launch.aevia.services) fonctionne sur ce principe : site en ligne sous 48 heures (5 à 7 jours pour un site Premium sur mesure), de 399 € à 1 499 € en paiement unique, puis 20 € par mois d'hébergement et de maintenance.`,
     faq: [
       {
         q: "Quel est le prix moyen d'un site internet professionnel en France ?",

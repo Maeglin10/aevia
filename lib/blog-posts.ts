@@ -3802,8 +3802,8 @@ En 2026, las herramientas para lograrlo son accesibles, incluso para pequeñas e
   },
   {
     slug: "creer-site-internet-bourg-en-bresse-ia",
-    title: "Créer un site internet professionnel à Bourg-en-Bresse : la méthode IA en 2 heures",
-    excerpt: "Découvrez comment les commerçants, artisans et restaurateurs de l'Ain créent leur site web professionnel en 2 heures grâce à l'IA avec Aevia Launch.",
+    title: "Créer un site internet professionnel à Bourg-en-Bresse : en ligne sous 48 heures avec l'IA",
+    excerpt: "Découvrez comment les commerçants, artisans et restaurateurs de l'Ain mettent leur site web professionnel en ligne sous 48 heures grâce à l'IA avec Aevia Launch.",
     date: "2026-06-29",
     readingTime: "6 min",
     category: "Web & Marketing",
@@ -3823,7 +3823,7 @@ Face à ces contraintes, beaucoup de professionnels remettent leur projet à plu
 
 ---
 
-## Comment Aevia Launch crée votre site en 2 heures
+## Comment Aevia Launch met votre site en ligne sous 48 heures
 
 Pour répondre aux besoins spécifiques des entreprises locales, Aevia a développé **Aevia Launch**, une solution clé en main propulsée par l'intelligence artificielle qui transforme radicalement la création site web Ain. En éliminant les tâches répétitives de codage et de mise en page, l'IA permet d'obtenir un résultat sur-mesure en un temps record.
 
@@ -3831,7 +3831,7 @@ La méthode se déroule en 3 étapes simples et intuitives :
 
 1. **Vous décrivez votre activité** — Plus besoin de rédiger des cahiers des charges complexes. Vous indiquez simplement le nom de votre entreprise, votre métier, votre localisation (Bourg-en-Bresse, Viriat, Saint-Denis-lès-Bourg...) et vos services principaux. L'IA analyse votre secteur et génère instantanément des textes percutants, professionnels et adaptés à votre cible locale.
 2. **Nous proposons des thèmes optimisés** — L'outil génère automatiquement des maquettes modernes, 100 % adaptées aux mobiles et pensées pour la conversion. Vous choisissez le design qui reflète le mieux l'image de votre établissement et personnalisez les couleurs et photos en quelques clics sans toucher à une seule ligne de code.
-3. **Nous mettons votre site en ligne** — Une fois le design et le contenu validés, votre site internet Bourg-en-Bresse est déployé instantanément avec son nom de domaine, son certificat de sécurité SSL et une optimisation SEO locale intégrée. Le tout est prêt et opérationnel en moins de 2 heures.
+3. **Nous mettons votre site en ligne** — Une fois le design et le contenu validés, votre site internet Bourg-en-Bresse est mis en ligne avec son certificat de sécurité SSL et une optimisation SEO locale intégrée, sous 48 heures avec les formules Landing, Essentiel et Pro (5 à 7 jours pour un site Premium sur mesure). Le nom de domaine est inclus avec Pro et Premium, en option avec Landing et Essentiel.
 
 ---
 
@@ -3859,14 +3859,14 @@ Valorisez votre boutique physique, vos marques partenaires et vos coordonnées p
 Contrairement aux tarifs pratiqués par une agence web Bourg-en-Bresse classique, Aevia Launch propose une formule accessible et transparente sans frais cachés ni mauvaise surprise. Cela permet de préserver la trésorerie des TPE et PME de l'Ain tout en bénéficiant d'une technologie de pointe.
 
 ### Combien de temps faut-il réellement pour que mon site soit en ligne ?
-Le processus de génération initiale par l'IA prend moins de 10 minutes. Une fois vos textes et visuels validés, la mise en ligne technique est immédiate. Votre site professionnel est entièrement fonctionnel en 2 heures.
+Votre site est en ligne sous 48 heures avec les formules Landing, Essentiel et Pro, et sous 5 à 7 jours pour un site Premium sur mesure. Le délai court à partir du paiement et de la réception de vos textes, photos et informations.
 
 ### Que faut-il préparer avant de se lancer ?
 Très peu de choses ! Munissez-vous simplement de votre logo (si vous en avez un), de quelques photos de vos produits, locaux ou réalisations, et d'une liste de vos prestations principales. L'intelligence artificielle s'occupe de la rédaction, du design et de la structure globale.
 
 ---
 
-En 2025, ne laissez plus vos concurrents prendre de l'avance sur le web. Offrez à votre entreprise la visibilité locale qu'elle mérite grâce à une méthode rapide, moderne et performante.
+Ne laissez plus vos concurrents prendre de l'avance sur le web. Offrez à votre entreprise la visibilité locale qu'elle mérite grâce à une méthode rapide, moderne et performante.
 
 👉 [Découvrir Aevia Launch et créer mon site dès aujourd'hui](https://launch.aevia.services)
 `,
