@@ -6,6 +6,43 @@ import type { Metadata } from "next";
 const BASE = "https://aevia.services";
 const LANGUES = ["fr", "en", "es", "de", "pt"] as const;
 
+/*
+  Le contenu de cette page est traduit (next-intl), mais son <title> et sa
+  description étaient en français dans les cinq langues : relevé en
+  production le 12/11, « Mentions légales | Aevia » sur /en, /es, /de et /pt.
+  Cinq pages au même titre, et un résultat Google en français sous une page
+  anglaise. C'est la page qui porte le SIREN — celle qui permet de séparer
+  Aevia WS de l'homonyme du groupe Eiffage — elle mérite d'être lisible dans
+  la langue où on la cherche.
+*/
+const META: Record<string, { title: string; description: string }> = {
+  fr: {
+    title: "Mentions légales | Aevia",
+    description:
+      "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+  },
+  en: {
+    title: "Legal notice | Aevia",
+    description:
+      "Publisher, host, SIREN number and contact details of Aevia WS, the company behind Aevia Inbox, Aevia Launch and Aevia Security.",
+  },
+  es: {
+    title: "Aviso legal | Aevia",
+    description:
+      "Editor, alojamiento, número SIREN y datos de contacto de Aevia WS, empresa editora de Aevia Inbox, Aevia Launch y Aevia Security.",
+  },
+  de: {
+    title: "Impressum | Aevia",
+    description:
+      "Herausgeber, Hosting, SIREN-Nummer und Kontaktdaten von Aevia WS, dem Unternehmen hinter Aevia Inbox, Aevia Launch und Aevia Security.",
+  },
+  pt: {
+    title: "Aviso legal | Aevia",
+    description:
+      "Editor, alojamento, número SIREN e contactos da Aevia WS, empresa editora do Aevia Inbox, Aevia Launch e Aevia Security.",
+  },
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -21,18 +58,22 @@ export async function generateMetadata({
     page déployée.
   */
   const url = `${BASE}/${locale}/legal/mentions`;
+  const meta = META[locale] ?? META.fr;
   return {
-    title: "Mentions légales | Aevia",
-    description:
-      "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+    // `absolute` : le layout de langue ne fournit pas de gabarit, et le titre
+    // porte déjà la marque.
+    title: { absolute: meta.title },
+    description: meta.description,
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/mentions`])),
+      languages: {
+        ...Object.fromEntries(LANGUES.map((l) => [l, `${BASE}/${l}/legal/mentions`])),
+        "x-default": `${BASE}/fr/legal/mentions`,
+      },
     },
     openGraph: {
-      title: "Mentions légales | Aevia",
-      description:
-        "Éditeur, hébergeur, SIREN et coordonnées d'Aevia WS, éditeur d'Aevia Inbox, Aevia Launch et Aevia Security.",
+      title: meta.title,
+      description: meta.description,
       url,
       images: ["/og.png"],
     },
