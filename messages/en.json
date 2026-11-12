@@ -111,5 +111,39 @@
   "blog_section": {
     "title": "What we write",
     "all": "All articles"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "intro": "Short answers to the questions people ask us before they start. Prices and lead times are the ones shown on each service.",
+    "items": [
+      {
+        "q": "Who is behind Aevia?",
+        "a": "Aevia is the trading name of Aevia WS, a French sole proprietorship founded by Valentin Milliand, a full-stack developer, registered with the Bourg-en-Bresse trade register (SIREN 852 546 225). It has no connection with the Aevia company of the Eiffage group, which works in energy and infrastructure."
+      },
+      {
+        "q": "How much does a website with Aevia Launch cost?",
+        "a": "Between €399 and €1,499, paid once, depending on the plan: Landing (€399), Essentiel (€599), Pro (€899) or Premium (€1,499). Hosting and maintenance then cost €20 a month, free for 3 months with Pro and 6 months with Premium, and can be cancelled at any time. If you don't have a domain name yet, expect about €10 to €15 a year."
+      },
+      {
+        "q": "How quickly is my website online?",
+        "a": "Within 2 business hours for the Landing and Essentiel plans, within 24 to 48 hours for Pro, and within 5 to 7 days for a custom Premium project (article 4 of the Aevia Launch terms of sale). The clock starts once payment and all your information have been received."
+      },
+      {
+        "q": "How much does the AI customer service (Aevia Inbox) cost?",
+        "a": "From €79 to €999 a month depending on your volume, across five plans: Starter, Growth, Pro, Business and Scale. The price is the same for messages only, voice only or both: only the included quota changes. A one-time €100 setup fee covers connecting your channels and configuring the agent. No commitment, 14-day money-back guarantee. Outside the euro zone, the same amount is billed in US dollars."
+      },
+      {
+        "q": "Which channels does the AI answer my customers on?",
+        "a": "Phone, WhatsApp, Instagram, email and your website chat, with the full conversation history in one place. It replies within seconds, day and night, and alerts you when a request is serious."
+      },
+      {
+        "q": "Is the security audit really free?",
+        "a": "Yes. You enter your website address and your email, with no account to create and nothing to install: in about a minute you get a score out of 100 and the list of fixes, in order of importance. If you want us to apply them, each fix has a fixed price, from €99 (enabling HSTS) to €1,490–2,490 (full hardening pack), with no subscription."
+      },
+      {
+        "q": "Do I need all three services?",
+        "a": "No. Each one works on its own: start with the one you are missing, and add the others later if you need them."
+      }
+    ]
   }
 }

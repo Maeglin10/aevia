@@ -111,5 +111,39 @@
   "blog_section": {
     "title": "Was wir schreiben",
     "all": "Alle Artikel"
+  },
+  "faq": {
+    "title": "Häufige Fragen",
+    "intro": "Kurze Antworten auf die Fragen, die man uns vor dem Start stellt. Preise und Fristen sind die, die bei jedem Dienst angegeben sind.",
+    "items": [
+      {
+        "q": "Wer steht hinter Aevia?",
+        "a": "Aevia ist der Handelsname von Aevia WS, einem französischen Einzelunternehmen, gegründet von Valentin Milliand, Full-Stack-Entwickler, eingetragen im Handelsregister Bourg-en-Bresse (SIREN 852 546 225). Es besteht keinerlei Verbindung zur Firma Aevia der Eiffage-Gruppe, die im Energie- und Infrastrukturbereich tätig ist."
+      },
+      {
+        "q": "Was kostet eine Website mit Aevia Launch?",
+        "a": "Zwischen 399 € und 1.499 €, als Einmalzahlung, je nach Paket: Landing (399 €), Essentiel (599 €), Pro (899 €) oder Premium (1.499 €). Hosting und Wartung kosten danach 20 € pro Monat, bei Pro 3 Monate und bei Premium 6 Monate kostenlos, jederzeit kündbar. Falls Sie noch keinen Domainnamen haben, rechnen Sie mit etwa 10 bis 15 € pro Jahr."
+      },
+      {
+        "q": "Wie schnell ist meine Website online?",
+        "a": "Innerhalb von 2 Geschäftsstunden für die Pakete Landing und Essentiel, innerhalb von 24 bis 48 Stunden für Pro und innerhalb von 5 bis 7 Tagen für ein individuelles Premium-Projekt (Artikel 4 der Verkaufsbedingungen von Aevia Launch). Die Frist beginnt mit Zahlungseingang und dem Erhalt all Ihrer Angaben."
+      },
+      {
+        "q": "Was kostet der KI-Kundenservice (Aevia Inbox)?",
+        "a": "Von 79 € bis 999 € pro Monat je nach Volumen, in fünf Paketen: Starter, Growth, Pro, Business und Scale. Der Preis ist für nur Nachrichten, nur Sprache oder beides gleich: Nur das enthaltene Kontingent ändert sich. Eine einmalige Einrichtungsgebühr von 100 € deckt die Anbindung Ihrer Kanäle und die Konfiguration des Agenten. Ohne Vertragsbindung, 14 Tage Geld-zurück-Garantie. Außerhalb der Eurozone wird derselbe Betrag in US-Dollar berechnet."
+      },
+      {
+        "q": "Auf welchen Kanälen antwortet die KI meinen Kunden?",
+        "a": "Am Telefon, auf WhatsApp, Instagram, per E-Mail und im Chat Ihrer Website, mit dem gesamten Gesprächsverlauf an einem Ort. Sie antwortet innerhalb von Sekunden, Tag und Nacht, und benachrichtigt Sie, wenn eine Anfrage ernst ist."
+      },
+      {
+        "q": "Ist das Sicherheitsaudit wirklich kostenlos?",
+        "a": "Ja. Sie geben die Adresse Ihrer Website und Ihre E-Mail ein, ohne Konto und ohne Installation: In etwa einer Minute erhalten Sie eine Note von 100 und die Liste der Korrekturen nach Priorität. Wenn wir sie für Sie umsetzen sollen, hat jede Korrektur einen Festpreis, von 99 € (HSTS-Aktivierung) bis 1.490–2.490 € (komplettes Härtungspaket), ohne Abonnement."
+      },
+      {
+        "q": "Muss ich alle drei Dienste nehmen?",
+        "a": "Nein. Jeder funktioniert für sich: Beginnen Sie mit dem, der Ihnen fehlt, und ergänzen Sie die anderen später, wenn nötig."
+      }
+    ]
   }
 }

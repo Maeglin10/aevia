@@ -111,5 +111,39 @@
   "blog_section": {
     "title": "Ce qu'on écrit",
     "all": "Tous les articles"
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "intro": "Les réponses courtes aux questions qu'on nous pose avant de commencer. Les prix et les délais sont ceux affichés sur chaque service.",
+    "items": [
+      {
+        "q": "Qui est derrière Aevia ?",
+        "a": "Aevia est le nom commercial d'Aevia WS, une entreprise individuelle française créée par Valentin Milliand, développeur full-stack, immatriculée au RCS de Bourg-en-Bresse (SIREN 852 546 225). Elle n'a aucun lien avec la société Aevia du groupe Eiffage, qui travaille dans l'énergie et les infrastructures."
+      },
+      {
+        "q": "Combien coûte un site web avec Aevia Launch ?",
+        "a": "Entre 399 € et 1 499 €, en paiement unique, selon la formule : Landing (399 €), Essentiel (599 €), Pro (899 €) ou Premium (1 499 €). L'hébergement et la maintenance coûtent ensuite 20 € par mois, offerts 3 mois avec Pro et 6 mois avec Premium, résiliables à tout moment. Si vous n'avez pas de nom de domaine, comptez environ 10 à 15 € par an."
+      },
+      {
+        "q": "En combien de temps mon site est-il en ligne ?",
+        "a": "Sous 2 heures ouvrées pour les formules Landing et Essentiel, sous 24 à 48 heures pour Pro, et sous 5 à 7 jours pour une prestation Premium sur mesure (article 4 des CGV d'Aevia Launch). Le délai court à partir du paiement et de la réception de toutes vos informations."
+      },
+      {
+        "q": "Combien coûte l'accueil client IA (Aevia Inbox) ?",
+        "a": "De 79 € à 999 € par mois selon votre volume, en cinq formules : Starter, Growth, Pro, Business et Scale. Le prix est le même pour les messages seuls, la voix seule ou les deux : seul le quota inclus change. Des frais de mise en service uniques de 100 € couvrent la connexion de vos canaux et la configuration de l'agent. Sans engagement, 14 jours satisfait ou remboursé. Hors zone euro, le même montant est facturé en dollars."
+      },
+      {
+        "q": "Sur quels canaux l'IA répond-elle à mes clients ?",
+        "a": "Au téléphone, sur WhatsApp, sur Instagram, par email et sur le chat de votre site, avec tout l'historique des échanges au même endroit. Elle répond en quelques secondes, de jour comme de nuit, et vous prévient quand une demande est sérieuse."
+      },
+      {
+        "q": "L'audit de sécurité est-il vraiment gratuit ?",
+        "a": "Oui. Vous entrez l'adresse de votre site et votre email, sans créer de compte ni rien installer : en une minute environ, vous recevez une note sur 100 et la liste des corrections, par ordre d'importance. Si vous voulez qu'on les fasse pour vous, chaque correction a un prix fixe, de 99 € (activation HSTS) à 1 490–2 490 € (pack de durcissement complet), sans abonnement."
+      },
+      {
+        "q": "Faut-il prendre les trois services ?",
+        "a": "Non. Chacun fonctionne seul : commencez par celui qui vous manque, et ajoutez les autres plus tard si besoin."
+      }
+    ]
   }
 }
