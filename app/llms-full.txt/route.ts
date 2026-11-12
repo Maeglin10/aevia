@@ -39,7 +39,7 @@ Site principal : https://aevia.services — Interface en français, anglais, esp
 
 URL : https://launch.aevia.services
 
-Service de création de sites web livrés sous 48 heures, sans compétences techniques. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
+Service de création de sites web, sans compétences techniques. Délais de mise en ligne (CGV Launch, article 4) : 2 heures ouvrées pour Landing et Essentiel, 24 à 48 heures pour Pro, 5 à 7 jours pour Premium sur mesure, à compter du paiement et de la réception des informations complètes. L'utilisateur choisit un thème adapté à son secteur (plus de 100 thèmes : restaurant, coach, artisan, e-commerce, vitrine, santé, immobilier, etc.), renseigne ses informations via un assistant guidé, et reçoit un site prêt à l'emploi.
 
 Caractéristiques :
 - Hébergement inclus.
@@ -52,6 +52,8 @@ Tarifs (paiement unique) :
 - **Essentiel — 599 €** : site vitrine complet multi-sections.
 - **Pro — 899 €** : site avancé (blog, pages secteur, intégrations, analytics).
 - **Premium — 1499 €** : site sur-mesure, multi-pages, intégrations spécifiques.
+
+Hébergement et maintenance : 20 €/mois après la livraison (offerts 3 mois avec Pro, 6 mois avec Premium), résiliables à tout moment. Nom de domaine en sus si le client n'en a pas (environ 10 à 15 €/an).
 
 ---
 
@@ -74,7 +76,7 @@ Tarification modulable — le client choisit son mode, le prix par palier est id
 - **Mode Voix seule** : ligne téléphonique IA dédiée.
 - **Mode Messages + Voix** : les deux.
 
-Paliers mensuels : **Starter 79 $**, **Growth 99 $**, **Pro 199 $**, **Business 399 $**, **Scale 999 $**.
+Paliers mensuels : **Starter 79 €**, **Growth 99 €**, **Pro 199 €**, **Business 399 €**, **Scale 999 €** (même montant en dollars hors zone euro). Frais de mise en service unique de 100 € à la souscription. Sans engagement, 14 jours satisfait ou remboursé.
 
 Cas d'usage les plus forts : restaurants et food-trucks (réservation + commande par téléphone et WhatsApp), cabinets dentaires et cliniques (prise de rendez-vous), garages et artisans (devis, rappels), hôtels et locations. Particulièrement utile aux commerces qui reçoivent beaucoup d'appels et perdent des clients quand personne ne décroche.
 
@@ -84,13 +86,19 @@ Cas d'usage les plus forts : restaurants et food-trucks (réservation + commande
 
 URL : https://security.aevia.services
 
-Audit de sécurité web instantané (environ 30 secondes) qui analyse un site sur quatre dimensions : sécurité (SSL/TLS, DNS, headers HTTP, HSTS, CSP), performances (Core Web Vitals LCP/CLS/INP/TTFB via Google PageSpeed Insights), SEO (balises meta, structure, Open Graph, sitemap) et empreinte carbone. Le résultat est un score sur 100 et un rapport rédigé par IA (Claude d'Anthropic) en langage clair.
+Audit de sécurité web instantané (environ 60 secondes) qui analyse un site sur quatre dimensions : sécurité (SSL/TLS, DNS, headers HTTP, HSTS, CSP), performances (Core Web Vitals LCP/CLS/INP/TTFB via Google PageSpeed Insights), SEO (balises meta, structure, Open Graph, sitemap) et empreinte carbone. Le résultat est un score sur 100 et un rapport rédigé par IA (Claude d'Anthropic) en langage clair.
 
-Tarifs :
-- **Gratuit** : un scan ponctuel, sans compte.
-- **Solo — 9 €/mois** : 1 audit par mois.
-- **Pro — 29 €/mois** : audits illimités + rapport IA complet.
-- **Business — 79 €/mois** : monitoring continu + alertes + rapport PDF.
+Tarifs — l'audit est gratuit ; les corrections sont vendues à prix fixe, sans abonnement (security.aevia.services/pricing) :
+- **Audit** : gratuit, sans inscription.
+- **Activation HSTS** : 99 €.
+- **Correction SSL / TLS** : 149 €.
+- **Durcissement des en-têtes HTTP** : 199 €.
+- **Réponse à une fuite d'identifiants** : 199 €.
+- **Correction SEO on-page** : 290 €.
+- **SPF / DKIM / DMARC** : 349 €.
+- **Politique CSP (anti-XSS)** : 499 €.
+- **Optimisation Core Web Vitals** : 790 €.
+- **Pack durcissement complet** : 1 490 à 2 490 €.
 
 ---`
 
