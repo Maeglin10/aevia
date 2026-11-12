@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { LinkedinIcon } from "@/components/LinkedinIcon";
 import { GithubIcon } from "@/components/GithubIcon";
 
@@ -42,20 +42,44 @@ import { GithubIcon } from "@/components/GithubIcon";
  * exige les deux, et ils s'appelaient tous les deux « Cookies », ce qui donnait
  * l'impression d'une répétition. Renommés pour que la différence se lise.
  */
+/**
+ * ## Les liens internes portent la langue
+ *
+ * `/blog` et `/legal/*` étaient écrits sans préfixe : sur chacune des pages du
+ * Hub, cinq liens répondaient 307 vers `/fr/...` (relevé en production le
+ * 12/11). Un robot qui suit le pied de page de `/en` atterrissait sur le blog
+ * FRANÇAIS, et chaque lien coûtait un saut de redirection. Ils pointent
+ * désormais directement vers la version de la langue courante.
+ *
+ * Même chose pour la page « solutions » d'Inbox, figée sur `/fr` : Inbox sert
+ * fr, en, es et pt ; son `/de` redirige vers `/en`, donc l'allemand y va
+ * directement.
+ *
+ * ## Le nom du fondateur mène à son portfolio
+ *
+ * Le portfolio de Valentin Milliand ne recevait aucun lien depuis le Hub, et
+ * le Hub aucun depuis lui. Les deux sites décrivent la même personne ; le
+ * lien (et le `founder` du JSON-LD) les relie.
+ */
+const LANGUES_INBOX = ["fr", "en", "es", "pt"];
+export const PORTFOLIO_URL = "https://valentinmilliand.vercel.app";
+
 export function SiteFooter() {
   const f = useTranslations("footer");
+  const langue = useLocale();
+  const langueInbox = LANGUES_INBOX.includes(langue) ? langue : "en";
 
   const produits = [
     { href: "https://launch.aevia.services/themes/modeles", texte: f("templateShort") },
     { href: "https://security.aevia.services/guides", texte: f("securityDns") },
-    { href: "https://inbox.aevia.services/fr/solutions", texte: f("inboxSupport") },
+    { href: `https://inbox.aevia.services/${langueInbox}/solutions`, texte: f("inboxSupport") },
   ];
 
   const juridique = [
-    { href: "/legal/privacy", texte: f("privacy") },
-    { href: "/legal/terms", texte: f("terms") },
-    { href: "/legal/cookies", texte: f("cookiesPolicy") },
-    { href: "/legal/mentions", texte: f("mentions") },
+    { href: `/${langue}/legal/privacy`, texte: f("privacy") },
+    { href: `/${langue}/legal/terms`, texte: f("terms") },
+    { href: `/${langue}/legal/cookies`, texte: f("cookiesPolicy") },
+    { href: `/${langue}/legal/mentions`, texte: f("mentions") },
   ];
 
   return (
@@ -69,7 +93,7 @@ export function SiteFooter() {
             {f("tagline")}
           </p>
           <div className="flex items-center gap-4 text-zinc-400">
-            <Link href="/blog" className="text-sm transition-colors hover:text-white">
+            <Link href={`/${langue}/blog`} className="text-sm transition-colors hover:text-white">
               {f("blog")}
             </Link>
             <Link href="/contact" className="text-sm transition-colors hover:text-white">
@@ -137,7 +161,12 @@ export function SiteFooter() {
           </button>
         </div>
 
-        <p className="text-center text-xs text-zinc-500">{f("copyright")}</p>
+        <p className="text-center text-xs text-zinc-500">
+          {f("copyright")} ·{" "}
+          <a href={PORTFOLIO_URL} className="transition-colors hover:text-white">
+            Valentin Milliand
+          </a>
+        </p>
       </div>
     </footer>
   );
