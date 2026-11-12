@@ -8,9 +8,9 @@ const LOCALES = ["fr", "en", "es", "de", "pt"];
 
 const TABS = [
   { key: "overview", href: "", label: "Vue d'ensemble", icon: BookOpen },
-  { key: "inbox", href: "/inbox", label: "AeviaInbox", icon: MessageSquare },
-  { key: "launch", href: "/launch", label: "AeviaLaunch", icon: Sparkles },
-  { key: "security", href: "/security", label: "AeviaSecurity", icon: Shield },
+  { key: "inbox", href: "/inbox", label: "Aevia Inbox", icon: MessageSquare },
+  { key: "launch", href: "/launch", label: "Aevia Launch", icon: Sparkles },
+  { key: "security", href: "/security", label: "Aevia Security", icon: Shield },
 ] as const;
 
 export function DocsNav() {

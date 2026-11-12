@@ -55,7 +55,7 @@ export default function PrivacyPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">{c.lastUpdated}</p>
+      <p className="text-xs text-zinc-400 mb-2">{c.lastUpdated}</p>
       <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">{c.title}</h1>
       <p className="text-zinc-400 text-sm mb-10 leading-relaxed">{c.intro}</p>
 
@@ -190,10 +190,10 @@ export default function PrivacyPage() {
             <div key={p.name} className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
               <div className="flex items-start justify-between mb-2">
                 <p className="font-semibold text-white">{p.name}</p>
-                <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">{p.tag}</span>
+                <span className="text-xs text-zinc-400 bg-zinc-800 px-2 py-0.5 rounded-full">{p.tag}</span>
               </div>
               <p className="text-zinc-400 leading-relaxed mb-2">{p.desc}</p>
-              {p.transfer ? <p className="text-zinc-500 text-xs">{p.transfer}</p> : null}
+              {p.transfer ? <p className="text-zinc-400 text-xs">{p.transfer}</p> : null}
               <a href={p.href} target="_blank" rel="noopener noreferrer" className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block">
                 {p.linkLabel} &rarr;
               </a>
@@ -300,7 +300,7 @@ export default function PrivacyPage() {
 
       {/* Disclaimer */}
       <div className="mt-12 pt-6 border-t border-zinc-800/60">
-        <p className="text-xs text-zinc-600 leading-relaxed italic">{c.disclaimer}</p>
+        <p className="text-xs text-zinc-400 leading-relaxed italic">{c.disclaimer}</p>
       </div>
     </main>
   );

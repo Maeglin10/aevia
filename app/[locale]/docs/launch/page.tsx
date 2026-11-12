@@ -46,13 +46,13 @@ export async function generateMetadata({
 
 export default function DocsLaunchPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2 uppercase tracking-wider font-medium">Documentation · AeviaLaunch</p>
+    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300 [&_p]:max-w-[60ch]">
+      <p className="text-xs text-zinc-400 mb-2 uppercase tracking-wider font-medium">Documentation · Aevia Launch</p>
       <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
-        AeviaLaunch
+        Aevia Launch
       </h1>
       <p className="text-zinc-400 leading-relaxed mb-10">
-        AeviaLaunch génère un site web professionnel à partir d&apos;un template et des informations
+        Aevia Launch génère un site web professionnel à partir d&apos;un template et des informations
         de l&apos;entreprise (secteur, description, charte graphique, textes). Le client choisit un
         template, remplit un formulaire, et l&apos;IA rédige le contenu du site (accroche, à propos,
         services, témoignages) sur cette base.
@@ -97,7 +97,7 @@ export default function DocsLaunchPage() {
             <span className="text-zinc-400">Présentation d&apos;entreprise multi-sections.</span>
           </li>
         </ul>
-        <p className="text-sm leading-relaxed text-zinc-500 mt-4">
+        <p className="text-sm leading-relaxed text-zinc-400 mt-4">
           D&apos;autres profils existent : hôtellerie, santé, immobilier, fitness, agence créative,
           non-profit, portfolio, événementiel, luxe, 3D/tech, entre autres.
         </p>
@@ -117,28 +117,28 @@ export default function DocsLaunchPage() {
               <span className="font-semibold text-white text-sm">Landing</span>
               <span className="text-xs text-red-400 font-medium">2 h</span>
             </div>
-            <p className="text-xs text-zinc-500">1 page de conversion sur thème existant.</p>
+            <p className="text-xs text-zinc-400">1 page de conversion sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Essentiel</span>
               <span className="text-xs text-red-400 font-medium">2 h</span>
             </div>
-            <p className="text-xs text-zinc-500">Site one-page complet sur thème existant.</p>
+            <p className="text-xs text-zinc-400">Site one-page complet sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Pro</span>
               <span className="text-xs text-red-400 font-medium">24-48 h</span>
             </div>
-            <p className="text-xs text-zinc-500">3 à 5 pages semi sur-mesure sur thème existant.</p>
+            <p className="text-xs text-zinc-400">3 à 5 pages semi sur-mesure sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Premium</span>
               <span className="text-xs text-red-400 font-medium">5-7 j</span>
             </div>
-            <p className="text-xs text-zinc-500">100 % sur-mesure, hors template.</p>
+            <p className="text-xs text-zinc-400">100 % sur-mesure, hors template.</p>
           </div>
         </div>
         <p className="text-sm leading-relaxed text-zinc-400 mt-4">

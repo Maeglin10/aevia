@@ -89,7 +89,7 @@ export function SiteFooter() {
         <div className="flex w-full flex-col items-center gap-3 sm:flex-row sm:justify-between">
           <p className="text-sm text-zinc-400">
             <span className="font-semibold text-white">Aevia</span>
-            <span className="mx-1.5 text-zinc-600">·</span>
+            <span className="mx-1.5 text-zinc-400">·</span>
             {f("tagline")}
           </p>
           <div className="flex items-center gap-4 text-zinc-400">
@@ -161,7 +161,7 @@ export function SiteFooter() {
           </button>
         </div>
 
-        <p className="text-center text-xs text-zinc-500">
+        <p className="text-center text-xs text-zinc-400">
           {f("copyright")} ·{" "}
           <a href={PORTFOLIO_URL} className="transition-colors hover:text-white">
             Valentin Milliand

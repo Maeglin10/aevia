@@ -112,7 +112,7 @@ Un outil comme **Google PageSpeed Insights** vous donnera en 30 secondes le scor
 
 ## Par où commencer concrètement ?
 
-**AeviaLaunch** propose une bibliothèque de plus de 200 templates sectoriels pensés pour la performance et la conversion — restauration, conseil, e-commerce, beauté, immobilier, et bien d'autres. Chaque template est mobile-first, personnalisable, et déployé en moins de 7 jours.
+**Aevia Launch** propose une bibliothèque de plus de 200 templates sectoriels pensés pour la performance et la conversion — restauration, conseil, e-commerce, beauté, immobilier, et bien d'autres. Chaque template est mobile-first, personnalisable, et déployé en moins de 7 jours.
 
 La meilleure approche : filtrez par secteur d'activité d'abord, puis par style visuel. Vous réduirez votre sélection à 3-5 candidats sérieux au lieu de vous perdre dans une galerie de plusieurs centaines d'options.`,
     i18n: {
@@ -191,7 +191,7 @@ A tool like **Google PageSpeed Insights** will give you a template's performance
 
 ## Where to actually start
 
-**AeviaLaunch** offers a library of over 100 sector templates built for performance and conversion — food, consulting, e-commerce, beauty, real estate and many more. Each template is mobile-first, customizable, and delivered in under 7 days.
+**Aevia Launch** offers a library of over 100 sector templates built for performance and conversion — food, consulting, e-commerce, beauty, real estate and many more. Each template is mobile-first, customizable, and delivered in under 7 days.
 
 The best approach: filter by sector first, then by visual style. You will narrow your shortlist to 3-5 serious candidates instead of getting lost in a gallery of hundreds.`,
       },
@@ -270,7 +270,7 @@ Una herramienta como **Google PageSpeed Insights** te dará en 30 segundos la pu
 
 ## Por dónde empezar en concreto
 
-**AeviaLaunch** ofrece una biblioteca de más de 100 plantillas sectoriales pensadas para el rendimiento y la conversión — restauración, consultoría, e-commerce, belleza, inmobiliaria y muchas más. Cada plantilla es mobile-first, personalizable y desplegada en menos de 7 días.
+**Aevia Launch** ofrece una biblioteca de más de 100 plantillas sectoriales pensadas para el rendimiento y la conversión — restauración, consultoría, e-commerce, belleza, inmobiliaria y muchas más. Cada plantilla es mobile-first, personalizable y desplegada en menos de 7 días.
 
 El mejor enfoque: filtra primero por sector, luego por estilo visual. Reducirás tu selección a 3-5 candidatas serias en lugar de perderte en una galería de cientos de opciones.`,
       },
@@ -360,7 +360,7 @@ Pour un site vitrine classique, la conformité de base prend **1 à 2 jours** :
 3. Installer une solution de gestion des consentements cookies (Axeptio, Cookiebot, ou une solution open source)
 4. Configurer votre outil analytics en mode "sans cookies" ou en mode "anonymisation IP" en attendant le consentement
 
-AeviaLaunch intègre nativement les pages légales dans les templates — mentions légales, politique de confidentialité et gestion des cookies sont prêtes à personnaliser dès le départ.
+Aevia Launch intègre nativement les pages légales dans les templates — mentions légales, politique de confidentialité et gestion des cookies sont prêtes à personnaliser dès le départ.
 
 ---
 
@@ -453,7 +453,7 @@ For a standard brochure site, basic compliance takes **1 to 2 days**:
 3. Install a cookie consent management solution (Axeptio, Cookiebot, or an open-source option)
 4. Configure your analytics tool in "cookieless" or "IP anonymization" mode while waiting for consent
 
-AeviaLaunch includes the legal pages natively in its templates — legal notice, privacy policy and cookie management are ready to customize from the start.
+Aevia Launch includes the legal pages natively in its templates — legal notice, privacy policy and cookie management are ready to customize from the start.
 
 ---
 
@@ -545,7 +545,7 @@ Para una web de presentación estándar, el cumplimiento básico lleva **de 1 a 
 3. Instalar una solución de gestión del consentimiento de cookies (Axeptio, Cookiebot, o una opción de código abierto)
 4. Configurar tu herramienta de analítica en modo "sin cookies" o "anonimización de IP" mientras esperas el consentimiento
 
-AeviaLaunch incluye las páginas legales de forma nativa en sus plantillas — aviso legal, política de privacidad y gestión de cookies listas para personalizar desde el principio.
+Aevia Launch incluye las páginas legales de forma nativa en sus plantillas — aviso legal, política de privacidad y gestión de cookies listas para personalizar desde el principio.
 
 ---
 
@@ -661,7 +661,7 @@ Testez votre site maintenant :
 3. **Chronométrez** : en combien de secondes comprenez-vous ce que le site propose ?
 4. **Essayez de cliquer sur le bouton de contact** — est-il facile à trouver ?
 
-Si vous identifiez des problèmes, les outils comme AeviaLaunch permettent de reconstruire entièrement votre site sur des templates optimisés pour la conversion, la vitesse et le mobile — en moins d'une semaine.`,
+Si vous identifiez des problèmes, les outils comme Aevia Launch permettent de reconstruire entièrement votre site sur des templates optimisés pour la conversion, la vitesse et le mobile — en moins d'une semaine.`,
     i18n: {
       en: {
         title: "5 website mistakes that drive your customers away in 10 seconds",
@@ -763,7 +763,7 @@ Test your site now:
 3. **Time it**: how many seconds to understand what the site offers?
 4. **Try clicking the contact button** — is it easy to find?
 
-If you spot problems, tools like AeviaLaunch let you fully rebuild your site on templates optimized for conversion, speed and mobile — in under a week.`,
+If you spot problems, tools like Aevia Launch let you fully rebuild your site on templates optimized for conversion, speed and mobile — in under a week.`,
       },
       es: {
         title: "5 errores de web que ahuyentan a tus clientes en 10 segundos",
@@ -865,7 +865,7 @@ Prueba tu web ahora:
 3. **Cronométrate**: ¿en cuántos segundos entiendes lo que ofrece la web?
 4. **Intenta pulsar el botón de contacto** — ¿es fácil de encontrar?
 
-Si detectas problemas, herramientas como AeviaLaunch permiten reconstruir por completo tu web sobre plantillas optimizadas para la conversión, la velocidad y el móvil — en menos de una semana.`,
+Si detectas problemas, herramientas como Aevia Launch permiten reconstruir por completo tu web sobre plantillas optimizadas para la conversión, la velocidad y el móvil — en menos de una semana.`,
       },
     },
   },
@@ -2146,7 +2146,7 @@ Allez sur **haveibeenpwned.com** et entrez votre adresse email professionnelle. 
 
 Si c'est le cas — et pour beaucoup d'adresses emails actives depuis plusieurs années, c'est le cas — changez immédiatement les mots de passe de tous les services liés à cette adresse et activez le 2FA partout.
 
-Des outils comme **AeviaSecurity** permettent également d'auditer la sécurité globale de votre domaine, incluant la vérification de vos enregistrements email (SPF, DKIM, DMARC) qui protègent votre domaine contre l'usurpation.`,
+Des outils comme **Aevia Security** permettent également d'auditer la sécurité globale de votre domaine, incluant la vérification de vos enregistrements email (SPF, DKIM, DMARC) qui protègent votre domaine contre l'usurpation.`,
     i18n: {
       en: {
         title: "Password security: protect your business accounts in 2026",
@@ -2234,7 +2234,7 @@ Go to **haveibeenpwned.com** and enter your business email address. This service
 
 If it was — and for many addresses active for several years, it was — immediately change the passwords of every service tied to that address and enable 2FA everywhere.
 
-Tools like **AeviaSecurity** can also audit your domain's overall security, including checking your email records (SPF, DKIM, DMARC) that protect your domain against spoofing.`,
+Tools like **Aevia Security** can also audit your domain's overall security, including checking your email records (SPF, DKIM, DMARC) that protect your domain against spoofing.`,
       },
       es: {
         title: "Seguridad de contraseñas: protege tus cuentas profesionales en 2026",
@@ -2322,7 +2322,7 @@ Ve a **haveibeenpwned.com** e introduce tu dirección de email profesional. Este
 
 Si es el caso — y para muchas direcciones activas desde hace varios años, lo es — cambia de inmediato las contraseñas de todos los servicios ligados a esa dirección y activa el 2FA en todas partes.
 
-Herramientas como **AeviaSecurity** también permiten auditar la seguridad global de tu dominio, incluida la verificación de tus registros de email (SPF, DKIM, DMARC) que protegen tu dominio contra la suplantación.`,
+Herramientas como **Aevia Security** también permiten auditar la seguridad global de tu dominio, incluida la verificación de tus registros de email (SPF, DKIM, DMARC) que protegen tu dominio contra la suplantación.`,
       },
     },
   },
@@ -2423,9 +2423,9 @@ Une modification de titre qui améliore le taux de conversion de 15 % peut doubl
 
 ---
 
-## L'exemple concret d'AeviaLaunch
+## L'exemple concret d'Aevia Launch
 
-Les templates AeviaLaunch sont conçus avec un tunnel de conversion intégré :
+Les templates Aevia Launch sont conçus avec un tunnel de conversion intégré :
 
 - Hero avec proposition de valeur claire
 - Section témoignages clients
@@ -2529,9 +2529,9 @@ A headline change that improves conversion by 15% can double your leads without 
 
 ---
 
-## The concrete example of AeviaLaunch
+## The concrete example of Aevia Launch
 
-AeviaLaunch templates are built with a conversion funnel baked in:
+Aevia Launch templates are built with a conversion funnel baked in:
 
 - Hero with a clear value proposition
 - Customer testimonials section
@@ -2635,9 +2635,9 @@ Un cambio de titular que mejora la conversión un 15% puede duplicar tus leads s
 
 ---
 
-## El ejemplo concreto de AeviaLaunch
+## El ejemplo concreto de Aevia Launch
 
-Las plantillas de AeviaLaunch están diseñadas con un embudo de conversión integrado:
+Las plantillas de Aevia Launch están diseñadas con un embudo de conversión integrado:
 
 - Hero con una propuesta de valor clara
 - Sección de testimonios de clientes
@@ -2953,7 +2953,7 @@ Un bon site en 2026, c'est :
 - **Un formulaire de contact ou un bouton d'appel à l'action visible** sur chaque page
 - **Un design mobile-first** — plus de 65 % des visites viennent du smartphone
 
-Des solutions comme AeviaLaunch permettent d'obtenir un site professionnel, personnalisé et déployé en 7 jours — sans sacrifier la qualité pour la rapidité.
+Des solutions comme Aevia Launch permettent d'obtenir un site professionnel, personnalisé et déployé en 7 jours — sans sacrifier la qualité pour la rapidité.
 
 ---
 
@@ -3012,7 +3012,7 @@ Les optimisations de base :
 - **Activez la mise en cache** au niveau du serveur et du navigateur
 - **Minimisez les scripts tiers** — chaque plugin, widget ou tracker ajoute du poids
 
-Pas sûr de la vitesse de votre site ? Des outils comme AeviaSecurity vous donnent en quelques secondes un score de performance ainsi que des recommandations concrètes pour y remédier.
+Pas sûr de la vitesse de votre site ? Des outils comme Aevia Security vous donnent en quelques secondes un score de performance ainsi que des recommandations concrètes pour y remédier.
 
 ---
 
@@ -3050,7 +3050,7 @@ A good site in 2026 is:
 - **A visible contact form or call-to-action button** on every page
 - **A mobile-first design** — over 65% of visits come from smartphones
 
-Solutions like AeviaLaunch deliver a professional, customized site deployed in 7 days — without sacrificing quality for speed.
+Solutions like Aevia Launch deliver a professional, customized site deployed in 7 days — without sacrificing quality for speed.
 
 ---
 
@@ -3109,7 +3109,7 @@ The basic optimizations:
 - **Enable caching** at the server and browser level
 - **Minimize third-party scripts** — every plugin, widget or tracker adds weight
 
-Not sure about your site's speed? Tools like AeviaSecurity give you a performance score in seconds, plus concrete recommendations to fix it.
+Not sure about your site's speed? Tools like Aevia Security give you a performance score in seconds, plus concrete recommendations to fix it.
 
 ---
 
@@ -3147,7 +3147,7 @@ Una buena web en 2026 es:
 - **Un formulario de contacto o un botón de llamada a la acción visible** en cada página
 - **Un diseño mobile-first** — más del 65% de las visitas vienen del smartphone
 
-Soluciones como AeviaLaunch permiten obtener una web profesional, personalizada y desplegada en 7 días — sin sacrificar la calidad por la rapidez.
+Soluciones como Aevia Launch permiten obtener una web profesional, personalizada y desplegada en 7 días — sin sacrificar la calidad por la rapidez.
 
 ---
 
@@ -3206,7 +3206,7 @@ Las optimizaciones básicas:
 - **Activa el cacheo** a nivel de servidor y de navegador
 - **Minimiza los scripts de terceros** — cada plugin, widget o tracker añade peso
 
-¿No estás seguro de la velocidad de tu web? Herramientas como AeviaSecurity te dan en segundos una puntuación de rendimiento, además de recomendaciones concretas para solucionarlo.
+¿No estás seguro de la velocidad de tu web? Herramientas como Aevia Security te dan en segundos una puntuación de rendimiento, además de recomendaciones concretas para solucionarlo.
 
 ---
 
@@ -3283,7 +3283,7 @@ Les protocoles à vérifier : **SPF**, **DKIM** et **DMARC** pour protéger votr
 
 La bonne nouvelle : vous n'avez pas besoin d'être expert en sécurité pour obtenir une vision claire de l'état de votre site.
 
-Des outils comme **AeviaSecurity** permettent en moins de 60 secondes de scanner votre domaine et d'obtenir :
+Des outils comme **Aevia Security** permettent en moins de 60 secondes de scanner votre domaine et d'obtenir :
 
 - Un score global de sécurité sur 100
 - Le détail des problèmes identifiés, par ordre de criticité
@@ -3377,7 +3377,7 @@ The protocols to check: **SPF**, **DKIM** and **DMARC** to protect your email re
 
 The good news: you do not need to be a security expert to get a clear picture of your site's state.
 
-Tools like **AeviaSecurity** can, in under 60 seconds, scan your domain and give you:
+Tools like **Aevia Security** can, in under 60 seconds, scan your domain and give you:
 
 - An overall security score out of 100
 - The detail of identified issues, ranked by criticality
@@ -3471,7 +3471,7 @@ Los protocolos a comprobar: **SPF**, **DKIM** y **DMARC** para proteger tu reput
 
 La buena noticia: no necesitas ser experto en seguridad para tener una visión clara del estado de tu web.
 
-Herramientas como **AeviaSecurity** permiten en menos de 60 segundos escanear tu dominio y obtener:
+Herramientas como **Aevia Security** permiten en menos de 60 segundos escanear tu dominio y obtener:
 
 - Una puntuación global de seguridad sobre 100
 - El detalle de los problemas identificados, por orden de criticidad
@@ -4082,7 +4082,7 @@ Un vrai agent vocal IA :
 
 Le vrai calcul n'est pas le prix de l'outil, mais le coût des réservations ratées. Une seule table de 4 couverts perdue peut représenter 100 à 200 € de chiffre d'affaires. Sur un mois, quelques appels manqués par jour finissent par peser lourd.
 
-Un service comme AeviaInbox propose la voix IA à partir de 49 $/mois, avec des paliers selon le volume de minutes d'appel. Autrement dit, l'outil est rentabilisé dès la première ou deuxième réservation qu'il récupère.
+Un service comme Aevia Inbox propose la voix IA à partir de 49 $/mois, avec des paliers selon le volume de minutes d'appel. Autrement dit, l'outil est rentabilisé dès la première ou deuxième réservation qu'il récupère.
 
 ---
 
@@ -4104,7 +4104,7 @@ Français, anglais, espagnol, portugais et plus — l'agent s'adapte à la langu
 
 Ne laissez plus le téléphone sonner dans le vide pendant le service.
 
-👉 [Découvrir le standard téléphonique IA d'AeviaInbox](https://inbox.aevia.services)
+👉 [Découvrir le standard téléphonique IA d'Aevia Inbox](https://inbox.aevia.services)
 `,
     faq: [
       {
@@ -4178,7 +4178,7 @@ A real AI voice agent:
 
 The real calculation is not the price of the tool, but the cost of missed bookings. A single table of 4 can be worth 100 to 200 EUR in revenue. Over a month, a few missed calls a day add up fast.
 
-A service like AeviaInbox offers AI voice from 49 USD/month, with tiers based on call-minute volume. In other words, the tool pays for itself with the first or second reservation it recovers.
+A service like Aevia Inbox offers AI voice from 49 USD/month, with tiers based on call-minute volume. In other words, the tool pays for itself with the first or second reservation it recovers.
 
 ---
 
@@ -4200,7 +4200,7 @@ French, English, Spanish, Portuguese and more — the agent adapts to the custom
 
 Stop letting the phone ring into the void during service.
 
-👉 [Discover AeviaInbox's AI phone system](https://inbox.aevia.services)
+👉 [Discover Aevia Inbox's AI phone system](https://inbox.aevia.services)
 `,
         faq: [
           { q: "Does the AI actually take the reservation, or just a message?", a: "It actually takes the reservation: it checks availability, confirms with the customer and records the booking in the restaurant's calendar." },
@@ -4262,7 +4262,7 @@ Un verdadero agente de voz con IA:
 
 El cálculo real no es el precio de la herramienta, sino el coste de las reservas perdidas. Una sola mesa de 4 puede suponer entre 100 y 200 EUR de facturación. En un mes, unas pocas llamadas perdidas al día suman mucho.
 
-Un servicio como AeviaInbox ofrece voz con IA desde 49 USD/mes, con niveles según el volumen de minutos de llamada. Es decir, la herramienta se amortiza con la primera o segunda reserva que recupera.
+Un servicio como Aevia Inbox ofrece voz con IA desde 49 USD/mes, con niveles según el volumen de minutos de llamada. Es decir, la herramienta se amortiza con la primera o segunda reserva que recupera.
 
 ---
 
@@ -4284,7 +4284,7 @@ Francés, inglés, español, portugués y más — el agente se adapta al idioma
 
 Deja de dejar que el teléfono suene en vano durante el servicio.
 
-👉 [Descubre la centralita con IA de AeviaInbox](https://inbox.aevia.services)
+👉 [Descubre la centralita con IA de Aevia Inbox](https://inbox.aevia.services)
 `,
         faq: [
           { q: "¿La IA toma realmente la reserva, o solo un mensaje?", a: "Toma realmente la reserva: comprueba la disponibilidad, confirma con el cliente y registra la reserva en el calendario del restaurante." },
@@ -4350,7 +4350,7 @@ Le point commun : beaucoup d'appels répétitifs pour des rendez-vous, et un per
 
 Chaque appel de prise de rendez-vous traité automatiquement, c'est quelques minutes rendues à votre équipe, multipliées par des dizaines d'appels par jour. Et chaque appel décroché en dehors des heures d'ouverture, c'est un rendez-vous que vous auriez perdu.
 
-AeviaInbox propose cette voix IA à partir de 49 $/mois, avec des paliers selon le volume d'appels. Le calcul est simple : combien de rendez-vous perdez-vous aujourd'hui parce que personne ne peut décrocher ?
+Aevia Inbox propose cette voix IA à partir de 49 $/mois, avec des paliers selon le volume d'appels. Le calcul est simple : combien de rendez-vous perdez-vous aujourd'hui parce que personne ne peut décrocher ?
 
 ---
 
@@ -4372,7 +4372,7 @@ Oui, 24h/24 — c'est justement là que se perdent le plus de rendez-vous aujour
 
 Rendez à votre équipe le temps passé au téléphone.
 
-👉 [Découvrir l'agent vocal IA d'AeviaInbox](https://inbox.aevia.services)
+👉 [Découvrir l'agent vocal IA d'Aevia Inbox](https://inbox.aevia.services)
 `,
     faq: [
       {
@@ -4445,7 +4445,7 @@ The common thread: lots of repetitive appointment calls, and front-desk staff wh
 
 Every appointment call handled automatically is a few minutes returned to your team, multiplied by dozens of calls a day. And every call answered outside opening hours is an appointment you would have lost.
 
-AeviaInbox offers this AI voice from 49 USD/month, with tiers based on call volume. The math is simple: how many appointments do you lose today because no one can pick up?
+Aevia Inbox offers this AI voice from 49 USD/month, with tiers based on call volume. The math is simple: how many appointments do you lose today because no one can pick up?
 
 ---
 
@@ -4467,7 +4467,7 @@ Yes, 24/7 — which is exactly when most appointments are lost today.
 
 Give your team back the time spent on the phone.
 
-👉 [Discover AeviaInbox's AI voice agent](https://inbox.aevia.services)
+👉 [Discover Aevia Inbox's AI voice agent](https://inbox.aevia.services)
 `,
         faq: [
           { q: "Does the agent have access to my calendar?", a: "Yes, it checks availability in real time and books the appointment directly into the synced calendar." },
@@ -4528,7 +4528,7 @@ El punto común: muchas llamadas repetitivas de citas, y un personal de recepci�
 
 Cada llamada de cita gestionada automáticamente son unos minutos devueltos a tu equipo, multiplicados por decenas de llamadas al día. Y cada llamada atendida fuera del horario es una cita que habrías perdido.
 
-AeviaInbox ofrece esta voz con IA desde 49 USD/mes, con niveles según el volumen de llamadas. El cálculo es simple: ¿cuántas citas pierdes hoy porque nadie puede contestar?
+Aevia Inbox ofrece esta voz con IA desde 49 USD/mes, con niveles según el volumen de llamadas. El cálculo es simple: ¿cuántas citas pierdes hoy porque nadie puede contestar?
 
 ---
 
@@ -4550,7 +4550,7 @@ Sí, 24/7 — que es justo cuando más citas se pierden hoy.
 
 Devuelve a tu equipo el tiempo que pasa al teléfono.
 
-👉 [Descubre el agente de voz con IA de AeviaInbox](https://inbox.aevia.services)
+👉 [Descubre el agente de voz con IA de Aevia Inbox](https://inbox.aevia.services)
 `,
         faq: [
           { q: "¿El agente tiene acceso a mi agenda?", a: "Sí, consulta la disponibilidad en tiempo real y agenda la cita directamente en la agenda sincronizada." },
@@ -4591,7 +4591,7 @@ Contrairement à une secrétaire ou un centre d'appel, il n'y a ni salaire, ni c
 
 ## Les paliers de prix, concrètement
 
-Chez AeviaInbox, la tarification est modulable et le prix par palier est le même quel que soit le mode choisi (messages seuls, voix seule, ou les deux) — seul le quota inclus change :
+Chez Aevia Inbox, la tarification est modulable et le prix par palier est le même quel que soit le mode choisi (messages seuls, voix seule, ou les deux) — seul le quota inclus change :
 
 - **Starter — 49 $/mois** : pour un petit volume d'appels ou de messages.
 - **Growth — 99 $/mois** : pour un flux régulier.
@@ -4616,7 +4616,7 @@ Face à ces montants, un abonnement à 49 à 199 $/mois se rentabilise en une po
 
 ## Ce qui est inclus (et ce qui ne l'est pas)
 
-Inclus dans un service comme AeviaInbox :
+Inclus dans un service comme Aevia Inbox :
 - La ligne et l'agent vocal IA.
 - La compréhension du langage naturel et la réponse dans la langue du client.
 - La création réelle des réservations / rendez-vous et la synchronisation calendrier.
@@ -4644,7 +4644,7 @@ On choisit un palier adapté à son volume ; si le volume grandit, on passe au p
 
 Faites le calcul pour votre activité : combien vous coûtent aujourd'hui les appels que personne ne décroche ?
 
-👉 [Voir les tarifs d'AeviaInbox](https://inbox.aevia.services/fr/pricing)
+👉 [Voir les tarifs d'Aevia Inbox](https://inbox.aevia.services/fr/pricing)
 `,
     faq: [
       {
@@ -4692,7 +4692,7 @@ Unlike a receptionist or a call center, there is no salary, no payroll taxes, no
 
 ## The price tiers, concretely
 
-At AeviaInbox, pricing is modular and the price per tier is the same whatever mode you choose (messages only, voice only, or both) — only the included quota changes:
+At Aevia Inbox, pricing is modular and the price per tier is the same whatever mode you choose (messages only, voice only, or both) — only the included quota changes:
 
 - **Starter — 49 USD/month**: for a small volume of calls or messages.
 - **Growth — 99 USD/month**: for a steady flow.
@@ -4717,7 +4717,7 @@ Against those numbers, a subscription at 49 to 199 USD/month pays for itself in 
 
 ## What is included (and what is not)
 
-Included in a service like AeviaInbox:
+Included in a service like Aevia Inbox:
 - The line and the AI voice agent.
 - Natural-language understanding and answering in the customer's language.
 - Actually creating bookings/appointments and syncing the calendar.
@@ -4745,7 +4745,7 @@ You pick a tier suited to your volume; if the volume grows, you move up a tier.
 
 Do the math for your business: how much do the calls no one answers cost you today?
 
-👉 [See AeviaInbox pricing](https://inbox.aevia.services/en/pricing)
+👉 [See Aevia Inbox pricing](https://inbox.aevia.services/en/pricing)
 `,
         faq: [
           { q: "Is there a commitment for an AI phone agent?", a: "The model is a monthly subscription; you pick your tier based on your call and message volume." },
@@ -4781,7 +4781,7 @@ A diferencia de una recepcionista o un call center, no hay salario, ni cotizacio
 
 ## Los niveles de precio, en concreto
 
-En AeviaInbox la tarificación es modular y el precio por nivel es el mismo sea cual sea el modo elegido (solo mensajes, solo voz, o ambos) — solo cambia la cuota incluida:
+En Aevia Inbox la tarificación es modular y el precio por nivel es el mismo sea cual sea el modo elegido (solo mensajes, solo voz, o ambos) — solo cambia la cuota incluida:
 
 - **Starter — 49 USD/mes**: para un volumen pequeño de llamadas o mensajes.
 - **Growth — 99 USD/mes**: para un flujo regular.
@@ -4806,7 +4806,7 @@ Frente a esas cifras, una suscripción de 49 a 199 USD/mes se amortiza con un pu
 
 ## Qué incluye (y qué no)
 
-Incluido en un servicio como AeviaInbox:
+Incluido en un servicio como Aevia Inbox:
 - La línea y el agente de voz con IA.
 - La comprensión del lenguaje natural y la respuesta en el idioma del cliente.
 - La creación real de reservas/citas y la sincronización del calendario.
@@ -4834,7 +4834,7 @@ Eliges un nivel adaptado a tu volumen; si el volumen crece, pasas al nivel super
 
 Haz el cálculo para tu negocio: ¿cuánto te cuestan hoy las llamadas que nadie contesta?
 
-👉 [Ver los precios de AeviaInbox](https://inbox.aevia.services/es/pricing)
+👉 [Ver los precios de Aevia Inbox](https://inbox.aevia.services/es/pricing)
 `,
         faq: [
           { q: "¿Hay permanencia con un agente telefónico con IA?", a: "El modelo es una suscripción mensual; eliges tu nivel según tu volumen de llamadas y mensajes." },
@@ -4898,7 +4898,7 @@ Un agent vocal IA règle le problème à la racine : il décroche à chaque appe
 
 Il comprend la demande, y répond ou réalise l'action (réservation, rendez-vous, commande, information), dans la langue du client. Pour l'appelant, l'expérience est fluide : il a sa réponse tout de suite. Pour vous, l'appel n'est plus perdu.
 
-Des services comme AeviaInbox proposent cette voix IA à partir de 49 $/mois, avec la possibilité d'ajouter aussi WhatsApp, Instagram et email dans la même solution — pour ne plus rien manquer, quel que soit le canal par lequel le client vous contacte.
+Des services comme Aevia Inbox proposent cette voix IA à partir de 49 $/mois, avec la possibilité d'ajouter aussi WhatsApp, Instagram et email dans la même solution — pour ne plus rien manquer, quel que soit le canal par lequel le client vous contacte.
 
 ---
 
@@ -4920,7 +4920,7 @@ Oui, la voix et les messageries peuvent être réunies dans une seule solution.
 
 Arrêtez de laisser vos clients aller chez le concurrent d'à côté faute de réponse.
 
-👉 [Découvrir AeviaInbox](https://inbox.aevia.services)
+👉 [Découvrir Aevia Inbox](https://inbox.aevia.services)
 `,
     faq: [
       {
@@ -4991,7 +4991,7 @@ An AI voice agent solves the problem at its root: it picks up every call, immedi
 
 It understands the request, answers it or performs the action (booking, appointment, order, information), in the customer's language. For the caller, the experience is smooth: they get their answer right away. For you, the call is no longer lost.
 
-Services like AeviaInbox offer this AI voice from 49 USD/month, with the option to also add WhatsApp, Instagram and email in the same solution — so you miss nothing, whatever channel the customer uses to reach you.
+Services like Aevia Inbox offer this AI voice from 49 USD/month, with the option to also add WhatsApp, Instagram and email in the same solution — so you miss nothing, whatever channel the customer uses to reach you.
 
 ---
 
@@ -5013,7 +5013,7 @@ Yes, voice and messaging (WhatsApp, Instagram, email) can be brought together in
 
 Stop letting your customers go to the competitor next door for lack of an answer.
 
-👉 [Discover AeviaInbox](https://inbox.aevia.services)
+👉 [Discover Aevia Inbox](https://inbox.aevia.services)
 `,
         faq: [
           { q: "Does the customer realize they are talking to an AI?", a: "The agent is transparent and efficient; what matters to the caller is getting an immediate answer or booking." },
@@ -5072,7 +5072,7 @@ Un agente de voz con IA resuelve el problema de raíz: contesta todas las llamad
 
 Entiende la petición, la responde o realiza la acción (reserva, cita, pedido, información), en el idioma del cliente. Para quien llama, la experiencia es fluida: obtiene su respuesta al momento. Para ti, la llamada ya no se pierde.
 
-Servicios como AeviaInbox ofrecen esta voz con IA desde 49 USD/mes, con la opción de añadir también WhatsApp, Instagram y email en la misma solución — para no perder nada, sea cual sea el canal por el que el cliente te contacte.
+Servicios como Aevia Inbox ofrecen esta voz con IA desde 49 USD/mes, con la opción de añadir también WhatsApp, Instagram y email en la misma solución — para no perder nada, sea cual sea el canal por el que el cliente te contacte.
 
 ---
 
@@ -5094,7 +5094,7 @@ Sí, la voz y la mensajería (WhatsApp, Instagram, email) pueden reunirse en una
 
 Deja de dejar que tus clientes se vayan al competidor de al lado por falta de respuesta.
 
-👉 [Descubre AeviaInbox](https://inbox.aevia.services)
+👉 [Descubre Aevia Inbox](https://inbox.aevia.services)
 `,
         faq: [
           { q: "¿Se da cuenta el cliente de que habla con una IA?", a: "El agente es transparente y eficaz; lo que importa a quien llama es obtener una respuesta o reserva inmediata." },

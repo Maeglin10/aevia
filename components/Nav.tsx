@@ -62,9 +62,9 @@ const products: Array<{
   descKey: keyof NavTrans;
   status: "live" | "soon";
 }> = [
-  { name: "AeviaLaunch",   href: "https://launch.aevia.services",    descKey: "descLaunch",    status: "live" },
-  { name: "AeviaSecurity", href: "https://security.aevia.services",  descKey: "descSecurity",  status: "live" },
-  { name: "AeviaInbox",    href: "https://inbox.aevia.services",     descKey: "descInbox",     status: "live" },
+  { name: "Aevia Launch",   href: "https://launch.aevia.services",    descKey: "descLaunch",    status: "live" },
+  { name: "Aevia Security", href: "https://security.aevia.services",  descKey: "descSecurity",  status: "live" },
+  { name: "Aevia Inbox",    href: "https://inbox.aevia.services",     descKey: "descInbox",     status: "live" },
 ];
 
 const LOCALES = [
@@ -132,8 +132,8 @@ function LangSwitcher() {
 }
 
 const loginLinks = [
-  { name: "AeviaSecurity", href: "https://security.aevia.services/login", icon: Shield },
-  { name: "AeviaInbox",    href: "https://inbox.aevia.services/fr/account/login", icon: MessageSquare },
+  { name: "Aevia Security", href: "https://security.aevia.services/login", icon: Shield },
+  { name: "Aevia Inbox",    href: "https://inbox.aevia.services/fr/account/login", icon: MessageSquare },
 ] as const;
 
 export function Nav() {
@@ -233,14 +233,14 @@ export function Nav() {
                             </span>
                             {isLive ? (
                               <>
-                                <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">Live</span>
-                                <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors" />
+                                <span className="bg-emerald-500/20 text-emerald-300 text-[11px] px-1.5 py-0.5 rounded-full font-medium">Live</span>
+                                <ExternalLink className="w-3 h-3 text-zinc-400 group-hover:text-zinc-400 transition-colors" />
                               </>
                             ) : (
-                              <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">{t.soon}</span>
+                              <span className="bg-amber-500/20 text-amber-300 text-[11px] px-1.5 py-0.5 rounded-full font-medium">{t.soon}</span>
                             )}
                           </div>
-                          <p className="text-xs text-zinc-500">{t[p.descKey]}</p>
+                          <p className="text-xs text-zinc-400">{t[p.descKey]}</p>
                         </div>
                       </a>
                     );
@@ -282,7 +282,7 @@ export function Nav() {
             {loginOpen && (
               <div className="absolute right-0 top-full pt-2 w-64" onClick={() => setLoginOpen(false)}>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden p-2 flex flex-col gap-1">
-                  <p className="text-[10px] text-zinc-600 uppercase tracking-wider font-medium px-2.5 pt-1 pb-0.5">{t.loginSub}</p>
+                  <p className="text-[11px] text-zinc-400 uppercase tracking-wider font-medium px-2.5 pt-1 pb-0.5">{t.loginSub}</p>
                   {loginLinks.map((l) => {
                     const Icon = l.icon;
                     return (
@@ -295,7 +295,7 @@ export function Nav() {
                       >
                         <Icon className="w-4 h-4 text-red-400 shrink-0" />
                         <span className="text-sm font-medium text-white group-hover:text-red-300 transition-colors">{l.name}</span>
-                        <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors ml-auto" />
+                        <ExternalLink className="w-3 h-3 text-zinc-400 group-hover:text-zinc-400 transition-colors ml-auto" />
                       </a>
                     );
                   })}
@@ -340,7 +340,7 @@ export function Nav() {
           })}
 
           <div className="mt-2 pt-2 border-t border-zinc-800 flex flex-col gap-1">
-            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">{t.login}</p>
+            <p className="text-xs text-zinc-400 px-3 py-1 uppercase tracking-wider font-medium">{t.login}</p>
             {loginLinks.map((l) => {
               const Icon = l.icon;
               return (
@@ -360,7 +360,7 @@ export function Nav() {
           </div>
 
           <div className="mt-2 pt-2 border-t border-zinc-800 flex flex-col gap-1">
-            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">{t.mobileProducts}</p>
+            <p className="text-xs text-zinc-400 px-3 py-1 uppercase tracking-wider font-medium">{t.mobileProducts}</p>
             {products.map((p) => {
               const isLive = p.status === "live";
               return (
@@ -374,9 +374,9 @@ export function Nav() {
                 >
                   <span>{p.name}</span>
                   {isLive ? (
-                    <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full">Live</span>
+                    <span className="bg-emerald-500/20 text-emerald-300 text-[11px] px-1.5 py-0.5 rounded-full">Live</span>
                   ) : (
-                    <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full">{t.soon}</span>
+                    <span className="bg-amber-500/20 text-amber-300 text-[11px] px-1.5 py-0.5 rounded-full">{t.soon}</span>
                   )}
                 </a>
               );
@@ -384,7 +384,7 @@ export function Nav() {
           </div>
 
           <div className="mt-2 pt-2 border-t border-zinc-800">
-            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium mb-1">{t.mobileLang}</p>
+            <p className="text-xs text-zinc-400 px-3 py-1 uppercase tracking-wider font-medium mb-1">{t.mobileLang}</p>
             <LangSwitcher />
           </div>
 

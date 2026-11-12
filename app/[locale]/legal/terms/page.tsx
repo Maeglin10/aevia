@@ -87,7 +87,7 @@ export default function TermsPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">{c.lastUpdated}</p>
+      <p className="text-xs text-zinc-400 mb-2">{c.lastUpdated}</p>
       <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">{c.title}</h1>
       <p className="text-zinc-400 text-sm mb-10 leading-relaxed">{c.intro}</p>
 
@@ -142,7 +142,7 @@ export default function TermsPage() {
           <div>
             <p className="text-white font-semibold mb-2">{c.s4.inboxTitle}</p>
             <PriceTable cols={c.s4.inboxCols} rows={c.s4.inboxRows} />
-            <p className="text-xs text-zinc-500 mt-2">{c.s4.inboxNote}</p>
+            <p className="text-xs text-zinc-400 mt-2">{c.s4.inboxNote}</p>
           </div>
           <div>
             <p className="text-white font-semibold mb-2">{c.s4.launchTitle}</p>
@@ -274,7 +274,7 @@ export default function TermsPage() {
 
       {/* Disclaimer */}
       <div className="mt-12 pt-6 border-t border-zinc-800/60">
-        <p className="text-xs text-zinc-600 leading-relaxed italic">{c.disclaimer}</p>
+        <p className="text-xs text-zinc-400 leading-relaxed italic">{c.disclaimer}</p>
       </div>
     </main>
   );

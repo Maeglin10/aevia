@@ -46,13 +46,13 @@ export async function generateMetadata({
 
 export default function DocsInboxPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2 uppercase tracking-wider font-medium">Documentation · AeviaInbox</p>
+    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300 [&_p]:max-w-[60ch]">
+      <p className="text-xs text-zinc-400 mb-2 uppercase tracking-wider font-medium">Documentation · Aevia Inbox</p>
       <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
-        AeviaInbox
+        Aevia Inbox
       </h1>
       <p className="text-zinc-400 leading-relaxed mb-10">
-        AeviaInbox centralise les communications entrantes d&apos;une entreprise — messages et appels
+        Aevia Inbox centralise les communications entrantes d&apos;une entreprise — messages et appels
         — et y répond avec des agents IA spécialisés plutôt qu&apos;avec un seul prompt générique.
         L&apos;objectif : qu&apos;aucune demande client ne reste sans réponse, même en dehors des
         horaires d&apos;ouverture.
@@ -87,7 +87,7 @@ export default function DocsInboxPage() {
           Agent vocal IA (téléphone)
         </h2>
         <p className="text-sm leading-relaxed mb-3">
-          AeviaInbox répond aussi aux appels téléphoniques avec un agent vocal temps réel — le
+          Aevia Inbox répond aussi aux appels téléphoniques avec un agent vocal temps réel — le
           service tourne sur Twilio pour la téléphonie et sur un pipeline vocal Pipecat + Gemini
           Live pour la conversation, avec un fallback multi-fournisseur pour la synthèse vocale
           (Gemini, ElevenLabs, OpenAI).
@@ -108,32 +108,32 @@ export default function DocsInboxPage() {
           Des agents spécialisés, pas un prompt unique
         </h2>
         <p className="text-sm leading-relaxed mb-4">
-          Plutôt qu&apos;un seul agent IA généraliste, AeviaInbox route chaque conversation vers un
+          Plutôt qu&apos;un seul agent IA généraliste, Aevia Inbox route chaque conversation vers un
           agent dédié à une étape précise du parcours client :
         </p>
         <ul className="space-y-3 text-sm">
           <li className="flex gap-3">
-            <span className="text-cyan-400 font-bold shrink-0 w-20">Setter</span>
+            <span className="text-inbox-light font-bold shrink-0 w-20">Setter</span>
             <span className="text-zinc-400">
               Qualifie un nouveau contact — besoin, budget, échéance — et attribue un score de lead.
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-cyan-400 font-bold shrink-0 w-20">Closer</span>
+            <span className="text-inbox-light font-bold shrink-0 w-20">Closer</span>
             <span className="text-zinc-400">
               Reprend un lead qualifié pour le faire avancer vers la conversion, avec le contexte du
               profil déjà récolté par le setter.
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-cyan-400 font-bold shrink-0 w-20">Info</span>
+            <span className="text-inbox-light font-bold shrink-0 w-20">Info</span>
             <span className="text-zinc-400">
               Répond aux questions courantes (horaires, tarifs, catalogue) et sait passer la main à
               un humain quand la demande sort de son périmètre.
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-cyan-400 font-bold shrink-0 w-20">Booking</span>
+            <span className="text-inbox-light font-bold shrink-0 w-20">Booking</span>
             <span className="text-zinc-400">
               Gère la prise de rendez-vous de bout en bout : vérifie l&apos;agenda et crée
               l&apos;événement.
@@ -165,12 +165,12 @@ export default function DocsInboxPage() {
           <li className="flex gap-3">
             <span className="text-white font-semibold shrink-0">Stripe</span>
             <span className="text-zinc-400">
-              Facturation de l&apos;abonnement AeviaInbox (checkout, portail client, gestion des
+              Facturation de l&apos;abonnement Aevia Inbox (checkout, portail client, gestion des
               renouvellements).
             </span>
           </li>
         </ul>
-        <p className="text-xs text-zinc-600 mt-6">
+        <p className="text-xs text-zinc-400 mt-6">
           Cette page décrit les fonctionnalités déployées à date. Certains canaux et intégrations
           peuvent être en cours de déploiement progressif selon les comptes.
         </p>

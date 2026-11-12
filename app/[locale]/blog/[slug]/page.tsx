@@ -16,7 +16,7 @@ import { notFound } from "next/navigation";
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
   "Web & Marketing": { bg: "bg-red-500/10", text: "text-red-300", ring: "ring-red-500/20" },
   "Cybersécurité": { bg: "bg-emerald-500/10", text: "text-emerald-300", ring: "ring-emerald-500/20" },
-  "CRM & Support": { bg: "bg-cyan-500/10", text: "text-cyan-300", ring: "ring-cyan-500/20" },
+  "CRM & Support": { bg: "bg-inbox/10", text: "text-inbox-light", ring: "ring-inbox/30" },
 };
 
 function getCategoryStyle(category: string) {
@@ -182,7 +182,7 @@ export default function ArticlePage({
         <div className="mx-auto max-w-3xl">
           <Link
             href={`/${locale}/blog`}
-            className="inline-flex items-center gap-2 text-sm text-zinc-500 hover:text-zinc-300 transition-colors mb-8 group"
+            className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-300 transition-colors mb-8 group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
             {(HABILLAGE[locale] ?? HABILLAGE.fr).retour}
@@ -203,11 +203,11 @@ export default function ArticlePage({
               <Tag size={10} />
               {post.category}
             </span>
-            <span className="flex items-center gap-1.5 text-xs text-zinc-500">
+            <span className="flex items-center gap-1.5 text-xs text-zinc-400">
               <Calendar size={11} />
               {formatDate(post.date, locale)}
             </span>
-            <span className="flex items-center gap-1.5 text-xs text-zinc-500">
+            <span className="flex items-center gap-1.5 text-xs text-zinc-400">
               <Clock size={11} />
               {post.readingTime} {(HABILLAGE[locale] ?? HABILLAGE.fr).lecture}
             </span>
@@ -230,7 +230,7 @@ export default function ArticlePage({
       {/* ── Content ───────────────────────────────────────────────────────── */}
       <article className="px-6 py-12">
         <div className="mx-auto max-w-3xl">
-          <div className="prose-custom">
+          <div className="prose-custom max-w-[62ch]">
             {renderContent(post.content)}
           </div>
         </div>
@@ -259,11 +259,11 @@ export default function ArticlePage({
                           {related.title}
                         </h3>
                         <div className="flex items-center justify-between mt-auto pt-2">
-                          <span className="flex items-center gap-1 text-xs text-zinc-600">
+                          <span className="flex items-center gap-1 text-xs text-zinc-400">
                             <Clock size={10} />
                             {related.readingTime}
                           </span>
-                          <ArrowRight size={13} className="text-zinc-600 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
+                          <ArrowRight size={13} className="text-zinc-400 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
                         </div>
                       </div>
                     </Link>
@@ -282,7 +282,7 @@ export default function ArticlePage({
             <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
             <div className="relative z-10">
               <h2 className="text-xl font-bold text-white mb-2">
-                Prêt à passer à l'action ?
+                Prêt à passer à l&apos;action ?
               </h2>
               <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">
                 Site web, audit sécurité ou gestion client — parlons de votre projet en 30 minutes.

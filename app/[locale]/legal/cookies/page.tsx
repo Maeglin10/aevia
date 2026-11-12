@@ -106,7 +106,7 @@ export default function CookiesPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">{c.lastUpdated}</p>
+      <p className="text-xs text-zinc-400 mb-2">{c.lastUpdated}</p>
       <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">{c.title}</h1>
       <p className="text-zinc-400 text-sm mb-10 leading-relaxed">{c.intro}</p>
 
@@ -149,7 +149,7 @@ export default function CookiesPage() {
           <div className="bg-zinc-900/40 border border-zinc-800 rounded-xl p-4 text-sm mb-3">
             <p className="text-zinc-300 font-semibold mb-2">{c.s3.dataTitle}</p>
             <ul className="list-disc list-inside text-zinc-400 space-y-1 ml-2 text-xs">{c.s3.dataItems.map((i) => <li key={i}>{i}</li>)}</ul>
-            <p className="text-zinc-500 text-xs mt-3">{c.s3.dataNote}</p>
+            <p className="text-zinc-400 text-xs mt-3">{c.s3.dataNote}</p>
           </div>
           <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className={`text-xs ${EXT} inline-block`}>{c.s3.link32} &rarr;</a>
         </div>
@@ -262,7 +262,7 @@ export default function CookiesPage() {
           <p className="text-zinc-400"><span className="text-zinc-300">{c.s10.emailLabel} :</span> <a href="mailto:privacy@aevia.services" className={EXT}>privacy@aevia.services</a></p>
           <p className="text-zinc-400"><span className="text-zinc-300">{c.s10.controllerLabel} :</span> {c.s10.controllerValue}</p>
           <div className="pt-2 border-t border-zinc-800 mt-2 space-y-1">
-            <p className="text-zinc-500 text-xs">{c.s10.relatedLabel}</p>
+            <p className="text-zinc-400 text-xs">{c.s10.relatedLabel}</p>
             <a href={`/${locale}/legal/privacy`} className={`${EXT} text-xs block`}>{c.s10.privacyLink} &rarr;</a>
             <a href={`/${locale}/legal/terms`} className={`${EXT} text-xs block`}>{c.s10.termsLink} &rarr;</a>
             <a href={`/${locale}/legal/mentions`} className={`${EXT} text-xs block`}>{c.s10.mentionsLink} &rarr;</a>
@@ -272,7 +272,7 @@ export default function CookiesPage() {
 
       {/* Disclaimer */}
       <div className="mt-12 pt-6 border-t border-zinc-800/60">
-        <p className="text-xs text-zinc-600 leading-relaxed italic">{c.disclaimer}</p>
+        <p className="text-xs text-zinc-400 leading-relaxed italic">{c.disclaimer}</p>
       </div>
     </main>
   );

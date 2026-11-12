@@ -61,7 +61,7 @@ export default function ContactPage() {
           <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto mb-6" />
           <h1 className="text-2xl font-bold text-white mb-3">Message sent!</h1>
           <p className="text-zinc-400 max-w-sm">
-            Thanks for reaching out — I'll get back to you within 24h.
+            Thanks for reaching out — I&apos;ll get back to you within 24h.
           </p>
         </motion.div>
       </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
                     placeholder="Your name"
-                    className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors ${
+                    className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.name
                         ? "border-red-500 focus:border-red-500"
                         : "border-zinc-700 focus:border-red-500"
@@ -138,7 +138,7 @@ export default function ContactPage() {
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
                     placeholder="you@example.com"
-                    className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors ${
+                    className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.email
                         ? "border-red-500 focus:border-red-500"
                         : "border-zinc-700 focus:border-red-500"
@@ -160,7 +160,7 @@ export default function ContactPage() {
                   value={form.subject}
                   onChange={(e) => setForm({ ...form, subject: e.target.value })}
                   placeholder="Project idea, collaboration, etc."
-                  className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none focus:border-red-500 transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none focus:border-red-500 transition-colors"
                 />
               </div>
 
@@ -178,7 +178,7 @@ export default function ContactPage() {
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
                   placeholder="Tell me about your project..."
-                  className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors resize-none ${
+                  className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors resize-none ${
                     fieldErrors.message
                       ? "border-red-500 focus:border-red-500"
                       : "border-zinc-700 focus:border-red-500"
@@ -252,9 +252,9 @@ export default function ContactPage() {
               <h2 className="text-white font-semibold mb-4">On peut parler de…</h2>
               <ul className="space-y-2.5">
                 {[
-                  "Site web & templates (AeviaLaunch)",
-                  "Audit sécurité (AeviaSecurity)",
-                  "CRM WhatsApp & IA (AeviaInbox)",
+                  "Site web & templates (Aevia Launch)",
+                  "Audit sécurité (Aevia Security)",
+                  "CRM WhatsApp & IA (Aevia Inbox)",
                   "Projet sur-mesure & intégration IA",
                   "Automatisation n8n & agents IA",
                   "Questions tarifaires ou démo",

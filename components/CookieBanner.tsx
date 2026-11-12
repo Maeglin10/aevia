@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, startTransition } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 
@@ -86,7 +86,9 @@ export function CookieBanner() {
 
   useEffect(() => {
     try {
-      if (!localStorage.getItem(CONSENT_KEY)) setVisible(true);
+      // startTransition : afficher la bannière après le montage, sans rendu
+      // en cascade (react-hooks/set-state-in-effect).
+      if (!localStorage.getItem(CONSENT_KEY)) startTransition(() => setVisible(true));
     } catch {}
 
     // RGPD art. 7-3 — le retrait du consentement doit être aussi simple que
@@ -170,7 +172,7 @@ export function CookieBanner() {
                       <p className="text-zinc-400 text-xs mt-0.5 leading-relaxed">{row.desc}</p>
                     </div>
                     {row.disabled
-                      ? <span className="shrink-0 text-xs text-zinc-500 bg-zinc-800 px-2 py-1 rounded-lg mt-0.5">{t.required}</span>
+                      ? <span className="shrink-0 text-xs text-zinc-400 bg-zinc-800 px-2 py-1 rounded-lg mt-0.5">{t.required}</span>
                       : <Toggle checked={row.checked} onChange={row.onChange} />
                     }
                   </div>

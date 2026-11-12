@@ -46,13 +46,13 @@ export async function generateMetadata({
 
 export default function DocsSecurityPage() {
   return (
-    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2 uppercase tracking-wider font-medium">Documentation · AeviaSecurity</p>
+    <main className="max-w-3xl mx-auto px-6 py-16 text-zinc-300 [&_p]:max-w-[60ch]">
+      <p className="text-xs text-zinc-400 mb-2 uppercase tracking-wider font-medium">Documentation · Aevia Security</p>
       <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3 tracking-tight">
-        AeviaSecurity
+        Aevia Security
       </h1>
       <p className="text-zinc-400 leading-relaxed mb-10">
-        AeviaSecurity audite un site web en quelques dizaines de secondes et restitue un score de
+        Aevia Security audite un site web en quelques dizaines de secondes et restitue un score de
         0 à 100 avec un rapport détaillé et des recommandations de correction générées par IA. Une
         URL suffit pour lancer un audit.
       </p>

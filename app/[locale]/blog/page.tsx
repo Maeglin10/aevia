@@ -86,7 +86,7 @@ const UI: Record<
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
   "Web & Marketing": { bg: "bg-red-500/10", text: "text-red-300", ring: "ring-red-500/20" },
   "Cybersécurité": { bg: "bg-emerald-500/10", text: "text-emerald-300", ring: "ring-emerald-500/20" },
-  "CRM & Support": { bg: "bg-cyan-500/10", text: "text-cyan-300", ring: "ring-cyan-500/20" },
+  "CRM & Support": { bg: "bg-inbox/10", text: "text-inbox-light", ring: "ring-inbox/30" },
 };
 
 function getCategoryStyle(category: string) {
@@ -123,7 +123,7 @@ export default function BlogPage() {
       <section className="relative pt-32 pb-16 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/8 blur-[120px]" />
-          <div className="absolute top-40 -left-32 w-[400px] h-[400px] rounded-full bg-cyan-600/5 blur-[100px]" />
+          <div className="absolute top-40 -left-32 w-[400px] h-[400px] rounded-full bg-inbox/5 blur-[100px]" />
         </div>
         <div className="mx-auto max-w-5xl">
           <div className="flex items-center gap-2 mb-6">
@@ -134,7 +134,7 @@ export default function BlogPage() {
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-4">
             {ui.titreA}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">
+            <span className="text-red-400">
               {ui.titreB}
             </span>
           </h1>
@@ -170,8 +170,8 @@ export default function BlogPage() {
                         </span>
                       );
                     })()}
-                    <span className="text-sm text-zinc-500">{formatDate(posts[0].date, locale)}</span>
-                    <span className="flex items-center gap-1 text-xs text-zinc-500">
+                    <span className="text-sm text-zinc-400">{formatDate(posts[0].date, locale)}</span>
+                    <span className="flex items-center gap-1 text-xs text-zinc-400">
                       <Clock size={11} />
                       {posts[0].readingTime} {ui.reading}
                     </span>
@@ -183,7 +183,7 @@ export default function BlogPage() {
                   <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors leading-tight">
                     {posts[0].title}
                   </h2>
-                  <p className="text-zinc-400 leading-relaxed mb-6 max-w-2xl">
+                  <p className="text-zinc-400 leading-relaxed mb-6 max-w-[62ch]">
                     {posts[0].excerpt}
                   </p>
                   <div className="inline-flex items-center gap-2 text-sm font-semibold text-red-400 group-hover:text-red-300 transition-colors">
@@ -220,19 +220,19 @@ export default function BlogPage() {
                         <h2 className="text-lg font-bold text-white mb-2 group-hover:text-red-100 transition-colors leading-snug flex-1">
                           {post.title}
                         </h2>
-                        <p className="text-zinc-500 text-sm leading-relaxed mb-5 line-clamp-2">
+                        <p className="text-zinc-400 text-sm leading-relaxed mb-5 line-clamp-2">
                           {post.excerpt}
                         </p>
 
                         <div className="flex items-center justify-between mt-auto pt-4 border-t border-zinc-800/60">
-                          <div className="flex items-center gap-3 text-xs text-zinc-500">
+                          <div className="flex items-center gap-3 text-xs text-zinc-400">
                             <span>{formatDate(post.date, locale)}</span>
                             <span className="flex items-center gap-1">
                               <Clock size={10} />
                               {post.readingTime}
                             </span>
                           </div>
-                          <ArrowRight size={14} className="text-zinc-600 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
+                          <ArrowRight size={14} className="text-zinc-400 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all" />
                         </div>
                       </div>
                     </article>
@@ -251,7 +251,7 @@ export default function BlogPage() {
             <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
             <div className="relative z-10">
               <h2 className="text-xl font-bold text-white mb-2">
-                Besoin d'un coup de main pour votre présence digitale ?
+                Besoin d&apos;un coup de main pour votre présence digitale ?
               </h2>
               <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">
                 Site web, sécurité, gestion client — on peut en parler en 30 minutes.

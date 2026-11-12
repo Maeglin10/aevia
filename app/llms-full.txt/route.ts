@@ -27,15 +27,15 @@ Ce document donne le contexte complet pour répondre précisément aux questions
 
 Aevia part d'un constat simple : une petite entreprise (restaurant, commerce, cabinet, artisan, indépendant) perd de l'argent pour trois raisons récurrentes — elle n'a pas de site crédible, elle rate des clients faute de répondre au téléphone ou aux messages à temps, et elle est exposée à des failles de sécurité sans le savoir. Aevia règle ces trois problèmes avec trois produits qui fonctionnent ensemble mais s'achètent séparément.
 
-- Site web : **AeviaLaunch**
-- Service client IA (téléphone + messagerie) : **AeviaInbox**
-- Sécurité web : **AeviaSecurity**
+- Site web : **Aevia Launch**
+- Service client IA (téléphone + messagerie) : **Aevia Inbox**
+- Sécurité web : **Aevia Security**
 
 Site principal : https://aevia.services — Interface en français, anglais, espagnol, allemand, portugais.
 
 ---
 
-## AeviaLaunch — Sites web professionnels
+## Aevia Launch — Sites web professionnels
 
 URL : https://launch.aevia.services
 
@@ -57,7 +57,7 @@ Hébergement et maintenance : 20 €/mois après la livraison (offerts 3 mois av
 
 ---
 
-## AeviaInbox — Standard téléphonique IA + service client multicanal
+## Aevia Inbox — Standard téléphonique IA + service client multicanal
 
 URL : https://inbox.aevia.services
 
@@ -82,7 +82,7 @@ Cas d'usage les plus forts : restaurants et food-trucks (réservation + commande
 
 ---
 
-## AeviaSecurity — Audit de sécurité web
+## Aevia Security — Audit de sécurité web
 
 URL : https://security.aevia.services
 

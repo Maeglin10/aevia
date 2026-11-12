@@ -111,8 +111,8 @@ export const VS_PAGES: VsEntry[] = [
   {
     slug: "intercom",
     competitorName: "Intercom",
-    accentFrom: "from-cyan-500",
-    accentTo: "to-blue-500",
+    accentFrom: "from-inbox",
+    accentTo: "to-inbox-dark",
     copy: {
       fr: {
         metaTitle: "Aevia vs Intercom — comparatif honnête (canaux, IA, prix 2026) | Aevia",
@@ -196,8 +196,8 @@ export const VS_PAGES: VsEntry[] = [
   {
     slug: "zendesk",
     competitorName: "Zendesk",
-    accentFrom: "from-cyan-500",
-    accentTo: "to-blue-500",
+    accentFrom: "from-inbox",
+    accentTo: "to-inbox-dark",
     copy: {
       fr: {
         metaTitle: "Aevia vs Zendesk — comparatif honnête (canaux, IA, prix 2026) | Aevia",
@@ -282,8 +282,8 @@ export const VS_PAGES: VsEntry[] = [
   {
     slug: "hubspot",
     competitorName: "HubSpot",
-    accentFrom: "from-cyan-500",
-    accentTo: "to-blue-500",
+    accentFrom: "from-inbox",
+    accentTo: "to-inbox-dark",
     copy: {
       fr: {
         metaTitle: "Aevia vs HubSpot Service Hub — comparatif honnête (prix 2026) | Aevia",
@@ -368,8 +368,8 @@ export const VS_PAGES: VsEntry[] = [
   {
     slug: "manychat",
     competitorName: "Manychat",
-    accentFrom: "from-cyan-500",
-    accentTo: "to-blue-500",
+    accentFrom: "from-inbox",
+    accentTo: "to-inbox-dark",
     copy: {
       fr: {
         metaTitle: "Aevia vs Manychat — comparatif honnête (canaux, IA, prix 2026) | Aevia",
@@ -454,8 +454,8 @@ export const VS_PAGES: VsEntry[] = [
   {
     slug: "respond-io",
     competitorName: "Respond.io",
-    accentFrom: "from-cyan-500",
-    accentTo: "to-blue-500",
+    accentFrom: "from-inbox",
+    accentTo: "to-inbox-dark",
     copy: {
       fr: {
         metaTitle: "Aevia vs Respond.io — comparatif honnête (canaux, IA, prix 2026) | Aevia",

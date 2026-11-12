@@ -87,7 +87,7 @@ export default function MentionsPage() {
 
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">{t("last_updated")}</p>
+      <p className="text-xs text-zinc-400 mb-2">{t("last_updated")}</p>
       <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">
         {t("title")}
       </h1>
