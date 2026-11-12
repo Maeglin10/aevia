@@ -8,22 +8,46 @@ import { HomeFaq } from "@/components/HomeFaq";
 import { HomeProductsSchema } from "@/components/HomeProductsSchema";
 
 /*
-  Le fond du héros : PLUS de photographie.
+  Le fond du héros : une vraie photo de commerçante au travail.
 
-  Il faisait défiler quatre photos de banque d'images (réunions de bureau,
-  « équipe au travail ») : pas des commerçants, pas nos clients, pas nos
-  produits — le signe le plus « gabarit » de la page, et une promesse
-  visuelle que rien ne tenait. Une fausse photo de client n'est pas une
-  option. Ce qui reste est honnête : l'encre de la page, la lumière rouge de
-  la marque dans les angles. La représentation des produits, c'est l'index
-  typographique sous les boutons.
+  Historique : quatre photos Pexels de réunions de bureau défilaient ici ;
+  retirées le 12/11 (ni commerçants, ni nos clients). Retour de Valentin le
+  même jour : sans image, le héros est « moins cool ». La photo revient, mais
+  pertinente — une boulangère derrière son comptoir, le client type d'Aevia.
+
+  Photo : Ekaterina Tyapkina, « woman on counter near breads »
+  https://unsplash.com/photos/woman-on-counter-near-breads-b5kN9ClBRNU
+  Licence Unsplash (gratuite, usage commercial autorisé, sans attribution
+  obligatoire), vérifiée sur la page de la photo le 12/11/2026 — pas une
+  photo Unsplash+.
+
+  Servie depuis /public (WebP 2560 et 1280 px, 266 et 84 Ko) : aucun domaine
+  d'images tiers dans la CSP. Pas de fondu d'entrée : l'image est là dès le
+  premier rendu.
+
+  Le voile : #09090b à 75 % sur toute la photo. Mesuré sur le pixel le PLUS
+  clair de la zone de texte, une fois voilé : blanc 9,5:1, zinc-200 7,4:1,
+  zinc-300 6,5:1 (≥ 4,5), red-300 4,9:1 (titre, ≥ 3). D'où les couleurs de
+  texte du héros, un cran plus claires que sur fond uni.
 */
 function HeroBackdrop() {
   return (
     <div aria-hidden className="absolute inset-x-0 bottom-0 top-[57px] -z-10 overflow-hidden">
+      {/* eslint-disable-next-line @next/next/no-img-element -- deux tailles WebP préparées à la main ; next/image les réencoderait */}
+      <img
+        src="/hero/commercante-boulangerie-2560.webp"
+        srcSet="/hero/commercante-boulangerie-1280.webp 1280w, /hero/commercante-boulangerie-2560.webp 2560w"
+        sizes="100vw"
+        alt=""
+        width={2560}
+        height={1707}
+        fetchPriority="high"
+        decoding="async"
+        className="absolute inset-0 h-full w-full object-cover object-[50%_35%]"
+      />
+      <div className="absolute inset-0 bg-[#09090b]/75" />
       <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/10 blur-[180px]" />
-      <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/8 blur-[140px]" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-[#09090b]" />
+      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#09090b]" />
     </div>
   );
 }
@@ -146,7 +170,7 @@ export default function Home() {
               façon.
             */}
             <div className="mb-6 sm:mb-8">
-              <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-zinc-400 mb-2">
+              <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-zinc-300 mb-2">
                 {h("credoLabel")}
               </span>
               <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white/90">
@@ -157,10 +181,10 @@ export default function Home() {
             <h1 className="font-display text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-6 text-balance">
               {h("title1")}
               <br />
-              <span className="text-red-400">{h("title2")}</span>
+              <span className="text-red-300">{h("title2")}</span>
             </h1>
 
-            <p className="text-zinc-300 text-base sm:text-lg lg:text-xl max-w-[60ch] mx-auto leading-relaxed mb-7 sm:mb-9 text-pretty">
+            <p className="text-zinc-200 text-base sm:text-lg lg:text-xl max-w-[60ch] mx-auto leading-relaxed mb-7 sm:mb-9 text-pretty">
               {h("description")}
             </p>
 
@@ -177,7 +201,7 @@ export default function Home() {
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-500 bg-[#09090b]/60 text-zinc-100 text-sm font-semibold hover:border-zinc-300 hover:text-white transition-colors"
               >
                 {h("cta_secondary")}
               </Link>

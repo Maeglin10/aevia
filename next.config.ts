@@ -33,7 +33,10 @@ const nextConfig: NextConfig = {
               // google-analytics en img-src : GA4 retombe sur une requête d'image
               // quand `fetch` n'est pas disponible — navigateur ancien, ou page en
               // train de se fermer. Sans ça on perdrait ces visites en silence.
-              "img-src 'self' data: blob: https://images.unsplash.com https://images.pexels.com https://picsum.photos https://*.google-analytics.com https://*.googletagmanager.com",
+              // Plus d'hôte d'images tiers : la photo du héros est servie depuis
+              // /public. images.pexels.com, images.unsplash.com et picsum.photos
+              // n'étaient plus utilisés par aucune page (vérifié le 12/11).
+              "img-src 'self' data: blob: https://*.google-analytics.com https://*.googletagmanager.com",
               // Les mesures partent en POST vers un domaine régional
               // (`region1.google-analytics.com`), d'où le joker : autoriser le
               // script sans autoriser l'envoi donnerait une balise active qui
