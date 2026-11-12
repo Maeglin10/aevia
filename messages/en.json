@@ -99,7 +99,7 @@
     "editor_status": "sole trader (auto-entrepreneur)",
     "director_label": "Publication director",
     "siren_label": "SIREN",
-    "rcs_value": "RCS Bourg-en-Bresse",
+    "rcs_value": "RNE (INPI)",
     "vat_label": "VAT",
     "vat_value": "VAT not applicable, art. 293 B of the French General Tax Code (CGI)",
     "contact_label": "Contact",
@@ -118,7 +118,7 @@
     "items": [
       {
         "q": "Who is behind Aevia?",
-        "a": "Aevia is the trading name of Aevia WS, a French sole proprietorship founded by Valentin Milliand, a full-stack developer, registered with the Bourg-en-Bresse trade register (SIREN 852 546 225). It has no connection with the Aevia company of the Eiffage group, which works in energy and infrastructure."
+        "a": "Aevia is the trading name of Aevia WS, a French sole proprietorship founded by Valentin Milliand, a full-stack developer, registered in the French National Business Register (INPI) (SIREN 852 546 225). It has no connection with the Aevia company of the Eiffage group, which works in energy and infrastructure."
       },
       {
         "q": "How much does a website with Aevia Launch cost?",

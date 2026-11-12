@@ -99,7 +99,7 @@
     "editor_status": "entrepreneur individuel (auto-entrepreneur)",
     "director_label": "Directeur de la publication",
     "siren_label": "SIREN",
-    "rcs_value": "RCS Bourg-en-Bresse",
+    "rcs_value": "RNE (INPI)",
     "vat_label": "TVA",
     "vat_value": "TVA non applicable, art. 293 B du CGI",
     "contact_label": "Contact",
@@ -118,7 +118,7 @@
     "items": [
       {
         "q": "Qui est derrière Aevia ?",
-        "a": "Aevia est le nom commercial d'Aevia WS, une entreprise individuelle française créée par Valentin Milliand, développeur full-stack, immatriculée au RCS de Bourg-en-Bresse (SIREN 852 546 225). Elle n'a aucun lien avec la société Aevia du groupe Eiffage, qui travaille dans l'énergie et les infrastructures."
+        "a": "Aevia est le nom commercial d'Aevia WS, une entreprise individuelle française créée par Valentin Milliand, développeur full-stack, immatriculée au Registre national des entreprises (INPI) (SIREN 852 546 225). Elle n'a aucun lien avec la société Aevia du groupe Eiffage, qui travaille dans l'énergie et les infrastructures."
       },
       {
         "q": "Combien coûte un site web avec Aevia Launch ?",

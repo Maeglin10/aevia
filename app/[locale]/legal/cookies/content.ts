@@ -154,7 +154,7 @@ const fr: CookiesContent = {
     title: 'Pour toute question concernant les cookies Aevia :',
     emailLabel: 'Email',
     controllerLabel: 'Responsable',
-    controllerValue: 'Aevia WS — Valentin Milliand, SIREN 852 546 225 (RCS Bourg-en-Bresse), France',
+    controllerValue: 'Aevia WS — Valentin Milliand, SIREN 852 546 225 (RNE, INPI), France',
     relatedLabel: 'Documents liés :',
     privacyLink: 'Politique de Confidentialité',
     termsLink: "Conditions Générales d'Utilisation et de Vente",

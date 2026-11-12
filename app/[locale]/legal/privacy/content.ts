@@ -68,7 +68,7 @@ const fr: PrivacyContent = {
     entity: 'entrepreneur individuel (auto-entrepreneur)',
     directorLabel: 'Directeur de la publication',
     sirenLabel: 'SIREN',
-    sirenValue: '852 546 225 — RCS Bourg-en-Bresse',
+    sirenValue: '852 546 225 — RNE (INPI)',
     countryLabel: "Pays d'établissement",
     country: 'France',
     addressLabel: 'Adresse',
