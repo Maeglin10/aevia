@@ -7,6 +7,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import { useEffect, useState } from "react";
 import { HomeFaq } from "@/components/HomeFaq";
+import { HomeProductsSchema } from "@/components/HomeProductsSchema";
 
 /* The hero backdrop: a slow rotation of photographs behind the existing
    composition. Nothing about the headline or the CTAs moves — the imagery is
@@ -405,6 +406,7 @@ export default function Home() {
       </section>
 
       <HomeFaq />
+      <HomeProductsSchema />
 
       <section className="px-6 py-16 pb-24">
         <div className="mx-auto max-w-5xl">

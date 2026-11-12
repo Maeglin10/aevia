@@ -106,10 +106,16 @@ const organizationSchema = {
     "Plateforme tout-en-un pour TPE, PME et indépendants : site web professionnel, service client par IA (téléphone, WhatsApp, Instagram, email) disponible 24h/24, et audit de sécurité web. Basée à Bourg-en-Bresse (Ain), France.",
   email: 'valentinmilliand@aevia.services',
   foundingDate: '2019-07-01',
+  // Le portfolio du fondateur est le seul autre site qui parle de lui : le
+  // relier ici (et l'inverse, côté portfolio) fait des deux une seule entité
+  // au lieu de deux pages sans lien entrant.
   founder: {
     '@type': 'Person',
+    '@id': 'https://valentinmilliand.vercel.app/#person',
     name: 'Valentin Milliand',
     jobTitle: 'Fondateur, développeur fullstack',
+    url: 'https://valentinmilliand.vercel.app',
+    sameAs: ['https://github.com/Maeglin10'],
   },
   address: {
     // The official registry (SIREN 852546225) records the seat in
@@ -242,76 +248,12 @@ const zoneDesservieSchema = {
   ],
 };
 
-const productsSchema = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'Service',
-      '@id': 'https://launch.aevia.services/#service',
-      name: 'AeviaLaunch',
-      serviceType: 'Création de site web professionnel',
-      provider: { '@id': 'https://aevia.services/#organization' },
-      url: 'https://launch.aevia.services',
-      description:
-        "Création de sites web professionnels livrés sous 48 heures, optimisés SEO et mobile-first. Plus de 100 thèmes par secteur. Hébergement et maintenance 20€/mois après une période offerte.",
-      areaServed: ['FR', 'EU'],
-      offers: [
-        { '@type': 'Offer', name: 'Landing', price: '399', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Essentiel', price: '599', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Pro', price: '899', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Premium', price: '1499', priceCurrency: 'EUR' },
-      ],
-    },
-    {
-      '@type': 'SoftwareApplication',
-      '@id': 'https://inbox.aevia.services/#app',
-      name: 'AeviaInbox',
-      applicationCategory: 'BusinessApplication',
-      operatingSystem: 'Web',
-      provider: { '@id': 'https://aevia.services/#organization' },
-      url: 'https://inbox.aevia.services',
-      description:
-        "Service client par IA 24h/24 : agent vocal sur ligne téléphonique dédiée (réservations, commandes) et messagerie unifiée WhatsApp, Instagram, Facebook, email. Modes messages seuls, voix seule ou les deux.",
-      // Canonical Inbox pricing = the interactive 5-tier grid (Starter→Scale)
-      // shown everywhere: marketing /pricing AND in-app Settings→Abonnement.
-      // COMBO-mode amounts (messages + voice); a one-time 100€ setup applies at
-      // signup. A price in structured data is quoted back by search engines and
-      // assistants, so it must match what the checkout actually charges.
-      offers: [
-        { '@type': 'Offer', name: 'Starter', price: '79', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Growth', price: '99', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Pro', price: '199', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Scale', price: '999', priceCurrency: 'EUR' },
-      ],
-    },
-    {
-      '@type': 'SoftwareApplication',
-      '@id': 'https://security.aevia.services/#app',
-      name: 'AeviaSecurity',
-      applicationCategory: 'SecurityApplication',
-      operatingSystem: 'Web',
-      provider: { '@id': 'https://aevia.services/#organization' },
-      url: 'https://security.aevia.services',
-      description:
-        "Audit de sécurité web instantané : score sur 100 en sécurité, performances (Core Web Vitals) et SEO, avec rapport rédigé par IA. Scan gratuit sans compte.",
-      // Productized "fixed-price fix" model (validated 2026-07-25: lead magnet +
-      // forfait service, NOT a SaaS subscription). Amounts mirror the canonical
-      // pricing page (skysecurity servicesCatalog.ts). The old Solo/Pro/Business
-      // 9/29/79 monthly tiers advertised a subscription we no longer sell — a
-      // stale price in structured data is a promise search engines quote back.
-      offers: [
-        { '@type': 'Offer', name: 'Scan gratuit', price: '0', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Correctif SSL/TLS', price: '149', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'En-têtes HTTP', price: '199', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'SPF/DKIM/DMARC (DNS)', price: '349', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'CSP', price: '499', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Core Web Vitals', price: '790', priceCurrency: 'EUR' },
-        { '@type': 'Offer', name: 'Durcissement complet', price: '1490', priceCurrency: 'EUR' },
-      ],
-    },
-  ],
-}
+/*
+  Les nœuds Service / SoftwareApplication des trois produits vivaient ici, donc
+  sur les 103 URL du Hub, avec seize prix qu'aucune de ces pages n'affichait.
+  Ils sont désormais rendus par l'accueil seul, à partir du texte qu'il
+  affiche : voir components/HomeProductsSchema.tsx.
+*/
 
 export default async function RootLayout({
   children,
@@ -343,10 +285,6 @@ export default async function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(productsSchema) }}
         />
         <script
           type="application/ld+json"
