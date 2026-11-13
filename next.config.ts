@@ -3,8 +3,43 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
+/*
+  Un seul hôte sert le Hub : aevia.services. Les deux autres renvoient en 308.
+
+  Relevé en production le 13/11 : `hub.aevia.services/fr` et
+  `aevia.vercel.app/fr` répondaient 200 avec le site entier. La balise
+  canonique désignait bien aevia.services, mais l'en-tête HTTP `Link` posé par
+  next-intl annonçait les cinq langues sur l'hôte servi — donc
+  `https://hub.aevia.services/en`, `https://aevia.vercel.app/de`… Deux
+  déclarations contradictoires sur la même page. Bing tient en plus une
+  propriété `hub.aevia.services` séparée, avec son propre plan de site de 103
+  URL : la même page comptée deux fois chez un moteur qui n'en indexe que 3.
+
+  Le portfolio du fondateur lie encore `aevia.vercel.app` : avec la 308, ce
+  lien profite enfin au domaine de marque.
+
+  Ici plutôt que dans le middleware : le matcher du middleware exclut les
+  chemins à point (robots.txt, sitemap.xml, llms.txt), qui resteraient servis
+  en double. Une redirection de configuration s'applique à tout.
+
+  Les URL de prévisualisation (`aevia-<hash>-….vercel.app`,
+  `aevia-git-<branche>-….vercel.app`) ne sont PAS touchées : c'est sur elles que
+  Valentin valide un lot avant la mise en ligne. Seul l'alias de production
+  `aevia.vercel.app` est redirigé. Voir la mémoire
+  `gotcha-canonical-vercel-app-tue-le-seo`.
+*/
+const HOTES_SECONDAIRES = ["hub.aevia.services", "aevia.vercel.app"];
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  async redirects() {
+    return HOTES_SECONDAIRES.map((hote) => ({
+      source: "/:chemin*",
+      has: [{ type: "host" as const, value: hote }],
+      destination: "https://aevia.services/:chemin*",
+      permanent: true,
+    }));
+  },
   async headers() {
     return [
       {
