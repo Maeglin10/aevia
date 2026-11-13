@@ -30,7 +30,7 @@ Aevia réunit trois produits complémentaires qui règlent les trois problèmes 
 ## Produits
 
 - [Aevia Launch](https://launch.aevia.services) : Création de sites web professionnels, sans compétences techniques, en ligne sous 48 heures (Landing, Essentiel, Pro) ou sous 5 à 7 jours (Premium sur mesure). Plus de 100 thèmes par secteur (restaurant, coach, artisan, e-commerce, vitrine). Optimisé SEO et mobile-first dès la livraison. Prise de commande en ligne pour restaurants via HubRise. Tarifs en paiement unique : Landing 399€, Essentiel 599€, Pro 899€, Premium 1499€. Hébergement et maintenance 20€/mois (offert 3 mois pour Pro, 6 mois pour Premium). Nom de domaine inclus avec Pro et Premium (jusqu'à 50€/an, tant que la maintenance court), en option de 29 à 49€/an avec Landing et Essentiel.
-- [Aevia Inbox](https://inbox.aevia.services) : Service client par IA qui répond à vos clients 24h/24. Un agent IA vocal répond au téléphone sur une ligne dédiée (prise de réservation, de commande, réponse aux questions), et le même cerveau IA gère WhatsApp, Instagram, Facebook Messenger et email dans une inbox unifiée. Tarifs mensuels selon le mode choisi (messages seuls, voix seule, ou les deux) et 5 formules — en mode complet : Starter 79€, Growth 99€, Pro 199€, Business 399€, Scale 999€, plus 100€ de frais de mise en place unique à l'inscription.
+- [Aevia Inbox](https://inbox.aevia.services) : Service client par IA qui répond à vos clients 24h/24. Un agent IA vocal répond au téléphone sur une ligne dédiée (prise de réservation, de commande, réponse aux questions), et le même cerveau IA gère WhatsApp, Instagram, Facebook Messenger et email dans une inbox unifiée. 5 formules mensuelles, au même prix quel que soit le mode (messages seuls, voix seule, ou les deux) — seul le quota inclus change : Starter 79€, Growth 99€, Pro 199€, Business 399€, Scale 999€ (de 200 à 4 000 minutes en voix seule, de 2 000 à 40 000 messages en messages seuls), plus 100€ de frais de mise en place unique à l'inscription. Même montant en dollars hors zone euro. Sans engagement, 14 jours satisfait ou remboursé.
 - [Aevia Security](https://security.aevia.services) : Audit de sécurité web instantané. Scanne SSL/TLS, DNS, headers HTTP, Core Web Vitals, SEO et accessibilité, puis génère un score sur 100 et un rapport rédigé par IA (Claude d'Anthropic). Scan gratuit sans compte (résultat en ~60s), puis corrections en paiement unique à la carte — sans abonnement : SSL/TLS 149€, en-têtes 199€, CSP 499€, SPF/DKIM/DMARC 349€, Core Web Vitals 790€, pack durcissement complet 1490 à 2490€.
 
 ## À qui s'adresse Aevia
@@ -43,7 +43,7 @@ Toute la France et l'Europe à distance. Présence locale renforcée à Bourg-en
 
 ## Ce qui différencie Aevia
 
-- **Voix IA de bout en bout** : l'agent téléphonique ne se contente pas de router — il crée réellement la réservation en base, synchronise le calendrier et pousse la commande vers la caisse (HubRise/Popina) pour les restaurants.
+- **Voix IA de bout en bout** : l'agent téléphonique ne se contente pas de router — il crée réellement la réservation ou la commande, à partir de la carte et des créneaux du commerce, et peut envoyer un SMS de confirmation au client (numéros français). Pour les restaurants dont la caisse est reliée à HubRise, la commande peut y être transmise (connecteur HubRise en cours de validation par HubRise).
 - **Une seule IA, trois canaux** : le même agent répond au téléphone, sur WhatsApp et par email, avec le même contexte.
 - **Multilingue natif** : les agents répondent aux clients dans leur langue.
 - **Tarification lisible** : cinq formules à prix affiché, sans devis ni engagement caché. On change de formule quand le volume l'exige.
@@ -51,8 +51,9 @@ Toute la France et l'Europe à distance. Présence locale renforcée à Bourg-en
 ## Questions fréquentes
 
 - **Aevia, c'est quoi exactement ?** Une plateforme qui donne à une petite entreprise un site web, un standard téléphonique IA + service client multicanal, et une surveillance de sécurité, sans embaucher ni coder.
-- **Combien coûte le service client IA ?** Cinq formules mensuelles selon le mode (messages, voix ou les deux) — en mode complet : Starter 79€, Growth 99€, Pro 199€, Business 399€, Scale 999€. Le prix suit le volume d'exécutions IA et le nombre de canaux connectés.
-- **L'IA peut-elle vraiment prendre des réservations au téléphone ?** Oui — l'agent vocal comprend la demande, vérifie les disponibilités en temps réel, crée la réservation et l'enregistre dans le calendrier et la caisse.
+- **Combien coûte le service client IA ?** Cinq formules mensuelles : Starter 79€, Growth 99€, Pro 199€, Business 399€, Scale 999€, plus 100€ de mise en service unique. Le prix est le même pour les messages seuls, la voix seule ou les deux ; il suit le volume inclus (messages ou minutes de voix), pas le nombre de canaux.
+- **L'IA peut-elle vraiment prendre des réservations au téléphone ?** Oui — l'agent vocal comprend la demande, vérifie les disponibilités en temps réel et crée la réservation dans le calendrier du commerce.
+- **Et prendre une commande à emporter au téléphone ?** Oui, pour les restaurants : l'agent lit la carte renseignée, n'accepte que les plats qui y figurent, relit le récapitulatif au client avant de valider, enregistre la commande avec le numéro de l'appelant et peut lui envoyer un SMS de confirmation (numéros français). Il n'encaisse pas : le paiement se fait au retrait ou à la livraison.
 - **Faut-il des compétences techniques ?** Non. Le site se crée via un assistant guidé, et le service client IA se configure sans code.
 - **Dans quels pays Aevia fonctionne-t-il ?** France et Europe en priorité, interface en 5 langues (fr, en, es, de, pt).
 - **Qui est derrière Aevia ?** Valentin Milliand, développeur fullstack, société immatriculée sous le SIREN 852 546 225 (code APE 62.01Z, programmation informatique), siège à Bourg-en-Bresse.`

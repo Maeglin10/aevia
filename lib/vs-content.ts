@@ -4,19 +4,20 @@
  * SOURCES & ACCURACY
  * -------------------
  * Aevia facts are grounded in the actual skybot-inbox codebase:
- * - Pricing: src/billing/config/pricing-plans.config.ts (TIER_PLANS, EU_NA zone) —
- *   Growth $99/mo, Studio $199/mo, Business $399/mo, Enterprise $999/mo.
- *   NOTE: the live inbox.aevia.services pricing widget currently shows different
- *   numbers (€20/€79/€249, 3 tiers) — that appears to be stale marketing copy.
- *   This file intentionally uses the backend billing config as the source of
- *   truth per explicit instruction, not the (possibly outdated) live page.
- * - Channels live today: Webchat, Email, Voice — confirmed both in the codebase
- *   (src/channels/{webchat-ai,email-ai-reply}.service.ts, src/voice/) and on the
- *   live inbox.aevia.services page, which itself marks WhatsApp and Instagram as
- *   "Bientôt" (coming soon). We disclose this honestly rather than claim full
- *   omnichannel parity — WhatsApp/Instagram connectors exist in the codebase
- *   (connectors/whatsapp-cloud, channels/instagram-ai-reply.service.ts) but are
- *   feature-flagged off / not yet customer-facing.
+ * - Pricing — CORRIGÉ le 13/11/2026. Les cinq pages recopiaient l'ancienne
+ *   grille `TIER_PLANS` (Growth 99 $ / Studio / Business / Enterprise, « 3
+ *   canaux », « 1 000 exécutions IA »), conservée pour d'anciens abonnés mais
+ *   plus vendue depuis le 16/07. La grille vendue est la grille interactive :
+ *   `INTERACTIVE_PRICE_CENTS`, `INTERACTIVE_QUOTAS` et `INTERACTIVE_USERS` du
+ *   même fichier, identique à inbox.aevia.services/fr/pricing. Elle vit
+ *   désormais UNE fois, dans `INBOX_TARIFS` ci-dessous.
+ * - Channels — CORRIGÉ le 13/11/2026. Ce fichier annonçait WhatsApp et
+ *   Instagram « en cours de déploiement » sur les cinq pages. Faux depuis des
+ *   mois : les permissions Meta `whatsapp_business_messaging` et
+ *   `instagram_business_manage_messages` sont en accès avancé, et la page
+ *   d'accueil d'Inbox liste téléphone, WhatsApp, Instagram, email et chat comme
+ *   « reçoit et répond ». Un comparatif qui sous-vend le produit est aussi faux
+ *   qu'un comparatif qui le survend.
  * - Voice: src/voice/voice-agent-api.service.ts — real-time availability check
  *   against the tenant's calendar, alternative-slot suggestion, order creation
  *   pushed to a POS (HubRise), call health/latency monitoring. This is a live,
@@ -98,6 +99,31 @@ export interface VsCopy {
   ctaButton: string;
 }
 
+/*
+  La grille d'Aevia Inbox, une seule fois pour les cinq comparatifs.
+
+  Relevée le 13/11/2026 dans skybot-inbox `src/billing/config/
+  pricing-plans.config.ts` et sur inbox.aevia.services/fr/pricing. Même prix
+  pour les trois modes (messages seuls, voix seule, les deux) : seul le quota
+  inclus change. Un prix qui change là-bas change ici, et dans `messages/*.json`
+  (FAQ de l'accueil) et `lib/blog-posts.ts` (article « combien coûte »).
+*/
+const INBOX_TARIFS_LIBELLE = "Aevia Inbox — même montant en dollars hors zone euro";
+
+const INBOX_TARIFS: PricingLine[] = [
+  { plan: "Starter", price: "79 €/mois", note: "1 utilisateur · 2 000 messages, ou 200 min de voix, ou 1 000 messages + 100 min" },
+  { plan: "Growth", price: "99 €/mois", note: "3 utilisateurs · 4 000 messages, ou 400 min, ou 2 000 messages + 200 min" },
+  { plan: "Pro", price: "199 €/mois", note: "5 utilisateurs · 8 000 messages, ou 800 min, ou 4 000 messages + 400 min" },
+  { plan: "Business", price: "399 €/mois", note: "15 utilisateurs · 16 000 messages, ou 1 600 min, ou 8 000 messages + 800 min" },
+  { plan: "Scale", price: "999 €/mois", note: "Utilisateurs illimités · 40 000 messages, ou 4 000 min, ou 20 000 messages + 2 000 min" },
+];
+
+const INBOX_CANAUX =
+  "Téléphone (ligne IA dédiée), WhatsApp, Instagram, email et chat de votre site — tous ouverts aujourd'hui, dans une seule boîte";
+
+const INBOX_TARIF_ENTREE =
+  "À partir de 79 €/mois (Starter), IA et voix incluses, + 100 € de mise en service unique";
+
 export interface VsEntry {
   slug: string;
   competitorName: string;
@@ -138,10 +164,10 @@ export const VS_PAGES: VsEntry[] = [
         tableTitle: "Comparatif fonctionnel",
         tableSubtitle: "Vérifié sur intercom.com/pricing et la documentation produit en juillet 2026.",
         tableRows: [
-          { label: "Canaux", aevia: "Webchat, Email, Voix (natifs) — WhatsApp et Instagram DM en cours de déploiement", competitor: "Live chat, email, in-app inclus ; SMS, WhatsApp, téléphone en add-on à l'usage" },
+          { label: "Canaux", aevia: INBOX_CANAUX, competitor: "Live chat, email, in-app inclus ; SMS, WhatsApp, téléphone en add-on à l'usage" },
           { label: "Agent IA", aevia: "Agents autonomes par rôle (accueil, qualification, closing) sur tous les canaux, inclus dans l'abonnement", competitor: "Fin AI Agent — agent de résolution autonome mature, facturé séparément 0,99 $ par résolution" },
           { label: "Voix / téléphone IA", aevia: "Agent vocal natif en production : disponibilité en temps réel, prise de réservation avec sync calendrier, commande envoyée au POS (HubRise)", competitor: "Fin Voice existe mais est réservé aux clients accompagnés par l'équipe commerciale Intercom — pas de self-service au moment de la vérification" },
-          { label: "Tarif d'entrée", aevia: "À partir de 99 $/mois (formule Growth), IA incluse dans le forfait", competitor: "À partir d'environ 29-39 $/siège/mois (Essential) + 0,99 $ par résolution Fin, en plus" },
+          { label: "Tarif d'entrée", aevia: INBOX_TARIF_ENTREE, competitor: "À partir d'environ 29-39 $/siège/mois (Essential) + 0,99 $ par résolution Fin, en plus" },
           { label: "Complexité de mise en place", aevia: "Compte unique, pas de gestion de sièges par rôle, workflows métiers préconfigurés", competitor: "Système de ticketing complet à paramétrer (routing, inboxes d'équipe, automatisations) — pensé pour un onboarding accompagné" },
         ],
 
@@ -161,13 +187,8 @@ export const VS_PAGES: VsEntry[] = [
 
         pricingTitle: "Tarifs vérifiés",
         pricingSubtitle: "Prix publics constatés en juillet 2026 — à reconfirmer avant devis, les tarifs SaaS évoluent souvent.",
-        pricingAeviaLabel: "Aevia Inbox (zone EU/US)",
-        pricingAevia: [
-          { plan: "Growth", price: "99 $/mois", note: "2 utilisateurs, 3 canaux, 1 000 exécutions IA/mois" },
-          { plan: "Studio", price: "199 $/mois", note: "5 utilisateurs, 8 canaux, 5 000 exécutions IA/mois" },
-          { plan: "Business", price: "399 $/mois", note: "15 utilisateurs, canaux illimités, 15 000 exécutions IA/mois" },
-          { plan: "Enterprise", price: "999 $/mois", note: "Utilisateurs et exécutions IA illimités" },
-        ],
+        pricingAeviaLabel: INBOX_TARIFS_LIBELLE,
+        pricingAevia: INBOX_TARIFS,
         pricingCompetitorLabel: "Intercom",
         pricingCompetitor: [
           { plan: "Essential", price: "≈ 29-39 $/siège/mois", note: "annuel / mensuel, 1 siège minimum" },
@@ -175,11 +196,11 @@ export const VS_PAGES: VsEntry[] = [
           { plan: "Expert", price: "≈ 132-139 $/siège/mois", note: "+ 50 sièges Lite offerts, SSO, HIPAA" },
         ],
         pricingNote:
-          "Sur toutes les formules Intercom, Fin AI Agent est facturé en plus : 0,99 $ par résolution. Les tarifs Aevia incluent un volume d'exécutions IA dans le forfait, sans facturation à la résolution.",
+          "Sur toutes les formules Intercom, Fin AI Agent est facturé en plus : 0,99 $ par résolution. Les forfaits Aevia incluent un quota de messages et/ou de minutes de voix, sans facturation à la résolution.",
 
         gapTitle: "Ce qu'Aevia ne fait pas (encore)",
         gapBody:
-          "Intercom propose un véritable système de ticketing multi-agents avec routing, SLA et inboxes d'équipe — Aevia Inbox n'a pas vocation à remplacer un helpdesk d'entreprise. WhatsApp et Instagram DM sont marqués « bientôt disponibles » sur Aevia Inbox : les connecteurs existent dans le produit mais ne sont pas encore ouverts à tous les clients. Si vous avez besoin de ces canaux dès aujourd'hui, Intercom les propose déjà (en add-on à l'usage).",
+          "Intercom propose un véritable système de ticketing multi-agents avec routing, SLA et inboxes d'équipe — Aevia Inbox n'a pas vocation à remplacer un helpdesk d'entreprise. Aevia Inbox n'a pas non plus d'application dans votre produit (messagerie in-app) ni de canal SMS entrant : si votre support passe par là, Intercom est plus adapté.",
 
         sourcesNote:
           "Sources vérifiées : intercom.com/pricing, intercom.com/help (Fin AI Agent, Fin Voice), recherche web juillet 2026.",
@@ -223,10 +244,10 @@ export const VS_PAGES: VsEntry[] = [
         tableTitle: "Comparatif fonctionnel",
         tableSubtitle: "Vérifié sur zendesk.com/pricing et le centre d'aide Zendesk en juillet 2026.",
         tableRows: [
-          { label: "Canaux", aevia: "Webchat, Email, Voix (natifs) — WhatsApp et Instagram DM en cours de déploiement", competitor: "Email, chat, messaging et voix (Zendesk Talk) inclus dès la formule Suite" },
+          { label: "Canaux", aevia: INBOX_CANAUX, competitor: "Email, chat, messaging et voix (Zendesk Talk) inclus dès la formule Suite" },
           { label: "Agent IA", aevia: "Agents autonomes par rôle inclus dans le forfait, sur tous les canaux", competitor: "« AI Agents » inclus à partir de Suite Team ; Copilot en add-on (~50 €/agent/mois)" },
           { label: "Voix / téléphone IA", aevia: "Agent vocal natif en production : disponibilité en temps réel, réservation avec sync calendrier, commande envoyée au POS", competitor: "Agents IA vocaux annoncés pour Zendesk Talk, mais en Early Access Program (EAP) — nécessite Zendesk Voice + l'add-on Advanced AI, pas encore en disponibilité générale au moment de la vérification" },
-          { label: "Tarif d'entrée", aevia: "À partir de 99 $/mois (formule Growth), IA incluse", competitor: "À partir de 19 €/agent/mois (Support Team, sans IA) ; IA à partir de 55 €/agent/mois (Suite Team)" },
+          { label: "Tarif d'entrée", aevia: INBOX_TARIF_ENTREE, competitor: "À partir de 19 €/agent/mois (Support Team, sans IA) ; IA à partir de 55 €/agent/mois (Suite Team)" },
           { label: "Complexité de mise en place", aevia: "Compte unique, pas de gestion par agent/rôle, workflows métiers préconfigurés", competitor: "Paramétrage de files, routing, SLA — outil conçu pour un déploiement accompagné par un admin" },
         ],
 
@@ -246,13 +267,8 @@ export const VS_PAGES: VsEntry[] = [
 
         pricingTitle: "Tarifs vérifiés",
         pricingSubtitle: "Prix publics constatés en juillet 2026 — à reconfirmer avant devis.",
-        pricingAeviaLabel: "Aevia Inbox (zone EU/US)",
-        pricingAevia: [
-          { plan: "Growth", price: "99 $/mois", note: "2 utilisateurs, 3 canaux, 1 000 exécutions IA/mois" },
-          { plan: "Studio", price: "199 $/mois", note: "5 utilisateurs, 8 canaux, 5 000 exécutions IA/mois" },
-          { plan: "Business", price: "399 $/mois", note: "15 utilisateurs, canaux illimités, 15 000 exécutions IA/mois" },
-          { plan: "Enterprise", price: "999 $/mois", note: "Utilisateurs et exécutions IA illimités" },
-        ],
+        pricingAeviaLabel: INBOX_TARIFS_LIBELLE,
+        pricingAevia: INBOX_TARIFS,
         pricingCompetitorLabel: "Zendesk",
         pricingCompetitor: [
           { plan: "Support Team", price: "19 €/agent/mois", note: "ticketing de base, sans IA" },
@@ -265,7 +281,7 @@ export const VS_PAGES: VsEntry[] = [
 
         gapTitle: "Ce qu'Aevia ne fait pas (encore)",
         gapBody:
-          "Zendesk propose un système de ticketing d'entreprise complet (SLA, routing par compétences, reporting avancé) qu'Aevia Inbox ne cherche pas à répliquer. WhatsApp et Instagram DM sont marqués « bientôt disponibles » sur Aevia Inbox — les connecteurs existent mais ne sont pas encore ouverts à tous les clients, alors que Zendesk les propose déjà dans sa suite.",
+          "Zendesk propose un système de ticketing d'entreprise complet (SLA, routing par compétences, reporting avancé) qu'Aevia Inbox ne cherche pas à répliquer. Si votre équipe compte plusieurs agents humains organisés en files, avec des engagements de délai à suivre et à mesurer, Zendesk reste l'outil fait pour ça.",
 
         sourcesNote:
           "Sources vérifiées : zendesk.com/pricing, zendesk.fr/pricing, support.zendesk.com (Announcing voice AI agents — EAP), recherche web juillet 2026.",
@@ -309,10 +325,10 @@ export const VS_PAGES: VsEntry[] = [
         tableTitle: "Comparatif fonctionnel",
         tableSubtitle: "Vérifié sur hubspot.com/pricing/service en juillet 2026.",
         tableRows: [
-          { label: "Canaux", aevia: "Webchat, Email, Voix (natifs) — WhatsApp et Instagram DM en cours de déploiement", competitor: "Live chat, email, WhatsApp (plafonné à 1 000 messages/mois), Messenger, téléphone (minutes plafonnées par palier)" },
+          { label: "Canaux", aevia: INBOX_CANAUX, competitor: "Live chat, email, WhatsApp (plafonné à 1 000 messages/mois), Messenger, téléphone (minutes plafonnées par palier)" },
           { label: "Agent IA", aevia: "Agents autonomes par rôle inclus dans le forfait, sur tous les canaux", competitor: "Breeze Customer Agent — facturation à la conversation résolue (0,50 $, 50 crédits) en plus du siège Pro/Enterprise" },
           { label: "Voix / téléphone IA", aevia: "Agent vocal natif en production : disponibilité en temps réel, réservation avec sync calendrier, commande envoyée au POS", competitor: "Canal voix pour Breeze Customer Agent annoncé en bêta au moment de la vérification — pas encore généralement disponible" },
-          { label: "Tarif d'entrée", aevia: "À partir de 99 $/mois (formule Growth), IA incluse", competitor: "Gratuit (2 utilisateurs, sans IA avancée) ; IA nécessite la formule Professional à partir de 90 $/siège/mois + frais d'onboarding" },
+          { label: "Tarif d'entrée", aevia: INBOX_TARIF_ENTREE, competitor: "Gratuit (2 utilisateurs, sans IA avancée) ; IA nécessite la formule Professional à partir de 90 $/siège/mois + frais d'onboarding" },
           { label: "Complexité de mise en place", aevia: "Compte unique, pas d'objet CRM à modéliser, workflows métiers préconfigurés", competitor: "Objet CRM complet à paramétrer ; frais d'onboarding 1 500 $ (Pro) à 3 500 $ (Enterprise), 10 sièges minimum en Enterprise" },
         ],
 
@@ -332,13 +348,8 @@ export const VS_PAGES: VsEntry[] = [
 
         pricingTitle: "Tarifs vérifiés",
         pricingSubtitle: "Prix publics constatés en juillet 2026 — à reconfirmer avant devis.",
-        pricingAeviaLabel: "Aevia Inbox (zone EU/US)",
-        pricingAevia: [
-          { plan: "Growth", price: "99 $/mois", note: "2 utilisateurs, 3 canaux, 1 000 exécutions IA/mois" },
-          { plan: "Studio", price: "199 $/mois", note: "5 utilisateurs, 8 canaux, 5 000 exécutions IA/mois" },
-          { plan: "Business", price: "399 $/mois", note: "15 utilisateurs, canaux illimités, 15 000 exécutions IA/mois" },
-          { plan: "Enterprise", price: "999 $/mois", note: "Utilisateurs et exécutions IA illimités" },
-        ],
+        pricingAeviaLabel: INBOX_TARIFS_LIBELLE,
+        pricingAevia: INBOX_TARIFS,
         pricingCompetitorLabel: "HubSpot Service Hub",
         pricingCompetitor: [
           { plan: "Free", price: "0 $/mois", note: "2 utilisateurs, sans IA avancée" },
@@ -351,7 +362,7 @@ export const VS_PAGES: VsEntry[] = [
 
         gapTitle: "Ce qu'Aevia ne fait pas (encore)",
         gapBody:
-          "Aevia n'est pas un CRM : pas de pipelines commerciaux, pas de modules marketing, pas de reporting croisé multi-hub. Si votre besoin dépasse le contact client (gestion de pipeline de vente complexe, marketing automation), HubSpot reste plus complet. WhatsApp et Instagram DM sont par ailleurs marqués « bientôt disponibles » sur Aevia Inbox, alors que HubSpot les propose déjà (avec un plafond de messages sur les formules payantes).",
+          "Aevia n'est pas un CRM : pas de pipelines commerciaux, pas de modules marketing, pas de reporting croisé multi-hub. Si votre besoin dépasse le contact client (gestion de pipeline de vente complexe, marketing automation), HubSpot reste plus complet.",
 
         sourcesNote:
           "Sources vérifiées : hubspot.com/pricing/service, knowledge.hubspot.com (Breeze), recherche web juillet 2026.",
@@ -395,10 +406,10 @@ export const VS_PAGES: VsEntry[] = [
         tableTitle: "Comparatif fonctionnel",
         tableSubtitle: "Vérifié sur manychat.com/pricing et help.manychat.com en juillet 2026.",
         tableRows: [
-          { label: "Canaux", aevia: "Webchat, Email, Voix (natifs) — WhatsApp et Instagram DM en cours de déploiement", competitor: "Instagram, Messenger, WhatsApp, SMS, Telegram, TikTok, email — tous déjà disponibles, sans voix/téléphone" },
+          { label: "Canaux", aevia: INBOX_CANAUX, competitor: "Instagram, Messenger, WhatsApp, SMS, Telegram, TikTok, email — tous déjà disponibles, sans voix/téléphone" },
           { label: "Agent IA", aevia: "Agents autonomes par rôle inclus dans le forfait, sur tous les canaux", competitor: "Automatisation par flux visuels (scénarios/mots-clés) par défaut ; comportement IA conversationnel via l'add-on « Manychat AI » (+29 $/mois)" },
           { label: "Voix / téléphone IA", aevia: "Agent vocal natif en production : disponibilité en temps réel, réservation avec sync calendrier, commande envoyée au POS", competitor: "Aucune fonctionnalité voix/téléphone au moment de la vérification" },
-          { label: "Tarif d'entrée", aevia: "À partir de 99 $/mois (formule Growth), IA incluse, prix indépendant du nombre de contacts", competitor: "Gratuit (25 contacts actifs) ; Essential à partir de 14 $/mois (250 contacts) — le prix grimpe avec le nombre de contacts actifs" },
+          { label: "Tarif d'entrée", aevia: `${INBOX_TARIF_ENTREE} ; prix indépendant du nombre de contacts`, competitor: "Gratuit (25 contacts actifs) ; Essential à partir de 14 $/mois (250 contacts) — le prix grimpe avec le nombre de contacts actifs" },
           { label: "Complexité de mise en place", aevia: "Compte unique, workflows métiers préconfigurés (réservation, qualification)", competitor: "Builder de flux à construire soi-même (glisser-déposer), rapide à démarrer mais demande du temps pour des scénarios avancés" },
         ],
 
@@ -418,13 +429,8 @@ export const VS_PAGES: VsEntry[] = [
 
         pricingTitle: "Tarifs vérifiés",
         pricingSubtitle: "Prix publics constatés en juillet 2026 — à reconfirmer avant devis.",
-        pricingAeviaLabel: "Aevia Inbox (zone EU/US)",
-        pricingAevia: [
-          { plan: "Growth", price: "99 $/mois", note: "2 utilisateurs, 3 canaux, 1 000 exécutions IA/mois" },
-          { plan: "Studio", price: "199 $/mois", note: "5 utilisateurs, 8 canaux, 5 000 exécutions IA/mois" },
-          { plan: "Business", price: "399 $/mois", note: "15 utilisateurs, canaux illimités, 15 000 exécutions IA/mois" },
-          { plan: "Enterprise", price: "999 $/mois", note: "Utilisateurs et exécutions IA illimités" },
-        ],
+        pricingAeviaLabel: INBOX_TARIFS_LIBELLE,
+        pricingAevia: INBOX_TARIFS,
         pricingCompetitorLabel: "Manychat",
         pricingCompetitor: [
           { plan: "Free", price: "0 $/mois", note: "25 contacts actifs, 2 canaux max" },
@@ -433,11 +439,11 @@ export const VS_PAGES: VsEntry[] = [
           { plan: "Business", price: "à partir de 69 $/mois", note: "7 500 contacts, tous canaux" },
         ],
         pricingNote:
-          "Manychat facture au nombre de « contacts actifs » : la facture augmente mécaniquement avec votre audience. Aevia facture un forfait fixe par palier de fonctionnalités, indépendant du volume de contacts.",
+          "Manychat facture au nombre de « contacts actifs » : la facture augmente mécaniquement avec votre audience. Aevia facture un forfait fixe par palier de volume (messages ou minutes de voix), indépendant du nombre de contacts.",
 
         gapTitle: "Ce qu'Aevia ne fait pas (encore)",
         gapBody:
-          "Manychat couvre déjà Instagram, WhatsApp, Messenger, SMS, Telegram et TikTok — Aevia Inbox ne propose aujourd'hui que Webchat, Email et Voix en natif ; WhatsApp et Instagram DM sont annoncés « bientôt disponibles » mais pas encore ouverts à tous les clients, et TikTok/Telegram ne sont pas au programme. Si la diffusion marketing multi-canal est votre priorité n°1, Manychat a une avance réelle sur la couverture des canaux.",
+          "Manychat couvre aussi SMS, Telegram et TikTok, qu'Aevia Inbox ne propose pas, et sait diffuser des campagnes et des séquences marketing à toute une audience — Aevia Inbox répond aux messages entrants, il ne fait pas de diffusion. Si la diffusion marketing multi-canal est votre priorité n°1, Manychat a une avance réelle.",
 
         sourcesNote:
           "Sources vérifiées : manychat.com/pricing, help.manychat.com (choix de formule), recherche web juillet 2026.",
@@ -481,10 +487,10 @@ export const VS_PAGES: VsEntry[] = [
         tableTitle: "Comparatif fonctionnel",
         tableSubtitle: "Vérifié sur respond.io/pricing et respond.io/help en juillet 2026.",
         tableRows: [
-          { label: "Canaux", aevia: "Webchat, Email, Voix (natifs) — WhatsApp et Instagram DM en cours de déploiement", competitor: "WhatsApp, Instagram, Messenger, SMS, Telegram, email, Viber, LINE — tous déjà disponibles" },
+          { label: "Canaux", aevia: INBOX_CANAUX, competitor: "WhatsApp, Instagram, Messenger, SMS, Telegram, email, Viber, LINE — tous déjà disponibles" },
           { label: "Agent IA", aevia: "Agents autonomes par rôle inclus dans le forfait, sur tous les canaux, dès l'entrée de gamme", competitor: "AI Agents avec actions CRM/API à partir de la formule Growth (159 $/mois) ; AI Prompts/Assist sur toutes les formules" },
-          { label: "Voix / téléphone IA", aevia: "Agent vocal natif : disponibilité en temps réel, réservation avec sync calendrier, commande envoyée au POS — sans limite de durée d'appel documentée", competitor: "Voice AI Agent réel, disponible dès la formule Advanced (279 $/mois), 32 langues (ElevenLabs) — mais chaque appel est plafonné à 3 minutes et un humain ne peut pas reprendre la main en cours d'appel" },
-          { label: "Tarif d'entrée", aevia: "À partir de 99 $/mois (formule Growth), IA incluse dès l'entrée", competitor: "À partir de 79 $/mois (Starter, sans agents IA) ; agents IA à partir de 159 $/mois (Growth), voix à partir de 279 $/mois (Advanced)" },
+          { label: "Voix / téléphone IA", aevia: "Agent vocal natif : disponibilité en temps réel, réservation avec sync calendrier, commande envoyée au POS — chaque minute décomptée du quota de la formule", competitor: "Voice AI Agent réel, disponible dès la formule Advanced (279 $/mois), 32 langues (ElevenLabs) — mais chaque appel est plafonné à 3 minutes et un humain ne peut pas reprendre la main en cours d'appel" },
+          { label: "Tarif d'entrée", aevia: INBOX_TARIF_ENTREE, competitor: "À partir de 79 $/mois (Starter, sans agents IA) ; agents IA à partir de 159 $/mois (Growth), voix à partir de 279 $/mois (Advanced)" },
           { label: "Complexité de mise en place", aevia: "Compte unique, workflows métiers préconfigurés (réservation, qualification)", competitor: "Builder de workflows/actions IA à configurer — plus flexible mais plus de paramétrage nécessaire" },
         ],
 
@@ -497,20 +503,15 @@ export const VS_PAGES: VsEntry[] = [
         ],
         chooseCompetitorTitle: "Choisissez Respond.io si…",
         chooseCompetitorPoints: [
-          "Vous avez besoin de tous les canaux de messagerie dès aujourd'hui (WhatsApp, Instagram, Telegram, Viber, LINE) — Aevia les a en cours de déploiement, pas encore tous ouverts",
+          "Vous avez besoin de Telegram, Viber, LINE ou du SMS — Aevia Inbox ne les propose pas",
           "Vous gérez un volume de contacts élevé et voulez une tarification à contacts actifs illimités plutôt que par palier de fonctionnalités",
           "Un plafond de 3 minutes par appel IA est acceptable pour votre cas d'usage (support rapide plutôt que réservation détaillée)",
         ],
 
         pricingTitle: "Tarifs vérifiés",
         pricingSubtitle: "Prix publics constatés en juillet 2026 — à reconfirmer avant devis.",
-        pricingAeviaLabel: "Aevia Inbox (zone EU/US)",
-        pricingAevia: [
-          { plan: "Growth", price: "99 $/mois", note: "2 utilisateurs, 3 canaux, 1 000 exécutions IA/mois — voix incluse" },
-          { plan: "Studio", price: "199 $/mois", note: "5 utilisateurs, 8 canaux, 5 000 exécutions IA/mois" },
-          { plan: "Business", price: "399 $/mois", note: "15 utilisateurs, canaux illimités, 15 000 exécutions IA/mois" },
-          { plan: "Enterprise", price: "999 $/mois", note: "Utilisateurs et exécutions IA illimités" },
-        ],
+        pricingAeviaLabel: INBOX_TARIFS_LIBELLE,
+        pricingAevia: INBOX_TARIFS,
         pricingCompetitorLabel: "Respond.io",
         pricingCompetitor: [
           { plan: "Starter", price: "79 $/mois", note: "contacts actifs illimités, sans agents IA" },
@@ -519,11 +520,11 @@ export const VS_PAGES: VsEntry[] = [
           { plan: "Enterprise", price: "Sur devis", note: "utilisateurs et API illimités" },
         ],
         pricingNote:
-          "Chez Respond.io, la voix IA n'est disponible qu'à partir de 279 $/mois. Chez Aevia, la voix fait partie du canal natif dès la formule d'entrée à 99 $/mois.",
+          "Chez Respond.io, la voix IA n'est disponible qu'à partir de 279 $/mois. Chez Aevia, la voix est incluse dès la formule d'entrée à 79 €/mois (200 minutes en voix seule).",
 
         gapTitle: "Ce qu'Aevia ne fait pas (encore)",
         gapBody:
-          "Respond.io couvre aujourd'hui huit canaux de messagerie (dont WhatsApp, Instagram, Telegram, Viber, LINE) avec une tarification à contacts illimités — Aevia Inbox n'a que Webchat, Email et Voix en natif pour l'instant, WhatsApp et Instagram DM étant annoncés « bientôt disponibles ». Sur la largeur de couverture canaux, Respond.io a une avance réelle et vérifiable.",
+          "Respond.io couvre aujourd'hui huit canaux de messagerie, dont Telegram, Viber, LINE et le SMS, qu'Aevia Inbox ne propose pas, avec une tarification à contacts illimités. Sur la largeur de couverture canaux, Respond.io a une avance réelle et vérifiable.",
 
         sourcesNote:
           "Sources vérifiées : respond.io/pricing, respond.io/help (AI Agent Actions, Handle Calls), respond.io/blog (Voice AI Agents), recherche web juillet 2026.",

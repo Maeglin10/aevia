@@ -112,7 +112,7 @@ Un outil comme **Google PageSpeed Insights** vous donnera en 30 secondes le scor
 
 ## Par où commencer concrètement ?
 
-**Aevia Launch** propose une bibliothèque de plus de 200 templates sectoriels pensés pour la performance et la conversion — restauration, conseil, e-commerce, beauté, immobilier, et bien d'autres. Chaque template est mobile-first, personnalisable, et déployé en moins de 7 jours.
+**Aevia Launch** propose une bibliothèque de plus de 100 templates sectoriels pensés pour la performance et la conversion — restauration, conseil, e-commerce, beauté, immobilier, et bien d'autres. Chaque template est mobile-first et personnalisable ; le site est en ligne sous 48 heures avec les formules Landing, Essentiel et Pro (5 à 7 jours pour un site Premium sur mesure).
 
 La meilleure approche : filtrez par secteur d'activité d'abord, puis par style visuel. Vous réduirez votre sélection à 3-5 candidats sérieux au lieu de vous perdre dans une galerie de plusieurs centaines d'options.`,
     i18n: {
@@ -191,7 +191,7 @@ A tool like **Google PageSpeed Insights** will give you a template's performance
 
 ## Where to actually start
 
-**Aevia Launch** offers a library of over 100 sector templates built for performance and conversion — food, consulting, e-commerce, beauty, real estate and many more. Each template is mobile-first, customizable, and delivered in under 7 days.
+**Aevia Launch** offers a library of over 100 sector templates built for performance and conversion — food, consulting, e-commerce, beauty, real estate and many more. Each template is mobile-first and customizable; the site goes live within 48 hours on the Landing, Essentiel and Pro plans (5 to 7 days for a custom Premium site).
 
 The best approach: filter by sector first, then by visual style. You will narrow your shortlist to 3-5 serious candidates instead of getting lost in a gallery of hundreds.`,
       },
@@ -270,7 +270,7 @@ Una herramienta como **Google PageSpeed Insights** te dará en 30 segundos la pu
 
 ## Por dónde empezar en concreto
 
-**Aevia Launch** ofrece una biblioteca de más de 100 plantillas sectoriales pensadas para el rendimiento y la conversión — restauración, consultoría, e-commerce, belleza, inmobiliaria y muchas más. Cada plantilla es mobile-first, personalizable y desplegada en menos de 7 días.
+**Aevia Launch** ofrece una biblioteca de más de 100 plantillas sectoriales pensadas para el rendimiento y la conversión — restauración, consultoría, e-commerce, belleza, inmobiliaria y muchas más. Cada plantilla es mobile-first y personalizable; la web está en línea en menos de 48 horas con los planes Landing, Essentiel y Pro (de 5 a 7 días para una web Premium a medida).
 
 El mejor enfoque: filtra primero por sector, luego por estilo visual. Reducirás tu selección a 3-5 candidatas serias en lugar de perderte en una galería de cientos de opciones.`,
       },
@@ -2953,7 +2953,7 @@ Un bon site en 2026, c'est :
 - **Un formulaire de contact ou un bouton d'appel à l'action visible** sur chaque page
 - **Un design mobile-first** — plus de 65 % des visites viennent du smartphone
 
-Des solutions comme Aevia Launch permettent d'obtenir un site professionnel, personnalisé et déployé en 7 jours — sans sacrifier la qualité pour la rapidité.
+Des solutions comme Aevia Launch permettent d'obtenir un site professionnel et personnalisé, en ligne sous 48 heures (5 à 7 jours pour un site Premium sur mesure) — sans sacrifier la qualité pour la rapidité.
 
 ---
 
@@ -3050,7 +3050,7 @@ A good site in 2026 is:
 - **A visible contact form or call-to-action button** on every page
 - **A mobile-first design** — over 65% of visits come from smartphones
 
-Solutions like Aevia Launch deliver a professional, customized site deployed in 7 days — without sacrificing quality for speed.
+Solutions like Aevia Launch deliver a professional, customized site online within 48 hours (5 to 7 days for a custom Premium site) — without sacrificing quality for speed.
 
 ---
 
@@ -3147,7 +3147,7 @@ Una buena web en 2026 es:
 - **Un formulario de contacto o un botón de llamada a la acción visible** en cada página
 - **Un diseño mobile-first** — más del 65% de las visitas vienen del smartphone
 
-Soluciones como Aevia Launch permiten obtener una web profesional, personalizada y desplegada en 7 días — sin sacrificar la calidad por la rapidez.
+Soluciones como Aevia Launch permiten obtener una web profesional y personalizada, en línea en menos de 48 horas (de 5 a 7 días para una web Premium a medida) — sin sacrificar la calidad por la rapidez.
 
 ---
 
@@ -3915,22 +3915,24 @@ Pour surmonter le défi de la gestion multicanale, Aevia a conçu **Aevia Inbox*
 Aevia Inbox fonctionne comme un véritable copilote virtuel pour votre équipe commerciale :
 
 - **Centralisation totale** : Tous les messages reçus par chat, email ou téléphone arrivent dans un flux de travail unique et structuré. Finie la jonglerie permanente entre cinq applications différentes.
-- **Réponses autonomes et personnalisées** : Grâce à un modèle d'IA entraîné spécifiquement sur vos données (documents d'entreprise, catalogue produit, FAQ), Aevia Inbox répond automatiquement 24h/24 et 7j/7 avec un ton naturel et adapté à votre image de marque.
+- **Réponses autonomes et personnalisées** : En s'appuyant sur vos propres informations (documents d'entreprise, catalogue produit, FAQ), Aevia Inbox répond automatiquement 24h/24 et 7j/7 avec un ton naturel et adapté à votre image de marque.
 - **Qualification et transmission d'alertes** : L'outil identifie instantanément la valeur de chaque contact. Lorsqu'un prospect chaud exprime une intention d'achat ferme ou demande un devis sur-mesure, Aevia Inbox attribue la tâche à votre meilleur commercial et génère une alerte prioritaire.
 
 ---
 
-## Cas concret : un restaurant lyonnais qui gère 50 messages/jour avec 1 personne
+## Le calcul à faire avec vos propres chiffres : l'exemple d'un restaurant
 
-Pour illustrer l'impact direct sur le retour sur investissement (ROI), prenons l'exemple d'un établissement de restauration situé dans le centre de Lyon.
+Ce qui suit est un **exemple de calcul**, pas le témoignage d'un client : refaites-le avec vos nombres.
 
-Avant de déployer Aevia Inbox, ce restaurant recevait chaque jour plus de 50 sollicitations variées (demandes d'allergènes, modifications de réservations, privatisations d'entreprises, horaires des jours fériés). Le gérant et son responsable de salle passaient près de 2 heures par jour à répondre aux messages et à rater des appels en plein service.
+Prenons un restaurant du centre de Lyon qui reçoit une cinquantaine de sollicitations par jour : horaires, accès, carte, réservations, modifications, demandes de privatisation. Si chacune prend deux à trois minutes à quelqu'un de l'équipe, cela représente près de deux heures par jour — souvent prises en plein service, ou pas prises du tout.
 
-Après l'installation de l'assistant IA Aevia Inbox :
+Ce qu'un assistant IA comme Aevia Inbox change dans ce cas :
 
-- **85 % des demandes courantes** (horaires, menus, accès, réservations standard) sont désormais traitées instantanément par l'IA sans aucune intervention humaine.
-- **Les demandes de privatisation B2B** sont automatiquement qualifiées par l'IA et transmises directement au gérant sous forme de fiches complètes (date, nombre d'invités, budget).
-- **Résultat** : Une seule personne consacre désormais moins de 15 minutes par jour à la supervision du service client, tandis que le taux de transformation des réservations a augmenté de 22 % grâce à l'immédiateté des réponses.
+- **Les questions courantes** (horaires, accès, carte, réservation simple) reçoivent une réponse immédiate, à partir des informations que vous avez renseignées.
+- **Les demandes qui méritent un humain** (privatisation, réclamation, cas particulier) vous sont transmises avec ce que le client a déjà dit : date, nombre de personnes, coordonnées.
+- **Ce qui reste à faire** : relire de temps en temps les conversations et tenir vos informations à jour. L'IA ne répond bien que sur ce que vous lui avez donné.
+
+Le gain réel dépend de la part de demandes répétitives dans votre volume : c'est ce chiffre-là qu'il faut estimer avant de vous lancer.
 
 ---
 
@@ -3941,7 +3943,7 @@ L'un des plus grands préjugés concernant les projets de service client IA à L
 La mise en place s'effectue en trois temps forts au cours de la même journée :
 
 1. **Connectez vos canaux** : En quelques clics, vous raccordez votre adresse email professionnelle, votre numéro de téléphone et votre site web à l'interface Aevia Inbox.
-2. **Importez votre base de connaissances** : Téléchargez vos documents existants (brochures, tarifs, FAQ, fiches produits). L'IA assimilie immédiatement l'intégralité de vos informations métier.
+2. **Importez votre base de connaissances** : Téléchargez vos documents existants (brochures, tarifs, FAQ, fiches produits). L'IA s'appuie aussitôt sur ces informations pour répondre.
 3. **Activez l'automatisation** : Vous définissez les règles de délégation (ce que l'IA traite seule et ce qui nécessite votre validation) et votre assistant virtuel est instantanément opérationnel pour répondre à vos clients lyonnais.
 
 ---
@@ -4082,7 +4084,7 @@ Un vrai agent vocal IA :
 
 Le vrai calcul n'est pas le prix de l'outil, mais le coût des réservations ratées. Une seule table de 4 couverts perdue peut représenter 100 à 200 € de chiffre d'affaires. Sur un mois, quelques appels manqués par jour finissent par peser lourd.
 
-Un service comme Aevia Inbox propose la voix IA à partir de 49 $/mois, avec des paliers selon le volume de minutes d'appel. Autrement dit, l'outil est rentabilisé dès la première ou deuxième réservation qu'il récupère.
+Un service comme Aevia Inbox propose la voix IA à partir de 79 € par mois (formule Starter : 200 minutes d'appel incluses en voix seule), plus 100 € de mise en service unique, avec des paliers selon le volume de minutes. Autrement dit, l'abonnement du mois équivaut au chiffre d'affaires d'une ou deux tables récupérées.
 
 ---
 
@@ -4178,7 +4180,7 @@ A real AI voice agent:
 
 The real calculation is not the price of the tool, but the cost of missed bookings. A single table of 4 can be worth 100 to 200 EUR in revenue. Over a month, a few missed calls a day add up fast.
 
-A service like Aevia Inbox offers AI voice from 49 USD/month, with tiers based on call-minute volume. In other words, the tool pays for itself with the first or second reservation it recovers.
+A service like Aevia Inbox offers AI voice from €79 a month ($79 outside the eurozone) on the Starter plan, with 200 call minutes included in voice-only mode, plus a one-off €100 setup fee, and higher tiers by minute volume. In other words, a month's subscription equals the revenue of one or two recovered tables.
 
 ---
 
@@ -4262,7 +4264,7 @@ Un verdadero agente de voz con IA:
 
 El cálculo real no es el precio de la herramienta, sino el coste de las reservas perdidas. Una sola mesa de 4 puede suponer entre 100 y 200 EUR de facturación. En un mes, unas pocas llamadas perdidas al día suman mucho.
 
-Un servicio como Aevia Inbox ofrece voz con IA desde 49 USD/mes, con niveles según el volumen de minutos de llamada. Es decir, la herramienta se amortiza con la primera o segunda reserva que recupera.
+Un servicio como Aevia Inbox ofrece voz con IA desde 79 € al mes (79 USD fuera de la zona euro) con el plan Starter, que incluye 200 minutos de llamada en modo solo voz, más 100 € de puesta en marcha única, y niveles superiores según el volumen de minutos. Es decir, la suscripción de un mes equivale a la facturación de una o dos mesas recuperadas.
 
 ---
 
@@ -4350,7 +4352,7 @@ Le point commun : beaucoup d'appels répétitifs pour des rendez-vous, et un per
 
 Chaque appel de prise de rendez-vous traité automatiquement, c'est quelques minutes rendues à votre équipe, multipliées par des dizaines d'appels par jour. Et chaque appel décroché en dehors des heures d'ouverture, c'est un rendez-vous que vous auriez perdu.
 
-Aevia Inbox propose cette voix IA à partir de 49 $/mois, avec des paliers selon le volume d'appels. Le calcul est simple : combien de rendez-vous perdez-vous aujourd'hui parce que personne ne peut décrocher ?
+Aevia Inbox propose cette voix IA à partir de 79 € par mois (formule Starter, 200 minutes d'appel incluses en voix seule), plus 100 € de mise en service unique, avec des paliers selon le volume d'appels. Le calcul est simple : combien de rendez-vous perdez-vous aujourd'hui parce que personne ne peut décrocher ?
 
 ---
 
@@ -4445,7 +4447,7 @@ The common thread: lots of repetitive appointment calls, and front-desk staff wh
 
 Every appointment call handled automatically is a few minutes returned to your team, multiplied by dozens of calls a day. And every call answered outside opening hours is an appointment you would have lost.
 
-Aevia Inbox offers this AI voice from 49 USD/month, with tiers based on call volume. The math is simple: how many appointments do you lose today because no one can pick up?
+Aevia Inbox offers this AI voice from €79 a month ($79 outside the eurozone) on the Starter plan, with 200 call minutes included in voice-only mode, plus a one-off €100 setup fee, and higher tiers by call volume. The math is simple: how many appointments do you lose today because no one can pick up?
 
 ---
 
@@ -4528,7 +4530,7 @@ El punto común: muchas llamadas repetitivas de citas, y un personal de recepci�
 
 Cada llamada de cita gestionada automáticamente son unos minutos devueltos a tu equipo, multiplicados por decenas de llamadas al día. Y cada llamada atendida fuera del horario es una cita que habrías perdido.
 
-Aevia Inbox ofrece esta voz con IA desde 49 USD/mes, con niveles según el volumen de llamadas. El cálculo es simple: ¿cuántas citas pierdes hoy porque nadie puede contestar?
+Aevia Inbox ofrece esta voz con IA desde 79 € al mes (79 USD fuera de la zona euro) con el plan Starter, 200 minutos de llamada incluidos en modo solo voz, más 100 € de puesta en marcha única, y niveles superiores según el volumen de llamadas. El cálculo es simple: ¿cuántas citas pierdes hoy porque nadie puede contestar?
 
 ---
 
@@ -4571,7 +4573,7 @@ Devuelve a tu equipo el tiempo que pasa al teléfono.
     category: "IA Vocale & Téléphonie",
     content: `## À retenir en 30 secondes
 
-- **Un agent téléphonique IA coûte à partir d'environ 49 $/mois** pour une petite entreprise, selon le volume de minutes d'appel inclus.
+- **Chez Aevia Inbox, un agent téléphonique IA coûte à partir de 79 € par mois**, avec 200 minutes d'appel incluses, plus 100 € de mise en service unique.
 - **Le bon calcul n'est pas le prix de l'outil**, mais ce qu'il rapporte : chaque appel manqué récupéré est un client gagné.
 - **La tarification est modulable** : on peut prendre la voix seule, les messages seuls, ou les deux.
 - **Pas de matériel, pas d'embauche** : l'agent tourne sur une ligne dédiée, prêt à répondre 24h/24.
@@ -4593,11 +4595,13 @@ Contrairement à une secrétaire ou un centre d'appel, il n'y a ni salaire, ni c
 
 Chez Aevia Inbox, la tarification est modulable et le prix par palier est le même quel que soit le mode choisi (messages seuls, voix seule, ou les deux) — seul le quota inclus change :
 
-- **Starter — 49 $/mois** : pour un petit volume d'appels ou de messages.
-- **Growth — 99 $/mois** : pour un flux régulier.
-- **Pro — 199 $/mois** : pour un volume soutenu.
-- **Business — 399 $/mois** : pour un fort volume.
-- **Scale — 999 $/mois** : pour les plus gros besoins.
+- **Starter — 79 €/mois** : 200 minutes d'appel en voix seule, ou 2 000 messages, ou 1 000 messages + 100 minutes.
+- **Growth — 99 €/mois** : 400 minutes, ou 4 000 messages, ou 2 000 messages + 200 minutes.
+- **Pro — 199 €/mois** : 800 minutes, ou 8 000 messages, ou 4 000 messages + 400 minutes.
+- **Business — 399 €/mois** : 1 600 minutes, ou 16 000 messages, ou 8 000 messages + 800 minutes.
+- **Scale — 999 €/mois** : 4 000 minutes, ou 40 000 messages, ou 20 000 messages + 2 000 minutes.
+
+S'y ajoutent des frais de mise en service uniques de 100 € (connexion des canaux et configuration de l'agent). Sans engagement, 14 jours satisfait ou remboursé. Hors zone euro, le même montant est facturé en dollars. Grille relevée le 13 novembre 2026 sur la page Tarifs d'Aevia Inbox.
 
 L'intérêt de ce modèle : on ne paie pas pour un forfait "tout inclus" opaque. Si vous n'avez besoin que de la voix, vous prenez la voix ; si vous voulez aussi WhatsApp et email, vous passez en mode combiné.
 
@@ -4610,7 +4614,7 @@ Pour juger le prix, il faut le comparer au coût de ne rien faire. Prenons un ex
 - Un restaurant qui rate 3 réservations par jour à 120 € de panier moyen perd environ 360 €/jour de chiffre d'affaires potentiel.
 - Un garage qui manque 2 prises de rendez-vous par jour perd deux interventions.
 
-Face à ces montants, un abonnement à 49 à 199 $/mois se rentabilise en une poignée d'appels récupérés. C'est ce décalage — quelques dizaines d'euros par mois contre des centaines d'euros de ventes perdues — qui rend un agent vocal IA intéressant pour une petite structure.
+Face à ces montants, un abonnement de 79 à 199 € par mois se rentabilise en une poignée d'appels récupérés. C'est ce décalage — moins de 200 € par mois contre des centaines d'euros de ventes perdues — qui rend un agent vocal IA intéressant pour une petite structure.
 
 ---
 
@@ -4672,7 +4676,7 @@ Faites le calcul pour votre activité : combien vous coûtent aujourd'hui les ap
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
-- **An AI phone agent costs from around 49 USD/month** for a small business, depending on the call-minute volume included.
+- **At Aevia Inbox, an AI phone agent costs from €79 a month** ($79 outside the eurozone), with 200 call minutes included, plus a one-off €100 setup fee.
 - **The right calculation is not the price of the tool**, but what it brings in: every recovered missed call is a customer won.
 - **Pricing is modular**: you can take voice only, messages only, or both.
 - **No hardware, no hiring**: the agent runs on a dedicated line, ready to answer 24/7.
@@ -4694,11 +4698,13 @@ Unlike a receptionist or a call center, there is no salary, no payroll taxes, no
 
 At Aevia Inbox, pricing is modular and the price per tier is the same whatever mode you choose (messages only, voice only, or both) — only the included quota changes:
 
-- **Starter — 49 USD/month**: for a small volume of calls or messages.
-- **Growth — 99 USD/month**: for a steady flow.
-- **Pro — 199 USD/month**: for a sustained volume.
-- **Business — 399 USD/month**: for a high volume.
-- **Scale — 999 USD/month**: for the largest needs.
+- **Starter — €79/month**: 200 call minutes in voice-only mode, or 2,000 messages, or 1,000 messages + 100 minutes.
+- **Growth — €99/month**: 400 minutes, or 4,000 messages, or 2,000 messages + 200 minutes.
+- **Pro — €199/month**: 800 minutes, or 8,000 messages, or 4,000 messages + 400 minutes.
+- **Business — €399/month**: 1,600 minutes, or 16,000 messages, or 8,000 messages + 800 minutes.
+- **Scale — €999/month**: 4,000 minutes, or 40,000 messages, or 20,000 messages + 2,000 minutes.
+
+On top of that comes a one-off €100 setup fee (connecting your channels and configuring the agent). No commitment, 14-day money-back guarantee. Outside the eurozone, the same amount is billed in US dollars. Prices taken from the Aevia Inbox pricing page on 13 November 2026.
 
 The appeal of this model: you do not pay for an opaque "all-inclusive" bundle. If you only need voice, you take voice; if you also want WhatsApp and email, you switch to the combined mode.
 
@@ -4711,7 +4717,7 @@ To judge the price, compare it to the cost of doing nothing. A simple example:
 - A restaurant missing 3 bookings a day at a 120 EUR average check loses around 360 EUR/day in potential revenue.
 - A garage missing 2 appointment calls a day loses two jobs.
 
-Against those numbers, a subscription at 49 to 199 USD/month pays for itself in a handful of recovered calls. It is that gap — a few tens of euros a month versus hundreds in lost sales — that makes an AI voice agent worthwhile for a small business.
+Against those numbers, a subscription at €79 to €199 a month pays for itself in a handful of recovered calls. It is that gap — under €200 a month versus hundreds in lost sales — that makes an AI voice agent worthwhile for a small business.
 
 ---
 
@@ -4761,7 +4767,7 @@ Do the math for your business: how much do the calls no one answers cost you tod
         category: "Voz IA y Telefonía",
         content: `## Lo esencial en 30 segundos
 
-- **Un agente telefónico con IA cuesta desde unos 49 USD/mes** para una pequeña empresa, según el volumen de minutos de llamada incluidos.
+- **En Aevia Inbox, un agente telefónico con IA cuesta desde 79 € al mes** (79 USD fuera de la zona euro), con 200 minutos de llamada incluidos, más 100 € de puesta en marcha única.
 - **El cálculo correcto no es el precio de la herramienta**, sino lo que aporta: cada llamada perdida recuperada es un cliente ganado.
 - **La tarificación es modular**: puedes tomar solo voz, solo mensajes, o ambos.
 - **Sin hardware, sin contratar**: el agente funciona en una línea dedicada, listo para contestar 24/7.
@@ -4783,11 +4789,13 @@ A diferencia de una recepcionista o un call center, no hay salario, ni cotizacio
 
 En Aevia Inbox la tarificación es modular y el precio por nivel es el mismo sea cual sea el modo elegido (solo mensajes, solo voz, o ambos) — solo cambia la cuota incluida:
 
-- **Starter — 49 USD/mes**: para un volumen pequeño de llamadas o mensajes.
-- **Growth — 99 USD/mes**: para un flujo regular.
-- **Pro — 199 USD/mes**: para un volumen sostenido.
-- **Business — 399 USD/mes**: para un volumen alto.
-- **Scale — 999 USD/mes**: para las mayores necesidades.
+- **Starter — 79 €/mes**: 200 minutos de llamada en modo solo voz, o 2 000 mensajes, o 1 000 mensajes + 100 minutos.
+- **Growth — 99 €/mes**: 400 minutos, o 4 000 mensajes, o 2 000 mensajes + 200 minutos.
+- **Pro — 199 €/mes**: 800 minutos, o 8 000 mensajes, o 4 000 mensajes + 400 minutos.
+- **Business — 399 €/mes**: 1 600 minutos, o 16 000 mensajes, o 8 000 mensajes + 800 minutos.
+- **Scale — 999 €/mes**: 4 000 minutos, o 40 000 mensajes, o 20 000 mensajes + 2 000 minutos.
+
+A esto se suma una cuota única de puesta en marcha de 100 € (conexión de los canales y configuración del agente). Sin permanencia, 14 días de garantía de reembolso. Fuera de la zona euro, se factura el mismo importe en dólares. Tarifas tomadas de la página de precios de Aevia Inbox el 13 de noviembre de 2026.
 
 La ventaja de este modelo: no pagas por un paquete "todo incluido" opaco. Si solo necesitas voz, tomas voz; si además quieres WhatsApp y email, pasas al modo combinado.
 
@@ -4800,7 +4808,7 @@ Para juzgar el precio, compáralo con el coste de no hacer nada. Un ejemplo simp
 - Un restaurante que pierde 3 reservas al día con un ticket medio de 120 EUR pierde unos 360 EUR/día de facturación potencial.
 - Un taller que pierde 2 llamadas de cita al día pierde dos trabajos.
 
-Frente a esas cifras, una suscripción de 49 a 199 USD/mes se amortiza con un puñado de llamadas recuperadas. Es ese desfase — unas decenas de euros al mes frente a cientos en ventas perdidas — lo que hace que un agente de voz con IA valga la pena para una pequeña estructura.
+Frente a esas cifras, una suscripción de 79 a 199 € al mes se amortiza con un puñado de llamadas recuperadas. Es ese desfase — menos de 200 € al mes frente a cientos en ventas perdidas — lo que hace que un agente de voz con IA valga la pena para una pequeña estructura.
 
 ---
 
@@ -4898,7 +4906,7 @@ Un agent vocal IA règle le problème à la racine : il décroche à chaque appe
 
 Il comprend la demande, y répond ou réalise l'action (réservation, rendez-vous, commande, information), dans la langue du client. Pour l'appelant, l'expérience est fluide : il a sa réponse tout de suite. Pour vous, l'appel n'est plus perdu.
 
-Des services comme Aevia Inbox proposent cette voix IA à partir de 49 $/mois, avec la possibilité d'ajouter aussi WhatsApp, Instagram et email dans la même solution — pour ne plus rien manquer, quel que soit le canal par lequel le client vous contacte.
+Des services comme Aevia Inbox proposent cette voix IA à partir de 79 € par mois (200 minutes d'appel incluses), plus 100 € de mise en service unique, avec la possibilité d'ajouter aussi WhatsApp, Instagram et email dans la même solution — pour ne plus rien manquer, quel que soit le canal par lequel le client vous contacte.
 
 ---
 
@@ -4991,7 +4999,7 @@ An AI voice agent solves the problem at its root: it picks up every call, immedi
 
 It understands the request, answers it or performs the action (booking, appointment, order, information), in the customer's language. For the caller, the experience is smooth: they get their answer right away. For you, the call is no longer lost.
 
-Services like Aevia Inbox offer this AI voice from 49 USD/month, with the option to also add WhatsApp, Instagram and email in the same solution — so you miss nothing, whatever channel the customer uses to reach you.
+Services like Aevia Inbox offer this AI voice from €79 a month ($79 outside the eurozone, 200 call minutes included), plus a one-off €100 setup fee, with the option to also add WhatsApp, Instagram and email in the same solution — so you miss nothing, whatever channel the customer uses to reach you.
 
 ---
 
@@ -5072,7 +5080,7 @@ Un agente de voz con IA resuelve el problema de raíz: contesta todas las llamad
 
 Entiende la petición, la responde o realiza la acción (reserva, cita, pedido, información), en el idioma del cliente. Para quien llama, la experiencia es fluida: obtiene su respuesta al momento. Para ti, la llamada ya no se pierde.
 
-Servicios como Aevia Inbox ofrecen esta voz con IA desde 49 USD/mes, con la opción de añadir también WhatsApp, Instagram y email en la misma solución — para no perder nada, sea cual sea el canal por el que el cliente te contacte.
+Servicios como Aevia Inbox ofrecen esta voz con IA desde 79 € al mes (79 USD fuera de la zona euro, 200 minutos de llamada incluidos), más 100 € de puesta en marcha única, con la opción de añadir también WhatsApp, Instagram y email en la misma solución — para no perder nada, sea cual sea el canal por el que el cliente te contacte.
 
 ---
 

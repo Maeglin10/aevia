@@ -63,7 +63,7 @@ URL : https://inbox.aevia.services
 
 Service client par IA disponible 24h/24. Deux briques pilotées par le même cerveau IA :
 
-1. **Voix** — une ligne téléphonique dédiée où un agent IA répond aux appels : il comprend la demande, vérifie les disponibilités en temps réel, prend la réservation ou la commande, la crée réellement en base, synchronise le calendrier et peut pousser la commande vers la caisse (HubRise, compatible Popina). C'est la brique la plus aboutie : ce n'est pas un simple répondeur, l'action est réalisée de bout en bout.
+1. **Voix** — une ligne téléphonique dédiée où un agent IA répond aux appels : il comprend la demande, vérifie les disponibilités en temps réel, prend la réservation ou la commande, la crée réellement en base et synchronise le calendrier. Pour une commande, il ne propose que les plats de la carte renseignée, relit le récapitulatif au client avant de valider, enregistre le numéro de l'appelant et peut envoyer un SMS de confirmation (numéros français) ; il n'encaisse pas. Quand la caisse du restaurant est reliée à HubRise, la commande peut y être transmise (connecteur HubRise en cours de validation par HubRise). C'est la brique la plus aboutie : ce n'est pas un simple répondeur, l'action est réalisée de bout en bout.
 
 2. **Messagerie unifiée** — WhatsApp Business, Instagram DM, Facebook Messenger et email centralisés dans une inbox unique, avec réponses automatiques par IA, prise de commande, qualification de leads et transfert vers un humain quand nécessaire.
 
@@ -76,7 +76,7 @@ Tarification modulable — le client choisit son mode, le prix par palier est id
 - **Mode Voix seule** : ligne téléphonique IA dédiée.
 - **Mode Messages + Voix** : les deux.
 
-Paliers mensuels : **Starter 79 €**, **Growth 99 €**, **Pro 199 €**, **Business 399 €**, **Scale 999 €** (même montant en dollars hors zone euro). Frais de mise en service unique de 100 € à la souscription. Sans engagement, 14 jours satisfait ou remboursé.
+Paliers mensuels : **Starter 79 €**, **Growth 99 €**, **Pro 199 €**, **Business 399 €**, **Scale 999 €** (même montant en dollars hors zone euro). Quotas inclus en voix seule : 200, 400, 800, 1 600 et 4 000 minutes ; en messages seuls : 2 000, 4 000, 8 000, 16 000 et 40 000 messages ; en mode combiné, la moitié de chacun (de 1 000 messages + 100 minutes à 20 000 messages + 2 000 minutes). Frais de mise en service unique de 100 € à la souscription. Sans engagement, 14 jours satisfait ou remboursé.
 
 Cas d'usage les plus forts : restaurants et food-trucks (réservation + commande par téléphone et WhatsApp), cabinets dentaires et cliniques (prise de rendez-vous), garages et artisans (devis, rappels), hôtels et locations. Particulièrement utile aux commerces qui reçoivent beaucoup d'appels et perdent des clients quand personne ne décroche.
 

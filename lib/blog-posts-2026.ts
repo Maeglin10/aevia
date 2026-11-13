@@ -316,7 +316,7 @@ Una web de 900 € que cuesta 800 € al año de mantenimiento sale más cara a 
     content: `## À retenir en 30 secondes
 
 - **Le secrétariat téléphonique facture à l'appel ou au forfait** : comptez 1,50 à 3 € par appel traité, ou 80 à 400 €/mois selon le volume
-- **L'agent vocal IA facture au forfait ou à la minute**, sans plafond de simultanéité : dix appels en même temps coûtent le même prix unitaire qu'un seul
+- **L'agent vocal IA facture au forfait ou à la minute**, sans supplément quand plusieurs appels arrivent en même temps : chaque minute coûte le même prix
 - **La vraie différence n'est pas le prix, c'est ce qui sort de l'appel** : un message à rappeler, ou un rendez-vous déjà inscrit dans votre agenda
 - **Le secrétariat garde l'avantage sur les demandes émotionnelles ou hors script** ; l'IA garde l'avantage sur le volume, la nuit et les pics
 
@@ -337,9 +337,9 @@ La distinction qui compte : le secrétariat produit majoritairement de l'informa
 | Critère | Secrétariat téléphonique | Agent vocal IA |
 |---|---|---|
 | Coût de départ | 0 à 150 € de mise en service | 0 à 200 € de configuration |
-| Coût récurrent | 80 à 400 €/mois, ou 1,50–3 €/appel | 49 à 999 €/mois selon le volume |
+| Coût récurrent | 80 à 400 €/mois, ou 1,50–3 €/appel | 79 à 999 €/mois selon le volume |
 | Horaires | Plages ouvrées, extensions payantes | 24h/24, 7j/7, sans supplément |
-| Appels simultanés | Limités par l'effectif | Illimités en pratique |
+| Appels simultanés | Limités par l'effectif | Plusieurs en parallèle, sans tonalité « occupé » |
 | Langues | Selon l'équipe, souvent 1 à 2 | 5 langues et plus, sans surcoût |
 | Résultat d'un appel | Un message à traiter | Une action exécutée |
 | Nuances émotionnelles | Point fort | Point faible |
@@ -411,7 +411,7 @@ Chez Aevia, l'agent vocal d'[Aevia Inbox](https://inbox.aevia.services) est con�
         content: `## Key takeaways in 30 seconds
 
 - **Answering services bill per call or per plan**: roughly €1.50–3 per handled call, or €80–400/month by volume
-- **An AI voice agent bills per plan or per minute**, with no concurrency ceiling: ten simultaneous calls cost the same per unit as one
+- **An AI voice agent bills per plan or per minute**, with no surcharge when several calls come in at once: every minute costs the same
 - **The real difference is not price, it is what comes out of the call**: a message to call back, or an appointment already in your calendar
 - **Humans keep the edge on emotional or off-script requests**; AI keeps it on volume, nights and peaks
 
@@ -431,9 +431,9 @@ The distinction that matters: an answering service mostly produces information t
 
 | Criterion | Answering service | AI voice agent |
 |---|---|---|
-| Recurring cost | €80–400/mo, or €1.50–3/call | €49–999/mo by volume |
+| Recurring cost | €80–400/mo, or €1.50–3/call | €79–999/mo by volume |
 | Hours | Business hours, extensions cost extra | 24/7 at no premium |
-| Simultaneous calls | Limited by headcount | Effectively unlimited |
+| Simultaneous calls | Limited by headcount | Several in parallel, no busy tone |
 | Languages | Usually 1–2 | 5+, no surcharge |
 | Result of a call | A message to handle | An executed action |
 | Emotional nuance | Strength | Weakness |
@@ -492,7 +492,7 @@ Which is why the best setup is almost never one or the other: the voice agent ta
         content: `## Lo esencial en 30 segundos
 
 - **La secretaría telefónica factura por llamada o por cuota**: entre 1,50 y 3 € por llamada atendida, o de 80 a 400 €/mes
-- **El agente de voz IA factura por plan o por minuto**, sin límite de simultaneidad
+- **El agente de voz IA factura por plan o por minuto**, sin recargo cuando entran varias llamadas a la vez
 - **La diferencia real no es el precio, es lo que sale de la llamada**: un mensaje que devolver, o una cita ya en tu agenda
 - **El humano gana en situaciones emocionales o fuera de guion**; la IA gana en volumen, noches y picos
 
@@ -512,9 +512,9 @@ La distinción que importa: la secretaría produce información que procesarás 
 
 | Criterio | Secretaría | Agente IA |
 |---|---|---|
-| Coste recurrente | 80–400 €/mes o 1,50–3 €/llamada | 49–999 €/mes |
+| Coste recurrente | 80–400 €/mes o 1,50–3 €/llamada | 79–999 €/mes |
 | Horario | Horario laboral | 24/7 sin recargo |
-| Llamadas simultáneas | Limitadas por plantilla | Prácticamente ilimitadas |
+| Llamadas simultáneas | Limitadas por plantilla | Varias en paralelo, sin tono de ocupado |
 | Idiomas | 1 o 2 | 5 o más |
 | Resultado | Un mensaje | Una acción ejecutada |
 
