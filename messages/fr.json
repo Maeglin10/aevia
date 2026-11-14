@@ -13,7 +13,9 @@
     "title2": "Et ne les ratez plus.",
     "description": "Aevia aide les PME et les indépendants, en France et en Amérique latine, avec trois services simples : un site web qui vous fait connaître, un accueil client par IA qui répond jour et nuit, et un audit de sécurité de votre site. Prenez celui dont vous avez besoin, ou les trois.",
     "cta_primary": "Voir les trois services",
-    "cta_secondary": "Nous parler de votre activité"
+    "cta_secondary": "Nous parler de votre activité",
+    "photo_credit": "Photo :",
+    "photo_credit_on": "sur"
   },
   "products": {
     "available": "Disponible",
@@ -107,6 +109,21 @@
     "address_value": "Adresse du siège social communiquée sur demande à valentinmilliand@aevia.services",
     "hosting_heading": "Hébergement",
     "hosting_intro": "Le site est hébergé par :"
+  },
+  "needs": {
+    "title": "Par besoin : les pages qui répondent",
+    "sub": "Chaque service a ses pages détaillées : comment ça marche, ce que ça coûte, ce qu'il faut vérifier. Allez directement à celle qui correspond à votre situation.",
+    "fr_only": "(en français)",
+    "items": [
+      { "product": "Accueil client IA", "label": "Standard téléphonique IA", "desc": "Un agent vocal décroche, comprend la demande, prend le rendez-vous ou la réservation et vous laisse la transcription." },
+      { "product": "Accueil client IA", "label": "Réservations de restaurant par téléphone", "desc": "Pendant le coup de feu, l'agent prend la réservation, note les allergies et le nombre de couverts." },
+      { "product": "Accueil client IA", "label": "WhatsApp Business qui répond tout seul", "desc": "Les questions courantes traitées par l'IA, l'historique conservé, et vous reprenez la main d'un clic." },
+      { "product": "Accueil client IA", "label": "Tarifs de l'accueil client IA", "desc": "Cinq formules de 79 € à 999 € par mois, au même prix pour les messages, la voix ou les deux." },
+      { "product": "Site web", "label": "Combien coûte un site internet ?", "desc": "Les fourchettes réelles par type de prestataire, ce qui fait varier le prix, et notre grille de 399 € à 1 499 €." },
+      { "product": "Site web", "label": "Site pour restaurant", "desc": "Carte et menus, horaires, accès : un modèle à voir en démonstration, livré avec votre contenu." },
+      { "product": "Audit sécurité", "label": "DMARC : empêcher qu'on écrive à vos clients en votre nom", "desc": "Pourquoi p=none ne protège de rien, et comment passer à une politique qui protège sans perdre de courrier." },
+      { "product": "Audit sécurité", "label": "Guides e-mail, DNS et en-têtes HTTP", "desc": "SPF, DKIM, MTA-STS, DNSSEC, CSP : ce que chaque contrôle protège, et la correction exacte à poser." }
+    ]
   },
   "blog_section": {
     "title": "Ce qu'on écrit",

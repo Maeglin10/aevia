@@ -13,7 +13,9 @@
     "title2": "E não perca mais nenhum.",
     "description": "A Aevia ajuda pequenas empresas e profissionais autônomos, na França e na América Latina, com três serviços simples: um site que faz você ser encontrado, um atendimento ao cliente com IA que responde dia e noite, e uma auditoria de segurança do seu site. Escolha o que você precisa, ou os três.",
     "cta_primary": "Ver os três serviços",
-    "cta_secondary": "Fale-nos do seu negócio"
+    "cta_secondary": "Fale-nos do seu negócio",
+    "photo_credit": "Foto:",
+    "photo_credit_on": "no"
   },
   "products": {
     "available": "Disponível",
@@ -107,6 +109,21 @@
     "address_value": "Endereço da sede social fornecido mediante solicitação em valentinmilliand@aevia.services",
     "hosting_heading": "Alojamento",
     "hosting_intro": "Este site é alojado por:"
+  },
+  "needs": {
+    "title": "Por necessidade: as páginas com as respostas",
+    "sub": "Cada serviço tem as suas páginas detalhadas: como funciona, quanto custa, o que verificar. Vá direto àquela que corresponde à sua situação.",
+    "fr_only": "(em francês)",
+    "items": [
+      { "product": "Atendimento ao cliente com IA", "label": "Central telefônica com IA", "desc": "Um agente de voz atende, entende o pedido, marca o horário ou a reserva e deixa a transcrição para você." },
+      { "product": "Atendimento ao cliente com IA", "label": "Reservas de restaurante por telefone", "desc": "Em plena hora de pico, o agente faz a reserva e anota alergias e o número de pessoas." },
+      { "product": "Atendimento ao cliente com IA", "label": "WhatsApp Business que responde sozinho", "desc": "As perguntas comuns ficam com a IA, o histórico é guardado e você retoma o controle com um clique." },
+      { "product": "Atendimento ao cliente com IA", "label": "Preços do atendimento com IA", "desc": "Cinco planos de 79 € a 999 € por mês, ao mesmo preço para mensagens, voz ou os dois." },
+      { "product": "Site", "label": "Quanto custa um site?", "desc": "As faixas de preço reais por tipo de prestador, o que faz o preço variar e a nossa tabela de 399 € a 1 499 €." },
+      { "product": "Site", "label": "Site para restaurante", "desc": "Cardápio, horários, como chegar: um modelo para ver em demonstração, entregue com o seu conteúdo." },
+      { "product": "Auditoria de segurança", "label": "DMARC: impedir que escrevam aos seus clientes em seu nome", "desc": "Por que p=none não protege nada e como passar a uma política que protege sem perder e-mails." },
+      { "product": "Auditoria de segurança", "label": "Guias de e-mail, DNS e cabeçalhos HTTP", "desc": "SPF, DKIM, MTA-STS, DNSSEC, CSP: o que cada verificação protege e a correção exata a aplicar." }
+    ]
   },
   "blog_section": {
     "title": "O que escrevemos",

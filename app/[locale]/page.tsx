@@ -1,50 +1,82 @@
 "use client";
 
 import Link from "next/link";
-import { BLOG_POSTS } from "@/lib/blog-posts";
+import { getImageProps } from "next/image";
+import { preload } from "react-dom";
+import { BLOG_POSTS, localizePost, localesForPost } from "@/lib/blog-posts";
 import { ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { HomeFaq } from "@/components/HomeFaq";
 import { HomeProductsSchema } from "@/components/HomeProductsSchema";
 
 /*
-  Le fond du héros : une vraie photo de commerçante au travail.
+  Le fond du héros : un artisan au travail dans son atelier.
 
-  Historique : quatre photos Pexels de réunions de bureau défilaient ici ;
-  retirées le 12/11 (ni commerçants, ni nos clients). Retour de Valentin le
-  même jour : sans image, le héros est « moins cool ». La photo revient, mais
-  pertinente — une boulangère derrière son comptoir, le client type d'Aevia.
+  Historique : quatre photos Pexels de réunions de bureau (retirées le 12/11),
+  puis une boulangère derrière son comptoir (12/11). Le 13/11, la boulangère
+  devient la photo de l'accueil de Launch ; Inbox reçoit ses propres photos
+  (cuisiniers, fleuriste, coiffeur, commerçant, salle de restaurant). Le Hub
+  prend donc un métier qu'aucun des deux n'utilise : un menuisier, rabot en
+  main — le « concentrez-vous sur l'essentiel » du credo, en image.
 
-  Photo : Ekaterina Tyapkina, « woman on counter near breads »
-  https://unsplash.com/photos/woman-on-counter-near-breads-b5kN9ClBRNU
-  Licence Unsplash (gratuite, usage commercial autorisé, sans attribution
-  obligatoire), vérifiée sur la page de la photo le 12/11/2026 — pas une
-  photo Unsplash+.
+  Photo : Ali Mkumbwa, « Un homme sourit en travaillant sur un morceau de bois »
+  https://unsplash.com/photos/PxlKOcj0a3Q (Dar es Salaam, publiée le 22/06/2023)
+  « Utilisation gratuite sous la Licence Unsplash », lu sur la page de la photo
+  le 13/11/2026 — pas une photo Unsplash+. Le crédit est affiché en bas du
+  héros, bien que la licence ne l'exige pas.
 
-  Servie depuis /public (WebP 2560 et 1280 px, 266 et 84 Ko) : aucun domaine
-  d'images tiers dans la CSP. Pas de fondu d'entrée : l'image est là dès le
-  premier rendu.
+  Deux recadrages préparés à partir de l'original 4000 × 2670 :
+  - paysage 16:10 (2560 × 1600) pour les écrans de 640 px et plus ;
+  - portrait 3:5 (1200 × 2000) centré sur l'artisan, pour le téléphone, où le
+    héros est haut et étroit : le paysage n'y montrait qu'un mur d'atelier.
+  next/image les sert en AVIF ou WebP à la taille de l'écran. Chaque recadrage
+  est préchargé (`<link rel="preload">` avec `media`) : le navigateur ne
+  télécharge que celui qui s'affichera, dès la lecture du <head>.
 
-  Le voile : #09090b à 75 % sur toute la photo. Mesuré sur le pixel le PLUS
-  clair de la zone de texte, une fois voilé : blanc 9,5:1, zinc-200 7,4:1,
-  zinc-300 6,5:1 (≥ 4,5), red-300 4,9:1 (titre, ≥ 3). D'où les couleurs de
-  texte du héros, un cran plus claires que sur fond uni.
+  Le voile : #09090b à 75 %. Mesuré au pixel le PLUS clair de la zone de texte,
+  voile appliqué (scratchpad `recadrer-heros.mjs`, 13/11) — paysage : blanc
+  9,78:1, zinc-200 7,70:1, zinc-300 6,61:1, red-300 (titre) 5,15:1 ; portrait :
+  9,73 / 7,67 / 6,58 / 5,13. Tout ≥ 4,5:1. À 70 % le titre tombait à 4,28:1.
 */
+const HERO_PAYSAGE = { src: "/hero/artisan-atelier-paysage.jpg", width: 2560, height: 1600 };
+const HERO_PORTRAIT = { src: "/hero/artisan-atelier-portrait.jpg", width: 1200, height: 2000 };
+const MEDIA_PAYSAGE = "(min-width: 640px)";
+const MEDIA_PORTRAIT = "(max-width: 639.98px)";
+const PHOTO_PAGE = "https://unsplash.com/photos/PxlKOcj0a3Q";
+const PHOTOGRAPHE_PAGE = "https://unsplash.com/@mkumbwajr";
+
 function HeroBackdrop() {
+  const commun = { alt: "", sizes: "100vw", quality: 75 };
+  const { props: paysage } = getImageProps({ ...commun, ...HERO_PAYSAGE });
+  const { props: portrait } = getImageProps({ ...commun, ...HERO_PORTRAIT });
+
+  // Un préchargement par recadrage, chacun limité à sa largeur d'écran.
+  for (const [image, media] of [[paysage, MEDIA_PAYSAGE], [portrait, MEDIA_PORTRAIT]] as const) {
+    preload(image.src, {
+      as: "image",
+      imageSrcSet: image.srcSet,
+      imageSizes: image.sizes,
+      fetchPriority: "high",
+      media,
+    });
+  }
+  const { srcSet: srcSetPortrait, ...imgPortrait } = portrait;
+
   return (
     <div aria-hidden className="absolute inset-x-0 bottom-0 top-[57px] -z-10 overflow-hidden">
-      {/* eslint-disable-next-line @next/next/no-img-element -- deux tailles WebP préparées à la main ; next/image les réencoderait */}
-      <img
-        src="/hero/commercante-boulangerie-2560.webp"
-        srcSet="/hero/commercante-boulangerie-1280.webp 1280w, /hero/commercante-boulangerie-2560.webp 2560w"
-        sizes="100vw"
-        alt=""
-        width={2560}
-        height={1707}
-        fetchPriority="high"
-        decoding="async"
-        className="absolute inset-0 h-full w-full object-cover object-[50%_35%]"
-      />
+      <picture>
+        <source media={MEDIA_PAYSAGE} srcSet={paysage.srcSet} sizes={paysage.sizes} width={paysage.width} height={paysage.height} />
+        {/* Les props viennent de getImageProps (next/image) : direction artistique, voir la doc « Art direction ». */}
+        <img
+          {...imgPortrait}
+          srcSet={srcSetPortrait}
+          alt=""
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-cover object-[50%_30%]"
+        />
+      </picture>
       <div className="absolute inset-0 bg-[#09090b]/75" />
       <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/10 blur-[180px]" />
       <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#09090b]" />
@@ -52,21 +84,87 @@ function HeroBackdrop() {
   );
 }
 
+/* Le crédit, visible et lisible : fond sombre sous le texte, en bas du héros. */
+function CreditPhoto() {
+  const h = useTranslations("hero");
+  return (
+    <p className="absolute bottom-3 right-4 z-10 rounded-full bg-[#09090b]/80 px-3 py-1 text-[11px] text-zinc-300">
+      {h("photo_credit")}{" "}
+      <a href={PHOTOGRAPHE_PAGE} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
+        Ali Mkumbwa
+      </a>{" "}
+      {h("photo_credit_on")}{" "}
+      <a href={PHOTO_PAGE} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
+        Unsplash
+      </a>
+    </p>
+  );
+}
+
 /*
   Choisis sur l'intention commerciale, pas sur la date : prix, métier, ville.
-  Ce sont les requêtes où une réponse fait venir quelqu'un qui achète.
+  Ce sont les requêtes où une réponse fait venir quelqu'un qui achète. Les
+  trois services y sont représentés.
 */
 const SLUGS_EN_AVANT = [
-  "creer-site-internet-bourg-en-bresse-ia",
-  "combien-coute-agent-telephonique-ia",
-  "standard-telephonique-ia-restaurant",
+  "prise-commande-telephone-ia-restaurant",
   "combien-coute-site-internet-professionnel-2026",
-  "prise-rendez-vous-ia-cabinet-dentaire",
   "audit-securite-site-web",
+  "combien-coute-agent-telephonique-ia",
+  "creer-site-internet-bourg-en-bresse-ia",
+  "standard-telephonique-ia-restaurant",
+  "prise-rendez-vous-ia-cabinet-dentaire",
+  "standard-telephonique-ia-vs-secretariat-telephonique",
 ];
-const ARTICLES_EN_AVANT = SLUGS_EN_AVANT
+const CANDIDATS = SLUGS_EN_AVANT
   .map((slug) => BLOG_POSTS.find((p) => p.slug === slug))
   .filter((p): p is (typeof BLOG_POSTS)[number] => Boolean(p));
+
+/*
+  Les cartes d'articles parlent la langue de la page, et mènent à une URL
+  indexable.
+
+  Relevé le 13/11 : `/en` (indexée, explorée le 31/10) affichait les six
+  titres en FRANÇAIS et envoyait vers `/en/blog/<slug>` — dont un article jamais
+  traduit, servi en français, en `noindex`, canonique vers `/fr`. Un lien de la
+  page la plus explorée du Hub vers une page qui demande à ne pas être indexée.
+
+  Désormais : dans une langue qui a des traductions, seules les traductions
+  sont mises en avant, avec leur titre traduit. En allemand et en portugais,
+  qui n'en ont aucune, les cartes mènent directement à la version française,
+  annoncée comme telle (`hrefLang` et `lang`), sans détour par une page noindex.
+*/
+function articlesEnAvant(langue: string) {
+  const traduits = CANDIDATS.filter((p) => localesForPost(p).includes(langue));
+  const liste = (traduits.length >= 6 ? traduits : CANDIDATS).slice(0, 6);
+  return liste.map((p) => {
+    const l = localesForPost(p).includes(langue) ? langue : "fr";
+    return { post: localizePost(p, l), href: `/${l}/blog/${p.slug}`, langue: l };
+  });
+}
+
+/*
+  Les pages profondes des trois produits, depuis la page que Google visite.
+
+  Mesuré le 13/11 par l'inspection d'URL : `aevia.services/fr` et `/en` sont
+  indexées et explorées ; les pages solutions d'Inbox, le guide des prix de
+  Launch et les guides de Security sont « inconnues de Google » ou
+  « détectées, non indexées » — Google sait qu'elles existent mais ne s'est
+  jamais déplacé. Un lien depuis une page qu'il explore est le signal qui leur
+  manque. Ces pages n'existent qu'en français (sauf les tarifs d'Inbox) : dans
+  les autres langues, le lien le dit.
+*/
+const BESOINS: { href: (langueInbox: string) => string; francaisSeulement: boolean }[] = [
+  { href: () => "https://inbox.aevia.services/fr/solutions/standard-telephonique-ia", francaisSeulement: true },
+  { href: () => "https://inbox.aevia.services/fr/solutions/reservation-restaurant", francaisSeulement: true },
+  { href: () => "https://inbox.aevia.services/fr/solutions/whatsapp-business", francaisSeulement: true },
+  { href: (l) => `https://inbox.aevia.services/${l}/pricing`, francaisSeulement: false },
+  { href: () => "https://launch.aevia.services/prix-site-internet", francaisSeulement: true },
+  { href: () => "https://launch.aevia.services/themes/restaurant", francaisSeulement: true },
+  { href: () => "https://security.aevia.services/guides/dmarc", francaisSeulement: true },
+  { href: () => "https://security.aevia.services/guides", francaisSeulement: true },
+];
+const LANGUES_INBOX = ["fr", "en", "es", "pt"];
 
 export default function Home() {
   const h = useTranslations("hero");
@@ -74,7 +172,10 @@ export default function Home() {
   const hw = useTranslations("how");
   const c = useTranslations("cta");
   const b = useTranslations("blog_section");
+  const bs = useTranslations("needs");
   const langue = useLocale();
+  const langueInbox = LANGUES_INBOX.includes(langue) ? langue : "en";
+  const besoins = bs.raw("items") as { product: string; label: string; desc: string }[];
 
   /*
     Couleurs des boutons : chaque produit garde SA couleur, mais assez sombre
@@ -154,6 +255,7 @@ export default function Home() {
           proof point below the fold. */}
       <section className="relative px-6 overflow-hidden pt-24 pb-20 sm:pt-32 sm:pb-28 lg:pt-[57px] lg:pb-0 lg:min-h-screen lg:min-h-[100svh] lg:flex lg:items-center">
         <HeroBackdrop />
+        <CreditPhoto />
         <div className="mx-auto max-w-5xl text-center w-full">
           {/* Visible dès le HTML serveur : plus de fondu depuis opacity: 0
               (texte caché pour un robot, rien à lire avant l'hydratation). */}
@@ -338,6 +440,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── Par besoin : les pages profondes des trois produits ──────────── */}
+      <section className="px-6 py-16" aria-labelledby="besoins-titre">
+        <div className="mx-auto max-w-5xl">
+          <h2 id="besoins-titre" className="text-2xl font-bold text-white mb-3">{bs("title")}</h2>
+          <p className="text-zinc-400 text-sm leading-relaxed mb-8 max-w-2xl">{bs("sub")}</p>
+          <ul className="grid sm:grid-cols-2 gap-3">
+            {besoins.map((item, i) => {
+              const regle = BESOINS[i];
+              if (!regle) return null;
+              const enFrancais = regle.francaisSeulement && langue !== "fr";
+              return (
+                <li key={item.label}>
+                  <a
+                    href={regle.href(langueInbox)}
+                    hrefLang={enFrancais ? "fr" : undefined}
+                    className="group flex h-full flex-col rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-600 transition-colors"
+                  >
+                    <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400">{item.product}</span>
+                    <span className="mt-1 text-base font-semibold text-white group-hover:underline underline-offset-4">
+                      {item.label}
+                      {enFrancais && <span className="ml-2 text-xs font-normal text-zinc-400">{bs("fr_only")}</span>}
+                    </span>
+                    <span className="mt-2 text-sm text-zinc-400 leading-relaxed">{item.desc}</span>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
       {/* ── CTA ──────────────────────────────────────────────────────────── */}
       {/*
         Des liens directs vers les articles, depuis la seule page que Google
@@ -368,10 +501,12 @@ export default function Home() {
             </Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ARTICLES_EN_AVANT.map((post) => (
+            {articlesEnAvant(langue).map(({ post, href, langue: langueArticle }) => (
               <Link
                 key={post.slug}
-                href={`/${langue}/blog/${post.slug}`}
+                href={href}
+                hrefLang={langueArticle}
+                lang={langueArticle === langue ? undefined : langueArticle}
                 className="block rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-700 transition-colors"
               >
                 <p className="text-xs uppercase tracking-wider text-zinc-400 mb-2">{post.category}</p>

@@ -13,7 +13,9 @@
     "title2": "And never miss one again.",
     "description": "Aevia helps small businesses and independents, in France and Latin America, with three simple services: a website that gets you found, an AI customer desk that answers day and night, and a security check of your website. Take the one you need, or all three.",
     "cta_primary": "See the three services",
-    "cta_secondary": "Tell us about your business"
+    "cta_secondary": "Tell us about your business",
+    "photo_credit": "Photo:",
+    "photo_credit_on": "on"
   },
   "products": {
     "available": "Available",
@@ -107,6 +109,21 @@
     "address_value": "Registered office address provided on request at valentinmilliand@aevia.services",
     "hosting_heading": "Hosting",
     "hosting_intro": "This website is hosted by:"
+  },
+  "needs": {
+    "title": "By need: the pages with the answers",
+    "sub": "Each service has its detailed pages: how it works, what it costs, what to check. Go straight to the one that matches your situation.",
+    "fr_only": "(in French)",
+    "items": [
+      { "product": "AI customer desk", "label": "AI phone answering", "desc": "A voice agent picks up, understands the request, books the appointment or table and leaves you the transcript." },
+      { "product": "AI customer desk", "label": "Restaurant bookings by phone", "desc": "During the rush, the agent takes the booking and notes allergies and the number of guests." },
+      { "product": "AI customer desk", "label": "WhatsApp Business that answers on its own", "desc": "Routine questions handled by the AI, history kept, and you take over in one click." },
+      { "product": "AI customer desk", "label": "AI customer desk pricing", "desc": "Five plans from €79 to €999 a month, the same price for messages, voice or both." },
+      { "product": "Website", "label": "How much does a website cost?", "desc": "Real price ranges by type of provider, what drives the price, and our own grid from €399 to €1,499." },
+      { "product": "Website", "label": "Website for a restaurant", "desc": "Menus, opening hours, directions: a template you can try as a live demo, delivered with your content." },
+      { "product": "Security check", "label": "DMARC: stop people emailing your customers in your name", "desc": "Why p=none protects nothing, and how to move to a policy that protects without losing mail." },
+      { "product": "Security check", "label": "Email, DNS and HTTP header guides", "desc": "SPF, DKIM, MTA-STS, DNSSEC, CSP: what each check protects, and the exact fix to apply." }
+    ]
   },
   "blog_section": {
     "title": "What we write",

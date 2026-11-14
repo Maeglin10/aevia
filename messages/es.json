@@ -13,7 +13,9 @@
     "title2": "Y no vuelvas a perder ninguno.",
     "description": "Aevia ayuda a pymes y profesionales independientes, en Francia y América Latina, con tres servicios sencillos: un sitio web que te da a conocer, una atención al cliente con IA que responde día y noche, y una auditoría de seguridad de tu sitio. Elige el que necesitas, o los tres.",
     "cta_primary": "Ver los tres servicios",
-    "cta_secondary": "Cuéntanos sobre tu negocio"
+    "cta_secondary": "Cuéntanos sobre tu negocio",
+    "photo_credit": "Foto:",
+    "photo_credit_on": "en"
   },
   "products": {
     "available": "Disponible",
@@ -107,6 +109,21 @@
     "address_value": "Dirección del domicilio social facilitada previa solicitud en valentinmilliand@aevia.services",
     "hosting_heading": "Alojamiento",
     "hosting_intro": "El sitio está alojado por:"
+  },
+  "needs": {
+    "title": "Por necesidad: las páginas que responden",
+    "sub": "Cada servicio tiene sus páginas detalladas: cómo funciona, cuánto cuesta, qué hay que revisar. Ve directamente a la que corresponde a tu situación.",
+    "fr_only": "(en francés)",
+    "items": [
+      { "product": "Atención al cliente con IA", "label": "Centralita telefónica con IA", "desc": "Un agente de voz contesta, entiende la petición, toma la cita o la reserva y te deja la transcripción." },
+      { "product": "Atención al cliente con IA", "label": "Reservas de restaurante por teléfono", "desc": "En plena hora punta, el agente toma la reserva y anota las alergias y el número de comensales." },
+      { "product": "Atención al cliente con IA", "label": "WhatsApp Business que responde solo", "desc": "Las preguntas habituales las resuelve la IA, el historial se conserva y retomas el control con un clic." },
+      { "product": "Atención al cliente con IA", "label": "Precios de la atención al cliente con IA", "desc": "Cinco planes de 79 € a 999 € al mes, al mismo precio para mensajes, voz o ambos." },
+      { "product": "Sitio web", "label": "¿Cuánto cuesta una página web?", "desc": "Los rangos de precio reales según el tipo de proveedor, lo que hace variar el precio y nuestra tarifa de 399 € a 1 499 €." },
+      { "product": "Sitio web", "label": "Web para restaurante", "desc": "Carta y menús, horarios, cómo llegar: una plantilla que puedes ver en demostración, entregada con tu contenido." },
+      { "product": "Auditoría de seguridad", "label": "DMARC: impedir que escriban a tus clientes en tu nombre", "desc": "Por qué p=none no protege de nada y cómo pasar a una política que protege sin perder correo." },
+      { "product": "Auditoría de seguridad", "label": "Guías de email, DNS y cabeceras HTTP", "desc": "SPF, DKIM, MTA-STS, DNSSEC, CSP: qué protege cada control y la corrección exacta que aplicar." }
+    ]
   },
   "blog_section": {
     "title": "Lo que escribimos",

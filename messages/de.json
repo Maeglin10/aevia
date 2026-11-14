@@ -13,7 +13,9 @@
     "title2": "Und keinen mehr verpassen.",
     "description": "Aevia unterstützt kleine Unternehmen und Selbstständige in Frankreich und Lateinamerika mit drei einfachen Diensten: einer Website, die Sie bekannt macht, einem KI-Kundenservice, der Tag und Nacht antwortet, und einem Sicherheitscheck Ihrer Website. Nehmen Sie den, den Sie brauchen, oder alle drei.",
     "cta_primary": "Die drei Dienste ansehen",
-    "cta_secondary": "Erzählen Sie uns von Ihrem Geschäft"
+    "cta_secondary": "Erzählen Sie uns von Ihrem Geschäft",
+    "photo_credit": "Foto:",
+    "photo_credit_on": "auf"
   },
   "products": {
     "available": "Verfügbar",
@@ -107,6 +109,21 @@
     "address_value": "Anschrift des Firmensitzes auf Anfrage unter valentinmilliand@aevia.services",
     "hosting_heading": "Hosting",
     "hosting_intro": "Diese Website wird gehostet von:"
+  },
+  "needs": {
+    "title": "Nach Bedarf: die Seiten mit den Antworten",
+    "sub": "Jeder Dienst hat seine ausführlichen Seiten: wie er funktioniert, was er kostet, worauf Sie achten sollten. Gehen Sie direkt zu der, die zu Ihrer Lage passt.",
+    "fr_only": "(auf Französisch)",
+    "items": [
+      { "product": "KI-Kundenservice", "label": "KI-Telefonzentrale", "desc": "Ein Sprachagent nimmt ab, versteht das Anliegen, bucht Termin oder Tisch und hinterlässt Ihnen das Transkript." },
+      { "product": "KI-Kundenservice", "label": "Restaurant-Reservierungen per Telefon", "desc": "Mitten im Service nimmt der Agent die Reservierung an und notiert Allergien und Personenzahl." },
+      { "product": "KI-Kundenservice", "label": "WhatsApp Business, das selbst antwortet", "desc": "Routinefragen beantwortet die KI, der Verlauf bleibt erhalten, und Sie übernehmen mit einem Klick." },
+      { "product": "KI-Kundenservice", "label": "Preise des KI-Kundenservice", "desc": "Fünf Tarife von 79 € bis 999 € im Monat, zum selben Preis für Nachrichten, Sprache oder beides." },
+      { "product": "Website", "label": "Was kostet eine Website?", "desc": "Echte Preisspannen je nach Anbieter, was den Preis bestimmt, und unsere Preisliste von 399 € bis 1.499 €." },
+      { "product": "Website", "label": "Website für ein Restaurant", "desc": "Speisekarte, Öffnungszeiten, Anfahrt: eine Vorlage als Live-Demo, geliefert mit Ihren Inhalten." },
+      { "product": "Sicherheitscheck", "label": "DMARC: verhindern, dass jemand in Ihrem Namen an Ihre Kunden schreibt", "desc": "Warum p=none nichts schützt und wie Sie zu einer Richtlinie wechseln, die schützt, ohne E-Mails zu verlieren." },
+      { "product": "Sicherheitscheck", "label": "Leitfäden zu E-Mail, DNS und HTTP-Headern", "desc": "SPF, DKIM, MTA-STS, DNSSEC, CSP: was jede Prüfung schützt und die genaue Korrektur." }
+    ]
   },
   "blog_section": {
     "title": "Was wir schreiben",
