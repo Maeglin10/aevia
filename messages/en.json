@@ -13,9 +13,7 @@
     "title2": "And never miss one again.",
     "description": "Aevia helps small businesses and independents, in France and Latin America, with three simple services: a website that gets you found, an AI customer desk that answers day and night, and a security check of your website. Take the one you need, or all three.",
     "cta_primary": "See the three services",
-    "cta_secondary": "Tell us about your business",
-    "photo_credit": "Photo:",
-    "photo_credit_on": "on"
+    "cta_secondary": "Tell us about your business"
   },
   "products": {
     "available": "Available",
@@ -80,7 +78,8 @@
     "templateShort": "Templates",
     "securityDns": "Security and DNS",
     "inboxSupport": "AI customer support",
-    "cookiesPolicy": "Cookie policy"
+    "cookiesPolicy": "Cookie policy",
+    "photos": "Photos:"
   },
   "skills": {
     "title": "Tech stack"

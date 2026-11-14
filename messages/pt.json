@@ -13,9 +13,7 @@
     "title2": "E não perca mais nenhum.",
     "description": "A Aevia ajuda pequenas empresas e profissionais autônomos, na França e na América Latina, com três serviços simples: um site que faz você ser encontrado, um atendimento ao cliente com IA que responde dia e noite, e uma auditoria de segurança do seu site. Escolha o que você precisa, ou os três.",
     "cta_primary": "Ver os três serviços",
-    "cta_secondary": "Fale-nos do seu negócio",
-    "photo_credit": "Foto:",
-    "photo_credit_on": "no"
+    "cta_secondary": "Fale-nos do seu negócio"
   },
   "products": {
     "available": "Disponível",
@@ -80,7 +78,8 @@
     "templateShort": "Modelos",
     "securityDns": "Segurança e DNS",
     "inboxSupport": "Suporte com IA",
-    "cookiesPolicy": "Política de cookies"
+    "cookiesPolicy": "Política de cookies",
+    "photos": "Fotos:"
   },
   "skills": {
     "title": "Stack técnico"

@@ -1,105 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { getImageProps } from "next/image";
-import { preload } from "react-dom";
 import { BLOG_POSTS, localizePost, localesForPost } from "@/lib/blog-posts";
 import { ArrowRight } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { HomeFaq } from "@/components/HomeFaq";
 import { HomeProductsSchema } from "@/components/HomeProductsSchema";
-
-/*
-  Le fond du héros : un artisan au travail dans son atelier.
-
-  Historique : quatre photos Pexels de réunions de bureau (retirées le 12/11),
-  puis une boulangère derrière son comptoir (12/11). Le 13/11, la boulangère
-  devient la photo de l'accueil de Launch ; Inbox reçoit ses propres photos
-  (cuisiniers, fleuriste, coiffeur, commerçant, salle de restaurant). Le Hub
-  prend donc un métier qu'aucun des deux n'utilise : un menuisier, rabot en
-  main — le « concentrez-vous sur l'essentiel » du credo, en image.
-
-  Photo : Ali Mkumbwa, « Un homme sourit en travaillant sur un morceau de bois »
-  https://unsplash.com/photos/PxlKOcj0a3Q (Dar es Salaam, publiée le 22/06/2023)
-  « Utilisation gratuite sous la Licence Unsplash », lu sur la page de la photo
-  le 13/11/2026 — pas une photo Unsplash+. Le crédit est affiché en bas du
-  héros, bien que la licence ne l'exige pas.
-
-  Deux recadrages préparés à partir de l'original 4000 × 2670 :
-  - paysage 16:10 (2560 × 1600) pour les écrans de 640 px et plus ;
-  - portrait 3:5 (1200 × 2000) centré sur l'artisan, pour le téléphone, où le
-    héros est haut et étroit : le paysage n'y montrait qu'un mur d'atelier.
-  next/image les sert en AVIF ou WebP à la taille de l'écran. Chaque recadrage
-  est préchargé (`<link rel="preload">` avec `media`) : le navigateur ne
-  télécharge que celui qui s'affichera, dès la lecture du <head>.
-
-  Le voile : #09090b à 75 %. Mesuré au pixel le PLUS clair de la zone de texte,
-  voile appliqué (scratchpad `recadrer-heros.mjs`, 13/11) — paysage : blanc
-  9,78:1, zinc-200 7,70:1, zinc-300 6,61:1, red-300 (titre) 5,15:1 ; portrait :
-  9,73 / 7,67 / 6,58 / 5,13. Tout ≥ 4,5:1. À 70 % le titre tombait à 4,28:1.
-*/
-const HERO_PAYSAGE = { src: "/hero/artisan-atelier-paysage.jpg", width: 2560, height: 1600 };
-const HERO_PORTRAIT = { src: "/hero/artisan-atelier-portrait.jpg", width: 1200, height: 2000 };
-const MEDIA_PAYSAGE = "(min-width: 640px)";
-const MEDIA_PORTRAIT = "(max-width: 639.98px)";
-const PHOTO_PAGE = "https://unsplash.com/photos/PxlKOcj0a3Q";
-const PHOTOGRAPHE_PAGE = "https://unsplash.com/@mkumbwajr";
-
-function HeroBackdrop() {
-  const commun = { alt: "", sizes: "100vw", quality: 75 };
-  const { props: paysage } = getImageProps({ ...commun, ...HERO_PAYSAGE });
-  const { props: portrait } = getImageProps({ ...commun, ...HERO_PORTRAIT });
-
-  // Un préchargement par recadrage, chacun limité à sa largeur d'écran.
-  for (const [image, media] of [[paysage, MEDIA_PAYSAGE], [portrait, MEDIA_PORTRAIT]] as const) {
-    preload(image.src, {
-      as: "image",
-      imageSrcSet: image.srcSet,
-      imageSizes: image.sizes,
-      fetchPriority: "high",
-      media,
-    });
-  }
-  const { srcSet: srcSetPortrait, ...imgPortrait } = portrait;
-
-  return (
-    <div aria-hidden className="absolute inset-x-0 bottom-0 top-[57px] -z-10 overflow-hidden">
-      <picture>
-        <source media={MEDIA_PAYSAGE} srcSet={paysage.srcSet} sizes={paysage.sizes} width={paysage.width} height={paysage.height} />
-        {/* Les props viennent de getImageProps (next/image) : direction artistique, voir la doc « Art direction ». */}
-        <img
-          {...imgPortrait}
-          srcSet={srcSetPortrait}
-          alt=""
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          className="absolute inset-0 h-full w-full object-cover object-[50%_30%]"
-        />
-      </picture>
-      <div className="absolute inset-0 bg-[#09090b]/75" />
-      <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/10 blur-[180px]" />
-      <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-[#09090b]" />
-    </div>
-  );
-}
-
-/* Le crédit, visible et lisible : fond sombre sous le texte, en bas du héros. */
-function CreditPhoto() {
-  const h = useTranslations("hero");
-  return (
-    <p className="absolute bottom-3 right-4 z-10 rounded-full bg-[#09090b]/80 px-3 py-1 text-[11px] text-zinc-300">
-      {h("photo_credit")}{" "}
-      <a href={PHOTOGRAPHE_PAGE} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
-        Ali Mkumbwa
-      </a>{" "}
-      {h("photo_credit_on")}{" "}
-      <a href={PHOTO_PAGE} target="_blank" rel="noopener" className="underline underline-offset-2 hover:text-white">
-        Unsplash
-      </a>
-    </p>
-  );
-}
+import { HeroRotation } from "@/components/HeroRotation";
 
 /*
   Choisis sur l'intention commerciale, pas sur la date : prix, métier, ville.
@@ -254,8 +161,7 @@ export default function Home() {
           the padding-driven height — a full-screen hero on a phone pushes every
           proof point below the fold. */}
       <section className="relative px-6 overflow-hidden pt-24 pb-20 sm:pt-32 sm:pb-28 lg:pt-[57px] lg:pb-0 lg:min-h-screen lg:min-h-[100svh] lg:flex lg:items-center">
-        <HeroBackdrop />
-        <CreditPhoto />
+        <HeroRotation />
         <div className="mx-auto max-w-5xl text-center w-full">
           {/* Visible dès le HTML serveur : plus de fondu depuis opacity: 0
               (texte caché pour un robot, rien à lire avant l'hydratation). */}
@@ -271,6 +177,24 @@ export default function Home() {
               Launch, pour que les deux sites disent la même chose de la même
               façon.
             */}
+            {/*
+              La lisibilité, sans assombrir toute la photo.
+
+              Un voile uniforme à 75 % rendait le texte lisible mais la photo
+              invisible (retour de Valentin le 14/11 : « encore trop sombre »).
+              Le voile général tombe à 30 % (components/HeroRotation.tsx) ; la
+              zone sombre est posée ICI, derrière le bloc de texte seulement,
+              bords fondus, avec une ombre portée douce sur les lettres.
+
+              Contraste mesuré le 14/11 au pixel le plus clair derrière chaque
+              ligne de texte, pour chacune des cinq photos, à 1440 et 390 px
+              (captures texte masqué, scratchpad `contraste-heros.mjs`). Pire
+              cas : le titre red-300 sur l'atelier vélo à 390 px, 4,92:1 ;
+              tout le reste au-dessus de 5,1:1. À 55 % au lieu de 66 %, le
+              titre tombait à 3,81:1 — ne pas alléger sans remesurer.
+            */}
+            <div className="relative isolate [text-shadow:0_1px_2px_rgb(0_0_0/0.55),0_0_24px_rgb(0_0_0/0.45)]">
+            <div aria-hidden className="pointer-events-none absolute -inset-x-6 -inset-y-12 sm:-inset-14 -z-10 rounded-[3rem] bg-[#09090b]/[0.66] blur-2xl" />
             <div className="mb-6 sm:mb-8">
               <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-zinc-300 mb-2">
                 {h("credoLabel")}
@@ -307,6 +231,7 @@ export default function Home() {
               >
                 {h("cta_secondary")}
               </Link>
+            </div>
             </div>
 
             {/*

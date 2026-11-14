@@ -13,9 +13,7 @@
     "title2": "Et ne les ratez plus.",
     "description": "Aevia aide les PME et les indépendants, en France et en Amérique latine, avec trois services simples : un site web qui vous fait connaître, un accueil client par IA qui répond jour et nuit, et un audit de sécurité de votre site. Prenez celui dont vous avez besoin, ou les trois.",
     "cta_primary": "Voir les trois services",
-    "cta_secondary": "Nous parler de votre activité",
-    "photo_credit": "Photo :",
-    "photo_credit_on": "sur"
+    "cta_secondary": "Nous parler de votre activité"
   },
   "products": {
     "available": "Disponible",
@@ -80,7 +78,8 @@
     "templateShort": "Template",
     "securityDns": "Sécurité et DNS",
     "inboxSupport": "Support client IA",
-    "cookiesPolicy": "Politique de cookies"
+    "cookiesPolicy": "Politique de cookies",
+    "photos": "Photos :"
   },
   "skills": {
     "title": "Stack technique"

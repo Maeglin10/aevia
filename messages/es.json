@@ -13,9 +13,7 @@
     "title2": "Y no vuelvas a perder ninguno.",
     "description": "Aevia ayuda a pymes y profesionales independientes, en Francia y América Latina, con tres servicios sencillos: un sitio web que te da a conocer, una atención al cliente con IA que responde día y noche, y una auditoría de seguridad de tu sitio. Elige el que necesitas, o los tres.",
     "cta_primary": "Ver los tres servicios",
-    "cta_secondary": "Cuéntanos sobre tu negocio",
-    "photo_credit": "Foto:",
-    "photo_credit_on": "en"
+    "cta_secondary": "Cuéntanos sobre tu negocio"
   },
   "products": {
     "available": "Disponible",
@@ -80,7 +78,8 @@
     "templateShort": "Plantillas",
     "securityDns": "Seguridad y DNS",
     "inboxSupport": "Soporte con IA",
-    "cookiesPolicy": "Política de cookies"
+    "cookiesPolicy": "Política de cookies",
+    "photos": "Fotos:"
   },
   "skills": {
     "title": "Stack técnico"

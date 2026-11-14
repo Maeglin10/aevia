@@ -1,7 +1,9 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
+import { PHOTOS_HEROS, pagePhoto } from "@/lib/photos-heros";
 import { LinkedinIcon } from "@/components/LinkedinIcon";
 import { GithubIcon } from "@/components/GithubIcon";
 
@@ -165,6 +167,28 @@ export function SiteFooter() {
           {f("copyright")} ·{" "}
           <a href={PORTFOLIO_URL} className="transition-colors hover:text-white">
             Valentin Milliand
+          </a>
+        </p>
+
+        {/*
+          Les crédits des photos du héros de l'accueil, ici plutôt que sous le
+          héros (demande de Valentin, 14/11). La licence Unsplash ne les exige
+          pas ; on les donne quand même. Même liste que le héros
+          (lib/photos-heros.ts) : impossible d'en oublier un.
+        */}
+        <p className="text-center text-xs text-zinc-400 text-pretty">
+          {f("photos")}{" "}
+          {PHOTOS_HEROS.map((photo, i) => (
+            <Fragment key={photo.id}>
+              {i > 0 && ", "}
+              <a href={pagePhoto(photo.id)} target="_blank" rel="noopener" className="underline-offset-2 transition-colors hover:text-white hover:underline">
+                {photo.auteur}
+              </a>
+            </Fragment>
+          ))}
+          {" — "}
+          <a href="https://unsplash.com" target="_blank" rel="noopener" className="underline-offset-2 transition-colors hover:text-white hover:underline">
+            Unsplash
           </a>
         </p>
       </div>
