@@ -31,37 +31,119 @@ function getCategoryStyle(category: string) {
 
 /**
  * Render a Markdown-like content string into React elements.
- * Supports: ## h2, ### h3, **bold**, `code`, --- (hr), - list items, and paragraphs.
+ * Supports: ## h2, ### h3, **bold**, `code`, [liens](url), --- (hr),
+ * - list items, 1. numbered items, | tableaux |, and paragraphs.
+ *
+ * ## Liens, listes numérotées et tableaux : ajoutés le 13/11
+ *
+ * Relevé en production : le moteur ne connaissait ni `[texte](url)`, ni
+ * `1. `, ni les tableaux. Les 23 liens écrits dans les articles — dont TOUS
+ * les « 👉 Découvrir Aevia Inbox » de fin d'article — s'affichaient en texte
+ * brut, crochets et URL compris : aucun article ne liait réellement un
+ * produit. Les 85 lignes de tableaux comparatifs (« | Critère | Secrétariat
+ * | Agent vocal IA | ») sortaient en paragraphes de barres verticales, et les
+ * étapes numérotées en paragraphes. Le contenu était juste ; c'est son rendu
+ * qui le rendait illisible pour un lecteur et invisible comme lien pour un
+ * robot.
  */
+const LIEN = /\[([^\]]+)\]\(((?:https?:\/\/|\/)[^)\s"]+)\)/g;
+
+function cellules(ligne: string): string[] {
+  return ligne.replace(/^\|/, "").replace(/\|$/, "").split("|").map((c) => c.trim());
+}
+
 function renderContent(content: string) {
   const lines = content.split("\n");
   const elements: React.ReactNode[] = [];
   let listBuffer: string[] = [];
+  let olBuffer: string[] = [];
+  let tableBuffer: string[] = [];
   let key = 0;
 
   function flushList() {
-    if (listBuffer.length === 0) return;
-    elements.push(
-      <ul key={key++} className="my-5 space-y-2 pl-0 list-none">
-        {listBuffer.map((item, i) => (
-          <li key={i} className="flex items-start gap-3 text-zinc-300 leading-relaxed">
-            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
-            <span dangerouslySetInnerHTML={{ __html: inlineFormat(item) }} />
-          </li>
-        ))}
-      </ul>
-    );
-    listBuffer = [];
+    if (listBuffer.length > 0) {
+      elements.push(
+        <ul key={key++} className="my-5 space-y-2 pl-0 list-none">
+          {listBuffer.map((item, i) => (
+            <li key={i} className="flex items-start gap-3 text-zinc-300 leading-relaxed">
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-red-400 shrink-0" />
+              <span dangerouslySetInnerHTML={{ __html: inlineFormat(item) }} />
+            </li>
+          ))}
+        </ul>
+      );
+      listBuffer = [];
+    }
+    if (olBuffer.length > 0) {
+      elements.push(
+        <ol key={key++} className="my-5 space-y-2 pl-6 list-decimal marker:text-red-300 marker:font-semibold">
+          {olBuffer.map((item, i) => (
+            <li key={i} className="pl-1 text-zinc-300 leading-relaxed" dangerouslySetInnerHTML={{ __html: inlineFormat(item) }} />
+          ))}
+        </ol>
+      );
+      olBuffer = [];
+    }
+    if (tableBuffer.length > 0) {
+      const lignes = tableBuffer.map(cellules);
+      tableBuffer = [];
+      // La ligne de séparation `|---|---|` ne contient que des tirets.
+      const separation = lignes.findIndex((l) => l.every((c) => /^:?-{3,}:?$/.test(c)));
+      const entete = separation === 1 ? lignes[0] : null;
+      const corps = separation >= 0 ? lignes.filter((_, i) => i !== separation && !(entete && i === 0)) : lignes;
+      elements.push(
+        <div key={key++} className="my-6 overflow-x-auto rounded-xl border border-zinc-800">
+          <table className="w-full text-left text-sm">
+            {entete && (
+              <thead className="bg-zinc-900/80 text-white">
+                <tr>
+                  {entete.map((c, i) => (
+                    <th key={i} scope="col" className="px-4 py-3 font-semibold" dangerouslySetInnerHTML={{ __html: inlineFormat(c) }} />
+                  ))}
+                </tr>
+              </thead>
+            )}
+            <tbody className="divide-y divide-zinc-800">
+              {corps.map((ligne, r) => (
+                <tr key={r}>
+                  {ligne.map((c, i) => (
+                    <td key={i} className="px-4 py-3 align-top text-zinc-300" dangerouslySetInnerHTML={{ __html: inlineFormat(c) }} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+    }
   }
 
   function inlineFormat(text: string): string {
     return text
+      .replace(LIEN, '<a href="$2" class="text-red-300 underline underline-offset-2 hover:text-red-200">$1</a>')
       .replace(/\*\*(.+?)\*\*/g, '<strong class="text-white font-semibold">$1</strong>')
       .replace(/`(.+?)`/g, '<code class="px-1.5 py-0.5 rounded bg-zinc-800 text-red-300 text-[0.875em] font-mono">$1</code>');
   }
 
   for (const raw of lines) {
     const line = raw.trimEnd();
+
+    // Un seul tampon est rempli à la fois : changer de type de bloc vide les
+    // autres d'abord, dans l'ordre du texte.
+    if (line.startsWith("|")) {
+      if (listBuffer.length || olBuffer.length) flushList();
+      tableBuffer.push(line);
+      continue;
+    }
+    if (tableBuffer.length) flushList();
+
+    const numero = /^\d+\.\s+(.*)$/.exec(line);
+    if (numero) {
+      if (listBuffer.length) flushList();
+      olBuffer.push(numero[1]);
+      continue;
+    }
+    if (line.startsWith("- ") && olBuffer.length) flushList();
 
     if (line.startsWith("### ")) {
       flushList();
