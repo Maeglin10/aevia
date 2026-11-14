@@ -37,7 +37,9 @@ const BASE = 'https://aevia.services'
 */
 // 12/11 : FAQ et titres de l'accueil, canonique de l'index du blog,
 // liens du pied de page dans la langue — voir branche lot-2026-11-12-seo.
-const DERNIERE_REFONTE = '2026-11-12'
+// 13/11 : bloc « par besoin » et cartes d'articles traduites sur l'accueil,
+// prix corrigés dans les articles et les comparatifs.
+const DERNIERE_REFONTE = '2026-11-13'
 
 function newestContentDate(): Date {
   const newest = BLOG_POSTS.reduce(

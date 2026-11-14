@@ -18,6 +18,360 @@ import type { BlogPost } from "./blog-posts";
  * - figures are either sourced or given as ranges we can defend.
  */
 export const BLOG_POSTS_2026: BlogPost[] = [
+  /*
+    Prise de commande à emporter par téléphone — la cible décidée le 03/11
+    (livraison et vente à emporter), et la seule intention de ce métier qu'aucune
+    page de la suite ne traitait.
+
+    Chaque affirmation sur le produit a été relue dans le code le 13/11
+    (skybot-inbox) : voice-service/tools.py (`get_menu`, `place_order` « UNIQUEMENT
+    après que le client a validé le récapitulatif », `send_sms_confirmation`),
+    src/voice/voice-agent-api.service.ts (`createOrder` : plat inconnu de la carte
+    = refus, total calculé sur les prix de la carte, numéro de l'appelant
+    enregistré, délai de retrait 15 min + 4 par commande des 30 dernières
+    minutes, plafonné à 45, envoi à HubRise en `collection` avec paiement « Sur
+    place »), contrôleur `POST voice/sms` (« FR numbers only »), page Commandes
+    de l'interface. Pas de livraison, pas d'encaissement : l'article le dit.
+    Prix : pricing-plans.config.ts. Aucun client cité : il n'y en a pas encore.
+  */
+  {
+    slug: "prise-commande-telephone-ia-restaurant",
+    title: "Prise de commande par téléphone avec une IA : comment ça marche pour une pizzeria ou un restaurant à emporter",
+    excerpt:
+      "Entre 18 h 30 et 20 h 30, le téléphone sonne pendant que vous êtes au four. Ce qu'un agent vocal IA fait réellement quand il prend une commande à emporter, ce qu'il ne fait pas, combien de minutes il vous faut, et les questions à poser avant de choisir.",
+    date: "2026-11-13",
+    readingTime: "8 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Un agent vocal IA peut prendre une commande à emporter complète au téléphone** : il lit votre carte, note les plats, les quantités et les précisions, relit le récapitulatif au client et n'enregistre la commande qu'après son accord.
+- **Il ne doit proposer que ce qui est sur votre carte** : un plat qui n'y figure pas est refusé plutôt qu'inventé, et le total est calculé à partir de vos prix.
+- **Il n'encaisse pas** : le client paie au retrait, comme pour une commande prise par vous.
+- **Chez Aevia Inbox, la voix commence à 79 € par mois** (200 minutes d'appel incluses), plus 100 € de mise en service unique.
+
+---
+
+## Le problème : les commandes arrivent quand vous avez les mains prises
+
+Dans une pizzeria, un snack ou un restaurant qui fait de la vente à emporter, les appels se concentrent sur quelques créneaux : le midi, et le soir avant le dîner. C'est exactement le moment où la cuisine tourne à plein. Soit quelqu'un quitte son poste pour décrocher, soit le téléphone sonne dans le vide et le client commande ailleurs — souvent sur une plateforme qui prélève une commission.
+
+Un agent vocal IA répond à ces appels à votre place, y compris quand plusieurs arrivent en même temps.
+
+---
+
+## Comment se déroule un appel, étape par étape
+
+1. **L'agent décroche au nom de votre établissement** et demande ce que le client souhaite.
+2. **Il consulte votre carte** — les plats et les prix que vous avez renseignés — pour répondre aux questions (« vous avez une pizza végétarienne ? ») et proposer ce qui existe.
+3. **Il prend la commande** : plats, quantités, précisions (« sans oignons »), allergie à signaler en cuisine, et le prénom du client.
+4. **Il relit le récapitulatif** — plats, quantités, total — et attend la validation du client.
+5. **Il enregistre la commande** seulement après ce « oui » : elle reçoit un numéro, son total est calculé à partir de vos prix, et le numéro de l'appelant est conservé pour pouvoir le rappeler.
+6. **Il annonce une heure de retrait** qui tient compte des commandes déjà en cours : au calme, le délai de base ; quand plusieurs commandes viennent d'arriver, un délai plus long.
+7. **Il peut envoyer un SMS de confirmation** au client avec le récapitulatif (numéros de mobile français).
+
+Ce qui compte : la commande n'est pas « un message à rappeler ». Elle est prise, validée par le client et enregistrée pendant l'appel. Avec Aevia Inbox, elle apparaît dans l'onglet Commandes, avec le détail des plats et le numéro du client.
+
+---
+
+## Ce qu'un bon agent ne fait pas
+
+- **Il n'invente pas de plats.** Si le client demande quelque chose qui n'est pas sur votre carte, la commande ne peut pas être enregistrée avec ce plat : l'agent propose ce qui existe.
+- **Il ne s'improvise pas expert en allergènes.** S'il n'a pas l'information dans ce que vous avez renseigné, il ne répond pas « oui, c'est sans arachide » : il transmet la question à l'équipe.
+- **Il n'encaisse pas.** Pas de numéro de carte bancaire dicté au téléphone : le paiement se fait au retrait.
+- **Il ne gère pas la livraison.** La commande prise par l'agent est une commande à retirer sur place.
+- **Il ne tranche pas les cas particuliers** — grosse commande pour un événement, réclamation : il les note et vous les transmet.
+
+---
+
+## Et votre caisse ?
+
+Une commande prise au téléphone doit arriver là où la cuisine la voit. Avec Aevia Inbox, elle arrive dans l'onglet Commandes. Pour les restaurants dont la caisse est reliée à HubRise, un connecteur permet de l'y transmettre directement, avec l'heure de retrait prévue et le numéro du client ; ce connecteur est en cours de validation par HubRise. Si votre organisation repose sur la caisse, demandez où il en est avant de compter dessus.
+
+---
+
+## Combien de minutes vous faut-il ?
+
+Le prix d'un agent vocal se compte en minutes d'appel. Pour estimer votre besoin, partez de la durée d'un appel de commande chez vous. **À titre d'exemple** — hypothèse à vérifier sur vos propres appels : si un appel de commande dure 2 à 3 minutes,
+
+| Formule Aevia Inbox (voix seule) | Minutes incluses par mois | Appels de commande de 2 à 3 min |
+|---|---|---|
+| Starter — 79 €/mois | 200 | environ 65 à 100 |
+| Growth — 99 €/mois | 400 | environ 130 à 200 |
+| Pro — 199 €/mois | 800 | environ 265 à 400 |
+
+S'y ajoutent 100 € de mise en service unique (connexion de la ligne et configuration de l'agent avec votre carte). Sans engagement, 14 jours satisfait ou remboursé. Hors zone euro, le même montant est facturé en dollars.
+
+---
+
+## Les questions à poser à n'importe quel fournisseur
+
+1. **D'où l'agent tire-t-il la carte et les prix ?** Et que se passe-t-il quand vous changez un plat ou un prix ?
+2. **Que fait-il d'un plat qui n'existe pas ?** La bonne réponse : il refuse et propose ce qui existe.
+3. **Relit-il le récapitulatif avant d'enregistrer ?** Sans cette étape, une erreur de compréhension devient une erreur en cuisine.
+4. **Où la commande arrive-t-elle ?** Écran, caisse, e-mail, SMS : là où votre équipe regarde vraiment.
+5. **Que répond-il sur les allergènes qu'il ne connaît pas ?** Il doit transmettre, jamais deviner.
+6. **Combien coûte une minute au-delà du forfait, et combien dure un appel chez vous ?**
+
+---
+
+## Questions fréquentes
+
+**L'IA peut-elle vraiment prendre une commande complète au téléphone ?**
+Oui. L'agent lit votre carte, prend les plats et les quantités, relit le récapitulatif au client et enregistre la commande après sa validation, avec le numéro de l'appelant.
+
+**Que se passe-t-il si le client demande un plat qui n'est pas sur la carte ?**
+La commande ne peut pas être enregistrée avec ce plat. L'agent propose ce qui figure sur votre carte.
+
+**L'agent encaisse-t-il le paiement ?**
+Non. Le client paie au retrait. Aucun numéro de carte bancaire n'est demandé au téléphone.
+
+**Et pour les livraisons ?**
+L'agent vocal d'Aevia Inbox prend des commandes à retirer sur place. Il ne gère pas la livraison.
+
+**Combien ça coûte ?**
+La voix commence à 79 € par mois avec 200 minutes d'appel incluses, plus 100 € de mise en service unique, sans engagement.
+
+---
+
+👉 [Voir comment l'accueil client IA d'Aevia Inbox répond au téléphone](https://inbox.aevia.services/fr/solutions/standard-telephonique-ia)
+`,
+    faq: [
+      {
+        q: "L'IA peut-elle vraiment prendre une commande complète au téléphone ?",
+        a: "Oui. L'agent lit la carte du restaurant, prend les plats et les quantités, relit le récapitulatif au client et enregistre la commande après sa validation, avec le numéro de l'appelant.",
+      },
+      {
+        q: "Que se passe-t-il si le client demande un plat qui n'est pas sur la carte ?",
+        a: "La commande ne peut pas être enregistrée avec ce plat. L'agent propose ce qui figure sur la carte.",
+      },
+      {
+        q: "L'agent encaisse-t-il le paiement ?",
+        a: "Non. Le client paie au retrait. Aucun numéro de carte bancaire n'est demandé au téléphone.",
+      },
+      {
+        q: "Et pour les livraisons ?",
+        a: "L'agent vocal d'Aevia Inbox prend des commandes à retirer sur place. Il ne gère pas la livraison.",
+      },
+      {
+        q: "Combien coûte un agent vocal qui prend les commandes ?",
+        a: "Chez Aevia Inbox, la voix commence à 79 € par mois avec 200 minutes d'appel incluses, plus 100 € de mise en service unique, sans engagement.",
+      },
+    ],
+    i18n: {
+      en: {
+        title: "Taking phone orders with AI: how it works for a pizzeria or a takeaway restaurant",
+        excerpt:
+          "Between 6:30 and 8:30 pm, the phone rings while you are at the oven. What an AI voice agent actually does when it takes a takeaway order, what it does not do, how many minutes you need, and the questions to ask before you choose.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **An AI voice agent can take a complete takeaway order over the phone**: it reads your menu, notes dishes, quantities and special requests, reads the summary back to the customer and only records the order once they agree.
+- **It should only offer what is on your menu**: a dish that is not there is refused rather than made up, and the total is calculated from your prices.
+- **It does not take payment**: the customer pays at pickup, just as when you take the order yourself.
+- **At Aevia Inbox, voice starts at €79 a month** (200 call minutes included), plus a one-off €100 setup fee.
+
+---
+
+## The problem: orders come in when your hands are full
+
+In a pizzeria, a snack bar or a restaurant that does takeaway, calls cluster around a few slots: lunchtime, and the evening before dinner. That is exactly when the kitchen is at full speed. Either someone leaves their station to pick up, or the phone rings out and the customer orders elsewhere — often on a platform that takes a commission.
+
+An AI voice agent answers those calls for you, including when several come in at once.
+
+---
+
+## How a call goes, step by step
+
+1. **The agent picks up in your restaurant's name** and asks what the customer would like.
+2. **It checks your menu** — the dishes and prices you entered — to answer questions ("do you have a vegetarian pizza?") and offer what exists.
+3. **It takes the order**: dishes, quantities, requests ("no onions"), an allergy to flag to the kitchen, and the customer's first name.
+4. **It reads the summary back** — dishes, quantities, total — and waits for the customer to confirm.
+5. **It records the order** only after that "yes": the order gets a number, its total is calculated from your prices, and the caller's number is kept so you can call back.
+6. **It gives a pickup time** that accounts for orders already in progress: the base wait when it is quiet, a longer one when several orders have just come in.
+7. **It can send a confirmation text** to the customer with the summary (French mobile numbers).
+
+What matters: the order is not "a message to call back". It is taken, confirmed by the customer and recorded during the call. With Aevia Inbox it shows up in the Orders tab, with the dishes and the customer's number.
+
+---
+
+## What a good agent does not do
+
+- **It does not make up dishes.** If the customer asks for something that is not on your menu, the order cannot be recorded with that dish: the agent offers what exists.
+- **It does not play allergen expert.** If the information is not in what you entered, it does not answer "yes, it is peanut-free": it passes the question to your team.
+- **It does not take payment.** No card number read out over the phone: payment happens at pickup.
+- **It does not handle delivery.** An order taken by the agent is a pickup order.
+- **It does not decide special cases** — a large order for an event, a complaint: it notes them and passes them on to you.
+
+---
+
+## What about your till?
+
+An order taken over the phone has to land where the kitchen sees it. With Aevia Inbox it lands in the Orders tab. For restaurants whose till is connected to HubRise, a connector can send it there directly, with the expected pickup time and the customer's number; that connector is being validated by HubRise. If your workflow depends on the till, ask where it stands before counting on it.
+
+---
+
+## How many minutes do you need?
+
+A voice agent is priced in call minutes. To estimate your need, start from how long an order call lasts at your place. **As an example** — an assumption to check against your own calls: if an order call lasts 2 to 3 minutes,
+
+| Aevia Inbox plan (voice only) | Minutes included per month | Order calls of 2 to 3 min |
+|---|---|---|
+| Starter — €79/month | 200 | about 65 to 100 |
+| Growth — €99/month | 400 | about 130 to 200 |
+| Pro — €199/month | 800 | about 265 to 400 |
+
+On top of that comes a one-off €100 setup fee (connecting the line and configuring the agent with your menu). No commitment, 14-day money-back guarantee. Outside the eurozone, the same amount is billed in US dollars.
+
+---
+
+## Questions to ask any provider
+
+1. **Where does the agent get the menu and prices from?** And what happens when you change a dish or a price?
+2. **What does it do with a dish that does not exist?** The right answer: it refuses and offers what exists.
+3. **Does it read the summary back before recording?** Without that step, a misunderstanding becomes a mistake in the kitchen.
+4. **Where does the order land?** Screen, till, email, text: where your team actually looks.
+5. **What does it say about allergens it does not know?** It must pass the question on, never guess.
+6. **What does a minute beyond the plan cost, and how long does a call last at your place?**
+
+---
+
+## Frequently asked questions
+
+**Can AI really take a complete order over the phone?**
+Yes. The agent reads your menu, takes dishes and quantities, reads the summary back to the customer and records the order once confirmed, with the caller's number.
+
+**What happens if the customer asks for a dish that is not on the menu?**
+The order cannot be recorded with that dish. The agent offers what is on your menu.
+
+**Does the agent take payment?**
+No. The customer pays at pickup. No card number is asked for over the phone.
+
+**What about deliveries?**
+The Aevia Inbox voice agent takes pickup orders. It does not handle delivery.
+
+**How much does it cost?**
+Voice starts at €79 a month with 200 call minutes included, plus a one-off €100 setup fee, no commitment.
+
+---
+
+👉 [See how the Aevia Inbox AI customer desk answers the phone](https://inbox.aevia.services/en)
+`,
+        faq: [
+          { q: "Can AI really take a complete order over the phone?", a: "Yes. The agent reads the restaurant's menu, takes dishes and quantities, reads the summary back to the customer and records the order once confirmed, with the caller's number." },
+          { q: "What happens if the customer asks for a dish that is not on the menu?", a: "The order cannot be recorded with that dish. The agent offers what is on the menu." },
+          { q: "Does the agent take payment?", a: "No. The customer pays at pickup. No card number is asked for over the phone." },
+          { q: "What about deliveries?", a: "The Aevia Inbox voice agent takes pickup orders. It does not handle delivery." },
+          { q: "How much does a voice agent that takes orders cost?", a: "At Aevia Inbox, voice starts at €79 a month ($79 outside the eurozone) with 200 call minutes included, plus a one-off €100 setup fee, no commitment." },
+        ],
+      },
+      es: {
+        title: "Tomar pedidos por teléfono con IA: cómo funciona en una pizzería o un restaurante de comida para llevar",
+        excerpt:
+          "Entre las 18:30 y las 20:30, el teléfono suena mientras estás en el horno. Lo que hace de verdad un agente de voz con IA cuando toma un pedido para llevar, lo que no hace, cuántos minutos necesitas y las preguntas que conviene hacer antes de elegir.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Un agente de voz con IA puede tomar un pedido para llevar completo por teléfono**: consulta tu carta, anota platos, cantidades y peticiones, repite el resumen al cliente y solo registra el pedido cuando este lo confirma.
+- **Solo debe ofrecer lo que está en tu carta**: un plato que no figura se rechaza en lugar de inventarse, y el total se calcula con tus precios.
+- **No cobra**: el cliente paga al recoger, como cuando tomas tú el pedido.
+- **En Aevia Inbox, la voz empieza en 79 € al mes** (200 minutos de llamada incluidos), más 100 € de puesta en marcha única.
+
+---
+
+## El problema: los pedidos llegan cuando tienes las manos ocupadas
+
+En una pizzería, un local de comida rápida o un restaurante con comida para llevar, las llamadas se concentran en pocas franjas: el mediodía y la tarde antes de la cena. Justo cuando la cocina va a tope. O alguien deja su puesto para contestar, o el teléfono suena sin respuesta y el cliente pide en otro sitio — a menudo en una plataforma que cobra comisión.
+
+Un agente de voz con IA contesta esas llamadas por ti, también cuando entran varias a la vez.
+
+---
+
+## Cómo transcurre una llamada, paso a paso
+
+1. **El agente contesta en nombre de tu local** y pregunta qué desea el cliente.
+2. **Consulta tu carta** — los platos y precios que has introducido — para responder preguntas («¿tenéis pizza vegetariana?») y ofrecer lo que existe.
+3. **Toma el pedido**: platos, cantidades, peticiones («sin cebolla»), una alergia que avisar a cocina y el nombre del cliente.
+4. **Repite el resumen** — platos, cantidades, total — y espera la confirmación del cliente.
+5. **Registra el pedido** solo después de ese «sí»: el pedido recibe un número, el total se calcula con tus precios y se guarda el número de quien llama para poder devolverle la llamada.
+6. **Indica una hora de recogida** que tiene en cuenta los pedidos en curso: el plazo base cuando hay calma, uno más largo cuando acaban de entrar varios pedidos.
+7. **Puede enviar un SMS de confirmación** al cliente con el resumen (números móviles franceses).
+
+Lo importante: el pedido no es «un mensaje para devolver la llamada». Se toma, el cliente lo confirma y queda registrado durante la llamada. Con Aevia Inbox aparece en la pestaña Pedidos, con los platos y el número del cliente.
+
+---
+
+## Lo que un buen agente no hace
+
+- **No inventa platos.** Si el cliente pide algo que no está en tu carta, el pedido no puede registrarse con ese plato: el agente ofrece lo que existe.
+- **No improvisa sobre alérgenos.** Si no tiene la información en lo que has introducido, no responde «sí, no lleva cacahuete»: traslada la pregunta al equipo.
+- **No cobra.** Nada de dictar un número de tarjeta por teléfono: el pago se hace al recoger.
+- **No gestiona entregas a domicilio.** El pedido que toma el agente es para recoger en el local.
+- **No decide los casos especiales** — un pedido grande para un evento, una reclamación: los anota y te los transmite.
+
+---
+
+## ¿Y tu caja?
+
+Un pedido tomado por teléfono tiene que llegar donde la cocina lo ve. Con Aevia Inbox llega a la pestaña Pedidos. Para los restaurantes cuya caja está conectada a HubRise, un conector permite enviarlo directamente, con la hora de recogida prevista y el número del cliente; ese conector está en proceso de validación por HubRise. Si tu organización depende de la caja, pregunta en qué punto está antes de contar con él.
+
+---
+
+## ¿Cuántos minutos necesitas?
+
+Un agente de voz se paga por minutos de llamada. Para estimar tu necesidad, parte de lo que dura una llamada de pedido en tu local. **A modo de ejemplo** — una hipótesis que debes comprobar con tus propias llamadas: si una llamada de pedido dura de 2 a 3 minutos,
+
+| Plan de Aevia Inbox (solo voz) | Minutos incluidos al mes | Llamadas de pedido de 2 a 3 min |
+|---|---|---|
+| Starter — 79 €/mes | 200 | unas 65 a 100 |
+| Growth — 99 €/mes | 400 | unas 130 a 200 |
+| Pro — 199 €/mes | 800 | unas 265 a 400 |
+
+A esto se suma una cuota única de puesta en marcha de 100 € (conexión de la línea y configuración del agente con tu carta). Sin permanencia, 14 días de garantía de reembolso. Fuera de la zona euro, se factura el mismo importe en dólares.
+
+---
+
+## Las preguntas que hacer a cualquier proveedor
+
+1. **¿De dónde saca el agente la carta y los precios?** ¿Y qué pasa cuando cambias un plato o un precio?
+2. **¿Qué hace con un plato que no existe?** La buena respuesta: lo rechaza y ofrece lo que existe.
+3. **¿Repite el resumen antes de registrar?** Sin ese paso, un malentendido se convierte en un error en cocina.
+4. **¿Dónde llega el pedido?** Pantalla, caja, email, SMS: donde tu equipo mira de verdad.
+5. **¿Qué responde sobre alérgenos que no conoce?** Debe trasladar la pregunta, nunca adivinar.
+6. **¿Cuánto cuesta un minuto por encima del plan, y cuánto dura una llamada en tu local?**
+
+---
+
+## Preguntas frecuentes
+
+**¿Puede la IA tomar de verdad un pedido completo por teléfono?**
+Sí. El agente consulta tu carta, toma platos y cantidades, repite el resumen al cliente y registra el pedido tras su confirmación, con el número de quien llama.
+
+**¿Qué pasa si el cliente pide un plato que no está en la carta?**
+El pedido no puede registrarse con ese plato. El agente ofrece lo que figura en tu carta.
+
+**¿El agente cobra el pago?**
+No. El cliente paga al recoger. No se pide ningún número de tarjeta por teléfono.
+
+**¿Y las entregas a domicilio?**
+El agente de voz de Aevia Inbox toma pedidos para recoger en el local. No gestiona entregas.
+
+**¿Cuánto cuesta?**
+La voz empieza en 79 € al mes con 200 minutos de llamada incluidos, más 100 € de puesta en marcha única, sin permanencia.
+
+---
+
+👉 [Ver cómo responde al teléfono la atención al cliente con IA de Aevia Inbox](https://inbox.aevia.services/es)
+`,
+        faq: [
+          { q: "¿Puede la IA tomar de verdad un pedido completo por teléfono?", a: "Sí. El agente consulta la carta del restaurante, toma platos y cantidades, repite el resumen al cliente y registra el pedido tras su confirmación, con el número de quien llama." },
+          { q: "¿Qué pasa si el cliente pide un plato que no está en la carta?", a: "El pedido no puede registrarse con ese plato. El agente ofrece lo que figura en la carta." },
+          { q: "¿El agente cobra el pago?", a: "No. El cliente paga al recoger. No se pide ningún número de tarjeta por teléfono." },
+          { q: "¿Y las entregas a domicilio?", a: "El agente de voz de Aevia Inbox toma pedidos para recoger en el local. No gestiona entregas." },
+          { q: "¿Cuánto cuesta un agente de voz que toma pedidos?", a: "En Aevia Inbox, la voz empieza en 79 € al mes (79 USD fuera de la zona euro) con 200 minutos de llamada incluidos, más 100 € de puesta en marcha única, sin permanencia." },
+        ],
+      },
+    },
+  },
   {
     slug: "combien-coute-site-internet-professionnel-2026",
     title: "Combien coûte un site internet professionnel en 2026 ? Les prix réels",
