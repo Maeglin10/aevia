@@ -199,12 +199,15 @@ export default function Home() {
               <span className="block text-xs font-semibold uppercase tracking-[0.28em] text-zinc-300 mb-2">
                 {h("credoLabel")}
               </span>
-              <p className="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-white/90">
+              {/* LE CREDO EST LE PLUS GROS TEXTE DE LA PAGE, comme sur Launch et
+                  Inbox : c'est lui la promesse ; le titre qui suit dit ce
+                  qu'on fait pour la tenir (retour de Valentin le 15/11). */}
+              <p className="font-display text-[2rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] text-balance">
                 {h("credo")}
               </p>
             </div>
 
-            <h1 className="font-display text-[1.875rem] sm:text-5xl lg:text-7xl font-bold tracking-tight text-white leading-[1.05] mb-5 sm:mb-6 text-balance">
+            <h1 className="font-display text-xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-[1.2] mb-5 sm:mb-6 text-balance">
               {h("title1")}
               <br />
               <span className="text-red-300">{h("title2")}</span>
