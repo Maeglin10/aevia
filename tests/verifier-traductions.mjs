@@ -13,6 +13,7 @@
 import {
   ressembleAuFrancais,
   ecartsDeNombres,
+  ecartsParBloc,
   charpente,
   liens,
   lienAttendu,
@@ -51,6 +52,9 @@ for (const p of cibles) {
     const n = ecartsDeNombres(p.content, t.content);
     if (n.manquants.length) problemes.push(`nombres du français absents : ${n.manquants.join(", ")}`);
     if (n.ajoutes.length) problemes.push(`nombres absents du français : ${n.ajoutes.join(", ")}`);
+    for (const e of ecartsParBloc(p.content, t.content)) {
+      problemes.push(e.raison ? `blocs : ${e.raison}` : `bloc ${e.bloc} (${e.type}) : fr ${e.original.join(" ")} ≠ ${e.traduction.join(" ")} — « ${e.extrait} »`);
+    }
     const ne = ecartsDeNombres(p.excerpt, t.excerpt);
     if (ne.manquants.length || ne.ajoutes.length) problemes.push(`nombres du chapeau : ${JSON.stringify(ne)}`);
     const attendus = liens(p.content).map((u) => lienAttendu(u, langue));

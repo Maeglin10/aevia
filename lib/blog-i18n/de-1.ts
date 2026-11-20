@@ -88,14 +88,14 @@ Der beste Ansatz: Filtern Sie zuerst nach Branche, dann nach visuellem Stil. So 
 
 - **3 Pflichtdokumente**: Mentions légales (das französische Gegenstück zum Impressum), Datenschutzerklärung und ein Cookie-Banner, wenn Sie Besucher tracken
 - **Die Einwilligung muss ausdrücklich erfolgen** — ein vorab angekreuztes Kästchen ist seit 2020 rechtswidrig
-- **Die Sanktionen sind real**: Die CNIL (die französische Datenschutzbehörde) hat 2024 Bußgelder von 100 Mio. € für einfache Verstöße verhängt
+- **Die Sanktionen sind real**: Die CNIL (die französische Datenschutzbehörde) hat 2024 insgesamt 87 Sanktionen verhängt, mit Bußgeldern von zusammen 55.212.400 € ([CNIL-Bilanz 2024, auf Englisch](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Die Umsetzung dauert 1 bis 2 Tage** für eine klassische Unternehmenswebsite
 
 ---
 
 ## Warum die DSGVO Ihr KMU wirklich betrifft
 
-„Das betrifft nur Großunternehmen.“ Das ist der klassische Irrtum. Die CNIL (Commission Nationale de l'Informatique et des Libertés) kontrolliert Kleinstunternehmen ebenso wie multinationale Konzerne — und auch verhältnismäßige Sanktionen tun einem kleinen Betrieb weh.
+„Das betrifft nur Großunternehmen.“ Das ist der klassische Irrtum. Die CNIL (Commission Nationale de l'Informatique et des Libertés) kontrolliert Kleinstunternehmen ebenso wie multinationale Konzerne — und auch verhältnismäßige Sanktionen tun einem kleinen Betrieb weh. Dieser Leitfaden folgt dem französischen Recht und den Regeln der CNIL: Die DSGVO gilt in der ganzen EU gleich, die Pflichtangaben auf der Website und die Durchsetzung der Cookie-Regeln unterscheiden sich jedoch von Land zu Land — prüfen Sie die Vorgaben der Datenschutzbehörde, die für Sie zuständig ist.
 
 In der Praxis gilt: Wenn Ihre Website
 - Google Analytics oder ein anderes Tracking-Tool nutzt
@@ -567,8 +567,8 @@ Tools wie **Aevia Inbox** ermöglichen es, Bewertungsanfragen nach dem Kauf per 
       "KI-Assistenten ersetzen Ihr Team nicht — sie übernehmen, was sich übernehmen lässt, damit Sie sich auf das Wesentliche konzentrieren können. Das ändert sich wirklich.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **KI bearbeitet im Durchschnitt 60 bis 80 % der wiederkehrenden Anfragen** (Öffnungszeiten, Preise, Verfügbarkeiten, Bestellstatus)
-- **Die Antwortzeiten sinken von mehreren Stunden auf wenige Sekunden**, rund um die Uhr, 7 Tage die Woche
+- **KI kann einen guten Teil der wiederkehrenden Anfragen übernehmen** (Öffnungszeiten, Preise, Verfügbarkeiten, Bestellstatus): Wie groß dieser Teil ist, hängt davon ab, was in ihrer Wissensbasis steht
+- **Die Antwortzeiten sinken von mehreren Stunden auf wenige Sekunden**, 24 Stunden am Tag, 7 Tage die Woche
 - **KI ersetzt nicht die menschliche Beziehung** — sie befreit sie von Aufgaben ohne Mehrwert
 - **Die Einrichtung erfordert mit modernen Tools keine technischen Kenntnisse**
 
@@ -588,7 +588,7 @@ Genau hier kommt KI im Kundensupport ins Spiel.
 
 ### FAQ in Echtzeit beantworten
 
-Ein KI-Agent, der mit Ihren Informationen trainiert wurde (Öffnungszeiten, Preise, Katalog, Rückgaberichtlinie, Einsatzgebiet), kann 60 bis 80 % der gängigen Anfragen korrekt beantworten — sofort, auch sonntags um 3 Uhr morgens.
+Ein KI-Agent, der mit Ihren Informationen trainiert wurde (Öffnungszeiten, Preise, Katalog, Rückgaberichtlinie, Einsatzgebiet), kann gängige Anfragen korrekt beantworten, deren Antwort in diesen Informationen steht — sofort, auch sonntags um 3 Uhr morgens.
 
 Keine Wartezeit. Kein Frust. Der Kunde erhält seine Antwort sofort.
 
@@ -640,12 +640,14 @@ Die Ersteinrichtung dauert bei einer einfachen Struktur **2 bis 4 Stunden**. Dan
 
 ---
 
-## Die tatsächlich beobachteten Zahlen bei KMU
+## Was Sie messen sollten, vorher und nachher
 
-- **Durchschnittliche Antwortzeit**: von 4 Std. 30 Min. auf unter 2 Minuten
-- **Kundenzufriedenheit** (CSAT): im Durchschnitt 18 Punkte höher nach der Einführung
-- **Frei gewordene Zeit des Teams**: 40 bis 60 % der Supportzeit automatisiert
-- **Einrichtungskosten**: für kleine Betriebe bereits ab einigen Dutzend Euro pro Monat
+Wir veröffentlichen keinen Durchschnittswert: Er hinge von Ihrer Branche, Ihren Kanälen und der Qualität Ihrer Wissensbasis ab. Diese vier Messungen, in Ihrem eigenen Betrieb erhoben, zeigen, ob Ihnen die KI Zeit spart:
+
+- **Die Zeit bis zur ersten Antwort**: eine Woche lang vor der Einführung erfassen, dann einen Monat danach vergleichen
+- **Der Anteil der Anfragen, die ohne Sie erledigt werden**: Zählen Sie die Gespräche, die die KI allein abgeschlossen hat, und die, die sie an Sie weitergegeben hat
+- **Die Kundenzufriedenheit**: Eine Frage am Ende des Austauschs („Hat Ihnen diese Antwort geholfen?“) genügt, um die Entwicklung zu verfolgen
+- **Die tatsächlichen Kosten**: das Abonnement plus die Zeit, die Sie in die Pflege der Wissensbasis stecken
 
 ---
 

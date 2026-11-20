@@ -297,7 +297,7 @@ El mejor enfoque: filtra primero por sector, luego por estilo visual. Reducirás
 
 - **3 documents obligatoires** : mentions légales, politique de confidentialité, et bandeau cookies si vous tracez des visiteurs
 - **Le consentement doit être explicite** — la case pré-cochée est illégale depuis 2020
-- **Les sanctions sont réelles** : la CNIL a prononcé 100M€ d'amendes en 2024 pour des infractions simples
+- **Les sanctions sont réelles** : en 2024, la CNIL a prononcé 87 sanctions, pour 55 212 400 € d'amendes au total ([bilan 2024 de la CNIL](https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil))
 - **La mise en conformité prend 1 à 2 jours** pour un site vitrine classique
 
 ---
@@ -390,14 +390,14 @@ Ne sous-estimez pas la conformité RGPD. Ce n'est pas du juridique ésotérique 
 
 - **3 mandatory documents**: legal notice, privacy policy, and a cookie banner if you track visitors
 - **Consent must be explicit** — pre-ticked boxes have been illegal since 2020
-- **Penalties are real**: the CNIL (the French data protection authority) imposed €100M in fines in 2024 for simple infringements
+- **Penalties are real**: in 2024, the CNIL (the French data protection authority) issued 87 sanctions, totalling €55,212,400 in fines ([CNIL 2024 report](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Getting compliant takes 1 to 2 days** for a standard brochure site
 
 ---
 
 ## Why GDPR really concerns your small business
 
-"It's for big companies." That is the classic mistake. The CNIL (Commission Nationale de l'Informatique et des Libertés, the French data protection authority) oversees very small businesses just as much as multinationals — and proportional penalties still hurt a small business.
+"It's for big companies." That is the classic mistake. The CNIL (Commission Nationale de l'Informatique et des Libertés, the French data protection authority) oversees very small businesses just as much as multinationals — and proportional penalties still hurt a small business. This guide follows French law and the CNIL's rules: the GDPR is the same across the EU, but legal-notice requirements and the way cookie rules are enforced vary from country to country, so check with your own data protection authority.
 
 In practice, if your website:
 - Uses Google Analytics or any other tracking tool
@@ -483,14 +483,14 @@ Do not underestimate GDPR compliance. It is not esoteric legal work — it is th
 
 - **3 documentos obligatorios**: aviso legal, política de privacidad, y un banner de cookies si rastreas a los visitantes
 - **El consentimiento debe ser explícito** — la casilla premarcada es ilegal desde 2020
-- **Las sanciones son reales**: la CNIL (la autoridad francesa de protección de datos) impuso 100 M€ en multas en 2024 por infracciones simples
+- **Las sanciones son reales**: en 2024, la CNIL (la autoridad francesa de protección de datos) impuso 87 sanciones, por un total de 55.212.400 € en multas ([balance 2024 de la CNIL, en inglés](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Cumplir lleva de 1 a 2 días** para una web de presentación estándar
 
 ---
 
 ## Por qué el RGPD sí concierne a tu pyme
 
-"Es para las grandes empresas." Es el error clásico. La CNIL (Commission Nationale de l'Informatique et des Libertés, la autoridad francesa de protección de datos) controla tanto a las microempresas como a las multinacionales — y las sanciones proporcionales siguen doliendo a un negocio pequeño.
+"Es para las grandes empresas." Es el error clásico. La CNIL (Commission Nationale de l'Informatique et des Libertés, la autoridad francesa de protección de datos) controla tanto a las microempresas como a las multinacionales — y las sanciones proporcionales siguen doliendo a un negocio pequeño. Esta guía sigue el derecho francés y las normas de la CNIL: el RGPD es el mismo en toda la UE, pero el aviso legal obligatorio y la forma de aplicar las normas sobre cookies varían según el país; en España, la autoridad competente es la AEPD.
 
 En la práctica, si tu web:
 - Usa Google Analytics o cualquier otra herramienta de rastreo
@@ -1778,7 +1778,7 @@ Herramientas como **Aevia Inbox** permiten automatizar las solicitudes de reseñ
     category: "CRM & Support",
     content: `## À retenir en 30 secondes
 
-- **L'IA gère en moyenne 60 à 80 % des demandes répétitives** (horaires, tarifs, disponibilités, statuts commandes)
+- **L'IA peut prendre en charge une bonne part des demandes répétitives** (horaires, tarifs, disponibilités, statuts commandes) : la part exacte dépend de ce que contient sa base de connaissances
 - **Les temps de réponse passent de plusieurs heures à quelques secondes**, 24h/24, 7j/7
 - **L'IA ne remplace pas la relation humaine** — elle la libère des tâches sans valeur ajoutée
 - **La mise en place ne nécessite pas de compétences techniques** avec les outils modernes
@@ -1799,7 +1799,7 @@ C'est là qu'intervient l'IA dans le support client.
 
 ### Répondre aux FAQ en temps réel
 
-Un agent IA entraîné sur vos informations (horaires, tarifs, catalogue, politique de retour, zone géographique d'intervention) peut répondre correctement à 60 à 80 % des demandes courantes — instantanément, à 3h du matin un dimanche.
+Un agent IA entraîné sur vos informations (horaires, tarifs, catalogue, politique de retour, zone géographique d'intervention) peut répondre correctement aux demandes courantes dont la réponse figure dans ces informations — instantanément, à 3h du matin un dimanche.
 
 Pas de temps d'attente. Pas de frustration. Le client obtient sa réponse immédiatement.
 
@@ -1851,12 +1851,14 @@ Le paramétrage initial prend **2 à 4 heures** pour une structure simple. Ensui
 
 ---
 
-## Les chiffres réels observés chez des PME
+## Ce qu'il faut mesurer, avant et après
 
-- **Temps de réponse moyen** : de 4h30 à moins de 2 minutes
-- **Satisfaction client** (CSAT) : augmentation moyenne de 18 points après mise en place
-- **Temps de l'équipe libéré** : 40 à 60 % du temps support automatisé
-- **Coût de mise en place** : accessible dès quelques dizaines d'euros par mois pour les petites structures
+Nous ne publions pas de moyenne : elle dépendrait de votre activité, de vos canaux et de la qualité de votre base de connaissances. Ces quatre mesures, relevées chez vous, disent si l'IA vous fait gagner du temps :
+
+- **Le délai de première réponse** : relevez-le pendant une semaine avant la mise en place, puis comparez un mois après
+- **La part des demandes traitées sans vous** : comptez les conversations que l'IA a closes seule et celles qu'elle vous a transmises
+- **La satisfaction client** : une question en fin d'échange (« Cette réponse vous a-t-elle aidé ? ») suffit pour suivre la tendance
+- **Le coût réel** : l'abonnement, plus le temps passé à tenir la base de connaissances à jour
 
 ---
 
@@ -1875,7 +1877,7 @@ Commencez par lister vos 15 questions les plus fréquentes et les réponses idé
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
-- **AI handles on average 60 to 80% of repetitive requests** (hours, prices, availability, order status)
+- **AI can take on a good share of repetitive requests** (hours, prices, availability, order status): the exact share depends on what its knowledge base contains
 - **Response times drop from several hours to a few seconds**, 24/7
 - **AI does not replace the human relationship** — it frees it from low-value tasks
 - **Setup needs no technical skills** with modern tools
@@ -1896,7 +1898,7 @@ That is where AI comes into customer support.
 
 ### Answering FAQs in real time
 
-An AI agent trained on your information (hours, prices, catalog, return policy, service area) can correctly answer 60 to 80% of common requests — instantly, at 03:00 on a Sunday.
+An AI agent trained on your information (hours, prices, catalog, return policy, service area) can correctly answer common requests whose answer is in that information — instantly, at 03:00 on a Sunday.
 
 No waiting. No frustration. The customer gets their answer immediately.
 
@@ -1948,12 +1950,14 @@ Initial setup takes **2 to 4 hours** for a simple business. The system then impr
 
 ---
 
-## Real figures observed at SMEs
+## What to measure, before and after
 
-- **Average response time**: from 4 hours 30 minutes to under 2 minutes
-- **Customer satisfaction** (CSAT): an average increase of 18 points after implementation
-- **Team time freed up**: 40 to 60% of support time automated
-- **Setup cost**: accessible from a few tens of euros a month for small businesses
+We do not publish an average: it would depend on your business, your channels and the quality of your knowledge base. These four measurements, taken in your own business, tell you whether AI is saving you time:
+
+- **Time to first response**: record it for a week before setup, then compare a month later
+- **Share of requests handled without you**: count the conversations the AI closed on its own and those it passed to you
+- **Customer satisfaction**: one question at the end of the exchange ("Did this answer help you?") is enough to follow the trend
+- **Real cost**: the subscription, plus the time spent keeping the knowledge base up to date
 
 ---
 
@@ -1972,7 +1976,7 @@ Start by listing your 15 most frequent questions and their ideal answers. That i
         category: "CRM & Support",
         content: `## Lo esencial en 30 segundos
 
-- **La IA gestiona de media entre el 60 y el 80 % de las solicitudes repetitivas** (horarios, precios, disponibilidad, estado de pedidos)
+- **La IA puede encargarse de buena parte de las solicitudes repetitivas** (horarios, precios, disponibilidad, estado de pedidos): la proporción exacta depende de lo que contenga su base de conocimiento
 - **Los tiempos de respuesta pasan de varias horas a unos segundos**, 24/7
 - **La IA no sustituye la relación humana** — la libera de tareas sin valor añadido
 - **La puesta en marcha no requiere conocimientos técnicos** con las herramientas modernas
@@ -1993,7 +1997,7 @@ Ahí es donde entra la IA en la atención al cliente.
 
 ### Responder a las FAQ en tiempo real
 
-Un agente de IA entrenado con tu información (horarios, precios, catálogo, política de devoluciones, zona de servicio) puede responder correctamente a entre el 60 y el 80 % de las consultas habituales — al instante, a las 03:00 de un domingo.
+Un agente de IA entrenado con tu información (horarios, precios, catálogo, política de devoluciones, zona de servicio) puede responder correctamente a las consultas habituales cuya respuesta está en esa información — al instante, a las 03:00 de un domingo.
 
 Sin espera. Sin frustración. El cliente obtiene su respuesta de inmediato.
 
@@ -2045,12 +2049,14 @@ La configuración inicial lleva **de 2 a 4 horas** para una estructura simple. D
 
 ---
 
-## Las cifras reales observadas en pymes
+## Qué medir, antes y después
 
-- **Tiempo de respuesta medio**: de 4 h 30 min a menos de 2 minutos
-- **Satisfacción del cliente** (CSAT): un aumento medio de 18 puntos tras la implantación
-- **Tiempo del equipo liberado**: entre el 40 y el 60 % del tiempo de soporte automatizado
-- **Coste de implantación**: accesible desde unas decenas de euros al mes para pequeñas estructuras
+No publicamos una media: dependería de tu actividad, de tus canales y de la calidad de tu base de conocimiento. Estas cuatro mediciones, tomadas en tu propio negocio, te dicen si la IA te ahorra tiempo:
+
+- **El tiempo de primera respuesta**: anótalo durante una semana antes de la puesta en marcha y compáralo un mes después
+- **La proporción de solicitudes resueltas sin ti**: cuenta las conversaciones que la IA cerró sola y las que te pasó a ti
+- **La satisfacción del cliente**: una pregunta al final de la conversación («¿Te ha ayudado esta respuesta?») basta para seguir la tendencia
+- **El coste real**: la suscripción, más el tiempo dedicado a mantener al día la base de conocimiento
 
 ---
 

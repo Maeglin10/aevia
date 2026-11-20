@@ -14,7 +14,10 @@
     local, réservés au français par choix et annoncés comme tels) ;
   - un titre, un chapeau, un corps ou une question de FAQ se lit comme du
     français dans une page qui n'est pas française ;
-  - un chiffre du français (prix, durée, pourcentage, année) manque ou change ;
+  - un chiffre du français (prix, durée, pourcentage, année) manque ou change,
+    dans l'article OU dans le bloc (paragraphe, puce, ligne de tableau) qui le
+    porte — les traductions reflètent le français, et le français ne porte
+    plus de chiffre sans source (tests/chiffres-sources.test.mjs) ;
   - la charpente (titres, listes, tableaux) ou les liens divergent ;
   - l'habillage du blog, une rubrique, ou un lien « par besoin » de l'accueil
     retombe sur le français.
@@ -28,6 +31,7 @@ import { readFileSync } from "node:fs";
 import {
   ressembleAuFrancais,
   ecartsDeNombres,
+  ecartsParBloc,
   charpente,
   liens,
   lienAttendu,
@@ -71,6 +75,9 @@ for (const langue of AUTRES) {
 
       assert.deepEqual(charpente(t.content), charpente(p.content), "charpente Markdown");
       assert.deepEqual(ecartsDeNombres(p.content, t.content), { manquants: [], ajoutes: [] }, "chiffres du corps");
+      // Bloc par bloc : un prix déplacé d'une ligne de tableau à l'autre, ou un
+      // « 1 » devenu « 3 » dans un tableau, passait l'ensemble ci-dessus.
+      assert.deepEqual(ecartsParBloc(p.content, t.content), [], "chiffres bloc par bloc");
       assert.deepEqual(ecartsDeNombres(p.excerpt, t.excerpt), { manquants: [], ajoutes: [] }, "chiffres du chapeau");
       assert.deepEqual(liens(t.content), liens(p.content).map((u) => lienAttendu(u, langue)), "liens");
 

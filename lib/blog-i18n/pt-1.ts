@@ -88,14 +88,14 @@ A melhor abordagem: filtre primeiro pelo setor de atividade, depois pelo estilo 
 
 - **3 documentos obrigatórios**: aviso legal, política de privacidade e banner de cookies se você rastreia os visitantes
 - **O consentimento precisa ser explícito** — a caixa pré-marcada é ilegal desde 2020
-- **As sanções são reais**: a CNIL aplicou 100 milhões de euros em multas em 2024 por infrações simples
+- **As sanções são reais**: em 2024, a CNIL aplicou 87 sanções, que somam 55.212.400 euros em multas ([balanço 2024 da CNIL, em inglês](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **A adequação leva de 1 a 2 dias** para um site institucional comum
 
 ---
 
 ## Por que o RGPD diz respeito de verdade à sua PME
 
-"Isso é coisa de empresa grande." É o erro clássico. A CNIL (Commission Nationale de l'Informatique et des Libertés, a autoridade francesa de proteção de dados) fiscaliza tanto as microempresas quanto as multinacionais — e as sanções proporcionais continuam doloridas para uma estrutura pequena.
+"Isso é coisa de empresa grande." É o erro clássico. A CNIL (Commission Nationale de l'Informatique et des Libertés, a autoridade francesa de proteção de dados) fiscaliza tanto as microempresas quanto as multinacionais — e as sanções proporcionais continuam doloridas para uma estrutura pequena. Este guia segue a lei francesa e as regras da CNIL: o RGPD vale para quem atende o público da União Europeia; no Brasil, a lei equivalente é a LGPD, fiscalizada pela ANPD.
 
 Na prática, se o seu site:
 - Usa o Google Analytics ou qualquer outra ferramenta de rastreamento
@@ -567,7 +567,7 @@ Ferramentas como o **Aevia Inbox** permitem automatizar os pedidos de avaliaçã
       "Os assistentes de IA não substituem a sua equipe — eles cuidam do que pode ser automatizado para que você se concentre no que importa. Veja o que isso muda de verdade.",
     content: `## O essencial em 30 segundos
 
-- **A IA resolve em média 60 a 80% das solicitações repetitivas** (horários, preços, disponibilidade, status de pedidos)
+- **A IA pode assumir boa parte das solicitações repetitivas** (horários, preços, disponibilidade, status de pedidos): a proporção exata depende do que a base de conhecimento dela contém
 - **Os tempos de resposta passam de várias horas para poucos segundos**, 24h por dia, 7 dias por semana
 - **A IA não substitui a relação humana** — ela a libera das tarefas sem valor agregado
 - **A implantação não exige conhecimentos técnicos** com as ferramentas modernas
@@ -588,7 +588,7 @@ Essas perguntas não exigem julgamento, criatividade nem conhecimento especializ
 
 ### Responder às perguntas frequentes em tempo real
 
-Um agente de IA treinado com as suas informações (horários, preços, catálogo, política de devolução, área geográfica de atendimento) consegue responder corretamente a 60 a 80% das solicitações comuns — na hora, às 3h da manhã de um domingo.
+Um agente de IA treinado com as suas informações (horários, preços, catálogo, política de devolução, área geográfica de atendimento) consegue responder corretamente às solicitações comuns cuja resposta está nessas informações — na hora, às 3h da manhã de um domingo.
 
 Sem tempo de espera. Sem frustração. O cliente recebe a resposta imediatamente.
 
@@ -640,12 +640,14 @@ A configuração inicial leva **2 a 4 horas** para uma estrutura simples. Depois
 
 ---
 
-## Os números reais observados em PMEs
+## O que medir, antes e depois
 
-- **Tempo médio de resposta**: de 4h30 para menos de 2 minutos
-- **Satisfação do cliente** (CSAT): aumento médio de 18 pontos após a implantação
-- **Tempo da equipe liberado**: 40 a 60% do tempo de atendimento automatizado
-- **Custo de implantação**: acessível a partir de algumas dezenas de euros por mês para as estruturas pequenas
+Não publicamos uma média: ela dependeria do seu ramo, dos seus canais e da qualidade da sua base de conhecimento. Estas quatro medições, feitas no seu próprio negócio, mostram se a IA está economizando o seu tempo:
+
+- **O tempo até a primeira resposta**: anote durante uma semana antes da implantação e compare um mês depois
+- **A parte das solicitações resolvidas sem você**: conte as conversas que a IA encerrou sozinha e as que ela passou para você
+- **A satisfação do cliente**: uma pergunta no fim da conversa ("Esta resposta ajudou você?") basta para acompanhar a tendência
+- **O custo real**: a assinatura, mais o tempo gasto para manter a base de conhecimento atualizada
 
 ---
 

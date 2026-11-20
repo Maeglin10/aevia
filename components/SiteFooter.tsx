@@ -1,6 +1,6 @@
 "use client";
 
-import { LANGUE_INBOX } from "@/lib/besoins";
+import { liensProduitsPied } from "@/lib/besoins";
 import { Fragment } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -74,13 +74,7 @@ export const PORTFOLIO_URL = "https://valentinmilliand.vercel.app";
 export function SiteFooter() {
   const f = useTranslations("footer");
   const langue = useLocale();
-  const langueInbox = LANGUE_INBOX[langue] ?? "en";
-
-  const produits = [
-    { href: "https://launch.aevia.services/themes/modeles", texte: f("templateShort") },
-    { href: `https://security.aevia.services${langue === "fr" ? "" : `/${langue}`}/guides`, texte: f("securityDns") },
-    { href: `https://inbox.aevia.services/${langueInbox}/solutions`, texte: f("inboxSupport") },
-  ];
+  const produits = liensProduitsPied(langue).map(({ href, cle }) => ({ href, texte: f(cle) }));
 
   const juridique = [
     { href: `/${langue}/legal/privacy`, texte: f("privacy") },

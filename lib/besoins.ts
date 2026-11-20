@@ -36,3 +36,16 @@ export const BESOINS: ((langue: string) => CibleBesoin)[] = [
   (l) => ({ href: `https://security.aevia.services${prefixe(l)}/guides/dmarc`, langue: l }),
   (l) => ({ href: `https://security.aevia.services${prefixe(l)}/guides`, langue: l }),
 ];
+
+/**
+ * Les trois liens produit du pied de page (components/SiteFooter.tsx), dans la
+ * langue du lecteur. Ici et pas dans le composant : le contrôle des liens
+ * externes (tests/liens-externes.test.mjs) les vérifie avec ceux de l'accueil.
+ */
+export function liensProduitsPied(langue: string): { href: string; cle: "templateShort" | "securityDns" | "inboxSupport" }[] {
+  return [
+    { href: "https://launch.aevia.services/themes/modeles", cle: "templateShort" },
+    { href: `https://security.aevia.services${prefixe(langue)}/guides`, cle: "securityDns" },
+    { href: `https://inbox.aevia.services/${LANGUE_INBOX[langue] ?? "en"}/solutions`, cle: "inboxSupport" },
+  ];
+}
