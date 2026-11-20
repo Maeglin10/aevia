@@ -16,6 +16,15 @@ const SLUGS_EN_AVANT = [
   "prise-commande-telephone-ia-restaurant",
   "combien-coute-site-internet-professionnel-2026",
   "audit-securite-site-web",
+  /*
+    20/11 — les trois segments pilotes. L'accueil est la seule page du Hub que
+    Google explore régulièrement (inspection d'URL du 20/11 : /fr et /en
+    indexées, tout le blog « inconnu de Google ») : un lien d'ici est le
+    chemin le plus court vers l'exploration des nouveaux articles.
+  */
+  "agence-immobiliere-demandes-de-visite",
+  "repondre-messages-instagram-salon-coiffure",
+  "sav-boutique-en-ligne-seul",
   "combien-coute-agent-telephonique-ia",
   "creer-site-internet-bourg-en-bresse-ia",
   "standard-telephonique-ia-restaurant",

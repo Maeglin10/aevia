@@ -2,9 +2,11 @@ import type { BlogPostTranslation } from "../blog-posts";
 import { DE_1 } from "./de-1";
 import { DE_2 } from "./de-2";
 import { DE_3 } from "./de-3";
+import { DE_4 } from "./de-4";
 import { PT_1 } from "./pt-1";
 import { PT_2 } from "./pt-2";
 import { PT_3 } from "./pt-3";
+import { PT_4 } from "./pt-4";
 
 /*
   Les traductions allemandes et portugaises (Brésil) des articles.
@@ -21,6 +23,6 @@ import { PT_3 } from "./pt-3";
   n'existait dans ces deux langues.
 */
 export const TRADUCTIONS_AJOUTEES: Record<string, Record<string, BlogPostTranslation>> = {
-  de: { ...DE_1, ...DE_2, ...DE_3 },
-  pt: { ...PT_1, ...PT_2, ...PT_3 },
+  de: { ...DE_1, ...DE_2, ...DE_3, ...DE_4 },
+  pt: { ...PT_1, ...PT_2, ...PT_3, ...PT_4 },
 };
