@@ -54,7 +54,7 @@ const LEGACY_POSTS: BlogPost[] = [
     content: `## À retenir en 30 secondes
 
 - **L'esthétique seule ne suffit pas** — le design doit correspondre à votre secteur et votre cible
-- **Mobile d'abord** — plus de 65 % du trafic vient des smartphones, choisissez un template mobile-first
+- **Mobile d'abord** — les mobiles font 59,9 % du trafic web mondial ([StatCounter, octobre 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)), choisissez un template mobile-first
 - **La vitesse compte autant que le design** — un beau site lent fait fuir les visiteurs
 - **Adaptabilité** — votre template doit pouvoir accueillir votre identité sans un chantier complet
 
@@ -83,7 +83,7 @@ Avant de choisir votre template, posez-vous la question : est-ce qu'un visiteur 
 
 ## Mobile-first : non négociable
 
-En 2026, concevoir un site "pour desktop qu'on adapte ensuite au mobile" est une erreur fondamentale. Plus de 65 % du trafic web mondial vient des smartphones. Et Google indexe d'abord la version mobile de votre site pour le référencement.
+En 2026, concevoir un site "pour desktop qu'on adapte ensuite au mobile" est une erreur fondamentale. En octobre 2026, les mobiles représentaient 59,9 % du trafic web mondial ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Et Google indexe d'abord la version mobile de votre site pour le référencement.
 
 Un bon template mobile-first se reconnaît à :
 
@@ -113,7 +113,7 @@ Posez-vous ces questions concrètes :
 
 Deux sites identiques visuellement peuvent avoir des temps de chargement très différents selon la qualité du code qui les supporte.
 
-Les templates construits sur des frameworks modernes comme **Next.js** intègrent nativement le chargement progressif des images, la mise en cache intelligente et le code splitting. Ceux construits sur des systèmes plus anciens ou surchargés de plugins peuvent peser 5 à 10 fois plus lourd.
+Les templates construits sur des frameworks modernes comme **Next.js** intègrent nativement le chargement progressif des images, la mise en cache intelligente et le code splitting. Ceux construits sur des systèmes plus anciens ou surchargés de plugins peuvent peser bien plus lourd.
 
 Un outil comme **Google PageSpeed Insights** vous donnera en 30 secondes le score de performance d'un exemple de template — avant de l'adopter.
 
@@ -133,7 +133,7 @@ La meilleure approche : filtrez par secteur d'activité d'abord, puis par style 
         content: `## Key takeaways in 30 seconds
 
 - **Looks alone are not enough** — the design must match your sector and your audience
-- **Mobile first** — over 65% of traffic comes from smartphones, pick a mobile-first template
+- **Mobile first** — mobile devices account for 59.9% of global web traffic ([StatCounter, October 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)), pick a mobile-first template
 - **Speed matters as much as design** — a beautiful but slow site drives visitors away
 - **Adaptability** — your template should hold your brand identity without a full rebuild
 
@@ -162,7 +162,7 @@ Before choosing your template, ask: does a visitor who does not know my brand im
 
 ## Mobile-first: non-negotiable
 
-In 2026, designing a site "for desktop then adapting it to mobile" is a fundamental mistake. Over 65% of global web traffic comes from smartphones. And Google indexes the mobile version of your site first for ranking.
+In 2026, designing a site "for desktop then adapting it to mobile" is a fundamental mistake. In October 2026, mobile devices accounted for 59.9% of global web traffic ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). And Google indexes the mobile version of your site first for ranking.
 
 A good mobile-first template is recognizable by:
 
@@ -192,7 +192,7 @@ Ask these concrete questions:
 
 Two visually identical sites can have very different load times depending on the quality of the code behind them.
 
-Templates built on modern frameworks like **Next.js** natively include progressive image loading, smart caching and code splitting. Those built on older systems or overloaded with plugins can weigh 5 to 10 times more.
+Templates built on modern frameworks like **Next.js** natively include progressive image loading, smart caching and code splitting. Those built on older systems or overloaded with plugins can weigh far more.
 
 A tool like **Google PageSpeed Insights** will give you a template's performance score in 30 seconds — before you adopt it.
 
@@ -212,7 +212,7 @@ The best approach: filter by sector first, then by visual style. You will narrow
         content: `## Lo esencial en 30 segundos
 
 - **La estética por sí sola no basta** — el diseño debe encajar con tu sector y tu público
-- **Primero el móvil** — más del 65% del tráfico viene de smartphones, elige una plantilla mobile-first
+- **Primero el móvil** — los móviles suponen el 59,9% del tráfico web mundial ([StatCounter, octubre de 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)), elige una plantilla mobile-first
 - **La velocidad cuenta tanto como el diseño** — una web bonita pero lenta ahuyenta a los visitantes
 - **Adaptabilidad** — tu plantilla debe acoger tu identidad sin una reforma completa
 
@@ -241,7 +241,7 @@ Antes de elegir tu plantilla, pregúntate: ¿un visitante que no conoce mi marca
 
 ## Mobile-first: no negociable
 
-En 2026, diseñar una web "para escritorio y luego adaptarla al móvil" es un error fundamental. Más del 65% del tráfico web mundial viene de smartphones. Y Google indexa primero la versión móvil de tu web para el posicionamiento.
+En 2026, diseñar una web "para escritorio y luego adaptarla al móvil" es un error fundamental. En octubre de 2026, los móviles suponían el 59,9% del tráfico web mundial ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Y Google indexa primero la versión móvil de tu web para el posicionamiento.
 
 Una buena plantilla mobile-first se reconoce por:
 
@@ -271,7 +271,7 @@ Hazte estas preguntas concretas:
 
 Dos webs visualmente idénticas pueden tener tiempos de carga muy distintos según la calidad del código que las sostiene.
 
-Las plantillas construidas sobre frameworks modernos como **Next.js** incluyen de forma nativa la carga progresiva de imágenes, el cacheo inteligente y el code splitting. Las construidas sobre sistemas más antiguos o sobrecargadas de plugins pueden pesar 5 a 10 veces más.
+Las plantillas construidas sobre frameworks modernos como **Next.js** incluyen de forma nativa la carga progresiva de imágenes, el cacheo inteligente y el code splitting. Las construidas sobre sistemas más antiguos o sobrecargadas de plugins pueden pesar mucho más.
 
 Una herramienta como **Google PageSpeed Insights** te dará en 30 segundos la puntuación de rendimiento de una plantilla de ejemplo — antes de adoptarla.
 
@@ -296,7 +296,7 @@ El mejor enfoque: filtra primero por sector, luego por estilo visual. Reducirás
     content: `## À retenir en 30 secondes
 
 - **3 documents obligatoires** : mentions légales, politique de confidentialité, et bandeau cookies si vous tracez des visiteurs
-- **Le consentement doit être explicite** — la case pré-cochée est illégale depuis 2020
+- **Le consentement doit être explicite** — une case pré-cochée ne vaut pas consentement
 - **Les sanctions sont réelles** : en 2024, la CNIL a prononcé 87 sanctions, pour 55 212 400 € d'amendes au total ([bilan 2024 de la CNIL](https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil))
 - **La mise en conformité prend 1 à 2 jours** pour un site vitrine classique
 
@@ -353,7 +353,7 @@ Les règles CNIL en vigueur :
 
 ## Les erreurs les plus fréquentes
 
-- **Utiliser Google Analytics sans consentement préalable** — c'est illégal. La CNIL a sanctionné plusieurs sites français pour ce motif précis en 2023-2024.
+- **Utiliser Google Analytics sans consentement préalable** — c'est illégal.
 - **Avoir un bandeau qui n'offre pas de bouton "Refuser" clairement visible** — le "X" de fermeture ne vaut pas refus.
 - **Des mentions légales génériques copiées-collées** sans les vraies informations de l'entreprise.
 - **Ignorer les formulaires de contact** — le champ email d'un formulaire collecte une donnée personnelle. Il faut indiquer comment elle est utilisée.
@@ -389,7 +389,7 @@ Ne sous-estimez pas la conformité RGPD. Ce n'est pas du juridique ésotérique 
         content: `## Key takeaways in 30 seconds
 
 - **3 mandatory documents**: legal notice, privacy policy, and a cookie banner if you track visitors
-- **Consent must be explicit** — pre-ticked boxes have been illegal since 2020
+- **Consent must be explicit** — a pre-ticked box is not valid consent
 - **Penalties are real**: in 2024, the CNIL (the French data protection authority) issued 87 sanctions, totalling €55,212,400 in fines ([CNIL 2024 report](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Getting compliant takes 1 to 2 days** for a standard brochure site
 
@@ -446,7 +446,7 @@ The CNIL rules in force:
 
 ## The most common mistakes
 
-- **Using Google Analytics without prior consent** — this is illegal. The CNIL sanctioned several French sites for this exact reason in 2023-2024.
+- **Using Google Analytics without prior consent** — this is illegal.
 - **Having a banner with no clearly visible "Refuse" button** — the close "X" does not count as refusal.
 - **Generic copy-pasted legal notices** without the company's real information.
 - **Ignoring contact forms** — a form's email field collects personal data. You must state how it is used.
@@ -482,7 +482,7 @@ Do not underestimate GDPR compliance. It is not esoteric legal work — it is th
         content: `## Lo esencial en 30 segundos
 
 - **3 documentos obligatorios**: aviso legal, política de privacidad, y un banner de cookies si rastreas a los visitantes
-- **El consentimiento debe ser explícito** — la casilla premarcada es ilegal desde 2020
+- **El consentimiento debe ser explícito** — una casilla premarcada no es un consentimiento válido
 - **Las sanciones son reales**: en 2024, la CNIL (la autoridad francesa de protección de datos) impuso 87 sanciones, por un total de 55.212.400 € en multas ([balance 2024 de la CNIL, en inglés](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Cumplir lleva de 1 a 2 días** para una web de presentación estándar
 
@@ -539,7 +539,7 @@ Las reglas vigentes de la CNIL:
 
 ## Los errores más frecuentes
 
-- **Usar Google Analytics sin consentimiento previo** — es ilegal. La CNIL sancionó a varios sitios franceses por este motivo concreto en 2023-2024.
+- **Usar Google Analytics sin consentimiento previo** — es ilegal.
 - **Tener un banner sin un botón "Rechazar" claramente visible** — la "X" de cerrar no equivale a rechazo.
 - **Avisos legales genéricos copiados y pegados** sin la información real de la empresa.
 - **Ignorar los formularios de contacto** — el campo de email de un formulario recopila un dato personal. Debes indicar cómo se usa.
@@ -573,22 +573,22 @@ No subestimes el cumplimiento del RGPD. No es derecho esotérico — es la base 
     slug: "erreurs-site-web-font-fuir-clients",
     title: "5 erreurs de site web qui font fuir vos clients en 10 secondes",
     excerpt:
-      "La plupart des sites perdent 40 à 60 % de leurs visiteurs dans les toutes premières secondes. Ces erreurs sont évitables — et souvent corrigeables en quelques heures.",
+      "Un visiteur ne laisse à votre site que quelques secondes pour le convaincre. Ces erreurs le font partir — elles sont évitables, et souvent corrigeables en quelques heures.",
     date: "2026-03-28",
     readingTime: "5 min",
     category: "Web & Marketing",
     content: `## À retenir en 30 secondes
 
-- **Le temps de chargement** est le premier coupable — chaque seconde supplémentaire coûte 7 % de conversions
+- **Le temps de chargement** fait fuir les visiteurs avant même qu'ils voient votre offre
 - **Le message principal** doit être compris en moins de 5 secondes, sinon le visiteur repart
-- **Le mobile** : si votre site n'est pas parfait sur téléphone, vous perdez 65 % de vos visiteurs potentiels
+- **Le mobile** : si votre site n'est pas parfait sur téléphone, vous perdez une bonne part de vos visiteurs potentiels
 - **L'absence de CTA clair** : si le visiteur ne sait pas quoi faire, il ne fait rien
 
 ---
 
 ## Pourquoi les premières secondes sont décisives
 
-Selon les études de comportement en ligne, la décision de rester ou de partir se prend dans les **5 à 10 premières secondes** sur un site. Ce n'est pas une question d'attention insuffisante de vos visiteurs — c'est un comportement naturel de filtrage face à l'abondance de l'information.
+Les internautes quittent souvent une page web en **10 à 20 secondes** ([Nielsen Norman Group, 2011](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/)). Ce n'est pas une question d'attention insuffisante de vos visiteurs — c'est un comportement naturel de filtrage face à l'abondance de l'information.
 
 Ce que votre visiteur cherche en arrivant : "Est-ce que je suis au bon endroit ? Ce site peut-il m'aider ?"
 
@@ -598,11 +598,11 @@ Si la réponse n'est pas immédiate et positive, il repart.
 
 ## Erreur n°1 — Un temps de chargement trop long
 
-C'est la cause n°1 d'abandon. Les chiffres sont implacables :
+Les mesures publiées sont sans appel :
 
-- **3 secondes** : 53 % des visiteurs mobile abandonnent (Google, 2023)
-- **Chaque seconde supplémentaire** : -7 % de conversions
-- **Un site qui met 5 secondes** : perd en moyenne 38 % plus de visiteurs qu'un site qui met 2 secondes
+- **3 secondes** : au-delà, 53 % des visites sur mobile sont susceptibles d'être abandonnées ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **100 millisecondes de retard** : le taux de conversion peut baisser de 7 % ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **2 secondes de retard** : le taux de rebond grimpe de 103 % ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Les coupables habituels : des images non compressées, un hébergement bas de gamme, trop de scripts JavaScript chargés en même temps, des polices de caractères externes non optimisées.
 
@@ -626,7 +626,7 @@ Testez votre site avec quelqu'un qui ne vous connaît pas. Montrez-lui votre hom
 
 ## Erreur n°3 — Un site non optimisé pour le mobile
 
-En 2026, plus de 65 % du trafic web vient des smartphones. Pourtant, de nombreux sites ont été conçus pour desktop et "adaptés" au mobile en dernier recours — avec des résultats désastreux.
+En octobre 2026, les mobiles représentaient 59,9 % du trafic web mondial ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Pourtant, de nombreux sites ont été conçus pour desktop et "adaptés" au mobile en dernier recours — avec des résultats désastreux.
 
 Les signaux d'alerte :
 - Des textes trop petits pour être lus sans zoomer
@@ -677,20 +677,20 @@ Si vous identifiez des problèmes, les outils comme Aevia Launch permettent de r
       en: {
         title: "5 website mistakes that drive your customers away in 10 seconds",
         excerpt:
-          "Most sites lose 40 to 60% of their visitors in the very first seconds. These mistakes are avoidable — and often fixable in a few hours.",
+          "A visitor gives your site only a few seconds to convince them. These mistakes drive them away — they are avoidable, and often fixable in a few hours.",
         category: "Web & Marketing",
         content: `## Key takeaways in 30 seconds
 
-- **Load time** is the first culprit — every extra second costs 7% of conversions
+- **Load time** drives visitors away before they even see your offer
 - **Your core message** must be understood in under 5 seconds, or the visitor leaves
-- **Mobile**: if your site is not flawless on a phone, you lose 65% of your potential visitors
+- **Mobile**: if your site is not flawless on a phone, you lose a large share of your potential visitors
 - **No clear CTA**: if the visitor does not know what to do, they do nothing
 
 ---
 
 ## Why the first seconds are decisive
 
-According to online behavior studies, the decision to stay or leave is made in the **first 5 to 10 seconds** on a site. This is not a lack of attention from your visitors — it is natural filtering in the face of information overload.
+Users often leave web pages in **10 to 20 seconds** ([Nielsen Norman Group, 2011](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/)). This is not a lack of attention from your visitors — it is natural filtering in the face of information overload.
 
 What your visitor is looking for on arrival: "Am I in the right place? Can this site help me?"
 
@@ -700,11 +700,11 @@ If the answer is not immediate and positive, they leave.
 
 ## Mistake 1 — Load time that is too long
 
-This is the number-one cause of abandonment. The figures are relentless:
+The published measurements leave no doubt:
 
-- **3 seconds**: 53% of mobile visitors leave (Google, 2023)
-- **Every extra second**: -7% conversions
-- **A site that takes 5 seconds**: loses on average 38% more visitors than a site that takes 2 seconds
+- **3 seconds**: beyond that, 53% of mobile visits are likely to be abandoned ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **A 100-millisecond delay**: conversion rates can drop by 7% ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **A two-second delay**: bounce rates rise by 103% ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 The usual culprits: uncompressed images, low-end hosting, too many JavaScript scripts loading at once, unoptimized external fonts.
 
@@ -728,7 +728,7 @@ Test your site with someone who does not know you. Show them your homepage for 5
 
 ## Mistake 3 — A site not optimized for mobile
 
-In 2026, over 65% of web traffic comes from smartphones. Yet many sites were built for desktop and "adapted" to mobile as an afterthought — with disastrous results.
+In October 2026, mobile devices accounted for 59.9% of global web traffic ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Yet many sites were built for desktop and "adapted" to mobile as an afterthought — with disastrous results.
 
 The warning signs:
 - Text too small to read without zooming
@@ -779,20 +779,20 @@ If you spot problems, tools like Aevia Launch let you fully rebuild your site on
       es: {
         title: "5 errores de web que ahuyentan a tus clientes en 10 segundos",
         excerpt:
-          "La mayoría de las webs pierden entre el 40 y el 60% de sus visitantes en los primeros segundos. Estos errores son evitables — y a menudo se corrigen en pocas horas.",
+          "Un visitante solo le da a tu web unos segundos para convencerle. Estos errores le hacen irse — son evitables, y a menudo se corrigen en pocas horas.",
         category: "Web & Marketing",
         content: `## Lo esencial en 30 segundos
 
-- **El tiempo de carga** es el primer culpable — cada segundo de más cuesta un 7% de conversiones
+- **El tiempo de carga** ahuyenta a los visitantes antes incluso de que vean tu oferta
 - **El mensaje principal** debe entenderse en menos de 5 segundos, o el visitante se va
-- **El móvil**: si tu web no es perfecta en el teléfono, pierdes el 65% de tus visitantes potenciales
+- **El móvil**: si tu web no es perfecta en el teléfono, pierdes una buena parte de tus visitantes potenciales
 - **La falta de un CTA claro**: si el visitante no sabe qué hacer, no hace nada
 
 ---
 
 ## Por qué los primeros segundos son decisivos
 
-Según los estudios de comportamiento online, la decisión de quedarse o irse se toma en los **primeros 5 a 10 segundos** en una web. No es falta de atención de tus visitantes — es un filtrado natural ante la abundancia de información.
+Los internautas suelen abandonar una página web en **10 a 20 segundos** ([Nielsen Norman Group, 2011](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/)). No es falta de atención de tus visitantes — es un filtrado natural ante la abundancia de información.
 
 Lo que tu visitante busca al llegar: "¿Estoy en el sitio correcto? ¿Esta web puede ayudarme?"
 
@@ -802,11 +802,11 @@ Si la respuesta no es inmediata y positiva, se va.
 
 ## Error 1 — Un tiempo de carga demasiado largo
 
-Es la causa número uno de abandono. Las cifras son implacables:
+Las mediciones publicadas no dejan lugar a dudas:
 
-- **3 segundos**: el 53% de los visitantes móviles abandonan (Google, 2023)
-- **Cada segundo de más**: -7% de conversiones
-- **Una web que tarda 5 segundos**: pierde de media un 38% más de visitantes que una que tarda 2 segundos
+- **3 segundos**: a partir de ahí, el 53% de las visitas en móvil probablemente se abandonen ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **100 milisegundos de retraso**: la tasa de conversión puede caer un 7% ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **2 segundos de retraso**: la tasa de rebote sube un 103% ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Los culpables habituales: imágenes sin comprimir, hosting de gama baja, demasiados scripts JavaScript cargando a la vez, tipografías externas sin optimizar.
 
@@ -830,7 +830,7 @@ Prueba tu web con alguien que no te conozca. Muéstrale tu home durante 5 segund
 
 ## Error 3 — Una web no optimizada para móvil
 
-En 2026, más del 65% del tráfico web viene de smartphones. Sin embargo, muchas webs se diseñaron para escritorio y se "adaptaron" al móvil como último recurso — con resultados desastrosos.
+En octubre de 2026, los móviles suponían el 59,9% del tráfico web mundial ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Sin embargo, muchas webs se diseñaron para escritorio y se "adaptaron" al móvil como último recurso — con resultados desastrosos.
 
 Las señales de alarma:
 - Textos demasiado pequeños para leer sin zoom
@@ -891,7 +891,7 @@ Si detectas problemas, herramientas como Aevia Launch permiten reconstruir por c
     content: `## À retenir en 30 secondes
 
 - **WhatsApp Business** est gratuit pour les petites structures — **WhatsApp Business API** est payant mais donne accès à l'automatisation avancée
-- **Taux d'ouverture des messages WhatsApp : 98 %** — contre 20 à 30 % pour l'email
+- **Rien à installer pour vos clients qui utilisent déjà WhatsApp** — ils vous écrivent là où ils parlent à leurs proches
 - **Configurez un message d'absence** et un message de bienvenue pour ne jamais laisser un client sans réponse
 - **Centralisez WhatsApp avec vos autres canaux** pour ne pas jongler entre les apps
 
@@ -899,9 +899,9 @@ Si detectas problemas, herramientas como Aevia Launch permiten reconstruir por c
 
 ## Pourquoi WhatsApp est devenu incontournable
 
-En France, WhatsApp compte plus de 35 millions d'utilisateurs actifs. Pour vos clients, c'est l'app de messagerie qu'ils utilisent déjà — avec leur famille, leurs amis, leurs collègues. Contacter une entreprise via WhatsApp, c'est naturel, rapide, informel.
+Pour beaucoup de vos clients, WhatsApp est l'app de messagerie qu'ils utilisent déjà — avec leur famille, leurs amis, leurs collègues. Contacter une entreprise via WhatsApp, c'est naturel, rapide, informel.
 
-Pour vous en tant qu'entreprise, les avantages sont réels : taux d'ouverture de 98 %, réponse quasi instantanée attendue, et une perception de proximité que l'email ne donne pas.
+Pour vous en tant qu'entreprise, les avantages sont réels : un canal que vos clients consultent déjà, une réponse quasi instantanée attendue, et une perception de proximité que l'email ne donne pas.
 
 La question n'est plus "est-ce que je dois être sur WhatsApp" — c'est "comment je gère WhatsApp correctement".
 
@@ -997,7 +997,7 @@ Les messages envoyés via WhatsApp Business API ont une contrainte supplémentai
         content: `## Key takeaways in 30 seconds
 
 - **WhatsApp Business** is free for small businesses — **WhatsApp Business API** is paid but unlocks advanced automation
-- **WhatsApp message open rate: 98%** — versus 20 to 30% for email
+- **Nothing to install for customers who already use WhatsApp** — they message you where they talk to friends and family
 - **Set up an away message** and a greeting message so a customer is never left without a reply
 - **Centralize WhatsApp with your other channels** so you are not juggling apps
 
@@ -1005,9 +1005,9 @@ Les messages envoyés via WhatsApp Business API ont une contrainte supplémentai
 
 ## Why WhatsApp became unavoidable
 
-In France, WhatsApp has more than 35 million active users. For your customers, it is the messaging app they already use — with family, friends, colleagues. Contacting a business through WhatsApp feels natural, fast, informal.
+For many of your customers, WhatsApp is the messaging app they already use — with family, friends, colleagues. Contacting a business through WhatsApp feels natural, fast, informal.
 
-For you as a business, the upside is real: a 98% open rate, a near-instant reply expected, and a sense of closeness that email does not give.
+For you as a business, the upside is real: a channel your customers already check, a near-instant reply expected, and a sense of closeness that email does not give.
 
 The question is no longer "should I be on WhatsApp" — it is "how do I handle WhatsApp properly".
 
@@ -1103,7 +1103,7 @@ Messages sent through the WhatsApp Business API have an extra constraint: you ca
         content: `## Lo esencial en 30 segundos
 
 - **WhatsApp Business** es gratis para pequeñas estructuras — **WhatsApp Business API** es de pago pero da acceso a la automatización avanzada
-- **Tasa de apertura de los mensajes de WhatsApp: 98%** — frente al 20-30% del email
+- **Nada que instalar para los clientes que ya usan WhatsApp** — te escriben donde hablan con sus familiares y amigos
 - **Configura un mensaje de ausencia** y un mensaje de bienvenida para no dejar nunca a un cliente sin respuesta
 - **Centraliza WhatsApp con tus demás canales** para no saltar entre apps
 
@@ -1111,9 +1111,9 @@ Messages sent through the WhatsApp Business API have an extra constraint: you ca
 
 ## Por qué WhatsApp se volvió imprescindible
 
-En Francia, WhatsApp tiene más de 35 millones de usuarios activos. Para tus clientes es la app de mensajería que ya usan — con su familia, sus amigos, sus compañeros. Contactar con una empresa por WhatsApp es natural, rápido, informal.
+Para muchos de tus clientes, WhatsApp es la app de mensajería que ya usan — con su familia, sus amigos, sus compañeros. Contactar con una empresa por WhatsApp es natural, rápido, informal.
 
-Para ti como empresa, las ventajas son reales: tasa de apertura del 98%, respuesta casi instantánea esperada, y una percepción de cercanía que el email no da.
+Para ti como empresa, las ventajas son reales: un canal que tus clientes ya consultan, respuesta casi instantánea esperada, y una percepción de cercanía que el email no da.
 
 La pregunta ya no es "¿debo estar en WhatsApp?" — es "¿cómo gestiono WhatsApp correctamente?".
 
@@ -1207,15 +1207,15 @@ Los mensajes enviados por la API de WhatsApp Business tienen una restricción ad
     slug: "vitesse-site-web-optimisations",
     title: "Vitesse de site web : les 5 optimisations qui font vraiment la différence",
     excerpt:
-      "Un site lent, c'est des clients perdus et un référencement dégradé. Ces 5 actions concrètes peuvent réduire votre temps de chargement de 40 à 70 % sans refaire votre site.",
+      "Un site lent, c'est des clients perdus et un référencement dégradé. Ces 5 actions concrètes réduisent votre temps de chargement sans refaire votre site.",
     date: "2026-04-22",
     readingTime: "6 min",
     category: "Web & Marketing",
     content: `## À retenir en 30 secondes
 
-- **Les images sont responsables de 60 à 80 % du poids d'une page** — c'est là que l'impact est le plus fort
-- **Un CDN** peut réduire le temps de chargement de 30 à 50 % pour vos visiteurs hors de votre zone géographique
-- **Chaque script JavaScript tiers** (chat, analytics, pixel) ajoute 100 à 500 ms de chargement
+- **Les images sont souvent la partie la plus lourde d'une page** — c'est là que l'impact est le plus fort
+- **Un CDN** rapproche vos fichiers des visiteurs éloignés de votre serveur
+- **Chaque script JavaScript tiers** (chat, analytics, pixel) alourdit le chargement
 - **Google Core Web Vitals** impactent directement votre position dans les résultats de recherche depuis 2021
 
 ---
@@ -1224,9 +1224,9 @@ Los mensajes enviados por la API de WhatsApp Business tienen una restricción ad
 
 Ce n'est pas qu'une question technique. La vitesse d'un site web a un impact mesurable sur vos conversions :
 
-- **+1 seconde** de chargement = **-7 %** de conversions (Akamai)
-- **53 %** des visiteurs mobile abandonnent si une page met plus de **3 secondes** à charger (Google)
-- **Amazon** a estimé que chaque 100 ms de latence lui coûte **1 % de revenus**
+- **100 millisecondes** de retard peuvent faire baisser le taux de conversion de **7 %** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **53 %** des visites sur mobile sont susceptibles d'être abandonnées si la page met plus de **3 secondes** à charger ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **2 secondes** de retard font grimper le taux de rebond de **103 %** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Et depuis 2021, Google intègre les Core Web Vitals (vitesse réelle de chargement perçue par les utilisateurs) dans ses critères de classement. Un site lent est doublement pénalisé : par les visiteurs qui partent, et par Google qui le classe moins bien.
 
@@ -1234,13 +1234,13 @@ Et depuis 2021, Google intègre les Core Web Vitals (vitesse réelle de chargeme
 
 ## Optimisation n°1 — Compresser et convertir vos images
 
-Les images représentent en moyenne 60 à 80 % du poids total d'une page web. C'est souvent là que le gain est le plus spectaculaire.
+Les images sont souvent la ressource la plus lourde d'une page web. C'est là que le gain est le plus spectaculaire.
 
 Deux actions concrètes :
 
-**Convertir en WebP** : ce format moderne produit des images de qualité équivalente au JPEG/PNG avec 25 à 35 % de poids en moins. La plupart des CMS modernes le gèrent nativement. Pour WordPress, des plugins comme Imagify ou ShortPixel convertissent automatiquement.
+**Convertir en WebP** : selon Google, ce format moderne produit des images avec perte 25 à 34 % plus légères qu'un JPEG de qualité comparable, et des images sans perte 26 % plus légères qu'un PNG ([Google](https://developers.google.com/speed/webp)). La plupart des CMS modernes le gèrent nativement. Pour WordPress, des plugins comme Imagify ou ShortPixel convertissent automatiquement.
 
-**Redimensionner avant d'uploader** : uploader une photo de 5000x4000px pour l'afficher en 800px de large, c'est charger 6 fois plus de données que nécessaire. Redimensionnez vos images aux dimensions réelles d'affichage avant de les mettre en ligne.
+**Redimensionner avant d'uploader** : uploader une photo de 5000x4000px pour l'afficher en 800px de large, c'est charger une image plus de six fois plus large que nécessaire. Redimensionnez vos images aux dimensions réelles d'affichage avant de les mettre en ligne.
 
 Objectif : aucune image au-dessus de 200 KB sur votre site. Les images hero (plein écran) peuvent aller jusqu'à 400 KB si c'est une photo haute qualité.
 
@@ -1254,7 +1254,7 @@ En pratique, un visiteur qui arrive sur votre homepage n'a besoin que des images
 
 La mise en place est simple avec l'attribut HTML natif : \`loading="lazy"\` sur vos balises \`<img>\`. Les frameworks modernes comme Next.js l'appliquent automatiquement.
 
-Gain typique : 40 à 60 % de réduction du poids initial chargé par la page.
+Gain : au premier affichage, la page ne charge que les images visibles.
 
 ---
 
@@ -1262,7 +1262,7 @@ Gain typique : 40 à 60 % de réduction du poids initial chargé par la page.
 
 Chaque script externe que vous ajoutez à votre site — Google Analytics, Meta Pixel, Hotjar, Intercom, widget de chat, boutons de partage réseaux sociaux — a un coût en performance.
 
-En moyenne, un script tiers ajoute 100 à 500 ms de temps de chargement. Si vous en avez 6 ou 7, vous êtes déjà à 1 à 3 secondes de latence rien que pour ces outils.
+Chaque script tiers ajoute des requêtes et du code à exécuter. Quand ils s'accumulent, les retards s'additionnent — rien que pour ces outils.
 
 Actions concrètes :
 - **Auditez vos scripts** : lesquels utilisez-vous vraiment ? Désactivez tout ce qui ne sert pas
@@ -1278,7 +1278,7 @@ La mise en cache consiste à stocker une version de votre page ou de vos ressour
 
 **Mise en cache navigateur** : configurez des headers HTTP \`Cache-Control\` pour que les ressources statiques (images, CSS, JS) soient stockées dans le navigateur du visiteur pendant 1 à 12 mois.
 
-**CDN (Content Delivery Network)** : un CDN comme Cloudflare (gratuit pour les fonctionnalités de base) distribue votre contenu depuis des serveurs proches géographiquement de vos visiteurs. Pour un site français avec des visiteurs en Europe, c'est une réduction de 30 à 50 % des temps de chargement.
+**CDN (Content Delivery Network)** : un CDN comme Cloudflare (gratuit pour les fonctionnalités de base) distribue votre contenu depuis des serveurs proches géographiquement de vos visiteurs. Le gain se voit surtout pour les visiteurs éloignés de votre serveur.
 
 ---
 
@@ -1305,18 +1305,18 @@ Avant de faire quoi que ce soit, mesurez votre situation de départ avec :
 
 Puis appliquez les optimisations dans l'ordre ci-dessus (images d'abord, elles ont le plus grand impact) et remesurer après chaque étape.
 
-Un site qui passe de 6 secondes à 2 secondes de chargement peut voir ses conversions augmenter de 30 à 50 %. C'est souvent le meilleur retour sur investissement d'une amélioration technique.`,
+Chaque seconde gagnée garde plus de visiteurs jusqu'au formulaire ou au panier. C'est souvent le meilleur retour sur investissement d'une amélioration technique.`,
     i18n: {
       en: {
         title: "Website speed: the 5 optimizations that really make a difference",
         excerpt:
-          "A slow site means lost customers and weaker rankings. These 5 concrete actions can cut your load time by 40 to 70% without rebuilding your site.",
+          "A slow site means lost customers and weaker rankings. These 5 concrete actions cut your load time without rebuilding your site.",
         category: "Web & Marketing",
         content: `## Key takeaways in 30 seconds
 
-- **Images account for 60 to 80% of a page's weight** — that is where the impact is biggest
-- **A CDN** can cut load time by 30 to 50% for visitors outside your region
-- **Every third-party JavaScript** (chat, analytics, pixel) adds 100 to 500 ms of load
+- **Images are often the heaviest part of a page** — that is where the impact is biggest
+- **A CDN** brings your files closer to visitors far from your server
+- **Every third-party JavaScript** (chat, analytics, pixel) adds to the load time
 - **Google Core Web Vitals** have directly affected your search ranking since 2021
 
 ---
@@ -1325,9 +1325,9 @@ Un site qui passe de 6 secondes à 2 secondes de chargement peut voir ses conver
 
 This is not just a technical matter. Website speed has a measurable impact on your conversions:
 
-- **+1 second** of load time = **-7%** conversions (Akamai)
-- **53%** of mobile visitors leave if a page takes more than **3 seconds** to load (Google)
-- **Amazon** estimated that every 100 ms of latency costs it **1% of revenue**
+- **A 100-millisecond** delay can cut conversion rates by **7%** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **53%** of mobile visits are likely to be abandoned if a page takes more than **3 seconds** to load ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **A two-second** delay raises bounce rates by **103%** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 And since 2021, Google factors Core Web Vitals (the real load speed users perceive) into its ranking criteria. A slow site is penalized twice: by the visitors who leave, and by Google ranking it lower.
 
@@ -1335,13 +1335,13 @@ And since 2021, Google factors Core Web Vitals (the real load speed users percei
 
 ## Optimization 1 — Compress and convert your images
 
-Images account for 60 to 80% of a web page's total weight on average. That is often where the gain is most spectacular.
+Images are often the heaviest resource on a web page. That is where the gain is most spectacular.
 
 Two concrete actions:
 
-**Convert to WebP**: this modern format produces images of quality equivalent to JPEG/PNG at 25 to 35% less weight. Most modern CMSs handle it natively. For WordPress, plugins like Imagify or ShortPixel convert automatically.
+**Convert to WebP**: according to Google, this modern format produces lossy images 25 to 34% smaller than comparable JPEGs, and lossless images 26% smaller than PNGs ([Google](https://developers.google.com/speed/webp)). Most modern CMSs handle it natively. For WordPress, plugins like Imagify or ShortPixel convert automatically.
 
-**Resize before uploading**: uploading a 5000x4000px photo to display it at 800px wide loads 6 times more data than needed. Resize your images to their real display size before putting them online.
+**Resize before uploading**: uploading a 5000x4000px photo to display it at 800px wide loads an image more than six times wider than needed. Resize your images to their real display size before putting them online.
 
 Target: no image above 200 KB on your site. Full-screen hero images can go up to 400 KB if it is a high-quality photo.
 
@@ -1355,7 +1355,7 @@ In practice, a visitor landing on your homepage only needs the images visible wi
 
 Setup is simple with the native HTML attribute: \`loading="lazy"\` on your \`<img>\` tags. Modern frameworks like Next.js apply it automatically.
 
-Typical gain: a 40 to 60% reduction in the initial weight the page loads.
+Gain: on first display, the page loads only the images that are visible.
 
 ---
 
@@ -1363,7 +1363,7 @@ Typical gain: a 40 to 60% reduction in the initial weight the page loads.
 
 Every external script you add to your site — Google Analytics, Meta Pixel, Hotjar, Intercom, a chat widget, social share buttons — has a performance cost.
 
-On average, a third-party script adds 100 to 500 ms of load time. If you have 6 or 7, you are already at 1 to 3 seconds of latency from those tools alone.
+Each third-party script adds requests and code to run. When they pile up, the delays add up — from those tools alone.
 
 Concrete actions:
 - **Audit your scripts**: which do you actually use? Disable anything you do not need
@@ -1379,7 +1379,7 @@ Caching means storing a version of your page or resources closer to the visitor,
 
 **Browser caching**: configure \`Cache-Control\` HTTP headers so static resources (images, CSS, JS) are stored in the visitor's browser for 1 to 12 months.
 
-**CDN (Content Delivery Network)**: a CDN like Cloudflare (free for the basics) delivers your content from servers geographically close to your visitors. For a European site with European visitors, that is a 30 to 50% reduction in load times.
+**CDN (Content Delivery Network)**: a CDN like Cloudflare (free for the basics) delivers your content from servers geographically close to your visitors. The gain shows most for visitors far from your server.
 
 ---
 
@@ -1406,18 +1406,18 @@ Before doing anything, measure your starting point with:
 
 Then apply the optimizations in the order above (images first, they have the biggest impact) and re-measure after each step.
 
-A site that goes from 6 seconds to 2 seconds of load time can see conversions rise by 30 to 50%. It is often the best return on investment of any technical improvement.`,
+Every second saved keeps more visitors on their way to the form or the cart. It is often the best return on investment of any technical improvement.`,
       },
       es: {
         title: "Velocidad de la web: las 5 optimizaciones que marcan la diferencia",
         excerpt:
-          "Una web lenta son clientes perdidos y peor posicionamiento. Estas 5 acciones concretas pueden reducir tu tiempo de carga entre un 40 y un 70% sin rehacer tu web.",
+          "Una web lenta son clientes perdidos y peor posicionamiento. Estas 5 acciones concretas reducen tu tiempo de carga sin rehacer tu web.",
         category: "Web & Marketing",
         content: `## Lo esencial en 30 segundos
 
-- **Las imágenes suponen entre el 60 y el 80% del peso de una página** — ahí es donde el impacto es mayor
-- **Una CDN** puede reducir el tiempo de carga entre un 30 y un 50% para los visitantes fuera de tu zona
-- **Cada script JavaScript de terceros** (chat, analytics, píxel) añade de 100 a 500 ms de carga
+- **Las imágenes suelen ser la parte más pesada de una página** — ahí es donde el impacto es mayor
+- **Una CDN** acerca tus archivos a los visitantes alejados de tu servidor
+- **Cada script JavaScript de terceros** (chat, analytics, píxel) alarga la carga
 - **Los Core Web Vitals de Google** afectan directamente a tu posición en los resultados desde 2021
 
 ---
@@ -1426,9 +1426,9 @@ A site that goes from 6 seconds to 2 seconds of load time can see conversions ri
 
 No es solo una cuestión técnica. La velocidad de una web tiene un impacto medible en tus conversiones:
 
-- **+1 segundo** de carga = **-7%** de conversiones (Akamai)
-- El **53%** de los visitantes móviles abandonan si una página tarda más de **3 segundos** en cargar (Google)
-- **Amazon** estimó que cada 100 ms de latencia le cuesta un **1% de ingresos**
+- **100 milisegundos** de retraso pueden reducir la tasa de conversión un **7%** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- El **53%** de las visitas en móvil probablemente se abandonen si una página tarda más de **3 segundos** en cargar ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **2 segundos** de retraso hacen subir la tasa de rebote un **103%** ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Y desde 2021, Google incorpora los Core Web Vitals (la velocidad de carga real que perciben los usuarios) a sus criterios de posicionamiento. Una web lenta está doblemente penalizada: por los visitantes que se van y por Google, que la posiciona peor.
 
@@ -1436,13 +1436,13 @@ Y desde 2021, Google incorpora los Core Web Vitals (la velocidad de carga real q
 
 ## Optimización 1 — Comprime y convierte tus imágenes
 
-Las imágenes suponen de media entre el 60 y el 80% del peso total de una página web. A menudo es ahí donde la ganancia es más espectacular.
+Las imágenes suelen ser el recurso más pesado de una página web. Es ahí donde la ganancia es más espectacular.
 
 Dos acciones concretas:
 
-**Convierte a WebP**: este formato moderno produce imágenes de calidad equivalente a JPEG/PNG con un 25-35% menos de peso. La mayoría de los CMS modernos lo gestionan de forma nativa. Para WordPress, plugins como Imagify o ShortPixel convierten automáticamente.
+**Convierte a WebP**: según Google, este formato moderno produce imágenes con pérdida entre un 25 y un 34% más ligeras que un JPEG comparable, e imágenes sin pérdida un 26% más ligeras que un PNG ([Google](https://developers.google.com/speed/webp)). La mayoría de los CMS modernos lo gestionan de forma nativa. Para WordPress, plugins como Imagify o ShortPixel convierten automáticamente.
 
-**Redimensiona antes de subir**: subir una foto de 5000x4000px para mostrarla a 800px de ancho carga 6 veces más datos de los necesarios. Redimensiona tus imágenes a su tamaño real de visualización antes de publicarlas.
+**Redimensiona antes de subir**: subir una foto de 5000x4000px para mostrarla a 800px de ancho carga una imagen más de seis veces más ancha de lo necesario. Redimensiona tus imágenes a su tamaño real de visualización antes de publicarlas.
 
 Objetivo: ninguna imagen por encima de 200 KB en tu web. Las imágenes hero (a pantalla completa) pueden llegar a 400 KB si es una foto de alta calidad.
 
@@ -1456,7 +1456,7 @@ En la práctica, un visitante que llega a tu home solo necesita las imágenes vi
 
 La implementación es simple con el atributo HTML nativo: \`loading="lazy"\` en tus etiquetas \`<img>\`. Los frameworks modernos como Next.js lo aplican automáticamente.
 
-Ganancia típica: una reducción del 40 al 60% del peso inicial que carga la página.
+Ganancia: en la primera carga, la página solo descarga las imágenes visibles.
 
 ---
 
@@ -1464,7 +1464,7 @@ Ganancia típica: una reducción del 40 al 60% del peso inicial que carga la pá
 
 Cada script externo que añades a tu web — Google Analytics, Meta Pixel, Hotjar, Intercom, un widget de chat, botones para compartir en redes — tiene un coste en rendimiento.
 
-De media, un script de terceros añade de 100 a 500 ms de tiempo de carga. Si tienes 6 o 7, ya estás en 1 a 3 segundos de latencia solo por esas herramientas.
+Cada script de terceros añade peticiones y código que ejecutar. Cuando se acumulan, los retrasos se suman — solo por esas herramientas.
 
 Acciones concretas:
 - **Audita tus scripts**: ¿cuáles usas de verdad? Desactiva todo lo que no sirva
@@ -1480,7 +1480,7 @@ El cacheo consiste en almacenar una versión de tu página o tus recursos más c
 
 **Caché de navegador**: configura las cabeceras HTTP \`Cache-Control\` para que los recursos estáticos (imágenes, CSS, JS) se guarden en el navegador del visitante durante 1 a 12 meses.
 
-**CDN (Content Delivery Network)**: una CDN como Cloudflare (gratis para lo básico) distribuye tu contenido desde servidores geográficamente cercanos a tus visitantes. Para una web europea con visitantes europeos, es una reducción del 30 al 50% de los tiempos de carga.
+**CDN (Content Delivery Network)**: una CDN como Cloudflare (gratis para lo básico) distribuye tu contenido desde servidores geográficamente cercanos a tus visitantes. La ganancia se nota sobre todo para los visitantes alejados de tu servidor.
 
 ---
 
@@ -1507,7 +1507,7 @@ Antes de hacer nada, mide tu punto de partida con:
 
 Luego aplica las optimizaciones en el orden anterior (las imágenes primero, tienen el mayor impacto) y vuelve a medir tras cada paso.
 
-Una web que pasa de 6 segundos a 2 segundos de carga puede ver aumentar sus conversiones entre un 30 y un 50%. Suele ser el mejor retorno de la inversión de cualquier mejora técnica.`,
+Cada segundo ganado mantiene a más visitantes hasta el formulario o el carrito. Suele ser el mejor retorno de la inversión de cualquier mejora técnica.`,
       },
     },
   },
@@ -1521,10 +1521,10 @@ Una web que pasa de 6 segundos a 2 segundos de carga puede ver aumentar sus conv
     category: "Web & Marketing",
     content: `## À retenir en 30 secondes
 
-- **88 % des consommateurs** lisent les avis avant d'acheter — votre réponse aux avis négatifs est lue par tous les futurs clients
+- **Vos futurs clients lisent vos avis** — et votre réponse aux avis négatifs avec
 - **Ne jamais répondre à chaud** — attendez au moins 30 minutes avant de répondre à un avis négatif
 - **La structure gagnante** : reconnaître, s'excuser (sans admettre tort si contestable), proposer une solution, inviter à continuer en privé
-- **Un mauvais avis bien géré** est plus rassurant qu'une page avec 100 % d'avis 5 étoiles (qui paraît fausse)
+- **Un mauvais avis bien géré** est plus rassurant qu'une page où tous les avis ont 5 étoiles (qui paraît fausse)
 
 ---
 
@@ -1534,7 +1534,7 @@ Voici la réalité que peu d'entrepreneurs comprennent : quand un client potenti
 
 Une réponse professionnelle, empathique et constructive peut totalement neutraliser un avis négatif. Une mauvaise réponse (défensive, agressive, ou absente) aggrave systématiquement la situation.
 
-Les chiffres parlent d'eux-mêmes : 45 % des consommateurs sont plus susceptibles de visiter une entreprise qui répond à ses avis négatifs. 88 % lisent les réponses aux avis négatifs avant de prendre une décision.
+Votre réponse ne s'adresse pas seulement au client mécontent : elle est lue par tous ceux qui consultent vos avis ensuite, et c'est sur elle qu'ils jugent la façon dont vous traitez un problème.
 
 ---
 
@@ -1594,7 +1594,7 @@ Stratégies efficaces :
 - **Facilitez le processus** — un lien direct vers le formulaire d'avis, pas vers votre profil général
 - **Demandez dans le bon timing** — juste après que le client a exprimé sa satisfaction, pas des semaines plus tard
 
-Un ratio de 1 avis négatif pour 15 avis positifs est gérable. Un ratio de 1 pour 3 devient problématique.
+Quelques avis négatifs isolés au milieu de nombreux avis positifs restent gérables. Quand ils deviennent fréquents, le problème n'est plus la réponse : c'est ce qui les provoque.
 
 Des outils comme **Aevia Inbox** permettent d'automatiser les demandes d'avis post-achat via WhatsApp ou email, au moment optimal dans le parcours client.`,
     i18n: {
@@ -1605,10 +1605,10 @@ Des outils comme **Aevia Inbox** permettent d'automatiser les demandes d'avis po
         category: "Web & Marketing",
         content: `## Key takeaways in 30 seconds
 
-- **88% of consumers** read reviews before buying — your reply to a negative review is read by every future customer
+- **Your future customers read your reviews** — and your replies to the negative ones too
 - **Never reply in the heat of the moment** — wait at least 30 minutes before answering a negative review
 - **The winning structure**: acknowledge, apologize (without admitting fault if disputable), offer a solution, invite them to continue privately
-- **A bad review handled well** is more reassuring than a page of 100% 5-star reviews (which looks fake)
+- **A bad review handled well** is more reassuring than a page where every review has 5 stars (which looks fake)
 
 ---
 
@@ -1618,7 +1618,7 @@ Here is the reality few founders grasp: when a potential customer reads a negati
 
 A professional, empathetic, constructive reply can fully neutralize a negative review. A bad reply (defensive, aggressive, or absent) makes it worse every time.
 
-The numbers speak: 45% of consumers are more likely to visit a business that responds to its negative reviews. 88% read the replies to negative reviews before deciding.
+Your reply is not only for the unhappy customer: everyone who reads your reviews afterwards sees it, and judges from it how you handle a problem.
 
 ---
 
@@ -1678,7 +1678,7 @@ Effective strategies:
 - **Make it easy** — a direct link to the review form, not to your general profile
 - **Ask at the right time** — right after the customer expresses satisfaction, not weeks later
 
-A ratio of 1 negative review to 15 positive is manageable. A ratio of 1 to 3 becomes a problem.
+A few isolated negative reviews among many positive ones remain manageable. When they become frequent, the problem is no longer the reply: it is what causes them.
 
 Tools like **Aevia Inbox** can automate post-purchase review requests via WhatsApp or email, at the optimal moment in the customer journey.`,
       },
@@ -1689,10 +1689,10 @@ Tools like **Aevia Inbox** can automate post-purchase review requests via WhatsA
         category: "Web & Marketing",
         content: `## Lo esencial en 30 segundos
 
-- **El 88% de los consumidores** leen las reseñas antes de comprar — tu respuesta a una reseña negativa la leen todos los futuros clientes
+- **Tus futuros clientes leen tus reseñas** — y también tus respuestas a las negativas
 - **Nunca respondas en caliente** — espera al menos 30 minutos antes de responder a una reseña negativa
 - **La estructura ganadora**: reconocer, disculparse (sin admitir culpa si es discutible), proponer una solución, invitar a seguir en privado
-- **Una mala reseña bien gestionada** tranquiliza más que una página con el 100% de reseñas de 5 estrellas (que parece falsa)
+- **Una mala reseña bien gestionada** tranquiliza más que una página donde todas las reseñas tienen 5 estrellas (que parece falsa)
 
 ---
 
@@ -1702,7 +1702,7 @@ Esta es la realidad que pocos emprendedores entienden: cuando un cliente potenci
 
 Una respuesta profesional, empática y constructiva puede neutralizar por completo una reseña negativa. Una mala respuesta (defensiva, agresiva o ausente) empeora la situación siempre.
 
-Los números hablan: el 45% de los consumidores son más propensos a visitar un negocio que responde a sus reseñas negativas. El 88% leen las respuestas a las reseñas negativas antes de decidir.
+Tu respuesta no va dirigida solo al cliente descontento: la lee todo el que consulte tus reseñas después, y por ella juzga cómo tratas un problema.
 
 ---
 
@@ -1762,7 +1762,7 @@ Estrategias eficaces:
 - **Facilita el proceso** — un enlace directo al formulario de reseña, no a tu perfil general
 - **Pide en el momento adecuado** — justo después de que el cliente exprese su satisfacción, no semanas más tarde
 
-Una proporción de 1 reseña negativa por cada 15 positivas es manejable. Una de 1 por cada 3 se vuelve un problema.
+Unas pocas reseñas negativas aisladas entre muchas positivas siguen siendo manejables. Cuando se vuelven frecuentes, el problema ya no es la respuesta: es lo que las provoca.
 
 Herramientas como **Aevia Inbox** permiten automatizar las solicitudes de reseña posventa por WhatsApp o email, en el momento óptimo del recorrido del cliente.`,
       },
@@ -2074,14 +2074,14 @@ Empieza por listar tus 15 preguntas más frecuentes y sus respuestas ideales. Es
     slug: "securite-mots-de-passe-comptes-pros",
     title: "Sécurité des mots de passe : protégez vos comptes professionnels en 2026",
     excerpt:
-      "80 % des violations de données impliquent des mots de passe faibles ou compromis. Ces pratiques simples éliminent la majorité des risques — sans impacter votre productivité.",
+      "Les identifiants volés restent l'une des causes de violation de données les plus fréquentes. Ces pratiques simples ferment les accès les plus faciles — sans impacter votre productivité.",
     date: "2026-05-09",
     readingTime: "5 min",
     category: "Cybersécurité",
     content: `## À retenir en 30 secondes
 
 - **Un mot de passe réutilisé** sur plusieurs services est un risque majeur — si un service est piraté, tous vos comptes le sont
-- **Un gestionnaire de mots de passe** (Bitwarden, 1Password) résout 90 % des problèmes de sécurité des comptes
+- **Un gestionnaire de mots de passe** (Bitwarden, 1Password) donne à chaque compte un mot de passe long et unique, sans effort de mémoire
 - **L'authentification à deux facteurs (2FA)** est le deuxième verrou le plus important — activez-le partout
 - **Les attaques par phishing** ciblent d'abord vos comptes professionnels (email, CRM, banque, fournisseurs)
 
@@ -2089,7 +2089,7 @@ Empieza por listar tus 15 preguntas más frecuentes y sus respuestas ideales. Es
 
 ## La réalité des compromissions de comptes en 2026
 
-En 2023, le rapport Verizon Data Breach Investigations estimait que **80 % des violations de données impliquent des mots de passe volés ou faibles**. Ce n'est pas une question de hackers sophistiqués dans des caves obscures — c'est souvent beaucoup plus simple.
+Selon le rapport Data Breach Investigations 2026 de Verizon, les causes de violation de données les plus fréquentes impliquent toujours le facteur humain — ingénierie sociale, hameçonnage, **identifiants volés** — ainsi que l'exploitation de failles logicielles ([Verizon, 2026](https://www.verizon.com/business/resources/reports/dbir/)). Ce n'est pas une question de hackers sophistiqués dans des caves obscures — c'est souvent beaucoup plus simple.
 
 Un employé utilise le même mot de passe sur son email professionnel et sur un forum en ligne. Ce forum se fait pirater. La base de données est vendue sur le dark web. Un bot teste ces credentials sur votre service bancaire, votre hébergeur, votre CRM.
 
@@ -2164,12 +2164,12 @@ Des outils comme **Aevia Security** permettent également d'auditer la sécurit�
       en: {
         title: "Password security: protect your business accounts in 2026",
         excerpt:
-          "80% of data breaches involve weak or compromised passwords. These simple practices remove most of the risk — without hurting your productivity.",
+          "Stolen credentials remain one of the most frequent causes of data breaches. These simple practices close the easiest ways in — without hurting your productivity.",
         category: "Cybersécurité",
         content: `## Key takeaways in 30 seconds
 
 - **A reused password** across several services is a major risk — if one service is hacked, all your accounts are
-- **A password manager** (Bitwarden, 1Password) solves 90% of account security problems
+- **A password manager** (Bitwarden, 1Password) gives every account a long, unique password with nothing to memorize
 - **Two-factor authentication (2FA)** is the second most important lock — turn it on everywhere
 - **Phishing attacks** target your business accounts first (email, CRM, bank, suppliers)
 
@@ -2177,7 +2177,7 @@ Des outils comme **Aevia Security** permettent également d'auditer la sécurit�
 
 ## The reality of account compromises in 2026
 
-In 2023, the Verizon Data Breach Investigations Report estimated that **80% of data breaches involve stolen or weak passwords**. This is not about sophisticated hackers in dark basements — it is often much simpler.
+According to Verizon's 2026 Data Breach Investigations Report, the most frequent causes of data breaches still heavily involve the human element — social engineering, phishing, **stolen credentials** — as well as the exploitation of software vulnerabilities ([Verizon, 2026](https://www.verizon.com/business/resources/reports/dbir/)). This is not about sophisticated hackers in dark basements — it is often much simpler.
 
 An employee uses the same password for their work email and an online forum. That forum gets hacked. The database is sold on the dark web. A bot tests those credentials against your bank, your host, your CRM.
 
@@ -2252,12 +2252,12 @@ Tools like **Aevia Security** can also audit your domain's overall security, inc
       es: {
         title: "Seguridad de contraseñas: protege tus cuentas profesionales en 2026",
         excerpt:
-          "El 80% de las brechas de datos implican contraseñas débiles o comprometidas. Estas prácticas simples eliminan la mayor parte del riesgo — sin afectar a tu productividad.",
+          "Las credenciales robadas siguen siendo una de las causas más frecuentes de brechas de datos. Estas prácticas simples cierran los accesos más fáciles — sin afectar a tu productividad.",
         category: "Cybersécurité",
         content: `## Lo esencial en 30 segundos
 
 - **Una contraseña reutilizada** en varios servicios es un riesgo mayor — si un servicio es hackeado, todas tus cuentas lo están
-- **Un gestor de contraseñas** (Bitwarden, 1Password) resuelve el 90% de los problemas de seguridad de cuentas
+- **Un gestor de contraseñas** (Bitwarden, 1Password) da a cada cuenta una contraseña larga y única, sin esfuerzo de memoria
 - **La autenticación de dos factores (2FA)** es el segundo cerrojo más importante — actívala en todas partes
 - **Los ataques de phishing** apuntan primero a tus cuentas profesionales (email, CRM, banco, proveedores)
 
@@ -2265,7 +2265,7 @@ Tools like **Aevia Security** can also audit your domain's overall security, inc
 
 ## La realidad de las cuentas comprometidas en 2026
 
-En 2023, el informe Verizon Data Breach Investigations estimaba que **el 80% de las brechas de datos implican contraseñas robadas o débiles**. No es cuestión de hackers sofisticados en sótanos oscuros — a menudo es mucho más simple.
+Según el informe Data Breach Investigations 2026 de Verizon, las causas más frecuentes de brechas de datos siguen implicando el factor humano — ingeniería social, phishing, **credenciales robadas** —, además de la explotación de fallos de software ([Verizon, 2026](https://www.verizon.com/business/resources/reports/dbir/)). No es cuestión de hackers sofisticados en sótanos oscuros — a menudo es mucho más simple.
 
 Un empleado usa la misma contraseña en su email profesional y en un foro online. Ese foro es hackeado. La base de datos se vende en la dark web. Un bot prueba esas credenciales contra tu banco, tu hosting, tu CRM.
 
@@ -2350,7 +2350,7 @@ Herramientas como **Aevia Security** también permiten auditar la seguridad glob
     content: `## À retenir en 30 secondes
 
 - **Un tunnel de conversion** = la séquence d'étapes entre "visiteur inconnu" et "client payant"
-- **La plupart des sites perdent 95 % de leurs visiteurs** faute d'un tunnel structuré
+- **Sans tunnel structuré, vos visiteurs repartent** sans laisser de trace
 - **3 éléments clés** : une proposition de valeur claire, une preuve sociale, un appel à l'action sans friction
 - **Mesurez chaque étape** — sans analytics, vous travaillez à l'aveugle
 
@@ -2358,7 +2358,7 @@ Herramientas como **Aevia Security** también permiten auditar la seguridad glob
 
 ## Pourquoi votre site a du trafic mais peu de conversions
 
-Imaginez une boutique physique où 100 personnes entrent, regardent, et 95 repartent les mains vides. Vous appelleriez ça un problème d'agencement, de présentation, ou de vendeur.
+Imaginez une boutique physique où presque tout le monde entre, regarde, et repart les mains vides. Vous appelleriez ça un problème d'agencement, de présentation, ou de vendeur.
 
 Sur le web, c'est exactement ce qui se passe pour la plupart des sites. Le trafic arrive — via Google, les réseaux sociaux, le bouche à oreille — et repart sans convertir.
 
@@ -2388,7 +2388,7 @@ Le visiteur est intéressé. Mais il ne vous connaît pas. Il a besoin de rassur
 
 Les éléments de preuve qui fonctionnent :
 - **Témoignages clients avec photo et nom** — pas anonymes
-- **Études de cas avec résultats chiffrés** — "Jean a augmenté ses contacts de 40 % en 3 mois"
+- **Études de cas avec résultats chiffrés** — le résultat mesuré chez un client nommé, avec la période et le point de départ
 - **Logos de clients connus** si applicable
 - **Chiffres concrets** — "200 clients accompagnés", "7 ans d'expérience"
 - **Certifications ou labels** pertinents pour votre secteur
@@ -2432,7 +2432,7 @@ Ne supposez pas ce qui fonctionne. Testez deux versions de votre CTA, de votre t
 
 Des outils comme Vercel Speed Insights ou Google Optimize permettent de tester deux versions sur des segments de visiteurs et de mesurer objectivement quelle version convertit mieux.
 
-Une modification de titre qui améliore le taux de conversion de 15 % peut doubler vos leads sans augmenter votre trafic.
+Une simple modification de titre peut changer votre nombre de leads sans augmenter votre trafic — seul le test vous dira dans quel sens.
 
 ---
 
@@ -2456,7 +2456,7 @@ Le design est pensé pour convertir — pas seulement pour être beau.`,
         content: `## Key takeaways in 30 seconds
 
 - **A conversion funnel** = the sequence of steps between "unknown visitor" and "paying customer"
-- **Most sites lose 95% of their visitors** for lack of a structured funnel
+- **Without a structured funnel, your visitors leave** without a trace
 - **3 key elements**: a clear value proposition, social proof, a friction-free call to action
 - **Measure each step** — without analytics, you are working blind
 
@@ -2464,7 +2464,7 @@ Le design est pensé pour convertir — pas seulement pour être beau.`,
 
 ## Why your site has traffic but few conversions
 
-Picture a physical shop where 100 people walk in, look around, and 95 leave empty-handed. You would call that a layout, presentation or salesperson problem.
+Picture a physical shop where almost everyone walks in, looks around, and leaves empty-handed. You would call that a layout, presentation or salesperson problem.
 
 On the web, that is exactly what happens for most sites. Traffic arrives — via Google, social media, word of mouth — and leaves without converting.
 
@@ -2494,7 +2494,7 @@ The visitor is interested. But they do not know you. They need reassurance.
 
 Proof elements that work:
 - **Customer testimonials with photo and name** — not anonymous
-- **Case studies with quantified results** — "Jean grew his leads by 40% in 3 months"
+- **Case studies with quantified results** — the result measured for a named customer, with the period and the starting point
 - **Logos of known clients** if applicable
 - **Concrete numbers** — "200 clients supported", "7 years of experience"
 - **Certifications or labels** relevant to your sector
@@ -2538,7 +2538,7 @@ Do not assume what works. Test two versions of your CTA, your headline, your lay
 
 Tools like Vercel Speed Insights or Google Optimize let you test two versions on visitor segments and objectively measure which converts better.
 
-A headline change that improves conversion by 15% can double your leads without increasing your traffic.
+A simple headline change can shift your number of leads without increasing your traffic — only the test will tell you which way.
 
 ---
 
@@ -2562,7 +2562,7 @@ The design is built to convert — not just to look good.`,
         content: `## Lo esencial en 30 segundos
 
 - **Un embudo de conversión** = la secuencia de pasos entre "visitante desconocido" y "cliente que paga"
-- **La mayoría de las webs pierden el 95% de sus visitantes** por falta de un embudo estructurado
+- **Sin un embudo estructurado, tus visitantes se van** sin dejar rastro
 - **3 elementos clave**: una propuesta de valor clara, prueba social, una llamada a la acción sin fricción
 - **Mide cada paso** — sin analítica, trabajas a ciegas
 
@@ -2570,7 +2570,7 @@ The design is built to convert — not just to look good.`,
 
 ## Por qué tu web tiene tráfico pero pocas conversiones
 
-Imagina una tienda física donde entran 100 personas, miran, y 95 se van con las manos vacías. Lo llamarías un problema de distribución, de presentación o de vendedor.
+Imagina una tienda física donde casi todo el mundo entra, mira y se va con las manos vacías. Lo llamarías un problema de distribución, de presentación o de vendedor.
 
 En la web, es exactamente lo que pasa en la mayoría de los sitios. El tráfico llega — vía Google, redes sociales, boca a boca — y se va sin convertir.
 
@@ -2600,7 +2600,7 @@ El visitante está interesado. Pero no te conoce. Necesita tranquilidad.
 
 Los elementos de prueba que funcionan:
 - **Testimonios de clientes con foto y nombre** — no anónimos
-- **Casos de éxito con resultados cuantificados** — "Jean aumentó sus contactos un 40% en 3 meses"
+- **Casos de éxito con resultados cuantificados** — el resultado medido en un cliente con nombre, con el periodo y el punto de partida
 - **Logos de clientes conocidos** si procede
 - **Cifras concretas** — "200 clientes acompañados", "7 años de experiencia"
 - **Certificaciones o sellos** relevantes para tu sector
@@ -2644,7 +2644,7 @@ No supongas lo que funciona. Prueba dos versiones de tu CTA, tu titular, tu dise
 
 Herramientas como Vercel Speed Insights o Google Optimize permiten probar dos versiones en segmentos de visitantes y medir objetivamente cuál convierte mejor.
 
-Un cambio de titular que mejora la conversión un 15% puede duplicar tus leads sin aumentar tu tráfico.
+Un simple cambio de titular puede cambiar tu número de leads sin aumentar tu tráfico — solo la prueba te dirá en qué sentido.
 
 ---
 
@@ -2673,7 +2673,7 @@ El diseño está pensado para convertir — no solo para ser bonito.`,
     content: `## À retenir en 30 secondes
 
 - **La segmentation** = diviser vos clients en groupes homogènes pour leur parler différemment
-- **Fidéliser coûte 5 à 7 fois moins cher qu'acquérir** — mais nécessite de bien connaître vos clients
+- **Acquérir un client coûte de 5 à 25 fois plus cher que d'en garder un**, selon les études et les secteurs ([Harvard Business Review, 2014](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)) — fidéliser demande de bien connaître vos clients
 - **4 segmentations de base** : récence, fréquence, panier moyen, canal de contact préféré
 - **Un CRM ou inbox unifié** est indispensable pour segmenter efficacement
 
@@ -2735,13 +2735,13 @@ Un CRM ou une inbox unifiée comme **Aevia Inbox** permet de :
 
 ## Mise en pratique : 3 actions concrètes cette semaine
 
-**Action 1 — Identifiez vos 20 % de clients qui génèrent 80 % de votre CA**
+**Action 1 — Identifiez les clients qui génèrent la plus grande part de votre CA**
 
 C'est le principe de Pareto. Ces clients méritent une attention particulière : programme de fidélité, accès prioritaire, contact personnalisé. Si vous ne les chouchoutez pas, quelqu'un d'autre le fera.
 
 **Action 2 — Listez vos clients inactifs depuis plus de 6 mois**
 
-Ce sont vos "dormants". Un simple message personnalisé — "On pensait à vous, voici une offre de re-bienvenue" — réactive souvent 10 à 20 % de cette liste.
+Ce sont vos "dormants". Un simple message personnalisé — "On pensait à vous, voici une offre de re-bienvenue" — peut en réactiver une partie. Notez combien : c'est votre point de comparaison pour la relance suivante.
 
 **Action 3 — Categorisez vos contacts selon leur canal de préférence**
 
@@ -2763,7 +2763,7 @@ L'important, c'est de commencer. Même une segmentation simple (actifs vs inacti
         content: `## Key takeaways in 30 seconds
 
 - **Segmentation** = dividing your customers into homogeneous groups to speak to them differently
-- **Retention costs 5 to 7 times less than acquisition** — but requires knowing your customers well
+- **Acquiring a customer costs 5 to 25 times more than keeping one**, depending on the study and the industry ([Harvard Business Review, 2014](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)) — retention requires knowing your customers well
 - **4 basic segmentations**: recency, frequency, average basket, preferred contact channel
 - **A CRM or unified inbox** is essential to segment effectively
 
@@ -2825,13 +2825,13 @@ A CRM or unified inbox like **Aevia Inbox** lets you:
 
 ## Putting it into practice: 3 concrete actions this week
 
-**Action 1 — Identify the 20% of customers who generate 80% of your revenue**
+**Action 1 — Identify the customers who generate the largest share of your revenue**
 
 This is the Pareto principle. These customers deserve special attention: loyalty program, priority access, personalized contact. If you do not look after them, someone else will.
 
 **Action 2 — List your customers inactive for more than 6 months**
 
-These are your "dormant" ones. A simple personalized message — "We were thinking of you, here's a welcome-back offer" — often reactivates 10 to 20% of that list.
+These are your "dormant" ones. A simple personalized message — "We were thinking of you, here's a welcome-back offer" — can bring some of them back. Note how many: that is your baseline for the next campaign.
 
 **Action 3 — Categorize your contacts by preferred channel**
 
@@ -2853,7 +2853,7 @@ What matters is to start. Even simple segmentation (active vs inactive, big bask
         content: `## Lo esencial en 30 segundos
 
 - **La segmentación** = dividir a tus clientes en grupos homogéneos para hablarles de forma distinta
-- **Fidelizar cuesta de 5 a 7 veces menos que captar** — pero requiere conocer bien a tus clientes
+- **Captar un cliente cuesta de 5 a 25 veces más que conservarlo**, según los estudios y los sectores ([Harvard Business Review, 2014](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)) — fidelizar requiere conocer bien a tus clientes
 - **4 segmentaciones básicas**: recencia, frecuencia, ticket medio, canal de contacto preferido
 - **Un CRM o bandeja unificada** es indispensable para segmentar con eficacia
 
@@ -2915,13 +2915,13 @@ Un CRM o una bandeja unificada como **Aevia Inbox** permite:
 
 ## Puesta en práctica: 3 acciones concretas esta semana
 
-**Acción 1 — Identifica el 20% de clientes que generan el 80% de tu facturación**
+**Acción 1 — Identifica a los clientes que generan la mayor parte de tu facturación**
 
 Es el principio de Pareto. Estos clientes merecen una atención especial: programa de fidelidad, acceso prioritario, contacto personalizado. Si no los cuidas, otro lo hará.
 
 **Acción 2 — Lista tus clientes inactivos desde hace más de 6 meses**
 
-Son tus "dormidos". Un simple mensaje personalizado — "Pensábamos en ti, aquí tienes una oferta de bienvenida de vuelta" — reactiva a menudo entre el 10 y el 20% de esa lista.
+Son tus "dormidos". Un simple mensaje personalizado — "Pensábamos en ti, aquí tienes una oferta de bienvenida de vuelta" — puede reactivar a una parte. Anota cuántos: es tu punto de comparación para la siguiente campaña.
 
 **Acción 3 — Categoriza tus contactos según su canal preferido**
 
@@ -2947,7 +2947,7 @@ Lo importante es empezar. Incluso una segmentación simple (activos vs inactivos
     category: "Web & Marketing",
     content: `## Pourquoi votre présence en ligne est votre meilleur commercial
 
-En 2026, la première chose que fait un client potentiel avant de vous appeler ou de pousser votre porte, c'est vous chercher sur Google. En moins de 10 secondes, il juge votre sérieux, votre crédibilité, et décide s'il va vous contacter ou passer au concurrent.
+En 2026, la première chose que fait un client potentiel avant de vous appeler ou de pousser votre porte, c'est vous chercher sur Google. En quelques secondes, il juge votre sérieux, votre crédibilité, et décide s'il va vous contacter ou passer au concurrent.
 
 La bonne nouvelle ? La plupart des TPE et PME négligent encore cette réalité. Ce qui signifie que si vous agissez maintenant, vous avez une vraie fenêtre d'opportunité.
 
@@ -2964,7 +2964,7 @@ Un bon site en 2026, c'est :
 - **Un message principal limpide** dès la première seconde — que faites-vous, pour qui, et pourquoi vous choisir
 - **Une hiérarchie visuelle claire** — le visiteur sait où cliquer
 - **Un formulaire de contact ou un bouton d'appel à l'action visible** sur chaque page
-- **Un design mobile-first** — plus de 65 % des visites viennent du smartphone
+- **Un design mobile-first** — les mobiles font 59,9 % du trafic web mondial ([StatCounter, octobre 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet))
 
 Des solutions comme Aevia Launch permettent d'obtenir un site professionnel et personnalisé, en ligne sous 48 heures (5 à 7 jours pour un site Premium sur mesure) — sans sacrifier la qualité pour la rapidité.
 
@@ -2994,7 +2994,7 @@ Ce qu'il faut faire régulièrement :
 - **Mettez à jour vos horaires** — surtout les jours fériés
 - **Publiez des posts** (offres, événements, nouveautés) — au moins deux fois par mois
 - **Répondez à tous les avis**, positifs comme négatifs — cela montre que vous êtes actif et professionnel
-- **Ajoutez des photos** de votre équipe, de vos locaux, de vos produits — les fiches avec photos reçoivent 42 % plus de demandes d'itinéraire
+- **Ajoutez des photos** de votre équipe, de vos locaux, de vos produits — selon Google, les photos aident votre établissement à se démarquer ([aide Google Business Profile](https://support.google.com/business/answer/6123536))
 
 ---
 
@@ -3014,7 +3014,7 @@ Ce qui fonctionne en 2026 : le contenu authentique et utile. Pas de la pub dégu
 
 ## 5. La vitesse de chargement — l'invisible qui coûte cher
 
-Voici une stat qui fait réfléchir : si votre site met plus de 3 secondes à charger, 53 % des visiteurs mobile partent sans avoir vu la moindre page.
+Voici une donnée qui fait réfléchir : selon Google, 53 % des visites sur mobile sont susceptibles d'être abandonnées si la page met plus de 3 secondes à charger ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/)).
 
 La vitesse impacte à la fois votre taux de rebond, votre taux de conversion, et votre position dans les résultats Google (Core Web Vitals).
 
@@ -3044,7 +3044,7 @@ La présence en ligne n'est pas une case à cocher — c'est un actif qui se con
         category: "Web & Marketing",
         content: `## Why your online presence is your best salesperson
 
-In 2026, the first thing a potential customer does before calling you or walking through your door is search for you on Google. In under 10 seconds, they judge your seriousness, your credibility, and decide whether to contact you or move on to a competitor.
+In 2026, the first thing a potential customer does before calling you or walking through your door is search for you on Google. Within seconds, they judge your seriousness, your credibility, and decide whether to contact you or move on to a competitor.
 
 The good news? Most small businesses still neglect this reality. Which means if you act now, you have a real window of opportunity.
 
@@ -3061,7 +3061,7 @@ A good site in 2026 is:
 - **A crystal-clear core message** from the first second — what you do, for whom, and why choose you
 - **A clear visual hierarchy** — the visitor knows where to click
 - **A visible contact form or call-to-action button** on every page
-- **A mobile-first design** — over 65% of visits come from smartphones
+- **A mobile-first design** — mobile devices account for 59.9% of global web traffic ([StatCounter, October 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet))
 
 Solutions like Aevia Launch deliver a professional, customized site online within 48 hours (5 to 7 days for a custom Premium site) — without sacrificing quality for speed.
 
@@ -3091,7 +3091,7 @@ What to do regularly:
 - **Update your hours** — especially public holidays
 - **Publish posts** (offers, events, news) — at least twice a month
 - **Reply to all reviews**, positive and negative — it shows you are active and professional
-- **Add photos** of your team, premises, products — profiles with photos get 42% more direction requests
+- **Add photos** of your team, premises, products — according to Google, photos help your business stand out ([Google Business Profile Help](https://support.google.com/business/answer/6123536))
 
 ---
 
@@ -3111,7 +3111,7 @@ What works in 2026: authentic, useful content. Not disguised ads — tips, behin
 
 ## 5. Load speed — the invisible that costs you
 
-Here is a stat worth pondering: if your site takes more than 3 seconds to load, 53% of mobile visitors leave without seeing a single page.
+Here is a figure worth pondering: according to Google, 53% of mobile visits are likely to be abandoned if a page takes more than 3 seconds to load ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/)).
 
 Speed affects your bounce rate, your conversion rate, and your Google ranking (Core Web Vitals) all at once.
 
@@ -3141,7 +3141,7 @@ Online presence is not a box to tick — it is an asset built over time. The ear
         category: "Web & Marketing",
         content: `## Por qué tu presencia online es tu mejor comercial
 
-En 2026, lo primero que hace un cliente potencial antes de llamarte o entrar por tu puerta es buscarte en Google. En menos de 10 segundos juzga tu seriedad, tu credibilidad, y decide si te contacta o pasa a la competencia.
+En 2026, lo primero que hace un cliente potencial antes de llamarte o entrar por tu puerta es buscarte en Google. En pocos segundos juzga tu seriedad, tu credibilidad, y decide si te contacta o pasa a la competencia.
 
 ¿La buena noticia? La mayoría de las pymes aún descuidan esta realidad. Lo que significa que si actúas ahora, tienes una verdadera ventana de oportunidad.
 
@@ -3158,7 +3158,7 @@ Una buena web en 2026 es:
 - **Un mensaje principal nítido** desde el primer segundo — qué haces, para quién, y por qué elegirte
 - **Una jerarquía visual clara** — el visitante sabe dónde hacer clic
 - **Un formulario de contacto o un botón de llamada a la acción visible** en cada página
-- **Un diseño mobile-first** — más del 65% de las visitas vienen del smartphone
+- **Un diseño mobile-first** — los móviles suponen el 59,9% del tráfico web mundial ([StatCounter, octubre de 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet))
 
 Soluciones como Aevia Launch permiten obtener una web profesional y personalizada, en línea en menos de 48 horas (de 5 a 7 días para una web Premium a medida) — sin sacrificar la calidad por la rapidez.
 
@@ -3188,7 +3188,7 @@ Lo que hay que hacer con regularidad:
 - **Actualiza tus horarios** — sobre todo los festivos
 - **Publica posts** (ofertas, eventos, novedades) — al menos dos veces al mes
 - **Responde a todas las reseñas**, positivas y negativas — demuestra que estás activo y eres profesional
-- **Añade fotos** de tu equipo, tu local, tus productos — los perfiles con fotos reciben un 42% más de solicitudes de cómo llegar
+- **Añade fotos** de tu equipo, tu local, tus productos — según Google, las fotos ayudan a que tu negocio destaque ([ayuda de Google Business Profile](https://support.google.com/business/answer/6123536))
 
 ---
 
@@ -3208,7 +3208,7 @@ Lo que funciona en 2026: contenido auténtico y útil. No publicidad disfrazada 
 
 ## 5. La velocidad de carga — lo invisible que sale caro
 
-Una estadística que hace pensar: si tu web tarda más de 3 segundos en cargar, el 53% de los visitantes móviles se van sin haber visto una sola página.
+Un dato que hace pensar: según Google, el 53% de las visitas en móvil probablemente se abandonen si la página tarda más de 3 segundos en cargar ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/)).
 
 La velocidad afecta a la vez a tu tasa de rebote, tu tasa de conversión y tu posición en los resultados de Google (Core Web Vitals).
 
@@ -3245,7 +3245,7 @@ La presencia online no es una casilla que marcar — es un activo que se constru
 
 "Je ne suis qu'une petite entreprise, qui voudrait pirater mon site ?"
 
-C'est le raisonnement le plus dangereux qui soit. La réalité, c'est que 43 % des cyberattaques ciblent des petites structures — non pas parce qu'elles sont des cibles intéressantes en elles-mêmes, mais parce qu'elles sont des proies faciles.
+C'est le raisonnement le plus dangereux qui soit. La réalité : selon l'ANSSI, les PME, TPE et ETI restent la catégorie d'entités la plus touchée par les rançongiciels parmi les attaques portées à sa connaissance en 2025 ([Panorama de la cybermenace 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/)) — non pas parce qu'elles sont des cibles intéressantes en elles-mêmes, mais parce qu'elles sont souvent des proies faciles.
 
 Les bots qui scannent internet à la recherche de vulnérabilités ne font pas la différence entre une multinationale et un site vitrine de boulangerie. Ils testent les mêmes failles partout, automatiquement, 24h/24.
 
@@ -3339,7 +3339,7 @@ Ensuite, lancez un audit gratuit pour avoir le tableau complet. Il vaut mieux d�
 
 "I'm only a small business, who would want to hack my site?"
 
-That is the most dangerous reasoning there is. The reality is that 43% of cyberattacks target small businesses — not because they are interesting targets in themselves, but because they are easy prey.
+That is the most dangerous reasoning there is. The reality: according to ANSSI, France's national cybersecurity agency, small and mid-sized businesses remain the category most affected by ransomware among the attacks reported to it in 2025 ([Cyber Threat Overview 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-003/)) — not because they are interesting targets in themselves, but because they are often easy prey.
 
 The bots scanning the internet for vulnerabilities do not tell the difference between a multinational and a bakery's brochure site. They test the same flaws everywhere, automatically, 24/7.
 
@@ -3433,7 +3433,7 @@ Then run a free audit to get the full picture. Better to find a vulnerability yo
 
 "Solo soy una pequeña empresa, ¿quién querría hackear mi web?"
 
-Es el razonamiento más peligroso que existe. La realidad es que el 43% de los ciberataques apuntan a pequeñas estructuras — no porque sean objetivos interesantes en sí, sino porque son presas fáciles.
+Es el razonamiento más peligroso que existe. La realidad: según la ANSSI, la agencia nacional francesa de ciberseguridad, las pymes siguen siendo la categoría más afectada por el ransomware entre los ataques que se le notificaron en 2025 ([ANSSI, 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-003/)) — no porque sean objetivos interesantes en sí, sino porque a menudo son presas fáciles.
 
 Los bots que escanean internet en busca de vulnerabilidades no distinguen entre una multinacional y la web de presentación de una panadería. Prueban los mismos fallos en todas partes, automáticamente, 24/7.
 
@@ -3552,7 +3552,7 @@ Vos clients ne vont pas changer leurs habitudes. C'est à vous de vous adapter �
 
 ### Des temps de réponse qui explosent
 
-Les études le montrent : 90 % des clients s'attendent à une réponse en moins d'une heure sur les messageries instantanées. Quand vous gérez manuellement 4 ou 5 canaux différents, respecter ce standard devient physiquement impossible.
+Sur une messagerie instantanée, le client attend une réponse rapide : c'est le principe même du canal. Quand vous gérez manuellement 4 ou 5 canaux différents, tenir ce rythme devient physiquement impossible.
 
 ### Des messages perdus ou oubliés
 
@@ -3648,7 +3648,7 @@ Your customers will not change their habits. It is up to you to adapt — but sm
 
 ### Response times that blow up
 
-Studies show it: 90% of customers expect a reply in under an hour on instant messaging. When you manually handle 4 or 5 different channels, meeting that standard becomes physically impossible.
+On instant messaging, customers expect a quick reply: that is the very nature of the channel. When you manually handle 4 or 5 different channels, keeping up that pace becomes physically impossible.
 
 ### Lost or forgotten messages
 
@@ -3744,7 +3744,7 @@ Tus clientes no van a cambiar sus hábitos. Te toca a ti adaptarte — pero de f
 
 ### Tiempos de respuesta que se disparan
 
-Los estudios lo muestran: el 90% de los clientes esperan una respuesta en menos de una hora en la mensajería instantánea. Cuando gestionas manualmente 4 o 5 canales distintos, cumplir ese estándar se vuelve físicamente imposible.
+En la mensajería instantánea, el cliente espera una respuesta rápida: es la naturaleza misma del canal. Cuando gestionas manualmente 4 o 5 canales distintos, mantener ese ritmo se vuelve físicamente imposible.
 
 ### Mensajes perdidos u olvidados
 
@@ -3829,7 +3829,7 @@ En 2026, las herramientas para lograrlo son accesibles, incluso para pequeñas e
 Pour une PME, un commerçant ou un artisan de la région de Bourg-en-Bresse, relever le défi de la numérisation se heurte souvent à trois obstacles majeurs :
 
 - **Le manque de temps** : Entre la gestion quotidienne de votre activité, le suivi des clients et la gestion des stocks ou du chantier, consacrer des dizaines d'heures à concevoir un site internet est une tâche quasi impossible.
-- **La complexité technique et le coût** : Solliciter une agence web à Bourg-en-Bresse représente un investissement financier important (souvent entre 2 500 € et 6 000 € pour un site vitrine basique), sans compter les délais de livraison qui s'étalent régulièrement sur 2 à 3 months.
+- **La complexité technique et le coût** : Solliciter une agence web à Bourg-en-Bresse représente un investissement financier important, sans compter les délais de livraison qui s'étalent régulièrement sur plusieurs semaines.
 - **La visibilité locale** : Posséder un site internet ne suffit pas. Il doit être parfaitement optimisé pour le référencement local (SEO dans l'Ain et la Bresse) afin d'apparaître en tête des résultats lorsqu'un habitant cherche vos services depuis son smartphone.
 
 Face à ces contraintes, beaucoup de professionnels remettent leur projet à plus tard ou se contentent d'une simple page sur les réseaux sociaux, manquant ainsi de nombreuses opportunités commerciales et de crédibilité auprès de leurs prospects.
@@ -3843,7 +3843,7 @@ Pour répondre aux besoins spécifiques des entreprises locales, Aevia a dévelo
 La méthode se déroule en 3 étapes simples et intuitives :
 
 1. **Vous décrivez votre activité** — Plus besoin de rédiger des cahiers des charges complexes. Vous indiquez simplement le nom de votre entreprise, votre métier, votre localisation (Bourg-en-Bresse, Viriat, Saint-Denis-lès-Bourg...) et vos services principaux. L'IA analyse votre secteur et génère instantanément des textes percutants, professionnels et adaptés à votre cible locale.
-2. **Nous proposons des thèmes optimisés** — L'outil génère automatiquement des maquettes modernes, 100 % adaptées aux mobiles et pensées pour la conversion. Vous choisissez le design qui reflète le mieux l'image de votre établissement et personnalisez les couleurs et photos en quelques clics sans toucher à une seule ligne de code.
+2. **Nous proposons des thèmes optimisés** — L'outil génère automatiquement des maquettes modernes, entièrement adaptées aux mobiles et pensées pour la conversion. Vous choisissez le design qui reflète le mieux l'image de votre établissement et personnalisez les couleurs et photos en quelques clics sans toucher à une seule ligne de code.
 3. **Nous mettons votre site en ligne** — Une fois le design et le contenu validés, votre site internet Bourg-en-Bresse est mis en ligne avec son certificat de sécurité SSL et une optimisation SEO locale intégrée, sous 48 heures avec les formules Landing, Essentiel et Pro (5 à 7 jours pour un site Premium sur mesure). Le nom de domaine est inclus avec Pro et Premium, en option avec Landing et Essentiel.
 
 ---
@@ -3903,7 +3903,7 @@ Le constat opérationnel sur le terrain est souvent sans appel :
 
 - **Un volume croissant et fragmenté** : Les demandes de renseignements, de devis, de réservations ou de suivi de commande arrivent en continu tout au long de la journée et de la nuit.
 - **Le coût financier du support humain** : Embaucher un préparateur de commande ou un chargé de clientèle à temps plein à Lyon implique un coût global (salaire brut, charges patronales, frais de poste de travail) souvent supérieur à 45 000 € par an. Pour couvrir les plages du soir et du week-end, la facture devient rapidement insoutenable pour une PME.
-- **L'insatisfaction liée au délai de réponse** : Un prospect qui attend plus de 2 heures pour obtenir un tarif ou une disponibilité se tourne immédiatement vers un concurrent lyonnais plus réactif.
+- **L'insatisfaction liée au délai de réponse** : Un prospect qui attend trop longtemps un tarif ou une disponibilité se tourne vers un concurrent lyonnais plus réactif.
 
 Face à ces enjeux de productivité et de rentabilité, l'**automatisation PME Lyon** via l'intelligence artificielle s'impose comme le levier stratégique par excellence.
 
@@ -3973,17 +3973,17 @@ Maximisez la satisfaction de vos clients et libérez vos équipes des tâches ch
     date: "2026-06-29",
     readingTime: "6 min",
     category: "Cybersécurité",
-    content: `Les entreprises du Sud de la France et du bassin phocéen sont devenues des cibles privilégiées pour les cybercriminels. En région Provence-Alpes-Côte d'Azur (PACA), les attaques informatiques ne visent plus uniquement les grands groupes du secteur maritime ou logistique : les TPE et PME locales sont désormais en première ligne. Selon les données récentes des observatoires régionaux de la cybersécurité, plus de 60 % des attaques par ransomware ou vol de données ciblent des petites et moyennes structures qui pensaient être à l'abri. Face à cette menace grandissante, réaliser un **audit sécurité site web Marseille** régulier est devenu un impératif de gestion. En 2025, grâce à l'intelligence artificielle, l'évaluation complète de votre niveau de protection ne prend plus que 60 secondes.
+    content: `Les entreprises du Sud de la France et du bassin phocéen sont devenues des cibles privilégiées pour les cybercriminels. En région Provence-Alpes-Côte d'Azur (PACA), les attaques informatiques ne visent plus uniquement les grands groupes du secteur maritime ou logistique : les TPE et PME locales sont désormais en première ligne. Au niveau national, l'ANSSI constate que les PME, TPE et ETI restent la catégorie d'entités la plus touchée par les rançongiciels parmi les attaques portées à sa connaissance en 2025 ([Panorama de la cybermenace 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/)). Face à cette menace grandissante, réaliser un **audit sécurité site web Marseille** régulier est devenu un impératif de gestion. En 2025, grâce à l'intelligence artificielle, l'évaluation complète de votre niveau de protection ne prend plus que 60 secondes.
 
 ---
 
-## Cyberattaques sur PME PACA et coût moyen d'une faille
+## Cyberattaques sur les PME de PACA : ce que coûte une faille
 
 La transition numérique accélérée des entreprises marseillaises s'est trop souvent faite au détriment de la sécurité informatique. Beaucoup de dirigeants sous-estiment la valeur stratégique de leurs systèmes informatiques et de leurs sites web jusqu'au jour où l'incident survient.
 
-Les chiffres du paysage de la **cybersécurité PME Marseille** révèlent une réalité préoccupante :
+Le paysage de la **cybersécurité PME Marseille** révèle une réalité préoccupante :
 
-- **Un coût moyen dévastateur** : La mise en indisponibilité d'un site web ou le vol d'une base de données clients coûte en moyenne entre 35 000 € et 90 000 € à une PME en région PACA. Ce montant intègre les frais d'intervention technique d'urgence, l'interruption d'activité, les sanctions de la CNIL et la perte d'exploitation.
+- **Un coût qui s'additionne** : La mise en indisponibilité d'un site web ou le vol d'une base de données clients se paie de plusieurs façons : frais d'intervention technique d'urgence, interruption d'activité, sanctions possibles de la CNIL et perte d'exploitation.
 - **Le préjudice d'image ultime** : Lorsqu'un site web d'entreprise est piraté ou redirige vers des contenus malveillants, la confiance accordée par vos clients et partenaires locaux s'effondre instantanément. Il faut souvent plusieurs années pour restaurer sa réputation commerciale.
 - **Une vulnérabilité exploitée automatiquement** : La grande majorité des attaques ne sont pas menées par des pirates ciblant spécifiquement votre entreprise, mais par des robots automatisés qui scannent le web à la recherche d'équipements non mis à jour et de failles connues.
 
@@ -4020,7 +4020,7 @@ Lors des analyses réalisées sur le tissu économique de Marseille et ses envir
 
 Voici les constats les plus fréquents et leurs solutions immédiates :
 
-- **Absence de protection DMARC** : Plus de 70 % des TPE marseillaises n'ont pas configuré correctement leurs enregistrements d'authentification d'email, exposant leurs clients à des arnaques au faux ordre de virement. *Correction* : Ajout de lignes de configuration DNS recommandées par l'outil en quelques minutes auprès de votre hébergeur.
+- **Absence de protection DMARC** : Sans enregistrement DMARC correctement configuré, il devient plus facile d'envoyer des e-mails qui semblent venir de votre domaine, et vos clients sont exposés à des arnaques au faux ordre de virement. *Correction* : Ajout de lignes de configuration DNS recommandées par l'outil en quelques minutes auprès de votre hébergeur.
 - **En-têtes de sécurité manquants** : La quasi-totalité des sites web réalisés sur des CMS classiques n'activent pas par défaut les en-têtes HSTS ou CSP. *Correction* : Activation de règles de sécurité au niveau du serveur web ou du pare-feu applicatif (WAF).
 - **Plugins et scripts tiers obsolètes** : Des extensions inutilisées ou non mises à jour depuis des mois constituent la première cause de piratage des sites vitrines. *Correction* : Désactivation des composants superflus et mise en place de mises à jour de sécurité automatisées.
 

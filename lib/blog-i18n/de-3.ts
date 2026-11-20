@@ -130,7 +130,7 @@ Die Sprachfunktion beginnt bei 79 € pro Monat mit 200 inklusiven Gesprächsmin
 
 - **Einfache Präsentations-Website: 400 bis 1.500 €**, Website mit Reservierung oder Onlineshop: 1.500 bis 6.000 €, komplexe Individualentwicklung: ab 6.000 €
 - **Der angezeigte Preis ist nie der Gesamtpreis** — rechnen Sie Hosting, Domain, Wartung und Updates hinzu
-- **Ein Angebot, in dem die Inhaltsseiten nicht beziffert sind, ist unvollständig**: Das Texten macht oft 30 % der tatsächlichen Arbeit aus
+- **Ein Angebot, in dem die Inhaltsseiten nicht beziffert sind, ist unvollständig**: Das Texten ist ein großer Teil der Arbeit
 - **Das eigentliche Risiko ist nicht, zu viel zu bezahlen, sondern für eine Website zu bezahlen, die niemand besucht** — eine Website ohne Suchmaschinenoptimierung ist eine überteuerte Broschüre
 
 ---
@@ -208,13 +208,13 @@ Wenn Sie über Ihre Website auch nur einen Kunden pro Monat gewinnen, bei einem 
 
 Seit zwei Jahren gibt es einen dritten Weg zwischen dem Website-Baukasten, bei dem Sie alles selbst machen, und der Agentur für mehrere Tausend Euro: Plattformen, die aus Ihren Branchenangaben eine professionelle Website erzeugen, mit bereits strukturierter Suchmaschinenoptimierung.
 
-Der Vorteil ist nicht nur der Preis, sondern die Zeit: eine Website, die in wenigen Tagen online ist statt nach sechs Wochen Hin und Her. Der Kompromiss: Sie starten mit einer Branchenvorlage statt mit einem originellen Grafikdesign — was für 90 % der Geschäfte und Dienstleister keinerlei geschäftliche Folgen hat.
+Der Vorteil ist nicht nur der Preis, sondern die Zeit: eine Website, die in wenigen Tagen online ist statt nach sechs Wochen Hin und Her. Der Kompromiss: Sie starten mit einer Branchenvorlage statt mit einem originellen Grafikdesign — was für viele Geschäfte und Dienstleister keinerlei geschäftliche Folgen hat.
 
 [Aevia Launch](https://launch.aevia.services) funktioniert nach diesem Prinzip: Website online innerhalb von 48 Stunden (5 bis 7 Tage für eine individuelle Premium-Website), von 399 € bis 1.499 € als Einmalzahlung, danach 20 € pro Monat für Hosting und Wartung.`,
     faq: [
       {
         q: "Was kostet eine professionelle Website in Frankreich durchschnittlich?",
-        a: "Für ein Kleinstunternehmen oder Selbstständige liegt der Medianpreis einer Präsentations-Website zwischen 800 und 2.500 €. Unter 400 € handelt es sich meist um eine Vorlage ohne Arbeit an Inhalten und Suchmaschinenoptimierung. Über 5.000 € beginnt die Individualentwicklung oder der E-Commerce.",
+        a: "Für ein Kleinstunternehmen oder Selbstständige kostet eine Präsentations-Website in der Regel zwischen 800 und 2.500 €. Unter 400 € handelt es sich meist um eine Vorlage ohne Arbeit an Inhalten und Suchmaschinenoptimierung. Über 5.000 € beginnt die Individualentwicklung oder der E-Commerce.",
       },
       {
         q: "Muss man für eine Website ein monatliches Abo bezahlen?",
@@ -280,7 +280,7 @@ Umgekehrt hat ein Beratungsbüro mit drei Anrufen pro Tag, alle heikel und alle 
 
 ## Was die KI konkret besser macht
 
-**Die Randzeiten.** 30 bis 40 % der Anrufe bei einem Geschäft gehen außerhalb der Öffnungszeiten oder mitten im größten Andrang ein. Genau diese Anrufe nimmt kein Mensch an, und kein Sekretariat deckt sie ohne Aufpreis ab.
+**Die Randzeiten.** Ein Teil der Anrufe bei einem Geschäft geht außerhalb der Öffnungszeiten oder mitten im größten Andrang ein. Genau diese Anrufe nimmt kein Mensch an, und kein Sekretariat deckt sie ohne Aufpreis ab.
 
 **Die Spitzen.** Am Freitagabend rufen in einem Restaurant sechs Personen gleichzeitig an. Ein Sekretariat setzt fünf Anrufe in die Warteschleife; ein Sprachagent nimmt alle sechs an.
 
@@ -298,7 +298,7 @@ Deshalb ist die beste Konfiguration fast nie das eine oder das andere. Der Sprac
 
 ## In drei Fragen zur Entscheidung
 
-1. **Welcher Anteil Ihrer Anrufe ähnelt sich?** Notieren Sie Ihre Anrufe eine Woche lang. Wenn mehr als 60 % auf drei Anliegen entfallen, lohnt sich die Automatisierung.
+1. **Welcher Anteil Ihrer Anrufe ähnelt sich?** Notieren Sie Ihre Anrufe eine Woche lang. Wenn die meisten auf drei Anliegen entfallen, lohnt sich die Automatisierung.
 2. **Wie viele Anrufe werden nie angenommen?** Ihr Telefonanbieter oder Ihr Telefon zeigt es Ihnen an. Diese Zahl rechtfertigt die Ausgabe, nicht die Gesamtzahl der Anrufe.
 3. **Was möchten Sie am Ende des Anrufs in der Hand haben?** Wenn eine Nachricht genügt, passt ein Sekretariat. Wenn Sie einen bereits eingetragenen Termin möchten, brauchen Sie ein System, das mit Ihrem Kalender verbunden ist.
 
@@ -505,7 +505,7 @@ Genau das macht [Aevia Inbox](https://inbox.aevia.services): fünf Sprachen nati
       "Zwei Produkte tragen denselben Namen und erfüllen nicht dieselbe Aufgabe. Das eine ist eine App auf einem Smartphone, das andere eine Infrastruktur ohne Bildschirm. Wer das falsche wählt, zahlt entweder unnötig Geld oder riskiert eine Kontosperre im ungünstigsten Moment.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **Die WhatsApp Business App ist kostenlos**, läuft auf einem Smartphone und reicht bis etwa 5 Unterhaltungen pro Tag
+- **Die WhatsApp Business App ist kostenlos**, läuft auf einem Smartphone und reicht, solange eine einzige Person antwortet
 - **Die WhatsApp Business API hat keine Oberfläche**: Sie ist eine technische Verbindung, die an ein Tool angeschlossen wird, gemacht für Volumen und Teamarbeit
 - **Eine Nummer kann nicht auf beiden gleichzeitig laufen** — der Wechsel zur API lässt sich nicht einfach rückgängig machen
 - **Unaufgeforderte Nachrichten aus der App zu verschicken, ist der sicherste Weg, die eigene Nummer sperren zu lassen**
@@ -541,7 +541,7 @@ WhatsApp bietet unter derselben Marke zwei sehr unterschiedliche Dinge an.
 Drei Signale zeigen, dass die App nicht mehr ausreicht:
 
 1. **Mehrere Personen müssen antworten.** Die App ist an ein Smartphone gebunden. Sobald zwei Angestellte dieselben Unterhaltungen bearbeiten müssen, reichen Sie ein Gerät hin und her, und das ist auf Dauer nicht haltbar.
-2. **Sie verlieren den Überblick.** Ohne geteilten Verlauf und ohne Zuweisung wird jede zweite Anfrage doppelt oder gar nicht bearbeitet.
+2. **Sie verlieren den Überblick.** Ohne geteilten Verlauf und ohne Zuweisung werden Anfragen doppelt oder gar nicht bearbeitet.
 3. **Sie möchten automatisch antworten.** Die Schnellantworten der App verstehen die Anfrage nicht: Sie fügen einen Text ein, den Sie geschrieben haben.
 
 ---
@@ -598,7 +598,7 @@ Genau das macht [Aevia Inbox](https://inbox.aevia.services): Die API-Anbindung w
       "Ein Kfz-Mechaniker kann nicht ans Telefon gehen, wenn er mit den Händen im Öl steckt. Jeder verpasste Anruf ist eine Inspektion, die zur Konkurrenz gegenüber wandert. Wie ein Sprachagent Termine annimmt, während die Werkstatt weiterläuft — und was Sie ihm nicht überlassen sollten.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **Eine Werkstatt verpasst 30 bis 50 % ihrer Anrufe** während der Werkstattzeiten: Niemand sitzt im Büro, und unter der Hebebühne geht keiner ans Telefon
+- **Eine Werkstatt verpasst Anrufe** während der Werkstattzeiten: Niemand sitzt im Büro, und unter der Hebebühne geht keiner ans Telefon
 - **Wer nicht durchkommt, ruft nicht zurück** — er ruft die nächste Werkstatt an, denn eine Panne lässt sich nicht vertagen
 - **Ein Sprachagent nimmt den Termin auf**, mit Anlass und Fahrzeug, und trägt ihn in den Kalender ein, ohne die laufende Arbeit zu unterbrechen
 - **Was Sie ihm NICHT überlassen sollten**: die Diagnose und die Kostenschätzung. Ein Preis, der am Telefon genannt und dann in der Werkstatt widerlegt wird, zerstört das Vertrauen

@@ -9,7 +9,7 @@ export const DE_2: Record<string, BlogPostTranslation> = {
     content: `## Das Wichtigste in 30 Sekunden
 
 - **Segmentierung** = Ihre Kunden in homogene Gruppen einteilen, um sie unterschiedlich anzusprechen
-- **Kundenbindung kostet 5- bis 7-mal weniger als Neukundengewinnung** — setzt aber voraus, dass Sie Ihre Kunden gut kennen
+- **Einen Kunden zu gewinnen kostet 5- bis 25-mal mehr, als einen zu halten**, je nach Studie und Branche ([Harvard Business Review, 2014](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)) — Kundenbindung setzt voraus, dass Sie Ihre Kunden gut kennen
 - **4 grundlegende Segmentierungen**: Zeitpunkt des letzten Kaufs, Kaufhäufigkeit, durchschnittlicher Warenkorb, bevorzugter Kontaktkanal
 - **Ein CRM oder eine zentrale Inbox** ist unverzichtbar, um wirksam zu segmentieren
 
@@ -71,13 +71,13 @@ Ein CRM oder eine zentrale Inbox wie **Aevia Inbox** ermöglicht es Ihnen:
 
 ## In die Praxis umsetzen: 3 konkrete Maßnahmen für diese Woche
 
-**Maßnahme 1 — Ermitteln Sie die 20 % Ihrer Kunden, die 80 % Ihres Umsatzes erzielen**
+**Maßnahme 1 — Ermitteln Sie die Kunden, die den größten Teil Ihres Umsatzes erzielen**
 
 Das ist das Pareto-Prinzip. Diese Kunden verdienen besondere Aufmerksamkeit: Treueprogramm, bevorzugter Zugang, persönlicher Kontakt. Wenn Sie sie nicht verwöhnen, tut es jemand anderes.
 
 **Maßnahme 2 — Listen Sie Ihre Kunden auf, die seit mehr als 6 Monaten inaktiv sind**
 
-Das sind Ihre „Schläfer“. Eine einfache persönliche Nachricht — „Wir haben an Sie gedacht, hier ist ein Willkommen-zurück-Angebot“ — reaktiviert oft 10 bis 20 % dieser Liste.
+Das sind Ihre „Schläfer“. Eine einfache persönliche Nachricht — „Wir haben an Sie gedacht, hier ist ein Willkommen-zurück-Angebot“ — kann einen Teil davon zurückholen. Notieren Sie, wie viele: Das ist Ihr Vergleichswert für die nächste Aktion.
 
 **Maßnahme 3 — Ordnen Sie Ihre Kontakte nach ihrem bevorzugten Kanal**
 
@@ -97,7 +97,7 @@ Wichtig ist, anzufangen. Selbst eine einfache Segmentierung (aktiv vs. inaktiv, 
       "Eine Website allein reicht nicht mehr. Entdecken Sie die 5 Hebel, die wirklich den Unterschied machen, damit man Sie im Internet findet — und sich für Sie entscheidet.",
     content: `## Warum Ihre Online-Präsenz Ihr bester Verkäufer ist
 
-Im Jahr 2026 tut ein potenzieller Kunde als Erstes, bevor er Sie anruft oder Ihr Geschäft betritt, eines: Er sucht Sie bei Google. In weniger als 10 Sekunden beurteilt er Ihre Seriosität und Ihre Glaubwürdigkeit und entscheidet, ob er Sie kontaktiert oder zur Konkurrenz geht.
+Im Jahr 2026 tut ein potenzieller Kunde als Erstes, bevor er Sie anruft oder Ihr Geschäft betritt, eines: Er sucht Sie bei Google. In wenigen Sekunden beurteilt er Ihre Seriosität und Ihre Glaubwürdigkeit und entscheidet, ob er Sie kontaktiert oder zur Konkurrenz geht.
 
 Die gute Nachricht? Die meisten Kleinbetriebe und KMU vernachlässigen diese Realität noch immer. Das heißt: Wenn Sie jetzt handeln, haben Sie ein echtes Zeitfenster.
 
@@ -114,7 +114,7 @@ Eine gute Website im Jahr 2026 bietet:
 - **Eine glasklare Hauptbotschaft** ab der ersten Sekunde — was Sie tun, für wen und warum man Sie wählen sollte
 - **Eine klare visuelle Hierarchie** — der Besucher weiß, wohin er klicken soll
 - **Ein Kontaktformular oder einen gut sichtbaren Call-to-Action-Button** auf jeder Seite
-- **Ein Mobile-first-Design** — mehr als 65 % der Besuche kommen vom Smartphone
+- **Ein Mobile-first-Design** — Mobilgeräte machen 59,9 % des weltweiten Web-Traffics aus ([StatCounter, Oktober 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet))
 
 Lösungen wie Aevia Launch liefern eine professionelle, individuelle Website, die innerhalb von 48 Stunden online ist (5 bis 7 Tage für eine maßgeschneiderte Premium-Website) — ohne Qualität für Geschwindigkeit zu opfern.
 
@@ -144,7 +144,7 @@ Was Sie regelmäßig tun sollten:
 - **Aktualisieren Sie Ihre Öffnungszeiten** — vor allem an Feiertagen
 - **Veröffentlichen Sie Beiträge** (Angebote, Veranstaltungen, Neuheiten) — mindestens zweimal im Monat
 - **Beantworten Sie alle Bewertungen**, positive wie negative — das zeigt, dass Sie aktiv und professionell sind
-- **Fügen Sie Fotos hinzu** von Ihrem Team, Ihren Räumlichkeiten, Ihren Produkten — Profile mit Fotos erhalten 42 % mehr Routenanfragen
+- **Fügen Sie Fotos hinzu** von Ihrem Team, Ihren Räumlichkeiten, Ihren Produkten — laut Google helfen Fotos, Ihr Unternehmen hervorzuheben ([Google Business Profile-Hilfe](https://support.google.com/business/answer/6123536))
 
 ---
 
@@ -164,7 +164,7 @@ Was 2026 funktioniert: authentische und nützliche Inhalte. Keine verkappte Werb
 
 ## 5. Die Ladegeschwindigkeit — das Unsichtbare, das teuer wird
 
-Eine Zahl, die zu denken gibt: Wenn Ihre Website länger als 3 Sekunden zum Laden braucht, verlassen 53 % der mobilen Besucher sie, ohne auch nur eine Seite gesehen zu haben.
+Eine Zahl, die zu denken gibt: Laut Google werden 53 % der mobilen Besuche voraussichtlich abgebrochen, wenn eine Seite länger als 3 Sekunden lädt ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/)).
 
 Die Geschwindigkeit wirkt sich zugleich auf Ihre Absprungrate, Ihre Conversion-Rate und Ihre Position in den Google-Ergebnissen aus (Core Web Vitals).
 
@@ -195,7 +195,7 @@ Online-Präsenz ist kein Kästchen zum Abhaken — sie ist ein Wert, der über d
 
 „Ich bin doch nur ein kleines Unternehmen, wer sollte meine Website hacken wollen?“
 
-Das ist die gefährlichste Denkweise überhaupt. Tatsächlich richten sich 43 % der Cyberangriffe gegen kleine Strukturen — nicht, weil sie an sich interessante Ziele wären, sondern weil sie leichte Beute sind.
+Das ist die gefährlichste Denkweise überhaupt. Tatsächlich bleiben laut der ANSSI, der französischen Behörde für Cybersicherheit, kleine und mittlere Unternehmen 2025 die am stärksten von Ransomware betroffene Kategorie unter den ihr gemeldeten Angriffen ([ANSSI, 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-003/)) — nicht, weil sie an sich interessante Ziele wären, sondern weil sie oft leichte Beute sind.
 
 Die Bots, die das Internet nach Schwachstellen durchsuchen, unterscheiden nicht zwischen einem multinationalen Konzern und der Präsentationswebsite einer Bäckerei. Sie testen überall dieselben Lücken, automatisch, 24 Stunden am Tag.
 
@@ -308,7 +308,7 @@ Ihre Kunden werden ihre Gewohnheiten nicht ändern. Es liegt an Ihnen, sich anzu
 
 ### Explodierende Antwortzeiten
 
-Studien zeigen es: 90 % der Kunden erwarten bei Messengern eine Antwort in weniger als einer Stunde. Wenn Sie 4 oder 5 verschiedene Kanäle manuell betreuen, wird es physisch unmöglich, diesen Standard einzuhalten.
+Bei Messengern erwartet der Kunde eine schnelle Antwort: Das liegt im Wesen des Kanals. Wenn Sie 4 oder 5 verschiedene Kanäle manuell betreuen, wird es physisch unmöglich, dieses Tempo zu halten.
 
 ### Verlorene oder vergessene Nachrichten
 
@@ -365,7 +365,7 @@ Bevor Sie irgendeine Automatisierung aktivieren, listen Sie die 10–15 Fragen a
 
 ### Schritt 4 — Kommunizieren Sie Ihre Antwortzeiten
 
-Selbst mit dem besten Tool der Welt ist es wichtig, die Erwartungen der Kunden zu steuern. Geben Sie auf Ihrer Website und Ihren Social-Media-Profilen klar an, wann Sie erreichbar sind und wie lange Sie im Durchschnitt für eine Antwort brauchen.
+Selbst mit dem besten Tool der Welt ist es wichtig, die Erwartungen der Kunden zu steuern. Geben Sie auf Ihrer Website und Ihren Social-Media-Profilen klar Ihre Erreichbarkeitszeiten und Ihre durchschnittliche Antwortzeit an.
 
 ---
 

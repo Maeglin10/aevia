@@ -327,14 +327,14 @@ Die Regel ist einfach: Alles, was eine exakte, irgendwo aufgeschriebene Antwort 
 
 ## Selbst machen, auslagern oder einer KI übertragen: die Rechnung
 
-Messen Sie zuerst eine normale Woche: wie viele Nachrichten pro Tag und wie viele Minuten Sie jede im Durchschnitt kostet, einschließlich der Suche nach der Bestellung.
+Messen Sie zuerst eine normale Woche: wie viele Nachrichten pro Tag und wie viele Minuten Sie jede kostet, einschließlich der Suche nach der Bestellung.
 
 **Als Beispiel**, mit Zahlen, die Sie durch Ihre eigenen ersetzen: 20 Nachrichten pro Tag zu je drei Minuten sind eine Stunde pro Tag, also etwa 30 Stunden pro Monat.
 
 Vergleichen Sie dann drei Optionen:
 
 - **Es selbst behalten.** Das kostet kein Geld, aber diese Stunden fehlen bei der Produktion, den Fotos, der Kundengewinnung oder an Ihren Abenden.
-- **Es an einen Freelancer oder einen Kundenservice-Dienstleister auslagern.** Fordern Sie ein Angebot auf Grundlage Ihrer realen Zahlen an und prüfen Sie die abgedeckten Zeiten, die garantierte Antwortzeit und die Zugänge zu Ihrem Shop, die Sie vergeben müssten.
+- **Es an einen Freelancer oder einen Kundenservice-Dienstleister auslagern.** Fordern Sie ein Angebot auf Grundlage Ihrer eigenen Zahlen an und prüfen Sie die abgedeckten Zeiten, die garantierte Antwortzeit und die Zugänge zu Ihrem Shop, die Sie vergeben müssten.
 - **Die wiederkehrenden Fragen einem KI-Agenten übertragen.** Der Preis ist fest, und die Antwort geht zu jeder Uhrzeit raus, auch abends und am Wochenende; Sie behalten nur die Ausnahmen. Bei Aevia Inbox kostet der Einstiegstarif 79 € pro Monat für 2.000 KI-Nachrichten, zuzüglich 100 € einmaliger Einrichtungsgebühr, ohne Vertragsbindung.
 
 Die beiden letzten Optionen lassen sich kombinieren: Der Agent beantwortet die Fragen, die eine exakte Antwort haben, und eine Person — Sie oder ein Dienstleister — kümmert sich um den Rest. Was ein Agent auf WhatsApp im Einzelnen leisten kann, lesen Sie in [unserem Leitfaden zum KI-Agenten für WhatsApp im Onlineshop](/de/blog/agent-ia-whatsapp-boutique-en-ligne).

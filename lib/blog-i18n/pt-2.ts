@@ -9,7 +9,7 @@ export const PT_2: Record<string, BlogPostTranslation> = {
     content: `## O essencial em 30 segundos
 
 - **Segmentação** = dividir seus clientes em grupos homogêneos para falar com cada grupo de um jeito diferente
-- **Fidelizar custa de 5 a 7 vezes menos do que conquistar novos clientes** — mas exige conhecer bem os seus clientes
+- **Conquistar um cliente custa de 5 a 25 vezes mais do que manter um**, conforme o estudo e o setor ([Harvard Business Review, 2014](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)) — fidelizar exige conhecer bem os seus clientes
 - **4 segmentações básicas**: recência, frequência, ticket médio, canal de contato preferido
 - **Um CRM ou uma caixa de entrada unificada** é indispensável para segmentar com eficácia
 
@@ -71,13 +71,13 @@ Um CRM ou uma caixa de entrada unificada como o **Aevia Inbox** permite:
 
 ## Na prática: 3 ações concretas para esta semana
 
-**Ação 1 — Identifique os 20% de clientes que geram 80% do seu faturamento**
+**Ação 1 — Identifique os clientes que geram a maior parte do seu faturamento**
 
 É o princípio de Pareto. Esses clientes merecem uma atenção especial: programa de fidelidade, acesso prioritário, contato personalizado. Se você não cuidar bem deles, outra empresa vai cuidar.
 
 **Ação 2 — Liste os clientes inativos há mais de 6 meses**
 
-Esses são os seus "adormecidos". Uma simples mensagem personalizada — "Lembramos de você, aqui vai uma oferta especial de boas-vindas de volta" — costuma reativar de 10 a 20% dessa lista.
+Esses são os seus "adormecidos". Uma simples mensagem personalizada — "Lembramos de você, aqui vai uma oferta especial de boas-vindas de volta" — pode trazer uma parte deles de volta. Anote quantos: esse é o seu ponto de comparação para a próxima campanha.
 
 **Ação 3 — Classifique seus contatos de acordo com o canal preferido**
 
@@ -97,7 +97,7 @@ O importante é começar. Mesmo uma segmentação simples (ativos vs. inativos, 
       "Ter um site já não basta. Descubra as 5 alavancas que realmente fazem diferença para que as pessoas encontrem você — e escolham você — na internet.",
     content: `## Por que sua presença on-line é o seu melhor vendedor
 
-Em 2026, a primeira coisa que um cliente em potencial faz antes de ligar para você ou entrar no seu estabelecimento é procurar você no Google. Em menos de 10 segundos, ele avalia a sua seriedade e a sua credibilidade, e decide se vai entrar em contato ou passar para o concorrente.
+Em 2026, a primeira coisa que um cliente em potencial faz antes de ligar para você ou entrar no seu estabelecimento é procurar você no Google. Em poucos segundos, ele avalia a sua seriedade e a sua credibilidade, e decide se vai entrar em contato ou passar para o concorrente.
 
 A boa notícia? A maioria das micro, pequenas e médias empresas ainda ignora essa realidade. Isso significa que, se você agir agora, tem uma verdadeira janela de oportunidade.
 
@@ -114,7 +114,7 @@ Um bom site em 2026 tem:
 - **Uma mensagem principal cristalina** desde o primeiro segundo — o que você faz, para quem e por que escolher você
 - **Uma hierarquia visual clara** — o visitante sabe onde clicar
 - **Um formulário de contato ou um botão de chamada para ação visível** em todas as páginas
-- **Um design mobile-first** — mais de 65% das visitas vêm do smartphone
+- **Um design mobile-first** — os celulares respondem por 59,9% do tráfego web mundial ([StatCounter, outubro de 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet))
 
 Soluções como o Aevia Launch permitem ter um site profissional e personalizado no ar em até 48 horas (5 a 7 dias para um site Premium sob medida) — sem sacrificar a qualidade em nome da rapidez.
 
@@ -144,7 +144,7 @@ O que fazer regularmente:
 - **Atualize seus horários** — principalmente nos feriados
 - **Publique posts** (ofertas, eventos, novidades) — pelo menos duas vezes por mês
 - **Responda a todas as avaliações**, positivas e negativas — isso mostra que você é ativo e profissional
-- **Adicione fotos** da sua equipe, do seu espaço, dos seus produtos — os perfis com fotos recebem 42% mais pedidos de rota
+- **Adicione fotos** da sua equipe, do seu espaço, dos seus produtos — segundo o Google, as fotos ajudam o seu negócio a se destacar ([ajuda do Perfil da Empresa no Google](https://support.google.com/business/answer/6123536))
 
 ---
 
@@ -164,7 +164,7 @@ O que funciona em 2026: conteúdo autêntico e útil. Nada de propaganda disfar�
 
 ## 5. A velocidade de carregamento — o invisível que custa caro
 
-Um dado para refletir: se o seu site leva mais de 3 segundos para carregar, 53% dos visitantes no celular vão embora sem ver uma única página.
+Um dado para refletir: segundo o Google, 53% das visitas no celular tendem a ser abandonadas se a página leva mais de 3 segundos para carregar ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/)).
 
 A velocidade afeta ao mesmo tempo a sua taxa de rejeição, a sua taxa de conversão e a sua posição nos resultados do Google (Core Web Vitals).
 
@@ -195,7 +195,7 @@ A presença on-line não é um item para marcar numa lista — é um ativo que s
 
 "Sou só uma pequena empresa, quem iria querer invadir o meu site?"
 
-Esse é o raciocínio mais perigoso que existe. A realidade é que 43% dos ataques cibernéticos têm como alvo pequenas estruturas — não porque sejam alvos interessantes em si, mas porque são presas fáceis.
+Esse é o raciocínio mais perigoso que existe. A realidade: segundo a ANSSI, a agência nacional francesa de cibersegurança, as pequenas e médias empresas continuam sendo a categoria mais afetada por ransomware entre os ataques comunicados a ela em 2025 ([ANSSI, 2025](https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-003/)) — não porque sejam alvos interessantes em si, mas porque muitas vezes são presas fáceis.
 
 Os bots que varrem a internet em busca de vulnerabilidades não distinguem uma multinacional do site institucional de uma padaria. Eles testam as mesmas falhas em todo lugar, automaticamente, 24h por dia.
 
@@ -308,7 +308,7 @@ Seus clientes não vão mudar os hábitos deles. Cabe a você se adaptar — mas
 
 ### Tempos de resposta que disparam
 
-Os estudos mostram: 90% dos clientes esperam uma resposta em menos de uma hora nos aplicativos de mensagens. Quando você gerencia manualmente 4 ou 5 canais diferentes, cumprir esse padrão se torna fisicamente impossível.
+Nos aplicativos de mensagens, o cliente espera uma resposta rápida: é a própria natureza do canal. Quando você gerencia manualmente 4 ou 5 canais diferentes, manter esse ritmo se torna fisicamente impossível.
 
 ### Mensagens perdidas ou esquecidas
 

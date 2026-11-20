@@ -176,11 +176,14 @@ export const LANGUE_INBOX = { fr: "fr", en: "en", es: "es", pt: "pt-br", de: "en
 
 /**
  * Sources externes publiées en français ET en anglais : une page non française
- * cite la version anglaise (la CNIL ne publie qu'en français et en anglais).
+ * cite la version anglaise (la CNIL et l'ANSSI ne publient qu'en français et
+ * en anglais).
  */
 export const PAGES_TRADUITES = {
   "https://www.cnil.fr/fr/sanctions-et-mesures-correctrices-bilan-2024-de-laction-de-la-cnil":
     "https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024",
+  // ANSSI, Panorama de la cybermenace 2025 → Cyber Threat Overview 2025.
+  "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-002/": "https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-003/",
 };
 
 /**

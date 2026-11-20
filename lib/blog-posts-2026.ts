@@ -856,14 +856,14 @@ La règle est simple : tout ce qui a une réponse exacte, écrite quelque part, 
 
 ## Le faire soi-même, l'externaliser ou le confier à une IA : le calcul
 
-Commencez par mesurer une semaine normale : combien de messages par jour, et combien de minutes vous prend chacun en moyenne, recherche de la commande comprise.
+Commencez par mesurer une semaine normale : combien de messages par jour, et combien de minutes vous prend chacun, recherche de la commande comprise.
 
 **À titre d'exemple**, avec des chiffres à remplacer par les vôtres : 20 messages par jour à trois minutes chacun, c'est une heure par jour, soit environ 30 heures par mois.
 
 Comparez ensuite trois options :
 
 - **Le garder pour vous.** Ça ne coûte rien en argent, mais ces heures sont prises sur la production, les photos, la prospection ou vos soirées.
-- **L'externaliser à un freelance ou à un prestataire de service client.** Demandez un devis sur la base de vos chiffres réels, et vérifiez les horaires couverts, le délai de réponse garanti et les accès qu'il faudra donner à votre boutique.
+- **L'externaliser à un freelance ou à un prestataire de service client.** Demandez un devis sur la base de vos propres chiffres, et vérifiez les horaires couverts, le délai de réponse garanti et les accès qu'il faudra donner à votre boutique.
 - **Confier les questions répétitives à un agent IA.** Le prix est fixe et la réponse part à toute heure, y compris le soir et le week-end ; vous ne gardez que les exceptions. Chez Aevia Inbox, la formule de départ coûte 79 € par mois pour 2 000 messages IA, plus 100 € de mise en service unique, sans engagement.
 
 Les deux dernières options se combinent : l'agent répond aux questions qui ont une réponse exacte, et une personne — vous ou un prestataire — traite le reste. Pour le détail de ce qu'un agent peut faire sur WhatsApp, lisez [notre guide de l'agent IA WhatsApp pour boutique en ligne](/fr/blog/agent-ia-whatsapp-boutique-en-ligne).
@@ -988,14 +988,14 @@ The rule is simple: anything with an exact answer, written down somewhere, can b
 
 ## Doing it yourself, outsourcing it or handing it to an AI: the calculation
 
-Start by measuring a normal week: how many messages per day, and how many minutes each one takes you on average, including looking up the order.
+Start by measuring a normal week: how many messages per day, and how many minutes each one takes you, including looking up the order.
 
 **As an example**, with figures to replace with your own: 20 messages a day at three minutes each is an hour a day, or about 30 hours a month.
 
 Then compare three options:
 
 - **Keeping it yourself.** It costs nothing in money, but those hours come out of production, photos, prospecting or your evenings.
-- **Outsourcing it to a freelancer or a customer service provider.** Ask for a quote based on your real figures, and check the hours covered, the guaranteed response time and the access you will have to give to your shop.
+- **Outsourcing it to a freelancer or a customer service provider.** Ask for a quote based on your own figures, and check the hours covered, the guaranteed response time and the access you will have to give to your shop.
 - **Handing the repetitive questions to an AI agent.** The price is fixed and the reply goes out at any hour, including evenings and weekends; you keep only the exceptions. At Aevia Inbox, the entry plan costs €79 a month for 2,000 AI messages, plus a one-off €100 setup fee, no commitment.
 
 The last two options combine: the agent answers the questions that have an exact answer, and a person — you or a provider — handles the rest. For the details of what an agent can do on WhatsApp, read [our guide to an AI WhatsApp agent for online shops](/en/blog/agent-ia-whatsapp-boutique-en-ligne).
@@ -1105,14 +1105,14 @@ La regla es sencilla: todo lo que tiene una respuesta exacta, escrita en alguna 
 
 ## Hacerlo tú, externalizarlo o confiarlo a una IA: el cálculo
 
-Empieza por medir una semana normal: cuántos mensajes al día y cuántos minutos te lleva cada uno de media, incluida la búsqueda del pedido.
+Empieza por medir una semana normal: cuántos mensajes al día y cuántos minutos te lleva cada uno, incluida la búsqueda del pedido.
 
 **A modo de ejemplo**, con cifras que debes sustituir por las tuyas: 20 mensajes al día a tres minutos cada uno son una hora al día, es decir, unas 30 horas al mes.
 
 Después compara tres opciones:
 
 - **Quedártelo tú.** No cuesta dinero, pero esas horas se le restan a la producción, las fotos, la prospección o tus noches.
-- **Externalizarlo a un freelance o a un proveedor de atención al cliente.** Pide un presupuesto basado en tus cifras reales y comprueba el horario cubierto, el plazo de respuesta garantizado y los accesos a tu tienda que habrá que darle.
+- **Externalizarlo a un freelance o a un proveedor de atención al cliente.** Pide un presupuesto basado en tus propias cifras y comprueba el horario cubierto, el plazo de respuesta garantizado y los accesos a tu tienda que habrá que darle.
 - **Confiar las preguntas repetitivas a un agente de IA.** El precio es fijo y la respuesta sale a cualquier hora, también por la noche y el fin de semana; tú solo te quedas con las excepciones. En Aevia Inbox, el plan de entrada cuesta 79 € al mes por 2 000 mensajes de IA, más 100 € de puesta en marcha única, sin permanencia.
 
 Las dos últimas opciones se combinan: el agente responde a las preguntas que tienen una respuesta exacta, y una persona — tú o un proveedor — se ocupa del resto. Para ver en detalle lo que puede hacer un agente en WhatsApp, lee [nuestra guía del agente de IA de WhatsApp para tiendas online](/es/blog/agent-ia-whatsapp-boutique-en-ligne).
@@ -2668,7 +2668,7 @@ La voz empieza en 79 € al mes con 200 minutos de llamada incluidos, más 100 �
 
 - **Site vitrine simple : 400 à 1 500 €**, site avec réservation ou boutique : 1 500 à 6 000 €, sur-mesure complexe : 6 000 € et plus
 - **Le prix d'affichage n'est jamais le prix total** — comptez l'hébergement, le nom de domaine, la maintenance et les mises à jour
-- **Un devis sans page de contenu chiffrée est un devis incomplet** : la rédaction représente souvent 30 % du travail réel
+- **Un devis sans page de contenu chiffrée est un devis incomplet** : la rédaction est une part importante du travail
 - **Le vrai risque n'est pas de payer trop cher, c'est de payer pour un site que personne ne visite** — un site sans référencement est une plaquette hors de prix
 
 ---
@@ -2746,13 +2746,13 @@ Si vous recevez ne serait-ce qu'un client par mois grâce à votre site, avec un
 
 Depuis deux ans, une troisième voie existe entre le constructeur de site où vous faites tout vous-même et l'agence à plusieurs milliers d'euros : des plateformes qui génèrent un site professionnel à partir de vos informations métier, avec le référencement déjà structuré.
 
-L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en quelques jours plutôt qu'en six semaines de va-et-vient. Le compromis, c'est que vous partez d'un modèle sectoriel plutôt que d'une création graphique originale — ce qui, pour 90 % des commerces et prestataires, n'a aucune conséquence commerciale.
+L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en quelques jours plutôt qu'en six semaines de va-et-vient. Le compromis, c'est que vous partez d'un modèle sectoriel plutôt que d'une création graphique originale — ce qui, pour beaucoup de commerces et de prestataires, n'a aucune conséquence commerciale.
 
 [Aevia Launch](https://launch.aevia.services) fonctionne sur ce principe : site en ligne sous 48 heures (5 à 7 jours pour un site Premium sur mesure), de 399 € à 1 499 € en paiement unique, puis 20 € par mois d'hébergement et de maintenance.`,
     faq: [
       {
         q: "Quel est le prix moyen d'un site internet professionnel en France ?",
-        a: "Pour une TPE ou un indépendant, le prix médian se situe entre 800 et 2 500 € pour un site vitrine. En dessous de 400 €, il s'agit généralement d'un modèle sans travail de contenu ni référencement. Au-dessus de 5 000 €, on entre dans le sur-mesure ou l'e-commerce.",
+        a: "Pour une TPE ou un indépendant, un site vitrine coûte en général entre 800 et 2 500 €. En dessous de 400 €, il s'agit généralement d'un modèle sans travail de contenu ni référencement. Au-dessus de 5 000 €, on entre dans le sur-mesure ou l'e-commerce.",
       },
       {
         q: "Faut-il payer un abonnement mensuel pour un site internet ?",
@@ -2777,7 +2777,7 @@ L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en q
 
 - **Simple brochure site: €400–1,500**, site with booking or an online shop: €1,500–6,000, complex custom build: €6,000+
 - **The headline price is never the total price** — add hosting, the domain name, maintenance and updates
-- **A quote with no priced line for content is an incomplete quote**: writing often accounts for 30% of the real work
+- **A quote with no priced line for content is an incomplete quote**: writing is a large part of the work
 - **The real risk is not overpaying, it is paying for a site nobody visits** — a site without search visibility is an overpriced brochure
 
 ---
@@ -2855,13 +2855,13 @@ If your site brings you even one customer a month, with an average basket of €
 
 For the past two years, a third way has existed between the site builder where you do everything yourself and the agency charging several thousand euros: platforms that generate a professional site from your business information, with search optimisation already structured.
 
-The benefit is not only the price. It is the lead time: a site online in a few days rather than after six weeks of back-and-forth. The compromise is that you start from an industry template rather than an original design — which, for 90% of shops and service providers, has no commercial consequence.
+The benefit is not only the price. It is the lead time: a site online in a few days rather than after six weeks of back-and-forth. The compromise is that you start from an industry template rather than an original design — which, for many shops and service providers, has no commercial consequence.
 
 [Aevia Launch](https://launch.aevia.services) works on this principle: site online within 48 hours (5 to 7 days for a custom Premium site), from €399 to €1,499 as a one-off payment, then €20 a month for hosting and maintenance.`,
         faq: [
           {
             q: "What is the average cost of a professional website?",
-            a: "For a small business or freelancer, the median sits between €800 and €2,500 for a brochure site. Below €400 you are usually getting a template with no content or search work. Above €5,000 you are into custom builds or e-commerce.",
+            a: "For a small business or freelancer, a brochure site usually costs between €800 and €2,500. Below €400 you are usually getting a template with no content or search work. Above €5,000 you are into custom builds or e-commerce.",
           },
           {
             q: "Do I have to pay a monthly subscription for a website?",
@@ -2886,7 +2886,7 @@ The benefit is not only the price. It is the lead time: a site online in a few d
 
 - **Web informativa sencilla: 400–1.500 €**, web con reservas o tienda online: 1.500–6.000 €, desarrollo a medida complejo: más de 6.000 €
 - **El precio anunciado nunca es el precio total** — suma el alojamiento, el dominio, el mantenimiento y las actualizaciones
-- **Un presupuesto sin una partida de contenidos con su precio está incompleto**: la redacción suele representar el 30 % del trabajo real
+- **Un presupuesto sin una partida de contenidos con su precio está incompleto**: la redacción es una parte importante del trabajo
 - **El verdadero riesgo no es pagar de más, es pagar por una web que nadie visita** — una web sin posicionamiento es un folleto carísimo
 
 ---
@@ -2964,13 +2964,13 @@ Si tu web te trae aunque sea un solo cliente al mes, con un ticket medio de 150 
 
 Desde hace dos años existe una tercera vía entre el creador de webs en el que lo haces todo tú y la agencia de varios miles de euros: plataformas que generan una web profesional a partir de la información de tu negocio, con el posicionamiento ya estructurado.
 
-La ventaja no es solo el precio. Es el plazo: una web en línea en unos días en lugar de seis semanas de idas y venidas. La contrapartida es que partes de una plantilla sectorial y no de un diseño gráfico original — lo que, para el 90 % de los comercios y proveedores de servicios, no tiene ninguna consecuencia comercial.
+La ventaja no es solo el precio. Es el plazo: una web en línea en unos días en lugar de seis semanas de idas y venidas. La contrapartida es que partes de una plantilla sectorial y no de un diseño gráfico original — lo que, para muchos comercios y proveedores de servicios, no tiene ninguna consecuencia comercial.
 
 [Aevia Launch](https://launch.aevia.services) funciona con este principio: web en línea en 48 horas (de 5 a 7 días para una web Premium a medida), de 399 € a 1.499 € en pago único, y después 20 € al mes de alojamiento y mantenimiento.`,
         faq: [
           {
             q: "¿Cuál es el precio medio de una página web profesional?",
-            a: "Para una pyme o un autónomo, la mediana está entre 800 y 2.500 € para una web informativa. Por debajo de 400 € suele tratarse de una plantilla sin trabajo de contenidos ni posicionamiento. Por encima de 5.000 €, se entra en el desarrollo a medida o el comercio electrónico.",
+            a: "Para una pyme o un autónomo, una web informativa suele costar entre 800 y 2.500 €. Por debajo de 400 € suele tratarse de una plantilla sin trabajo de contenidos ni posicionamiento. Por encima de 5.000 €, se entra en el desarrollo a medida o el comercio electrónico.",
           },
           {
             q: "¿Hay que pagar una cuota mensual por una web?",
@@ -3043,7 +3043,7 @@ Un restaurant qui reçoit 25 appels par jour, dont 18 pour une réservation, pai
 
 ## Ce que l'IA fait mieux, concrètement
 
-**Les heures creuses.** 30 à 40 % des appels d'un commerce arrivent en dehors des heures d'ouverture ou pendant le coup de feu. Ce sont précisément les appels qu'aucun humain ne prend et qu'aucun secrétariat ne couvre sans surcoût.
+**Les heures creuses.** Une partie des appels d'un commerce arrive en dehors des heures d'ouverture ou pendant le coup de feu. Ce sont précisément les appels qu'aucun humain ne prend et qu'aucun secrétariat ne couvre sans surcoût.
 
 **Les pics.** Le vendredi soir dans un restaurant, six personnes appellent en même temps. Un secrétariat met cinq appels en attente ; un agent vocal les prend tous les six.
 
@@ -3061,7 +3061,7 @@ C'est pourquoi la meilleure configuration n'est presque jamais l'un ou l'autre. 
 
 ## Comment décider en trois questions
 
-1. **Quelle proportion de vos appels se ressemble ?** Notez vos appels pendant une semaine. Si plus de 60 % tiennent en trois motifs, l'automatisation est rentable.
+1. **Quelle proportion de vos appels se ressemble ?** Notez vos appels pendant une semaine. Si la plupart tiennent en trois motifs, l'automatisation est rentable.
 2. **Combien d'appels ne sont jamais décrochés ?** Votre opérateur ou votre téléphone le donne. C'est le chiffre qui justifie la dépense, pas le nombre d'appels total.
 3. **Que voulez-vous récupérer à la fin de l'appel ?** Si un message suffit, un secrétariat convient. Si vous voulez un rendez-vous déjà posé, il faut un système connecté à votre agenda.
 
@@ -3138,7 +3138,7 @@ Conversely, a consulting firm that gets three calls a day, all delicate and all 
 
 ## What AI does better, concretely
 
-**Off-peak hours.** 30 to 40% of a business's calls arrive outside opening hours or during the rush. Those are precisely the calls no human takes and no answering service covers without an extra charge.
+**Off-peak hours.** Some of a business's calls arrive outside opening hours or during the rush. Those are precisely the calls no human takes and no answering service covers without an extra charge.
 
 **Peaks.** On a Friday evening in a restaurant, six people call at the same time. An answering service puts five calls on hold; a voice agent takes all six.
 
@@ -3156,7 +3156,7 @@ That is why the best setup is almost never one or the other. The voice agent tak
 
 ## How to decide in three questions
 
-1. **What share of your calls look alike?** Log your calls for a week. If more than 60% fall into three reasons, automation pays off.
+1. **What share of your calls look alike?** Log your calls for a week. If most fall into three reasons, automation pays off.
 2. **How many calls are never answered?** Your phone carrier or your phone itself gives you the figure. That is the number that justifies the expense, not the total number of calls.
 3. **What do you want to have at the end of the call?** If a message is enough, an answering service will do. If you want an appointment already booked, you need a system connected to your calendar.
 
@@ -3233,7 +3233,7 @@ A la inversa, una consultoría que recibe tres llamadas al día, todas delicadas
 
 ## Lo que la IA hace mejor, en concreto
 
-**Las horas valle.** Entre el 30 y el 40 % de las llamadas de un comercio llegan fuera del horario de apertura o en plena hora punta. Son justamente las llamadas que ninguna persona atiende y que ninguna secretaría cubre sin recargo.
+**Las horas valle.** Parte de las llamadas de un comercio llega fuera del horario de apertura o en plena hora punta. Son justamente las llamadas que ninguna persona atiende y que ninguna secretaría cubre sin recargo.
 
 **Los picos.** Un viernes por la noche en un restaurante, seis personas llaman a la vez. Una secretaría deja cinco llamadas en espera; un agente de voz atiende las seis.
 
@@ -3251,7 +3251,7 @@ Por eso la mejor configuración casi nunca es una u otra. El agente de voz atien
 
 ## Cómo decidir en tres preguntas
 
-1. **¿Qué proporción de tus llamadas se parecen?** Anota tus llamadas durante una semana. Si más del 60 % caben en tres motivos, la automatización es rentable.
+1. **¿Qué proporción de tus llamadas se parecen?** Anota tus llamadas durante una semana. Si la mayoría caben en tres motivos, la automatización es rentable.
 2. **¿Cuántas llamadas no se atienden nunca?** Tu operador o tu propio teléfono te da la cifra. Es el número que justifica el gasto, no el total de llamadas.
 3. **¿Qué quieres tener al final de la llamada?** Si basta con un mensaje, una secretaría te sirve. Si quieres una cita ya fijada, necesitas un sistema conectado a tu agenda.
 
@@ -3832,7 +3832,7 @@ Es lo que hace [Aevia Inbox](https://inbox.aevia.services): cinco idiomas nativo
     category: "CRM & Support",
     content: `## À retenir en 30 secondes
 
-- **L'application WhatsApp Business est gratuite**, tourne sur un téléphone, et convient jusqu'à environ 5 conversations par jour
+- **L'application WhatsApp Business est gratuite**, tourne sur un téléphone, et convient tant qu'une seule personne répond
 - **L'API WhatsApp Business n'a pas d'interface** : c'est une connexion technique branchée sur un outil, faite pour le volume et le travail à plusieurs
 - **Un numéro ne peut pas être sur les deux à la fois** — le passage à l'API est un aller sans retour simple
 - **Envoyer des messages non sollicités depuis l'application est le meilleur moyen de faire bloquer son numéro**
@@ -3868,7 +3868,7 @@ WhatsApp propose deux choses très différentes sous la même marque.
 Il y a trois signaux qui indiquent que l'application ne suffit plus :
 
 1. **Plusieurs personnes doivent répondre.** L'application est liée à un téléphone. Dès que deux salariés doivent traiter les mêmes conversations, vous vous retrouvez à faire tourner un appareil, ce qui est intenable.
-2. **Vous perdez le fil.** Sans historique partagé ni attribution, une demande sur deux se traite deux fois ou pas du tout.
+2. **Vous perdez le fil.** Sans historique partagé ni attribution, des demandes se traitent deux fois, ou pas du tout.
 3. **Vous voulez répondre automatiquement.** Les réponses rapides de l'application ne comprennent pas la demande : elles collent un texte que vous avez écrit.
 
 ---
@@ -3926,7 +3926,7 @@ C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : la connexion API
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
-- **The WhatsApp Business app is free**, runs on a phone, and works for up to roughly 5 conversations a day
+- **The WhatsApp Business app is free**, runs on a phone, and works as long as one person does the replying
 - **The WhatsApp Business API has no interface**: it is a technical connection plugged into a tool, built for volume and for working as a team
 - **A number cannot be on both at once** — moving to the API is a one-way trip that is not easy to reverse
 - **Sending unsolicited messages from the app is the surest way to get your number blocked**
@@ -3962,7 +3962,7 @@ WhatsApp offers two very different things under the same brand.
 There are three signs that the app is no longer enough:
 
 1. **Several people need to reply.** The app is tied to one phone. As soon as two employees have to handle the same conversations, you end up passing a device around, which is unworkable.
-2. **You lose track.** Without shared history or assignment, every other request gets handled twice or not at all.
+2. **You lose track.** Without shared history or assignment, requests get handled twice, or not at all.
 3. **You want to reply automatically.** The app's quick replies do not understand the request: they paste in text you wrote.
 
 ---
@@ -4020,7 +4020,7 @@ That is what [Aevia Inbox](https://inbox.aevia.services) does: the API connectio
         category: "CRM y Soporte",
         content: `## Lo esencial en 30 segundos
 
-- **La aplicación WhatsApp Business es gratuita**, funciona en un teléfono y sirve hasta unas 5 conversaciones al día
+- **La aplicación WhatsApp Business es gratuita**, funciona en un teléfono y sirve mientras responda una sola persona
 - **La API de WhatsApp Business no tiene interfaz**: es una conexión técnica enchufada a una herramienta, pensada para el volumen y el trabajo en equipo
 - **Un número no puede estar en las dos a la vez**: pasar a la API es un viaje de ida que no se deshace fácilmente
 - **Enviar mensajes no solicitados desde la aplicación es la mejor manera de que te bloqueen el número**
@@ -4056,7 +4056,7 @@ WhatsApp ofrece dos cosas muy distintas bajo la misma marca.
 Hay tres señales que indican que la aplicación ya no basta:
 
 1. **Tienen que responder varias personas.** La aplicación está ligada a un teléfono. En cuanto dos empleados tienen que atender las mismas conversaciones, acabas pasándote el aparato de mano en mano, y eso es insostenible.
-2. **Pierdes el hilo.** Sin historial compartido ni asignación, una de cada dos peticiones se atiende dos veces o ninguna.
+2. **Pierdes el hilo.** Sin historial compartido ni asignación, hay peticiones que se atienden dos veces, o ninguna.
 3. **Quieres responder automáticamente.** Las respuestas rápidas de la aplicación no entienden la petición: pegan un texto que tú has escrito.
 
 ---
@@ -4119,7 +4119,7 @@ Es lo que hace [Aevia Inbox](https://inbox.aevia.services): la conexión con la 
     category: "IA Vocale & Téléphonie",
     content: `## À retenir en 30 secondes
 
-- **Un garage manque 30 à 50 % de ses appels** aux heures d'atelier : personne n'est au bureau, et on ne décroche pas sous un pont
+- **Un garage manque des appels** aux heures d'atelier : personne n'est au bureau, et on ne décroche pas sous un pont
 - **L'appel manqué ne rappelle pas** — il appelle le garage suivant, parce qu'une panne ne s'ajourne pas
 - **Un agent vocal prend le rendez-vous**, le motif et le véhicule, et l'inscrit dans l'agenda sans interrompre le travail en cours
 - **Ce qu'il ne faut PAS lui confier** : le diagnostic et le chiffrage. Un devis annoncé au téléphone puis démenti à l'atelier détruit la confiance
@@ -4197,7 +4197,7 @@ Prévois une demi-journée pour rassembler les questions fréquentes et les vrai
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
-- **A garage misses 30 to 50% of its calls** during workshop hours: nobody is at the desk, and you do not answer the phone from under a lift
+- **A garage misses calls** during workshop hours: nobody is at the desk, and you do not answer the phone from under a lift
 - **A missed call does not call back** — it calls the next garage, because a breakdown cannot be put off
 - **A voice agent takes the appointment**, the reason and the vehicle, and enters it in the calendar without interrupting the job in progress
 - **What you must NOT hand over to it**: diagnosis and pricing. A quote given over the phone and then contradicted at the workshop destroys trust
@@ -4275,7 +4275,7 @@ Set aside half a day to gather the frequent questions and the workshop's real ru
         category: "Voz IA y Telefonía",
         content: `## Lo esencial en 30 segundos
 
-- **Un taller pierde entre el 30 y el 50 % de sus llamadas** en horario de taller: no hay nadie en la oficina, y no se puede contestar desde debajo de un elevador
+- **Un taller pierde llamadas** en horario de taller: no hay nadie en la oficina, y no se puede contestar desde debajo de un elevador
 - **La llamada perdida no vuelve a llamar**: llama al taller siguiente, porque una avería no se puede aplazar
 - **Un agente de voz toma la cita**, el motivo y el vehículo, y la anota en la agenda sin interrumpir el trabajo en curso
 - **Lo que NO hay que confiarle**: el diagnóstico y el presupuesto. Un precio anunciado por teléfono y desmentido después en el taller destruye la confianza

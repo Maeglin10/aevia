@@ -9,7 +9,7 @@ export const DE_1: Record<string, BlogPostTranslation> = {
     content: `## Das Wichtigste in 30 Sekunden
 
 - **Ästhetik allein reicht nicht** — das Design muss zu Ihrer Branche und Ihrer Zielgruppe passen
-- **Mobile zuerst** — über 65 % des Traffics kommen von Smartphones, wählen Sie ein Mobile-first-Template
+- **Mobile zuerst** — Mobilgeräte machen 59,9 % des weltweiten Web-Traffics aus ([StatCounter, Oktober 2026](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)), wählen Sie ein Mobile-first-Template
 - **Geschwindigkeit zählt so viel wie Design** — eine schöne, aber langsame Website vertreibt Besucher
 - **Anpassungsfähigkeit** — Ihr Template muss Ihre Markenidentität aufnehmen können, ohne dass alles umgebaut werden muss
 
@@ -38,7 +38,7 @@ Bevor Sie Ihr Template auswählen, fragen Sie sich: Versteht ein Besucher, der m
 
 ## Mobile-first: nicht verhandelbar
 
-Im Jahr 2026 ist es ein grundlegender Fehler, eine Website „für den Desktop zu entwerfen und danach an das Smartphone anzupassen“. Über 65 % des weltweiten Web-Traffics kommen von Smartphones. Und Google indexiert für das Ranking zuerst die mobile Version Ihrer Website.
+Im Jahr 2026 ist es ein grundlegender Fehler, eine Website „für den Desktop zu entwerfen und danach an das Smartphone anzupassen“. Im Oktober 2026 entfielen 59,9 % des weltweiten Web-Traffics auf Mobilgeräte ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Und Google indexiert für das Ranking zuerst die mobile Version Ihrer Website.
 
 Ein gutes Mobile-first-Template erkennen Sie an:
 
@@ -68,7 +68,7 @@ Stellen Sie sich diese konkreten Fragen:
 
 Zwei optisch identische Websites können je nach Qualität des zugrunde liegenden Codes sehr unterschiedliche Ladezeiten haben.
 
-Templates, die auf modernen Frameworks wie **Next.js** basieren, bringen progressives Laden von Bildern, intelligentes Caching und Code-Splitting von Haus aus mit. Templates auf älteren Systemen oder mit zu vielen Plugins können 5- bis 10-mal schwerer sein.
+Templates, die auf modernen Frameworks wie **Next.js** basieren, bringen progressives Laden von Bildern, intelligentes Caching und Code-Splitting von Haus aus mit. Templates auf älteren Systemen oder mit zu vielen Plugins können deutlich schwerer sein.
 
 Ein Tool wie **Google PageSpeed Insights** liefert Ihnen in 30 Sekunden den Performance-Score eines Beispiel-Templates — bevor Sie sich dafür entscheiden.
 
@@ -87,7 +87,7 @@ Der beste Ansatz: Filtern Sie zuerst nach Branche, dann nach visuellem Stil. So 
     content: `## Das Wichtigste in 30 Sekunden
 
 - **3 Pflichtdokumente**: Mentions légales (das französische Gegenstück zum Impressum), Datenschutzerklärung und ein Cookie-Banner, wenn Sie Besucher tracken
-- **Die Einwilligung muss ausdrücklich erfolgen** — ein vorab angekreuztes Kästchen ist seit 2020 rechtswidrig
+- **Die Einwilligung muss ausdrücklich erfolgen** — ein vorab angekreuztes Kästchen ist keine wirksame Einwilligung
 - **Die Sanktionen sind real**: Die CNIL (die französische Datenschutzbehörde) hat 2024 insgesamt 87 Sanktionen verhängt, mit Bußgeldern von zusammen 55.212.400 € ([CNIL-Bilanz 2024, auf Englisch](https://www.cnil.fr/en/sanctions-and-corrective-measures-cnils-actions-2024))
 - **Die Umsetzung dauert 1 bis 2 Tage** für eine klassische Unternehmenswebsite
 
@@ -144,7 +144,7 @@ Die geltenden Regeln der CNIL:
 
 ## Die häufigsten Fehler
 
-- **Google Analytics ohne vorherige Einwilligung nutzen** — das ist rechtswidrig. Die CNIL hat 2023–2024 mehrere französische Websites genau aus diesem Grund sanktioniert.
+- **Google Analytics ohne vorherige Einwilligung nutzen** — das ist rechtswidrig.
 - **Ein Banner ohne klar sichtbare Schaltfläche „Ablehnen“** — das „X“ zum Schließen gilt nicht als Ablehnung.
 - **Generische, kopierte Mentions légales** ohne die echten Angaben des Unternehmens.
 - **Kontaktformulare vergessen** — das E-Mail-Feld eines Formulars erhebt ein personenbezogenes Datum. Sie müssen angeben, wie es verwendet wird.
@@ -175,19 +175,19 @@ Unterschätzen Sie die DSGVO-Konformität nicht. Das ist keine esoterische Juris
   "erreurs-site-web-font-fuir-clients": {
     title: "5 Website-Fehler, die Ihre Kunden in 10 Sekunden vertreiben",
     excerpt:
-      "Die meisten Websites verlieren 40 bis 60 % ihrer Besucher in den allerersten Sekunden. Diese Fehler lassen sich vermeiden — und oft innerhalb weniger Stunden beheben.",
+      "Ein Besucher gibt Ihrer Website nur wenige Sekunden, um ihn zu überzeugen. Diese Fehler vertreiben ihn — sie lassen sich vermeiden und oft innerhalb weniger Stunden beheben.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **Die Ladezeit** ist der Hauptschuldige — jede zusätzliche Sekunde kostet 7 % der Conversions
+- **Die Ladezeit** vertreibt Besucher, bevor sie Ihr Angebot überhaupt sehen
 - **Die Kernbotschaft** muss in weniger als 5 Sekunden verstanden werden, sonst ist der Besucher wieder weg
-- **Mobil**: Wenn Ihre Website auf dem Telefon nicht einwandfrei ist, verlieren Sie 65 % Ihrer potenziellen Besucher
+- **Mobil**: Wenn Ihre Website auf dem Telefon nicht einwandfrei ist, verlieren Sie einen großen Teil Ihrer potenziellen Besucher
 - **Kein klarer CTA**: Wenn der Besucher nicht weiß, was er tun soll, tut er nichts
 
 ---
 
 ## Warum die ersten Sekunden entscheiden
 
-Studien zum Online-Verhalten zufolge fällt die Entscheidung, auf einer Website zu bleiben oder sie zu verlassen, in den **ersten 5 bis 10 Sekunden**. Das liegt nicht an mangelnder Aufmerksamkeit Ihrer Besucher — es ist ein natürliches Filterverhalten angesichts der Informationsflut.
+Nutzer verlassen eine Webseite oft nach **10 bis 20 Sekunden** ([Nielsen Norman Group, 2011](https://www.nngroup.com/articles/how-long-do-users-stay-on-web-pages/)). Das liegt nicht an mangelnder Aufmerksamkeit Ihrer Besucher — es ist ein natürliches Filterverhalten angesichts der Informationsflut.
 
 Was Ihr Besucher beim Ankommen wissen will: „Bin ich hier richtig? Kann mir diese Website helfen?“
 
@@ -197,11 +197,11 @@ Wenn die Antwort nicht sofort und positiv ausfällt, ist er wieder weg.
 
 ## Fehler Nr. 1 — Zu lange Ladezeit
 
-Das ist der Abbruchgrund Nr. 1. Die Zahlen sind unerbittlich:
+Die veröffentlichten Messungen sind eindeutig:
 
-- **3 Sekunden**: 53 % der mobilen Besucher springen ab (Google, 2023)
-- **Jede zusätzliche Sekunde**: -7 % Conversions
-- **Eine Website, die 5 Sekunden lädt**: verliert im Schnitt 38 % mehr Besucher als eine, die 2 Sekunden braucht
+- **3 Sekunden**: Lädt eine Seite länger, werden 53 % der mobilen Besuche voraussichtlich abgebrochen ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **100 Millisekunden Verzögerung**: Die Conversion-Rate kann um 7 % sinken ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **2 Sekunden Verzögerung**: Die Absprungrate steigt um 103 % ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Die üblichen Verdächtigen: unkomprimierte Bilder, billiges Hosting, zu viele gleichzeitig geladene JavaScript-Skripte, nicht optimierte externe Schriftarten.
 
@@ -225,7 +225,7 @@ Testen Sie Ihre Website mit jemandem, der Sie nicht kennt. Zeigen Sie ihm Ihre S
 
 ## Fehler Nr. 3 — Eine nicht für Mobilgeräte optimierte Website
 
-2026 kommen über 65 % des Web-Traffics von Smartphones. Trotzdem wurden viele Websites für den Desktop konzipiert und erst nachträglich an Mobilgeräte „angepasst“ — mit verheerenden Ergebnissen.
+Im Oktober 2026 entfielen 59,9 % des weltweiten Web-Traffics auf Mobilgeräte ([StatCounter](https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet)). Trotzdem wurden viele Websites für den Desktop konzipiert und erst nachträglich an Mobilgeräte „angepasst“ — mit verheerenden Ergebnissen.
 
 Die Warnsignale:
 - Texte, die zu klein sind, um ohne Zoomen gelesen zu werden
@@ -280,7 +280,7 @@ Wenn Sie Probleme feststellen, können Sie mit Tools wie Aevia Launch Ihre Websi
     content: `## Das Wichtigste in 30 Sekunden
 
 - **WhatsApp Business** ist für kleine Betriebe kostenlos — **WhatsApp Business API** ist kostenpflichtig, öffnet aber den Zugang zu fortgeschrittener Automatisierung
-- **Öffnungsrate von WhatsApp-Nachrichten: 98 %** — gegenüber 20 bis 30 % bei E-Mails
+- **Nichts zu installieren für Kunden, die WhatsApp bereits nutzen** — sie schreiben Ihnen dort, wo sie auch mit Familie und Freunden schreiben
 - **Richten Sie eine Abwesenheitsnachricht** und eine Begrüßungsnachricht ein, damit kein Kunde ohne Antwort bleibt
 - **Bündeln Sie WhatsApp mit Ihren anderen Kanälen**, damit Sie nicht zwischen Apps jonglieren müssen
 
@@ -288,9 +288,9 @@ Wenn Sie Probleme feststellen, können Sie mit Tools wie Aevia Launch Ihre Websi
 
 ## Warum WhatsApp unverzichtbar geworden ist
 
-In Frankreich hat WhatsApp über 35 Millionen aktive Nutzer. Für Ihre Kunden ist es die Messaging-App, die sie ohnehin nutzen — mit Familie, Freunden und Kollegen. Ein Unternehmen über WhatsApp zu kontaktieren ist natürlich, schnell und unkompliziert.
+Für viele Ihrer Kunden ist WhatsApp die Messaging-App, die sie ohnehin nutzen — mit Familie, Freunden und Kollegen. Ein Unternehmen über WhatsApp zu kontaktieren ist natürlich, schnell und unkompliziert.
 
-Für Sie als Unternehmen sind die Vorteile real: eine Öffnungsrate von 98 %, die Erwartung einer nahezu sofortigen Antwort und eine Nähe, die E-Mails nicht vermitteln.
+Für Sie als Unternehmen sind die Vorteile real: ein Kanal, den Ihre Kunden ohnehin nutzen, die Erwartung einer nahezu sofortigen Antwort und eine Nähe, die E-Mails nicht vermitteln.
 
 Die Frage lautet nicht mehr „Muss ich auf WhatsApp sein?“ — sondern „Wie nutze ich WhatsApp richtig?“.
 
@@ -381,12 +381,12 @@ Für Nachrichten über WhatsApp Business API gilt eine zusätzliche Einschränku
   "vitesse-site-web-optimisations": {
     title: "Website-Geschwindigkeit: die 5 Optimierungen, die wirklich etwas bewirken",
     excerpt:
-      "Eine langsame Website bedeutet verlorene Kunden und ein schlechteres Ranking. Diese 5 konkreten Maßnahmen können Ihre Ladezeit um 40 bis 70 % senken, ohne dass Sie Ihre Website neu bauen müssen.",
+      "Eine langsame Website bedeutet verlorene Kunden und ein schlechteres Ranking. Diese 5 konkreten Maßnahmen senken Ihre Ladezeit, ohne dass Sie Ihre Website neu bauen müssen.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **Bilder machen 60 bis 80 % des Gewichts einer Seite aus** — hier ist die Wirkung am größten
-- **Ein CDN** kann die Ladezeit für Besucher außerhalb Ihrer Region um 30 bis 50 % senken
-- **Jedes JavaScript-Skript von Drittanbietern** (Chat, Analytics, Pixel) verlängert die Ladezeit um 100 bis 500 ms
+- **Bilder sind oft der schwerste Teil einer Seite** — hier ist die Wirkung am größten
+- **Ein CDN** bringt Ihre Dateien näher an Besucher, die weit von Ihrem Server entfernt sind
+- **Jedes JavaScript-Skript von Drittanbietern** (Chat, Analytics, Pixel) verlängert die Ladezeit
 - **Die Core Web Vitals von Google** beeinflussen seit 2021 direkt Ihre Position in den Suchergebnissen
 
 ---
@@ -395,9 +395,9 @@ Für Nachrichten über WhatsApp Business API gilt eine zusätzliche Einschränku
 
 Das ist nicht nur eine technische Frage. Die Geschwindigkeit einer Website wirkt sich messbar auf Ihre Conversions aus:
 
-- **+1 Sekunde** Ladezeit = **-7 %** Conversions (Akamai)
-- **53 %** der mobilen Besucher springen ab, wenn eine Seite länger als **3 Sekunden** lädt (Google)
-- **Amazon** hat geschätzt, dass jede 100 ms Latenz das Unternehmen **1 % Umsatz** kostet
+- **100 Millisekunden** Verzögerung können die Conversion-Rate um **7 %** senken ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
+- **53 %** der mobilen Besuche werden voraussichtlich abgebrochen, wenn eine Seite länger als **3 Sekunden** lädt ([Google, 2016](https://blog.google/products/admanager/the-need-for-mobile-speed/))
+- **2 Sekunden** Verzögerung lassen die Absprungrate um **103 %** steigen ([Akamai, 2017](https://www.prnewswire.com/news-releases/akamai-online-retail-performance-report-milliseconds-are-critical-300441498.html))
 
 Und seit 2021 bezieht Google die Core Web Vitals (die tatsächliche, von Nutzern wahrgenommene Ladegeschwindigkeit) in seine Ranking-Kriterien ein. Eine langsame Website wird doppelt bestraft: von den Besuchern, die abspringen, und von Google, das sie schlechter einstuft.
 
@@ -405,13 +405,13 @@ Und seit 2021 bezieht Google die Core Web Vitals (die tatsächliche, von Nutzern
 
 ## Optimierung Nr. 1 — Bilder komprimieren und konvertieren
 
-Bilder machen im Durchschnitt 60 bis 80 % des Gesamtgewichts einer Webseite aus. Hier ist der Gewinn oft am spektakulärsten.
+Bilder sind oft die schwerste Ressource einer Webseite. Hier ist der Gewinn am spektakulärsten.
 
 Zwei konkrete Maßnahmen:
 
-**In WebP konvertieren**: Dieses moderne Format liefert Bilder in gleicher Qualität wie JPEG/PNG, aber mit 25 bis 35 % weniger Gewicht. Die meisten modernen CMS unterstützen es von Haus aus. Für WordPress konvertieren Plugins wie Imagify oder ShortPixel automatisch.
+**In WebP konvertieren**: Laut Google sind verlustbehaftete Bilder in diesem modernen Format 25 bis 34 % kleiner als vergleichbare JPEGs und verlustfreie 26 % kleiner als PNGs ([Google](https://developers.google.com/speed/webp)). Die meisten modernen CMS unterstützen es von Haus aus. Für WordPress konvertieren Plugins wie Imagify oder ShortPixel automatisch.
 
-**Vor dem Hochladen verkleinern**: Ein Foto mit 5000x4000px hochzuladen, um es 800px breit anzuzeigen, bedeutet, 6-mal mehr Daten zu laden als nötig. Bringen Sie Ihre Bilder vor dem Hochladen auf die tatsächliche Anzeigegröße.
+**Vor dem Hochladen verkleinern**: Ein Foto mit 5000x4000px hochzuladen, um es 800px breit anzuzeigen, bedeutet, ein Bild zu laden, das mehr als sechsmal breiter ist als nötig. Bringen Sie Ihre Bilder vor dem Hochladen auf die tatsächliche Anzeigegröße.
 
 Ziel: kein Bild über 200 KB auf Ihrer Website. Hero-Bilder (Vollbild) dürfen bis zu 400 KB groß sein, wenn es sich um ein hochwertiges Foto handelt.
 
@@ -425,7 +425,7 @@ In der Praxis braucht ein Besucher, der auf Ihrer Startseite landet, nur die Bil
 
 Die Umsetzung ist mit dem nativen HTML-Attribut einfach: \`loading="lazy"\` in Ihren \`<img>\`-Tags. Moderne Frameworks wie Next.js wenden es automatisch an.
 
-Typischer Gewinn: 40 bis 60 % weniger Gewicht beim ersten Laden der Seite.
+Gewinn: Beim ersten Laden holt die Seite nur die sichtbaren Bilder.
 
 ---
 
@@ -433,7 +433,7 @@ Typischer Gewinn: 40 bis 60 % weniger Gewicht beim ersten Laden der Seite.
 
 Jedes externe Skript, das Sie Ihrer Website hinzufügen — Google Analytics, Meta Pixel, Hotjar, Intercom, Chat-Widget, Teilen-Buttons für soziale Netzwerke — kostet Performance.
 
-Im Schnitt verlängert ein Drittanbieter-Skript die Ladezeit um 100 bis 500 ms. Wenn Sie 6 oder 7 davon haben, kommen Sie allein durch diese Tools schon auf 1 bis 3 Sekunden Verzögerung.
+Jedes Drittanbieter-Skript bringt zusätzliche Anfragen und Code, der ausgeführt werden muss. Kommen mehrere zusammen, summieren sich die Verzögerungen — allein durch diese Tools.
 
 Konkrete Maßnahmen:
 - **Prüfen Sie Ihre Skripte**: Welche nutzen Sie wirklich? Deaktivieren Sie alles, was keinen Zweck erfüllt
@@ -449,7 +449,7 @@ Beim Caching wird eine Version Ihrer Seite oder Ihrer Ressourcen näher beim Bes
 
 **Browser-Caching**: Konfigurieren Sie HTTP-Header \`Cache-Control\`, damit statische Ressourcen (Bilder, CSS, JS) 1 bis 12 Monate lang im Browser des Besuchers gespeichert werden.
 
-**CDN (Content Delivery Network)**: Ein CDN wie Cloudflare (für die Grundfunktionen kostenlos) liefert Ihre Inhalte von Servern aus, die geografisch nah bei Ihren Besuchern stehen. Für eine französische Website mit Besuchern in Europa bedeutet das 30 bis 50 % kürzere Ladezeiten.
+**CDN (Content Delivery Network)**: Ein CDN wie Cloudflare (für die Grundfunktionen kostenlos) liefert Ihre Inhalte von Servern aus, die geografisch nah bei Ihren Besuchern stehen. Der Gewinn zeigt sich vor allem bei Besuchern, die weit von Ihrem Server entfernt sind.
 
 ---
 
@@ -476,7 +476,7 @@ Bevor Sie irgendetwas ändern, messen Sie Ihre Ausgangslage mit:
 
 Wenden Sie dann die Optimierungen in der oben genannten Reihenfolge an (zuerst die Bilder, sie haben die größte Wirkung) und messen Sie nach jedem Schritt erneut.
 
-Eine Website, deren Ladezeit von 6 auf 2 Sekunden sinkt, kann ihre Conversions um 30 bis 50 % steigern. Das ist oft der beste Return on Investment, den eine technische Verbesserung bringt.`,
+Jede gewonnene Sekunde bringt mehr Besucher bis zum Formular oder zum Warenkorb. Das ist oft der beste Return on Investment, den eine technische Verbesserung bringt.`,
   },
   "repondre-avis-negatifs-reputation": {
     title: "Negative Bewertungen: So schützen und stärken Sie Ihren Ruf",
@@ -484,10 +484,10 @@ Eine Website, deren Ladezeit von 6 auf 2 Sekunden sinkt, kann ihre Conversions u
       "Eine schlechte Google-Bewertung ist keine Katastrophe, wenn Sie wissen, wie Sie darauf antworten. Die richtige Antwort kann einen Kritiker zum Fürsprecher machen — und Dutzende künftiger Kunden beruhigen.",
     content: `## Das Wichtigste in 30 Sekunden
 
-- **88 % der Verbraucher** lesen Bewertungen vor dem Kauf — Ihre Antwort auf negative Bewertungen lesen alle künftigen Kunden mit
+- **Ihre künftigen Kunden lesen Ihre Bewertungen** — und Ihre Antworten auf negative gleich mit
 - **Niemals im Affekt antworten** — warten Sie mindestens 30 Minuten, bevor Sie auf eine negative Bewertung antworten
 - **Die erfolgreiche Struktur**: anerkennen, sich entschuldigen (ohne Schuld einzugestehen, wenn diese strittig ist), eine Lösung anbieten, zum privaten Austausch einladen
-- **Eine gut gehandhabte schlechte Bewertung** wirkt vertrauenswürdiger als eine Seite mit 100 % 5-Sterne-Bewertungen (die unecht wirkt)
+- **Eine gut gehandhabte schlechte Bewertung** wirkt vertrauenswürdiger als eine Seite, auf der jede Bewertung 5 Sterne hat (die unecht wirkt)
 
 ---
 
@@ -497,7 +497,7 @@ Hier ist die Realität, die nur wenige Unternehmer verstehen: Wenn ein potenziel
 
 Eine professionelle, einfühlsame und konstruktive Antwort kann eine negative Bewertung vollständig entschärfen. Eine schlechte Antwort (defensiv, aggressiv oder gar keine) verschlimmert die Lage ausnahmslos.
 
-Die Zahlen sprechen für sich: 45 % der Verbraucher besuchen eher ein Unternehmen, das auf seine negativen Bewertungen antwortet. 88 % lesen die Antworten auf negative Bewertungen, bevor sie eine Entscheidung treffen.
+Ihre Antwort richtet sich nicht nur an den unzufriedenen Kunden: Alle, die Ihre Bewertungen danach lesen, sehen sie — und beurteilen daran, wie Sie mit einem Problem umgehen.
 
 ---
 
@@ -557,7 +557,7 @@ Wirksame Strategien:
 - **Machen Sie es so einfach wie möglich** — ein direkter Link zum Bewertungsformular, nicht zu Ihrem allgemeinen Profil
 - **Fragen Sie im richtigen Moment** — direkt nachdem der Kunde seine Zufriedenheit geäußert hat, nicht Wochen später
 
-Ein Verhältnis von 1 negativen zu 15 positiven Bewertungen ist beherrschbar. Ein Verhältnis von 1 zu 3 wird problematisch.
+Einige vereinzelte negative Bewertungen inmitten vieler positiver bleiben beherrschbar. Werden sie häufig, liegt das Problem nicht mehr in der Antwort, sondern in dem, was sie auslöst.
 
 Tools wie **Aevia Inbox** ermöglichen es, Bewertungsanfragen nach dem Kauf per WhatsApp oder E-Mail zu automatisieren — zum optimalen Zeitpunkt in der Customer Journey.`,
   },
@@ -662,11 +662,11 @@ Beginnen Sie damit, Ihre 15 häufigsten Fragen und die idealen Antworten aufzuli
   "securite-mots-de-passe-comptes-pros": {
     title: "Passwortsicherheit: So schützen Sie Ihre geschäftlichen Konten 2026",
     excerpt:
-      "80 % der Datenschutzverletzungen gehen auf schwache oder kompromittierte Passwörter zurück. Diese einfachen Maßnahmen beseitigen den Großteil der Risiken — ohne Ihre Produktivität zu beeinträchtigen.",
+      "Gestohlene Zugangsdaten gehören weiterhin zu den häufigsten Ursachen von Datenschutzverletzungen. Diese einfachen Maßnahmen schließen die bequemsten Einfallstore — ohne Ihre Produktivität zu beeinträchtigen.",
     content: `## Das Wichtigste in 30 Sekunden
 
 - **Ein Passwort, das Sie für mehrere Dienste wiederverwenden**, ist ein großes Risiko — wird ein Dienst gehackt, sind alle Ihre Konten betroffen
-- **Ein Passwort-Manager** (Bitwarden, 1Password) löst 90 % der Probleme rund um die Kontosicherheit
+- **Ein Passwort-Manager** (Bitwarden, 1Password) gibt jedem Konto ein langes, einzigartiges Passwort, ohne dass Sie es sich merken müssen
 - **Die Zwei-Faktor-Authentifizierung (2FA)** ist das zweitwichtigste Schloss — aktivieren Sie sie überall
 - **Phishing-Angriffe** zielen zuerst auf Ihre geschäftlichen Konten (E-Mail, CRM, Bank, Lieferanten)
 
@@ -674,7 +674,7 @@ Beginnen Sie damit, Ihre 15 häufigsten Fragen und die idealen Antworten aufzuli
 
 ## Die Realität kompromittierter Konten im Jahr 2026
 
-Im Jahr 2023 schätzte der Verizon Data Breach Investigations Report, dass **80 % der Datenschutzverletzungen auf gestohlene oder schwache Passwörter zurückgehen**. Es geht nicht um raffinierte Hacker in dunklen Kellern — oft ist es viel einfacher.
+Laut dem Data Breach Investigations Report 2026 von Verizon spielt bei den häufigsten Ursachen von Datenschutzverletzungen weiterhin der Faktor Mensch die Hauptrolle — Social Engineering, Phishing, **gestohlene Zugangsdaten** —, dazu das Ausnutzen von Software-Schwachstellen ([Verizon, 2026](https://www.verizon.com/business/resources/reports/dbir/)). Es geht nicht um raffinierte Hacker in dunklen Kellern — oft ist es viel einfacher.
 
 Ein Mitarbeiter verwendet dasselbe Passwort für sein geschäftliches E-Mail-Konto und für ein Online-Forum. Dieses Forum wird gehackt. Die Datenbank wird im Darknet verkauft. Ein Bot testet diese Zugangsdaten bei Ihrer Bank, Ihrem Hoster, Ihrem CRM.
 
@@ -753,7 +753,7 @@ Tools wie **Aevia Security** ermöglichen es außerdem, die Gesamtsicherheit Ihr
     content: `## Das Wichtigste in 30 Sekunden
 
 - **Ein Conversion-Funnel** = die Abfolge von Schritten zwischen „unbekannter Besucher“ und „zahlender Kunde“
-- **Die meisten Websites verlieren 95 % ihrer Besucher**, weil ein strukturierter Funnel fehlt
+- **Ohne strukturierten Funnel gehen Ihre Besucher wieder**, ohne eine Spur zu hinterlassen
 - **3 Schlüsselelemente**: ein klares Wertversprechen, Social Proof, ein reibungsloser Call-to-Action
 - **Messen Sie jeden Schritt** — ohne Analytics arbeiten Sie im Blindflug
 
@@ -761,7 +761,7 @@ Tools wie **Aevia Security** ermöglichen es außerdem, die Gesamtsicherheit Ihr
 
 ## Warum Ihre Website Traffic, aber wenige Conversions hat
 
-Stellen Sie sich ein Ladengeschäft vor, das 100 Menschen betreten und sich umsehen — und 95 gehen mit leeren Händen wieder. Sie würden das ein Problem der Ladengestaltung, der Präsentation oder des Verkaufspersonals nennen.
+Stellen Sie sich ein Ladengeschäft vor, in das fast alle hineingehen, sich umsehen — und mit leeren Händen wieder gehen. Sie würden das ein Problem der Ladengestaltung, der Präsentation oder des Verkaufspersonals nennen.
 
 Im Web passiert genau das bei den meisten Websites. Der Traffic kommt — über Google, soziale Netzwerke, Mundpropaganda — und geht wieder, ohne zu konvertieren.
 
@@ -791,7 +791,7 @@ Der Besucher ist interessiert. Aber er kennt Sie nicht. Er braucht Sicherheit.
 
 Beweiselemente, die funktionieren:
 - **Kundenstimmen mit Foto und Namen** — nicht anonym
-- **Fallstudien mit konkreten Ergebnissen** — „Jean hat seine Kontaktanfragen in 3 Monaten um 40 % gesteigert“
+- **Fallstudien mit konkreten Ergebnissen** — das gemessene Ergebnis bei einem namentlich genannten Kunden, mit Zeitraum und Ausgangswert
 - **Logos bekannter Kunden**, falls vorhanden
 - **Konkrete Zahlen** — „200 betreute Kunden“, „7 Jahre Erfahrung“
 - **Zertifizierungen oder Gütesiegel**, die für Ihre Branche relevant sind
@@ -835,7 +835,7 @@ Verlassen Sie sich nicht auf Vermutungen darüber, was funktioniert. Testen Sie 
 
 Tools wie Vercel Speed Insights oder Google Optimize ermöglichen es, zwei Versionen an Besuchersegmenten zu testen und objektiv zu messen, welche Version besser konvertiert.
 
-Eine Titeländerung, die die Conversion-Rate um 15 % verbessert, kann Ihre Leads verdoppeln, ohne dass Ihr Traffic steigt.
+Schon eine geänderte Überschrift kann die Zahl Ihrer Leads verändern, ohne dass Ihr Traffic steigt — nur der Test zeigt, in welche Richtung.
 
 ---
 

@@ -327,14 +327,14 @@ A regra é simples: tudo o que tem uma resposta exata, escrita em algum lugar, p
 
 ## Fazer você mesmo, terceirizar ou confiar a uma IA: a conta
 
-Comece medindo uma semana normal: quantas mensagens por dia e quantos minutos cada uma toma, em média, incluindo a busca do pedido.
+Comece medindo uma semana normal: quantas mensagens por dia e quantos minutos cada uma toma, incluindo a busca do pedido.
 
 **A título de exemplo**, com números a substituir pelos seus: 20 mensagens por dia a três minutos cada uma dão uma hora por dia, ou seja, cerca de 30 horas por mês.
 
 Depois, compare três opções:
 
 - **Manter o atendimento com você.** Não custa nada em dinheiro, mas essas horas saem da produção, das fotos, da prospecção ou das suas noites.
-- **Terceirizar para um freelancer ou para uma empresa de atendimento ao cliente.** Peça um orçamento com base nos seus números reais e verifique os horários cobertos, o prazo de resposta garantido e os acessos que será preciso dar à sua loja.
+- **Terceirizar para um freelancer ou para uma empresa de atendimento ao cliente.** Peça um orçamento com base nos seus próprios números e verifique os horários cobertos, o prazo de resposta garantido e os acessos que será preciso dar à sua loja.
 - **Confiar as perguntas repetitivas a um agente de IA.** O preço é fixo e a resposta sai a qualquer hora, inclusive à noite e no fim de semana; você fica só com as exceções. Na Aevia Inbox, o plano inicial custa 79 € por mês para 2.000 mensagens de IA, mais 100 € de taxa de ativação única, sem fidelidade.
 
 As duas últimas opções se combinam: o agente responde às perguntas que têm uma resposta exata, e uma pessoa — você ou um prestador — trata o resto. Para os detalhes do que um agente pode fazer no WhatsApp, leia [o nosso guia do agente de IA no WhatsApp para loja virtual](/pt/blog/agent-ia-whatsapp-boutique-en-ligne).

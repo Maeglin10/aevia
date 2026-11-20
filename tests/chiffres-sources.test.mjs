@@ -77,10 +77,35 @@ test("le montant des amendes de la CNIL est le chiffre officiel, avec son lien",
 
 /**
  * Articles relus chiffre par chiffre le 2026-11-20 : plus aucun pourcentage ni
- * aucune moyenne sans lien vers sa source dans le même bloc. À étendre article
- * par article — les autres en portent encore (voir le compte rendu de la revue).
+ * aucune moyenne sans lien vers sa source dans le même bloc. Deuxième passe le
+ * même jour : chaque statistique a été soit rattachée à sa source primaire
+ * (Google, Akamai, StatCounter, Nielsen Norman Group, HBR, ANSSI, Verizon),
+ * chiffre recopié tel que la source l'écrit, soit retirée et la phrase réécrite
+ * sans chiffre.
  */
-const ARTICLES_VERIFIES = ["ia-support-client-pme", "rgpd-site-web-obligations-2026"];
+const ARTICLES_VERIFIES = [
+  "ia-support-client-pme",
+  "rgpd-site-web-obligations-2026",
+  "choisir-template-site-web",
+  "erreurs-site-web-font-fuir-clients",
+  "whatsapp-business-guide-pme",
+  "vitesse-site-web-optimisations",
+  "repondre-avis-negatifs-reputation",
+  "securite-mots-de-passe-comptes-pros",
+  "tunnel-conversion-landing-page",
+  "segmentation-clients-fidelisation",
+  "optimiser-presence-en-ligne",
+  "audit-securite-site-web",
+  "gestion-messages-clients-multicanal",
+  "creer-site-internet-bourg-en-bresse-ia",
+  "service-client-ia-lyon-automatisation-pme",
+  "audit-securite-site-web-marseille-ia",
+  "sav-boutique-en-ligne-seul",
+  "combien-coute-site-internet-professionnel-2026",
+  "standard-telephonique-ia-vs-secretariat-telephonique",
+  "agent-vocal-ia-garage-automobile",
+  "whatsapp-business-api-ou-application-difference",
+];
 const STATISTIQUE = /\d\s?%|en moyenne|on average|de media|im Durchschnitt|em média|chiffres réels|real figures/i;
 
 test("articles vérifiés : pas de pourcentage ni de moyenne sans source, dans aucune langue", () => {

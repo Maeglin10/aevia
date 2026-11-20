@@ -130,7 +130,7 @@ A voz começa em 79 € por mês com 200 minutos de chamada incluídos, mais 100
 
 - **Site institucional simples: 400 a 1.500 €**, site com reservas ou loja: 1.500 a 6.000 €, sob medida complexo: 6.000 € ou mais
 - **O preço anunciado nunca é o preço total** — conte a hospedagem, o domínio, a manutenção e as atualizações
-- **Um orçamento sem o conteúdo precificado é um orçamento incompleto**: a redação muitas vezes representa 30% do trabalho real
+- **Um orçamento sem o conteúdo precificado é um orçamento incompleto**: a redação é uma parte importante do trabalho
 - **O verdadeiro risco não é pagar caro demais, é pagar por um site que ninguém visita** — um site sem SEO é um folheto caríssimo
 
 ---
@@ -208,13 +208,13 @@ Se você recebe nem que seja um cliente por mês graças ao seu site, com um tí
 
 Há dois anos existe um terceiro caminho entre o criador de sites em que você faz tudo sozinho e a agência de vários milhares de euros: plataformas que geram um site profissional a partir das informações do seu negócio, com o SEO já estruturado.
 
-A vantagem não é apenas o preço. É o prazo: um site no ar em poucos dias, em vez de seis semanas de idas e vindas. A contrapartida é que você parte de um modelo do seu setor em vez de uma criação gráfica original — o que, para 90% dos comércios e prestadores de serviços, não tem nenhuma consequência comercial.
+A vantagem não é apenas o preço. É o prazo: um site no ar em poucos dias, em vez de seis semanas de idas e vindas. A contrapartida é que você parte de um modelo do seu setor em vez de uma criação gráfica original — o que, para muitos comércios e prestadores de serviços, não tem nenhuma consequência comercial.
 
 [Aevia Launch](https://launch.aevia.services) funciona com esse princípio: site no ar em até 48 horas (5 a 7 dias para um site Premium sob medida), de 399 € a 1.499 € em pagamento único, e depois 20 € por mês de hospedagem e manutenção.`,
     faq: [
       {
         q: "Qual é o preço médio de um site profissional na França?",
-        a: "Para uma microempresa ou um autônomo, o preço mediano fica entre 800 e 2.500 € para um site institucional. Abaixo de 400 €, geralmente se trata de um modelo sem trabalho de conteúdo nem de SEO. Acima de 5.000 €, entra-se no sob medida ou no e-commerce.",
+        a: "Para uma microempresa ou um autônomo, um site institucional costuma custar entre 800 e 2.500 €. Abaixo de 400 €, geralmente se trata de um modelo sem trabalho de conteúdo nem de SEO. Acima de 5.000 €, entra-se no sob medida ou no e-commerce.",
       },
       {
         q: "É preciso pagar uma mensalidade por um site?",
@@ -280,7 +280,7 @@ Por outro lado, uma consultoria que recebe três ligações por dia, todas delic
 
 ## O que a IA faz melhor, na prática
 
-**Os horários sem ninguém para atender.** De 30 a 40% das ligações de um comércio chegam fora do horário de funcionamento ou no meio do rush. São justamente as ligações que nenhum humano atende e que nenhum secretariado cobre sem custo extra.
+**Os horários sem ninguém para atender.** Parte das ligações de um comércio chega fora do horário de funcionamento ou no meio do rush. São justamente as ligações que nenhum humano atende e que nenhum secretariado cobre sem custo extra.
 
 **Os picos.** Na sexta à noite, num restaurante, seis pessoas ligam ao mesmo tempo. Um secretariado coloca cinco ligações em espera; um agente de voz atende as seis.
 
@@ -298,7 +298,7 @@ Por isso, a melhor configuração quase nunca é uma ou outra. O agente de voz a
 
 ## Como decidir em três perguntas
 
-1. **Que proporção das suas ligações se parece?** Anote as suas ligações durante uma semana. Se mais de 60% se resumem a três motivos, a automação compensa.
+1. **Que proporção das suas ligações se parece?** Anote as suas ligações durante uma semana. Se a maioria se resume a três motivos, a automação compensa.
 2. **Quantas ligações nunca são atendidas?** A sua operadora ou o seu telefone informa. É esse o número que justifica o gasto, não o total de ligações.
 3. **O que você quer obter no fim da ligação?** Se um recado basta, um secretariado serve. Se você quer um horário já marcado, precisa de um sistema conectado à sua agenda.
 
@@ -505,7 +505,7 @@ Uma empresa sediada na França pode hoje atender um cliente espanhol, canadense 
       "Dois produtos têm o mesmo nome e não fazem o mesmo trabalho. Um é um aplicativo no celular, o outro, uma infraestrutura sem tela. Escolher o errado custa dinheiro gasto à toa ou um bloqueio da conta no pior momento.",
     content: `## O essencial em 30 segundos
 
-- **O aplicativo WhatsApp Business é gratuito**, roda num celular e serve até cerca de 5 conversas por dia
+- **O aplicativo WhatsApp Business é gratuito**, roda num celular e serve enquanto uma só pessoa responde
 - **A API do WhatsApp Business não tem interface**: é uma conexão técnica ligada a uma ferramenta, feita para o volume e para o trabalho em equipe
 - **Um número não pode estar nos dois ao mesmo tempo** — a migração para a API é um caminho sem volta fácil
 - **Enviar mensagens não solicitadas pelo aplicativo é a melhor maneira de ter o número bloqueado**
@@ -541,7 +541,7 @@ O WhatsApp oferece duas coisas muito diferentes sob a mesma marca.
 Há três sinais que indicam que o aplicativo não basta mais:
 
 1. **Várias pessoas precisam responder.** O aplicativo está vinculado a um celular. Assim que dois funcionários precisam tratar as mesmas conversas, você acaba passando um aparelho de mão em mão, o que é insustentável.
-2. **Você perde o fio da meada.** Sem histórico compartilhado nem atribuição, um pedido em cada dois é tratado duas vezes ou nem é tratado.
+2. **Você perde o fio da meada.** Sem histórico compartilhado nem atribuição, há pedidos tratados duas vezes, ou nem tratados.
 3. **Você quer responder automaticamente.** As respostas rápidas do aplicativo não entendem o pedido: elas colam um texto que você escreveu.
 
 ---
@@ -598,7 +598,7 @@ Duas ou mais, ou mais de dez conversas por dia, ou a vontade de automatizar: voc
       "Um mecânico não consegue atender o telefone com as mãos sujas de graxa. Cada ligação perdida é uma revisão que vai para o concorrente da frente. Como um agente de voz marca os horários enquanto a oficina trabalha, e o que não se deve confiar a ele.",
     content: `## O essencial em 30 segundos
 
-- **Uma oficina perde de 30 a 50% das ligações** no horário de trabalho: não há ninguém no balcão, e ninguém atende embaixo de um elevador
+- **Uma oficina perde ligações** no horário de trabalho: não há ninguém no balcão, e ninguém atende embaixo de um elevador
 - **A ligação perdida não liga de novo** — ela liga para a próxima oficina, porque uma pane não pode ser adiada
 - **Um agente de voz marca o horário**, anota o motivo e o veículo e registra tudo na agenda sem interromper o trabalho em andamento
 - **O que NÃO se deve confiar a ele**: o diagnóstico e o orçamento. Um valor informado por telefone e desmentido na oficina destrói a confiança
