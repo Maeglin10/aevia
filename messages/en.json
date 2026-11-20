@@ -113,6 +113,7 @@
     "title": "By need: the pages with the answers",
     "sub": "Each service has its detailed pages: how it works, what it costs, what to check. Go straight to the one that matches your situation.",
     "fr_only": "(in French)",
+    "en_only": "",
     "items": [
       { "product": "AI customer desk", "label": "AI phone answering", "desc": "A voice agent picks up, understands the request, books the appointment or table and leaves you the transcript." },
       { "product": "AI customer desk", "label": "Restaurant bookings by phone", "desc": "During the rush, the agent takes the booking and notes allergies and the number of guests." },

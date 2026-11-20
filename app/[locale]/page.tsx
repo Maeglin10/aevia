@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { BLOG_POSTS, localizePost, localesForPost } from "@/lib/blog-posts";
 import { ArrowRight } from "lucide-react";
@@ -7,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { HomeFaq } from "@/components/HomeFaq";
 import { HomeProductsSchema } from "@/components/HomeProductsSchema";
 import { HeroRotation } from "@/components/HeroRotation";
+import { BESOINS } from "@/lib/besoins";
 
 /*
   Choisis sur l'intention commerciale, pas sur la date : prix, métier, ville.
@@ -51,28 +50,11 @@ function articlesEnAvant(langue: string) {
 }
 
 /*
-  Les pages profondes des trois produits, depuis la page que Google visite.
-
-  Mesuré le 13/11 par l'inspection d'URL : `aevia.services/fr` et `/en` sont
-  indexées et explorées ; les pages solutions d'Inbox, le guide des prix de
-  Launch et les guides de Security sont « inconnues de Google » ou
-  « détectées, non indexées » — Google sait qu'elles existent mais ne s'est
-  jamais déplacé. Un lien depuis une page qu'il explore est le signal qui leur
-  manque. Ces pages n'existent qu'en français (sauf les tarifs d'Inbox) : dans
-  les autres langues, le lien le dit.
+  Composant SERVEUR depuis le 20/11 : il était client sans rien d'interactif,
+  et importait pour ses six cartes d'articles TOUT lib/blog-posts.ts — chaque
+  article dans chaque langue, plus de 600 Ko de prose dans le JavaScript de la
+  page la plus visitée.
 */
-const BESOINS: { href: (langueInbox: string) => string; francaisSeulement: boolean }[] = [
-  { href: () => "https://inbox.aevia.services/fr/solutions/standard-telephonique-ia", francaisSeulement: true },
-  { href: () => "https://inbox.aevia.services/fr/solutions/reservation-restaurant", francaisSeulement: true },
-  { href: () => "https://inbox.aevia.services/fr/solutions/whatsapp-business", francaisSeulement: true },
-  { href: (l) => `https://inbox.aevia.services/${l}/pricing`, francaisSeulement: false },
-  { href: () => "https://launch.aevia.services/prix-site-internet", francaisSeulement: true },
-  { href: () => "https://launch.aevia.services/themes/restaurant", francaisSeulement: true },
-  { href: () => "https://security.aevia.services/guides/dmarc", francaisSeulement: true },
-  { href: () => "https://security.aevia.services/guides", francaisSeulement: true },
-];
-const LANGUES_INBOX = ["fr", "en", "es", "pt"];
-
 export default function Home() {
   const h = useTranslations("hero");
   const p = useTranslations("products");
@@ -81,7 +63,6 @@ export default function Home() {
   const b = useTranslations("blog_section");
   const bs = useTranslations("needs");
   const langue = useLocale();
-  const langueInbox = LANGUES_INBOX.includes(langue) ? langue : "en";
   const besoins = bs.raw("items") as { product: string; label: string; desc: string }[];
 
   /*
@@ -377,18 +358,23 @@ export default function Home() {
             {besoins.map((item, i) => {
               const regle = BESOINS[i];
               if (!regle) return null;
-              const enFrancais = regle.francaisSeulement && langue !== "fr";
+              const cible = regle(langue);
+              const autreLangue = cible.langue !== langue;
               return (
                 <li key={item.label}>
                   <a
-                    href={regle.href(langueInbox)}
-                    hrefLang={enFrancais ? "fr" : undefined}
+                    href={cible.href}
+                    hrefLang={cible.langue === "pt" ? "pt-BR" : cible.langue}
                     className="group flex h-full flex-col rounded-xl border border-zinc-800 bg-zinc-900/40 p-5 hover:border-zinc-600 transition-colors"
                   >
                     <span className="text-xs font-semibold uppercase tracking-wider text-zinc-400">{item.product}</span>
                     <span className="mt-1 text-base font-semibold text-white group-hover:underline underline-offset-4">
                       {item.label}
-                      {enFrancais && <span className="ml-2 text-xs font-normal text-zinc-400">{bs("fr_only")}</span>}
+                      {autreLangue && (
+                        <span className="ml-2 text-xs font-normal text-zinc-400">
+                          {bs(cible.langue === "fr" ? "fr_only" : "en_only")}
+                        </span>
+                      )}
                     </span>
                     <span className="mt-2 text-sm text-zinc-400 leading-relaxed">{item.desc}</span>
                   </a>

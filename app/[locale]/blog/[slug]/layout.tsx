@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { getBlogPost, localizePost, localesForPost } from "@/lib/blog-posts";
+import { etiquetteLangue, habillage } from "@/lib/blog-habillage";
+
+const OG_LOCALE: Record<string, string> = { fr: "fr_FR", en: "en_US", es: "es_ES", de: "de_DE", pt: "pt_BR" };
 
 const BASE = "https://aevia.services";
 
@@ -38,7 +41,10 @@ export async function generateMetadata({
       type: "article",
       title: post.title,
       description: post.excerpt,
-      url,
+      url: canonical,
+      // La langue de ce qui est affiché : un article réservé au public
+      // français reste `fr_FR` même ouvert sous /es.
+      locale: OG_LOCALE[hasOwnTranslation ? locale : "fr"] ?? "fr_FR",
       siteName: "Aevia",
       publishedTime: post.date,
       authors: ["Aevia"],
@@ -73,7 +79,9 @@ export default async function ArticleLayout({
       datePublished: post.date,
       dateModified: post.date,
       articleSection: post.category,
-      inLanguage: locale,
+      // La langue du texte rendu, en étiquette BCP 47 (pt-BR). Un article
+      // réservé au français, ouvert sous /de, est en français.
+      inLanguage: etiquetteLangue(localesForPost(rawPost!).includes(locale) ? locale : "fr"),
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       author: { "@type": "Organization", name: "Aevia", url: BASE },
       publisher: {
@@ -88,7 +96,7 @@ export default async function ArticleLayout({
     graph.push({
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Accueil", item: `${BASE}/${locale}` },
+        { "@type": "ListItem", position: 1, name: habillage(locale).accueil, item: `${BASE}/${locale}` },
         { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/${locale}/blog` },
         { "@type": "ListItem", position: 3, name: post.title, item: url },
       ],

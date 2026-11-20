@@ -113,6 +113,7 @@
     "title": "Por necesidad: las páginas que responden",
     "sub": "Cada servicio tiene sus páginas detalladas: cómo funciona, cuánto cuesta, qué hay que revisar. Ve directamente a la que corresponde a tu situación.",
     "fr_only": "(en francés)",
+    "en_only": "(en inglés)",
     "items": [
       { "product": "Atención al cliente con IA", "label": "Centralita telefónica con IA", "desc": "Un agente de voz contesta, entiende la petición, toma la cita o la reserva y te deja la transcripción." },
       { "product": "Atención al cliente con IA", "label": "Reservas de restaurante por teléfono", "desc": "En plena hora punta, el agente toma la reserva y anota las alergias y el número de comensales." },

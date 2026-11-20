@@ -1,5 +1,6 @@
 "use client";
 
+import { LANGUE_INBOX } from "@/lib/besoins";
 import { Fragment } from "react";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
@@ -63,17 +64,21 @@ import { GithubIcon } from "@/components/GithubIcon";
  * le Hub aucun depuis lui. Les deux sites décrivent la même personne ; le
  * lien (et le `founder` du JSON-LD) les relie.
  */
-const LANGUES_INBOX = ["fr", "en", "es", "pt"];
+/*
+  20/11 : la page Inbox dans la langue du lecteur — le portugais du hub est
+  BRÉSILIEN et va vers /pt-br — et les guides de Security, qui existent
+  désormais sous /<langue>/guides. Même table que l'accueil (lib/besoins.ts).
+*/
 export const PORTFOLIO_URL = "https://valentinmilliand.vercel.app";
 
 export function SiteFooter() {
   const f = useTranslations("footer");
   const langue = useLocale();
-  const langueInbox = LANGUES_INBOX.includes(langue) ? langue : "en";
+  const langueInbox = LANGUE_INBOX[langue] ?? "en";
 
   const produits = [
     { href: "https://launch.aevia.services/themes/modeles", texte: f("templateShort") },
-    { href: "https://security.aevia.services/guides", texte: f("securityDns") },
+    { href: `https://security.aevia.services${langue === "fr" ? "" : `/${langue}`}/guides`, texte: f("securityDns") },
     { href: `https://inbox.aevia.services/${langueInbox}/solutions`, texte: f("inboxSupport") },
   ];
 

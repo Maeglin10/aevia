@@ -286,7 +286,9 @@ export default async function RootLayout({
 
   return (
     <html
-      lang={lang}
+      // Le portugais du site est celui du Brésil : « pt-BR » pour les lecteurs
+      // d'écran et la traduction automatique ; l'URL reste /pt.
+      lang={lang === "pt" ? "pt-BR" : lang}
       className={`${hanken.variable} ${spaceGrotesk.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>

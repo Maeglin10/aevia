@@ -1,32 +1,29 @@
-"use client";
-
-import { use } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { notFound } from "next/navigation";
 import { ArrowLeft, Clock, Tag, Calendar, ArrowRight } from "lucide-react";
 import {
   BLOG_POSTS,
+  LANGUES_BLOG,
   getBlogPost,
   formatDate,
   localizePost,
   localesForPost,
 } from "@/lib/blog-posts";
-import { notFound } from "next/navigation";
+import { habillage, styleRubrique } from "@/lib/blog-habillage";
 
-const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
-  "Web & Marketing": { bg: "bg-red-500/10", text: "text-red-300", ring: "ring-red-500/20" },
-  "Cybersécurité": { bg: "bg-emerald-500/10", text: "text-emerald-300", ring: "ring-emerald-500/20" },
-  "CRM & Support": { bg: "bg-inbox/10", text: "text-inbox-light", ring: "ring-inbox/30" },
-};
+/*
+  Composant SERVEUR depuis le 20/11.
 
-function getCategoryStyle(category: string) {
-  return (
-    CATEGORY_COLORS[category] ?? {
-      bg: "bg-zinc-500/10",
-      text: "text-zinc-300",
-      ring: "ring-zinc-500/20",
-    }
-  );
+  Il était client (`"use client"`) pour deux lignes : `use(params)` et
+  `usePathname()`. Le prix : tout `lib/blog-posts.ts` — chaque article, dans
+  chaque langue — partait dans le JavaScript de la page. Avec l'allemand et le
+  portugais, cela faisait plus de 600 Ko de prose envoyés au navigateur pour
+  en afficher un seul. Rien ici n'est interactif : le serveur rend le HTML, le
+  navigateur ne reçoit que lui.
+*/
+
+export function generateStaticParams() {
+  return LANGUES_BLOG.flatMap((locale) => BLOG_POSTS.map((p) => ({ locale, slug: p.slug })));
 }
 
 /**
@@ -183,74 +180,31 @@ function renderContent(content: string) {
   return elements;
 }
 
-/*
-  L'habillage de l'article, traduit.
-
-  Le titre et le corps sont bien traduits par `localizePost`, mais deux
-  chaînes étaient écrites en dur en français : une page anglaise affichait
-  « Retour au blog » et « 6 min de lecture » autour d'un texte anglais. Pour un
-  lecteur c'est bâclé ; pour un moteur, c'est un signal de page à moitié
-  traduite sur une URL qui se déclare `en`.
-
-  Mêmes libellés que la table `UI` de la page d'index du blog.
-*/
-const HABILLAGE: Record<
-  string,
-  { retour: string; lecture: string; pasTraduit: string; versionFr: string }
-> = {
-  fr: { retour: "Retour au blog", lecture: "de lecture", pasTraduit: "", versionFr: "" },
-  en: {
-    retour: "Back to the blog",
-    lecture: "read",
-    pasTraduit: "This article is not translated yet — it is shown here in French.",
-    versionFr: "Read the French original",
-  },
-  es: {
-    retour: "Volver al blog",
-    lecture: "de lectura",
-    pasTraduit: "Este artículo aún no está traducido — aquí se muestra en francés.",
-    versionFr: "Leer el original en francés",
-  },
-  de: {
-    retour: "Zurück zum Blog",
-    lecture: "Lesezeit",
-    pasTraduit: "Dieser Artikel ist noch nicht übersetzt — er erscheint hier auf Französisch.",
-    versionFr: "Das französische Original lesen",
-  },
-  pt: {
-    retour: "Voltar ao blog",
-    lecture: "de leitura",
-    pasTraduit: "Este artigo ainda não está traduzido — aparece aqui em francês.",
-    versionFr: "Ler o original em francês",
-  },
-};
-
-export default function ArticlePage({
+export default async function ArticlePage({
   params,
 }: {
   params: Promise<{ slug: string; locale: string }>;
 }) {
-  const resolvedParams = use(params);
-  const pathname = usePathname();
-  const locale = resolvedParams.locale ?? pathname.split("/")[1] ?? "fr";
-  const rawPost = getBlogPost(resolvedParams.slug);
-
+  const { slug, locale } = await params;
+  const rawPost = getBlogPost(slug);
   if (!rawPost) notFound();
 
+  const ui = habillage(locale);
   const post = localizePost(rawPost, locale);
   /*
-    `localizePost` retombe en SILENCE sur le français quand la traduction
-    manque. Côté référencement c'est déjà traité — le layout met `noindex` et
-    une canonique vers l'original. Côté lecteur, non : un visiteur
-    hispanophone arrivait sur de la prose française sans un mot d'explication.
-    Signalé depuis la Colombie le 02/10.
-
-    On le dit, et on offre le lien vers l'original. Dès qu'une traduction
-    existe, l'avertissement disparaît tout seul.
+    Depuis le 20/11, chaque article existe dans les cinq langues, sauf les
+    trois articles de référencement local (une ville française chacun),
+    réservés au public français par choix. Ouverts dans une autre langue, ils
+    s'affichent en français, annoncés comme tels, marqués `lang="fr"` pour les
+    lecteurs d'écran — et le layout les déclare `noindex`, canonique vers /fr.
   */
   const estTraduit = localesForPost(rawPost).includes(locale);
-  const style = getCategoryStyle(post.category);
-  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug)
+  const enFrancais = !estTraduit && locale !== "fr";
+  const style = styleRubrique(post.categoryKey);
+  // Les suggestions : des articles qui existent dans la langue de la page.
+  const relatedPosts = BLOG_POSTS.filter(
+    (p) => p.slug !== post.slug && localesForPost(p).includes(locale),
+  )
     .slice(0, 2)
     .map((p) => localizePost(p, locale));
 
@@ -267,14 +221,14 @@ export default function ArticlePage({
             className="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-zinc-300 transition-colors mb-8 group"
           >
             <ArrowLeft size={14} className="group-hover:-translate-x-0.5 transition-transform" />
-            {(HABILLAGE[locale] ?? HABILLAGE.fr).retour}
+            {ui.retour}
           </Link>
 
-          {!estTraduit && (HABILLAGE[locale] ?? HABILLAGE.fr).pasTraduit && (
+          {enFrancais && (
             <div className="mb-8 rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-3 text-sm text-amber-200">
-              {(HABILLAGE[locale] ?? HABILLAGE.fr).pasTraduit}{" "}
-              <Link href={`/fr/blog/${post.slug}`} className="underline hover:text-amber-100">
-                {(HABILLAGE[locale] ?? HABILLAGE.fr).versionFr}
+              {ui.seulementFr}{" "}
+              <Link href={`/${locale}/blog`} className="underline hover:text-amber-100">
+                {ui.versionFr}
               </Link>
             </div>
           )}
@@ -291,14 +245,14 @@ export default function ArticlePage({
             </span>
             <span className="flex items-center gap-1.5 text-xs text-zinc-400">
               <Clock size={11} />
-              {post.readingTime} {(HABILLAGE[locale] ?? HABILLAGE.fr).lecture}
+              {post.readingTime} {ui.lecture}
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-5">
+          <h1 lang={enFrancais ? "fr" : undefined} className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-5">
             {post.title}
           </h1>
-          <p className="text-zinc-400 text-lg leading-relaxed border-l-2 border-red-500/40 pl-4">
+          <p lang={enFrancais ? "fr" : undefined} className="text-zinc-400 text-lg leading-relaxed border-l-2 border-red-500/40 pl-4">
             {post.excerpt}
           </p>
         </div>
@@ -310,7 +264,7 @@ export default function ArticlePage({
       </div>
 
       {/* ── Content ───────────────────────────────────────────────────────── */}
-      <article className="px-6 py-12">
+      <article lang={enFrancais ? "fr" : undefined} className="px-6 py-12">
         <div className="mx-auto max-w-3xl">
           <div className="prose-custom max-w-[62ch]">
             {renderContent(post.content)}
@@ -323,10 +277,10 @@ export default function ArticlePage({
         <section className="px-6 pb-16">
           <div className="mx-auto max-w-3xl">
             <div className="border-t border-zinc-800/60 pt-12">
-              <h2 className="text-lg font-bold text-white mb-6">Continuer à lire</h2>
+              <h2 className="text-lg font-bold text-white mb-6">{ui.suite}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {relatedPosts.map((related) => {
-                  const rs = getCategoryStyle(related.category);
+                  const rs = styleRubrique(related.categoryKey);
                   return (
                     <Link
                       key={related.slug}
@@ -363,25 +317,21 @@ export default function ArticlePage({
           <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-900/50 p-8 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
             <div className="relative z-10">
-              <h2 className="text-xl font-bold text-white mb-2">
-                Prêt à passer à l&apos;action ?
-              </h2>
-              <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">
-                Site web, audit sécurité ou gestion client — parlons de votre projet en 30 minutes.
-              </p>
+              <h2 className="text-xl font-bold text-white mb-2">{ui.ctaTitre}</h2>
+              <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">{ui.ctaTexte}</p>
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
                 >
-                  Prendre contact
+                  {ui.contact}
                   <ArrowRight size={16} />
                 </Link>
                 <Link
                   href={`/${locale}/blog`}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-400 text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors"
                 >
-                  Voir tous les articles
+                  {ui.tous}
                 </Link>
               </div>
             </div>

@@ -17,13 +17,12 @@ const BASE = "https://aevia.services";
 
   Même règle que les articles (`blog/[slug]/layout.tsx`) : une langue qui a
   au moins un article traduit a son propre index, canonique sur lui-même.
-  L'allemand et le portugais n'en ont aucun — leur index liste les articles
-  français — et pointent donc vers `/fr/blog`, en `noindex`, pour ne pas
-  présenter la même liste sous plusieurs URL.
+  Depuis le 20/11, les cinq langues en ont (l'allemand et le portugais du
+  Brésil n'en avaient aucun et pointaient vers `/fr/blog`, en `noindex`) ; la
+  règle reste pour une éventuelle sixième langue.
 
   Ce layout enveloppe aussi les articles : ils redéfinissent titre,
-  description, canonique et hreflang, et n'héritent d'ici que `robots`, qui
-  vaut la même chose pour eux (aucun article n'est traduit en de/pt).
+  description, canonique, hreflang et `robots`.
 */
 const COPY: Record<string, { title: string; description: string }> = {
   fr: {
@@ -47,9 +46,9 @@ const COPY: Record<string, { title: string; description: string }> = {
       "Praxisleitfäden für kleine Unternehmen: Kosten einer Website oder eines KI-Telefonagenten, WhatsApp Business, Website-Sicherheit, Kundenservice.",
   },
   pt: {
-    title: "Blog Aevia — site, atendimento com IA e segurança para PME",
+    title: "Blog Aevia — site, atendimento com IA e segurança para PMEs",
     description:
-      "Guias práticos para PME e independentes: quanto custa um site ou um agente telefónico com IA, WhatsApp Business, segurança do site, atendimento ao cliente.",
+      "Guias práticos para PMEs e autônomos: quanto custa um site ou um agente telefônico com IA, WhatsApp Business, segurança do site, atendimento ao cliente.",
   },
 };
 

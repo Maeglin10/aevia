@@ -161,7 +161,7 @@ La voix commence à 79 € par mois avec 200 minutes d'appel incluses, plus 100 
       en: {
         title: "Taking phone orders with AI: how it works for a pizzeria or a takeaway restaurant",
         excerpt:
-          "Between 6:30 and 8:30 pm, the phone rings while you are at the oven. What an AI voice agent actually does when it takes a takeaway order, what it does not do, how many minutes you need, and the questions to ask before you choose.",
+          "Between 18:30 and 20:30, the phone rings while you are at the oven. What an AI voice agent actually does when it takes a takeaway order, what it does not do, how many minutes you need, and the questions to ask before you choose.",
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
@@ -254,7 +254,7 @@ Voice starts at €79 a month with 200 call minutes included, plus a one-off €
 
 ---
 
-👉 [See how the Aevia Inbox AI customer desk answers the phone](https://inbox.aevia.services/en)
+👉 [See how the Aevia Inbox AI customer desk answers the phone](https://inbox.aevia.services/en/solutions/standard-telephonique-ia)
 `,
         faq: [
           { q: "Can AI really take a complete order over the phone?", a: "Yes. The agent reads the restaurant's menu, takes dishes and quantities, reads the summary back to the customer and records the order once confirmed, with the caller's number." },
@@ -289,7 +289,7 @@ Un agente de voz con IA contesta esas llamadas por ti, también cuando entran va
 ## Cómo transcurre una llamada, paso a paso
 
 1. **El agente contesta en nombre de tu local** y pregunta qué desea el cliente.
-2. **Consulta tu carta** — los platos y precios que has introducido — para responder preguntas («¿tenéis pizza vegetariana?») y ofrecer lo que existe.
+2. **Consulta tu carta** — los platos y precios que has introducido — para responder preguntas («¿tienen pizza vegetariana?») y ofrecer lo que existe.
 3. **Toma el pedido**: platos, cantidades, peticiones («sin cebolla»), una alergia que avisar a cocina y el nombre del cliente.
 4. **Repite el resumen** — platos, cantidades, total — y espera la confirmación del cliente.
 5. **Registra el pedido** solo después de ese «sí»: el pedido recibe un número, el total se calcula con tus precios y se guarda el número de quien llama para poder devolverle la llamada.
@@ -360,7 +360,7 @@ La voz empieza en 79 € al mes con 200 minutos de llamada incluidos, más 100 �
 
 ---
 
-👉 [Ver cómo responde al teléfono la atención al cliente con IA de Aevia Inbox](https://inbox.aevia.services/es)
+👉 [Ver cómo responde al teléfono la atención al cliente con IA de Aevia Inbox](https://inbox.aevia.services/es/solutions/standard-telephonique-ia)
 `,
         faq: [
           { q: "¿Puede la IA tomar de verdad un pedido completo por teléfono?", a: "Sí. El agente consulta la carta del restaurante, toma platos y cantidades, repite el resumen al cliente y registra el pedido tras su confirmación, con el número de quien llama." },
@@ -491,18 +491,18 @@ L'intérêt n'est pas seulement le prix. C'est le délai : un site en ligne en q
         category: "Web & Marketing",
         content: `## Key takeaways in 30 seconds
 
-- **Simple brochure site: €400–1,500**, site with booking or a shop: €1,500–6,000, complex custom build: €6,000+
-- **The headline price is never the total** — add domain, hosting, maintenance and updates
-- **A quote with no line for content is an incomplete quote**: writing is often 30% of the real work
-- **The real risk is not overpaying, it is paying for a site nobody visits** — a site without search visibility is an expensive brochure
+- **Simple brochure site: €400–1,500**, site with booking or an online shop: €1,500–6,000, complex custom build: €6,000+
+- **The headline price is never the total price** — add hosting, the domain name, maintenance and updates
+- **A quote with no priced line for content is an incomplete quote**: writing often accounts for 30% of the real work
+- **The real risk is not overpaying, it is paying for a site nobody visits** — a site without search visibility is an overpriced brochure
 
 ---
 
-## Why the spread is so wide
+## Why the price gaps are so wide
 
-When quotes range from €500 to €8,000 for what looks like the same site, the difference is almost never the graphics. It is three things invisible from the homepage: how much content has to be produced, what runs behind the scenes, and how much time goes into making the site findable.
+When a quote goes from €500 to €8,000 for what looks like the same site, the difference is almost never in the graphics. It lies in three things you cannot see from the homepage: how much content has to be produced, the features running behind the scenes, and the time spent making the site findable.
 
-A five-page site with client-supplied copy has nothing in common with a five-page site where every line must be written and the search structure built. Both look identical in a portfolio.
+A five-page site with copy supplied by the client has nothing in common with a five-page site where every line has to be written, the products photographed and the search structure built. Yet both look identical in a portfolio.
 
 ---
 
@@ -510,23 +510,27 @@ A five-page site with client-supplied copy has nothing in common with a five-pag
 
 ### Landing page — €300–800
 
-One page, one goal: get a form filled or a call placed. The most profitable format when you already have traffic to send somewhere.
+One page, one goal: get a form filled in or a call placed. It is the most profitable format when you already have traffic to send somewhere (advertising, social media, a trade show).
+
+What it normally includes: a page structured into persuasive sections, a form connected to your mailbox, a mobile-friendly design, and hosting.
 
 ### Brochure site — €600–2,500
 
-Four to eight pages. The standard format for a tradesperson, a practice, a shop, a service provider. The low end is a template fitted to your colours and copy; the high end is a design specific to your brand plus serious local search work.
+Four to eight pages: home, services, about, contact, sometimes one page per service. It is the standard format for a tradesperson, a practice, a shop or a service provider.
 
-### Site with booking — €1,500–5,000
+The low end of the range is a template adapted to your colours and your copy. The high end is a design specific to your brand, professional copywriting, and serious local search work.
 
-The moment a visitor picks a time slot, complexity changes nature: availability, confirmations, cancellations, reminders, calendar sync.
+### Site with booking or appointment scheduling — €1,500–5,000
+
+As soon as a visitor has to pick a time slot, the complexity changes nature. Availability, confirmations, cancellations and reminders have to be handled, and often synchronisation with an existing calendar.
 
 ### Online shop — €2,000–10,000
 
-The catalogue is the hidden cost. Thirty products with photos, descriptions, variants and stock is several days of data entry nobody quotes for.
+The catalogue is the hidden cost. Thirty products with photos, descriptions, variants and stock means several days of data entry that nobody prices upfront. Add payment, shipping, VAT, and the legal notices required for distance selling.
 
 ### Custom build — €6,000 and up
 
-Client area, connection to a business system, quote calculator. At this point it is an application, not a site.
+Client area, connection to business software, quote calculator, multiple languages with distinct content. At this point it is no longer a site but an application.
 
 ---
 
@@ -536,29 +540,40 @@ Client area, connection to a business system, quote calculator. At this point it
 |---|---|---|
 | Domain name | €10–40 | No |
 | Hosting | €60–400 | No |
-| SSL certificate | €0–100 | Usually included |
+| SSL certificate | €0–100 | Often included |
 | Maintenance and updates | €200–1,200 | No, with a CMS |
-| Content changes | €50–120/hr | Yes, if self-service |
+| Content changes | €50–120/hr | Yes, if you can make them yourself |
+| Backups | €0–150 | No |
 
-A €900 site costing €800 a year to maintain is more expensive over three years than an €1,800 all-inclusive site. Most quotes make that comparison impossible.
-
----
-
-## Three questions that expose an honest quote
-
-**"Who writes the copy?"** A vague answer means the budget will grow or the site ships with placeholder text.
-
-**"What happens if I want to change a price in six months?"** A site you cannot edit yourself costs a billed intervention per comma.
-
-**"Will the site be findable on Google, and for which terms?"** A serious provider names specific local queries. "It will be SEO-optimised" tells you nothing.
+A €900 site that costs €800 a year to maintain ends up more expensive over three years than an €1,800 all-inclusive site. Few quotes let you make that calculation.
 
 ---
 
-## The real trade-off
+## Three questions that reveal an honest quote
 
-A business that does not appear when someone searches its trade in its town loses customers daily without ever seeing it. That loss is silent, so it is easy to ignore — unlike an invoice.
+**"Who writes the copy?"** If the answer is vague, the budget will balloon or the site will go live with placeholder text. Copywriting is the most underestimated item.
 
-One extra customer a month at a €150 average basket pays for the site within a year at any point in these ranges. The question is not what it costs, but when it starts paying.`,
+**"What happens if I want to change a price in six months?"** A site you cannot edit yourself will cost you a billed intervention for every comma.
+
+**"Will the site be findable on Google, and for which terms?"** A serious provider will talk to you about specific, local search queries. A provider who answers "it will be SEO-optimised" has told you nothing.
+
+---
+
+## The real trade-off: the cost of building versus the cost of being absent
+
+A business that does not appear when someone searches for its trade in its town loses customers every day without ever seeing it. It is a silent loss, and therefore easy to ignore — unlike an invoice.
+
+If your site brings you even one customer a month, with an average basket of €150, it pays for itself in under a year, whichever range you are in. So the question is not "how much does it cost" but "from when does it start paying off".
+
+---
+
+## What about automated solutions?
+
+For the past two years, a third way has existed between the site builder where you do everything yourself and the agency charging several thousand euros: platforms that generate a professional site from your business information, with search optimisation already structured.
+
+The benefit is not only the price. It is the lead time: a site online in a few days rather than after six weeks of back-and-forth. The compromise is that you start from an industry template rather than an original design — which, for 90% of shops and service providers, has no commercial consequence.
+
+[Aevia Launch](https://launch.aevia.services) works on this principle: site online within 48 hours (5 to 7 days for a custom Premium site), from €399 to €1,499 as a one-off payment, then €20 a month for hosting and maintenance.`,
         faq: [
           {
             q: "What is the average cost of a professional website?",
@@ -585,66 +600,97 @@ One extra customer a month at a €150 average basket pays for the site within a
         category: "Web y Marketing",
         content: `## Lo esencial en 30 segundos
 
-- **Web informativa sencilla: 400–1.500 €**, con reservas o tienda: 1.500–6.000 €, a medida compleja: más de 6.000 €
-- **El precio anunciado nunca es el total** — suma dominio, alojamiento, mantenimiento y actualizaciones
-- **Un presupuesto sin partida de contenidos está incompleto**: la redacción suele ser el 30 % del trabajo real
-- **El riesgo no es pagar de más, es pagar por una web que nadie visita**
+- **Web informativa sencilla: 400–1.500 €**, web con reservas o tienda online: 1.500–6.000 €, desarrollo a medida complejo: más de 6.000 €
+- **El precio anunciado nunca es el precio total** — suma el alojamiento, el dominio, el mantenimiento y las actualizaciones
+- **Un presupuesto sin una partida de contenidos con su precio está incompleto**: la redacción suele representar el 30 % del trabajo real
+- **El verdadero riesgo no es pagar de más, es pagar por una web que nadie visita** — una web sin posicionamiento es un folleto carísimo
 
 ---
 
-## Por qué la horquilla es tan amplia
+## Por qué las diferencias de precio son tan grandes
 
-Cuando los presupuestos van de 500 € a 8.000 € por lo que parece la misma web, la diferencia casi nunca está en el diseño gráfico. Está en tres cosas invisibles desde la portada: cuánto contenido hay que producir, qué funciona por detrás, y cuánto tiempo se dedica a que la web se encuentre.
+Cuando un presupuesto pasa de 500 € a 8.000 € por lo que parece la misma web, la diferencia casi nunca está en el diseño gráfico. Está en tres cosas invisibles desde la página de inicio: la cantidad de contenido que hay que producir, las funcionalidades que trabajan por detrás y el tiempo dedicado a que la web se pueda encontrar.
+
+Una web de cinco páginas con textos facilitados por el cliente no tiene nada que ver con una web de cinco páginas en la que hay que escribir cada línea, fotografiar los productos y estructurar el posicionamiento. Sin embargo, las dos se ven idénticas en un portafolio.
 
 ---
 
-## Rangos reales por tipo
+## Los rangos reales por tipo de web
 
 ### Landing page — 300–800 €
-Una página, un objetivo: rellenar un formulario o generar una llamada.
+
+Una sola página, un solo objetivo: que el visitante rellene un formulario o haga una llamada. Es el formato más rentable cuando ya tienes tráfico que enviar a algún sitio (publicidad, redes sociales, feria profesional).
+
+Lo que incluye normalmente: una página estructurada en secciones con argumentos, un formulario conectado a tu correo, un diseño adaptado a dispositivos móviles y el alojamiento.
 
 ### Web informativa — 600–2.500 €
-De cuatro a ocho páginas. El formato estándar para un autónomo, una consulta o un comercio.
 
-### Web con reservas — 1.500–5.000 €
-En cuanto el visitante elige una franja horaria, la complejidad cambia: disponibilidad, confirmaciones, cancelaciones, recordatorios.
+De cuatro a ocho páginas: inicio, servicios, quiénes somos, contacto y, a veces, una página por servicio. Es el formato estándar para un profesional de oficios, una consulta o despacho, un comercio o un proveedor de servicios.
+
+La parte baja del rango corresponde a una plantilla adaptada a tus colores y tus textos. La parte alta corresponde a un diseño propio de tu marca, una redacción profesional y un trabajo serio de posicionamiento local.
+
+### Web con reservas o citas — 1.500–5.000 €
+
+En cuanto un visitante tiene que elegir una franja horaria, la complejidad cambia de naturaleza. Hay que gestionar la disponibilidad, las confirmaciones, las cancelaciones, los recordatorios y, a menudo, la sincronización con una agenda existente.
 
 ### Tienda online — 2.000–10.000 €
-El catálogo es el coste oculto. Treinta referencias con fotos, descripciones, variantes y stock son varios días de trabajo que nadie presupuesta.
+
+El catálogo es el coste oculto. Treinta referencias con fotos, descripciones, variantes y stock son varios días de carga de datos que nadie presupuesta al principio. Añade el pago, el envío, el IVA y los avisos legales de la venta a distancia.
 
 ### A medida — más de 6.000 €
-Área de cliente, conexión con un software de gestión, calculadora de presupuestos. Aquí ya no es una web, es una aplicación.
+
+Área de cliente, conexión con un software de gestión, calculadora de presupuestos, varios idiomas con contenidos distintos. Aquí ya no hablamos de una web, sino de una aplicación.
 
 ---
 
 ## Los costes que nadie anuncia
 
-| Concepto | Rango anual |
-|---|---|
-| Dominio | 10–40 € |
-| Alojamiento | 60–400 € |
-| Mantenimiento y actualizaciones | 200–1.200 € |
-| Cambios de contenido | 50–120 €/h |
+| Concepto | Rango anual | ¿Evitable? |
+|---|---|---|
+| Dominio | 10–40 € | No |
+| Alojamiento | 60–400 € | No |
+| Certificado SSL | 0–100 € | A menudo incluido |
+| Mantenimiento y actualizaciones | 200–1.200 € | No, si usas un CMS |
+| Cambios de contenido | 50–120 €/h | Sí, si puedes hacerlos tú mismo |
+| Copias de seguridad | 0–150 € | No |
 
-Una web de 900 € que cuesta 800 € al año de mantenimiento sale más cara a tres años que una de 1.800 € todo incluido.
+Una web de 900 € que cuesta 800 € al año de mantenimiento sale más cara a tres años que una de 1.800 € todo incluido. Es el cálculo que pocos presupuestos te permiten hacer.
 
 ---
 
 ## Tres preguntas que revelan un presupuesto honesto
 
-**«¿Quién escribe los textos?»** Si la respuesta es vaga, el presupuesto crecerá o la web saldrá con texto de relleno.
+**«¿Quién escribe los textos?»** Si la respuesta es vaga, el presupuesto se disparará o la web saldrá con texto de relleno. La redacción es la partida más subestimada.
 
-**«¿Qué pasa si quiero cambiar un precio dentro de seis meses?»** Una web que no puedes editar te cuesta una intervención facturada por cada coma.
+**«¿Qué pasa si quiero cambiar un precio dentro de seis meses?»** Una web que no puedes modificar tú mismo te costará una intervención facturada por cada coma.
 
-**«¿Se encontrará en Google, y con qué términos?»** Un proveedor serio nombra búsquedas concretas y locales.`,
+**«¿Se podrá encontrar la web en Google, y con qué términos?»** Un proveedor serio te hablará de búsquedas concretas y locales. Un proveedor que responde «estará optimizada para SEO» no te ha dicho nada.
+
+---
+
+## El verdadero dilema: coste de creación frente a coste de ausencia
+
+Un comercio que no aparece cuando alguien busca su oficio en su ciudad pierde clientes todos los días, sin verlo nunca. Es una pérdida silenciosa y, por eso, fácil de ignorar — a diferencia de una factura.
+
+Si tu web te trae aunque sea un solo cliente al mes, con un ticket medio de 150 €, se amortiza en menos de un año, sea cual sea el rango en el que estés. La pregunta no es «cuánto cuesta», sino «a partir de cuándo empieza a ser rentable».
+
+---
+
+## ¿Y las soluciones automatizadas?
+
+Desde hace dos años existe una tercera vía entre el creador de webs en el que lo haces todo tú y la agencia de varios miles de euros: plataformas que generan una web profesional a partir de la información de tu negocio, con el posicionamiento ya estructurado.
+
+La ventaja no es solo el precio. Es el plazo: una web en línea en unos días en lugar de seis semanas de idas y venidas. La contrapartida es que partes de una plantilla sectorial y no de un diseño gráfico original — lo que, para el 90 % de los comercios y proveedores de servicios, no tiene ninguna consecuencia comercial.
+
+[Aevia Launch](https://launch.aevia.services) funciona con este principio: web en línea en 48 horas (de 5 a 7 días para una web Premium a medida), de 399 € a 1.499 € en pago único, y después 20 € al mes de alojamiento y mantenimiento.`,
         faq: [
           {
             q: "¿Cuál es el precio medio de una página web profesional?",
-            a: "Para una pyme o un autónomo, la mediana está entre 800 y 2.500 € para una web informativa. Por debajo de 400 € suele tratarse de una plantilla sin trabajo de contenidos ni posicionamiento.",
+            a: "Para una pyme o un autónomo, la mediana está entre 800 y 2.500 € para una web informativa. Por debajo de 400 € suele tratarse de una plantilla sin trabajo de contenidos ni posicionamiento. Por encima de 5.000 €, se entra en el desarrollo a medida o el comercio electrónico.",
           },
           {
             q: "¿Hay que pagar una cuota mensual por una web?",
-            a: "No necesariamente. Algunos proveedores cobran un pago único con alojamiento incluido. Compara siempre a tres años: 39 €/mes son 1.400 € en ese periodo.",
+            a: "No necesariamente. Algunos proveedores cobran un pago único con alojamiento incluido; otros, una cuota mensual. Compara siempre a tres años: una cuota de 39 €/mes son 1.400 € en ese periodo.",
           },
           {
             q: "¿Cuánto cuesta el mantenimiento anual de una web?",
@@ -764,61 +810,75 @@ Chez Aevia, l'agent vocal d'[Aevia Inbox](https://inbox.aevia.services) est con�
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
-- **Answering services bill per call or per plan**: roughly €1.50–3 per handled call, or €80–400/month by volume
-- **An AI voice agent bills per plan or per minute**, with no surcharge when several calls come in at once: every minute costs the same
+- **Answering services bill per call or per plan**: count €1.50 to €3 per handled call, or €80 to €400/month depending on volume
+- **An AI voice agent bills per plan or per minute**, with no surcharge when several calls come in at the same time: every minute costs the same
 - **The real difference is not price, it is what comes out of the call**: a message to call back, or an appointment already in your calendar
-- **Humans keep the edge on emotional or off-script requests**; AI keeps it on volume, nights and peaks
+- **The answering service keeps the edge on emotional or off-script requests**; AI keeps the edge on volume, nights and peaks
 
 ---
 
-## What each actually does
+## What each solution actually does
 
-An **answering service** is outsourced humans. Operators answer for you using a brief you wrote, take a message, filter, and forward it by email or SMS.
+An **answering service** is an outsourced human service. Operators answer on your behalf, following a brief you wrote. They take a message, screen calls, and forward everything to you by email or text message. Some providers go as far as booking appointments if you give them access to a calendar.
 
-An **AI voice agent** is software that picks up, understands the request in natural language, and performs an action in your system: check availability, create a booking, log an order, answer a question about hours or prices.
+An **AI voice agent** is software that picks up, understands the request in natural language, and carries out an action in your system: checking availability, creating a booking, logging an order, answering a question about your opening hours or your prices.
 
-The distinction that matters: an answering service mostly produces information to process later. A voice agent produces a finished action.
+The distinction that matters: an answering service mostly produces information to be handled later. A voice agent produces an action that is already done.
 
 ---
 
-## Costed comparison
+## A costed comparison
 
 | Criterion | Answering service | AI voice agent |
 |---|---|---|
-| Recurring cost | €80–400/mo, or €1.50–3/call | €79–999/mo by volume |
-| Hours | Business hours, extensions cost extra | 24/7 at no premium |
+| Upfront cost | €0 to €150 activation fee | €0 to €200 for configuration |
+| Recurring cost | €80 to €400/month, or €1.50–3/call | €79 to €999/month depending on volume |
+| Hours | Business hours, extensions cost extra | 24/7, no surcharge |
 | Simultaneous calls | Limited by headcount | Several in parallel, no busy tone |
-| Languages | Usually 1–2 | 5+, no surcharge |
+| Languages | Depends on the team, often 1 to 2 | 5 languages or more, no extra cost |
 | Result of a call | A message to handle | An executed action |
 | Emotional nuance | Strength | Weakness |
+| Off-script requests | Human improvisation | Transfer or callback |
 
 ---
 
 ## The calculation few people run
 
-A restaurant taking 25 calls a day, 18 of them bookings, pays roughly €40–55 a day on per-call pricing — over €1,200 a month. At that volume the AI plan is far below.
+A restaurant that gets 25 calls a day, 18 of them for a booking, will pay roughly €40 to €55 a day for an answering service on per-call pricing — more than €1,200 a month. At that volume, the AI plan comes in far below.
 
-Conversely, a consultancy taking three delicate, all-different calls a day has no reason to automate.
+Conversely, a consulting firm that gets three calls a day, all delicate and all different, has no reason to automate. The answering service will cost it €100 a month and do a better job.
 
-**Rule of thumb**: below 5 calls a day with varied requests, humans win. Above 15 calls a day with repetitive requests, the gap swings clearly to AI. In between it depends on repetitiveness, not volume.
-
----
-
-## Where AI is genuinely better
-
-**Off-hours.** 30–40% of a shop's calls arrive outside opening hours or during the rush — exactly the calls no human takes.
-
-**Peaks.** Friday evening, six people call at once. An answering service queues five; a voice agent takes all six.
-
-**Full execution.** The agent does not say "I'll pass it on." It checks the 8pm table, books it, writes it to the floor system and sends the confirmation.
+**Rule of thumb**: below 5 calls a day with varied requests, a human remains the better fit. Above 15 calls a day with repetitive requests, the balance tips clearly in favor of AI. In between, it depends on how repetitive the calls are, not on volume.
 
 ---
 
-## Where humans are better
+## What AI does better, concretely
 
-An angry customer, a bereavement, a cancellation hiding a dispute, a commercial negotiation. A good operator knows to slow down, apologise sincerely, and hand over.
+**Off-peak hours.** 30 to 40% of a business's calls arrive outside opening hours or during the rush. Those are precisely the calls no human takes and no answering service covers without an extra charge.
 
-Which is why the best setup is almost never one or the other: the voice agent takes standard calls and escalates the moment a request leaves the script.`,
+**Peaks.** On a Friday evening in a restaurant, six people call at the same time. An answering service puts five calls on hold; a voice agent takes all six.
+
+**Complete execution.** The agent does not say "I'll pass the message on." It checks the 20:00 table, books it under the name given, enters it in the floor-management software and sends the confirmation.
+
+---
+
+## What humans do better
+
+An angry customer, a bereavement, a cancellation that hides a dispute, a commercial negotiation: these are moments when a human voice is not a luxury. A good answering service knows how to slow down, apologize sincerely, and sense when to hand over.
+
+That is why the best setup is almost never one or the other. The voice agent takes the standard calls — bookings, opening hours, availability — and switches to a human as soon as the request goes beyond its scope.
+
+---
+
+## How to decide in three questions
+
+1. **What share of your calls look alike?** Log your calls for a week. If more than 60% fall into three reasons, automation pays off.
+2. **How many calls are never answered?** Your phone carrier or your phone itself gives you the figure. That is the number that justifies the expense, not the total number of calls.
+3. **What do you want to have at the end of the call?** If a message is enough, an answering service will do. If you want an appointment already booked, you need a system connected to your calendar.
+
+---
+
+At Aevia, the voice agent in [Aevia Inbox](https://inbox.aevia.services) is built for the third answer: it does not pass messages on, it executes — creating the booking, syncing the calendar, sending the confirmation — and transfers to a human as soon as the request falls outside its scope.`,
         faq: [
           {
             q: "Is an AI voice agent cheaper than an answering service?",
@@ -845,56 +905,75 @@ Which is why the best setup is almost never one or the other: the voice agent ta
         category: "Voz IA y Telefonía",
         content: `## Lo esencial en 30 segundos
 
-- **La secretaría telefónica factura por llamada o por cuota**: entre 1,50 y 3 € por llamada atendida, o de 80 a 400 €/mes
-- **El agente de voz IA factura por plan o por minuto**, sin recargo cuando entran varias llamadas a la vez
-- **La diferencia real no es el precio, es lo que sale de la llamada**: un mensaje que devolver, o una cita ya en tu agenda
-- **El humano gana en situaciones emocionales o fuera de guion**; la IA gana en volumen, noches y picos
+- **La secretaría telefónica factura por llamada o con una tarifa plana**: calcula entre 1,50 y 3 € por llamada atendida, o de 80 a 400 €/mes según el volumen
+- **El agente de voz IA factura por plan o por minuto**, sin recargo cuando entran varias llamadas a la vez: cada minuto cuesta lo mismo
+- **La diferencia real no es el precio, es lo que sale de la llamada**: un mensaje para devolver la llamada, o una cita ya anotada en tu agenda
+- **La secretaría conserva la ventaja en las peticiones emocionales o fuera de guion**; la IA conserva la ventaja en volumen, noches y picos
 
 ---
 
 ## Qué hace realmente cada solución
 
-Una **secretaría telefónica** son personas externalizadas que responden por ti con unas instrucciones que has redactado, toman un mensaje y te lo trasladan.
+Una **secretaría telefónica** es un servicio humano externalizado. Unos teleoperadores responden en tu lugar, con una ficha de instrucciones que tú has redactado. Toman un mensaje, filtran y te lo trasladan por correo electrónico o SMS. Algunos proveedores llegan a gestionar citas si les das acceso a una agenda.
 
-Un **agente de voz IA** es software que descuelga, entiende la petición en lenguaje natural y ejecuta una acción en tu sistema: comprobar disponibilidad, crear una reserva, registrar un pedido.
+Un **agente de voz IA** es un software que descuelga, entiende la petición en lenguaje natural y ejecuta una acción en tu sistema: comprobar disponibilidad, crear una reserva, registrar un pedido, responder a una pregunta sobre tus horarios o tus tarifas.
 
-La distinción que importa: la secretaría produce información que procesarás después. El agente produce una acción ya terminada.
+La distinción que importa: la secretaría produce sobre todo información que habrá que procesar más tarde. El agente de voz produce una acción ya terminada.
 
 ---
 
-## Comparativa
+## Comparativa con cifras
 
-| Criterio | Secretaría | Agente IA |
+| Criterio | Secretaría telefónica | Agente de voz IA |
 |---|---|---|
-| Coste recurrente | 80–400 €/mes o 1,50–3 €/llamada | 79–999 €/mes |
-| Horario | Horario laboral | 24/7 sin recargo |
-| Llamadas simultáneas | Limitadas por plantilla | Varias en paralelo, sin tono de ocupado |
-| Idiomas | 1 o 2 | 5 o más |
-| Resultado | Un mensaje | Una acción ejecutada |
+| Coste inicial | De 0 a 150 € de alta | De 0 a 200 € de configuración |
+| Coste recurrente | De 80 a 400 €/mes, o 1,50–3 €/llamada | De 79 a 999 €/mes según el volumen |
+| Horario | Horario laboral, ampliaciones de pago | 24/7, sin recargo |
+| Llamadas simultáneas | Limitadas por la plantilla | Varias en paralelo, sin tono de ocupado |
+| Idiomas | Según el equipo, a menudo 1 o 2 | 5 idiomas o más, sin coste adicional |
+| Resultado de una llamada | Un mensaje que gestionar | Una acción ejecutada |
+| Matices emocionales | Punto fuerte | Punto débil |
+| Peticiones fuera de guion | Improvisación humana | Transferencia o devolución de llamada |
 
 ---
 
 ## El cálculo que pocos hacen
 
-Un restaurante con 25 llamadas al día, 18 de ellas reservas, paga unos 40–55 € diarios con tarificación por llamada: más de 1.200 € al mes. A ese volumen, el plan de IA queda muy por debajo.
+Un restaurante que recibe 25 llamadas al día, 18 de ellas para reservar, pagará unos 40 a 55 € diarios de secretaría con tarificación por llamada, es decir, más de 1.200 € al mes. Para ese volumen, el plan de IA queda muy por debajo.
 
-**Regla práctica**: por debajo de 5 llamadas al día con peticiones variadas, gana el humano. Por encima de 15 con peticiones repetitivas, gana claramente la IA.
+A la inversa, una consultoría que recibe tres llamadas al día, todas delicadas y todas distintas, no tiene ningún interés en automatizar. La secretaría le costará 100 € al mes y lo hará mejor.
 
----
-
-## Dónde la IA es mejor
-
-**Fuera de horario.** Entre el 30 y el 40 % de las llamadas llegan fuera del horario o en plena hora punta.
-
-**Picos.** Un viernes por la noche llaman seis personas a la vez. La IA las atiende a todas.
-
-**Ejecución completa.** El agente no dice «se lo paso»: comprueba la mesa, la reserva y envía la confirmación.
+**La regla práctica**: por debajo de 5 llamadas al día con peticiones variadas, la persona sigue siendo más adecuada. Por encima de 15 llamadas al día con peticiones repetitivas, la balanza se inclina claramente a favor de la IA. Entre ambas cifras, depende de lo repetitivas que sean las llamadas, no del volumen.
 
 ---
 
-## Dónde el humano es mejor
+## Lo que la IA hace mejor, en concreto
 
-Un cliente enfadado, un duelo, una negociación. Por eso la mejor configuración casi nunca es una u otra: la IA atiende lo estándar y deriva a una persona en cuanto la petición se sale del guion.`,
+**Las horas valle.** Entre el 30 y el 40 % de las llamadas de un comercio llegan fuera del horario de apertura o en plena hora punta. Son justamente las llamadas que ninguna persona atiende y que ninguna secretaría cubre sin recargo.
+
+**Los picos.** Un viernes por la noche en un restaurante, seis personas llaman a la vez. Una secretaría deja cinco llamadas en espera; un agente de voz atiende las seis.
+
+**La ejecución completa.** El agente no dice «se lo paso». Comprueba la mesa de las 20:00, la reserva a nombre de quien llama, la registra en el software de sala y envía la confirmación.
+
+---
+
+## Lo que la persona hace mejor
+
+Un cliente enfadado, un duelo, una cancelación que esconde un conflicto, una negociación comercial: son momentos en los que la voz humana no es un lujo. Una buena secretaría sabe ir más despacio, disculparse con sinceridad y percibir cuándo hay que pasar el relevo.
+
+Por eso la mejor configuración casi nunca es una u otra. El agente de voz atiende las llamadas estándar —reservas, horarios, disponibilidad— y pasa a una persona en cuanto la petición se sale del marco.
+
+---
+
+## Cómo decidir en tres preguntas
+
+1. **¿Qué proporción de tus llamadas se parecen?** Anota tus llamadas durante una semana. Si más del 60 % caben en tres motivos, la automatización es rentable.
+2. **¿Cuántas llamadas no se atienden nunca?** Tu operador o tu propio teléfono te da la cifra. Es el número que justifica el gasto, no el total de llamadas.
+3. **¿Qué quieres tener al final de la llamada?** Si basta con un mensaje, una secretaría te sirve. Si quieres una cita ya fijada, necesitas un sistema conectado a tu agenda.
+
+---
+
+En Aevia, el agente de voz de [Aevia Inbox](https://inbox.aevia.services) está diseñado para la tercera respuesta: no transmite, ejecuta —crea la reserva, sincroniza el calendario, envía la confirmación— y transfiere a una persona en cuanto la petición sale de su ámbito.`,
         faq: [
           {
             q: "¿Un agente de voz IA es más barato que una secretaría telefónica?",
@@ -902,11 +981,11 @@ Un cliente enfadado, un duelo, una negociación. Por eso la mejor configuración
           },
           {
             q: "¿Sabe quien llama que habla con una IA?",
-            a: "El agente es transparente sobre su naturaleza. En la práctica, lo que importa es obtener respuesta inmediata en lugar de un contestador.",
+            a: "El agente es transparente sobre su naturaleza. En la práctica, lo que importa a quien llama es obtener una respuesta inmediata y una reserva confirmada en lugar de caer en un contestador.",
           },
           {
             q: "¿Qué pasa si la IA no entiende la petición?",
-            a: "Transfiere a un número humano o registra una devolución de llamada con el contexto.",
+            a: "Transfiere a un número atendido por una persona o registra una devolución de llamada con el contexto de la llamada. Un sistema bien configurado define de antemano los motivos que deben pasar siempre a una persona.",
           },
           {
             q: "¿Se pueden combinar ambas?",
@@ -1019,62 +1098,70 @@ C'est la logique d'[Aevia Inbox](https://inbox.aevia.services) : le même cervea
         content: `## Key takeaways in 30 seconds
 
 - **A classic chatbot follows a script**: buttons, decision tree, pre-written answers. It does not understand, it routes.
-- **A conversational AI agent understands free-form phrasing** and can execute an action: book, look up an order, move an appointment.
-- **What the customer sees**: the chatbot makes you click "Other request"; the agent answers the request.
-- **Chatbots remain valid** for very short, tightly framed journeys. Beyond that they create more frustration than they save time.
+- **A conversational AI agent understands free-form phrasing** and can carry out an action: book, look up an order, change an appointment.
+- **The difference the customer sees**: the chatbot makes you click "Other request"; the agent answers the request.
+- **A chatbot still makes sense** for very short, tightly framed journeys. Beyond that, it creates more frustration than it saves time.
 
 ---
 
-## Three generations, routinely confused
+## Three generations, often confused
 
-**The button chatbot.** You click "Hours", "Prices", "Contact us". It is a menu dressed as a conversation.
+**The button chatbot.** You click "Hours", "Prices", "Contact us". It is a menu dressed up as a conversation. Useful for three fixed pieces of information, infuriating as soon as your question is not on the list.
 
-**The keyword chatbot.** It scans your sentence for words and fires the matching answer. "I'd like to cancel Thursday's booking" triggers the cancellation reply, but it does not know which booking.
+**The keyword chatbot.** It looks for words in your sentence and fires the matching answer. "I'd like to cancel my Thursday booking" triggers the "cancellation" answer, but it has no idea which booking you mean.
 
-**The conversational AI agent.** It interprets the whole sentence, keeps context across messages, queries your real data and performs the action.
+**The conversational AI agent.** It interprets the whole sentence, remembers the context of previous messages, queries your real data and carries out the action. "I'd like to move Thursday to Friday" becomes: identify the customer, find the Thursday slot, check Friday, move it, confirm.
 
 ---
 
-## The one question that separates them
+## The test that tells them apart in one question
 
-Ask a compound question: **"Are you open Saturday and do you deliver to Lyon?"**
+Ask a compound question: **"Are you open on Saturday, and do you deliver to Bourg-en-Bresse?"**
 
-- The button chatbot cannot receive it.
-- The keyword chatbot catches one topic and ignores the other.
-- The AI agent answers both, in order.
+- The button chatbot cannot take it in.
+- The keyword chatbot catches one of the two topics and ignores the other.
+- The AI agent answers both, in the right order.
 
-That is exactly how real customers write, because nobody asks one thing at a time.
+This is exactly the kind of question real customers ask, because nobody phrases one request at a time.
 
 ---
 
 ## What it changes commercially
 
-The cost of a badly placed chatbot never shows on an invoice — it shows in customers who give up. After three clicks without an answer, a visitor does not complain. They close the tab and call your competitor.
+The cost of a badly placed chatbot never shows up on an invoice: it shows up in the customers who give up. When a visitor clicks three times without getting an answer, they do not write to complain — they close the tab and call your competitor.
+
+Conversely, an agent that answers free-form questions turns a question into an action. The visitor no longer asks "how do I book"; they book within the conversation.
 
 ---
 
 ## When a simple chatbot is enough
 
-- fewer than five recurring, purely factual questions;
-- your goal is to filter before a human contact, not to resolve;
-- low volume and a tight budget.
+There is no shame in keeping it simple. A button chatbot does the job if:
+
+- you have fewer than five recurring questions, all factual;
+- your goal is to filter before a human contact, not to handle the request;
+- your volume is low and your budget tight.
+
+In that case, a clear banner with your opening hours and a call button often does better than a chatbot.
 
 ---
 
 ## When you need an AI agent
 
-- customers write compound requests with dates, names, quantities;
-- the answer depends on your data: availability, stock, history;
-- you receive messages on several channels and want equal quality on all;
-- you lose enquiries at night and at weekends.
+- Your customers write compound requests, with dates, names, quantities.
+- The answer depends on your data: availability, stock, customer history.
+- You receive messages on several channels and want the same quality everywhere.
+- You lose requests at night and at weekends.
 
 ---
 
-## The deciding criterion: inform or finish
+## The deciding criterion: read or act
 
-Ask one question: **do you want the system to inform, or to finish the job?**
+Ask yourself one question: **do you want the system to inform, or to finish the job?**
 
-Informing displays an answer. Finishing writes a row in your database. The second needs an agent connected to your tools, not a chat widget.`,
+Informing means displaying an answer. Finishing the job means writing a line in your database: a booking, an order, a rescheduled appointment. That second category needs an agent connected to your tools, not a chat widget.
+
+That is the logic behind [Aevia Inbox](https://inbox.aevia.services): the same AI brain answers on WhatsApp, Instagram, email and over the phone, with access to real availability — and it creates the booking rather than explaining how to create one.`,
         faq: [
           {
             q: "What is the difference between a chatbot and an AI agent?",
@@ -1097,57 +1184,75 @@ Informing displays an answer. Finishing writes a row in your database. The secon
       es: {
         title: "Chatbot o agente de IA: qué diferencia hay y cuál necesitas",
         excerpt:
-          "Se llama «chatbot» a casi todo lo que responde automáticamente, y eso oculta una diferencia de naturaleza. Uno sigue un árbol de decisión escrito de antemano; el otro entiende y actúa. Así se distinguen.",
+          "Se llama «chatbot» a casi todo lo que responde automáticamente, y eso oculta una diferencia de naturaleza. Uno sigue un árbol de decisión escrito de antemano; el otro entiende y actúa. Así se distinguen y así sabrás cuál corresponde a tu necesidad.",
         category: "CRM y Soporte",
         content: `## Lo esencial en 30 segundos
 
 - **Un chatbot clásico sigue un guion**: botones, árbol de decisión, respuestas preescritas. No entiende, deriva.
 - **Un agente de IA conversacional entiende el lenguaje libre** y puede ejecutar una acción: reservar, buscar un pedido, cambiar una cita.
-- **Lo que ve el cliente**: el chatbot te hace pulsar «Otra consulta»; el agente responde a la consulta.
+- **La diferencia que ve el cliente**: el chatbot te hace pulsar «Otra consulta»; el agente responde a la consulta.
+- **El chatbot sigue siendo útil** para recorridos muy cortos y muy acotados. Más allá, genera más frustración de la que compensa el tiempo que ahorra.
 
 ---
 
-## Tres generaciones que se confunden
+## Tres generaciones que se suelen confundir
 
-**El chatbot de botones.** Pulsas «Horarios», «Precios», «Contacto». Es un menú disfrazado de conversación.
+**El chatbot de botones.** Pulsas «Horarios», «Precios», «Contacto». Es un menú disfrazado de conversación. Útil para tres datos fijos, exasperante en cuanto tu pregunta no está en la lista.
 
-**El chatbot de palabras clave.** Busca palabras en tu frase y lanza la respuesta asociada, pero no sabe de qué reserva hablas.
+**El chatbot de palabras clave.** Busca palabras en tu frase y lanza la respuesta asociada. «Quiero cancelar mi reserva del jueves» activa la respuesta «cancelación», pero no sabe de qué reserva hablas.
 
-**El agente de IA conversacional.** Interpreta la frase completa, mantiene el contexto, consulta tus datos reales y ejecuta la acción.
+**El agente de IA conversacional.** Interpreta la frase completa, recuerda el contexto de los mensajes anteriores, consulta tus datos reales y ejecuta la acción. «Quiero pasar lo del jueves al viernes» se convierte en: identificar al cliente, encontrar la franja del jueves, comprobar el viernes, mover la cita, confirmar.
 
 ---
 
-## La pregunta que los separa
+## La prueba que los separa con una sola pregunta
 
-Haz una pregunta compuesta: **«¿Abrís el sábado y hacéis envíos a Lyon?»**
+Haz una pregunta compuesta: **«¿Abren el sábado y hacen entregas en Bourg-en-Bresse?»**
 
 - El chatbot de botones no puede recibirla.
-- El de palabras clave capta un tema e ignora el otro.
-- El agente de IA responde a ambos.
+- El chatbot de palabras clave capta uno de los dos temas e ignora el otro.
+- El agente de IA responde a los dos, en el orden correcto.
 
-Así escriben los clientes reales: nadie pregunta una cosa cada vez.
+Es exactamente el tipo de pregunta que hacen los clientes reales, porque nadie formula una sola petición a la vez.
+
+---
+
+## Lo que cambia a nivel comercial
+
+El coste de un chatbot mal planteado no aparece en ninguna factura: está en los clientes que abandonan. Cuando un visitante hace clic tres veces sin obtener su respuesta, no te escribe para quejarse: cierra la pestaña y llama a la competencia.
+
+En cambio, un agente que responde al lenguaje libre convierte una pregunta en una acción. El visitante ya no pregunta «cómo reservar»: reserva dentro de la conversación.
 
 ---
 
 ## Cuándo basta un chatbot sencillo
 
-- menos de cinco preguntas recurrentes, todas factuales;
-- tu objetivo es filtrar antes del contacto humano;
-- volumen bajo y presupuesto ajustado.
+No tiene nada de malo quedarse en lo sencillo. Un chatbot de botones cumple su función si:
+
+- tienes menos de cinco preguntas recurrentes, todas factuales;
+- tu objetivo es filtrar antes de un contacto humano, no resolver la petición;
+- tu volumen es bajo y tu presupuesto, ajustado.
+
+En ese caso, un aviso claro con tus horarios y un botón de llamada suele funcionar mejor que un chatbot.
 
 ---
 
 ## Cuándo necesitas un agente de IA
 
-- tus clientes escriben peticiones compuestas con fechas, nombres y cantidades;
-- la respuesta depende de tus datos: disponibilidad, stock, historial;
-- pierdes consultas por la noche y los fines de semana.
+- Tus clientes escriben peticiones compuestas, con fechas, nombres, cantidades.
+- La respuesta depende de tus datos: disponibilidad, stock, historial del cliente.
+- Recibes mensajes por varios canales y quieres la misma calidad en todos.
+- Pierdes peticiones por la noche y los fines de semana.
 
 ---
 
-## El criterio decisivo: informar o resolver
+## El criterio decisivo: informar o actuar
 
-¿Quieres que el sistema informe o que termine el trabajo? Informar es mostrar una respuesta. Terminar es escribir una línea en tu base de datos.`,
+Hazte una sola pregunta: **¿quieres que el sistema informe o que termine el trabajo?**
+
+Informar es mostrar una respuesta. Terminar el trabajo es escribir una línea en tu base de datos: una reserva, un pedido, una cita cambiada. Esta segunda categoría requiere un agente conectado a tus herramientas, no un widget de chat.
+
+Es la lógica de [Aevia Inbox](https://inbox.aevia.services): el mismo cerebro de IA responde en WhatsApp, Instagram, correo electrónico y por teléfono, con acceso a la disponibilidad real, y crea la reserva en lugar de explicar cómo crearla.`,
         faq: [
           {
             q: "¿Cuál es la diferencia entre un chatbot y un agente de IA?",
@@ -1155,11 +1260,11 @@ Así escriben los clientes reales: nadie pregunta una cosa cada vez.
           },
           {
             q: "¿Puede equivocarse un agente de IA?",
-            a: "Sí, como una persona. La diferencia es que un agente bien configurado conoce sus límites: fuera de su alcance deriva a un humano en lugar de inventar.",
+            a: "Sí, como una persona. La diferencia es que un agente bien configurado conoce sus límites: cuando la petición sale de su alcance, la transfiere a una persona en lugar de inventarse una respuesta.",
           },
           {
             q: "¿Hace falta un programador para poner en marcha un agente de IA?",
-            a: "Ya no para los casos estándar. Las plataformas actuales se configuran describiendo tu actividad, horarios y reglas.",
+            a: "Ya no para los casos estándar. Las plataformas actuales se configuran describiendo tu actividad, tus horarios y tus reglas; el desarrollo sigue siendo necesario para conectar un software de gestión poco habitual.",
           },
           {
             q: "¿Sustituye un agente de IA al servicio de atención humano?",
@@ -1265,54 +1370,66 @@ C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : cinq langues nat
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
-- **Language is no longer a fixed cost**: an AI agent replies in the customer's language with no extra headcount per market
-- **The real obstacle is not translation, it is the time zone** — a customer in Bogotá writes while your office sleeps
-- **Translating is not localising**: currencies, date formats and commercial conventions differ by country
+- **The language barrier is no longer a fixed cost**: an AI agent replies in the customer's language with no extra headcount per market
+- **The real obstacle is not translation, it is the time zone** — a customer in Bogotá writes while your office is asleep
+- **Translating is not localizing**: currencies, date formats and business conventions change from one country to the next
 - **Start with one language and one country**, measure, then repeat — opening five markets at once dilutes everything
 
 ---
 
-## The calculation that used to block expansion
+## The calculation that used to block international sales
 
-Until recently, serving a foreign market forced a binary choice: hire someone who speaks the language, or give up. For a three-person company that meant a market of 40 million people stayed closed for want of one salary.
+Until recently, serving a foreign market forced a binary choice: hire someone who speaks the language, or give up. For a three-person company, that meant a market of 40 million people stayed closed for want of one employee at €35,000 a year.
 
-That calculation changed. A conversational agent answers in French, English, Spanish, German or Portuguese at equal quality, and the cost does not scale with the number of languages. Language became a setting, not a budget line.
+That calculation has changed. A conversational agent answers in French, English, Spanish, German or Portuguese with the same quality, and the cost does not depend on the number of languages. Language has become a setting, not a budget line.
 
 ---
 
 ## What it actually unlocks
 
-**You can test a market without committing.** Opening Spain used to require a hire. Now it requires a translated page and a configured agent. If the market does not respond, you lost a few days rather than a year of salary.
+**You can test a market without committing.** Opening Spain used to require a hire; now it requires a translated page and a configured agent. If the market does not respond, you have lost a few days, not a year of salary.
 
-**You cover time zones without night shifts.** The most underrated point. A Canadian prospect writing at 9pm Montreal time reaches you at 3am. Without an automatic reply they have written to three competitors before you wake.
+**You cover time zones without working nights.** This is the most underrated point. A Canadian prospect who writes at 21:00 Montreal time reaches you at 03:00. Without an automatic reply, they have already written to three competitors before you wake up.
 
-**You stop losing enquiries in languages you cannot read.** Many small companies have a folder of emails they never handled because they were in German.
+**You no longer lose requests written in a language you cannot read.** Many small businesses have a folder of emails they never dealt with because they were in German.
 
 ---
 
 ## The four traps that remain
 
 ### 1. Translation is not enough
-Word-for-word text reads foreign. Commercial conventions differ: German expects factual precision over emphasis; British and American English do not share politeness conventions.
+
+Word-for-word translation sounds foreign. Business conventions differ: in Spain, the informal "tú" is normal in situations where French would require the formal "vous"; German expects more factual precision and less emphasis; British and American English do not follow the same politeness conventions.
 
 ### 2. Currencies and formats
-Showing "€399" to a Colombian customer demands a mental conversion they will not perform. Date formats cause genuine booking errors — 12/06 is June in the UK and December in the US.
+
+Showing "€399" to a Colombian customer asks them for mental arithmetic and a conversion they will not do. Date formats (12/06 means June in the United Kingdom and December in the United States) cause real booking errors.
 
 ### 3. Payment
-Every market has habits: cards in France, instant transfer in Germany, mobile wallets across Latin America. Offering cards only closes part of the market invisibly.
+
+Every market has its habits: cards in France, instant bank transfers in Germany, mobile wallets in Latin America. Offering cards only shuts out part of the market without you noticing.
 
 ### 4. Local obligations
-Legal notices, terms of sale, withdrawal rights and tax differ by country. Automated support does not exempt you from terms adapted to the market.
+
+Legal notices, terms of sale, withdrawal rights and taxes change from one country to another. Automated customer service does not exempt you from terms and conditions adapted to the target market.
 
 ---
 
 ## The method that works: one market at a time
 
-1. **Pick the market where you already have signals** — visits, an unsolicited enquiry, an existing customer who referred you.
-2. **Translate what converts first**: product page, pricing, FAQ. The blog comes later.
-3. **Configure the agent in that language** and check its answers against your twenty most common questions.
-4. **Measure for six weeks**: enquiries received, response rate, conversions.
-5. **Only duplicate if the numbers follow.**`,
+1. **Choose the market where you already have signals** — visits, an unsolicited enquiry, an existing customer who has talked about you.
+2. **Translate what converts first**: the product page, the pricing page, the FAQ. The blog comes later.
+3. **Configure the agent in that language** and check its answers against your twenty most frequent questions.
+4. **Measure for six weeks**: requests received, response rate, requests converted.
+5. **Only duplicate if the numbers follow.**
+
+---
+
+## What this means for a very small business
+
+A company based in France can now serve a Spanish, Canadian or Colombian customer with the same tools as the business next door. The website is delivered multilingual, the agent replies in the visitor's language on WhatsApp, Instagram, email or over the phone, and requests land in a single inbox whatever the channel or the language.
+
+That is what [Aevia Inbox](https://inbox.aevia.services) does: five native languages, no extra cost per language, and the same customer context from one channel to the next. The head office is in France; the customers it serves do not have to be.`,
         faq: [
           {
             q: "Can an AI agent really answer well in several languages?",
@@ -1335,62 +1452,74 @@ Legal notices, terms of sale, withdrawal rights and tax differ by country. Autom
       es: {
         title: "Vender en el extranjero sin contratar: atención al cliente multilingüe con IA",
         excerpt:
-          "Responder en cinco idiomas exigía cinco empleados o una agencia inasumible. Ese candado ha saltado. Esto es lo que cambia una atención multilingüe automatizada para una empresa pequeña que vende fuera de sus fronteras.",
+          "Responder en cinco idiomas exigía cinco empleados o una agencia inasumible. Ese candado ha saltado. Esto es lo que cambia una atención multilingüe automatizada para una empresa pequeña que vende fuera de sus fronteras, y las trampas que siguen ahí.",
         category: "CRM y Soporte",
         content: `## Lo esencial en 30 segundos
 
-- **El idioma ya no es un coste fijo**: un agente de IA responde en la lengua del cliente sin plantilla adicional por mercado
-- **El freno real no es la traducción, es el huso horario** — un cliente en Bogotá escribe cuando tu oficina duerme
-- **Traducir no es localizar**: divisas, formatos de fecha y usos comerciales cambian por país
-- **Empieza por un idioma y un país**, mide y luego replica
+- **La barrera del idioma ya no es un coste fijo**: un agente de IA responde en la lengua del cliente sin plantilla adicional por mercado
+- **El freno real no es la traducción, es el huso horario**: un cliente en Bogotá escribe cuando tu oficina duerme
+- **Traducir no es localizar**: las divisas, los formatos de fecha y los usos comerciales cambian de un país a otro
+- **Empieza por un idioma y un país**, mide y luego replica: abrir cinco mercados a la vez lo diluye todo
 
 ---
 
-## El cálculo que bloqueaba la internacionalización
+## El cálculo que bloqueaba la venta internacional
 
-Hasta hace poco, atender un mercado extranjero imponía una elección binaria: contratar a alguien que hablara el idioma, o renunciar. Para una empresa de tres personas, un mercado de 40 millones de habitantes quedaba cerrado por falta de un sueldo.
+Hasta hace poco, atender un mercado extranjero imponía una elección binaria: contratar a alguien que hablara el idioma, o renunciar. Para una empresa de tres personas, eso significaba que un mercado de 40 millones de habitantes seguía cerrado porque faltaba un empleado de 35.000 € al año.
 
-Ese cálculo ha cambiado. El idioma es ahora un parámetro, no una partida de gasto.
+Ese cálculo ha cambiado. Un agente conversacional responde en francés, inglés, español, alemán o portugués con la misma calidad, sin que el coste dependa del número de idiomas. El idioma se ha convertido en un parámetro, no en una partida de gasto.
 
 ---
 
-## Qué desbloquea en la práctica
+## Lo que desbloquea en la práctica
 
-**Puedes probar un mercado sin comprometerte.** Abrir España exigía una contratación; ahora exige una página traducida y un agente configurado.
+**Puedes probar un mercado sin comprometerte.** Abrir España exigía una contratación; ahora exige una página traducida y un agente configurado. Si el mercado no responde, has perdido unos días, no un año de sueldo.
 
-**Cubres husos horarios sin trabajar de noche.** Un cliente canadiense que escribe a las 21h de Montreal te llega a las 3 de la madrugada. Sin respuesta automática, ya ha escrito a tres competidores.
+**Cubres los husos horarios sin trabajar de noche.** Es el punto más subestimado. Un posible cliente canadiense que escribe a las 21:00, hora de Montreal, te llega a las 03:00. Sin respuesta automática, ya habrá escrito a tres competidores antes de que te despiertes.
 
-**Dejas de perder consultas en idiomas que no lees.**
+**Dejas de perder peticiones en un idioma que no lees.** Muchas pequeñas empresas tienen una carpeta de correos que nunca atendieron porque estaban en alemán.
 
 ---
 
 ## Las cuatro trampas que quedan
 
 ### 1. Traducir no basta
-Un texto traducido palabra por palabra suena extranjero. Los usos comerciales difieren.
 
-### 2. Divisas y formatos
-Mostrar «399 €» a un cliente colombiano exige una conversión mental que no hará. Los formatos de fecha provocan errores reales de reserva.
+Un texto traducido palabra por palabra suena extranjero. Los usos comerciales difieren: en España el tuteo es normal en contextos en los que el francés exigiría el «vous»; el alemán espera más precisión factual y menos énfasis; el inglés británico y el estadounidense no tienen las mismas convenciones de cortesía.
+
+### 2. Las divisas y los formatos
+
+Mostrar «399 €» a un cliente colombiano le obliga a hacer un cálculo mental y una conversión que no hará. Los formatos de fecha (12/06 significa junio en el Reino Unido y diciembre en Estados Unidos) provocan errores reales de reserva.
 
 ### 3. El pago
-Cada mercado tiene sus hábitos: tarjeta en Francia, transferencia inmediata en Alemania, monederos móviles en Latinoamérica.
+
+Cada mercado tiene sus hábitos: tarjeta en Francia, transferencia inmediata en Alemania, billeteras móviles en América Latina. Ofrecer solo pago con tarjeta cierra una parte del mercado sin que te des cuenta.
 
 ### 4. Las obligaciones locales
-Avisos legales, condiciones de venta, derecho de desistimiento y fiscalidad cambian por país.
+
+El aviso legal, las condiciones de venta, el derecho de desistimiento y la fiscalidad cambian de un país a otro. Una atención al cliente automatizada no te exime de tener condiciones generales adaptadas al mercado al que te diriges.
 
 ---
 
 ## El método que funciona: un mercado cada vez
 
-1. Elige el mercado donde ya tengas señales.
-2. Traduce primero lo que convierte: producto, precios, FAQ.
-3. Configura el agente en ese idioma y revisa sus respuestas.
-4. Mide durante seis semanas.
-5. Replica solo si los números acompañan.`,
+1. **Elige el mercado en el que ya tienes señales**: visitas, una petición espontánea, un cliente actual que ha hablado de ti.
+2. **Traduce primero lo que convierte**: la página de producto, la de precios, las preguntas frecuentes. El blog viene después.
+3. **Configura el agente en ese idioma** y comprueba sus respuestas a tus veinte preguntas más frecuentes.
+4. **Mide durante seis semanas**: peticiones recibidas, tasa de respuesta, peticiones convertidas.
+5. **Replica solo si los números acompañan.**
+
+---
+
+## Lo que supone para una microempresa
+
+Una empresa con sede en Francia puede atender hoy a un cliente español, canadiense o colombiano con las mismas herramientas que el negocio de al lado. La web se entrega multilingüe, el agente responde en el idioma del visitante por WhatsApp, Instagram, correo electrónico o teléfono, y las peticiones llegan a una sola bandeja sea cual sea el canal o el idioma.
+
+Es lo que hace [Aevia Inbox](https://inbox.aevia.services): cinco idiomas nativos, ningún coste adicional por idioma y el mismo contexto del cliente de un canal a otro. La sede está en Francia; los clientes atendidos no tienen por qué estarlo.`,
         faq: [
           {
             q: "¿Puede un agente de IA responder bien en varios idiomas?",
-            a: "Sí para los intercambios habituales de atención: horarios, precios, disponibilidad, reservas. La calidad es comparable entre idiomas. Para negociación comercial conviene el relevo humano.",
+            a: "Sí para los intercambios habituales de atención: horarios, precios, disponibilidad, reservas. La calidad es comparable entre idiomas. Para la negociación comercial o los temas delicados, sigue siendo preferible el relevo de una persona.",
           },
           {
             q: "¿Hace falta una web traducida para atender un mercado extranjero?",
@@ -1398,11 +1527,11 @@ Avisos legales, condiciones de venta, derecho de desistimiento y fiscalidad camb
           },
           {
             q: "¿Cuánto cuesta añadir un idioma?",
-            a: "En una solución multilingüe nativa, nada más por idioma: el coste sigue al volumen de mensajes. Lo que cuesta es traducir la web y adaptar las condiciones al mercado.",
+            a: "En una solución multilingüe nativa, nada más por idioma: el coste sigue al volumen de mensajes, no al número de idiomas. Lo que cuesta es traducir la web y adaptar las condiciones de venta al mercado al que te diriges.",
           },
           {
             q: "¿Se puede atender un huso horario lejano sin trabajar de noche?",
-            a: "Es justamente el objetivo: el agente responde de inmediato a cualquier hora y tú tratas el resto en tu horario.",
+            a: "Es justamente el objetivo: el agente responde de inmediato sea cual sea la hora, toma la cita o el pedido, y tú tratas el resto en tu horario laboral.",
           },
         ],
       },
@@ -1513,18 +1642,20 @@ C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : la connexion API
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
-- **The WhatsApp Business app is free**, runs on a phone, and works up to roughly 5 conversations a day
-- **The WhatsApp Business API has no interface**: it is a technical connection plugged into a tool, built for volume and teamwork
-- **A number cannot be on both** — moving to the API is not simply reversible
-- **Sending unsolicited messages from the app is the fastest way to get your number blocked**
+- **The WhatsApp Business app is free**, runs on a phone, and works for up to roughly 5 conversations a day
+- **The WhatsApp Business API has no interface**: it is a technical connection plugged into a tool, built for volume and for working as a team
+- **A number cannot be on both at once** — moving to the API is a one-way trip that is not easy to reverse
+- **Sending unsolicited messages from the app is the surest way to get your number blocked**
 
 ---
 
 ## Two products, one name
 
-**The WhatsApp Business app** installs like regular WhatsApp and adds a business profile, a simple catalogue, quick replies and labels. Free, phone-based.
+WhatsApp offers two very different things under the same brand.
 
-**The WhatsApp Business API** has no interface at all. It is a channel you connect to software: a shared inbox, a CRM, an AI agent. You never "see" the API, you see the tool using it.
+**The WhatsApp Business app** installs like regular WhatsApp. It adds a business profile, a simple catalog, quick replies and labels. It is free and runs on a phone, with an optional extension on a computer.
+
+**The WhatsApp Business API** has no interface at all. It is a technical channel you connect to software: a shared inbox, a CRM, an AI agent. You never "see" the API; you see the tool that uses it.
 
 ---
 
@@ -1533,37 +1664,52 @@ C'est ce que fait [Aevia Inbox](https://inbox.aevia.services) : la connexion API
 | Criterion | App | API |
 |---|---|---|
 | Price | Free | Billed per conversation, via a provider |
-| Interface | Yes, on phone | None, through a tool |
-| Simultaneous users | 1 phone (+4 linked devices) | Unlimited |
+| Interface | Yes, on a phone | None, goes through a tool |
+| Simultaneous users | 1 phone (+ 4 linked devices) | Unlimited |
 | Automation | Basic quick replies | Full, AI agent possible |
 | Shared history | No | Yes |
-| Bulk messages | Heavily limited, block risk | Allowed via approved templates |
+| Bulk messages | Heavily limited, risk of being blocked | Allowed via approved templates |
+| Statistics | Minimal | Complete |
 
 ---
 
 ## The switching threshold
 
-1. **More than one person must reply.** The app is tied to a phone. Two employees sharing conversations means passing a device around.
-2. **You lose track.** Without shared history or assignment, every other enquiry gets handled twice or not at all.
-3. **You want automatic replies.** The app's quick replies do not understand the request; they paste text you wrote.
+There are three signs that the app is no longer enough:
+
+1. **Several people need to reply.** The app is tied to one phone. As soon as two employees have to handle the same conversations, you end up passing a device around, which is unworkable.
+2. **You lose track.** Without shared history or assignment, every other request gets handled twice or not at all.
+3. **You want to reply automatically.** The app's quick replies do not understand the request: they paste in text you wrote.
 
 ---
 
-## The trap that costs most
+## The trap that costs the most
 
-Many businesses use the app to send promotions to a customer list. WhatsApp detects it, restricts the number, then blocks it — and you lose the conversation history along with the channel.
+Many businesses use the app to send promotions to a list of customers. WhatsApp detects it, and the number is restricted, then blocked. You lose not only the channel but also the history of your customer conversations.
 
-The API exists for this: outbound messages to someone who has not written recently go through **templates approved in advance** by Meta. More constraining, but it protects the number.
+The API exists precisely for this: outbound messages to a customer who has not written to you recently go through **templates approved in advance** by Meta. It is more restrictive, but it is what protects the number.
 
 ---
 
-## Before you switch
+## What to know before you switch
 
-**A number cannot be on both.** Migrating removes it from the app. Plan the switch for a quiet period.
+**The number cannot be on both.** Migrating a number to the API removes it from the app. Plan the switch for a quiet moment, and let your team know.
 
-**You do not deal with Meta directly.** You go through a provider who handles connection and billing. That choice determines what you can do afterwards.
+**You do not deal with Meta directly.** You go through a provider that handles the connection and the billing. Your choice of provider determines what you will be able to do afterwards.
 
-**Business verification takes time.** Meta verifies your company's legal existence — several days to a few weeks. Do it before you need it.`,
+**Business verification takes time.** Meta asks you to verify that your company legally exists. Allow several days to a few weeks, and do it before you need it.
+
+---
+
+## How to choose with one question
+
+**How many people need to see the same conversations?**
+
+Just one, with fewer than five exchanges a day: the free app is the right choice, and paying for the API would be a waste.
+
+Two or more, or more than ten conversations a day, or the wish to automate: you need the API and a tool to run it.
+
+That is what [Aevia Inbox](https://inbox.aevia.services) does: the API connection is managed for you, WhatsApp lands in the same inbox as Instagram and email, and the same AI agent can reply on all three.`,
         faq: [
           {
             q: "Is the WhatsApp Business API paid?",
@@ -1586,76 +1732,94 @@ The API exists for this: outbound messages to someone who has not written recent
       es: {
         title: "WhatsApp Business: ¿aplicación gratuita o API? Cuál necesitas",
         excerpt:
-          "Dos productos comparten nombre y no hacen el mismo trabajo. Uno es una app en un móvil, el otro es infraestructura sin pantalla. Elegir mal cuesta dinero innecesario o el bloqueo del número en el peor momento.",
+          "Dos productos comparten nombre y no hacen el mismo trabajo. Uno es una aplicación en un teléfono, el otro es infraestructura sin pantalla. Elegir mal cuesta dinero innecesario o el bloqueo del número en el peor momento.",
         category: "CRM y Soporte",
         content: `## Lo esencial en 30 segundos
 
-- **La app WhatsApp Business es gratuita**, funciona en un móvil y sirve hasta unas 5 conversaciones al día
-- **La API de WhatsApp Business no tiene interfaz**: es una conexión técnica conectada a una herramienta, pensada para volumen y trabajo en equipo
-- **Un número no puede estar en ambas a la vez**
-- **Enviar mensajes no solicitados desde la app es la forma más rápida de que bloqueen tu número**
+- **La aplicación WhatsApp Business es gratuita**, funciona en un teléfono y sirve hasta unas 5 conversaciones al día
+- **La API de WhatsApp Business no tiene interfaz**: es una conexión técnica enchufada a una herramienta, pensada para el volumen y el trabajo en equipo
+- **Un número no puede estar en las dos a la vez**: pasar a la API es un viaje de ida que no se deshace fácilmente
+- **Enviar mensajes no solicitados desde la aplicación es la mejor manera de que te bloqueen el número**
 
 ---
 
 ## Dos productos, un solo nombre
 
-**La app WhatsApp Business** se instala como WhatsApp normal y añade perfil de empresa, catálogo simple, respuestas rápidas y etiquetas.
+WhatsApp ofrece dos cosas muy distintas bajo la misma marca.
 
-**La API de WhatsApp Business** no tiene interfaz. Es un canal que conectas a un software: bandeja compartida, CRM, agente de IA.
+**La aplicación WhatsApp Business** se instala como el WhatsApp de siempre. Añade un perfil de empresa, un catálogo sencillo, respuestas rápidas y etiquetas. Es gratuita y funciona en un teléfono, con la posibilidad de usarla también en versión de escritorio.
+
+**La API de WhatsApp Business** no tiene ninguna interfaz. Es un canal técnico que conectas a un software: una bandeja de entrada compartida, un CRM, un agente de IA. La API no se «ve»: ves la herramienta que la utiliza.
 
 ---
 
 ## Comparativa
 
-| Criterio | App | API |
+| Criterio | Aplicación | API |
 |---|---|---|
-| Precio | Gratis | Por conversación, vía proveedor |
-| Usuarios simultáneos | 1 móvil (+4 dispositivos) | Ilimitados |
-| Automatización | Respuestas rápidas básicas | Completa, agente IA |
+| Precio | Gratuita | Facturada por conversación, a través de un proveedor |
+| Interfaz | Sí, en el teléfono | Ninguna, pasa por una herramienta |
+| Usuarios simultáneos | 1 teléfono (+ 4 dispositivos vinculados) | Ilimitados |
+| Automatización | Respuestas rápidas básicas | Completa, con agente de IA posible |
 | Historial compartido | No | Sí |
-| Envíos masivos | Muy limitados, riesgo de bloqueo | Permitidos con plantillas aprobadas |
+| Envíos masivos | Muy limitados, riesgo de bloqueo | Permitidos mediante plantillas aprobadas |
+| Estadísticas | Mínimas | Completas |
 
 ---
 
-## El umbral de cambio
+## El umbral para dar el salto
 
-1. **Más de una persona debe responder.**
-2. **Pierdes el hilo**: sin historial compartido, una de cada dos consultas se atiende dos veces o ninguna.
-3. **Quieres responder automáticamente.**
+Hay tres señales que indican que la aplicación ya no basta:
 
----
-
-## La trampa más cara
-
-Muchas empresas usan la app para enviar promociones a una lista. WhatsApp lo detecta, restringe el número y lo bloquea. Pierdes el canal y el historial.
-
-La API existe para eso: los mensajes salientes hacia quien no te ha escrito recientemente pasan por **plantillas aprobadas** por Meta.
+1. **Tienen que responder varias personas.** La aplicación está ligada a un teléfono. En cuanto dos empleados tienen que atender las mismas conversaciones, acabas pasándote el aparato de mano en mano, y eso es insostenible.
+2. **Pierdes el hilo.** Sin historial compartido ni asignación, una de cada dos peticiones se atiende dos veces o ninguna.
+3. **Quieres responder automáticamente.** Las respuestas rápidas de la aplicación no entienden la petición: pegan un texto que tú has escrito.
 
 ---
 
-## Antes de migrar
+## La trampa que más cara sale
 
-**Un número no puede estar en ambas.** Migrar lo saca de la app.
+Muchas empresas usan la aplicación para enviar promociones a una lista de clientes. WhatsApp lo detecta y el número queda restringido y después bloqueado. No solo pierdes el canal, sino también el historial de tus conversaciones con clientes.
 
-**No tratas directamente con Meta**: pasas por un proveedor.
+La API existe justamente para eso: los mensajes salientes dirigidos a un cliente que no te ha escrito recientemente pasan por **plantillas aprobadas de antemano** por Meta. Es más restrictivo, pero es lo que protege el número.
 
-**La verificación de empresa lleva tiempo**: de varios días a semanas.`,
+---
+
+## Lo que debes saber antes de migrar
+
+**El número no puede estar en las dos.** Migrar un número a la API lo retira de la aplicación. Planifica el cambio para un momento tranquilo y avisa a tu equipo.
+
+**No tratas directamente con Meta.** Pasas por un proveedor que gestiona la conexión y la facturación. La elección de ese proveedor determina lo que podrás hacer después.
+
+**La verificación de la empresa lleva tiempo.** Meta pide verificar la existencia legal de la empresa. Calcula de varios días a algunas semanas, y hazlo antes de necesitarlo.
+
+---
+
+## Cómo elegir con una sola pregunta
+
+**¿Cuántas personas tienen que ver las mismas conversaciones?**
+
+Una sola, con menos de cinco intercambios al día: la aplicación gratuita es la opción correcta, y pagar por la API sería un desperdicio.
+
+Dos o más, o más de diez conversaciones al día, o ganas de automatizar: necesitas la API y una herramienta para aprovecharla.
+
+Es lo que hace [Aevia Inbox](https://inbox.aevia.services): la conexión con la API está gestionada, WhatsApp llega a la misma bandeja que Instagram y el correo electrónico, y el mismo agente de IA puede responder en los tres.`,
         faq: [
           {
             q: "¿La API de WhatsApp Business es de pago?",
-            a: "Sí. Meta factura por conversación, con tarifas según el país y el tipo de mensaje, más el coste de la herramienta que usa la API. La app sigue siendo gratuita.",
+            a: "Sí. Meta factura por conversación, con tarifas según el país y el tipo de mensaje, a lo que se suma el precio de la herramienta que usa la API. La aplicación WhatsApp Business, en cambio, sigue siendo gratuita.",
           },
           {
             q: "¿Puedo conservar mi número al pasar a la API?",
-            a: "Normalmente sí, pero el número deja la app WhatsApp Business y ya no puede usarse allí.",
+            a: "Sí en la mayoría de los casos, pero el número sale entonces de la aplicación WhatsApp Business y ya no puede usarse allí. El cambio se prepara: copia de seguridad del historial local y equipo avisado.",
           },
           {
             q: "¿Por qué han bloqueado mi número de WhatsApp?",
-            a: "Casi siempre por enviar mensajes masivos a personas que no habían escrito primero, o porque los destinatarios los denunciaron.",
+            a: "Casi siempre porque se enviaron mensajes masivos a personas que no habían escrito primero, o porque los destinatarios denunciaron los mensajes. La API con plantillas aprobadas existe para evitar ese escenario.",
           },
           {
             q: "¿Hace falta un programador para usar la API de WhatsApp?",
-            a: "No si usas una solución que ya la integra. Solo para integraciones a medida con software interno.",
+            a: "No si usas una solución que ya la integra. El desarrollo solo es necesario para una integración a medida con un software interno.",
           },
         ],
       },
@@ -1749,52 +1913,62 @@ Prévois une demi-journée pour rassembler les questions fréquentes et les vrai
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
-- **A garage misses 30–50% of its calls** during workshop hours: nobody is at the desk, and you do not answer from under a lift
-- **A missed call does not call back** — it calls the next garage, because a breakdown does not wait
-- **A voice agent books the appointment**, the reason and the vehicle, straight into the calendar without interrupting the job in hand
-- **What it must NOT do**: diagnose and quote. A price given on the phone and contradicted at the workshop destroys trust
+- **A garage misses 30 to 50% of its calls** during workshop hours: nobody is at the desk, and you do not answer the phone from under a lift
+- **A missed call does not call back** — it calls the next garage, because a breakdown cannot be put off
+- **A voice agent takes the appointment**, the reason and the vehicle, and enters it in the calendar without interrupting the job in progress
+- **What you must NOT hand over to it**: diagnosis and pricing. A quote given over the phone and then contradicted at the workshop destroys trust
 
 ---
 
-## The problem is physical, not commercial
+## The problem is mechanical, not commercial
 
-A two-to-five person garage has a constraint few trades share: hands busy and dirty for most of the day. The phone rings precisely when you cannot answer.
+A garage of two to five people has a constraint few trades know: hands busy and dirty for most of the day. The phone rings at the very moment you cannot answer.
 
-So most garages run a knowingly degraded service: call back "when there's a minute", meaning 7pm, when the customer is busy too. By then they have called two other garages and booked with whoever picked up.
+As a result, most garages knowingly run a degraded service: they call back "when there's a minute", which means at 19:00, when the customer is busy doing something else. In the meantime, the customer has called two other garages and booked with the first one that picked up.
 
-That is not poor service. It is a physical constraint — exactly the kind of problem a system solves better than more effort.
-
----
-
-## What a voice agent does well here
-
-**Books with the right information.** A useful garage appointment holds four things: name, vehicle, reason, availability. The agent asks in order and places the slot.
-
-**Separates urgent from schedulable.** "My car won't start" and "I need a service next month" deserve different answers.
-
-**Answers the questions asked thirty times a week.** Do you do MOTs? Do you lend a car? Do you take my make? Open Saturdays?
-
-**Covers nights and weekends.** Breakdowns rarely happen at 10am on a Tuesday. The Sunday-evening call decides where the car goes on Monday.
+This is not poor service. It is a physical constraint. And it is precisely the kind of problem a system solves better than extra effort.
 
 ---
 
-## What you must not automate
+## What a voice agent does well in this trade
 
-**Diagnosis.** A customer describing a noise never describes the right noise.
+**Taking the appointment with the right information.** A useful garage appointment contains four things: the name, the vehicle (make, model, license plate), the reason, and an availability. The agent asks for them in order, checks them, and books the slot.
 
-**Quoting.** The costliest mistake. "Around €250" against a €480 invoice loses the customer and earns a one-star review. Write the rule into the configuration: **never quote without an inspection**.
+**Separating the urgent from what can be scheduled.** "My car won't start" and "I need an oil change next month" do not call for the same answer. A well-configured agent offers the first available slot in one case, and a wide time window in the other.
 
-**Disputes.** An unhappy customer must reach a human immediately.
+**Answering the questions that come up thirty times a week.** Do you do vehicle inspections? Do you lend a car? Do you work on my make? Are you open on Saturday? These questions require no mechanical skill, just an immediate answer.
+
+**Absorbing nights and weekends.** A breakdown rarely happens on a weekday at 10:00. The Sunday-evening call is the one that decides where the car will go on Monday.
 
 ---
 
-## Setting it up without breaking anything
+## What you must never automate
 
-Use **conditional forwarding**: the garage keeps its number, and calls only reach the agent after five rings or when the line is busy. Nothing changes for customers or staff, and the agent only takes what would have gone unanswered.`,
+**Diagnosis.** A customer describing a noise never describes the right noise. No system, human or not, diagnoses over the phone — and an agent that ventures a cause commits you.
+
+**Pricing.** This is the most expensive mistake. If the agent says "expect around €250" and the invoice comes to €480, you lose the customer and collect a one-star review. The rule to write into the configuration: **never give a price without a quote**, and steer the customer toward a visit to the workshop.
+
+**Disputes.** A customer who calls back unhappy with a repair must reach a human. Immediately.
+
+---
+
+## What it changes over a typical week
+
+A garage that receives 15 calls a day, half of which go unanswered, recovers — even with a cautious conversion rate — several appointments a week that were going elsewhere. With the average ticket for routine maintenance, the math adds up fast.
+
+The less visible but more lasting benefit: **the workshop is no longer interrupted**. A mechanic who puts down a tool to answer the phone loses far more than the length of the call — they lose the thread of what they were doing.
+
+---
+
+## How to set it up without breaking what works
+
+The recommended setup is **conditional call forwarding**: the garage keeps its number, and calls switch to the agent only if nobody picks up after five rings or if the line is busy. Nothing changes for customers, nothing changes for the team, and the agent only takes the calls that would have gone unanswered.
+
+Set aside half a day to gather the frequent questions and the workshop's real rules — that is where quality is decided, not in the technology.`,
         faq: [
           {
             q: "Can the agent quote a repair over the phone?",
-            a: "It should not, and that rule belongs explicitly in its configuration. A figure given without inspection will be contradicted by the invoice. The agent directs to a quote after the car is seen.",
+            a: "It should not, and that rule belongs explicitly in its configuration. A figure given without a diagnosis will be contradicted by the invoice, which costs you the customer and the review. The agent directs the customer to a quote after a visit to the workshop.",
           },
           {
             q: "How does the agent know which slots are free?",
@@ -1813,66 +1987,78 @@ Use **conditional forwarding**: the garage keeps its number, and calls only reac
       es: {
         title: "Taller mecánico: dejar de perder clientes mientras estás bajo un coche",
         excerpt:
-          "Un mecánico no puede descolgar con las manos llenas de grasa. Cada llamada perdida es una revisión que se va al taller de enfrente. Cómo un agente de voz coge las citas mientras el taller sigue trabajando.",
+          "Un mecánico no puede descolgar con las manos llenas de grasa. Cada llamada perdida es una revisión que se va al taller de enfrente. Cómo un agente de voz toma las citas mientras el taller sigue trabajando, y lo que no hay que confiarle.",
         category: "Voz IA y Telefonía",
         content: `## Lo esencial en 30 segundos
 
-- **Un taller pierde entre el 30 y el 50 % de sus llamadas** en horario de trabajo
-- **La llamada perdida no vuelve a llamar** — llama al siguiente taller, porque una avería no espera
-- **Un agente de voz coge la cita**, el motivo y el vehículo, sin interrumpir el trabajo
-- **Lo que NO hay que delegarle**: el diagnóstico y el presupuesto
+- **Un taller pierde entre el 30 y el 50 % de sus llamadas** en horario de taller: no hay nadie en la oficina, y no se puede contestar desde debajo de un elevador
+- **La llamada perdida no vuelve a llamar**: llama al taller siguiente, porque una avería no se puede aplazar
+- **Un agente de voz toma la cita**, el motivo y el vehículo, y la anota en la agenda sin interrumpir el trabajo en curso
+- **Lo que NO hay que confiarle**: el diagnóstico y el presupuesto. Un precio anunciado por teléfono y desmentido después en el taller destruye la confianza
 
 ---
 
-## El problema es físico, no comercial
+## El problema es mecánico, no comercial
 
-Un taller de dos a cinco personas tiene una limitación que pocos oficios comparten: las manos ocupadas y sucias casi todo el día. El teléfono suena justo cuando no se puede responder.
+Un taller de dos a cinco personas tiene una limitación que pocos oficios conocen: las manos ocupadas y sucias durante casi toda la jornada. El teléfono suena justo en el momento en que no se puede contestar.
 
-El cliente, mientras tanto, ha llamado a otros dos talleres y ha reservado con el primero que descolgó.
+Resultado: la mayoría de los talleres funcionan, a sabiendas, en modo degradado. Se devuelve la llamada «cuando haya un minuto», es decir, a las 19:00, cuando el cliente está a su vez haciendo otra cosa. Mientras tanto, ha llamado a otros dos talleres y ha pedido cita en el primero que descolgó.
 
----
-
-## Lo que el agente hace bien
-
-**Coger la cita con los datos correctos**: nombre, vehículo, motivo y disponibilidad.
-
-**Separar lo urgente de lo planificable.**
-
-**Responder las preguntas de siempre**: ¿hacéis la ITV? ¿dejáis coche de sustitución? ¿abrís los sábados?
-
-**Cubrir noches y fines de semana.** Una avería rara vez ocurre un martes a las 10h.
+No es un fallo de servicio. Es una limitación física. Y es justamente el tipo de problema que un sistema resuelve mejor que un esfuerzo adicional.
 
 ---
 
-## Lo que no hay que automatizar
+## Lo que un agente de voz hace bien en este oficio
 
-**El diagnóstico.** Quien describe un ruido nunca describe el ruido correcto.
+**Tomar la cita con la información correcta.** Una cita útil en un taller contiene cuatro cosas: el nombre, el vehículo (marca, modelo, matrícula), el motivo y una disponibilidad. El agente las pide en orden, las comprueba y reserva la franja.
 
-**El presupuesto.** Es el error más caro: «unos 250 €» frente a una factura de 480 € pierde al cliente y gana una reseña de una estrella.
+**Separar lo urgente de lo planificable.** «Mi coche ya no arranca» y «necesito un cambio de aceite el mes que viene» no piden la misma respuesta. Un agente bien configurado propone la primera franja disponible en un caso, y un margen amplio en el otro.
 
-**Las reclamaciones.** Deben llegar a una persona de inmediato.
+**Responder a las preguntas que se repiten treinta veces por semana.** ¿Hacen la inspección técnica? ¿Prestan un vehículo? ¿Trabajan con mi marca? ¿Abren el sábado? Estas preguntas no requieren ninguna competencia mecánica, solo una respuesta inmediata.
+
+**Absorber la noche y el fin de semana.** Una avería rara vez ocurre un día laborable a las 10:00. La llamada del domingo por la noche es la que decide adónde irá el coche el lunes.
 
 ---
 
-## Cómo implantarlo sin romper nada
+## Lo que nunca hay que automatizar
 
-Desvío condicional: el taller conserva su número y las llamadas solo llegan al agente tras cinco tonos o si la línea está ocupada.`,
+**El diagnóstico.** Un cliente que describe un ruido nunca describe el ruido correcto. Ningún sistema, humano o no, diagnostica por teléfono, y un agente que aventura una causa te compromete.
+
+**El presupuesto.** Es el error que más caro sale. Si el agente anuncia «calcula unos 250 €» y la factura sale a 480 €, pierdes al cliente y te llevas una reseña de una estrella. La regla que hay que escribir en la configuración: **no anunciar nunca un precio sin presupuesto**, y orientar hacia una visita al taller.
+
+**Las reclamaciones.** Un cliente que vuelve a llamar descontento con una reparación debe hablar con una persona. De inmediato.
+
+---
+
+## Lo que cambia en una semana típica
+
+Un taller que recibe 15 llamadas al día, la mitad de las cuales quedan sin respuesta, recupera, incluso con una tasa de conversión prudente, varias citas por semana que se iban a otra parte. Con el ticket medio de un mantenimiento habitual, las cuentas salen rápido.
+
+El beneficio menos visible pero más duradero: **el taller ya no se interrumpe**. Un mecánico que deja la herramienta para contestar pierde mucho más que la duración de la llamada: pierde el hilo de lo que estaba haciendo.
+
+---
+
+## Cómo ponerlo en marcha sin romper lo que ya funciona
+
+La configuración recomendada es el **desvío condicional**: el taller conserva su número, y las llamadas pasan al agente solo si nadie descuelga después de cinco tonos o si la línea está ocupada. Nada cambia para los clientes, nada cambia para el equipo, y el agente solo atiende lo que se habría perdido.
+
+Reserva medio día para reunir las preguntas frecuentes y las reglas reales del taller: ahí es donde se juega la calidad, no en la técnica.`,
         faq: [
           {
             q: "¿Puede el agente dar un precio de reparación por teléfono?",
-            a: "No debería, y esa regla debe escribirse en su configuración. Una cifra dada sin revisión será desmentida por la factura.",
+            a: "No debería, y es una regla que hay que escribir explícitamente en su configuración. Una cifra anunciada sin diagnóstico será desmentida por la factura, lo que te cuesta el cliente y la reseña. El agente orienta hacia un presupuesto tras una visita al taller.",
           },
           {
-            q: "¿Cómo sabe el agente qué huecos hay libres?",
-            a: "Lee la agenda conectada en tiempo real y solo ofrece huecos realmente disponibles.",
+            q: "¿Cómo sabe el agente qué franjas están libres?",
+            a: "Lee la agenda conectada en tiempo real y solo propone franjas realmente disponibles; después anota en ella la cita con el vehículo y el motivo.",
           },
           {
             q: "¿Y si el cliente tiene una avería urgente?",
-            a: "La urgencia se configura: primer hueco del día, transferencia al móvil del responsable, o instrucciones de asistencia.",
+            a: "La urgencia se configura: el agente puede proponer la primera franja del día, transferir de inmediato al teléfono del dueño o indicar los pasos a seguir para una asistencia en carretera, según lo que tú decidas.",
           },
           {
-            q: "¿Hay que cambiar de número?",
-            a: "No. Con desvío condicional el agente solo atiende las llamadas no contestadas.",
+            q: "¿Hay que cambiar de número de teléfono?",
+            a: "No. La configuración recomendada es un desvío condicional desde el número actual: el agente solo atiende las llamadas que nadie descuelga.",
           },
         ],
       },
@@ -1981,54 +2167,72 @@ Comptez une demi-journée pour définir la nomenclature des motifs et les durée
         category: "AI Voice & Telephony",
         content: `## Key takeaways in 30 seconds
 
-- **Three reasons account for most calls**: book, move, or cancel an appointment
-- **Automating those three** gives the front desk back the time it spends on the phone instead of with the patient standing there
-- **An AI never gives medical advice** — no symptom triage, no "is this serious". That is a legal limit, not merely a cautious one
-- **Health data is sensitive under GDPR**: minimisation, patient information and hosting requirements are not optional
+- **Three reasons account for most calls**: booking, moving or canceling an appointment
+- **Automating those three** gives the front desk back the time it spends on the phone instead of welcoming the patients who are there
+- **An AI never gives medical advice** — no symptom triage, no "is this serious?". This is a legal limit, not just a cautious one
+- **Health data is sensitive data under the GDPR**: hosting, data minimization and informing patients are not optional
 
 ---
 
-## What a dental front desk actually does
+## What a dental front desk really does
 
-Watch a day on the phones: the vast majority of calls fit in three sentences. "I'd like an appointment." "I need to move Thursday." "I can't make it."
+Look at a day on the phones in a practice: the vast majority of calls fit into three sentences. "I'd like an appointment." "I need to move my Thursday one." "I won't be able to come."
 
-None require clinical skill. They require an up-to-date diary and two minutes. But they arrive in bursts at 9am and 2pm — exactly when patients are standing at the desk, waiting while you answer the phone.
+These calls require no clinical skill. They require an up-to-date calendar and two minutes. But they come in bursts at 9:00 and 14:00, exactly when patients are arriving at the front desk — and it is the person standing in front of you who waits while you answer the phone.
 
 ---
 
 ## What automates cleanly
 
-**Booking.** The agent asks the reason from a list you define, offers slots matching the real duration of the procedure, and books the patient in.
+**Booking appointments.** The agent asks for the reason from a list you define (checkup, scaling, emergency, follow-up treatment), offers slots that match the real duration of the procedure, and books the patient in.
 
-**Moving and cancelling.** The most underrated gain. An unhandled cancellation is an empty chair; one captured in time can be re-offered.
+**Rescheduling and canceling.** This is the most profitable and most underrated opportunity. An unhandled cancellation becomes an empty chair; a cancellation caught in time can be offered to someone else.
 
-**Reminders.** No-show rates drop markedly with a reminder the day before — and nobody enjoys making those calls.
+**Appointment reminders.** The no-show rate drops markedly with a reminder the day before — and nobody likes making those calls.
 
-**Administrative questions.** Do you take this insurance? Where do I park? Do you do implants?
+**Administrative questions.** Do you accept the carte Vitale (the French health insurance card)? Are you contracted with the national health insurance system? Where can I park? Do you do implants? These answers are fixed and there is no reason to tie up a human with them.
 
 ---
 
 ## The line not to cross
 
-**No medical advice, ever.** The agent must not answer "it hurts, can it wait?", suggest painkillers, or estimate severity.
+This is the part worth reading twice.
 
-**No symptom triage.** Deciding a patient is urgent from a phone description is a clinical act. The agent may offer an "urgent" slot on request; it may not decide the patient needs one.
+**No medical advice, ever.** An agent must not answer "it hurts, can I wait?", suggest a painkiller, or estimate how serious something is. The configuration must include an explicit exit phrase and a transfer.
 
-**No clinical data.** It records a reason from your list, not a history.
+**No symptom triage.** Deciding whether a patient is urgent on the strength of a phone description is a medical act. The agent can offer an "emergency" slot if the patient asks for one, not decide that the patient needs one.
 
-**A human always reachable.** Acute dental pain does not go on hold. The transfer must be immediate and tested.
+**No exchange of medical data.** The agent records a reason from your list of appointment types, not a clinical history.
 
----
-
-## GDPR in practice
-
-A dental appointment, even without clinical detail, reveals a health status — sensitive data under GDPR. That means minimisation, clear patient information that an automated system handles booking, a defined retention period, a proper processor agreement, and attention to hosting requirements depending on what is actually stored.
+**A human always reachable.** Acute tooth pain does not go on hold. The transfer must be immediate and tested.
 
 ---
 
-## What changes day to day
+## GDPR: what it means in practice
 
-The benefit is not replacing the receptionist. It is **giving them their job back**: welcoming, preparing, handling the patient who is present. And the practice stops losing evening and weekend requests that currently reach a voicemail few patients finish listening to.`,
+A dental appointment, even without clinical detail, reveals something about a person's health. The GDPR classifies this as **sensitive data**, which requires more than a consent form:
+
+- **Data minimization** — collect only the name, contact details, reason and time slot. No "describe your problem".
+- **Informing patients** — state clearly that an automated system handles appointment booking and how to reach a human.
+- **Hosting** — health data in France is subject to specific hosting requirements; check with your provider based on what is actually stored.
+- **Retention period** — defined, written down, applied.
+- **Data processing** — a proper data processing agreement with the provider.
+
+This is not an obstacle: it is a framework. A practice that applies it also gains peace of mind with its patients.
+
+---
+
+## What it changes day to day
+
+The benefit is not "replacing the receptionist". It is **giving them their job back**: welcoming patients, preparing, handling third-party billing with insurers, taking care of the patient who is there. The phone stops being a constant interruption and becomes a flow handled in the background.
+
+And the practice stops losing evening and weekend requests, which today reach a voicemail that few patients listen to all the way through.
+
+---
+
+## A realistic setup
+
+Allow half a day to define your list of appointment reasons and their durations, the emergency rules, and the list of situations that trigger a transfer to a human. It is this work — not the technology — that decides whether the system will be a relief or a source of incidents.`,
         faq: [
           {
             q: "Is an AI allowed to book medical appointments?",
@@ -2036,11 +2240,11 @@ The benefit is not replacing the receptionist. It is **giving them their job bac
           },
           {
             q: "Is patient data protected?",
-            a: "An appointment with a practitioner reveals a health status and is therefore sensitive data under GDPR. That requires minimisation, patient information, a defined retention period, a processor agreement, and care over hosting requirements.",
+            a: "An appointment with a practitioner reveals a health status and is therefore sensitive data under GDPR. That requires minimizing the data collected, informing patients, a defined retention period, a data processing agreement, and attention to hosting requirements depending on what is stored.",
           },
           {
             q: "What happens if a patient is in acute pain?",
-            a: "Transfer to a human must be immediate and configured in advance. The agent must never assess the degree of urgency itself.",
+            a: "Transfer to a human must be immediate and configured in advance. The agent must never assess the degree of urgency itself from the patient's description.",
           },
           {
             q: "Can the agent handle cancellations and reminders?",
@@ -2051,66 +2255,92 @@ The benefit is not replacing the receptionist. It is **giving them their job bac
       es: {
         title: "Clínica dental: la cita por IA y la línea que no hay que cruzar",
         excerpt:
-          "Una recepción dental pasa el día con tres peticiones que se repiten. Automatizarlas devuelve tiempo real a la clínica, siempre que sepas qué no puede hacer una IA en un entorno sanitario.",
+          "Una recepción dental pasa el día con tres peticiones que se repiten. Automatizarlas libera tiempo real, siempre que sepas exactamente lo que una IA no tiene derecho a hacer en un centro sanitario.",
         category: "Voz IA y Telefonía",
         content: `## Lo esencial en 30 segundos
 
-- **Tres motivos concentran la mayoría de llamadas**: pedir, cambiar o anular una cita
-- **Automatizar esos tres** devuelve a recepción el tiempo que pasa al teléfono en lugar de atender al paciente presente
-- **Una IA nunca da consejo médico** — ni triaje de síntomas, ni «¿es grave?». Es un límite legal
-- **Los datos de salud son sensibles según el RGPD**
+- **Tres motivos concentran la mayoría de las llamadas**: pedir, cambiar o anular una cita
+- **Automatizar esos tres** devuelve a la recepción el tiempo que pasa al teléfono en lugar de atender a los pacientes presentes
+- **Una IA nunca da consejo médico**: ni triaje de síntomas, ni «¿es grave?». Es un límite legal, no solo una cuestión de prudencia
+- **Los datos de salud son datos sensibles según el RGPD**: el alojamiento, la minimización y la información a los pacientes no son opcionales
 
 ---
 
 ## Lo que hace realmente una recepción dental
 
-La gran mayoría de las llamadas caben en tres frases. No requieren competencia clínica, solo una agenda al día y dos minutos. Pero llegan en oleadas a las 9h y a las 14h, justo cuando hay pacientes esperando en el mostrador.
+Fíjate en una jornada de teléfono en una clínica: la gran mayoría de las llamadas caben en tres frases. «Quería pedir una cita.» «Tengo que cambiar la del jueves.» «No voy a poder ir.»
+
+Estas llamadas no requieren ninguna competencia clínica. Requieren una agenda al día y dos minutos. Pero llegan en oleadas a las 9:00 y a las 14:00, justo cuando hay pacientes llegando al mostrador, y es la persona que tienes delante la que espera mientras contestas al teléfono.
 
 ---
 
 ## Lo que se automatiza bien
 
-**Pedir cita**, con el motivo elegido de una lista que tú defines y huecos acordes a la duración real del acto.
+**Pedir cita.** El agente pregunta el motivo a partir de una lista que tú defines (revisión, limpieza, urgencia, continuación de tratamiento), propone franjas que corresponden a la duración real del acto y registra al paciente.
 
-**Cambiar y anular.** Es el mayor beneficio y el más subestimado: una anulación no gestionada es un sillón vacío.
+**Cambiar y anular citas.** Es el filón más rentable y el más subestimado. Una anulación no gestionada se convierte en un sillón vacío; una anulación captada a tiempo puede volver a ofrecerse.
 
-**Los recordatorios**, que reducen mucho las citas no acudidas.
+**El recordatorio de la cita.** La tasa de citas a las que el paciente no acude baja claramente con un recordatorio la víspera, y a nadie le gusta hacer esas llamadas.
 
-**Las preguntas administrativas.**
+**Las preguntas administrativas.** ¿Aceptan la carte Vitale (la tarjeta del seguro de salud francés)? ¿Tienen concierto con el seguro de salud público? ¿Dónde se puede aparcar? ¿Hacen implantes? Estas respuestas son fijas y no hay ningún motivo para ocupar a una persona con ellas.
 
 ---
 
 ## La línea que no hay que cruzar
 
-**Ningún consejo médico, nunca.**
+Esta es la parte que hay que leer dos veces.
 
-**Ningún triaje de síntomas.** Decidir que un paciente es urgente a partir de una descripción telefónica es un acto clínico.
+**Ningún consejo médico, nunca.** Un agente no debe responder a «me duele, ¿puedo esperar?», ni proponer un analgésico, ni estimar la gravedad. La configuración debe prever una frase de salida explícita y una transferencia.
 
-**Ningún dato clínico.**
+**Ningún triaje de síntomas.** Decidir si un paciente es urgente o no a partir de una descripción telefónica es un acto médico. El agente puede proponer una franja de «urgencia» si el paciente la pide, no decidir que le corresponde.
 
-**Un humano siempre accesible.** Un dolor dental agudo no se pone en espera.
+**Ningún intercambio de datos médicos.** El agente registra un motivo de tu lista de motivos, no un historial clínico.
+
+**Una persona accesible en todo momento.** Un dolor dental agudo no se pone en espera. La transferencia debe ser inmediata y estar probada.
 
 ---
 
-## RGPD en la práctica
+## RGPD: lo que implica en concreto
 
-Una cita con un profesional sanitario revela un estado de salud: dato sensible. Exige minimización, información al paciente, plazo de conservación definido, contrato de encargado de tratamiento y atención a los requisitos de alojamiento.`,
+Una cita dental, incluso sin detalle clínico, revela un estado de salud. El RGPD la clasifica entre los **datos sensibles**, lo que exige más que un formulario de consentimiento:
+
+- **Minimización**: recoger solo el nombre, el contacto, el motivo y la franja. Nada de «describe tu problema».
+- **Información a los pacientes**: indicar claramente que un sistema automatizado gestiona las citas y cómo contactar con una persona.
+- **Alojamiento**: en Francia, los datos de salud están sujetos a requisitos de alojamiento específicos; hay que comprobarlo con tu proveedor según lo que realmente se almacene.
+- **Plazo de conservación**: definido, escrito y aplicado.
+- **Encargo del tratamiento**: un contrato de encargado del tratamiento en regla con el proveedor.
+
+No es un obstáculo: es un marco. Una clínica que lo aplica también gana tranquilidad frente a sus pacientes.
+
+---
+
+## Lo que cambia en el día a día
+
+El beneficio no es «sustituir a la recepción». Es **devolverle su oficio**: recibir, preparar, gestionar el pago directo por las aseguradoras, ocuparse del paciente que está allí. El teléfono deja de ser una interrupción permanente y se convierte en un flujo tratado en segundo plano.
+
+Y la clínica deja de perder las peticiones de la noche y del fin de semana, que hoy acaban en un contestador que pocos pacientes escuchan hasta el final.
+
+---
+
+## Una puesta en marcha realista
+
+Calcula medio día para definir la lista de motivos y sus duraciones, las reglas de urgencia y la lista de situaciones que activan una transferencia a una persona. Es ese trabajo, y no la técnica, lo que determina si el sistema será un alivio o una fuente de incidentes.`,
         faq: [
           {
             q: "¿Puede una IA gestionar citas médicas?",
-            a: "Sí: pedir cita es un acto administrativo, no clínico. El agente no debe evaluar síntomas, aconsejar tratamiento ni decidir urgencias.",
+            a: "Sí: pedir cita es un acto administrativo, no un acto médico. En cambio, el agente no debe evaluar síntomas, ni aconsejar un tratamiento, ni decidir si hay urgencia: esos actos corresponden al profesional sanitario.",
           },
           {
             q: "¿Están protegidos los datos de los pacientes?",
-            a: "Una cita revela un estado de salud, por lo que son datos sensibles según el RGPD: minimización, información, plazo de conservación y contrato de encargado.",
+            a: "Una cita con un profesional sanitario revela un estado de salud y, por tanto, forma parte de los datos sensibles según el RGPD. Eso impone la minimización de los datos recogidos, la información a los pacientes, un plazo de conservación definido, un contrato de encargado del tratamiento y atención a los requisitos de alojamiento según lo que se almacene.",
           },
           {
-            q: "¿Y si un paciente tiene un dolor urgente?",
-            a: "La transferencia a una persona debe ser inmediata y estar configurada de antemano.",
+            q: "¿Y si un paciente tiene una urgencia con dolor?",
+            a: "La transferencia a una persona debe ser inmediata y estar configurada de antemano. El agente nunca debe evaluar por sí mismo el grado de urgencia a partir de la descripción del paciente.",
           },
           {
             q: "¿Puede el agente gestionar anulaciones y recordatorios?",
-            a: "Sí, y suele ser lo más rentable: una anulación captada a tiempo libera el hueco para reofrecerlo.",
+            a: "Sí, y suele ser la ganancia más rentable: una anulación captada a tiempo permite volver a ofrecer la franja, y un recordatorio la víspera reduce claramente las citas a las que el paciente no acude.",
           },
         ],
       },

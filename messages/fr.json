@@ -113,6 +113,7 @@
     "title": "Par besoin : les pages qui répondent",
     "sub": "Chaque service a ses pages détaillées : comment ça marche, ce que ça coûte, ce qu'il faut vérifier. Allez directement à celle qui correspond à votre situation.",
     "fr_only": "(en français)",
+    "en_only": "(en anglais)",
     "items": [
       { "product": "Accueil client IA", "label": "Standard téléphonique IA", "desc": "Un agent vocal décroche, comprend la demande, prend le rendez-vous ou la réservation et vous laisse la transcription." },
       { "product": "Accueil client IA", "label": "Réservations de restaurant par téléphone", "desc": "Pendant le coup de feu, l'agent prend la réservation, note les allergies et le nombre de couverts." },

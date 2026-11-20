@@ -113,6 +113,7 @@
     "title": "Nach Bedarf: die Seiten mit den Antworten",
     "sub": "Jeder Dienst hat seine ausführlichen Seiten: wie er funktioniert, was er kostet, worauf Sie achten sollten. Gehen Sie direkt zu der, die zu Ihrer Lage passt.",
     "fr_only": "(auf Französisch)",
+    "en_only": "(auf Englisch)",
     "items": [
       { "product": "KI-Kundenservice", "label": "KI-Telefonzentrale", "desc": "Ein Sprachagent nimmt ab, versteht das Anliegen, bucht Termin oder Tisch und hinterlässt Ihnen das Transkript." },
       { "product": "KI-Kundenservice", "label": "Restaurant-Reservierungen per Telefon", "desc": "Mitten im Service nimmt der Agent die Reservierung an und notiert Allergien und Personenzahl." },

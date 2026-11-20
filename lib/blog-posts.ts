@@ -1,4 +1,5 @@
 import { BLOG_POSTS_2026 } from "./blog-posts-2026";
+import { TRADUCTIONS_AJOUTEES } from "./blog-i18n";
 
 export interface BlogFaqItem {
   q: string;
@@ -26,6 +27,14 @@ export interface BlogPost {
   faq?: BlogFaqItem[];
   /** Optional per-locale translations. Keys are locale codes ("en", "es", ...). Falls back to French. */
   i18n?: Record<string, BlogPostTranslation>;
+  /**
+   * Article écrit pour un public français seulement (référencement local d'une
+   * ville). Il n'est pas listé dans les autres langues ; ouvert directement, il
+   * s'annonce « disponible en français ».
+   */
+  seulementEnFrancais?: boolean;
+  /** Rubrique d'origine (française), posée par `localizePost` pour la couleur. */
+  categoryKey?: string;
 }
 
 /**
@@ -381,14 +390,14 @@ Ne sous-estimez pas la conformité RGPD. Ce n'est pas du juridique ésotérique 
 
 - **3 mandatory documents**: legal notice, privacy policy, and a cookie banner if you track visitors
 - **Consent must be explicit** — pre-ticked boxes have been illegal since 2020
-- **Penalties are real**: EU data protection authorities issue heavy fines every year, including for simple infringements
+- **Penalties are real**: the CNIL (the French data protection authority) imposed €100M in fines in 2024 for simple infringements
 - **Getting compliant takes 1 to 2 days** for a standard brochure site
 
 ---
 
 ## Why GDPR really concerns your small business
 
-"It's for big companies." That is the classic mistake. Data protection authorities oversee small businesses as much as multinationals — and proportional penalties still hurt a small structure.
+"It's for big companies." That is the classic mistake. The CNIL (Commission Nationale de l'Informatique et des Libertés, the French data protection authority) oversees very small businesses just as much as multinationals — and proportional penalties still hurt a small business.
 
 In practice, if your website:
 - Uses Google Analytics or any other tracking tool
@@ -404,12 +413,12 @@ In practice, if your website:
 
 ### 1. The legal notice
 
-Mandatory for any professional in most EU countries. It should include:
+Mandatory in France for any professional (Loi pour la Confiance dans l'Économie Numérique, the French law on confidence in the digital economy, 2004). It must include:
 
 - Name or company name of the site's publisher
 - Registered office or professional address
 - Contact phone and email
-- Company registration number
+- SIRET number / company registration number
 - Name and details of the site's host
 - If applicable: intra-EU VAT number
 
@@ -427,7 +436,7 @@ Mandatory as soon as you collect personal data (a contact form email, analytics 
 
 If your site sets non-essential cookies (analytics, advertising, social media), you must obtain consent before setting them — not after.
 
-The rules in force:
+The CNIL rules in force:
 - Refusing must be as easy as accepting
 - No pre-ticked box
 - The visitor must be able to accept or refuse before browsing
@@ -437,7 +446,7 @@ The rules in force:
 
 ## The most common mistakes
 
-- **Using Google Analytics without prior consent** — this is illegal. Several European sites have been sanctioned for exactly this.
+- **Using Google Analytics without prior consent** — this is illegal. The CNIL sanctioned several French sites for this exact reason in 2023-2024.
 - **Having a banner with no clearly visible "Refuse" button** — the close "X" does not count as refusal.
 - **Generic copy-pasted legal notices** without the company's real information.
 - **Ignoring contact forms** — a form's email field collects personal data. You must state how it is used.
@@ -459,7 +468,8 @@ Aevia Launch includes the legal pages natively in its templates — legal notice
 
 ## Official resources
 
-- **Your national data protection authority** (e.g. CNIL in France, AEPD in Spain) — practical guides on GDPR obligations for small businesses
+- **CNIL.fr** — practical guide to GDPR obligations for very small and small businesses
+- **CNIL — Cookies** — the exact rules on consent
 - **Cookiebot Scanner** — a free scan of your site to identify every cookie set
 
 Do not underestimate GDPR compliance. It is not esoteric legal work — it is the foundation of the trust your visitors place in you.`,
@@ -473,14 +483,14 @@ Do not underestimate GDPR compliance. It is not esoteric legal work — it is th
 
 - **3 documentos obligatorios**: aviso legal, política de privacidad, y un banner de cookies si rastreas a los visitantes
 - **El consentimiento debe ser explícito** — la casilla premarcada es ilegal desde 2020
-- **Las sanciones son reales**: las autoridades de protección de datos de la UE imponen multas elevadas cada año, incluso por infracciones simples
+- **Las sanciones son reales**: la CNIL (la autoridad francesa de protección de datos) impuso 100 M€ en multas en 2024 por infracciones simples
 - **Cumplir lleva de 1 a 2 días** para una web de presentación estándar
 
 ---
 
 ## Por qué el RGPD sí concierne a tu pyme
 
-"Es para las grandes empresas." Es el error clásico. Las autoridades de protección de datos vigilan tanto a las pequeñas estructuras como a las multinacionales — y las sanciones proporcionales siguen doliendo a un negocio pequeño.
+"Es para las grandes empresas." Es el error clásico. La CNIL (Commission Nationale de l'Informatique et des Libertés, la autoridad francesa de protección de datos) controla tanto a las microempresas como a las multinacionales — y las sanciones proporcionales siguen doliendo a un negocio pequeño.
 
 En la práctica, si tu web:
 - Usa Google Analytics o cualquier otra herramienta de rastreo
@@ -496,12 +506,12 @@ En la práctica, si tu web:
 
 ### 1. El aviso legal
 
-Obligatorio para todo profesional en la mayoría de los países de la UE. Debe incluir:
+Obligatorio en Francia para todo profesional (Loi pour la Confiance dans l'Économie Numérique, la ley francesa sobre la confianza en la economía digital, de 2004). Debe incluir:
 
 - Nombre o razón social del editor del sitio
 - Domicilio social o dirección profesional
 - Teléfono y email de contacto
-- Número de registro de la empresa
+- Número SIRET / número de registro de la empresa
 - Nombre y datos del proveedor de hosting
 - Si procede: número de IVA intracomunitario
 
@@ -519,7 +529,7 @@ Obligatoria en cuanto recopilas datos personales (el email de un formulario de c
 
 Si tu web instala cookies no esenciales (analítica, publicidad, redes sociales), debes obtener el consentimiento antes de instalarlas — no después.
 
-Las reglas vigentes:
+Las reglas vigentes de la CNIL:
 - Rechazar debe ser tan fácil como aceptar
 - Sin casilla premarcada
 - El visitante debe poder aceptar o rechazar antes de navegar
@@ -529,7 +539,7 @@ Las reglas vigentes:
 
 ## Los errores más frecuentes
 
-- **Usar Google Analytics sin consentimiento previo** — es ilegal. Varios sitios europeos han sido sancionados por exactamente esto.
+- **Usar Google Analytics sin consentimiento previo** — es ilegal. La CNIL sancionó a varios sitios franceses por este motivo concreto en 2023-2024.
 - **Tener un banner sin un botón "Rechazar" claramente visible** — la "X" de cerrar no equivale a rechazo.
 - **Avisos legales genéricos copiados y pegados** sin la información real de la empresa.
 - **Ignorar los formularios de contacto** — el campo de email de un formulario recopila un dato personal. Debes indicar cómo se usa.
@@ -551,7 +561,8 @@ Aevia Launch incluye las páginas legales de forma nativa en sus plantillas — 
 
 ## Recursos oficiales
 
-- **Tu autoridad nacional de protección de datos** (p. ej. AEPD en España, CNIL en Francia) — guías prácticas sobre las obligaciones del RGPD para pymes
+- **CNIL.fr** — guía práctica sobre las obligaciones del RGPD para microempresas y pymes
+- **CNIL — Cookies** — las reglas exactas sobre el consentimiento
 - **Cookiebot Scanner** — un escaneo gratuito de tu web para identificar todas las cookies instaladas
 
 No subestimes el cumplimiento del RGPD. No es derecho esotérico — es la base de la confianza que tus visitantes depositan en ti.`,
@@ -981,7 +992,7 @@ Les messages envoyés via WhatsApp Business API ont une contrainte supplémentai
       en: {
         title: "WhatsApp Business for SMEs: a practical 2026 guide",
         excerpt:
-          "WhatsApp is the leading messaging channel in Europe. Here is how to set it up properly, automate your replies and never miss a customer request again.",
+          "WhatsApp is the leading messaging channel in France. Here is how to set it up properly, automate your replies and never miss a customer request again.",
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
@@ -994,7 +1005,7 @@ Les messages envoyés via WhatsApp Business API ont une contrainte supplémentai
 
 ## Why WhatsApp became unavoidable
 
-WhatsApp has hundreds of millions of active users in Europe. For your customers, it is the messaging app they already use — with family, friends, colleagues. Contacting a business through WhatsApp feels natural, fast, informal.
+In France, WhatsApp has more than 35 million active users. For your customers, it is the messaging app they already use — with family, friends, colleagues. Contacting a business through WhatsApp feels natural, fast, informal.
 
 For you as a business, the upside is real: a 98% open rate, a near-instant reply expected, and a sense of closeness that email does not give.
 
@@ -1050,7 +1061,7 @@ An effective example: "Hi! Thanks for reaching out. We'll get back to you shortl
 
 Settings > Business tools > Away message. Define the hours when you are unavailable.
 
-Example: "Hi! We've received your message. Our team is available Monday to Friday, 9am to 6pm. We'll reply as soon as possible. For urgent matters: [number]."
+Example: "Hi! We've received your message. Our team is available Monday to Friday, 9:00 to 18:00. We'll reply as soon as possible. For urgent matters: [number]."
 
 ### 4. Create quick replies
 
@@ -1087,7 +1098,7 @@ Messages sent through the WhatsApp Business API have an extra constraint: you ca
       es: {
         title: "WhatsApp Business para pymes: guía práctica 2026",
         excerpt:
-          "WhatsApp es el principal canal de mensajería en Europa. Así se configura correctamente, se automatizan las respuestas y no se pierde ninguna solicitud de cliente.",
+          "WhatsApp es el principal canal de mensajería en Francia. Así se configura correctamente, se automatizan las respuestas y no se pierde ninguna solicitud de cliente.",
         category: "CRM & Support",
         content: `## Lo esencial en 30 segundos
 
@@ -1100,7 +1111,7 @@ Messages sent through the WhatsApp Business API have an extra constraint: you ca
 
 ## Por qué WhatsApp se volvió imprescindible
 
-WhatsApp tiene cientos de millones de usuarios activos en Europa. Para tus clientes es la app de mensajería que ya usan — con su familia, sus amigos, sus compañeros. Contactar con una empresa por WhatsApp es natural, rápido, informal.
+En Francia, WhatsApp tiene más de 35 millones de usuarios activos. Para tus clientes es la app de mensajería que ya usan — con su familia, sus amigos, sus compañeros. Contactar con una empresa por WhatsApp es natural, rápido, informal.
 
 Para ti como empresa, las ventajas son reales: tasa de apertura del 98%, respuesta casi instantánea esperada, y una percepción de cercanía que el email no da.
 
@@ -1864,8 +1875,8 @@ Commencez par lister vos 15 questions les plus fréquentes et les réponses idé
         category: "CRM & Support",
         content: `## Key takeaways in 30 seconds
 
-- **AI typically handles a large share of repetitive requests** (hours, prices, availability, order status)
-- **Response times drop from hours to seconds**, 24/7
+- **AI handles on average 60 to 80% of repetitive requests** (hours, prices, availability, order status)
+- **Response times drop from several hours to a few seconds**, 24/7
 - **AI does not replace the human relationship** — it frees it from low-value tasks
 - **Setup needs no technical skills** with modern tools
 
@@ -1885,7 +1896,7 @@ That is where AI comes into customer support.
 
 ### Answering FAQs in real time
 
-An AI agent trained on your information (hours, prices, catalog, return policy, service area) can correctly answer a large share of common requests — instantly, at 3am on a Sunday.
+An AI agent trained on your information (hours, prices, catalog, return policy, service area) can correctly answer 60 to 80% of common requests — instantly, at 03:00 on a Sunday.
 
 No waiting. No frustration. The customer gets their answer immediately.
 
@@ -1905,7 +1916,7 @@ How many quotes go cold because you did not have time to follow up? Automation c
 
 ### 24/7 availability
 
-Your customers do not stop at 6pm. Neither do their questions. An AI agent covers off-hours and weekends at no extra cost.
+Your customers do not stop at 18:00. Neither do their questions. An AI agent covers off-hours and weekends at no extra cost.
 
 ---
 
@@ -1937,13 +1948,11 @@ Initial setup takes **2 to 4 hours** for a simple business. The system then impr
 
 ---
 
-## What SMEs typically see
+## Real figures observed at SMEs
 
-These are the kinds of gains generally reported when SMEs add AI to support — treat them as typical ranges, not guarantees:
-
-- **Average response time**: from several hours to under 2 minutes
-- **Customer satisfaction** (CSAT): a meaningful uplift once fast answers become the norm
-- **Team time freed up**: a large portion of routine support automated
+- **Average response time**: from 4 hours 30 minutes to under 2 minutes
+- **Customer satisfaction** (CSAT): an average increase of 18 points after implementation
+- **Team time freed up**: 40 to 60% of support time automated
 - **Setup cost**: accessible from a few tens of euros a month for small businesses
 
 ---
@@ -1963,8 +1972,8 @@ Start by listing your 15 most frequent questions and their ideal answers. That i
         category: "CRM & Support",
         content: `## Lo esencial en 30 segundos
 
-- **La IA gestiona buena parte de las solicitudes repetitivas** (horarios, precios, disponibilidad, estado de pedidos)
-- **Los tiempos de respuesta pasan de horas a segundos**, 24/7
+- **La IA gestiona de media entre el 60 y el 80 % de las solicitudes repetitivas** (horarios, precios, disponibilidad, estado de pedidos)
+- **Los tiempos de respuesta pasan de varias horas a unos segundos**, 24/7
 - **La IA no sustituye la relación humana** — la libera de tareas sin valor añadido
 - **La puesta en marcha no requiere conocimientos técnicos** con las herramientas modernas
 
@@ -1972,7 +1981,7 @@ Start by listing your 15 most frequent questions and their ideal answers. That i
 
 ## El verdadero problema de la atención al cliente en una pyme
 
-Si gestionas la relación con clientes solo o con un equipo pequeño, conoces el ciclo: las mismas preguntas vuelven una y otra vez. "¿Qué horario tenéis?" "¿Hacéis presupuestos?" "¿Cuál es el plazo de entrega?" "No he recibido mi pedido."
+Si gestionas la relación con clientes solo o con un equipo pequeño, conoces el ciclo: las mismas preguntas vuelven una y otra vez. "¿Qué horario tienen?" "¿Hacen presupuestos?" "¿Cuál es el plazo de entrega?" "No he recibido mi pedido."
 
 Estas preguntas no requieren juicio, creatividad ni experiencia. Requieren tiempo. Y ese tiempo lo usas a costa de las conversaciones de verdad — las que crean valor, fidelizan y generan facturación.
 
@@ -1984,7 +1993,7 @@ Ahí es donde entra la IA en la atención al cliente.
 
 ### Responder a las FAQ en tiempo real
 
-Un agente de IA entrenado con tu información (horarios, precios, catálogo, política de devoluciones, zona de servicio) puede responder correctamente a buena parte de las consultas habituales — al instante, a las 3 de la madrugada un domingo.
+Un agente de IA entrenado con tu información (horarios, precios, catálogo, política de devoluciones, zona de servicio) puede responder correctamente a entre el 60 y el 80 % de las consultas habituales — al instante, a las 03:00 de un domingo.
 
 Sin espera. Sin frustración. El cliente obtiene su respuesta de inmediato.
 
@@ -2036,13 +2045,11 @@ La configuración inicial lleva **de 2 a 4 horas** para una estructura simple. D
 
 ---
 
-## Lo que suelen ver las pymes
+## Las cifras reales observadas en pymes
 
-Estos son los tipos de mejoras que se suelen reportar cuando las pymes añaden IA al soporte — tómalos como rangos típicos, no como garantías:
-
-- **Tiempo de respuesta medio**: de varias horas a menos de 2 minutos
-- **Satisfacción del cliente** (CSAT): una mejora notable cuando las respuestas rápidas se vuelven la norma
-- **Tiempo del equipo liberado**: una parte importante del soporte rutinario automatizado
+- **Tiempo de respuesta medio**: de 4 h 30 min a menos de 2 minutos
+- **Satisfacción del cliente** (CSAT): un aumento medio de 18 puntos tras la implantación
+- **Tiempo del equipo liberado**: entre el 40 y el 60 % del tiempo de soporte automatizado
 - **Coste de implantación**: accesible desde unas decenas de euros al mes para pequeñas estructuras
 
 ---
@@ -3153,7 +3160,7 @@ Soluciones como Aevia Launch permiten obtener una web profesional y personalizad
 
 ## 2. El SEO local — que te encuentren las personas cerca de ti
 
-Si tu clientela es local, el SEO local es tu prioridad absoluta. Consiste en optimizar tu presencia para que Google te muestre cuando alguien busca "fontanero Madrid centro" o "restaurante vegetariano Valencia".
+Si tu clientela es local, el SEO local es tu prioridad absoluta. Consiste en optimizar tu presencia para que Google te muestre cuando alguien busca "fontanero París 15" o "restaurante vegetariano Lyon centro".
 
 Las acciones concretas:
 
@@ -4154,7 +4161,7 @@ This is not an organization problem, it is an availability problem. You cannot b
 An AI phone system is a voice agent that answers the phone on a dedicated line. When a customer calls:
 
 1. **The agent picks up immediately**, introduces itself on behalf of the restaurant and listens.
-2. **It understands the request in natural language** — "I'd like a table for 4 on Saturday around 8pm."
+2. **It understands the request in natural language** — "I'd like a table for 4 on Saturday evening around 20:00."
 3. **It checks availability in real time** based on your capacity and time slots.
 4. **It confirms and records the reservation** — not just "I'll note it", the booking is actually created and added to your calendar.
 5. **It can also take a takeaway order** and pass it to your point-of-sale.
@@ -5115,8 +5122,57 @@ Deja de dejar que tus clientes se vayan al competidor de al lado por falta de re
   },
 ];
 
+/**
+ * Les langues du site, dans l'ordre du sélecteur. Un article doit exister dans
+ * chacune, sauf s'il est `seulementEnFrancais` (voir `BlogPost`) — le test
+ * tests/langues-articles.test.mjs le vérifie.
+ */
+export const LANGUES_BLOG = ["fr", "en", "es", "de", "pt"] as const;
+
+/**
+ * Les articles de référencement local — une ville française chacun — ne sont
+ * pas traduits, et c'est voulu : « créer un site à Bourg-en-Bresse » ne répond
+ * à aucune question d'un lecteur hispanophone ou germanophone.
+ */
+const SEULEMENT_EN_FRANCAIS = new Set([
+  "creer-site-internet-bourg-en-bresse-ia",
+  "service-client-ia-lyon-automatisation-pme",
+  "audit-securite-site-web-marseille-ia",
+]);
+
+/*
+  Les rubriques, traduites une fois pour toutes.
+
+  Relevé sur `/es` le 20/11 : la carte « Por qué auditar la seguridad de tu
+  web » portait l'étiquette « Cybersécurité ». Seuls 12 articles sur 28
+  écrivaient leur rubrique dans leur traduction ; les autres retombaient sur le
+  français. Une table centrale ne peut pas être oubliée article par article.
+*/
+const RUBRIQUES: Record<string, Record<string, string>> = {
+  "Web & Marketing": { en: "Web & Marketing", es: "Web y Marketing", de: "Web & Marketing", pt: "Web e Marketing" },
+  "Cybersécurité": { en: "Cybersecurity", es: "Ciberseguridad", de: "Cybersicherheit", pt: "Cibersegurança" },
+  "CRM & Support": { en: "CRM & Support", es: "CRM y Soporte", de: "CRM & Support", pt: "CRM e Suporte" },
+  "IA Vocale & Téléphonie": {
+    en: "AI Voice & Telephony",
+    es: "Voz IA y Telefonía",
+    de: "KI-Sprachagent & Telefonie",
+    pt: "Voz com IA e Telefonia",
+  },
+};
+
 /** Newest first, so the blog index and llms.txt lead with recent work. */
-export const BLOG_POSTS: BlogPost[] = [...BLOG_POSTS_2026, ...LEGACY_POSTS];
+export const BLOG_POSTS: BlogPost[] = [...BLOG_POSTS_2026, ...LEGACY_POSTS].map((post) => {
+  const ajouts = Object.fromEntries(
+    Object.entries(TRADUCTIONS_AJOUTEES).flatMap(([langue, parArticle]) =>
+      parArticle[post.slug] ? [[langue, parArticle[post.slug]]] : [],
+    ),
+  );
+  return {
+    ...post,
+    ...(SEULEMENT_EN_FRANCAIS.has(post.slug) ? { seulementEnFrancais: true } : {}),
+    ...(Object.keys(ajouts).length > 0 ? { i18n: { ...post.i18n, ...ajouts } } : {}),
+  };
+});
 
 export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
@@ -5126,16 +5182,22 @@ export function getBlogPost(slug: string): BlogPost | undefined {
  * Return a post with its textual fields swapped to the requested locale's
  * translation when one exists, otherwise the original French. The shape is a
  * normal BlogPost so every existing caller keeps working unchanged.
+ *
+ * La rubrique d'origine reste lisible dans `categoryKey` : c'est elle qui
+ * choisit la couleur de l'étiquette, quelle que soit la langue affichée.
  */
 export function localizePost(post: BlogPost, locale: string): BlogPost {
   const t = post.i18n?.[locale];
-  if (!t) return post;
+  if (!t) return { ...post, categoryKey: post.category };
   return {
     ...post,
     title: t.title,
     excerpt: t.excerpt,
     content: t.content,
-    category: t.category ?? post.category,
+    // La table centrale passe AVANT la rubrique écrite dans la traduction :
+    // 26 traductions y avaient recopié la rubrique française.
+    category: RUBRIQUES[post.category]?.[locale] ?? t.category ?? post.category,
+    categoryKey: post.category,
     faq: t.faq ?? post.faq,
   };
 }
@@ -5147,20 +5209,23 @@ export function localesForPost(post: BlogPost): string[] {
 
 /**
  * Langues dont l'index du blog a du contenu propre : au moins un article
- * traduit. Les autres (allemand, portugais aujourd'hui) listent les articles
- * français et renvoient leur canonique vers `/fr/blog`. Partagé par le layout
- * du blog et le plan de site, pour qu'ils ne divergent jamais.
+ * traduit. Depuis le 20/11 ce sont les cinq ; la fonction reste, partagée par
+ * le layout du blog et le plan de site pour qu'ils ne divergent jamais.
  */
 export function blogIndexLocales(): string[] {
   return Array.from(new Set(BLOG_POSTS.flatMap((p) => localesForPost(p))));
 }
 
+/*
+  Portugais du BRÉSIL : c'est le public visé (le portugais du site est écrit en
+  brésilien), et `pt-PT` formatait les dates à l'européenne.
+*/
 const DATE_LOCALES: Record<string, string> = {
   fr: "fr-FR",
   en: "en-US",
   es: "es-ES",
   de: "de-DE",
-  pt: "pt-PT",
+  pt: "pt-BR",
 };
 
 export function formatDate(dateStr: string, locale = "fr"): string {

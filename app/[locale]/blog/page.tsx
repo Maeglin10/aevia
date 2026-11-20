@@ -1,121 +1,33 @@
-"use client";
-
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { ArrowRight, Clock, Tag, BookOpen } from "lucide-react";
 import { BLOG_POSTS, formatDate, localizePost, localesForPost } from "@/lib/blog-posts";
+import { habillage, styleRubrique } from "@/lib/blog-habillage";
 
 /*
-  Le titre et le chapeau de cette page étaient en français EN DUR.
+  L'index du blog, dans la langue de la page.
 
-  Les articles, eux, étaient bien traduits — d'où un /es/blog qui affichait des
-  titres espagnols sous un « Conseils & ressources » français. Un prospect
-  hispanophone lit d'abord le haut de la page, et conclut que rien n'est
-  traduit. Signalé depuis la Colombie le 02/10.
+  Le titre et le chapeau étaient en français EN DUR jusqu'au 02/10 (signalé
+  depuis la Colombie) ; le bandeau d'appel en bas l'est resté jusqu'au 20/11.
+  Tout l'habillage vient désormais de lib/blog-habillage.ts, partagé avec
+  l'article.
 
-  `avertissementNonTraduit` sert pour l'allemand et le portugais, où AUCUN
-  article n'existe : filtrer donnerait un blog vide, ce qui est pire qu'un blog
-  français annoncé comme tel.
+  Composant serveur : il était client pour lire la langue dans l'URL, et
+  embarquait pour cela tous les articles de toutes les langues dans le
+  JavaScript de la page.
 */
-const UI: Record<
-  string,
-  {
-    reading: string;
-    featured: string;
-    read: string;
-    titreA: string;
-    titreB: string;
-    chapeau: string;
-    avertissementNonTraduit: string;
-  }
-> = {
-  fr: {
-    reading: "de lecture",
-    featured: "Article à la une",
-    read: "Lire l'article",
-    titreA: "Conseils &",
-    titreB: "ressources",
-    chapeau:
-      "Web, sécurité, CRM — des articles pratiques pour aider votre business à grandir sur internet.",
-    avertissementNonTraduit: "",
-  },
-  en: {
-    reading: "read",
-    featured: "Featured",
-    read: "Read article",
-    titreA: "Advice &",
-    titreB: "resources",
-    chapeau:
-      "Web, security, CRM — practical articles to help your business grow online.",
-    avertissementNonTraduit: "",
-  },
-  es: {
-    reading: "de lectura",
-    featured: "Destacado",
-    read: "Leer artículo",
-    titreA: "Consejos y",
-    titreB: "recursos",
-    chapeau:
-      "Web, seguridad, CRM — artículos prácticos para hacer crecer tu negocio en internet.",
-    avertissementNonTraduit: "",
-  },
-  de: {
-    reading: "Lesezeit",
-    featured: "Empfohlen",
-    read: "Artikel lesen",
-    titreA: "Tipps &",
-    titreB: "Ressourcen",
-    chapeau:
-      "Web, Sicherheit, CRM — praktische Artikel, damit Ihr Geschäft online wächst.",
-    avertissementNonTraduit:
-      "Unser Blog ist noch nicht auf Deutsch verfügbar. Die Artikel erscheinen hier auf Französisch.",
-  },
-  pt: {
-    reading: "de leitura",
-    featured: "Em destaque",
-    read: "Ler artigo",
-    titreA: "Conselhos e",
-    titreB: "recursos",
-    chapeau:
-      "Web, segurança, CRM — artigos práticos para fazer o seu negócio crescer na internet.",
-    avertissementNonTraduit:
-      "O nosso blogue ainda não está traduzido para português. Os artigos aparecem aqui em francês.",
-  },
-};
 
-const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
-  "Web & Marketing": { bg: "bg-red-500/10", text: "text-red-300", ring: "ring-red-500/20" },
-  "Cybersécurité": { bg: "bg-emerald-500/10", text: "text-emerald-300", ring: "ring-emerald-500/20" },
-  "CRM & Support": { bg: "bg-inbox/10", text: "text-inbox-light", ring: "ring-inbox/30" },
-};
-
-function getCategoryStyle(category: string) {
-  return (
-    CATEGORY_COLORS[category] ?? {
-      bg: "bg-zinc-500/10",
-      text: "text-zinc-300",
-      ring: "ring-zinc-500/20",
-    }
-  );
-}
-
-export default function BlogPage() {
-  const pathname = usePathname();
-  const locale = pathname.split("/")[1] ?? "fr";
+export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   /*
-    Trois articles sur vingt n'ont pas de version espagnole — ce sont les
-    articles de référencement local (Bourg-en-Bresse, Lyon, Marseille), et les
-    traduire n'aurait pas de sens. Mais ils apparaissaient dans la liste
-    espagnole avec un titre français, et menaient à de la prose française.
-
-    On les retire donc de la liste QUAND la langue a des traductions. Pour
-    l'allemand et le portugais, où il n'y en a aucune, on garde tout et on
-    l'annonce : un blog vide serait un pire accueil qu'un blog français assumé.
+    Les articles qui existent dans la langue de la page. Depuis le 20/11, ce
+    sont tous les articles sauf les trois de référencement local
+    (Bourg-en-Bresse, Lyon, Marseille), écrits pour le public français et
+    réservés au français par choix.
   */
-  const traduits = BLOG_POSTS.filter((p) => localesForPost(p).includes(locale));
-  const base = traduits.length > 0 ? traduits : BLOG_POSTS;
-  const posts = base.map((p) => localizePost(p, locale));
-  const ui = UI[locale] ?? UI.fr;
+  const posts = BLOG_POSTS.filter((p) => localesForPost(p).includes(locale)).map((p) =>
+    localizePost(p, locale),
+  );
+  const ui = habillage(locale);
 
   return (
     <div className="min-h-screen">
@@ -139,11 +51,6 @@ export default function BlogPage() {
             </span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-xl leading-relaxed">{ui.chapeau}</p>
-          {ui.avertissementNonTraduit && (
-            <p className="mt-5 inline-block rounded-lg border border-amber-500/30 bg-amber-500/10 px-4 py-2.5 text-sm text-amber-200">
-              {ui.avertissementNonTraduit}
-            </p>
-          )}
         </div>
       </section>
 
@@ -162,7 +69,7 @@ export default function BlogPage() {
                 <div className="relative z-10">
                   <div className="flex flex-wrap items-center gap-3 mb-5">
                     {(() => {
-                      const style = getCategoryStyle(posts[0].category);
+                      const style = styleRubrique(posts[0].categoryKey);
                       return (
                         <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium ring-1 ${style.bg} ${style.text} ${style.ring}`}>
                           <Tag size={10} />
@@ -173,10 +80,10 @@ export default function BlogPage() {
                     <span className="text-sm text-zinc-400">{formatDate(posts[0].date, locale)}</span>
                     <span className="flex items-center gap-1 text-xs text-zinc-400">
                       <Clock size={11} />
-                      {posts[0].readingTime} {ui.reading}
+                      {posts[0].readingTime} {ui.lecture}
                     </span>
                     <span className="ml-auto hidden sm:inline-flex items-center gap-1 text-xs font-medium text-red-400 bg-red-500/10 ring-1 ring-red-500/20 px-2.5 py-1 rounded-full">
-                      {ui.featured}
+                      {ui.aLaUne}
                     </span>
                   </div>
 
@@ -187,7 +94,7 @@ export default function BlogPage() {
                     {posts[0].excerpt}
                   </p>
                   <div className="inline-flex items-center gap-2 text-sm font-semibold text-red-400 group-hover:text-red-300 transition-colors">
-                    {ui.read}
+                    {ui.lire}
                     <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -199,7 +106,7 @@ export default function BlogPage() {
           {posts.length > 1 && (
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               {posts.slice(1).map((post) => {
-                const style = getCategoryStyle(post.category);
+                const style = styleRubrique(post.categoryKey);
                 return (
                   <Link
                     key={post.slug}
@@ -250,17 +157,13 @@ export default function BlogPage() {
           <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-900/50 p-8 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
             <div className="relative z-10">
-              <h2 className="text-xl font-bold text-white mb-2">
-                Besoin d&apos;un coup de main pour votre présence digitale ?
-              </h2>
-              <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">
-                Site web, sécurité, gestion client — on peut en parler en 30 minutes.
-              </p>
+              <h2 className="text-xl font-bold text-white mb-2">{ui.ctaIndexTitre}</h2>
+              <p className="text-zinc-400 text-sm max-w-md mx-auto mb-6">{ui.ctaIndexTexte}</p>
               <Link
                 href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
               >
-                Prendre contact
+                {ui.contact}
                 <ArrowRight size={16} />
               </Link>
             </div>

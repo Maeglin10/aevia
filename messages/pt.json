@@ -113,6 +113,7 @@
     "title": "Por necessidade: as páginas com as respostas",
     "sub": "Cada serviço tem as suas páginas detalhadas: como funciona, quanto custa, o que verificar. Vá direto àquela que corresponde à sua situação.",
     "fr_only": "(em francês)",
+    "en_only": "(em inglês)",
     "items": [
       { "product": "Atendimento ao cliente com IA", "label": "Central telefônica com IA", "desc": "Um agente de voz atende, entende o pedido, marca o horário ou a reserva e deixa a transcrição para você." },
       { "product": "Atendimento ao cliente com IA", "label": "Reservas de restaurante por telefone", "desc": "Em plena hora de pico, o agente faz a reserva e anota alergias e o número de pessoas." },
@@ -134,7 +135,7 @@
     "items": [
       {
         "q": "Quem está por trás da Aevia?",
-        "a": "Aevia é o nome comercial da Aevia WS, uma empresa individual francesa criada por Valentin Milliand, programador full-stack, registada no Registo nacional de empresas francês (INPI) (SIREN 852 546 225). Não tem qualquer ligação à empresa Aevia do grupo Eiffage, que trabalha em energia e infraestruturas."
+        "a": "Aevia é o nome comercial da Aevia WS, uma empresa individual francesa criada por Valentin Milliand, desenvolvedor full-stack, registrada no Registro nacional de empresas francês (INPI) (SIREN 852 546 225). Não tem qualquer ligação à empresa Aevia do grupo Eiffage, que trabalha em energia e infraestruturas."
       },
       {
         "q": "Quanto custa um site com o Aevia Launch?",
@@ -142,7 +143,7 @@
       },
       {
         "q": "Em quanto tempo o meu site fica online?",
-        "a": "Online em até 48 horas para os planos Landing, Essentiel e Pro, e em 5 a 7 dias para um projeto Premium à medida. O prazo conta a partir do pagamento e da receção de todas as suas informações."
+        "a": "Online em até 48 horas para os planos Landing, Essentiel e Pro, e em 5 a 7 dias para um projeto Premium sob medida. O prazo conta a partir do pagamento e do recebimento de todas as suas informações."
       },
       {
         "q": "Quanto custa o atendimento ao cliente com IA (Aevia Inbox)?",
@@ -150,7 +151,7 @@
       },
       {
         "q": "Em que canais a IA responde aos meus clientes?",
-        "a": "Por telefone, WhatsApp, Instagram, email e no chat do seu site, com todo o histórico de conversas no mesmo sítio. Responde em segundos, de dia e de noite, e avisa-o quando um pedido é sério."
+        "a": "Por telefone, WhatsApp, Instagram, email e no chat do seu site, com todo o histórico de conversas no mesmo lugar. Responde em segundos, de dia e de noite, e avisa-o quando um pedido é sério."
       },
       {
         "q": "A auditoria de segurança é mesmo gratuita?",

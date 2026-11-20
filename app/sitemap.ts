@@ -39,7 +39,9 @@ const BASE = 'https://aevia.services'
 // liens du pied de page dans la langue — voir branche lot-2026-11-12-seo.
 // 13/11 : bloc « par besoin » et cartes d'articles traduites sur l'accueil,
 // prix corrigés dans les articles et les comparatifs.
-const DERNIERE_REFONTE = '2026-11-13'
+// 20/11 : articles en allemand et en portugais (Brésil), habillage du blog
+// traduit, liens « par besoin » vers les pages dans la langue du lecteur.
+const DERNIERE_REFONTE = '2026-11-20'
 
 function newestContentDate(): Date {
   const newest = BLOG_POSTS.reduce(
@@ -81,10 +83,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   })
 
-  // Blog index — seulement les langues qui ont des articles traduits. `/de/blog`
-  // et `/pt/blog` listent la prose française, sont `noindex` et canoniques sur
-  // `/fr/blog` (voir app/[locale]/blog/layout.tsx) : un plan de site qui les
-  // soumet demande à Google d'indexer une page qui lui dit de ne pas le faire.
+  // Blog index — seulement les langues qui ont des articles traduits : les
+  // cinq depuis le 20/11 (de et pt n'en avaient aucun, et leur index était
+  // `noindex`). Une langue sans article ne serait pas soumise : un plan de site
+  // ne demande pas d'indexer une page qui dit de ne pas le faire.
   const blogLocales = blogIndexLocales()
   const blogIndex: MetadataRoute.Sitemap = blogLocales.map((locale) => ({
     url: `${BASE}/${locale}/blog`,
