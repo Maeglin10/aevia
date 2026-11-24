@@ -175,11 +175,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...vsPages,
     ...docsPages,
     ...legalPages,
-    {
-      url: `${BASE}/contact`,
+    // Une page contact par langue (2026-11-24) — /contact n'existait qu'en français.
+    ...routing.locales.map((locale) => ({
+      url: `${BASE}/${locale}/contact`,
       lastModified: contentDate,
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.7,
-    },
+      alternates: {
+        languages: Object.fromEntries(routing.locales.map((l) => [l, `${BASE}/${l}/contact`])),
+      },
+    })),
   ]
 }

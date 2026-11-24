@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Send, Mail, MapPin, CheckCircle2 } from "lucide-react";
+import { Send, Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
+import { EMAIL_CONTACT, TELEPHONE_AFFICHE, TELEPHONE_LIEN, type TextesContact } from "@/lib/contact-textes";
 import { GithubIcon } from "@/components/GithubIcon";
 import { motion } from "framer-motion";
 
 type FieldErrors = { name?: string; email?: string; message?: string };
 
-export default function ContactPage() {
+export function FormulaireContact({ t }: { t: TextesContact }) {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [error, setError] = useState("");
@@ -15,13 +16,13 @@ export default function ContactPage() {
 
   const validate = (): FieldErrors => {
     const errors: FieldErrors = {};
-    if (!form.name.trim()) errors.name = "Indiquez votre nom.";
+    if (!form.name.trim()) errors.name = t.erreurNom;
     if (!form.email.trim()) {
-      errors.email = "Indiquez votre adresse e-mail.";
+      errors.email = t.erreurEmail;
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
-      errors.email = "Cette adresse e-mail ne semble pas valide.";
+      errors.email = t.erreurEmailInvalide;
     }
-    if (!form.message.trim()) errors.message = "Écrivez votre message.";
+    if (!form.message.trim()) errors.message = t.erreurMessage;
     return errors;
   };
 
@@ -46,7 +47,7 @@ export default function ContactPage() {
       setStatus("success");
     } catch {
       setStatus("error");
-      setError("L’envoi a échoué. Écrivez-nous directement à valentinmilliand@aevia.services.");
+      setError(t.erreurEnvoi);
     }
   };
 
@@ -59,9 +60,9 @@ export default function ContactPage() {
           className="text-center"
         >
           <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto mb-6" />
-          <h1 className="text-2xl font-bold text-white mb-3">Message envoyé !</h1>
+          <h1 className="text-2xl font-bold text-white mb-3">{t.envoyeTitre}</h1>
           <p className="text-zinc-400 max-w-sm">
-            Merci, nous vous répondons sous 24 heures.
+            {t.envoyeTexte}
           </p>
         </motion.div>
       </div>
@@ -82,9 +83,9 @@ export default function ContactPage() {
           transition={{ duration: 0.4 }}
           className="mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Prendre contact</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">{t.titre}</h1>
           <p className="text-zinc-400 text-lg max-w-xl">
-            Un projet digital, une demo, ou une simple question — réponse sous 24h.
+            {t.intro}
           </p>
         </motion.div>
 
@@ -100,7 +101,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="contact-name" className="block text-base text-zinc-300 font-medium mb-2">
-                    Nom <span className="text-red-400" aria-hidden="true">*</span>
+                    {t.nom} <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
                   <input
                     id="contact-name"
@@ -111,7 +112,7 @@ export default function ContactPage() {
                     aria-describedby={fieldErrors.name ? "contact-name-error" : undefined}
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    placeholder="Votre nom"
+                    placeholder={t.nomExemple}
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.name
                         ? "border-red-500 focus:border-red-500"
@@ -126,7 +127,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="contact-email" className="block text-base text-zinc-300 font-medium mb-2">
-                    E-mail <span className="text-red-400" aria-hidden="true">*</span>
+                    {t.email} <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
                   <input
                     id="contact-email"
@@ -137,7 +138,7 @@ export default function ContactPage() {
                     aria-describedby={fieldErrors.email ? "contact-email-error" : undefined}
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="vous@exemple.fr"
+                    placeholder={t.emailExemple}
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.email
                         ? "border-red-500 focus:border-red-500"
@@ -153,20 +154,20 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="contact-subject" className="block text-base text-zinc-300 font-medium mb-2">Sujet</label>
+                <label htmlFor="contact-subject" className="block text-base text-zinc-300 font-medium mb-2">{t.sujet}</label>
                 <input
                   id="contact-subject"
                   type="text"
                   value={form.subject}
                   onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                  placeholder="Accueil client IA, site web, audit…"
+                  placeholder={t.sujetExemple}
                   className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none focus:border-red-500 transition-colors"
                 />
               </div>
 
               <div>
                 <label htmlFor="contact-message" className="block text-base text-zinc-300 font-medium mb-2">
-                  Message <span className="text-red-400" aria-hidden="true">*</span>
+                  {t.message} <span className="text-red-400" aria-hidden="true">*</span>
                 </label>
                 <textarea
                   id="contact-message"
@@ -177,7 +178,7 @@ export default function ContactPage() {
                   rows={6}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  placeholder="Votre activité, ce que vous voulez améliorer…"
+                  placeholder={t.messageExemple}
                   className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors resize-none ${
                     fieldErrors.message
                       ? "border-red-500 focus:border-red-500"
@@ -203,7 +204,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 disabled:opacity-60 text-white text-base font-semibold transition-colors"
               >
                 <Send className="w-4 h-4" />
-                {status === "loading" ? "Envoi…" : "Envoyer"}
+                {status === "loading" ? t.envoi : t.envoyer}
               </button>
             </form>
           </motion.div>
@@ -216,20 +217,26 @@ export default function ContactPage() {
             className="lg:col-span-2 space-y-6"
           >
             <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 space-y-5">
-              <h2 className="text-white font-semibold">Coordonnées</h2>
+              <h2 className="text-white font-semibold">{t.coordonnees}</h2>
 
               <div className="flex items-center gap-3 text-sm">
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
                   <Mail className="w-4 h-4" />
                 </div>
-                <a href="mailto:valentinmilliand@aevia.services" className="text-zinc-300 hover:text-white transition-colors">valentinmilliand@aevia.services</a>
+                <a href={`mailto:${EMAIL_CONTACT}`} className="text-zinc-300 hover:text-white transition-colors">{EMAIL_CONTACT}</a>
+              </div>
+              <div className="flex items-center gap-3 text-sm">
+                <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <a href={`tel:${TELEPHONE_LIEN}`} className="text-zinc-300 hover:text-white transition-colors">{TELEPHONE_AFFICHE}</a>
               </div>
 
               <div className="flex items-center gap-3 text-sm">
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
                   <MapPin className="w-4 h-4" />
                 </div>
-                <span className="text-zinc-300">Lyon, France</span>
+                <span className="text-zinc-300">{t.lieu}</span>
               </div>
 
               <div className="flex items-center gap-3 text-sm">
@@ -241,7 +248,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-300 hover:text-white transition-colors"
-                  aria-label="Profil GitHub du fondateur"
+                  aria-label={t.github}
                 >
                   github.com/Maeglin10
                 </a>
@@ -249,14 +256,9 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
-              <h2 className="text-white font-semibold mb-4">On peut parler de…</h2>
+              <h2 className="text-white font-semibold mb-4">{t.sujetsTitre}</h2>
               <ul className="space-y-2.5">
-                {[
-                  "Site web & templates (Aevia Launch)",
-                  "Audit sécurité (Aevia Security)",
-                  "Accueil client IA : téléphone, WhatsApp, Instagram (Aevia Inbox)",
-                  "Tarifs, démonstration ou essai",
-                ].map((item) => (
+                {t.sujets.map((item) => (
                   <li key={item} className="flex items-center gap-2 text-zinc-400 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
                     {item}
