@@ -11,6 +11,13 @@ const NON_LOCALE_PATHS = ['/contact', '/icon', '/apple-icon', '/opengraph-image'
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
+  /* /fr/contact, /en/contact… n'existaient pas (404) : un audit IA du
+     2026-11-24 a conclu « page de contact sans e-mail ni téléphone ». La page
+     contact vit à la racine ; toute version préfixée y renvoie. */
+  if (/^\/[a-z]{2}(-[a-z]{2})?\/contact\/?$/.test(pathname)) {
+    return NextResponse.redirect(new URL('/contact', request.url), 308);
+  }
+
   // Skip locale redirect for pages that live at root (not under [locale])
   if (NON_LOCALE_PATHS.some(p => pathname === p || pathname.startsWith(p + '/'))) {
     return NextResponse.next();

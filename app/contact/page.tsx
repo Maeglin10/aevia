@@ -15,13 +15,13 @@ export default function ContactPage() {
 
   const validate = (): FieldErrors => {
     const errors: FieldErrors = {};
-    if (!form.name.trim()) errors.name = "Please enter your name.";
+    if (!form.name.trim()) errors.name = "Indiquez votre nom.";
     if (!form.email.trim()) {
-      errors.email = "Please enter your email.";
+      errors.email = "Indiquez votre adresse e-mail.";
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim())) {
-      errors.email = "Please enter a valid email address.";
+      errors.email = "Cette adresse e-mail ne semble pas valide.";
     }
-    if (!form.message.trim()) errors.message = "Please enter a message.";
+    if (!form.message.trim()) errors.message = "Écrivez votre message.";
     return errors;
   };
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
       setStatus("success");
     } catch {
       setStatus("error");
-      setError("Something went wrong. Please email me directly.");
+      setError("L’envoi a échoué. Écrivez-nous directement à valentinmilliand@aevia.services.");
     }
   };
 
@@ -59,9 +59,9 @@ export default function ContactPage() {
           className="text-center"
         >
           <CheckCircle2 className="w-16 h-16 text-emerald-500 mx-auto mb-6" />
-          <h1 className="text-2xl font-bold text-white mb-3">Message sent!</h1>
+          <h1 className="text-2xl font-bold text-white mb-3">Message envoyé !</h1>
           <p className="text-zinc-400 max-w-sm">
-            Thanks for reaching out — I&apos;ll get back to you within 24h.
+            Merci, nous vous répondons sous 24 heures.
           </p>
         </motion.div>
       </div>
@@ -100,7 +100,7 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label htmlFor="contact-name" className="block text-base text-zinc-300 font-medium mb-2">
-                    Name <span className="text-red-400" aria-hidden="true">*</span>
+                    Nom <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
                   <input
                     id="contact-name"
@@ -111,7 +111,7 @@ export default function ContactPage() {
                     aria-describedby={fieldErrors.name ? "contact-name-error" : undefined}
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    placeholder="Your name"
+                    placeholder="Votre nom"
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.name
                         ? "border-red-500 focus:border-red-500"
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <label htmlFor="contact-email" className="block text-base text-zinc-300 font-medium mb-2">
-                    Email <span className="text-red-400" aria-hidden="true">*</span>
+                    E-mail <span className="text-red-400" aria-hidden="true">*</span>
                   </label>
                   <input
                     id="contact-email"
@@ -137,7 +137,7 @@ export default function ContactPage() {
                     aria-describedby={fieldErrors.email ? "contact-email-error" : undefined}
                     value={form.email}
                     onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    placeholder="you@example.com"
+                    placeholder="vous@exemple.fr"
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors ${
                       fieldErrors.email
                         ? "border-red-500 focus:border-red-500"
@@ -153,13 +153,13 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="contact-subject" className="block text-base text-zinc-300 font-medium mb-2">Subject</label>
+                <label htmlFor="contact-subject" className="block text-base text-zinc-300 font-medium mb-2">Sujet</label>
                 <input
                   id="contact-subject"
                   type="text"
                   value={form.subject}
                   onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                  placeholder="Project idea, collaboration, etc."
+                  placeholder="Accueil client IA, site web, audit…"
                   className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none focus:border-red-500 transition-colors"
                 />
               </div>
@@ -177,7 +177,7 @@ export default function ContactPage() {
                   rows={6}
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
-                  placeholder="Tell me about your project..."
+                  placeholder="Votre activité, ce que vous voulez améliorer…"
                   className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-400 text-base focus:outline-none transition-colors resize-none ${
                     fieldErrors.message
                       ? "border-red-500 focus:border-red-500"
@@ -203,7 +203,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 disabled:opacity-60 text-white text-base font-semibold transition-colors"
               >
                 <Send className="w-4 h-4" />
-                {status === "loading" ? "Sending..." : "Send message"}
+                {status === "loading" ? "Envoi…" : "Envoyer"}
               </button>
             </form>
           </motion.div>
@@ -216,7 +216,7 @@ export default function ContactPage() {
             className="lg:col-span-2 space-y-6"
           >
             <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40 space-y-5">
-              <h2 className="text-white font-semibold">Contact info</h2>
+              <h2 className="text-white font-semibold">Coordonnées</h2>
 
               <div className="flex items-center gap-3 text-sm">
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
@@ -241,7 +241,7 @@ export default function ContactPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-zinc-300 hover:text-white transition-colors"
-                  aria-label="Visit my GitHub profile"
+                  aria-label="Profil GitHub du fondateur"
                 >
                   github.com/Maeglin10
                 </a>
@@ -254,10 +254,8 @@ export default function ContactPage() {
                 {[
                   "Site web & templates (Aevia Launch)",
                   "Audit sécurité (Aevia Security)",
-                  "CRM WhatsApp & IA (Aevia Inbox)",
-                  "Projet sur-mesure & intégration IA",
-                  "Automatisation n8n & agents IA",
-                  "Questions tarifaires ou démo",
+                  "Accueil client IA : téléphone, WhatsApp, Instagram (Aevia Inbox)",
+                  "Tarifs, démonstration ou essai",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-zinc-400 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
