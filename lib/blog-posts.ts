@@ -3904,7 +3904,7 @@ Lyon s'affirme chaque année comme l'un des hubs technologiques et économiques 
 Le constat opérationnel sur le terrain est souvent sans appel :
 
 - **Un volume croissant et fragmenté** : Les demandes de renseignements, de devis, de réservations ou de suivi de commande arrivent en continu tout au long de la journée et de la nuit.
-- **Le coût financier du support humain** : Embaucher un préparateur de commande ou un chargé de clientèle à temps plein à Lyon implique un coût global (salaire brut, charges patronales, frais de poste de travail) souvent supérieur à 45 000 € par an. Pour couvrir les plages du soir et du week-end, la facture devient rapidement insoutenable pour une PME.
+- **Le coût financier du support humain** : Embaucher un préparateur de commande ou un chargé de clientèle à temps plein à Lyon implique un coût global (salaire brut, charges patronales, frais de poste de travail) qui se compte en dizaines de milliers d'euros par an. Pour couvrir les plages du soir et du week-end, la facture devient rapidement insoutenable pour une PME.
 - **L'insatisfaction liée au délai de réponse** : Un prospect qui attend trop longtemps un tarif ou une disponibilité se tourne vers un concurrent lyonnais plus réactif.
 
 Face à ces enjeux de productivité et de rentabilité, l'**automatisation PME Lyon** via l'intelligence artificielle s'impose comme le levier stratégique par excellence.
@@ -4018,7 +4018,7 @@ Pensé spécifiquement pour la **sécurité informatique PACA**, Aevia Security 
 
 ## Résultats typiques et comment les corriger
 
-Lors des analyses réalisées sur le tissu économique de Marseille et ses environs, plusieurs vulnérabilités récurrentes ressortent de manière quasi systématique.
+Chez les petites entreprises, à Marseille comme ailleurs, plusieurs vulnérabilités reviennent très souvent.
 
 Voici les constats les plus fréquents et leurs solutions immédiates :
 
