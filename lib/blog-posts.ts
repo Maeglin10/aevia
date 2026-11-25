@@ -1,5 +1,7 @@
 import { BLOG_POSTS_2026 } from "./blog-posts-2026";
 import { TRADUCTIONS_AJOUTEES } from "./blog-i18n";
+import { FAQ_AJOUTEES } from "./blog-faq-ajouts";
+import { FAQ_TRADUITES } from "./blog-faq-i18n";
 
 export interface BlogFaqItem {
   q: string;
@@ -5175,9 +5177,20 @@ export const BLOG_POSTS: BlogPost[] = [...BLOG_POSTS_2026, ...LEGACY_POSTS].map(
   );
   return {
     ...post,
+    ...(!post.faq && FAQ_AJOUTEES[post.slug] ? { faq: FAQ_AJOUTEES[post.slug] } : {}),
     ...(SEULEMENT_EN_FRANCAIS.has(post.slug) ? { seulementEnFrancais: true } : {}),
     ...(Object.keys(ajouts).length > 0 ? { i18n: { ...post.i18n, ...ajouts } } : {}),
   };
+}).map((post) => {
+  // FAQ traduites des articles d'avant août 2026 (voir blog-faq-ajouts.ts).
+  if (!post.i18n || !FAQ_AJOUTEES[post.slug]) return post;
+  const i18n = Object.fromEntries(
+    Object.entries(post.i18n).map(([langue, t]) => [
+      langue,
+      t.faq ? t : { ...t, faq: FAQ_TRADUITES[langue]?.[post.slug] },
+    ]),
+  );
+  return { ...post, i18n };
 });
 
 export function getBlogPost(slug: string): BlogPost | undefined {
@@ -5204,7 +5217,10 @@ export function localizePost(post: BlogPost, locale: string): BlogPost {
     // 26 traductions y avaient recopié la rubrique française.
     category: RUBRIQUES[post.category]?.[locale] ?? t.category ?? post.category,
     categoryKey: post.category,
-    faq: t.faq ?? post.faq,
+    // Pas de repli sur la FAQ française : elle serait affichée (et balisée
+    // FAQPage) en français sous un article traduit. Une traduction apporte sa
+    // propre `faq` ou n'en a pas.
+    faq: t.faq,
   };
 }
 

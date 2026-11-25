@@ -26,6 +26,11 @@ export function generateStaticParams() {
   return LANGUES_BLOG.flatMap((locale) => BLOG_POSTS.map((p) => ({ locale, slug: p.slug })));
 }
 
+/** L'article porte déjà ses questions-réponses dans son texte (titre « Questions fréquentes », « FAQ »…). */
+function contientSectionFaq(content: string): boolean {
+  return /^#{2,3}\s+.*(questions fréquentes|faq|frequently asked|preguntas frecuentes|häufige fragen|perguntas frequentes)/im.test(content);
+}
+
 /**
  * Render a Markdown-like content string into React elements.
  * Supports: ## h2, ### h3, **bold**, `code`, [liens](url), --- (hr),
@@ -269,6 +274,22 @@ export default async function ArticlePage({
           <div className="prose-custom max-w-[62ch]">
             {renderContent(post.content)}
           </div>
+          {/* Les questions balisées FAQPage (layout.tsx) doivent être visibles :
+              on les affiche ici quand le texte de l'article n'a pas sa propre
+              section de questions. */}
+          {post.faq && post.faq.length > 0 && !contientSectionFaq(post.content) && (
+            <section className="max-w-[62ch] mt-12" aria-labelledby="faq-titre">
+              <h2 id="faq-titre" className="text-2xl font-bold text-white mb-6">{ui.faq}</h2>
+              <dl className="space-y-6">
+                {post.faq.map((item) => (
+                  <div key={item.q}>
+                    <dt className="font-semibold text-white mb-2">{item.q}</dt>
+                    <dd className="text-zinc-300 leading-relaxed">{item.a}</dd>
+                  </div>
+                ))}
+              </dl>
+            </section>
+          )}
         </div>
       </article>
 

@@ -113,6 +113,7 @@ const organizationSchema = {
   description:
     "Plateforme tout-en-un pour TPE, PME et indépendants : site web professionnel, service client par IA (téléphone, WhatsApp, Instagram, email) disponible 24h/24, et audit de sécurité web. Basée à Bourg-en-Bresse (Ain), France.",
   email: 'valentinmilliand@aevia.services',
+  telephone: '+33743751980',
   foundingDate: '2019-07-01',
   // Le portfolio du fondateur est le seul autre site qui parle de lui : le
   // relier ici (et l'inverse, côté portfolio) fait des deux une seule entité
@@ -180,6 +181,7 @@ const organizationSchema = {
   ],
   contactPoint: {
     '@type': 'ContactPoint',
+    telephone: '+33743751980',
     email: 'valentinmilliand@aevia.services',
     contactType: 'customer support',
     availableLanguage: ['fr', 'en', 'es', 'de', 'pt'],

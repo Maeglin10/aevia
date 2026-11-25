@@ -83,12 +83,15 @@ export default async function ArticleLayout({
       // réservé au français, ouvert sous /de, est en français.
       inLanguage: etiquetteLangue(localesForPost(rawPost!).includes(locale) ? locale : "fr"),
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
-      author: { "@type": "Organization", name: "Aevia", url: BASE },
+      // Même nœud que l'Organization du hub (`app/layout.tsx`) : une seule
+      // entité éditrice, jamais une « Aevia » redécrite à chaque article.
+      author: { "@type": "Organization", "@id": `${BASE}/#organization`, name: "Aevia", url: BASE },
       publisher: {
         "@type": "Organization",
+        "@id": `${BASE}/#organization`,
         name: "Aevia",
         url: BASE,
-        logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
+        logo: { "@type": "ImageObject", url: `${BASE}/brand/aevia-logo.png` },
       },
       image: `${BASE}/og.png`,
     });

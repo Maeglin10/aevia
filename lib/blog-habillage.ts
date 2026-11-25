@@ -23,6 +23,7 @@ export type Habillage = {
   // Article
   retour: string;
   suite: string;
+  faq: string;
   ctaTitre: string;
   ctaTexte: string;
   contact: string;
@@ -45,6 +46,7 @@ export const HABILLAGE: Record<string, Habillage> = {
     ctaIndexTexte: "Site web, sécurité, gestion client — on peut en parler en 30 minutes.",
     retour: "Retour au blog",
     suite: "Continuer à lire",
+    faq: "Questions fréquentes",
     ctaTitre: "Prêt à passer à l'action ?",
     ctaTexte: "Site web, audit sécurité ou gestion client — parlons de votre projet en 30 minutes.",
     contact: "Prendre contact",
@@ -64,6 +66,7 @@ export const HABILLAGE: Record<string, Habillage> = {
     ctaIndexTexte: "Website, security, customer management — we can talk it through in 30 minutes.",
     retour: "Back to the blog",
     suite: "Keep reading",
+    faq: "Frequently asked questions",
     ctaTitre: "Ready to act?",
     ctaTexte: "Website, security audit or customer management — let's discuss your project in 30 minutes.",
     contact: "Get in touch",
@@ -84,6 +87,7 @@ export const HABILLAGE: Record<string, Habillage> = {
     ctaIndexTexte: "Web, seguridad, gestión de clientes — lo hablamos en 30 minutos.",
     retour: "Volver al blog",
     suite: "Seguir leyendo",
+    faq: "Preguntas frecuentes",
     ctaTitre: "¿Listo para dar el paso?",
     ctaTexte: "Web, auditoría de seguridad o gestión de clientes — hablemos de tu proyecto en 30 minutos.",
     contact: "Contactar",
@@ -104,6 +108,7 @@ export const HABILLAGE: Record<string, Habillage> = {
     ctaIndexTexte: "Website, Sicherheit, Kundenverwaltung — wir besprechen es in 30 Minuten.",
     retour: "Zurück zum Blog",
     suite: "Weiterlesen",
+    faq: "Häufige Fragen",
     ctaTitre: "Bereit für den nächsten Schritt?",
     ctaTexte: "Website, Sicherheitsaudit oder Kundenverwaltung — sprechen wir in 30 Minuten über Ihr Projekt.",
     contact: "Kontakt aufnehmen",
@@ -124,6 +129,7 @@ export const HABILLAGE: Record<string, Habillage> = {
     ctaIndexTexte: "Site, segurança, gestão de clientes — dá para conversar sobre isso em 30 minutos.",
     retour: "Voltar ao blog",
     suite: "Continue lendo",
+    faq: "Perguntas frequentes",
     ctaTitre: "Pronto para dar o próximo passo?",
     ctaTexte: "Site, auditoria de segurança ou gestão de clientes — vamos conversar sobre o seu projeto em 30 minutos.",
     contact: "Entrar em contato",
