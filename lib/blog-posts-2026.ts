@@ -1,4 +1,7 @@
 import type { BlogPost } from "./blog-posts";
+import { AVIS_GOOGLE } from "./articles-1126/avis-google";
+import { COMMANDE_WHATSAPP } from "./articles-1126/commande-whatsapp";
+import { ALLERGENES } from "./articles-1126/allergenes";
 
 /**
  * Articles added from August 2026 onward.
@@ -4630,4 +4633,8 @@ Calcula medio día para definir la lista de motivos y sus duraciones, las reglas
       },
     },
   },
+  // Lot du 25/11/2026 : trois articles restauration, en cinq langues (lib/articles-1126/).
+  AVIS_GOOGLE,
+  COMMANDE_WHATSAPP,
+  ALLERGENES,
 ];
